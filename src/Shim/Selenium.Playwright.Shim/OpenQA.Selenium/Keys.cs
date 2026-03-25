@@ -1,0 +1,69 @@
+namespace OpenQA.Selenium
+{
+    public static class Keys
+    {
+        public static readonly string Null = "\ue000";
+        public static readonly string Cancel = "\ue001";
+        public static readonly string Help = "\ue002";
+        public static readonly string Backspace = "\ue003";
+        public static readonly string Tab = "\ue004";
+        public static readonly string Clear = "\ue005";
+        public static readonly string Return = "\ue006";
+        public static readonly string Enter = "\ue007";
+        public static readonly string Shift = "\ue008";
+        public static readonly string LeftShift = "\ue008";
+        public static readonly string Control = "\ue009";
+        public static readonly string LeftControl = "\ue009";
+        public static readonly string Alt = "\ue00a";
+        public static readonly string LeftAlt = "\ue00a";
+        public static readonly string Pause = "\ue00b";
+        public static readonly string Escape = "\ue00c";
+        public static readonly string Space = "\ue00d";
+        public static readonly string PageUp = "\ue00e";
+        public static readonly string PageDown = "\ue00f";
+        public static readonly string End = "\ue010";
+        public static readonly string Home = "\ue011";
+        public static readonly string Left = "\ue012";
+        public static readonly string ArrowLeft = "\ue012";
+        public static readonly string Up = "\ue013";
+        public static readonly string ArrowUp = "\ue013";
+        public static readonly string Right = "\ue014";
+        public static readonly string ArrowRight = "\ue014";
+        public static readonly string Down = "\ue015";
+        public static readonly string ArrowDown = "\ue015";
+        public static readonly string Insert = "\ue016";
+        public static readonly string Delete = "\ue017";
+        public static readonly string Semicolon = "\ue018";
+        public static readonly string Equal = "\ue019";
+        public static readonly string NumberPad0 = "\ue01a";
+        public static readonly string NumberPad1 = "\ue01b";
+        public static readonly string NumberPad2 = "\ue01c";
+        public static readonly string NumberPad3 = "\ue01d";
+        public static readonly string NumberPad4 = "\ue01e";
+        public static readonly string NumberPad5 = "\ue01f";
+        public static readonly string NumberPad6 = "\ue020";
+        public static readonly string NumberPad7 = "\ue021";
+        public static readonly string NumberPad8 = "\ue022";
+        public static readonly string NumberPad9 = "\ue023";
+        public static readonly string Multiply = "\ue024";
+        public static readonly string Add = "\ue025";
+        public static readonly string Separator = "\ue026";
+        public static readonly string Subtract = "\ue027";
+        public static readonly string Decimal = "\ue028";
+        public static readonly string Divide = "\ue029";
+        public static readonly string F1 = "\ue031";
+        public static readonly string F2 = "\ue032";
+        public static readonly string F3 = "\ue033";
+        public static readonly string F4 = "\ue034";
+        public static readonly string F5 = "\ue035";
+        public static readonly string F6 = "\ue036";
+        public static readonly string F7 = "\ue037";
+        public static readonly string F8 = "\ue038";
+        public static readonly string F9 = "\ue039";
+        public static readonly string F10 = "\ue03a";
+        public static readonly string F11 = "\ue03b";
+        public static readonly string F12 = "\ue03c";
+        public static readonly string Meta = "\ue03d";
+        public static readonly string Command = "\ue03d";
+    }
+}
