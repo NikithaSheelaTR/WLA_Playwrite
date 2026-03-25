@@ -71,4 +71,18 @@ namespace OpenQA.Selenium
         public NotFoundException(string message) : base(message) { }
         public NotFoundException(string message, Exception innerException) : base(message, innerException) { }
     }
+
+    public class InvalidElementStateException : WebDriverException
+    {
+        public InvalidElementStateException() : base() { }
+        public InvalidElementStateException(string message) : base(message) { }
+        public InvalidElementStateException(string message, Exception innerException) : base(message, innerException) { }
+    }
+
+    public class ElementClickInterceptedException : WebDriverException
+    {
+        public ElementClickInterceptedException() : base() { }
+        public ElementClickInterceptedException(string message) : base(message) { }
+        public ElementClickInterceptedException(string message, Exception innerException) : base(message, innerException) { }
+    }
 }

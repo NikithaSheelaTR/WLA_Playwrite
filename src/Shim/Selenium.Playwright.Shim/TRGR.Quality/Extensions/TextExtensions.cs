@@ -90,6 +90,14 @@ namespace TRGR.Quality.QedArsenal.QualityLibrary.WebDriver.Extensions
             return driver.PageSource.Contains(text);
         }
 
+        public static string GetHiddenText(this IWebDriver driver, IWebElement container, params By[] elementBys)
+        {
+            var element = container.FindElementByChainedBys(elementBys);
+            var text = (string)((IJavaScriptExecutor)driver).ExecuteScript(
+                "return arguments[0].textContent;", element);
+            return text ?? string.Empty;
+        }
+
         private static string GetTextFromElement(IWebElement element)
         {
             if (element == null) return string.Empty;

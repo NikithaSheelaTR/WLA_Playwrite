@@ -25,11 +25,5 @@ namespace TRGR.Quality.QedArsenal.QualityLibrary.WebDriver.Extensions
             ((IJavaScriptExecutor)driver).ExecuteScript("window.scrollTo(0, 0);");
         }
 
-        public static void ScrollToContainerTop(this IWebDriver driver, By container, int offset = 0)
-        {
-            var containerEl = driver.FindElement(container);
-            ((IJavaScriptExecutor)driver).ExecuteScript(
-                $"arguments[0].scrollTop = {offset};", containerEl);
-        }
     }
 }
