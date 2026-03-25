@@ -16,7 +16,7 @@
     using OpenQA.Selenium.IE;
     using OpenQA.Selenium.Remote;
     using OpenQA.Selenium.Safari;
-    using static sun.net.dns.ResolverConfiguration;
+    using Selenium.Playwright.Shim.Impl;
 
     /// <summary>
     /// DriverFactory has methods to create specific driver objects for a given browser
@@ -206,32 +206,10 @@
         /// </returns>
         private static IWebDriver InitializeChromeDriver(object browserOptions, string driverLocation)
         {
-            const int DriverTimeout = 15;
-            const int DriverHttpCommandTimeout = 120;
-            IWebDriver driver;
             var chromeOptions = browserOptions as ChromeOptions;
-            Func<IWebDriver> driverInitializer =
-                () =>
-                    chromeOptions == null
-                        ? new ChromeDriver(driverLocation)
-                        : new ChromeDriver(driverLocation, chromeOptions, TimeSpan.FromSeconds(DriverHttpCommandTimeout));
+            IWebDriver driver = new PlaywrightWebDriver(chromeOptions);
 
-            try
-            {
-                driver = driverInitializer();
-                var windowSize = driver.Manage().Window.Size;
-                Logger.LogInfo($"Window width: {windowSize.Width}px, Height: {windowSize.Height}px)");
-            }
-            catch (Exception e)
-            {
-                Logger.LogError($"Exception caught while initializing Chrome Driver:{Environment.NewLine}{e}");
-                Logger.LogError(
-                    $"Waiting {DriverTimeout} seconds before an attempt to create the driver again...{Environment.NewLine}");
-
-                Thread.Sleep(DriverTimeout * 1000);
-                driver = driverInitializer();
-            }
-
+            Logger.LogInfo("Playwright-backed Chromium driver initialized.");
             return driver;
         }
 
