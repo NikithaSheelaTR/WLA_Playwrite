@@ -83,10 +83,10 @@
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Selenium.Playwright.Shim">
-      <HintPath>..\..\..\..\..\src\Shim\Selenium.Playwright.Shim\bin\Debug\netstandard2.0\Selenium.Playwright.Shim.dll</HintPath>
+      <HintPath>..\..\..\..\..\src\Shim\publish\Selenium.Playwright.Shim.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Playwright">
-      <HintPath>..\..\..\..\..\src\Shim\Selenium.Playwright.Shim\bin\Debug\netstandard2.0\Microsoft.Playwright.dll</HintPath>
+      <HintPath>..\..\..\..\..\src\Shim\publish\Microsoft.Playwright.dll</HintPath>
     </Reference>
     <Reference Include="ReportPortal.Client, Version=3.10.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>$(SolutionDir)packages\ReportPortal.Client.3.10.0\lib\net462\ReportPortal.Client.dll</HintPath>

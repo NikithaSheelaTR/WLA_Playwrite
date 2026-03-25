@@ -38,7 +38,11 @@ namespace TRGR.Quality.QedArsenal.QualityLibrary.Core.Enums.WebDriver
     [AttributeUsage(AttributeTargets.Field)]
     public class MouseEventAttribute : Attribute
     {
-        public string Event { get; }
+        public string Event { get; set; }
+
+        public MouseEventAttribute()
+        {
+        }
 
         public MouseEventAttribute(string eventName)
         {
