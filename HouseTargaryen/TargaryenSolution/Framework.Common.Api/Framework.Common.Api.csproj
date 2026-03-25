@@ -1,0 +1,742 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{57466214-DA49-4F54-8D02-FA6DCA5D9A1B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Framework.Common.Api</RootNamespace>
+    <AssemblyName>Framework.Common.Api</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\PlatformTests\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <LangVersion>latest</LangVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>bin\Debug\Framework.Common.Api.xml</DocumentationFile>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseAll|AnyCPU'">
+    <OutputPath>bin\ReleaseAll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="amqmdnetstd, Version=9.2.4.0, Culture=neutral, PublicKeyToken=23d6cb914eeaac0e, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\IBMXMSDotnetClient.9.2.4.0\lib\netstandard2.0\amqmdnetstd.dll</HintPath>
+    </Reference>
+    <Reference Include="amqmxmsstd, Version=9.2.4.0, Culture=neutral, PublicKeyToken=d2666ab12fca862b, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\IBMXMSDotnetClient.9.2.4.0\lib\netstandard2.0\amqmxmsstd.dll</HintPath>
+    </Reference>
+    <Reference Include="Apache.NMS, Version=1.8.0.0, Culture=neutral, PublicKeyToken=82756feee3957618, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Apache.NMS.1.8.0\lib\net40\Apache.NMS.dll</HintPath>
+    </Reference>
+    <Reference Include="Apache.NMS.ActiveMQ, Version=1.8.0.0, Culture=neutral, PublicKeyToken=82756feee3957618, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Apache.NMS.ActiveMQ.1.8.0\lib\net40\Apache.NMS.ActiveMQ.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\AWSSDK.Core.3.7.6.1\lib\net45\AWSSDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SecretsManager, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\AWSSDK.SecretsManager.3.7.1.71\lib\net45\AWSSDK.SecretsManager.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetZip, Version=1.10.1.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\DotNetZip.1.10.1\lib\net20\DotNetZip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.9.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HtmlAgilityPack.1.4.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSmtp, Version=1.11.0.34196, Culture=neutral">
+      <HintPath>$(SolutionDir)\OpenSmtp.1.11.0.34196\lib\OpenSmtp.dll</HintPath>
+    </Reference>
+    <Reference Include="QedArsenal.QualityLibrary.Core, Version=2207.0.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\QedArsenal.QualityLibrary.Core.2207.0.6-build\lib\net45\QedArsenal.QualityLibrary.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\RestSharp.105.2.3\lib\net45\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Thomson.Novus.ProductAPI, Version=24.8.2.1, Culture=neutral, PublicKeyToken=b06d0a70726cd750, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Thomson.Novus.ProductAPI.24.8.2.1\lib\net472\Thomson.Novus.ProductAPI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Framework.Core\DataModel\Configuration\KnownExecutionFlags.cs">
+      <Link>DataModel\KnownExecutionFlags.cs</Link>
+    </Compile>
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>Properties\SolutionInfo.cs</Link>
+    </Compile>
+    <Compile Include="DataModel\ApiExecutionFlags.cs" />
+    <Compile Include="DataModel\ApiFlagDependencyMap.cs" />
+    <Compile Include="DataModel\Configuration\ApiTestExecutionContext.cs" />
+    <Compile Include="Endpoints\AlertProductService\AlertProductServiceClient.cs" />
+    <Compile Include="Endpoints\AlertProductService\DataModel\CaseTrackingSubscription.cs" />
+    <Compile Include="Endpoints\AlertProductService\DataModel\DeliveryDestination.cs" />
+    <Compile Include="Endpoints\AlertProductService\DataModel\IndexableData.cs" />
+    <Compile Include="Endpoints\AlertProductService\DataModel\PartnerDefinedProperties.cs" />
+    <Compile Include="Endpoints\AlertProductService\DataModel\ScheduleInfo.cs" />
+    <Compile Include="Endpoints\AlertProductService\DataModel\SpecificAlertDataModel.cs" />
+    <Compile Include="Endpoints\AlertProductService\DataModel\Subscription.cs" />
+    <Compile Include="Endpoints\Alerts\DataModel\AlertCreateReponse.cs" />
+    <Compile Include="Endpoints\Alerts\DataModel\DeleteAlertResponse.cs" />
+    <Compile Include="Endpoints\Alerts\DataModel\FacetFilter.cs" />
+    <Compile Include="Endpoints\CARI\CariClient.cs" />
+    <Compile Include="Endpoints\CARI\DataModel\ResponseModls\DeepResearchCreateFlowResponseInfo.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\Alert\Alert.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\Alert\AlertInfoDataModel.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\Alert\BriefAlertInfoDataModel.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\Alert\ClientDefinedSearchData.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\Alert\Destination.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\Alert\IndexableData.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\Alert\Pagination.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\Alert\PartnerDefinedProperties.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\Alert\Properties.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\Alert\Schedule.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\Alert\Subscription.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\Alert\To.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\CommonPayloadSections\ContainerRootList.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\CommonPayloadSections\EditedBy.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\FolderDetailListinfo.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\CommonPayloadSections\FolderDetailsList.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\CommonPayloadSections\Pagination.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\CommonPayloadSections\Parent.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\CommonPayloadSections\Permissions.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\UserFoldersInfo.cs" />
+    <Compile Include="Endpoints\DataModel\EndPointXmlCollectionModel.cs" />
+    <Compile Include="Endpoints\DataModel\EndPointXmlHeaderModel.cs" />
+    <Compile Include="Endpoints\DataModel\EndPointXmlModel.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\DocumentAnalyzer\CitingRefsCountData.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\DocumentAnalyzer\OriginalQuoteItems.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\DocumentAnalyzer\QuotationsData.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\DocumentAnalyzer\IdentifiedQuotations.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\DocumentAnalyzer\InputQuotation.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\DocumentAnalyzer\QuotationsCountSummary.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\DocumentAnalyzer\QuoteItems.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\DocumentAnalyzer\Quotations.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\DocumentAnalyzer\QuotationsReportDataModel.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\DocumentAnalyzer\SubmitToQuickCheckAnalyzeRequest.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\DocumentAnalyzer\TextItem.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\DocumentAnalyzer\WLMatchedQuotation.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\RequestModels\DataOrchestrationResultListInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\RequestModels\ExpiryReportInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\RequestModels\FileInfoRequest.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\RequestModels\PartyInfoRequest.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\RequestModels\OrchestrationDataRequest.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\ResponseModels\CurrentPuiInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\ResponseModels\DocInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\ResponseModels\ExpireInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\ResponseModels\HoldingInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\ResponseModels\IssueInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\ResponseModels\JurisdictionInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\ResponseModels\MetadataInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\ResponseModels\OrchestrationDataInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\ResponseModels\OrchestrationMetaInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\ResponseModels\PartyInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\ResponseModels\PreviouslyViewedDocument.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\ResponseModels\PreviouslyViewedFacet.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\ResponseModels\RecommendationInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\ResponseModels\RecommendationsByTypeInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\ResponseModels\ReportResultInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\ResponseModels\ResultListInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\ResponseModels\JudicialTabResponse.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\ResponseModels\SynopsisDetailsInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\ResponseModels\UploadedDocumentInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\ResponseModels\UploadingDocumentInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\ResponseModels\UploadedReportInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\RequestModels\FilterInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\RequestModels\ResultInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\RequestModels\ResultListRequestInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\RequestModels\SortKeyInfo.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\Judicial\ResponseModels\UploadSummaryInfo.cs" />
+    <Compile Include="Endpoints\Report\DataModel\ColumnOptions.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\ResponseModels\DocumentsInfo.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\ResponseModels\JudicialInvalidCitationsInfo.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\ResponseModels\JudicialQuotationsOrchestrationData.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\ResponseModels\OverallQuoteCountsInfo.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\ResponseModels\QuotationsResults.cs" />
+    <Compile Include="Endpoints\Report\DataModel\ReportData.cs" />
+    <Compile Include="Endpoints\Report\DataModel\DetailsInfo.cs" />
+    <Compile Include="Endpoints\Report\DataModel\RerunReportRequest.cs" />
+    <Compile Include="Endpoints\Report\DataModel\RerunReportRequestParams.cs" />
+    <Compile Include="Endpoints\SearchSpellChecker\DataModel\Element.cs" />
+    <Compile Include="Endpoints\SearchSpellChecker\DataModel\SpellCheckRequest.cs" />
+    <Compile Include="Endpoints\SearchSpellChecker\DataModel\SpellCheckResponse.cs" />
+    <Compile Include="Endpoints\SearchSpellChecker\SearchSpellCheckerClient.cs" />
+    <Compile Include="Endpoints\DoGateway\DataModel\ImageSearch\Expiry.cs" />
+    <Compile Include="Endpoints\DoGateway\DataModel\ImageSearch\Filter.cs" />
+    <Compile Include="Endpoints\DoGateway\DataModel\ImageSearch\ImageSearchResultsRequest.cs" />
+    <Compile Include="Endpoints\DoGateway\DataModel\ImageSearch\ImageSearchResultsResponse.cs" />
+    <Compile Include="Endpoints\DoGateway\DataModel\ImageSearch\ImageSearchStatusResponse.cs" />
+    <Compile Include="Endpoints\DoGateway\DataModel\ImageSearch\OrchestrationData.cs" />
+    <Compile Include="Endpoints\DoGateway\DataModel\ImageSearch\Result.cs" />
+    <Compile Include="Endpoints\DoGateway\DataModel\ImageSearch\Results.cs" />
+    <Compile Include="Endpoints\DoGateway\DataModel\ImageSearch\StartImageSearchRequest.cs" />
+    <Compile Include="Endpoints\DoGateway\DataModel\ImageSearch\StartImageSearchResponse.cs" />
+    <Compile Include="Endpoints\Gateway\DataModel\Docket\DocketUpdatesResponseModel.cs" />
+    <Compile Include="Endpoints\Gateway\DataModel\Docket\UpdateItemModel.cs" />
+    <Compile Include="Endpoints\Gateway\DataModel\Docket\UpdatePayloadModel.cs" />
+    <Compile Include="Endpoints\Report\DataModel\DocAnalyzerQuoteCheckData.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\RequestModels\JudicialPartyInfo.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\RequestModels\JudicialStartCheckInfo.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\RequestModels\JudicialUploadedFileInfo.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\ResponseModels\CitedByInfo.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\ResponseModels\CountsByPartyInfo.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\ResponseModels\CurrentPuiInfo.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\ResponseModels\ExtractedCitationInfo.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\ResponseModels\JudicialDocumentInfo.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\ResponseModels\JurisdictionInfo.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\ResponseModels\OrchestrationDataInfo.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\ResponseModels\OriginalQuoteItemInfo.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\ResponseModels\PreviouslyViewedFacet.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\ResponseModels\QuotationsCitationSummaryInfo.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\ResponseModels\QuoteCountsByParty.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\ResponseModels\QuoteInfo.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\ResponseModels\UploadSummaryInfo.cs" />
+    <Compile Include="Endpoints\Report\DataModel\QuoteCheckCitation.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\ResponseModels\FileStatusInfo.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Judicial\ResponseModels\JudicialUploadFileResponseInfo.cs" />
+    <Compile Include="Endpoints\DocumentApiManager.cs" />
+    <Compile Include="Endpoints\AlertsManager.cs" />
+    <Compile Include="Endpoints\Alerts\AlertsClient.cs" />
+    <Compile Include="Endpoints\Alerts\DataModel\AlertResponse.cs" />
+    <Compile Include="Endpoints\Alerts\DataModel\Alert.cs" />
+    <Compile Include="Endpoints\Alerts\DataModel\ClientDefinedSearchData.cs" />
+    <Compile Include="Endpoints\Alerts\DataModel\DeleteAlertRequest.cs" />
+    <Compile Include="Endpoints\ApiClientFactory.cs" />
+    <Compile Include="Endpoints\BaseCobaltServiceClient.cs" />
+    <Compile Include="Endpoints\CaseNoteBook\CaseNoteBookClient.cs" />
+    <Compile Include="Endpoints\CaseNoteBook\DataModel\ProfileType.cs" />
+    <Compile Include="Endpoints\CaseNoteBook\DataModel\RequestStatus.cs" />
+    <Compile Include="Endpoints\CaseNoteBook\DataModel\RequestBody\CaseNotebookUrlCreatorRequest.cs" />
+    <Compile Include="Endpoints\CaseNoteBook\DataModel\RequestBody\KeyCiteFlagRequest.cs" />
+    <Compile Include="Endpoints\CaseNoteBook\DataModel\RequestBody\KeyCiteValue.cs" />
+    <Compile Include="Endpoints\CaseNoteBook\Utilities\QueryBuilder.cs" />
+    <Compile Include="Endpoints\CobaltServices\CobaltServicesClient.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\DataRoomUserProperties.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\DataroomUserProperty.cs" />
+    <Compile Include="Endpoints\CobaltServices\DataModel\ShareId.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\DocumentAnalyzer\Count.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\DocumentAnalyzer\Decorator.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\DocumentAnalyzer\Flag.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\DocumentAnalyzer\IdentifiedIssue.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\DocumentAnalyzer\Metadata.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\DocumentAnalyzer\MostNegativeCitation.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataModel\DocumentAnalyzer\NegativeOrDistinguishedByTreatmentCount.cs" />
+    <Compile Include="Endpoints\DataOrchestration\DataOrchestrationClient.cs" />
+    <Compile Include="Endpoints\DocumentAnalyzerManager.cs" />
+    <Compile Include="Endpoints\Document\DataModel\DeliveryFoUriPathInfo\FoBaseRequest.cs" />
+    <Compile Include="Endpoints\Document\DataModel\DeliveryFoUriPathInfo\FoPrivateData.cs" />
+    <Compile Include="Endpoints\Document\DataModel\DeliveryFoUriPathInfo\PageDimensions.cs" />
+    <Compile Include="Endpoints\Document\DataModel\DeliveryFoUriPathInfo\PersistedDocument.cs" />
+    <Compile Include="Endpoints\Document\DataModel\DeliveryFoUriPathInfo\Size.cs" />
+    <Compile Include="Endpoints\Document\DataModel\DeliveryFoUriPathInfo\Uri.cs" />
+    <Compile Include="Endpoints\Document\DataModel\FocusHighlighting\Concept.cs" />
+    <Compile Include="Endpoints\Document\DataModel\FocusHighlighting\DocumentV2EdgeToc.cs" />
+    <Compile Include="Endpoints\Document\DataModel\FocusHighlighting\Entry.cs" />
+    <Compile Include="Endpoints\Document\DataModel\ImageGuidsMap.cs" />
+    <Compile Include="Endpoints\Document\DataModel\ImageGuidsMapRequestModel.cs" />
+    <Compile Include="Endpoints\Document\DataModel\ImageGuidsMapResponseModel.cs" />
+    <Compile Include="Endpoints\FolderingManager.cs" />
+    <Compile Include="Endpoints\Foldering\DataModel\ChildFolder.cs" />
+    <Compile Include="Endpoints\Foldering\DataModel\Collaborator.cs" />
+    <Compile Include="Endpoints\Foldering\DataModel\CollaboratorsContainer.cs" />
+    <Compile Include="Endpoints\Gateway\DataModel\Docket\CustomPayloadModel.cs" />
+    <Compile Include="Endpoints\Gateway\DataModel\Docket\DeleteRequestsRequestModel.cs" />
+    <Compile Include="Endpoints\Gateway\DataModel\Docket\DeleteRequestsResponseModel.cs" />
+    <Compile Include="Endpoints\Gateway\DataModel\Docket\DocketRequestsResponseModel.cs" />
+    <Compile Include="Endpoints\Gateway\DataModel\Docket\RequestItemModel.cs" />
+    <Compile Include="Endpoints\Gateway\DataModel\Docket\RequestPayloadModel.cs" />
+    <Compile Include="Endpoints\Gateway\GatewayClient.cs" />
+    <Compile Include="Endpoints\Foldering\DataModel\PuiRequest.cs" />
+    <Compile Include="Endpoints\OnePass\DataModel\SignOnTokenModel.cs" />
+    <Compile Include="Endpoints\OnePass\OnePassClient.cs" />
+    <Compile Include="Endpoints\Report\DataModel\InvalidCitation.cs" />
+    <Compile Include="Endpoints\Report\DataModel\LegalIssue.cs" />
+    <Compile Include="Endpoints\Report\DataModel\LegalIssuesContainer.cs" />
+    <Compile Include="Endpoints\Report\DataModel\RelatedCase.cs" />
+    <Compile Include="Endpoints\DoGateway\DataModel\DoGatewayRequestModel.cs" />
+    <Compile Include="Endpoints\DoGateway\DataModel\DoGatewayResponceModel.cs" />
+    <Compile Include="Endpoints\DoGateway\DataModel\UserRequestsToCourtModel.cs" />
+    <Compile Include="Endpoints\DoGateway\DoGatewayClient.cs" />
+    <Compile Include="Endpoints\Report\ReportClient.cs" />
+    <Compile Include="Endpoints\Search\DataModel\Attribute.cs" />
+    <Compile Include="Endpoints\Search\DataModel\DocumentAnalyzer\RecommendationsV5\Details.cs" />
+    <Compile Include="Endpoints\Search\DataModel\DocumentAnalyzer\RecommendationsV5\Headnote.cs" />
+    <Compile Include="Endpoints\Search\DataModel\DocumentAnalyzer\RecommendationsV5\Issue.cs" />
+    <Compile Include="Endpoints\Search\DataModel\DocumentAnalyzer\RecommendationsV5\IssuesContainer.cs" />
+    <Compile Include="Endpoints\Search\DataModel\DocumentAnalyzer\RecommendationsV5\KeyNumber.cs" />
+    <Compile Include="Endpoints\Search\DataModel\DocumentAnalyzer\RecommendationsV5\RelevantPortion.cs" />
+    <Compile Include="Endpoints\Search\DataModel\DocumentAnalyzer\RecommendationsV5\SearchRecommendation.cs" />
+    <Compile Include="Endpoints\Search\DataModel\DocumentAnalyzer\StructuredReport.cs" />
+    <Compile Include="Endpoints\Search\DataModel\DynamicQa\Answer.cs" />
+    <Compile Include="Endpoints\Search\DataModel\DynamicQa\QuestionAndAnswer.cs" />
+    <Compile Include="Endpoints\Search\DataModel\DynamicQa\TopanswerResponseModel.cs" />
+    <Compile Include="Endpoints\Search\DataModel\DynamicQa\SourceDocument.cs" />
+    <Compile Include="Endpoints\Search\DataModel\FocusHighlighting\ListItem.cs" />
+    <Compile Include="Endpoints\Search\DataModel\FocusHighlighting\QueryConcept.cs" />
+    <Compile Include="Endpoints\Search\DataModel\FocusHighlighting\ResultSection.cs" />
+    <Compile Include="Endpoints\Omr\DataModel\IpAddressCheckRequestModel.cs" />
+    <Compile Include="Endpoints\Omr\DataModel\IpAddressCheckResponseModel.cs" />
+    <Compile Include="Endpoints\Omr\OmrClient.cs" />
+    <Compile Include="Endpoints\Search\DataModel\FocusHighlighting\Snippet.cs" />
+    <Compile Include="Endpoints\Search\DataModel\InvalidQueryError.cs" />
+    <Compile Include="Endpoints\TypeAhead\DataModel\V3DataModel\AthensLegalIssue.cs" />
+    <Compile Include="Endpoints\TypeAhead\DataModel\V3DataModel\AthensSuggestion.cs" />
+    <Compile Include="Endpoints\TypeAhead\DataModel\V3DataModel\Responses.cs" />
+    <Compile Include="Endpoints\TypeAhead\DataModel\V3DataModel\TypeaheadV3Response.cs" />
+    <Compile Include="Endpoints\Website\DataModel\CustomPages\AdminCustomPageModel.cs" />
+    <Compile Include="Endpoints\Website\DataModel\CustomPages\CustomPageSuperAdminModel.cs" />
+    <Compile Include="Endpoints\Website\DataModel\CustomPages\CustomPagesAclModel.cs" />
+    <Compile Include="Endpoints\Website\DataModel\CustomPages\CustomPagesCategoryPages.cs" />
+    <Compile Include="Endpoints\Website\DataModel\CustomPages\CustomPagesColumn.cs" />
+    <Compile Include="Endpoints\Website\DataModel\CustomPages\CustomPagesContent.cs" />
+    <Compile Include="Endpoints\Foldering\DataModel\FavoriteSearchItemContainer.cs" />
+    <Compile Include="Endpoints\Foldering\DataModel\FavoriteSearchItem.cs" />
+    <Compile Include="Endpoints\Foldering\DataModel\FolderDocumentsResponse.cs" />
+    <Compile Include="Endpoints\Foldering\DataModel\FolderInfo.cs" />
+    <Compile Include="Endpoints\Foldering\DataModel\FolderResponse.cs" />
+    <Compile Include="Endpoints\Foldering\DataModel\KeyciteInfo.cs" />
+    <Compile Include="Endpoints\Foldering\DataModel\KeyciteInfoContainer.cs" />
+    <Compile Include="Endpoints\Foldering\DataModel\Permissions.cs" />
+    <Compile Include="Endpoints\Foldering\DataModel\RecommendationInfoContainer.cs" />
+    <Compile Include="Endpoints\Foldering\FolderingClient.cs" />
+    <Compile Include="Endpoints\Nlu\DataModel\NluLegalAnalyticsIntentV3.cs" />
+    <Compile Include="Endpoints\Nlu\DataModel\LabelMap.cs" />
+    <Compile Include="Endpoints\Nlu\DataModel\NluIntentV3.cs" />
+    <Compile Include="Endpoints\Nlu\DataModel\LegalAnalyticsResult.cs" />
+    <Compile Include="Endpoints\Nlu\DataModel\NluTrDiscoverintentV3.cs" />
+    <Compile Include="Endpoints\Nlu\NluClient.cs" />
+    <Compile Include="Endpoints\OnePass\OnePassWebClient.cs" />
+    <Compile Include="Endpoints\Report\DataModel\DocumentKeyInfo.cs" />
+    <Compile Include="Endpoints\Report\DataModel\DocumentMetadata.cs" />
+    <Compile Include="Endpoints\Report\DataModel\DocAnalyzerAnalyzedData.cs" />
+    <Compile Include="Endpoints\Report\DataModel\FaceInfo.cs" />
+    <Compile Include="Endpoints\Report\DataModel\OrchestrationData.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Recommendation.cs" />
+    <Compile Include="Endpoints\Report\DataModel\RelevantPortionData.cs" />
+    <Compile Include="Endpoints\Report\DataModel\Section.cs" />
+    <Compile Include="Endpoints\Search\DataModel\QueryValidateResponse.cs" />
+    <Compile Include="Endpoints\Search\DataModel\SearchResultResponse.cs" />
+    <Compile Include="Endpoints\Search\DataModel\SearchStartResponse.cs" />
+    <Compile Include="Endpoints\Search\DataModel\TrdLa\DefaultSortTypes.cs" />
+    <Compile Include="Endpoints\Search\DataModel\TrdLa\SearchStartRequest.cs" />
+    <Compile Include="Endpoints\Search\DataModel\TrdLa\ValidateQueryRequest.cs" />
+    <Compile Include="Endpoints\Search\SearchClient.cs" />
+    <Compile Include="Endpoints\TypeAhead\DataModel\V2DataModel\Admindecision.cs" />
+    <Compile Include="Endpoints\TypeAhead\DataModel\V2DataModel\Case.cs" />
+    <Compile Include="Endpoints\TypeAhead\DataModel\V2DataModel\CategoryPage.cs" />
+    <Compile Include="Endpoints\TypeAhead\DataModel\V2DataModel\CurrentSuggestion.cs" />
+    <Compile Include="Endpoints\TypeAhead\DataModel\V2DataModel\DefaultFilter.cs" />
+    <Compile Include="Endpoints\TypeAhead\DataModel\V2DataModel\DisplayCitation.cs" />
+    <Compile Include="Endpoints\TypeAhead\DataModel\V2DataModel\Highlight.cs" />
+    <Compile Include="Endpoints\TypeAhead\DataModel\V2DataModel\LegalAnalytics.cs" />
+    <Compile Include="Endpoints\TypeAhead\DataModel\V2DataModel\Lpa.cs" />
+    <Compile Include="Endpoints\TypeAhead\DataModel\V2DataModel\LpaAddress.cs" />
+    <Compile Include="Endpoints\TypeAhead\DataModel\V2DataModel\Oa.cs" />
+    <Compile Include="Endpoints\TypeAhead\DataModel\V2DataModel\OaAddress.cs" />
+    <Compile Include="Endpoints\TypeAhead\DataModel\V2DataModel\OtherCourtDocument.cs" />
+    <Compile Include="Endpoints\TypeAhead\DataModel\V2DataModel\Responses.cs" />
+    <Compile Include="Endpoints\TypeAhead\DataModel\V2DataModel\Trdiscover.cs" />
+    <Compile Include="Endpoints\TypeAhead\DataModel\V2DataModel\TypeaheadV2Request.cs" />
+    <Compile Include="Endpoints\TypeAhead\DataModel\V2DataModel\TypeaheadV2Responce.cs" />
+    <Compile Include="Endpoints\TypeAhead\TypeAheadClient.cs" />
+    <Compile Include="Endpoints\WebsiteManager.cs" />
+    <Compile Include="Endpoints\Website\DataModel\AdditionalParms.cs" />
+    <Compile Include="Endpoints\Website\DataModel\CustomPages\CustomPageModel.cs" />
+    <Compile Include="Endpoints\Website\DataModel\CustomPages\CustomPagesLayout.cs" />
+    <Compile Include="Endpoints\Website\DataModel\CustomPages\CustomPagesPermissions.cs" />
+    <Compile Include="Endpoints\Website\DataModel\CustomPages\CustomPagesSection.cs" />
+    <Compile Include="Endpoints\Website\DataModel\CustomPages\CustomPagesSectionModel.cs" />
+    <Compile Include="Endpoints\Website\DataModel\CustomPages\CustomPagesValue.cs" />
+    <Compile Include="Endpoints\Website\DataModel\DocketBatchInfoModel.cs" />
+    <Compile Include="Endpoints\Website\DataModel\DynamicQa\RefreshQuestionRequest.cs" />
+    <Compile Include="Endpoints\Website\DataModel\DynamicQa\RefreshQuestionResponse.cs" />
+    <Compile Include="Endpoints\Website\DataModel\DynamicQa\RefreshQuestionV2ResponseModel.cs" />
+    <Compile Include="Endpoints\Website\DataModel\PdfBatchDownloadStatusModel.cs" />
+    <Compile Include="Endpoints\Website\DataModel\DocketsPdfsBatchInfoModel.cs" />
+    <Compile Include="Endpoints\Website\DataModel\PdfsSubmitionStatusModel.cs" />
+    <Compile Include="Endpoints\Website\DataModel\PortalManagerItemModel.cs" />
+    <Compile Include="Endpoints\SecurityHeaderFactory.cs" />
+    <Compile Include="Endpoints\CobaltSessionManager.cs" />
+    <Compile Include="Endpoints\Uds\DataModel\AccessControlsMap.cs" />
+    <Compile Include="Endpoints\Uds\DataModel\Application.cs" />
+    <Compile Include="Endpoints\Uds\DataModel\Client.cs" />
+    <Compile Include="Endpoints\Uds\DataModel\ClientStatusModifiedBy.cs" />
+    <Compile Include="Endpoints\Uds\DataModel\Contact.cs" />
+    <Compile Include="Endpoints\Uds\DataModel\ContactsInfo.cs" />
+    <Compile Include="Endpoints\Uds\DataModel\DnsEntries.cs" />
+    <Compile Include="Endpoints\Uds\DataModel\Feature.cs" />
+    <Compile Include="Endpoints\Uds\DataModel\FeatureResourcePermissions.cs" />
+    <Compile Include="Endpoints\Uds\DataModel\FeaturesGroup.cs" />
+    <Compile Include="Endpoints\Uds\DataModel\Pagination.cs" />
+    <Compile Include="Endpoints\Uds\DataModel\SessionBindings.cs" />
+    <Compile Include="Endpoints\Uds\DataModel\UserByInfo.cs" />
+    <Compile Include="Endpoints\Uds\DataModel\UserInformation.cs" />
+    <Compile Include="Endpoints\Uds\DataModel\WorkProductTokenResponse.cs" />
+    <Compile Include="Endpoints\Website\DataModel\Products\Concourse\Matter.cs" />
+    <Compile Include="Endpoints\Website\DataModel\Products\Concourse\MatterParticipant.cs" />
+    <Compile Include="Endpoints\Website\DataModel\Products\Concourse\TrashItem.cs" />
+    <Compile Include="Endpoints\Website\DataModel\Products\Concourse\Permissions.cs" />
+    <Compile Include="Endpoints\Website\DataModel\Products\Concourse\UserMattersModel.cs" />
+    <Compile Include="Endpoints\Website\DataModel\Products\Concourse\UserTrashItemsModel.cs" />
+    <Compile Include="Endpoints\Website\DataModel\DocketBatchUpdatingModel.cs" />
+    <Compile Include="Endpoints\Website\DataModel\DynamicQa\RefreshQuestionsV2RequestModel.cs" />
+    <Compile Include="Endpoints\Website\WebsiteClient.cs" />
+    <Compile Include="Endpoints\Website\WebsiteSessionClient.cs" />
+    <Compile Include="Endpoints\WestKM\DataModel\CiteRecognition\CiteRecognition.cs" />
+    <Compile Include="Endpoints\WestKM\DataModel\CiteRecognition\FirstChild.cs" />
+    <Compile Include="Endpoints\WestKM\DataModel\CiteRecognition\Response.cs" />
+    <Compile Include="Endpoints\WestKM\DataModel\CiteRecognition\RootCiteRecognition.cs" />
+    <Compile Include="Endpoints\WestKM\DataModel\KeyCiteFlag\CitationInfo.cs" />
+    <Compile Include="Endpoints\WestKM\DataModel\KeyCiteFlag\KeyCiteFlagModel.cs" />
+    <Compile Include="Endpoints\WestKM\DataModel\Validate\Header.cs" />
+    <Compile Include="Endpoints\WestKM\DataModel\Validate\User.cs" />
+    <Compile Include="Endpoints\WestKM\DataModel\Validate\ValidateModel.cs" />
+    <Compile Include="Endpoints\WestKM\WestKmClient.cs" />
+    <Compile Include="Enums\JudicialTabOption.cs" />
+    <Compile Include="Enums\KeyCiteFlagResponseType.cs" />
+    <Compile Include="Enums\PreferenceName.cs" />
+    <Compile Include="Enums\Uds\UdsSessionExpiresReason.cs" />
+    <Compile Include="Enums\Uds\UdsSessionStatus.cs" />
+    <Compile Include="Enums\Uds\UdsSessionType.cs" />
+    <Compile Include="Enums\VerticalName.cs" />
+    <Compile Include="Interfaces\IRequestBuilder.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Raw\IPhoneMode\Constants\Constants.cs" />
+    <Compile Include="Raw\IPhoneMode\Constants\PracticeAreaIdsEnum.cs" />
+    <Compile Include="Raw\IPhoneMode\Constants\PracticeAreaNamesEnum.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Requests\CreatePracticeAreaAlertsRequest.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Requests\DeleteAlertsRequest.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Requests\GenericRequest.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Requests\GroupedAlertsRequest.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Requests\IRequest.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Requests\ListPracticeAreaRequest.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Requests\NotificationConverterRequest.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Requests\NotificationsRequest.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Requests\PracticeAreaNewsAnalysisRequest.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Requests\PracticeAreasNewAnalysisListRequest.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Requests\SearchSortRequest.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Requests\SearchUsingGuidRequest.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Requests\SignOnParams.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Requests\TrackCompanyAlertsRequest.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Requests\UpdatePushNotificationFlagsRequest.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Responses\AlertsByFacetsResponse.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Responses\CreatePracticeAreaAlertsResponse.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Responses\DeleteAlertsResponse.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Responses\GroupedAlertsResponse.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Responses\IResponse.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Responses\NotifcationsResponse.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Responses\PracticeAreaNewsResponse.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Responses\SearchSortResponse.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Responses\SearchUsingGuidResponse.cs" />
+    <Compile Include="Raw\IPhoneMode\Models\Responses\UpdatePushNotificationFlagsResponse.cs" />
+    <Compile Include="Raw\IPhoneMode\Services\AlertsService.cs" />
+    <Compile Include="Raw\IPhoneMode\Services\GenericService.cs" />
+    <Compile Include="Raw\IPhoneMode\Services\SearchService.cs" />
+    <Compile Include="Raw\IPhoneMode\Services\WebContentService.cs" />
+    <Compile Include="Raw\IPhoneMode\Utilities\ContractValidations.cs" />
+    <Compile Include="Raw\IPhoneMode\Utilities\Enums\CobaltApplication.cs" />
+    <Compile Include="Raw\IPhoneMode\Utilities\Enums\CobaltEnvironment.cs" />
+    <Compile Include="Raw\IPhoneMode\Utilities\HttpRequestUtil.cs" />
+    <Compile Include="Raw\IPhoneMode\Utilities\JsonUtilities.cs" />
+    <Compile Include="Raw\IPhoneMode\Utilities\SessionUtil.cs" />
+    <Compile Include="Raw\IPhoneMode\Utilities\UdsSession.cs" />
+    <Compile Include="Raw\IPhoneMode\Utilities\WebServiceExtensions.cs" />
+    <Compile Include="Raw\IPhoneMode\Utilities\WebsiteClientIdEndpoint.cs" />
+    <Compile Include="Raw\IPhoneMode\Utilities\WebsiteSessionEndpoint.cs" />
+    <Compile Include="Tests\BaseApiRegressionTest.cs" />
+    <Compile Include="Tests\BaseApiTest.cs" />
+    <Compile Include="Utilities\DeliveryUtilities.cs" />
+    <Compile Include="Endpoints\Document\DataModel\DocumentDeliveryFoUriPathInfo.cs" />
+    <Compile Include="Endpoints\Document\DataModel\DocumentDeliveryInfo.cs" />
+    <Compile Include="Endpoints\Document\DataModel\DocumentFormattedReference\DocFormattedReference.cs" />
+    <Compile Include="Endpoints\Document\DataModel\DocumentFormattedReference\FormattedReference.cs" />
+    <Compile Include="Endpoints\Document\DataModel\DocumentLinkServiceResponse.cs" />
+    <Compile Include="Endpoints\Document\DataModel\DocumentMetaInfo.cs" />
+    <Compile Include="Endpoints\Document\DataModel\DocumentProfile.cs" />
+    <Compile Include="Endpoints\Document\DataModel\FoOptions.cs" />
+    <Compile Include="Endpoints\Document\DataModel\KnosItems.cs" />
+    <Compile Include="Endpoints\Document\DocumentExternalLinks.cs" />
+    <Compile Include="Endpoints\Document\DocumentFo.cs" />
+    <Compile Include="Endpoints\Document\DocumentFormattedReferenceCall.cs" />
+    <Compile Include="Endpoints\DocPersist\DocPersistClient.cs" />
+    <Compile Include="Endpoints\Document\DataModel\Constants\DocumentConstants.cs" />
+    <Compile Include="Endpoints\Document\DocumentClient.cs" />
+    <Compile Include="Endpoints\Uds\DataModel\FullDocumentResponse.cs" />
+    <Compile Include="Endpoints\Uds\DataModel\SessionEndedStatus.cs" />
+    <Compile Include="Endpoints\Uds\UdsSessionClient.cs" />
+    <Compile Include="Endpoints\DataModel\CookieInfo.cs" />
+    <Compile Include="Endpoints\Uds\DataModel\UdsSessionInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Raw\BusinessLawTransition\Enums\ResultListErrorResponseType.cs" />
+    <Compile Include="Raw\BusinessLawTransition\Enums\ResultListResponseType.cs" />
+    <Compile Include="Raw\BusinessLawTransition\Utilities\HttpRequestUtil.cs" />
+    <Compile Include="Raw\Foldering\Utilities\Foldering\Child.cs" />
+    <Compile Include="Raw\Foldering\Utilities\Foldering\HttpRequestUtil.cs" />
+    <Compile Include="Raw\Foldering\Utilities\JsonUtil.cs" />
+    <Compile Include="Raw\Search\Enums\MetadocField.cs" />
+    <Compile Include="Raw\Search\Enums\NovusEnvironment.cs" />
+    <Compile Include="Raw\Search\Enums\NovusField.cs" />
+    <Compile Include="Raw\Search\Utils\BaseNovusUtility.cs" />
+    <Compile Include="Raw\Search\Utils\MetadocRetriever.cs" />
+    <Compile Include="Raw\Search\Utils\NovusSearchUtility.cs" />
+    <Compile Include="Raw\BusinessLawTransition\Contracts\ContractValidations.cs" />
+    <Compile Include="Raw\BusinessLawTransition\Contracts\ExperianBusinessCreditContracts\EbcCreateDocumentContract.cs" />
+    <Compile Include="Raw\BusinessLawTransition\Contracts\ExperianBusinessCreditContracts\EbcGetDocumentContract.cs" />
+    <Compile Include="Raw\BusinessLawTransition\Contracts\ExperianBusinessCreditContracts\EbcGetDocumentRequest.cs" />
+    <Compile Include="Raw\BusinessLawTransition\Contracts\ExperianBusinessCreditContracts\EbcMetaDataContract.cs" />
+    <Compile Include="Raw\BusinessLawTransition\Contracts\ExperianBusinessCreditContracts\EbcResultListContract.cs" />
+    <Compile Include="Raw\BusinessLawTransition\Contracts\ExperianBusinessCreditContracts\EbcResultListErrorContract.cs" />
+    <Compile Include="Raw\BusinessLawTransition\Contracts\IContract.cs" />
+    <Compile Include="Raw\BusinessLawTransition\Contracts\SecurityTokenContract.cs" />
+    <Compile Include="Raw\BusinessLawTransition\Requests\ExperianBusinessCreditRequests\EbcCreateDocumentRequest.cs" />
+    <Compile Include="Raw\BusinessLawTransition\Requests\ExperianBusinessCreditRequests\EbcResultsListRequest.cs.cs" />
+    <Compile Include="Raw\BusinessLawTransition\Requests\IRequest.cs" />
+    <Compile Include="Raw\BusinessLawTransition\Requests\SecurityTokenRequest.cs" />
+    <Compile Include="Raw\BusinessLawTransition\Services\DoGatewayV1.cs" />
+    <Compile Include="Raw\BusinessLawTransition\Services\ExperianBusinessCreditServices\ExperianBusinessCreditDoApi.cs" />
+    <Compile Include="Raw\BusinessLawTransition\Services\SecurityService.cs" />
+    <Compile Include="Utilities\ExecutionFlagExtension.cs" />
+    <Compile Include="Utilities\Image\ZipFileHelper.cs" />
+    <Compile Include="Utilities\JsonUtilities.cs" />
+    <Compile Include="Utilities\NluJsonConverter.cs" />
+    <Compile Include="Utilities\RequestBuilder.cs" />
+    <Compile Include="Utilities\RequestArguments.cs" />
+    <Compile Include="Utilities\RestClientExtensions.cs" />
+    <Compile Include="Utilities\StringWriterWithEncoding.cs" />
+    <Compile Include="Utilities\XmlUtility.cs" />
+    <Compile Include="Web References\OnePassV3\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Endpoints\DocPersist\DataModel\" />
+    <Folder Include="Endpoints\Website\DataModel\Products\Shared\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Framework.Common.UI\Resources\EnumPropertyMaps\FeatureAccessControlInfo.json">
+      <Link>FeatureAccessControlInfo.json</Link>
+    </None>
+    <None Include="..\Framework.Common.UI\Resources\EnumPropertyMaps\KeyCiteFlagInfo.json">
+      <Link>Resources\EnumPropertyMaps\KeyCiteFlagInfo.json</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Framework.Common.UI\Resources\EnumPropertyMaps\RoutingSettingDropdownInfo.json">
+      <Link>RoutingSettingDropdownInfo.json</Link>
+    </None>
+    <None Include="..\Framework.Common.UI\Resources\EnumPropertyMaps\SupportedFeaturesInfo.json">
+      <Link>SupportedFeaturesInfo.json</Link>
+    </None>
+    <None Include="app.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\EnumPropertyMaps\DataRoomUserPropertiesInfo.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\EnumPropertyMaps\ProfileTypeInfo.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\EnumPropertyMaps\UdsSessionExpiresReasonInfo.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\EnumPropertyMaps\MetadocFieldInfo.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\EnumPropertyMaps\NovusFieldInfo.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Web References\OnePassV3\AddProfileEPaymentMethodResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\AuthenticateResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\AuthenticateSignonTokenResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\AuthenticateSponsorResourceTokenResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\AuthenticateSponsorTokenResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\AuthenticateTransferTokenResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\AuthenticationReportResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\CreateOpenTokenResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\CreateServiceProfileResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\CreateSignonTokenResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OnePassV3\CreateTemporaryProfileResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\CreateTokenResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\CreateTraceTokenResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\ExistsResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\FindProfilesResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\LocateRegistrationKeyResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\OnePassServiceWS.wsdl" />
+    <None Include="Web References\OnePassV3\ProfileListResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\OnePassV3\Response.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\RetrieveApiKeyResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\RetrieveIPInitiatedRegistrationKeyResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\RetrieveOAuthProviderAccessInformationResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\RetrievePingContextResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\RetrieveProductInformationResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\RetrieveProfileElectronicPaymentsResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\RetrieveProfileResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\RetrieveSponsorInformationResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\RetrieveUpdatesResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\RetrieveViewProductInformationResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\SendForgottenPasswordResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnePassV3\ValidateSponsorInformationResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Framework.Core\Framework.Core.csproj">
+      <Project>{91a989ae-62db-4883-b528-3f0dcee80f4b}</Project>
+      <Name>Framework.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://onepassservices.dev.westlaw.com/onepass.ws/v3%3fSingleWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\OnePassV3\</RelPath>
+      <UpdateFromURL>http://onepassservices.dev.westlaw.com/onepass.ws/v3%3fSingleWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Framework_Common_Api_OnePassV3_OnePassServiceWS</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="$(SolutionDir)packages\AWSSDK.SecretsManager.3.7.1.71\analyzers\dotnet\cs\AWSSDK.SecretsManager.CodeAnalysis.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

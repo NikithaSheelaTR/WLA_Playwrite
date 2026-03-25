@@ -1,0 +1,42 @@
+﻿{
+  // Maps PatentTextMateGridColumns to WebElementInfo
+  "ClaimExample": {
+    "LocatorString": "//th[@class='co_detailsTable_matchingClaim']",
+    "LocatorMask": ""
+  },
+
+  "FiledDate": {
+    "LocatorString": "//th[contains(@class,'co_detailsTable_issueDate') and text() = 'Filed Date']",
+    "locatorMask": "//td[contains(@class,'co_detailsTable_issueDate') and (position() = 4)]"
+  },
+
+  "GrantedDate": {
+    "LocatorString": "//th[contains(@class,'co_detailsTable_issueDate') and text() = 'Granted Date']",
+    "locatorMask": "//td[contains(@class,'co_detailsTable_issueDate') and (position() = 3)]"
+  },
+
+  "Inventor": {
+    "LocatorString": "//th[@class='co_detailsTable_inventor']",
+    "LocatorMask": ""
+  },
+
+  "Owner": {
+    "LocatorString": "//th[contains(@class,'co_detailsTable_owner')]",
+    "LocatorMask": "//td[(@class='co_detailsTable_owner')]"
+  },
+
+  "SelectAll": {
+    "LocatorString": "//th[@class='co_detailsTable_select']",
+    "LocatorMask": ""
+  },
+
+  "Title": {
+    "LocatorString": "//th[contains(@class,'co_detailsTable_title')]",
+    "LocatorMask": "//td[contains(@class,'co_detailsTable_content')]//a[contains(@class,'co_relatedInfo')]"
+  },
+
+  "UsClass": {
+    "LocatorString": "//th[@class='co_detailsTable_usClasses']",
+    "LocatorMask": ""
+  }
+}

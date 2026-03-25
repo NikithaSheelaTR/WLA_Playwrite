@@ -1,0 +1,994 @@
+﻿{
+  // Maps Jurisdiction to JurisdictionInfo
+  "AllStates": {
+    "JurisdictionName": "All States",
+    "IsFederal": "false",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "All States"
+  },
+  "Alabama": {
+    "JurisdictionName": "Alabama",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Alabama"
+  },
+  "Alaska": {
+    "JurisdictionName": "Alaska",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Alaska"
+  },
+  "Arizona": {
+    "JurisdictionName": "Arizona",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Arizona"
+  },
+  "Arkansas": {
+    "JurisdictionName": "Arkansas",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Arkansas"
+  },
+  "BritishColumbia": {
+    "JurisdictionName": "British Columbia",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "British Columbia"
+  },
+  "California": {
+    "JurisdictionName": "California",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "California"
+  },
+  "Colorado": {
+    "JurisdictionName": "Colorado",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Colorado"
+  },
+  "Connecticut": {
+    "JurisdictionName": "Connecticut",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Connecticut"
+  },
+  "CourtsOfAppeals": {
+    "JurisdictionName": "Courts Of Appeals",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "Courts Of Appeals"
+  },
+  "Delaware": {
+    "JurisdictionName": "Delaware",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Delaware"
+  },
+  "DistrictOfColumbia": {
+    "JurisdictionName": "D.C.",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "D.C."
+  },
+  "Florida": {
+    "JurisdictionName": "Florida",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Florida"
+  },
+  "Georgia": {
+    "JurisdictionName": "Georgia",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Georgia"
+  },
+  "Hawaii": {
+    "JurisdictionName": "Hawaii",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Hawaii"
+  },
+  "Idaho": {
+    "JurisdictionName": "Idaho",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Idaho"
+  },
+  "Illinois": {
+    "JurisdictionName": "Illinois",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Illinois"
+  },
+  "Indiana": {
+    "JurisdictionName": "Indiana",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Indiana"
+  },
+  "Iowa": {
+    "JurisdictionName": "Iowa",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Iowa"
+  },
+  "Kansas": {
+    "JurisdictionName": "Kansas",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Kansas"
+  },
+  "Kentucky": {
+    "JurisdictionName": "Kentucky",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Kentucky"
+  },
+  "Louisiana": {
+    "JurisdictionName": "Louisiana",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Louisiana"
+  },
+  "Maine": {
+    "JurisdictionName": "Maine",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Maine"
+  },
+  "Maryland": {
+    "JurisdictionName": "Maryland",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Maryland"
+  },
+  "Massachusetts": {
+    "JurisdictionName": "Massachusetts",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Massachusetts"
+  },
+  "Michigan": {
+    "JurisdictionName": "Michigan",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Michigan"
+  },
+  "Minnesota": {
+    "JurisdictionName": "Minnesota",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Minnesota"
+  },
+  "Mississippi": {
+    "JurisdictionName": "Mississippi",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Mississippi"
+  },
+  "Missouri": {
+    "JurisdictionName": "Missouri",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Missouri"
+  },
+  "Montana": {
+    "JurisdictionName": "Montana",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Montana"
+  },
+  "National": {
+    "JurisdictionName": "National",
+    "IsFederal": "false",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "National"
+  },
+  "Nebraska": {
+    "JurisdictionName": "Nebraska",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Nebraska"
+  },
+  "Nevada": {
+    "JurisdictionName": "Nevada",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Nevada"
+  },
+  "NewHampshire": {
+    "JurisdictionName": "New Hampshire",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "New Hampshire"
+  },
+  "NewJersey": {
+    "JurisdictionName": "New Jersey",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "New Jersey"
+  },
+  "NewMexico": {
+    "JurisdictionName": "New Mexico",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "New Mexico"
+  },
+  "NewYork": {
+    "JurisdictionName": "New York",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "New York"
+  },
+  "NorthCarolina": {
+    "JurisdictionName": "North Carolina",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "North Carolina"
+  },
+  "NorthDakota": {
+    "JurisdictionName": "North Dakota",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "North Dakota"
+  },
+  "Ohio": {
+    "JurisdictionName": "Ohio",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Ohio"
+  },
+  "Oklahoma": {
+    "JurisdictionName": "Oklahoma",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Oklahoma"
+  },
+  "Oregon": {
+    "JurisdictionName": "Oregon",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Oregon"
+  },
+  "Pennsylvania": {
+    "JurisdictionName": "Pennsylvania",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Pennsylvania"
+  },
+  "RhodeIsland": {
+    "JurisdictionName": "Rhode Island",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Rhode Island"
+  },
+  "SouthCarolina": {
+    "JurisdictionName": "South Carolina",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "South Carolina"
+  },
+  "SouthDakota": {
+    "JurisdictionName": "South Dakota",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "South Dakota"
+  },
+  "Tennessee": {
+    "JurisdictionName": "Tennessee",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Tennessee"
+  },
+  "Texas": {
+    "JurisdictionName": "Texas",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Texas"
+  },
+  "Utah": {
+    "JurisdictionName": "Utah",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Utah"
+  },
+  "Vermont": {
+    "JurisdictionName": "Vermont",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Vermont"
+  },
+  "Virginia": {
+    "JurisdictionName": "Virginia",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Virginia"
+  },
+  "Washington": {
+    "JurisdictionName": "Washington",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Washington"
+  },
+  "WestVirginia": {
+    "JurisdictionName": "West Virginia",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "West Virginia"
+  },
+  "Wisconsin": {
+    "JurisdictionName": "Wisconsin",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Wisconsin"
+  },
+  "Wyoming": {
+    "JurisdictionName": "Wyoming",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Wyoming"
+  },
+  "Tribal": {
+    "JurisdictionName": "Tribal",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Tribal"
+  },
+  "Guam": {
+    "JurisdictionName": "Guam",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Guam"
+  },
+  "PuertoRico": {
+    "JurisdictionName": "Puerto Rico",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Puerto Rico"
+  },
+  "VirginIslands": {
+    "JurisdictionName": "Virgin Islands",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Virgin Islands"
+  },
+  "NorthernMarianaIslands": {
+    "JurisdictionName": "Northern Mariana Islands",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Northern Mariana Islands"
+  },
+  "AllFederal": {
+    "JurisdictionName": "All Federal",
+    "IsFederal": "false",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "All Federal"
+  },
+  "Federal": {
+    "JurisdictionName": "Federal",
+    "IsFederal": "false",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "false",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "Federal"
+  },
+  "UnitedStatesSupremeCourt": {
+    "JurisdictionName": "United States Supreme Court",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "United States Supreme Court"
+  },
+  "UnitedStatesCourtsOfAppeals": {
+    "JurisdictionName": "U.S. Courts of Appeals",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "false",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "U.S. Courts of Appeals"
+  },
+  "FederalCourtsOfAppeal": {
+    "JurisdictionName": "Federal Courts of Appeals",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Federal Courts of Appeals"
+  },
+  "FederalDistrictCourts": {
+    "JurisdictionName": "Federal District Courts",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Federal District Courts"
+  },
+  "FederalBankruptcyCourts": {
+    "JurisdictionName": "Federal Bankruptcy Courts",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "false",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "Federal Bankruptcy Courts"
+  },
+  "BankruptcyCourts": {
+    "JurisdictionName": "Bankruptcy Courts",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Bankruptcy Courts"
+  },
+  "TaxCourt": {
+    "JurisdictionName": "Tax Court",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Tax Court"
+  },
+  "MilitaryCourts": {
+    "JurisdictionName": "Military Courts",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Military Courts"
+  },
+  "CourtOfChancery": {
+    "JurisdictionName": "Court Of Chancery",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "false",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "Court Of Chancery"
+  },
+  "FirstCircuit": {
+    "JurisdictionName": "1st Circuit",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "1st Circuit"
+  },
+  "SecondCircuit": {
+    "JurisdictionName": "2nd Circuit",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "2nd Circuit"
+  },
+  "ThirdCircuit": {
+    "JurisdictionName": "3rd Circuit",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "3rd Circuit"
+  },
+  "ForthCircuit": {
+    "JurisdictionName": "4th Circuit",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "4th Circuit"
+  },
+  "FifthCircuit": {
+    "JurisdictionName": "5th Circuit",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "5th Circuit"
+  },
+  "SixthCircuit": {
+    "JurisdictionName": "6th Circuit",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "6th Circuit"
+  },
+  "SeventhCircuit": {
+    "JurisdictionName": "7th Circuit",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "7th Circuit"
+  },
+  "EigthCircuit": {
+    "JurisdictionName": "8th Circuit",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "8th Circuit"
+  },
+  "NinthCircuit": {
+    "JurisdictionName": "9th Circuit",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "9th Circuit"
+  },
+  "TenthCircuit": {
+    "JurisdictionName": "10th Circuit",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "10th Circuit"
+  },
+  "EleventhCircuit": {
+    "JurisdictionName": "11th Circuit",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "11th Circuit"
+  },
+  "DistrictOfColumbiaCircuit": {
+    "JurisdictionName": "D.C. Circuit",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "D.C. Circuit"
+  },
+  "FederalCircuit": {
+    "JurisdictionName": "Federal Circuit",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Federal Circuit"
+  },
+  "IncludeRelatedFederal": {
+    "JurisdictionName": "Include Related Federal",
+    "IsFederal": "false",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "Include Related Federal",
+    "LocatorString": "//div[@id='co_includeStateWithFederal']/input[@type='checkbox']"
+  },
+  "NoFederal": {
+    "JurisdictionName": "No Federal",
+    "IsFederal": "false",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "false",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "No Federal"
+  },
+  "NoState": {
+    "JurisdictionName": "No States",
+    "IsFederal": "false",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "false",
+    "IsAvailableOnWlnMobileSite": "true",
+    "Text": "No States"
+  },
+  "State": {
+    "JurisdictionName": "State",
+    "IsFederal": "false",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "false",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "State"
+  },
+  "DistrictCourts": {
+    "JurisdictionName": "District Courts",
+    "IsFederal": "false",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "false",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "District Courts"
+  },
+  "TerritoryVirginIslands": {
+    "JurisdictionName": "Territory Virgin Islands",
+    "IsFederal": "false",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "false",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "Territory Virgin Islands"
+  },
+  "Ocaho": {
+    "JurisdictionName": "Office of the Chief Administrative Hearing Officer",
+    "IsFederal": "false",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "false",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "Office of the Chief Administrative Hearing Officer"
+  },
+  "Acmr": {
+    "JurisdictionName": "ACMR",
+    "IsFederal": "false",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "false",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "ACMR"
+  },
+  "Cma": {
+    "JurisdictionName": "CMA",
+    "IsFederal": "false",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "false",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "CMA"
+  },
+  "UsArmedForces": {
+    "JurisdictionName": "U.S. Armed Forces",
+    "IsFederal": "false",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "false",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "U.S. Armed Forces"
+  },
+  "Ncmr": {
+    "JurisdictionName": "NCMR",
+    "IsFederal": "false",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "false",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "NCMR"
+  },
+  "NmCtCrimApp": {
+    "JurisdictionName": "N.M.Ct.Crim.App.",
+    "IsFederal": "false",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "false",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "N.M.Ct.Crim.App."
+  },
+  "ArmyCtCrimApp": {
+    "JurisdictionName": "Army Ct.Crim.App.",
+    "IsFederal": "false",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "false",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "Army Ct.Crim.App."
+  },
+  "MilitaryRegs": {
+    "JurisdictionName": "Military Regs",
+    "IsFederal": "false",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "false",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "Military Regs"
+  },
+  "AustralianCapitalTerritory": {
+    "JurisdictionName": "Australian Capital Territory",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "Australian Capital Territory"
+  },
+  "NewSouthWales": {
+    "JurisdictionName": "New South Wales",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "New South Wales"
+  },
+  "NorthernTerritory": {
+    "JurisdictionName": "Northern Territory",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "Northern Territory"
+  },
+  "Queensland": {
+    "JurisdictionName": "Queensland",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "Queensland"
+  },
+  "SouthAustralia": {
+    "JurisdictionName": "South Australia",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "South Australia"
+  },
+  "Tasmania": {
+    "JurisdictionName": "Tasmania",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "Tasmania"
+  },
+  "Victoria": {
+    "JurisdictionName": "Victoria",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "Victoria"
+  },
+  "WesternAustralia": {
+    "JurisdictionName": "Western Australia",
+    "IsFederal": "false",
+    "IsState": "true",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "Western Australia"
+  },
+  "HighCourtOfAustralia": {
+    "JurisdictionName": "High Court of Australia",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "High Court of Australia"
+  },
+  "FederalCourtOfAustralia": {
+    "JurisdictionName": "Federal Court of Australia",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "Federal Court of Australia"
+  },
+  "FamilyCourtOfAustralia": {
+    "JurisdictionName": "Family Court of Australia",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "Family Court of Australia"
+  },
+  "FederalCircuitCourtOfAustralia": {
+    "JurisdictionName": "Federal Circuit Court of Australia",
+    "IsFederal": "true",
+    "IsState": "false",
+    "IsValidSearchJurisdiction": "true",
+    "IsAvailableOnWlnFullSite": "true",
+    "IsAvailableOnWlnMobileSite": "false",
+    "Text": "Federal Circuit Court of Australia"
+  }
+}

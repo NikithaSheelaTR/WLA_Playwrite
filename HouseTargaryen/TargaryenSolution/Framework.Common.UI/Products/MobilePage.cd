@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Framework.Common.UI.Pages.Mobile.MobileBasePage" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgIAAAAAAAAAAAAAgAQgCAAAACAAAAAgEAAAUACiCA=</HashCode>
+      <FileName>Pages\Mobile\MobileBasePage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.BaseModuleRegressionPage" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgBAAAAAAIACAAAAAAgAhAAEIACAAEEAAACAAEAAAo=</HashCode>
+      <FileName>Pages\BaseModuleRegressionPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TRGR.Quality.QedArsenal.QualityLibrary.WebDriver.Pages.BasePage" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.AddNotePage" Collapsed="true">
+    <Position X="1.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAYAAAAAAAAAAACAAABACgAAAAAAAAAAAAEDAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\AddNotePage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.AdministrativeDecisionsAndGuidancePage" Collapsed="true">
+    <Position X="3.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABgAAAAAAAAEAAABAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\AdministrativeDecisionsAndGuidancePage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.AppellateCourtDocumentsPage" Collapsed="true">
+    <Position X="5.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAQAAQAAAEAAAAAAAAAACAgAAAAAAEAIAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\AppellateCourtDocumentsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.ArbitrationAwardsPage" Collapsed="true">
+    <Position X="7.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAABAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\ArbitrationAwardsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.BillDraftsPage" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAABAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\BillDraftsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.BrowsePages.BrowseCasesPage" Collapsed="true">
+    <Position X="11.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\BrowsePages\BrowseCasesPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.BrowsePages.BrowseContentPage" Collapsed="true">
+    <Position X="13.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Pages\Mobile\BrowsePages\BrowseContentPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.BrowsePages.BrowseStatutesPage" Collapsed="true">
+    <Position X="15.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\BrowsePages\BrowseStatutesPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.CasesCategoryPage" Collapsed="true">
+    <Position X="17.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\CasesCategoryPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.ChangeJurisdictionPage" Collapsed="true">
+    <Position X="19" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAQAAAAAAAgAAAAAAgQAAAAAAAEAACABAAAAOA=</HashCode>
+      <FileName>Pages\Mobile\ChangeJurisdictionPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.CitingReferencesCasesPage" Collapsed="true">
+    <Position X="20.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAABBAAAABAAACAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\CitingReferencesCasesPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.CitingReferencesPage" Collapsed="true">
+    <Position X="22.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgCAiAAABAIFICCAAAAAhAAAAABIEC0AAABABgQAA=</HashCode>
+      <FileName>Pages\Mobile\CitingReferencesPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.CitingReferencesSecondarySourcesPage" Collapsed="true">
+    <Position X="24.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAQAAAAEBAAAAAAIAAAAAAAEAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\CitingReferencesSecondarySourcesPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.CommonMobileClientIdPage" Collapsed="true">
+    <Position X="26" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAgAAAAAAAAQQAAAAQAAAAAAAEAAACBAAAgQA=</HashCode>
+      <FileName>Pages\Mobile\CommonMobileClientIdPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.CommonMobileHomePage" Collapsed="true">
+    <Position X="28" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JBABAAIAAUgACGAAcBAACAAEUCCAgAEEAoEAAgAAAAA=</HashCode>
+      <FileName>Pages\Mobile\CommonMobileHomePage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.CommonMobileSignOnPage" Collapsed="true">
+    <Position X="30" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAQAAAAAAAIACAABgAAAABACAAEAAEAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\CommonMobileSignOnPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.ContextAndAnalysisPage" Collapsed="true">
+    <Position X="31.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQAAAAIAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\ContextAndAnalysisPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.CreateFolderPage" Collapsed="true">
+    <Position X="33.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Pages\Mobile\CreateFolderPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.DocketsPage" Collapsed="true">
+    <Position X="35.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\DocketsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.DocumentPage" Collapsed="true">
+    <Position X="37" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBMCQCAAUKgMpGAAFIQRgGAQgVkTwClCAoCFDgBIoAE=</HashCode>
+      <FileName>Pages\Mobile\DocumentPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.EditorsAndRevisorsNotesPage" Collapsed="true">
+    <Position X="44.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\EditorsAndRevisorsNotesPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.EmailDocumentPage" Collapsed="true">
+    <Position X="46.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEEAgA=</HashCode>
+      <FileName>Pages\Mobile\EmailDocumentPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.EmailListConfirmationPage" Collapsed="true">
+    <Position X="48" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\EmailListConfirmationPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.EmailListPage" Collapsed="true">
+    <Position X="49.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Pages\Mobile\EmailListPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.EmailRelatedInfoListPage" Collapsed="true">
+    <Position X="51.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Pages\Mobile\EmailRelatedInfoListPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.FilingsPage" Collapsed="true">
+    <Position X="53.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIAAAAAAAAAAAAAGAAAAEAQAECAAAAAAAAEBAAAAAI=</HashCode>
+      <FileName>Pages\Mobile\FilingsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.FolderPages.AddToFolderConfirmationPage" Collapsed="true">
+    <Position X="55.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAIAA=</HashCode>
+      <FileName>Pages\Mobile\FolderPages\AddToFolderConfirmationPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.FolderPages.AddToFolderPage" Collapsed="true">
+    <Position X="58" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAiAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\FolderPages\AddToFolderPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.FolderPages.FoldersPage" Collapsed="true">
+    <Position X="60.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAIAAAIEAAAAAAAIAEAyCAAAACAAIKIggQAAkAAA=</HashCode>
+      <FileName>Pages\Mobile\FolderPages\FoldersPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.FooterPages.CopyrightPage" Collapsed="true">
+    <Position X="62" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\FooterPages\CopyrightPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.FooterPages.HelpAndFeedbackPage" Collapsed="true">
+    <Position X="64.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\FooterPages\HelpAndFeedbackPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.FooterPages.PrivacyPolicyPage" Collapsed="true">
+    <Position X="66.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\FooterPages\PrivacyPolicyPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.HistoryPage" Collapsed="true">
+    <Position X="68.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgUAQDAAAQAAAARBEAAAAwCGAkAEAQAEACAABAoAEIA=</HashCode>
+      <FileName>Pages\Mobile\HistoryPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.JurisdictionPage" Collapsed="true">
+    <Position X="71" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAABAAAAAAAAAAABACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\JurisdictionPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.KeyCiteADocumentPage" Collapsed="true">
+    <Position X="73.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAABAAAABAAABCgAAAAgEAACCIARAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\KeyCiteADocumentPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.KeyCiteResultsPage" Collapsed="true">
+    <Position X="75.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAARAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\KeyCiteResultsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.KeyRulesCategoryPage" Collapsed="true">
+    <Position X="77.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\KeyRulesCategoryPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.LegislativeHistoryMaterialsPage" Collapsed="true">
+    <Position X="79.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAABAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\LegislativeHistoryMaterialsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.LocateAuthorityPage" Collapsed="true">
+    <Position X="81.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\LocateAuthorityPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.NegativeDirectHistory" Collapsed="true">
+    <Position X="84" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABACAAAA=</HashCode>
+      <FileName>Pages\Mobile\NegativeDirectHistory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.NegativeTreatmentPage" Collapsed="true">
+    <Position X="86.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAQAAAAAAAQAAAAAEAAAAAAQAAABAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\NegativeTreatmentPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.NotesOfDecisionPage" Collapsed="true">
+    <Position X="88.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAEAAAAAAAIQCAAAAQAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\NotesOfDecisionPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.OutOfPlanPage" Collapsed="true">
+    <Position X="90.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAIAAAAACABAAAAASAAAAAAAgQAAACAIAA=</HashCode>
+      <FileName>Pages\Mobile\OutOfPlanPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.PreviousHistoryPage" Collapsed="true">
+    <Position X="93" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\PreviousHistoryPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.PrincipalHistoryPage" Collapsed="true">
+    <Position X="94.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\PrincipalHistoryPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.RecentDocumentsPage" Collapsed="true">
+    <Position X="97" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAEEAAAAIAA=</HashCode>
+      <FileName>Pages\Mobile\RecentDocumentsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.RecentSearchesPage" Collapsed="true">
+    <Position X="99.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\RecentSearchesPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.SearchResultsPage" Collapsed="true">
+    <Position X="101.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DAgAQEQIAAAAECgCAACACEgAAQgCAAAAAZAQACAlIAA=</HashCode>
+      <FileName>Pages\Mobile\SearchResultsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.SelectRegKeyPage" Collapsed="true">
+    <Position X="103.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\SelectRegKeyPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.StatutesPage" Collapsed="true">
+    <Position X="106" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAABAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\StatutesPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.SubsequentHistoryPage" Collapsed="true">
+    <Position X="108.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\SubsequentHistoryPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.SurchargePage" Collapsed="true">
+    <Position X="110.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAABAAEAACAAAAAQAAQCAACAIAA=</HashCode>
+      <FileName>Pages\Mobile\SurchargePage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.TrialCourtDocumentsPage" Collapsed="true">
+    <Position X="112.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\TrialCourtDocumentsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.ValidityPage" Collapsed="true">
+    <Position X="115" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAQAQAAAAAAAAAgAAAAAAAAAAAAAAAAAAAGAAA=</HashCode>
+      <FileName>Pages\Mobile\ValidityPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.VersionsPage" Collapsed="true">
+    <Position X="117.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAIAAAAgEAEAAABAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\VersionsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.MattersPage" Collapsed="true">
+    <Position X="60.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mobile\MattersPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

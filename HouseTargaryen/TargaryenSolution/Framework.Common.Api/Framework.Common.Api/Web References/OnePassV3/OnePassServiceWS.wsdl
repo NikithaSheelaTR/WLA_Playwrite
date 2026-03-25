@@ -1,0 +1,3491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="OnePassServiceWS" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="CustomBinding_IOnePass_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="West.Westlaw.ServiceModel.OnePass.V3" />
+      <xs:import namespace="TLR.ServiceModel.Core" />
+      <xs:element name="CheckStatus">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CheckStatusResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="CheckStatusResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AuthenticateOnePass">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q1:AuthenticateOnePassRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AuthenticateOnePassResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q2="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="AuthenticateOnePassResult" nillable="true" type="q2:AuthenticateResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AuthenticateTransferToken">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q3="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q3:AuthenticateTransferTokenRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AuthenticateTransferTokenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q4="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="AuthenticateTransferTokenResult" nillable="true" type="q4:AuthenticateTransferTokenResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AuthenticateAccessToken">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q5="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q5:AuthenticateAccessTokenRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AuthenticateAccessTokenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q6="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="AuthenticateAccessTokenResult" nillable="true" type="q6:AuthenticateResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AuthenticateSignonToken">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q7="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q7:AuthenticateSignonTokenRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AuthenticateSignonTokenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q8="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="AuthenticateSignonTokenResult" nillable="true" type="q8:AuthenticateSignonTokenResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AuthenticateSponsorToken">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q9="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q9:AuthenticateSponsorTokenRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AuthenticateSponsorTokenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q10="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="AuthenticateSponsorTokenResult" nillable="true" type="q10:AuthenticateSponsorTokenResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AuthenticateSponsorResourceToken">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q11="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q11:AuthenticateSponsorResourceTokenRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AuthenticateSponsorResourceTokenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q12="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="AuthenticateSponsorResourceTokenResult" nillable="true" type="q12:AuthenticateSponsorResourceTokenResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateTransferToken">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q13="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q13:CreateTransferTokenRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateTransferTokenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q14="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="CreateTransferTokenResult" nillable="true" type="q14:CreateTokenResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateIPTransferToken">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q15="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q15:CreateIPTransferTokenRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateIPTransferTokenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q16="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="CreateIPTransferTokenResult" nillable="true" type="q16:CreateTokenResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateAccessToken">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q17="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q17:CreateAccessTokenRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateAccessTokenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q18="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="CreateAccessTokenResult" nillable="true" type="q18:CreateTokenResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateSignonToken">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q19="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q19:CreateSignonTokenRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateSignonTokenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q20="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="CreateSignonTokenResult" nillable="true" type="q20:CreateSignonTokenResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateOpenToken">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q21="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q21:CreateOpenTokenRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateOpenTokenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q22="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="CreateOpenTokenResult" nillable="true" type="q22:CreateOpenTokenResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateReauthenticationToken">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q23="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q23:CreateReauthenticationTokenRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateReauthenticationTokenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q24="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="CreateReauthenticationTokenResult" nillable="true" type="q24:CreateTokenResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateTraceToken">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q25="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q25:CreateTraceTokenRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateTraceTokenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q26="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="CreateTraceTokenResult" nillable="true" type="q26:CreateTraceTokenResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateSponsorResourceToken">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q27="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q27:CreateSponsorResourceTokenRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateSponsorResourceTokenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q28="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="CreateSponsorResourceTokenResult" nillable="true" type="q28:CreateTokenResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateProfileResourceToken">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q29="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q29:CreateProfileResourceTokenRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateProfileResourceTokenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q30="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="CreateProfileResourceTokenResult" nillable="true" type="q30:CreateTokenResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateProfileCreateToken">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q31="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q31:CreateProfileCreateTokenRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateProfileCreateTokenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q32="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="CreateProfileCreateTokenResult" nillable="true" type="q32:CreateTokenResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrieveAuthenticationReport">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q33="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q33:AuthenticationReportRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrieveAuthenticationReportResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q34="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="RetrieveAuthenticationReportResult" nillable="true" type="q34:AuthenticationReportResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrieveApiKey">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q35="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q35:RetrieveApiKeyRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrieveApiKeyResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q36="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="RetrieveApiKeyResult" nillable="true" type="q36:RetrieveApiKeyResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrieveOAuthProviderAccessInformation">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q37="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q37:RetrieveOAuthProviderAccessInformationRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrieveOAuthProviderAccessInformationResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q38="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="RetrieveOAuthProviderAccessInformationResult" nillable="true" type="q38:RetrieveOAuthProviderAccessInformationResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateServiceProfile">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q39="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q39:CreateServiceProfileRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateServiceProfileResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q40="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="CreateServiceProfileResult" nillable="true" type="q40:CreateServiceProfileResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateTemporaryProfile">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q41="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q41:CreateTemporaryProfileRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateTemporaryProfileResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q42="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="CreateTemporaryProfileResult" nillable="true" type="q42:CreateTemporaryProfileResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Find">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q43="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q43:FindProfilesRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FindResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q44="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="FindResult" nillable="true" type="q44:FindProfilesResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FindAll">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q45="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q45:FindAllProfilesRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FindAllResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q46="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="FindAllResult" nillable="true" type="q46:FindProfilesResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FindRegistrationKeys">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q47="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q47:FindProfilesByRegistrationKeysRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FindRegistrationKeysResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q48="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="FindRegistrationKeysResult" nillable="true" type="q48:ProfileListResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FindProperties">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q49="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q49:FindProfilesByPropertiesRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FindPropertiesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q50="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="FindPropertiesResult" nillable="true" type="q50:ProfileListResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AddRegistrationKey">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q51="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q51:AddRegistrationKeyRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AddRegistrationKeyResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q52="TLR.ServiceModel.Core" minOccurs="0" name="AddRegistrationKeyResult" nillable="true" type="q52:Response" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ReplaceRegistrationKey">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q53="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q53:ReplaceRegistrationKeyRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ReplaceRegistrationKeyResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q54="TLR.ServiceModel.Core" minOccurs="0" name="ReplaceRegistrationKeyResult" nillable="true" type="q54:Response" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LinkRegister">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q55="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q55:LinkRegisterRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LinkRegisterResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q56="TLR.ServiceModel.Core" minOccurs="0" name="LinkRegisterResult" nillable="true" type="q56:Response" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LocateRegistrationKey">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q57="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q57:LocateRegistrationKeyRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LocateRegistrationKeyResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q58="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="LocateRegistrationKeyResult" nillable="true" type="q58:LocateRegistrationKeyResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SAMLAutoProvisionRegistrationKey">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q59="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q59:SAMLAutoProvisionRegistrationKeyRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SAMLAutoProvisionRegistrationKeyResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q60="TLR.ServiceModel.Core" minOccurs="0" name="SAMLAutoProvisionRegistrationKeyResult" nillable="true" type="q60:Response" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrieveProfile">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q61="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q61:RetrieveProfileRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrieveProfileResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q62="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="RetrieveProfileResult" nillable="true" type="q62:RetrieveProfileResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrievePingProfileConnection">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q63="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q63:RetrievePingProfileConnectionRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrievePingProfileConnectionResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q64="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="RetrievePingProfileConnectionResult" nillable="true" type="q64:ExistsResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SendForgottenPassword">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q65="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q65:SendForgottenPasswordRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SendForgottenPasswordResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q66="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="SendForgottenPasswordResult" nillable="true" type="q66:SendForgottenPasswordResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrieveProductInformation">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q67="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q67:RetrieveProductInformationRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrieveProductInformationResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q68="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="RetrieveProductInformationResult" nillable="true" type="q68:RetrieveProductInformationResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrieveViewProducts">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q69="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q69:RetrieveViewProductInformationRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrieveViewProductsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q70="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="RetrieveViewProductsResult" nillable="true" type="q70:RetrieveViewProductInformationResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrieveProfileElectronicPayments">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q71="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q71:RetrieveProfileElectronicPaymentsRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrieveProfileElectronicPaymentsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q72="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="RetrieveProfileElectronicPaymentsResult" nillable="true" type="q72:RetrieveProfileElectronicPaymentsResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ValidateElectronicPayment">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q73="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q73:ValidateElectronicPaymentRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ValidateElectronicPaymentResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q74="TLR.ServiceModel.Core" minOccurs="0" name="ValidateElectronicPaymentResult" nillable="true" type="q74:Response" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AddProfileEPaymentMethod">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q75="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q75:AddProfileEPaymentMethodRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AddProfileEPaymentMethodResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q76="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="AddProfileEPaymentMethodResult" nillable="true" type="q76:AddProfileEPaymentMethodResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RemoveProfileEPaymentMethod">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q77="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q77:RemoveProfileEPaymentMethodRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RemoveProfileEPaymentMethodResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q78="TLR.ServiceModel.Core" minOccurs="0" name="RemoveProfileEPaymentMethodResult" nillable="true" type="q78:Response" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrieveSponsorInformation">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q79="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q79:RetrieveSponsorInformationRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrieveSponsorInformationResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q80="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="RetrieveSponsorInformationResult" nillable="true" type="q80:RetrieveSponsorInformationResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ValidateSponsorInformation">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q81="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q81:ValidateSponsorInformationRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ValidateSponsorInformationResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q82="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="ValidateSponsorInformationResult" nillable="true" type="q82:ValidateSponsorInformationResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrieveIPInitiatedRegistrationKey">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q83="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q83:RetrieveIPInitiatedRegistrationKeyRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrieveIPInitiatedRegistrationKeyResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q84="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="RetrieveIPInitiatedRegistrationKeyResult" nillable="true" type="q84:RetrieveIPInitiatedRegistrationKeyResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrieveUpdates">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q85="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q85:RetrieveUpdatesRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrieveUpdatesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q86="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="RetrieveUpdatesResult" nillable="true" type="q86:RetrieveUpdatesResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="HealthCheck">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="HealthCheckResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q87="TLR.ServiceModel.Core" minOccurs="0" name="HealthCheckResult" nillable="true" type="q87:Response" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrievePingContextInformation">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q88="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="request" nillable="true" type="q88:RetrievePingContextRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrievePingContextInformationResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q89="West.Westlaw.ServiceModel.OnePass.V3" minOccurs="0" name="RetrievePingContextInformationResult" nillable="true" type="q89:RetrievePingContextResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="anyType" nillable="true" type="xs:anyType" />
+      <xs:element name="anyURI" nillable="true" type="xs:anyURI" />
+      <xs:element name="base64Binary" nillable="true" type="xs:base64Binary" />
+      <xs:element name="boolean" nillable="true" type="xs:boolean" />
+      <xs:element name="byte" nillable="true" type="xs:byte" />
+      <xs:element name="dateTime" nillable="true" type="xs:dateTime" />
+      <xs:element name="decimal" nillable="true" type="xs:decimal" />
+      <xs:element name="double" nillable="true" type="xs:double" />
+      <xs:element name="float" nillable="true" type="xs:float" />
+      <xs:element name="int" nillable="true" type="xs:int" />
+      <xs:element name="long" nillable="true" type="xs:long" />
+      <xs:element name="QName" nillable="true" type="xs:QName" />
+      <xs:element name="short" nillable="true" type="xs:short" />
+      <xs:element name="string" nillable="true" type="xs:string" />
+      <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" />
+      <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" />
+      <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" />
+      <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort" />
+      <xs:element name="char" nillable="true" type="tns:char" />
+      <xs:simpleType name="char">
+        <xs:restriction base="xs:int" />
+      </xs:simpleType>
+      <xs:element name="duration" nillable="true" type="tns:duration" />
+      <xs:simpleType name="duration">
+        <xs:restriction base="xs:duration">
+          <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" />
+          <xs:minInclusive value="-P10675199DT2H48M5.4775808S" />
+          <xs:maxInclusive value="P10675199DT2H48M5.4775807S" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="guid" nillable="true" type="tns:guid" />
+      <xs:simpleType name="guid">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:attribute name="FactoryType" type="xs:QName" />
+      <xs:attribute name="Id" type="xs:ID" />
+      <xs:attribute name="Ref" type="xs:IDREF" />
+    </xs:schema>
+    <xs:schema xmlns:tns="West.Westlaw.ServiceModel.OnePass.V3" elementFormDefault="qualified" targetNamespace="West.Westlaw.ServiceModel.OnePass.V3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://schemas.datacontract.org/2004/07/West.Westlaw.ServiceModel.Services.OnePass.V3" />
+      <xs:import namespace="West.Westlaw.ServiceModel.Core" />
+      <xs:import namespace="TLR.ServiceModel.Core" />
+      <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xs:import namespace="http://schemas.datacontract.org/2004/07/West.Westlaw.ServiceModel.Services.OnePass.Core" />
+      <xs:complexType name="AuthenticateOnePassRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:AuthenticateRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="AuthenticateOnePassRequest" nillable="true" type="tns:AuthenticateOnePassRequest" />
+      <xs:complexType name="AuthenticateRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:LinkableRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="IncludeProfile" type="xs:boolean">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="IncludeRegisteredProducts" type="xs:boolean">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/West.Westlaw.ServiceModel.Services.OnePass.V3" minOccurs="0" name="NewTokenType" type="q1:AuthenticationTokenType" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="AuthenticateRequest" nillable="true" type="tns:AuthenticateRequest" />
+      <xs:complexType name="LinkableRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q2="West.Westlaw.ServiceModel.Core" base="q2:SecureRequest">
+            <xs:sequence />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="LinkableRequest" nillable="true" type="tns:LinkableRequest" />
+      <xs:complexType name="AuthenticateResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q3="West.Westlaw.ServiceModel.Core" base="q3:OnePassResponse">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Identifier" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="InvalidRegistrationKeys" nillable="true" type="tns:ArrayOfRegistrationKeyInformation" />
+              <xs:element minOccurs="0" name="Products" nillable="true" type="tns:ArrayOfProduct">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="Profile" nillable="true" type="tns:Profile">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="SeamlessToken" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="TransferUrl" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="AuthenticateResponse" nillable="true" type="tns:AuthenticateResponse" />
+      <xs:complexType name="ArrayOfRegistrationKeyInformation">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="RegistrationKeyInformation" nillable="true" type="tns:RegistrationKeyInformation" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfRegistrationKeyInformation" nillable="true" type="tns:ArrayOfRegistrationKeyInformation" />
+      <xs:complexType name="RegistrationKeyInformation">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q4="West.Westlaw.ServiceModel.Core" base="q4:OnePassData">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="EPaymentMethod" type="xs:int" />
+              <xs:element minOccurs="0" name="EPaymentSupportType" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="IsPreferred" type="xs:boolean" />
+              <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+              <xs:element xmlns:q5="TLR.ServiceModel.Core" minOccurs="0" name="Properties" nillable="true" type="q5:ArrayOfProperty" />
+              <xs:element minOccurs="0" name="RegistrationKey" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ValidationState" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RegistrationKeyInformation" nillable="true" type="tns:RegistrationKeyInformation" />
+      <xs:complexType name="ArrayOfProduct">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Product" nillable="true" type="tns:Product" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfProduct" nillable="true" type="tns:ArrayOfProduct" />
+      <xs:complexType name="Product">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q6="West.Westlaw.ServiceModel.Core" base="q6:OnePassData">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="EPaySupportType" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="EmailRequired" type="xs:boolean" />
+              <xs:element minOccurs="0" name="Identifier" type="xs:int" />
+              <xs:element minOccurs="0" name="OnlineChargesDomain" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="RegistrationKeyDelimiter" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="RegistrationKeyRequired" type="xs:boolean" />
+              <xs:element minOccurs="0" name="SupportPhoneNumber" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="UsesCOSI" type="xs:boolean">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="WhatIsOnePass" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="Product" nillable="true" type="tns:Product" />
+      <xs:complexType name="Profile">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q7="West.Westlaw.ServiceModel.Core" base="q7:OnePassData">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="Identifier" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="PasswordExpirationDate" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="PasswordLifetime" type="xs:int" />
+              <xs:element minOccurs="0" name="ProfileType" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="RegisteredProducts" nillable="true" type="tns:ArrayOfRegisteredProduct" />
+              <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SecurityQuestions" nillable="true" type="q8:ArrayOfint" />
+              <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="Profile" nillable="true" type="tns:Profile" />
+      <xs:complexType name="ArrayOfRegisteredProduct">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="RegisteredProduct" nillable="true" type="tns:RegisteredProduct" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfRegisteredProduct" nillable="true" type="tns:ArrayOfRegisteredProduct" />
+      <xs:complexType name="RegisteredProduct">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q9="West.Westlaw.ServiceModel.Core" base="q9:OnePassData">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="LastAccessedDate" type="xs:dateTime">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ProductCode" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="RegistrationKeys" nillable="true" type="tns:ArrayOfRegistrationKeyInformation" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RegisteredProduct" nillable="true" type="tns:RegisteredProduct" />
+      <xs:complexType name="AuthenticateTransferTokenRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:AuthenticateRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="TransferToken" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="AuthenticateTransferTokenRequest" nillable="true" type="tns:AuthenticateTransferTokenRequest" />
+      <xs:complexType name="AuthenticateTransferTokenResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:AuthenticateResponse">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ForcedRegistrationKey" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="OriginatingProductCode" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="PingContext" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ProductRegistrationKey" nillable="true" type="xs:string" />
+              <xs:element xmlns:q10="TLR.ServiceModel.Core" minOccurs="0" name="Properties" nillable="true" type="q10:ArrayOfProperty">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="Strength" type="xs:int" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="AuthenticateTransferTokenResponse" nillable="true" type="tns:AuthenticateTransferTokenResponse" />
+      <xs:complexType name="AuthenticateAccessTokenRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:AuthenticateRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="AccessToken" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ProductKey" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="AuthenticateAccessTokenRequest" nillable="true" type="tns:AuthenticateAccessTokenRequest" />
+      <xs:complexType name="AuthenticateSignonTokenRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:AuthenticateRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="SignonToken" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ViewProductCode" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="AuthenticateSignonTokenRequest" nillable="true" type="tns:AuthenticateSignonTokenRequest" />
+      <xs:complexType name="AuthenticateSignonTokenResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:AuthenticateResponse">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="BrowserInformation" nillable="true" type="tns:BrowserInformation">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ClientIdentifier" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="IsCDNAvailable" type="xs:boolean" />
+              <xs:element minOccurs="0" name="IsMobile" type="xs:boolean" />
+              <xs:element minOccurs="0" name="PingContext" nillable="true" type="xs:string" />
+              <xs:element xmlns:q11="TLR.ServiceModel.Core" minOccurs="0" name="Properties" nillable="true" type="q11:ArrayOfProperty">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="RegistrationKey" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="SAMLTwoFactor" type="xs:int">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="SelectedCulture" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="Strength" type="xs:int" />
+              <xs:element minOccurs="0" name="TraceId" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="TrustedDeviceMethod" type="xs:int">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="TwoFactorAuthenticationMethod" type="xs:int">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="AuthenticateSignonTokenResponse" nillable="true" type="tns:AuthenticateSignonTokenResponse" />
+      <xs:complexType name="BrowserInformation">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q12="West.Westlaw.ServiceModel.Core" base="q12:OnePassData">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="AcceptsCompressGZip" type="xs:boolean" />
+              <xs:element minOccurs="0" name="AcceptsCookies" type="xs:boolean" />
+              <xs:element minOccurs="0" name="AcrobatVersion" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="BrowserBuild" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="BrowserLanguage" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="BrowserName" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ConnectionIsSSL" type="xs:boolean" />
+              <xs:element minOccurs="0" name="DeviceName" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="DeviceType" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="FlashVersion" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="FullVersion" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="GeckoBuildDate" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="IsActiveXEnabled" type="xs:boolean" />
+              <xs:element minOccurs="0" name="IsCrawler" type="xs:boolean" />
+              <xs:element minOccurs="0" name="IsMobileDevice" type="xs:boolean" />
+              <xs:element minOccurs="0" name="IsUsingGeckoEngine" type="xs:boolean" />
+              <xs:element minOccurs="0" name="IsUsingWebKitEngine" type="xs:boolean" />
+              <xs:element minOccurs="0" name="MajorVersion" type="xs:int" />
+              <xs:element minOccurs="0" name="MinorVersion" type="xs:double" />
+              <xs:element minOccurs="0" name="MinorVersionLetter" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="NETCLRInstalled" type="xs:boolean" />
+              <xs:element minOccurs="0" name="NETCLRVersion" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="OSDetails" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="OSLanguage" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="OSName" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="OSVersion" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="SSLKeySize" type="xs:int" />
+              <xs:element minOccurs="0" name="ScreenHeight" type="xs:int" />
+              <xs:element minOccurs="0" name="ScreenWidth" type="xs:int" />
+              <xs:element minOccurs="0" name="SilverlightVersion" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="SupportsActiveXControls" type="xs:boolean" />
+              <xs:element minOccurs="0" name="SupportsJavaScript" type="xs:boolean" />
+              <xs:element minOccurs="0" name="SupportsSSL" type="xs:boolean" />
+              <xs:element minOccurs="0" name="TextSize" type="xs:int" />
+              <xs:element minOccurs="0" name="TimeZoneDifference" type="xs:double" />
+              <xs:element minOccurs="0" name="UsingProxy" type="xs:boolean" />
+              <xs:element minOccurs="0" name="WebKitEngineVersion" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="XMLHttpRequest" type="xs:boolean" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="BrowserInformation" nillable="true" type="tns:BrowserInformation" />
+      <xs:complexType name="AuthenticateSponsorTokenRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q13="West.Westlaw.ServiceModel.Core" base="q13:SecureRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="SponsorToken" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ViewProductCode" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="AuthenticateSponsorTokenRequest" nillable="true" type="tns:AuthenticateSponsorTokenRequest" />
+      <xs:complexType name="AuthenticateSponsorTokenResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q14="TLR.ServiceModel.Core" base="q14:Response">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="AcrobatVersion" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="BrowserInformation" nillable="true" type="tns:BrowserInformation">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ClientIdentifier" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="DeviceName" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="DeviceType" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="IPCustomerCode" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="IPCustomerToken" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="IsCDNAvailable" type="xs:boolean" />
+              <xs:element minOccurs="0" name="IsMobile" type="xs:boolean" />
+              <xs:element minOccurs="0" name="LocationCode" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="Properties" nillable="true" type="q14:ArrayOfProperty">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="RegistrationKey" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="SelectedCulture" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="SignoffReturnUrl" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="SignoffReturnUrlLinkText" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="SignonHeading" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="SignonImageAltText" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="SignonImageLinkUrl" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="SignonImageUrl" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="SignonUrl" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="SponsorCode" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="Strength" type="xs:int" />
+              <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="AuthenticateSponsorTokenResponse" nillable="true" type="tns:AuthenticateSponsorTokenResponse" />
+      <xs:complexType name="AuthenticateSponsorResourceTokenRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:AuthenticateRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Resource" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ResourceToken" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="AuthenticateSponsorResourceTokenRequest" nillable="true" type="tns:AuthenticateSponsorResourceTokenRequest" />
+      <xs:complexType name="AuthenticateSponsorResourceTokenResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q15="TLR.ServiceModel.Core" base="q15:Response">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="OriginatingProductCode" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="Properties" nillable="true" type="q15:ArrayOfProperty">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="SponsorCode" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="AuthenticateSponsorResourceTokenResponse" nillable="true" type="tns:AuthenticateSponsorResourceTokenResponse" />
+      <xs:complexType name="CreateTransferTokenRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:AuthenticatedRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="CurrentRegistrationKey" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ForcedRegistrationKey" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="IsSelfContained" type="xs:boolean" />
+              <xs:element minOccurs="0" name="PingContext" nillable="true" type="xs:string" />
+              <xs:element xmlns:q16="TLR.ServiceModel.Core" minOccurs="0" name="Properties" nillable="true" type="q16:ArrayOfProperty" />
+              <xs:element minOccurs="0" name="SeamlessToken" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="Strength" type="xs:int" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="CreateTransferTokenRequest" nillable="true" type="tns:CreateTransferTokenRequest" />
+      <xs:complexType name="AuthenticatedRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:LinkableRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Credentials" nillable="true" type="tns:Credentials" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="AuthenticatedRequest" nillable="true" type="tns:AuthenticatedRequest" />
+      <xs:complexType name="Credentials">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q17="West.Westlaw.ServiceModel.Core" base="q17:OnePassData">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="AccessToken" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ProductKey" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="Resource" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ResourceToken" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="SignonToken" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="TransferToken" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="Credentials" nillable="true" type="tns:Credentials" />
+      <xs:complexType name="CreateTokenResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q18="West.Westlaw.ServiceModel.Core" base="q18:OnePassResponse">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Token" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="CreateTokenResponse" nillable="true" type="tns:CreateTokenResponse" />
+      <xs:complexType name="CreateIPTransferTokenRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q19="West.Westlaw.ServiceModel.Core" base="q19:SecureRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="IPCustomerToken" nillable="true" type="xs:string" />
+              <xs:element xmlns:q20="TLR.ServiceModel.Core" minOccurs="0" name="Properties" nillable="true" type="q20:ArrayOfProperty" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="CreateIPTransferTokenRequest" nillable="true" type="tns:CreateIPTransferTokenRequest" />
+      <xs:complexType name="CreateAccessTokenRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q21="West.Westlaw.ServiceModel.Core" base="q21:SecureRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ProductKey" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="SignonToken" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="CreateAccessTokenRequest" nillable="true" type="tns:CreateAccessTokenRequest" />
+      <xs:complexType name="CreateSignonTokenRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:AuthenticatedRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="BrowserInformation" nillable="true" type="tns:BrowserInformation" />
+              <xs:element minOccurs="0" name="ClientIdentifier" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="PingContext" nillable="true" type="xs:string" />
+              <xs:element xmlns:q22="TLR.ServiceModel.Core" minOccurs="0" name="Properties" nillable="true" type="q22:ArrayOfProperty" />
+              <xs:element minOccurs="0" name="RegistrationKey" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="SelectedCulture" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="TargetProductCode" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="TargetViewProductCode" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="CreateSignonTokenRequest" nillable="true" type="tns:CreateSignonTokenRequest" />
+      <xs:complexType name="CreateSignonTokenResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:CreateTokenResponse">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ValidRegistrationKeys" nillable="true" type="tns:ArrayOfRegistrationKeyInformation" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="CreateSignonTokenResponse" nillable="true" type="tns:CreateSignonTokenResponse" />
+      <xs:complexType name="CreateOpenTokenRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:AuthenticatedRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ExternalConnectionId" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ExternalUrl" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="PingContext" nillable="true" type="xs:string" />
+              <xs:element xmlns:q23="TLR.ServiceModel.Core" minOccurs="0" name="Properties" nillable="true" type="q23:ArrayOfProperty">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="SeamlessToken" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="CreateOpenTokenRequest" nillable="true" type="tns:CreateOpenTokenRequest" />
+      <xs:complexType name="CreateOpenTokenResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q24="TLR.ServiceModel.Core" base="q24:Response">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="RedirectUrl" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="CreateOpenTokenResponse" nillable="true" type="tns:CreateOpenTokenResponse" />
+      <xs:complexType name="CreateReauthenticationTokenRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q25="West.Westlaw.ServiceModel.Core" base="q25:SecureRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="DisablePasswordVerification" type="xs:boolean" />
+              <xs:element minOccurs="0" name="DisableStepUpVerificationTrustedDevices" type="xs:boolean">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="DissallowedStepUpVerificationSecondStepMethods" type="xs:int">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ProfileId" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="RequireStepUpVerification" type="xs:boolean">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="CreateReauthenticationTokenRequest" nillable="true" type="tns:CreateReauthenticationTokenRequest" />
+      <xs:complexType name="CreateTraceTokenRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q26="West.Westlaw.ServiceModel.Core" base="q26:SecureRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="AllowCOSIInFrame" type="xs:boolean" />
+              <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+              <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/West.Westlaw.ServiceModel.Services.OnePass.Core" minOccurs="0" name="SignonFlowOption" type="q27:SignonFlowOptions" />
+              <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="CreateTraceTokenRequest" nillable="true" type="tns:CreateTraceTokenRequest" />
+      <xs:complexType name="CreateTraceTokenResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:CreateTokenResponse">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="TraceId" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="CreateTraceTokenResponse" nillable="true" type="tns:CreateTraceTokenResponse" />
+      <xs:complexType name="CreateSponsorResourceTokenRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q28="West.Westlaw.ServiceModel.Core" base="q28:SecureRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Lifetime" type="xs:int" />
+              <xs:element xmlns:q29="TLR.ServiceModel.Core" minOccurs="0" name="Properties" nillable="true" type="q29:ArrayOfProperty" />
+              <xs:element minOccurs="0" name="Resource" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="SponsorCode" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="CreateSponsorResourceTokenRequest" nillable="true" type="tns:CreateSponsorResourceTokenRequest" />
+      <xs:complexType name="CreateProfileResourceTokenRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:AuthenticatedRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Lifetime" type="xs:int" />
+              <xs:element xmlns:q30="TLR.ServiceModel.Core" minOccurs="0" name="Properties" nillable="true" type="q30:ArrayOfProperty" />
+              <xs:element minOccurs="0" name="RegistrationKey" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="Resource" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="SeamlessToken" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="CreateProfileResourceTokenRequest" nillable="true" type="tns:CreateProfileResourceTokenRequest" />
+      <xs:complexType name="CreateProfileCreateTokenRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q31="West.Westlaw.ServiceModel.Core" base="q31:SecureRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="AdditionalRegistrationKeys" nillable="true" type="tns:ArrayOfProfileRegistrationKey">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="FriendlyName" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="Lifetime" type="xs:int" />
+              <xs:element minOccurs="0" name="RegistrationKey" nillable="true" type="xs:string" />
+              <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/West.Westlaw.ServiceModel.Services.OnePass.V3" minOccurs="0" name="RegistrationPageUIOverrideOption" type="q32:RegistrationPageUIOverride" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="CreateProfileCreateTokenRequest" nillable="true" type="tns:CreateProfileCreateTokenRequest" />
+      <xs:complexType name="ArrayOfProfileRegistrationKey">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="ProfileRegistrationKey" nillable="true" type="tns:ProfileRegistrationKey" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfProfileRegistrationKey" nillable="true" type="tns:ArrayOfProfileRegistrationKey" />
+      <xs:complexType name="ProfileRegistrationKey">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q33="West.Westlaw.ServiceModel.Core" base="q33:OnePassData">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="FriendlyName" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ProductCode" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="RegistrationKey" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="ProfileRegistrationKey" nillable="true" type="tns:ProfileRegistrationKey" />
+      <xs:complexType name="AuthenticationReportRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q34="West.Westlaw.ServiceModel.Core" base="q34:SecureRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="CoreID" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="IPAddress" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="IncludeInvalidAuthUsernames" type="xs:boolean">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="LookbackPeriod" type="xs:int">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/West.Westlaw.ServiceModel.Services.OnePass.V3" minOccurs="0" name="MethodType" type="q35:AuthenticationReportMethods" />
+              <xs:element minOccurs="0" name="OnlyGetCountFromAuthenticationActivity" type="xs:boolean">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="AuthenticationReportRequest" nillable="true" type="tns:AuthenticationReportRequest" />
+      <xs:complexType name="AuthenticationReportResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q36="West.Westlaw.ServiceModel.Core" base="q36:OnePassResponse">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="NumberOfRows" type="xs:int" />
+              <xs:element minOccurs="0" name="Report" nillable="true" type="tns:ArrayOfReportInstance" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="AuthenticationReportResponse" nillable="true" type="tns:AuthenticationReportResponse" />
+      <xs:complexType name="ArrayOfReportInstance">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="ReportInstance" nillable="true" type="tns:ReportInstance" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfReportInstance" nillable="true" type="tns:ArrayOfReportInstance" />
+      <xs:complexType name="ReportInstance">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CoreID" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="Date" type="xs:dateTime">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="DistinctProfiles" type="xs:int">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="IPAddress" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="PasswordHash" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="ProductCode" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="ResultType" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="TotalActivity" type="xs:int">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="TotalErrors" type="xs:int">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ReportInstance" nillable="true" type="tns:ReportInstance" />
+      <xs:complexType name="RetrieveApiKeyRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q37="West.Westlaw.ServiceModel.Core" base="q37:SecureRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RetrieveApiKeyRequest" nillable="true" type="tns:RetrieveApiKeyRequest" />
+      <xs:complexType name="RetrieveApiKeyResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q38="West.Westlaw.ServiceModel.Core" base="q38:OnePassResponse">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ApiKey" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ApiKeySecret" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RetrieveApiKeyResponse" nillable="true" type="tns:RetrieveApiKeyResponse" />
+      <xs:complexType name="RetrieveOAuthProviderAccessInformationRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:AuthenticatedRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ProviderCode" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RetrieveOAuthProviderAccessInformationRequest" nillable="true" type="tns:RetrieveOAuthProviderAccessInformationRequest" />
+      <xs:complexType name="RetrieveOAuthProviderAccessInformationResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q39="West.Westlaw.ServiceModel.Core" base="q39:OnePassResponse">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="AccessToken" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="AccessTokenSecret" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ConsumerKey" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ConsumerSecret" nillable="true" type="xs:string" />
+              <xs:element xmlns:q40="TLR.ServiceModel.Core" minOccurs="0" name="Properties" nillable="true" type="q40:ArrayOfProperty" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RetrieveOAuthProviderAccessInformationResponse" nillable="true" type="tns:RetrieveOAuthProviderAccessInformationResponse" />
+      <xs:complexType name="CreateServiceProfileRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q41="West.Westlaw.ServiceModel.Core" base="q41:SecureRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Nickname" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ProductKey" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="RegistrationKey" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="CreateServiceProfileRequest" nillable="true" type="tns:CreateServiceProfileRequest" />
+      <xs:complexType name="CreateServiceProfileResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q42="West.Westlaw.ServiceModel.Core" base="q42:OnePassResponse">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="AccessToken" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="CreateServiceProfileResponse" nillable="true" type="tns:CreateServiceProfileResponse" />
+      <xs:complexType name="CreateTemporaryProfileRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q43="West.Westlaw.ServiceModel.Core" base="q43:SecureRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="DaysToLive" type="xs:int" />
+              <xs:element minOccurs="0" name="Nickname" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="RegistrationKey" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="CreateTemporaryProfileRequest" nillable="true" type="tns:CreateTemporaryProfileRequest" />
+      <xs:complexType name="CreateTemporaryProfileResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q44="West.Westlaw.ServiceModel.Core" base="q44:OnePassResponse">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="CreateTemporaryProfileResponse" nillable="true" type="tns:CreateTemporaryProfileResponse" />
+      <xs:complexType name="FindProfilesRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q45="West.Westlaw.ServiceModel.Core" base="q45:SecureRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Criteria" nillable="true" type="tns:FindCriteria" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="FindProfilesRequest" nillable="true" type="tns:FindProfilesRequest" />
+      <xs:complexType name="FindCriteria">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q46="West.Westlaw.ServiceModel.Core" base="q46:OnePassData">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="Identifier" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ProductCode" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="RegistrationKey" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="FindCriteria" nillable="true" type="tns:FindCriteria" />
+      <xs:complexType name="FindProfilesResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q47="West.Westlaw.ServiceModel.Core" base="q47:OnePassResponse">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Results" nillable="true" type="tns:ArrayOfFindResults" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="FindProfilesResponse" nillable="true" type="tns:FindProfilesResponse" />
+      <xs:complexType name="ArrayOfFindResults">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="FindResults" nillable="true" type="tns:FindResults" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfFindResults" nillable="true" type="tns:ArrayOfFindResults" />
+      <xs:complexType name="FindResults">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q48="West.Westlaw.ServiceModel.Core" base="q48:OnePassData">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Criteria" nillable="true" type="tns:FindCriteria" />
+              <xs:element minOccurs="0" name="Profiles" nillable="true" type="tns:ArrayOfProfile" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="FindResults" nillable="true" type="tns:FindResults" />
+      <xs:complexType name="ArrayOfProfile">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Profile" nillable="true" type="tns:Profile" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfProfile" nillable="true" type="tns:ArrayOfProfile" />
+      <xs:complexType name="FindAllProfilesRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q49="West.Westlaw.ServiceModel.Core" base="q49:SecureRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Criteria" nillable="true" type="tns:ArrayOfFindCriteria" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="FindAllProfilesRequest" nillable="true" type="tns:FindAllProfilesRequest" />
+      <xs:complexType name="ArrayOfFindCriteria">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="FindCriteria" nillable="true" type="tns:FindCriteria" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfFindCriteria" nillable="true" type="tns:ArrayOfFindCriteria" />
+      <xs:complexType name="FindProfilesByRegistrationKeysRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q50="West.Westlaw.ServiceModel.Core" base="q50:SecureRequest">
+            <xs:sequence>
+              <xs:element xmlns:q51="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="RegistrationKeys" nillable="true" type="q51:ArrayOfstring" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="FindProfilesByRegistrationKeysRequest" nillable="true" type="tns:FindProfilesByRegistrationKeysRequest" />
+      <xs:complexType name="ProfileListResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q52="West.Westlaw.ServiceModel.Core" base="q52:OnePassResponse">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Profiles" nillable="true" type="tns:ArrayOfProfile" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="ProfileListResponse" nillable="true" type="tns:ProfileListResponse" />
+      <xs:complexType name="FindProfilesByPropertiesRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q53="West.Westlaw.ServiceModel.Core" base="q53:SecureRequest">
+            <xs:sequence>
+              <xs:element xmlns:q54="TLR.ServiceModel.Core" minOccurs="0" name="Properties" nillable="true" type="q54:ArrayOfProperty" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="FindProfilesByPropertiesRequest" nillable="true" type="tns:FindProfilesByPropertiesRequest" />
+      <xs:complexType name="AddRegistrationKeyRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:AuthenticatedRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ProfileIdentifier" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="RegistrationKey" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="AddRegistrationKeyRequest" nillable="true" type="tns:AddRegistrationKeyRequest" />
+      <xs:complexType name="ReplaceRegistrationKeyRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:AuthenticatedRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ExistingRegistrationKey" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="NewRegistrationKey" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ProfileIdentifier" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="ReplaceRegistrationKeyRequest" nillable="true" type="tns:ReplaceRegistrationKeyRequest" />
+      <xs:complexType name="LinkRegisterRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q55="West.Westlaw.ServiceModel.Core" base="q55:SecureRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ProfileIdentifier" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="LinkRegisterRequest" nillable="true" type="tns:LinkRegisterRequest" />
+      <xs:complexType name="LocateRegistrationKeyRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q56="West.Westlaw.ServiceModel.Core" base="q56:SecureRequest">
+            <xs:sequence>
+              <xs:element xmlns:q57="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="RegistrationKeys" nillable="true" type="q57:ArrayOfstring" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="LocateRegistrationKeyRequest" nillable="true" type="tns:LocateRegistrationKeyRequest" />
+      <xs:complexType name="LocateRegistrationKeyResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q58="West.Westlaw.ServiceModel.Core" base="q58:OnePassResponse">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Keys" nillable="true" type="tns:ArrayOfLocateKeyInformation" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="LocateRegistrationKeyResponse" nillable="true" type="tns:LocateRegistrationKeyResponse" />
+      <xs:complexType name="ArrayOfLocateKeyInformation">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="LocateKeyInformation" nillable="true" type="tns:LocateKeyInformation" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfLocateKeyInformation" nillable="true" type="tns:ArrayOfLocateKeyInformation" />
+      <xs:complexType name="LocateKeyInformation">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Identifier" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Location" type="xs:int" />
+          <xs:element minOccurs="0" name="RegistrationKey" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="LocateKeyInformation" nillable="true" type="tns:LocateKeyInformation" />
+      <xs:complexType name="SAMLAutoProvisionRegistrationKeyRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q59="West.Westlaw.ServiceModel.Core" base="q59:SecureRequest">
+            <xs:sequence>
+              <xs:element name="PingContext" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="SAMLAutoProvisionRegistrationKeyRequest" nillable="true" type="tns:SAMLAutoProvisionRegistrationKeyRequest" />
+      <xs:complexType name="RetrieveProfileRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:AuthenticatedRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Identifier" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RetrieveProfileRequest" nillable="true" type="tns:RetrieveProfileRequest" />
+      <xs:complexType name="RetrieveProfileResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q60="TLR.ServiceModel.Core" base="q60:Response">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Profile" nillable="true" type="tns:Profile" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RetrieveProfileResponse" nillable="true" type="tns:RetrieveProfileResponse" />
+      <xs:complexType name="RetrievePingProfileConnectionRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:AuthenticatedRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ExternalConnectionId" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ExternalUrl" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RetrievePingProfileConnectionRequest" nillable="true" type="tns:RetrievePingProfileConnectionRequest" />
+      <xs:complexType name="ExistsResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q61="West.Westlaw.ServiceModel.Core" base="q61:OnePassResponse">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Exists" type="xs:boolean" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="ExistsResponse" nillable="true" type="tns:ExistsResponse" />
+      <xs:complexType name="SendForgottenPasswordRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q62="West.Westlaw.ServiceModel.Core" base="q62:SecureRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Identifier" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="SendWithTemporaryPassword" type="xs:boolean">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="SendForgottenPasswordRequest" nillable="true" type="tns:SendForgottenPasswordRequest" />
+      <xs:complexType name="SendForgottenPasswordResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q63="West.Westlaw.ServiceModel.Core" base="q63:OnePassResponse">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="TemporaryPassword" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="SendForgottenPasswordResponse" nillable="true" type="tns:SendForgottenPasswordResponse" />
+      <xs:complexType name="RetrieveProductInformationRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q64="West.Westlaw.ServiceModel.Core" base="q64:SecureRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ProductCode" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RetrieveProductInformationRequest" nillable="true" type="tns:RetrieveProductInformationRequest" />
+      <xs:complexType name="RetrieveProductInformationResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q65="West.Westlaw.ServiceModel.Core" base="q65:OnePassResponse">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Products" nillable="true" type="tns:ArrayOfProduct" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RetrieveProductInformationResponse" nillable="true" type="tns:RetrieveProductInformationResponse" />
+      <xs:complexType name="RetrieveViewProductInformationRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q66="West.Westlaw.ServiceModel.Core" base="q66:SecureRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ViewProductCode" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RetrieveViewProductInformationRequest" nillable="true" type="tns:RetrieveViewProductInformationRequest" />
+      <xs:complexType name="RetrieveViewProductInformationResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q67="West.Westlaw.ServiceModel.Core" base="q67:OnePassResponse">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ViewProducts" nillable="true" type="tns:ArrayOfViewProductInformation" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RetrieveViewProductInformationResponse" nillable="true" type="tns:RetrieveViewProductInformationResponse" />
+      <xs:complexType name="ArrayOfViewProductInformation">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="ViewProductInformation" nillable="true" type="tns:ViewProductInformation" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfViewProductInformation" nillable="true" type="tns:ArrayOfViewProductInformation" />
+      <xs:complexType name="ViewProductInformation">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdditionalSupportPhoneNumbers" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="AssociatedProductCode" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="BrowserHawkRET" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="ClientIdentifierSupport" type="xs:int">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsMarkedUnavailable" type="xs:boolean">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="PrimarySupportPhoneNumber" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element xmlns:q68="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SupportedCultures" nillable="true" type="q68:ArrayOfstring">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="UsesCOSI" type="xs:boolean">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ViewProductInformation" nillable="true" type="tns:ViewProductInformation" />
+      <xs:complexType name="RetrieveProfileElectronicPaymentsRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:AuthenticatedRequest">
+            <xs:sequence />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RetrieveProfileElectronicPaymentsRequest" nillable="true" type="tns:RetrieveProfileElectronicPaymentsRequest" />
+      <xs:complexType name="RetrieveProfileElectronicPaymentsResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q69="TLR.ServiceModel.Core" base="q69:Response">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Methods" nillable="true" type="tns:ArrayOfElectronicPaymentMethod">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RetrieveProfileElectronicPaymentsResponse" nillable="true" type="tns:RetrieveProfileElectronicPaymentsResponse" />
+      <xs:complexType name="ArrayOfElectronicPaymentMethod">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="ElectronicPaymentMethod" nillable="true" type="tns:ElectronicPaymentMethod" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfElectronicPaymentMethod" nillable="true" type="tns:ArrayOfElectronicPaymentMethod" />
+      <xs:complexType name="ElectronicPaymentMethod">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DisplayText" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ExpirationDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Identifier" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Token" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ValidationStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Vendor" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VendorAbbreviation" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ElectronicPaymentMethod" nillable="true" type="tns:ElectronicPaymentMethod" />
+      <xs:complexType name="ValidateElectronicPaymentRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q70="West.Westlaw.ServiceModel.Core" base="q70:SecureRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ExpirationDate" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="Token" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="Vendor" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="ValidateElectronicPaymentRequest" nillable="true" type="tns:ValidateElectronicPaymentRequest" />
+      <xs:complexType name="AddProfileEPaymentMethodRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:AuthenticatedRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Method" nillable="true" type="tns:ElectronicPaymentMethod" />
+              <xs:element minOccurs="0" name="ProfileIdentifier" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="AddProfileEPaymentMethodRequest" nillable="true" type="tns:AddProfileEPaymentMethodRequest" />
+      <xs:complexType name="AddProfileEPaymentMethodResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q71="TLR.ServiceModel.Core" base="q71:Response">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Identifier" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="AddProfileEPaymentMethodResponse" nillable="true" type="tns:AddProfileEPaymentMethodResponse" />
+      <xs:complexType name="RemoveProfileEPaymentMethodRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:AuthenticatedRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Identifier" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ProfileIdentifier" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RemoveProfileEPaymentMethodRequest" nillable="true" type="tns:RemoveProfileEPaymentMethodRequest" />
+      <xs:complexType name="RetrieveSponsorInformationRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q72="West.Westlaw.ServiceModel.Core" base="q72:SecureRequest">
+            <xs:sequence>
+              <xs:element name="SponsorCode" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RetrieveSponsorInformationRequest" nillable="true" type="tns:RetrieveSponsorInformationRequest" />
+      <xs:complexType name="RetrieveSponsorInformationResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q73="West.Westlaw.ServiceModel.Core" base="q73:OnePassResponse">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="AllowSaveAgreementAnswer" type="xs:boolean">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="AppendUsernameToClientIdSeparator" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ClientIdPromptText" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="DefaultClientId" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="EncryptionKey" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ExternalIdPromptText" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="LicenseAgreement" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element xmlns:q74="TLR.ServiceModel.Core" minOccurs="0" name="Locations" nillable="true" type="q74:ArrayOfProperty">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="OriginatingLinkText" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="OriginatingSignonUrl" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="OriginatingUrl" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="PreferredViewProductCode" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="UsernamePromptText" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RetrieveSponsorInformationResponse" nillable="true" type="tns:RetrieveSponsorInformationResponse" />
+      <xs:complexType name="ValidateSponsorInformationRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q75="West.Westlaw.ServiceModel.Core" base="q75:SecureRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="IsEncrypted" type="xs:boolean" />
+              <xs:element minOccurs="0" name="LanIdentifier" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="Referrer" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="SponsorCode" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="ValidateSponsorInformationRequest" nillable="true" type="tns:ValidateSponsorInformationRequest" />
+      <xs:complexType name="ValidateSponsorInformationResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q76="TLR.ServiceModel.Core" base="q76:Response">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="IsPooled" type="xs:boolean" />
+              <xs:element minOccurs="0" name="RegistrationKey" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="ValidateSponsorInformationResponse" nillable="true" type="tns:ValidateSponsorInformationResponse" />
+      <xs:complexType name="RetrieveIPInitiatedRegistrationKeyRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q77="West.Westlaw.ServiceModel.Core" base="q77:SecureRequest">
+            <xs:sequence />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RetrieveIPInitiatedRegistrationKeyRequest" nillable="true" type="tns:RetrieveIPInitiatedRegistrationKeyRequest" />
+      <xs:complexType name="RetrieveIPInitiatedRegistrationKeyResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q78="West.Westlaw.ServiceModel.Core" base="q78:OnePassResponse">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="RegistrationKey" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RetrieveIPInitiatedRegistrationKeyResponse" nillable="true" type="tns:RetrieveIPInitiatedRegistrationKeyResponse" />
+      <xs:complexType name="RetrieveUpdatesRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q79="West.Westlaw.ServiceModel.Core" base="q79:SecureRequest">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="RetrievalCode" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RetrieveUpdatesRequest" nillable="true" type="tns:RetrieveUpdatesRequest" />
+      <xs:complexType name="RetrieveUpdatesResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q80="West.Westlaw.ServiceModel.Core" base="q80:OnePassResponse">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="RetrievalCode" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="Updates" nillable="true" type="tns:ArrayOfProfileUpdate" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RetrieveUpdatesResponse" nillable="true" type="tns:RetrieveUpdatesResponse" />
+      <xs:complexType name="ArrayOfProfileUpdate">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="ProfileUpdate" nillable="true" type="tns:ProfileUpdate" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfProfileUpdate" nillable="true" type="tns:ArrayOfProfileUpdate" />
+      <xs:complexType name="ProfileUpdate">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q81="West.Westlaw.ServiceModel.Core" base="q81:OnePassData">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="Identifier" type="xs:int" />
+              <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="ProfileUpdate" nillable="true" type="tns:ProfileUpdate" />
+      <xs:complexType name="RetrievePingContextRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q82="West.Westlaw.ServiceModel.Core" base="q82:SecureRequest">
+            <xs:sequence>
+              <xs:element name="PingContext" nillable="true" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RetrievePingContextRequest" nillable="true" type="tns:RetrievePingContextRequest" />
+      <xs:complexType name="RetrievePingContextResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q83="West.Westlaw.ServiceModel.Core" base="q83:OnePassResponse">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="AuthenticationContext" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ClientFederationConnection" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ClientFederationName" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="RetrievePingContextResponse" nillable="true" type="tns:RetrievePingContextResponse" />
+    </xs:schema>
+    <xs:schema xmlns:tns="West.Westlaw.ServiceModel.Core" elementFormDefault="qualified" targetNamespace="West.Westlaw.ServiceModel.Core" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="TLR.ServiceModel.Core" />
+      <xs:complexType name="SecureRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:OnePassRequest">
+            <xs:sequence>
+              <xs:element name="APIKey" nillable="true" type="xs:string" />
+              <xs:element name="APIKeyHash" nillable="true" type="xs:string" />
+              <xs:element name="Nonce" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="SecureRequest" nillable="true" type="tns:SecureRequest" />
+      <xs:complexType name="OnePassRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q1="TLR.ServiceModel.Core" base="q1:Request">
+            <xs:sequence />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="OnePassRequest" nillable="true" type="tns:OnePassRequest" />
+      <xs:complexType name="OnePassResponse">
+        <xs:complexContent mixed="false">
+          <xs:extension xmlns:q2="TLR.ServiceModel.Core" base="q2:Response">
+            <xs:sequence />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="OnePassResponse" nillable="true" type="tns:OnePassResponse" />
+      <xs:complexType name="OnePassData">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:element name="OnePassData" nillable="true" type="tns:OnePassData" />
+    </xs:schema>
+    <xs:schema xmlns:tns="TLR.ServiceModel.Core" elementFormDefault="qualified" targetNamespace="TLR.ServiceModel.Core" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="Request">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Header" nillable="true" type="tns:Header" />
+          <xs:element minOccurs="0" name="Trace" nillable="true" type="tns:TraceInformation">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="UserPrivacyStatus" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Request" nillable="true" type="tns:Request" />
+      <xs:complexType name="Header">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AuthenticationToken" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContextualInformation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProductIdentifier" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SessionToken" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SlideInformation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserHostIpAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Version" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Header" nillable="true" type="tns:Header" />
+      <xs:complexType name="TraceInformation">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ExecutionType" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="ParentGuid" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="Product" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="RootGuid" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="ServerInformation" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="SessionGuid" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="TransactionGuid" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="UserGuid" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="TraceInformation" nillable="true" type="tns:TraceInformation" />
+      <xs:complexType name="Response">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Header" nillable="true" type="tns:Header" />
+          <xs:element minOccurs="0" name="ServiceStatus" nillable="true" type="tns:ServiceStatus" />
+          <xs:element minOccurs="0" name="Trace" nillable="true" type="tns:TraceInformation">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Response" nillable="true" type="tns:Response" />
+      <xs:complexType name="ServiceStatus">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ElapsedTime" type="xs:long" />
+          <xs:element minOccurs="0" name="StartTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="StatusCode" type="xs:int" />
+          <xs:element minOccurs="0" name="StatusDescription" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ServiceStatus" nillable="true" type="tns:ServiceStatus" />
+      <xs:complexType name="ArrayOfProperty">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Property" nillable="true" type="tns:Property" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfProperty" nillable="true" type="tns:ArrayOfProperty" />
+      <xs:complexType name="Property">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Key" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Property" nillable="true" type="tns:Property" />
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/West.Westlaw.ServiceModel.Services.OnePass.V3" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/West.Westlaw.ServiceModel.Services.OnePass.V3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:simpleType name="AuthenticationTokenType">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="None" />
+          <xs:enumeration value="TransferToken" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="AuthenticationTokenType" nillable="true" type="tns:AuthenticationTokenType" />
+      <xs:simpleType name="RegistrationPageUIOverride">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="None" />
+          <xs:enumeration value="CXD" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="RegistrationPageUIOverride" nillable="true" type="tns:RegistrationPageUIOverride" />
+      <xs:simpleType name="AuthenticationReportMethods">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="None" />
+          <xs:enumeration value="InvalidAuthenticationAttempts" />
+          <xs:enumeration value="AuthenticationActivity" />
+          <xs:enumeration value="PasswordChangeActivity" />
+          <xs:enumeration value="ProductAuthenticationActivity" />
+          <xs:enumeration value="InvalidAuthenticationAttemptsTotal" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="AuthenticationReportMethods" nillable="true" type="tns:AuthenticationReportMethods" />
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="ArrayOfint">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="int" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfint" nillable="true" type="tns:ArrayOfint" />
+      <xs:complexType name="ArrayOfstring">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfstring" nillable="true" type="tns:ArrayOfstring" />
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/West.Westlaw.ServiceModel.Services.OnePass.Core" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/West.Westlaw.ServiceModel.Services.OnePass.Core" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:simpleType name="SignonFlowOptions">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="Normal" />
+          <xs:enumeration value="DoNotShowSignIn" />
+          <xs:enumeration value="ShowSignInIfKnown" />
+          <xs:enumeration value="BypassIPInitiated" />
+          <xs:enumeration value="BypassIPInitiatedDoNotShowSignIn" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="SignonFlowOptions" nillable="true" type="tns:SignonFlowOptions" />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="IOnePass_CheckStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckStatus" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CheckStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_AuthenticateOnePass_InputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateOnePass" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_AuthenticateOnePass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateOnePassResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_AuthenticateTransferToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateTransferToken" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_AuthenticateTransferToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateTransferTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_AuthenticateAccessToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateAccessToken" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_AuthenticateAccessToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateAccessTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_AuthenticateSignonToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateSignonToken" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_AuthenticateSignonToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateSignonTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_AuthenticateSponsorToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateSponsorToken" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_AuthenticateSponsorToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateSponsorTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_AuthenticateSponsorResourceToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateSponsorResourceToken" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_AuthenticateSponsorResourceToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateSponsorResourceTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateTransferToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateTransferToken" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateTransferToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateTransferTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateIPTransferToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateIPTransferToken" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateIPTransferToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateIPTransferTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateAccessToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateAccessToken" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateAccessToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateAccessTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateSignonToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateSignonToken" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateSignonToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateSignonTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateOpenToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOpenToken" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateOpenToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOpenTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateReauthenticationToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateReauthenticationToken" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateReauthenticationToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateReauthenticationTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateTraceToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateTraceToken" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateTraceToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateTraceTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateSponsorResourceToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateSponsorResourceToken" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateSponsorResourceToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateSponsorResourceTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateProfileResourceToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateProfileResourceToken" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateProfileResourceToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateProfileResourceTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateProfileCreateToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateProfileCreateToken" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateProfileCreateToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateProfileCreateTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrieveAuthenticationReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveAuthenticationReport" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrieveAuthenticationReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveAuthenticationReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrieveApiKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveApiKey" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrieveApiKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveApiKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrieveOAuthProviderAccessInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveOAuthProviderAccessInformation" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrieveOAuthProviderAccessInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveOAuthProviderAccessInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateServiceProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateServiceProfile" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateServiceProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateServiceProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateTemporaryProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateTemporaryProfile" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_CreateTemporaryProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateTemporaryProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_Find_InputMessage">
+    <wsdl:part name="parameters" element="tns:Find" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_Find_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_FindAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindAll" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_FindAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_FindRegistrationKeys_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindRegistrationKeys" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_FindRegistrationKeys_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindRegistrationKeysResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_FindProperties_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindProperties" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_FindProperties_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindPropertiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_AddRegistrationKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddRegistrationKey" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_AddRegistrationKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddRegistrationKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_ReplaceRegistrationKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReplaceRegistrationKey" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_ReplaceRegistrationKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReplaceRegistrationKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_LinkRegister_InputMessage">
+    <wsdl:part name="parameters" element="tns:LinkRegister" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_LinkRegister_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LinkRegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_LocateRegistrationKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:LocateRegistrationKey" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_LocateRegistrationKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LocateRegistrationKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_SAMLAutoProvisionRegistrationKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:SAMLAutoProvisionRegistrationKey" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_SAMLAutoProvisionRegistrationKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SAMLAutoProvisionRegistrationKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrieveProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveProfile" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrieveProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrievePingProfileConnection_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrievePingProfileConnection" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrievePingProfileConnection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrievePingProfileConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_SendForgottenPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendForgottenPassword" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_SendForgottenPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendForgottenPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrieveProductInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveProductInformation" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrieveProductInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveProductInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrieveViewProducts_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveViewProducts" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrieveViewProducts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveViewProductsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrieveProfileElectronicPayments_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveProfileElectronicPayments" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrieveProfileElectronicPayments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveProfileElectronicPaymentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_ValidateElectronicPayment_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateElectronicPayment" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_ValidateElectronicPayment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateElectronicPaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_AddProfileEPaymentMethod_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddProfileEPaymentMethod" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_AddProfileEPaymentMethod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddProfileEPaymentMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RemoveProfileEPaymentMethod_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveProfileEPaymentMethod" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RemoveProfileEPaymentMethod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveProfileEPaymentMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrieveSponsorInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveSponsorInformation" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrieveSponsorInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveSponsorInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_ValidateSponsorInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateSponsorInformation" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_ValidateSponsorInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateSponsorInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrieveIPInitiatedRegistrationKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveIPInitiatedRegistrationKey" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrieveIPInitiatedRegistrationKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveIPInitiatedRegistrationKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrieveUpdates_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveUpdates" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrieveUpdates_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveUpdatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_HealthCheck_InputMessage">
+    <wsdl:part name="parameters" element="tns:HealthCheck" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_HealthCheck_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HealthCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrievePingContextInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrievePingContextInformation" />
+  </wsdl:message>
+  <wsdl:message name="IOnePass_RetrievePingContextInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrievePingContextInformationResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IOnePass">
+    <wsdl:operation name="CheckStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/CheckStatus" message="tns:IOnePass_CheckStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/CheckStatusResponse" message="tns:IOnePass_CheckStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateOnePass">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/AuthenticateOnePass" message="tns:IOnePass_AuthenticateOnePass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/AuthenticateOnePassResponse" message="tns:IOnePass_AuthenticateOnePass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateTransferToken">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/AuthenticateTransferToken" message="tns:IOnePass_AuthenticateTransferToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/AuthenticateTransferTokenResponse" message="tns:IOnePass_AuthenticateTransferToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateAccessToken">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/AuthenticateAccessToken" message="tns:IOnePass_AuthenticateAccessToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/AuthenticateAccessTokenResponse" message="tns:IOnePass_AuthenticateAccessToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateSignonToken">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/AuthenticateSignonToken" message="tns:IOnePass_AuthenticateSignonToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/AuthenticateSignonTokenResponse" message="tns:IOnePass_AuthenticateSignonToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateSponsorToken">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/AuthenticateSponsorToken" message="tns:IOnePass_AuthenticateSponsorToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/AuthenticateSponsorTokenResponse" message="tns:IOnePass_AuthenticateSponsorToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateSponsorResourceToken">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/AuthenticateSponsorResourceToken" message="tns:IOnePass_AuthenticateSponsorResourceToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/AuthenticateSponsorResourceTokenResponse" message="tns:IOnePass_AuthenticateSponsorResourceToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateTransferToken">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/CreateTransferToken" message="tns:IOnePass_CreateTransferToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/CreateTransferTokenResponse" message="tns:IOnePass_CreateTransferToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateIPTransferToken">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/CreateIPTransferToken" message="tns:IOnePass_CreateIPTransferToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/CreateIPTransferTokenResponse" message="tns:IOnePass_CreateIPTransferToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAccessToken">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/CreateAccessToken" message="tns:IOnePass_CreateAccessToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/CreateAccessTokenResponse" message="tns:IOnePass_CreateAccessToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSignonToken">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/CreateSignonToken" message="tns:IOnePass_CreateSignonToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/CreateSignonTokenResponse" message="tns:IOnePass_CreateSignonToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateOpenToken">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/CreateOpenToken" message="tns:IOnePass_CreateOpenToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/CreateOpenTokenResponse" message="tns:IOnePass_CreateOpenToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateReauthenticationToken">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/CreateReauthenticationToken" message="tns:IOnePass_CreateReauthenticationToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/CreateReauthenticationTokenResponse" message="tns:IOnePass_CreateReauthenticationToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateTraceToken">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/CreateTraceToken" message="tns:IOnePass_CreateTraceToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/CreateTraceTokenResponse" message="tns:IOnePass_CreateTraceToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSponsorResourceToken">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/CreateSponsorResourceToken" message="tns:IOnePass_CreateSponsorResourceToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/CreateSponsorResourceTokenResponse" message="tns:IOnePass_CreateSponsorResourceToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateProfileResourceToken">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/CreateProfileResourceToken" message="tns:IOnePass_CreateProfileResourceToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/CreateProfileResourceTokenResponse" message="tns:IOnePass_CreateProfileResourceToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateProfileCreateToken">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/CreateProfileCreateToken" message="tns:IOnePass_CreateProfileCreateToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/CreateProfileCreateTokenResponse" message="tns:IOnePass_CreateProfileCreateToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveAuthenticationReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/RetrieveAuthenticationReport" message="tns:IOnePass_RetrieveAuthenticationReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/RetrieveAuthenticationReportResponse" message="tns:IOnePass_RetrieveAuthenticationReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveApiKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/RetrieveApiKey" message="tns:IOnePass_RetrieveApiKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/RetrieveApiKeyResponse" message="tns:IOnePass_RetrieveApiKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveOAuthProviderAccessInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/RetrieveOAuthProviderAccessInformation" message="tns:IOnePass_RetrieveOAuthProviderAccessInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/RetrieveOAuthProviderAccessInformationResponse" message="tns:IOnePass_RetrieveOAuthProviderAccessInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateServiceProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/CreateServiceProfile" message="tns:IOnePass_CreateServiceProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/CreateServiceProfileResponse" message="tns:IOnePass_CreateServiceProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateTemporaryProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/CreateTemporaryProfile" message="tns:IOnePass_CreateTemporaryProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/CreateTemporaryProfileResponse" message="tns:IOnePass_CreateTemporaryProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Find">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/Find" message="tns:IOnePass_Find_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/FindResponse" message="tns:IOnePass_Find_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/FindAll" message="tns:IOnePass_FindAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/FindAllResponse" message="tns:IOnePass_FindAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindRegistrationKeys">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/FindRegistrationKeys" message="tns:IOnePass_FindRegistrationKeys_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/FindRegistrationKeysResponse" message="tns:IOnePass_FindRegistrationKeys_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindProperties">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/FindProperties" message="tns:IOnePass_FindProperties_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/FindPropertiesResponse" message="tns:IOnePass_FindProperties_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddRegistrationKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/AddRegistrationKey" message="tns:IOnePass_AddRegistrationKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/AddRegistrationKeyResponse" message="tns:IOnePass_AddRegistrationKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReplaceRegistrationKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/ReplaceRegistrationKey" message="tns:IOnePass_ReplaceRegistrationKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/ReplaceRegistrationKeyResponse" message="tns:IOnePass_ReplaceRegistrationKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LinkRegister">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/LinkRegister" message="tns:IOnePass_LinkRegister_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/LinkRegisterResponse" message="tns:IOnePass_LinkRegister_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LocateRegistrationKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/LocateRegistrationKey" message="tns:IOnePass_LocateRegistrationKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/LocateRegistrationKeyResponse" message="tns:IOnePass_LocateRegistrationKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SAMLAutoProvisionRegistrationKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/SAMLAutoProvisionRegistrationKey" message="tns:IOnePass_SAMLAutoProvisionRegistrationKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/SAMLAutoProvisionRegistrationKeyResponse" message="tns:IOnePass_SAMLAutoProvisionRegistrationKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/RetrieveProfile" message="tns:IOnePass_RetrieveProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/RetrieveProfileResponse" message="tns:IOnePass_RetrieveProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrievePingProfileConnection">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/RetrievePingProfileConnection" message="tns:IOnePass_RetrievePingProfileConnection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/RetrievePingProfileConnectionResponse" message="tns:IOnePass_RetrievePingProfileConnection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendForgottenPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/SendForgottenPassword" message="tns:IOnePass_SendForgottenPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/SendForgottenPasswordResponse" message="tns:IOnePass_SendForgottenPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveProductInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/RetrieveProductInformation" message="tns:IOnePass_RetrieveProductInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/RetrieveProductInformationResponse" message="tns:IOnePass_RetrieveProductInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveViewProducts">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/RetrieveViewProducts" message="tns:IOnePass_RetrieveViewProducts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/RetrieveViewProductsResponse" message="tns:IOnePass_RetrieveViewProducts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveProfileElectronicPayments">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/RetrieveProfileElectronicPayments" message="tns:IOnePass_RetrieveProfileElectronicPayments_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/RetrieveProfileElectronicPaymentsResponse" message="tns:IOnePass_RetrieveProfileElectronicPayments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateElectronicPayment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/ValidateElectronicPayment" message="tns:IOnePass_ValidateElectronicPayment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/ValidateElectronicPaymentResponse" message="tns:IOnePass_ValidateElectronicPayment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddProfileEPaymentMethod">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/AddProfileEPaymentMethod" message="tns:IOnePass_AddProfileEPaymentMethod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/AddProfileEPaymentMethodResponse" message="tns:IOnePass_AddProfileEPaymentMethod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveProfileEPaymentMethod">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/RemoveProfileEPaymentMethod" message="tns:IOnePass_RemoveProfileEPaymentMethod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/RemoveProfileEPaymentMethodResponse" message="tns:IOnePass_RemoveProfileEPaymentMethod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveSponsorInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/RetrieveSponsorInformation" message="tns:IOnePass_RetrieveSponsorInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/RetrieveSponsorInformationResponse" message="tns:IOnePass_RetrieveSponsorInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateSponsorInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/ValidateSponsorInformation" message="tns:IOnePass_ValidateSponsorInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/ValidateSponsorInformationResponse" message="tns:IOnePass_ValidateSponsorInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveIPInitiatedRegistrationKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/RetrieveIPInitiatedRegistrationKey" message="tns:IOnePass_RetrieveIPInitiatedRegistrationKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/RetrieveIPInitiatedRegistrationKeyResponse" message="tns:IOnePass_RetrieveIPInitiatedRegistrationKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveUpdates">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/RetrieveUpdates" message="tns:IOnePass_RetrieveUpdates_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/RetrieveUpdatesResponse" message="tns:IOnePass_RetrieveUpdates_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HealthCheck">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/HealthCheck" message="tns:IOnePass_HealthCheck_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/HealthCheckResponse" message="tns:IOnePass_HealthCheck_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrievePingContextInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOnePass/RetrievePingContextInformation" message="tns:IOnePass_RetrievePingContextInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOnePass/RetrievePingContextInformationResponse" message="tns:IOnePass_RetrievePingContextInformation_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CustomBinding_IOnePass" type="tns:IOnePass">
+    <wsp:PolicyReference URI="#CustomBinding_IOnePass_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckStatus">
+      <soap:operation soapAction="http://tempuri.org/IService/CheckStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateOnePass">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/AuthenticateOnePass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateTransferToken">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/AuthenticateTransferToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateAccessToken">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/AuthenticateAccessToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateSignonToken">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/AuthenticateSignonToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateSponsorToken">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/AuthenticateSponsorToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateSponsorResourceToken">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/AuthenticateSponsorResourceToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTransferToken">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/CreateTransferToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateIPTransferToken">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/CreateIPTransferToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAccessToken">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/CreateAccessToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSignonToken">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/CreateSignonToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOpenToken">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/CreateOpenToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateReauthenticationToken">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/CreateReauthenticationToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTraceToken">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/CreateTraceToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSponsorResourceToken">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/CreateSponsorResourceToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateProfileResourceToken">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/CreateProfileResourceToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateProfileCreateToken">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/CreateProfileCreateToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveAuthenticationReport">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/RetrieveAuthenticationReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveApiKey">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/RetrieveApiKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveOAuthProviderAccessInformation">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/RetrieveOAuthProviderAccessInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateServiceProfile">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/CreateServiceProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTemporaryProfile">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/CreateTemporaryProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Find">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/Find" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAll">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/FindAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindRegistrationKeys">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/FindRegistrationKeys" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindProperties">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/FindProperties" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddRegistrationKey">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/AddRegistrationKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReplaceRegistrationKey">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/ReplaceRegistrationKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LinkRegister">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/LinkRegister" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LocateRegistrationKey">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/LocateRegistrationKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SAMLAutoProvisionRegistrationKey">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/SAMLAutoProvisionRegistrationKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveProfile">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/RetrieveProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrievePingProfileConnection">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/RetrievePingProfileConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendForgottenPassword">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/SendForgottenPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveProductInformation">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/RetrieveProductInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveViewProducts">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/RetrieveViewProducts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveProfileElectronicPayments">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/RetrieveProfileElectronicPayments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateElectronicPayment">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/ValidateElectronicPayment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddProfileEPaymentMethod">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/AddProfileEPaymentMethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveProfileEPaymentMethod">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/RemoveProfileEPaymentMethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveSponsorInformation">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/RetrieveSponsorInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateSponsorInformation">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/ValidateSponsorInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveIPInitiatedRegistrationKey">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/RetrieveIPInitiatedRegistrationKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveUpdates">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/RetrieveUpdates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HealthCheck">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/HealthCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrievePingContextInformation">
+      <soap:operation soapAction="http://tempuri.org/IOnePass/RetrievePingContextInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OnePassServiceWS">
+    <wsdl:port name="CustomBinding_IOnePass" binding="tns:CustomBinding_IOnePass">
+      <soap:address location="https://onepassservices.dev.westlaw.com:9000/onepass.ws/v3" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,15 @@
+{
+  // Maps AnnotatedDocumentsFacetOptions to WebElementInfo
+  "Highlighted": {
+    "Id": "co_facetItem_annotatedhighlighted",
+    "Text": "Highlighted"
+  },
+  "NotAnnotated": {
+    "Id": "co_facetItem_annotatednotAnnotated",
+    "Text": "Not Annotated"
+  },
+  "Notes": {
+    "Id": "co_facetItem_annotatednoted",
+    "Text": "Notes"
+  }
+}

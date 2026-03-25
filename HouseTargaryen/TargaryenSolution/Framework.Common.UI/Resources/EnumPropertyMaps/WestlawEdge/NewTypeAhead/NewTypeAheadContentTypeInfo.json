@@ -1,0 +1,51 @@
+{
+  // NewTypeAheadContentTypes to WebElementInfo
+  "PrecisionSuggestions": {
+    "LocatorString": "//li[@id =  'Suggestions_TypeAheadGroupListItem']",
+    "Text": "Suggestions"
+  },
+  "Cases": {
+    "LocatorString": "//li[ @id = 'CasesSection' or @id = 'Cases_TypeAheadGroupListItem']",
+    "Text": "Cases"
+  },
+  "CasesAndDecisions": {
+    "LocatorString": "//li[@id='Jurisprudence_TypeAheadGroupListItem']",
+    "Text": "Cases and Decisions"
+  },
+  "GovernmentAndRegulatoryMaterials": {
+    "LocatorString": "//li[ @id = 'GovRegSection']",
+    "Text": "Government & Regulatory Materials"
+  },
+  "LegalTopics": {
+    "LocatorString": "//li[ @id = 'LegalTopics_TypeAheadGroupListItem']",
+    "Text": "Legal Topics"
+  },
+  "Legislation": {
+    "LocatorString": "//li[ @id = 'LegislationSection']",
+    "Text": "Legislation"
+  },
+  "Other": {
+    "LocatorString": "//li[@id = 'Other_TypeAheadGroupListItem']",
+    "Text": "Other"
+  },
+  "PracticalLaw": {
+    "LocatorString": "//li[@id = 'PracticalLaw_TypeAheadGroupListItem']",
+    "Text": "Practical Law"
+  },
+  "Regulations": {
+    "LocatorString": "//li[@id = 'Regulations_TypeAheadGroupListItem']",
+    "Text": "Regulations"
+  },
+  "SecondarySources": {
+    "LocatorString": "//li[ @id = 'SecondarySourcesSection' or @id = 'Secondary Sources_TypeAheadGroupListItem']",
+    "Text": "Secondary Sources"
+  },
+  "StatutesAndCourtRules": {
+    "LocatorString": "//li[@id = 'Statutes & Court Rules_TypeAheadGroupListItem']",
+    "Text": "Statutes & Court Rules"
+  },
+  "Suggestions": {
+    "LocatorString": "//li[ @id = 'SearchSuggestionsSection' or @id =  'Suggestions_TypeAheadGroupListItem']",
+    "Text": "Suggestions"
+  }
+}

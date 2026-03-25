@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(SolutionDir)packages\ReportPortal.VSTest.TestLogger.3.4.0\build\net462\ReportPortal.VSTest.TestLogger.props" Condition="Exists('$(SolutionDir)packages\ReportPortal.VSTest.TestLogger.3.4.0\build\net462\ReportPortal.VSTest.TestLogger.props')" />
+  <!--<Import Project="$(SolutionDir)packages\ReportPortal.VSTest.TestLogger.3.0.1\build\net451\ReportPortal.VSTest.TestLogger.props" Condition="Exists('$(SolutionDir)packages\ReportPortal.VSTest.TestLogger.3.0.1\build\net451\ReportPortal.VSTest.TestLogger.props')" /> -->
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91A989AE-62DB-4883-B528-3F0DCEE80F4B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Framework.Core</RootNamespace>
+    <AssemblyName>Framework.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <LangVersion>latest</LangVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>bin\Debug\Framework.Core.xml</DocumentationFile>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseAll|AnyCPU'">
+    <OutputPath>bin\ReleaseAll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="amqmdnet, Version=7.1.0.6, Culture=neutral, PublicKeyToken=dd3cb1c9aae9ec97, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\IBM.XMS.2.1.0.6\lib\net40\amqmdnet.dll</HintPath>
+    </Reference>
+    <Reference Include="amqmdnetstd, Version=9.2.4.0, Culture=neutral, PublicKeyToken=23d6cb914eeaac0e, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\IBMXMSDotnetClient.9.2.4.0\lib\netstandard2.0\amqmdnetstd.dll</HintPath>
+    </Reference>
+    <Reference Include="amqmdnsp, Version=7.1.0.6, Culture=neutral, PublicKeyToken=4ec3909022c7abcc, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\IBM.XMS.2.1.0.6\lib\net40\amqmdnsp.dll</HintPath>
+    </Reference>
+    <Reference Include="amqmdxcs, Version=7.1.0.6, Culture=neutral, PublicKeyToken=7a58d55a51981a15, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\IBM.XMS.2.1.0.6\lib\net40\amqmdxcs.dll</HintPath>
+    </Reference>
+    <Reference Include="amqmxmsstd, Version=9.2.4.0, Culture=neutral, PublicKeyToken=d2666ab12fca862b, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\IBMXMSDotnetClient.9.2.4.0\lib\netstandard2.0\amqmxmsstd.dll</HintPath>
+    </Reference>
+    <Reference Include="Apache.NMS, Version=1.8.0.0, Culture=neutral, PublicKeyToken=82756feee3957618, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Apache.NMS.1.8.0\lib\net40\Apache.NMS.dll</HintPath>
+    </Reference>
+    <Reference Include="Apache.NMS.ActiveMQ, Version=1.8.0.0, Culture=neutral, PublicKeyToken=82756feee3957618, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Apache.NMS.ActiveMQ.1.8.0\lib\net40\Apache.NMS.ActiveMQ.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\AWSSDK.Core.3.7.6.1\lib\net45\AWSSDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SecretsManager, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\AWSSDK.SecretsManager.3.7.1.71\lib\net45\AWSSDK.SecretsManager.dll</HintPath>
+    </Reference>
+    <Reference Include="IBM.XMS, Version=2.1.0.6, Culture=neutral, PublicKeyToken=d2666ab12fca862b, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\IBM.XMS.2.1.0.6\lib\net40\IBM.XMS.dll</HintPath>
+    </Reference>
+    <Reference Include="IBM.XMS.Admin, Version=2.1.0.6, Culture=neutral, PublicKeyToken=d2666ab12fca862b, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\IBM.XMS.2.1.0.6\lib\net40\IBM.XMS.Admin.dll</HintPath>
+    </Reference>
+    <Reference Include="IBM.XMS.Admin.Objects, Version=2.1.0.6, Culture=neutral, PublicKeyToken=d2666ab12fca862b, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\IBM.XMS.2.1.0.6\lib\net40\IBM.XMS.Admin.Objects.dll</HintPath>
+    </Reference>
+    <Reference Include="IBM.XMS.Client.Impl, Version=2.1.0.6, Culture=neutral, PublicKeyToken=d2666ab12fca862b, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\IBM.XMS.2.1.0.6\lib\net40\IBM.XMS.Client.Impl.dll</HintPath>
+    </Reference>
+    <Reference Include="IBM.XMS.Client.WMQ, Version=2.1.0.6, Culture=neutral, PublicKeyToken=d2666ab12fca862b, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\IBM.XMS.2.1.0.6\lib\net40\IBM.XMS.Client.WMQ.dll</HintPath>
+    </Reference>
+    <Reference Include="IBM.XMS.Core, Version=2.1.0.6, Culture=neutral, PublicKeyToken=d2666ab12fca862b, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\IBM.XMS.2.1.0.6\lib\net40\IBM.XMS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IBM.XMS.Impl, Version=2.1.0.6, Culture=neutral, PublicKeyToken=d2666ab12fca862b, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\IBM.XMS.2.1.0.6\lib\net40\IBM.XMS.Impl.dll</HintPath>
+    </Reference>
+    <Reference Include="IBM.XMS.Match, Version=2.1.0.6, Culture=neutral, PublicKeyToken=d2666ab12fca862b, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\IBM.XMS.2.1.0.6\lib\net40\IBM.XMS.Match.dll</HintPath>
+    </Reference>
+    <Reference Include="IBM.XMS.NLS, Version=2.1.0.6, Culture=neutral, PublicKeyToken=d2666ab12fca862b, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\IBM.XMS.2.1.0.6\lib\net40\IBM.XMS.NLS.dll</HintPath>
+    </Reference>
+    <Reference Include="IBM.XMS.Provider, Version=2.1.0.6, Culture=neutral, PublicKeyToken=d2666ab12fca862b, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\IBM.XMS.2.1.0.6\lib\net40\IBM.XMS.Provider.dll</HintPath>
+    </Reference>
+    <Reference Include="IBM.XMS.Util, Version=2.1.0.6, Culture=neutral, PublicKeyToken=d2666ab12fca862b, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\IBM.XMS.2.1.0.6\lib\net40\IBM.XMS.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="IBM.XMS.WMQI, Version=2.1.0.6, Culture=neutral, PublicKeyToken=d2666ab12fca862b, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\IBM.XMS.2.1.0.6\lib\net40\IBM.XMS.WMQI.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSmtp, Version=1.11.0.34196, Culture=neutral">
+      <HintPath>$(SolutionDir)packages\OpenSmtp.1.11.0.34196\lib\OpenSmtp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="QedArsenal.QualityLibrary.Core, Version=2207.0.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\QedArsenal.QualityLibrary.Core.2207.0.6-build\lib\net45\QedArsenal.QualityLibrary.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportPortal.Client, Version=3.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\ReportPortal.Client.3.10.0\lib\net462\ReportPortal.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportPortal.Log4Net, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\ReportPortal.Log4Net.2.0.0\lib\net45\ReportPortal.Log4Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ReportPortal.Shared, Version=3.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\ReportPortal.Shared.3.10.0\lib\net462\ReportPortal.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportPortal.VSTest.TestLogger, Version=3.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\ReportPortal.VSTest.TestLogger.3.4.0\lib\net462\ReportPortal.VSTest.TestLogger.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Text.Encodings.Web, Version=6.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\System.Text.Encodings.Web.6.0.1\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=6.0.0.11, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\System.Text.Json.6.0.11\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>.$(SolutionDir)packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Thomson.Novus.ProductAPI, Version=24.8.2.1, Culture=neutral, PublicKeyToken=b06d0a70726cd750, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Thomson.Novus.ProductAPI.24.8.2.1\lib\net472\Thomson.Novus.ProductAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>Properties\SolutionInfo.cs</Link>
+    </Compile>
+    <Compile Include="CommonTypes\Attributes\ExtendedEnumAttribute.cs" />
+    <Compile Include="CommonTypes\Configuration\PasswordPool.cs" />
+    <Compile Include="CommonTypes\Configuration\SettingUpdateContext.cs" />
+    <Compile Include="CommonTypes\Configuration\SettingUpdateOption.cs" />
+    <Compile Include="CommonTypes\Configuration\TestConfigurationRepository.cs" />
+    <Compile Include="CommonTypes\Configuration\TestExecutionContext.cs" />
+    <Compile Include="CommonTypes\Configuration\TestSettings.cs" />
+    <Compile Include="CommonTypes\Constants\EnvironmentConstants.cs" />
+    <Compile Include="CommonTypes\Constants\PathsToSourceFiles.cs" />
+    <Compile Include="CommonTypes\Enums\FeatureAccessControl.cs" />
+    <Compile Include="CommonTypes\Enums\FeatureSelectionOption.cs" />
+    <Compile Include="CommonTypes\Enums\KeyCiteFlag.cs" />
+    <Compile Include="CommonTypes\Enums\QuotationsViewMode.cs" />
+    <Compile Include="CommonTypes\Enums\RoutingSettingDropdown.cs" />
+    <Compile Include="CommonTypes\Enums\RoutingSettingDropdownOption.cs" />
+    <Compile Include="CommonTypes\Enums\RoutingSettingTextbox.cs" />
+    <Compile Include="CommonTypes\Enums\Setup\BrowserUnderTest.cs" />
+    <Compile Include="CommonTypes\Enums\Setup\IEnvironment.cs" />
+    <Compile Include="CommonTypes\Enums\Setup\IModule.cs" />
+    <Compile Include="CommonTypes\Enums\Setup\IProduct.cs" />
+    <Compile Include="CommonTypes\Enums\Setup\IProductView.cs" />
+    <Compile Include="CommonTypes\Enums\Setup\ISite.cs" />
+    <Compile Include="CommonTypes\Enums\SupportedFeatures.cs" />
+    <Compile Include="CommonTypes\Enums\TestCapture\ImageFileType.cs" />
+    <Compile Include="CommonTypes\Enums\TestCapture\TestCaptureSetting.cs" />
+    <Compile Include="CommonTypes\Enums\Versions.cs" />
+    <Compile Include="CommonTypes\Settings\ITestSettings.cs" />
+    <Compile Include="CommonTypes\Settings\TestSetting.cs" />
+    <Compile Include="CommonTypes\Settings\TestSettingKey.cs" />
+    <Compile Include="CommonTypes\Settings\TestSettingKeys.cs" />
+    <Compile Include="CommonTypes\Settings\TestSettings.cs" />
+    <Compile Include="DataModel\Configuration\Collections\TestClientElementCollection.cs" />
+    <Compile Include="DataModel\Configuration\Constants\TestClientFamily.cs" />
+    <Compile Include="DataModel\Configuration\Constants\TestClientType.cs" />
+    <Compile Include="DataModel\Configuration\Constants\TestClientId.cs" />
+    <Compile Include="DataModel\Configuration\KnownExecutionFlags.cs" />
+    <Compile Include="DataModel\Configuration\Proxies\AttachmentsInfo.cs" />
+    <Compile Include="DataModel\Configuration\Proxies\CobaltProductInfo.cs" />
+    <Compile Include="DataModel\Configuration\Collections\ProductElementCollection.cs" />
+    <Compile Include="DataModel\Configuration\Collections\ModuleElementCollection.cs" />
+    <Compile Include="DataModel\Configuration\Collections\EnvironmentElementCollection.cs" />
+    <Compile Include="DataModel\Configuration\Constants\CobaltProductId.cs" />
+    <Compile Include="DataModel\Configuration\Constants\CobaltModuleType.cs" />
+    <Compile Include="DataModel\Configuration\Constants\CobaltModuleId.cs" />
+    <Compile Include="DataModel\Configuration\Constants\EnvironmentId.cs" />
+    <Compile Include="CommonTypes\Extensions\EnumExtension.cs" />
+    <Compile Include="CommonTypes\Extensions\SettingsCollectionExtension.cs" />
+    <Compile Include="DataModel\Configuration\Proxies\EndpointInfo.cs" />
+    <Compile Include="DataModel\Configuration\Proxies\CobaltEntityInfo.cs" />
+    <Compile Include="DataModel\Configuration\Proxies\CobaltModuleInfo.cs" />
+    <Compile Include="DataModel\Configuration\Proxies\ICobaltEntityInfo.cs" />
+    <Compile Include="DataModel\Configuration\Proxies\QualityCheckInfo.cs" />
+    <Compile Include="DataModel\Configuration\Proxies\QualityChecksInfo.cs" />
+    <Compile Include="DataModel\Configuration\Proxies\QualityTestCaseInfo.cs" />
+    <Compile Include="DataModel\Configuration\Proxies\QualityTestCasesInfo.cs" />
+    <Compile Include="DataModel\Configuration\Proxies\QualityTestRunInfo .cs" />
+    <Compile Include="DataModel\Configuration\Proxies\TestClientInfo.cs" />
+    <Compile Include="DataModel\Configuration\Proxies\EnvironmentInfo.cs" />
+    <Compile Include="DataModel\Configuration\Constants\CobaltProductType.cs" />
+    <Compile Include="DataModel\Configuration\Constants\EnvironmentType.cs" />
+    <Compile Include="DataModel\Configuration\Constants\ConfigurationConstants.cs" />
+    <Compile Include="DataModel\Configuration\Collections\EndpointElementCollection.cs" />
+    <Compile Include="DataModel\Configuration\Collections\EntityElementCollection.cs" />
+    <Compile Include="DataModel\Configuration\Proxies\QrtTestConfigInfo.cs" />
+    <Compile Include="DataModel\Configuration\Proxies\ReleaseSetInfo.cs" />
+    <Compile Include="DataModel\Configuration\Sections\EntityElement.cs" />
+    <Compile Include="DataModel\Configuration\Sections\CobaltModuleElement.cs" />
+    <Compile Include="DataModel\Configuration\Sections\CobaltProductElement.cs" />
+    <Compile Include="DataModel\Configuration\Sections\EndpointElement.cs" />
+    <Compile Include="DataModel\Configuration\Sections\TestClientElement.cs" />
+    <Compile Include="DataModel\Configuration\Sections\EnvironmentElement.cs" />
+    <Compile Include="DataModel\Configuration\Sections\IProxyEmittable.cs" />
+    <Compile Include="DataModel\Configuration\Sections\LocalConfigurationSection.cs" />
+    <Compile Include="DataModel\Configuration\Sections\RemoteConfigurationSection.cs" />
+    <Compile Include="DataModel\RoutingConfigModel.cs" />
+    <Compile Include="DataModel\RoutingSettingsInfo.cs" />
+    <Compile Include="DataModel\Security\Proxies\IOnePassUserInfo.cs" />
+    <Compile Include="DataModel\Security\Proxies\PatronUserInfo.cs" />
+    <Compile Include="DataModel\Security\Proxies\IUserInfo.cs" />
+    <Compile Include="DataModel\Security\Proxies\OnePassUserInfo.cs" />
+    <Compile Include="DataModel\Security\CredentialPool.cs" />
+    <Compile Include="DataModel\Security\Proxies\WlnUserInfo.cs" />
+    <Compile Include="DataModel\Security\Specialized\IUserCredential.cs" />
+    <Compile Include="DataModel\Security\Specialized\UserCredential.cs" />
+    <Compile Include="DataModel\Security\Specialized\UserDbCredential.cs" />
+    <Compile Include="DataModel\BaseTextModel.cs" />
+    <Compile Include="DataModel\Configuration\Settings\CobaltTestSettingKeys.cs" />
+    <Compile Include="DataModel\Configuration\Settings\CobaltTestSettings.cs" />
+    <Compile Include="CommonTypes\Enums\Environment\CobaltEnvironment.cs" />
+    <Compile Include="CommonTypes\Enums\Environment\CobaltModule.cs" />
+    <Compile Include="CommonTypes\Enums\Environment\CobaltProduct.cs" />
+    <Compile Include="CommonTypes\Enums\Environment\CobaltProductView.cs" />
+    <Compile Include="CommonTypes\Enums\Environment\CobaltSite.cs" />
+    <Compile Include="CommonTypes\Enums\Environment\NovusEnvironment.cs" />
+    <Compile Include="CommonTypes\Enums\Environment\OnePassEnvironment.cs" />
+    <Compile Include="Cobalt\Passwords\PasswordInfo.cs" />
+    <Compile Include="Cobalt\Passwords\PasswordUtils.cs" />
+    <Compile Include="Cobalt\Uds\AuthenticationInfo.cs" />
+    <Compile Include="Cobalt\Uds\AuthenticationService.cs" />
+    <Compile Include="Cobalt\Uds\Session.cs" />
+    <Compile Include="Cobalt\Uds\SessionBindings.cs" />
+    <Compile Include="Cobalt\Uds\SessionService.cs" />
+    <Compile Include="Cobalt\Uds\SessionUtils.cs" />
+    <Compile Include="Cobalt\Url\CobaltUrlManager.cs" />
+    <Compile Include="Cobalt\Url\CobaltUrlType.cs" />
+    <Compile Include="Net\EndpointResponse.cs" />
+    <Compile Include="Net\HttpResponseException.cs" />
+    <Compile Include="Net\HttpUtils.cs" />
+    <Compile Include="Net\MimeType.cs" />
+    <Compile Include="QrtBaseTests\BaseContextualTest.cs" />
+    <Compile Include="QrtBaseTests\BaseTest.cs" />
+    <Compile Include="QualityChecks\MsUnit\QualityAssert.cs" />
+    <Compile Include="QualityChecks\MsUnit\QualityCollectionAssert.cs" />
+    <Compile Include="QualityChecks\MsUnit\QualityCollectionVerify.cs" />
+    <Compile Include="QualityChecks\MsUnit\QualityVerify.cs" />
+    <Compile Include="QualityChecks\Result\Outcome.cs" />
+    <Compile Include="QualityChecks\Result\QualityCheck.cs" />
+    <Compile Include="QualityChecks\Result\QualityCheckType.cs" />
+    <Compile Include="QualityChecks\Result\QualityTestCase.cs" />
+    <Compile Include="QualityChecks\Result\QualityTestRun.cs" />
+    <Compile Include="TestCapture\IScreenshotTaker.cs" />
+    <Compile Include="Tests\BaseContextualTest.cs" />
+    <Compile Include="Tests\BaseTest.cs" />
+    <Compile Include="Url\IUrlType.cs" />
+    <Compile Include="Url\UrlKey.cs" />
+    <Compile Include="Url\UrlManager.cs" />
+    <Compile Include="Url\UrlType.cs" />
+    <Compile Include="Url\UrlUtils.cs" />
+    <Compile Include="Utils\AssemblyUtils.cs" />
+    <Compile Include="Utils\Configuration\UserFileCredentialRetriever.cs" />
+    <Compile Include="Utils\Enums\EnumAttribute.cs" />
+    <Compile Include="Utils\Enums\EnumExtension.cs" />
+    <Compile Include="Utils\Enums\EnumPropertyMapper.cs" />
+    <Compile Include="Utils\Enums\EnumPropertyModelCache.cs" />
+    <Compile Include="Utils\Enums\EnumUtils.cs" />
+    <Compile Include="Utils\Enums\IEnumAttributeBase.cs" />
+    <Compile Include="Utils\Enums\StringEnumUtils.cs" />
+    <Compile Include="Utils\Enums\StringValueAttribute.cs" />
+    <Compile Include="Utils\EqualsUtils.cs" />
+    <Compile Include="Utils\Extensions\CollectionExtensions.cs" />
+    <Compile Include="Utils\Extensions\RandomExtensions.cs" />
+    <Compile Include="Utils\Extensions\TestSettingsExtensions.cs" />
+    <Compile Include="Utils\FileUtils.cs" />
+    <Compile Include="Utils\GenericJsonConverter.cs" />
+    <Compile Include="Utils\HashCodeUtils.cs" />
+    <Compile Include="Utils\IO\FileUtil.cs" />
+    <Compile Include="Utils\NovusClientUtility.cs" />
+    <Compile Include="Utils\NovusEnvironmentEnum.cs" />
+    <Compile Include="Utils\NovusUtilityActions.cs" />
+    <Compile Include="Utils\ObjectSerializer.cs" />
+    <Compile Include="Utils\Configuration\TestReaderBase.cs" />
+    <Compile Include="Utils\Configuration\TestSettingsReader.cs" />
+    <Compile Include="Utils\Extensions\StringExtensions.cs" />
+    <Compile Include="Utils\ReflectionUtils.cs" />
+    <Compile Include="Utils\Unsubscriber.cs" />
+    <Compile Include="Utils\Verification\Assertion.cs" />
+    <Compile Include="Utils\Configuration\EmailQrtLoadResults.cs" />
+    <Compile Include="Utils\Configuration\EnvironmentUtils.cs" />
+    <Compile Include="Utils\Configuration\TestRepositoryReader.cs" />
+    <Compile Include="Utils\DateTimeClass.cs" />
+    <Compile Include="Utils\Execution\ExecutionResultType.cs" />
+    <Compile Include="CommonTypes\Configuration\PasswordVertical.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Execution\CommandExecutor.cs" />
+    <Compile Include="Utils\Execution\ExecutionResult.cs" />
+    <Compile Include="Utils\Execution\SafeMethodExecutor.cs" />
+    <Compile Include="Utils\Extensions\ArrayExtensions.cs" />
+    <Compile Include="Utils\Extensions\ObjectExtensions.cs" />
+    <Compile Include="Utils\Extensions\StreamExtensions.cs" />
+    <Compile Include="Utils\Logger.cs" />
+    <Compile Include="Utils\Verification\BaseTestCase.cs" />
+    <Compile Include="Utils\Verification\QualityCheckExtensions.cs" />
+    <Compile Include="Utils\Verification\TestCaseAssert.cs" />
+    <Compile Include="Utils\Verification\TestCaseVerify.cs" />
+    <Compile Include="Utils\Windows\BitmapExtensions.cs" />
+    <Compile Include="Utils\Windows\ProcessManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\EnumPropertyMaps\FeatureAccessControlInfo.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\EnumPropertyMaps\PasswordPoolInfo.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\EnumPropertyMaps\PasswordVerticalInfo.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ReportPortal.config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\EnumPropertyMaps\RoutingSettingDropdownInfo.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\EnumPropertyMaps\RoutingSettingTextboxInfo.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\EnumPropertyMaps\SupportedFeaturesInfo.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\LocalTestConfig.xml">
+      <Link>Resources\LocalTestConfig.xml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="..\TestEnvironmentRepository.xml">
+      <Link>Resources\TestEnvironmentRepository.xml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\TestEnvironmentRepositoryFedRamp.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="$(SolutionDir)packages\AWSSDK.SecretsManager.3.7.1.71\analyzers\dotnet\cs\AWSSDK.SecretsManager.CodeAnalysis.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+    <Error Condition="!Exists('$(SolutionDir)packages\ReportPortal.VSTest.TestLogger.3.4.0\build\net462\ReportPortal.VSTest.TestLogger.props')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)packages\ReportPortal.VSTest.TestLogger.3.4.0\build\net462\ReportPortal.VSTest.TestLogger.props'))" />
+    <Error Condition="!Exists('$(SolutionDir)packages\ReportPortal.VSTest.TestLogger.3.4.0\build\net462\ReportPortal.VSTest.TestLogger.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)packages\ReportPortal.VSTest.TestLogger.3.4.0\build\net462\ReportPortal.VSTest.TestLogger.targets'))" />
+    <Error Condition="!Exists('$(SolutionDir)packages\ReportPortal.Shared.3.10.0\build\\net462\ReportPortal.Shared.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)packages\ReportPortal.Shared.3.10.0\build\\net462\ReportPortal.Shared.targets'))" />
+  </Target>
+  <Import Project="$(SolutionDir)packages\ReportPortal.VSTest.TestLogger.3.4.0\build\net462\ReportPortal.VSTest.TestLogger.targets" Condition="Exists('$(SolutionDir)packages\ReportPortal.VSTest.TestLogger.3.4.0\build\net462\ReportPortal.VSTest.TestLogger.targets')" />
+  <Import Project="$(SolutionDir)packages\ReportPortal.Shared.3.10.0\build\\net462\ReportPortal.Shared.targets" Condition="Exists('$(SolutionDir)packages\ReportPortal.Shared.3.10.0\build\\net462\ReportPortal.Shared.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

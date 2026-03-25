@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(SolutionDir)packages\ReportPortal.VSTest.TestLogger.3.4.0\build\net462\ReportPortal.VSTest.TestLogger.props" Condition="Exists('$(SolutionDir)packages\ReportPortal.VSTest.TestLogger.3.4.0\build\net462\ReportPortal.VSTest.TestLogger.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B2B68D7-5498-484C-81AE-5113ED88F4E9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WestlawAdvantage</RootNamespace>
+    <AssemblyName>WestlawAdvantage</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\TargaryenSolution\Framework.Common.Api\Framework.Common.Api.csproj">
+      <Project>{57466214-da49-4f54-8d02-fa6dca5d9a1b}</Project>
+      <Name>Framework.Common.Api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\TargaryenSolution\Framework.Common.UI\Framework.Common.UI.csproj">
+      <Project>{406a510e-d8e2-4bfe-aefe-e7cf59115c2a}</Project>
+      <Name>Framework.Common.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\TargaryenSolution\Framework.Core\Framework.Core.csproj">
+      <Project>{91a989ae-62db-4883-b528-3f0dcee80f4b}</Project>
+      <Name>Framework.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\TargaryenSolution\TestSettingsUtility\TestSettingsUtility.csproj">
+      <Project>{cbfa7e9c-3b78-46f7-adb6-e60af8ddce6e}</Project>
+      <Name>TestSettingsUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WestlawPrecision\WestlawPrecision.csproj">
+      <Project>{BBC6AFDA-8A0D-4726-B719-3A160F6E3307}</Project>
+      <Name>WestlawPrecision</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>$(SolutionDir)packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=2.5.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Castle.Core.2.5.2\lib\NET35\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.10.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\ExcelNumberFormat.1.0.10\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\DotNetZip.1.9\lib\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="QedArsenal.QualityLibrary.Core, Version=2207.0.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\AllTargaryenBasedProjsSolution\packages\QedArsenal.QualityLibrary.Core.2207.0.6-build\lib\net45\QedArsenal.QualityLibrary.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="QedArsenal.QualityLibrary.WebDriver, Version=2207.0.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\AllTargaryenBasedProjsSolution\packages\QedArsenal.QualityLibrary.WebDriver.2207.0.6-build\lib\net45\QedArsenal.QualityLibrary.WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportPortal.Client, Version=3.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\ReportPortal.Client.3.10.0\lib\net462\ReportPortal.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportPortal.Shared, Version=3.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\ReportPortal.Shared.3.10.0\lib\net462\ReportPortal.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportPortal.VSTest.TestLogger, Version=3.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\ReportPortal.VSTest.TestLogger.3.4.0\lib\net462\ReportPortal.VSTest.TestLogger.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\AllTargaryenBasedProjsSolution\packages\RestSharp.105.2.3\lib\net46\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\System.IO.FileSystem.Primitives.4.0.1\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\System.IO.Packaging.4.0.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=6.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\System.Text.Encodings.Web.6.0.1\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=6.0.0.11, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\System.Text.Json.6.0.11\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Selenium.WebDriver.3.141.0\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Selenium.Support.3.141.0\lib\net45\WebDriver.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\AJSForWLAdvantage\WlaAjsBaseTest.cs" />
+    <Compile Include="Tests\AJSForWLAdvantage\WlaAjsIncludeRelatedFedTests.cs" />
+    <Compile Include="Tests\CitingReference\CitingReferencesSummaryTest.cs" />
+    <Compile Include="Tests\CoCounsel\AdvantageCoCounselChatAssistantTests.cs" />
+    <Compile Include="Tests\DeepResearch\CariBaseApiTest.cs" />
+    <Compile Include="Tests\DeepResearch\WlaDeepResearchCariEndpointTests.cs" />
+    <Compile Include="Tests\DeepResearch\WlaDeepResearchVerificationTests.cs" />
+    <Compile Include="Tests\EthicsOpinions\AiSearchAndSummarizeEthicsOpinionsTests.cs" />
+    <Compile Include="Tests\LAKnowYourJudge\KnowYourJudgeBaseTest.cs" />
+    <Compile Include="Tests\LAKnowYourJudge\KnowYourJudgeTests.cs" />
+    <Compile Include="Tests\QuickCheck\JudicialCitedAuthorityTests.cs" />
+    <Compile Include="Tests\QuickCheck\JudicialLanguageAnalysisTabTests.cs" />
+    <Compile Include="Tests\DeepResearch\WlaDeepResearchBaseTest.cs" />
+    <Compile Include="Tests\QuickCheck\QuickCheckComplaintAnalyserTest.cs" />
+    <Compile Include="Tests\QuickCheck\QuickCheckLanguageAnalysisTabTests.cs" />
+    <Compile Include="Tests\QuickCheck\QuickCheckRecommendationsTabTests.cs" />
+    <Compile Include="Tests\QuickCheck\WestlawAdvantageQuickCheckBaseTest.cs" />
+    <Compile Include="Tests\QuickCheck\QuickCheckArgumentCounterargumentTabTests.cs" />
+    <Compile Include="Tests\RelevancyExplainer.cs" />
+    <Compile Include="Tests\TestAssemblyGovernor.cs" />
+    <Compile Include="Tests\WlaBaseTest.cs" />
+    <Compile Include="Tests\DeepResearch\WlaDeepResearchTests.cs" />
+    <Compile Include="Tests\WlaHomePageTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\ReportPortal.config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\RP.config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData\CoCounsel\Complaint-Zero State.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData\QuickCheckDoc\2023 WL 9108365.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData\QuickCheckDoc\BL87490 3 1.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData\QuickCheckDoc\BL26741.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData\QuickCheckDoc\Insurance Litigation - Party 1 - Northern 1 - Motion for Summary Judgment.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData\QuickCheckDoc\Insurance Litigation - Party 2 - Roberts 1 -  Opposition to MSJ and Cross Motion.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData\QuickCheckDoc\NoCitations.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData\QuickCheckDoc\NoSegmentFile-Plantiff.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData\QuickCheckDoc\FS59779.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData\QuickCheckDoc\Great Lakes International Trading - 3 - Defendant%27s Opposition to Cross-Motion.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData\QuickCheckDoc\Great Lakes International Trading - 3 updated - Defendant%27s Opposition to Cross-Motion.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData\QuickCheckDoc\mischaracterizations.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\LocalTestConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\DeepResearch\MaxInput2000.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\KnowYourJudge\MaxInput500.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\QuickCheckDoc\PlainText.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Import Project="$(SolutionDir)packages\ReportPortal.Shared.3.10.0\build\\net462\ReportPortal.Shared.targets" Condition="Exists('$(SolutionDir)packages\ReportPortal.Shared.3.10.0\build\\net462\ReportPortal.Shared.targets')" />
+  <Import Project="$(SolutionDir)packages\ReportPortal.VSTest.TestLogger.3.4.0\build\net462\ReportPortal.VSTest.TestLogger.targets" Condition="Exists('$(SolutionDir)packages\ReportPortal.VSTest.TestLogger.3.4.0\build\net462\ReportPortal.VSTest.TestLogger.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+  </Target>
+</Project>

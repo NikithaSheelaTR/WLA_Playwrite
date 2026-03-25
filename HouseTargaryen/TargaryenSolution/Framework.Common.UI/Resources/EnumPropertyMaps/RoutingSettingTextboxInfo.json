@@ -1,0 +1,138 @@
+﻿{
+  // Maps RoutingSettingTextbox to WebElementInfo
+  // additional EnvVarDefinition for binding info about correspondent environmental variable
+  "DataOrchestration": {
+    "EnvVarDefinition": "DATAORCHESTRATION",
+    "Text": "DataOrchestration",
+    "Id": "coid_website_routingTextbox_DataOrchestration"
+  },
+  "DataRoom": {
+    "EnvVarDefinition": "DATAROOM",
+    "Text": "DataRoom",
+    "Id": "coid_website_routingTextbox_DataRoom"
+  },
+  "DataRoomBulk": {
+    "EnvVarDefinition": "DATAROOMBULK",
+    "Text": "DataRoomBulk",
+    "Id": "coid_website_routingTextbox_DataRoomBulk"
+  },
+    "Document": {
+    "EnvVarDefinition": "DOCUMENT",
+    "Text": "Document",
+    "Id": "coid_website_routingTextbox_Document"
+  },
+  "SessionStartEventProductOverride": {
+    "EnvVarDefinition": "",
+    "Text": "Session Start Event Product Override",
+    "Id": "SessionStartEventProductNameOverride"
+  },
+  "PmdDataVersion": {
+    "EnvVarDefinition": "PMD_DATA_VERSION",
+    "Text": "PMD Data Version",
+    "Id": "ProductMetadataDataVersion"
+  },
+  "StpPrinterIdOverride": {
+    "EnvVarDefinition": "",
+    "Text": "STP PrinterId Override",
+    "Id": "StandAlonePrinterOverride"
+  },
+  "HistoryListenerQueueOverride": {
+    "EnvVarDefinition": "",
+    "Text": "History Listener Queue Override",
+    "Id": "historyListenerQueueOverride"
+  },
+  "ContentAbuseEventThresholds": {
+    "EnvVarDefinition": "",
+    "Text": "Content Abuse Event Thresholds",
+    "Id": "ContentAbuseMonitorThresholds"
+  },
+  "RequestHeaders": {
+    "EnvVarDefinition": "",
+    "Text": "Request Headers",
+    "Id": "RequestHeaders"
+  },
+  "InfrastructureAccessControlsOn": {
+    "EnvVarDefinition": "IACS_ON",
+    "Text": "Infrastructure Access Controls - ON",
+    "Id": "InfrastructureAccessControls"
+  },
+  "FacsOn": {
+    "EnvVarDefinition": "FACS_ON",
+    "Text": "",
+    "Id": ""
+  },
+  "FacsOff": {
+    "EnvVarDefinition": "FACS_OFF",
+    "Text": "",
+    "Id": ""
+  },
+  "InfrastructureAccessControlsOff": {
+    "EnvVarDefinition": "IACS_OFF",
+    "Text": "Infrastructure Access Controls - OFF",
+    "Id": "RemovedInfrastructureAccessControls"
+  },
+  "SupportedFeaturesOn": {
+    "EnvVarDefinition": "SUPPORTED_FEATURES_ON",
+    "Text": "Supported Features - ON",
+    "Id": ""
+  },
+  "SupportedFeaturesOff": {
+    "EnvVarDefinition": "SUPPORTED_FEATURES_OFF",
+    "Text": "Supported Features - OFF",
+    "Id": ""
+  },
+
+  "SessionTimeoutOverride": {
+    "EnvVarDefinition": "SESSION_TIMEOUT_OVERRIDE",
+    "Text": "Session Timeout Override",
+    "Id": "SessionTimeoutOverride"
+  },
+
+  "MaxiumDeliverySize": {
+    "EnvVarDefinition": "",
+    "Text": "Maxium Delivery Size",
+    "Id": "MaximumDeliverySize"
+  },
+
+  "OnlineCharges": {
+    "EnvVarDefinition": "ONLINE_CHARGES",
+    "Text": "OnlineCharges",
+    "Id": "coid_website_routingTextbox_OnlineCharges"
+  },
+
+  "SetRequestSizeForDataRoomAccountSettingsProjectListMinimalGet": {
+    "EnvVarDefinition": "",
+    "Text": " Set request size for DataRoom.AccountSettings.Project.List.Minimal.Get",
+    "Id": "DataRoomAccountSettingsProjectListGetRequestSize"
+  },
+  "Km": {
+    "EnvVarDefinition": "KM_SERVER",
+    "Text": "KM",
+    "Id": "coid_website_routingTextbox_KM"
+  },
+  "Sync": {
+    "EnvVarDefinition": "",
+    "Text": "Sync",
+    "Id": "coid_website_routingTextbox_Sync"
+  },
+  "ProductMetadata": {
+    "EnvVarDefinition": "",
+    "Text": "ProductMetadata",
+    "Id": "coid_website_routingTextbox_ProductMetadata"
+  },
+  "CategoryPageCollectionSet": {
+    "EnvVarDefinition": "DEFAULT_CPCS",
+    "Text": "Category Page Collection Set",
+    "Id": "CategoryPageCollectionSet"
+  },
+  "SessionDeliveryLimit": {
+    "EnvVarDefinition": "SESSION_DELIVERY_LIMIT",
+    "Text": "Set the session delivery limit",
+    "Id": "SessionDeliveryLimit"
+  },
+  "DailyDeliveryLimit": {
+    "EnvVarDefinition": "DAILY_DELIVERY_LIMIT",
+    "Text": "Set the daily delivery limit",
+    "Id": "DailyDeliveryLimit"
+  }
+}

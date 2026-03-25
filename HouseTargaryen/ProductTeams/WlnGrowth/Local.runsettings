@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <RunConfiguration>
+    <!-- Path relative to solution directory where test results will be placed.-->
+    <ResultsDirectory>.</ResultsDirectory>
+    <!-- This controls the degree of parallel test execution when running unit tests, using available cores on the machine.
+    The test execution engine starts as a distinct process on each available core and gives each core a container with tests to run,
+    like an assembly, DLL, or relevant artifact. The test container is the scheduling unit. In each container,
+    the tests are run according to the test framework. If there are many containers, then as processes finish executing the tests in a container,
+    they are given the next available container.
+    
+    MaxCpuCount can be:
+    - n, where 1 <= n <= number of cores: up to n processes will be launched
+    - n, where n = any other value: the number of processes launched will be up to as many as available cores on the machine.
+    Only uncomment for VsTest.Console v14 or better.-->
+    <!--MaxCpuCount>1</MaxCpuCount-->
+    <!-- [x86] | x64 -->
+    <TargetPlatform>x86</TargetPlatform>
+    <!-- Framework35 | [Framework40] | Framework45
+    This specifies which version of the unit test framework is used to discover and execute the tests.
+    It can be different from the version of the .NET platform that you specify in the build properties of the unit test project.-->
+    <!--<TargetFrameworkVersion>Framework48</TargetFrameworkVersion>-->
+  </RunConfiguration>
+  <MSTest>
+    <!--In Visual Studio 2012+, the MSTest adapter has been optimized to make it faster and more scalable.
+    Some behaviour, such as the order in which tests are run, might not be exactly as it was in previous editions of Visual Studio.
+    Set this value true to use the older test adapter.-->
+    <ForcedLegacyMode>true</ForcedLegacyMode>
+    <!-- You can specify a test settings file to use with the MS Test adapter here.
+    If you specify this value, you must also set the ForcedlegacyMode to true.-->
+    <SettingsFile>Local.testsettings</SettingsFile>
+    <!-- You can retain the Deployment Directory after a test run by setting this value to false. -->
+    <DeleteDeploymentDirectoryAfterTestRunIsComplete>false</DeleteDeploymentDirectoryAfterTestRunIsComplete>
+    <!-- If a test returns with an inconclusive status, it is usually mapped to Skipped status in Test Explorer.
+    If you want Inconclusive tests to be showed as Failed, use this configuration. -->
+    <MapInconclusiveToFailed>false</MapInconclusiveToFailed>
+    <!-- If you want your tests to be run in the same process as the MS Test adapter, set this value to true.
+    This setting provides a minor performance gain. But if a test exits with an exception,
+    the other tests will not continue. -->
+    <InProcMode>false</InProcMode>
+  </MSTest>
+</RunSettings>

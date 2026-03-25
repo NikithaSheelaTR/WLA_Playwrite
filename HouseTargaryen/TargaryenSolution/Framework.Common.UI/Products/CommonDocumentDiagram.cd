@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Framework.Common.UI.Pages.BaseModuleRegressionPage" Collapsed="true">
+    <Position X="1.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgBAAAAAAIACAAAAAAgAhAAEIACAAEEAAACAAEAAAo=</HashCode>
+      <FileName>Pages\BaseModuleRegressionPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TRGR.Quality.QedArsenal.QualityLibrary.WebDriver.Pages.BasePage" Collapsed="true">
+    <Position X="1.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.919" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.CommonDocumentPage" Collapsed="true">
+    <Position X="4" Y="4.25" Width="3.5" />
+    <InheritanceLine Type="Framework.Common.UI.Pages.CommonAuthenticatedWestlawNextPage" ManuallyRouted="true">
+      <Path>
+        <Point X="5.75" Y="3.691" />
+        <Point X="5.75" Y="3.777" />
+        <Point X="5.75" Y="3.777" />
+        <Point X="5.75" Y="4.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>LhgDGFhB8oBsCopz2ANqOPOOT7+VDnAQUrgtXTC6I/A=</HashCode>
+      <FileName>Pages\CommonDocumentPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="2.033" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Dockets.DocketDocumentPage" Collapsed="true">
+    <Position X="1.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCQEAAAIoCBAAAAAAgIAAkAWAAAIAFAgAACAgICAABA=</HashCode>
+      <FileName>Pages\Dockets\DocketDocumentPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Document.DocumentPageWithHeadnotes" Collapsed="true">
+    <Position X="3.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAgMAAAAAAAAAAIAAACCAAAAgBCAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Document\DocumentPageWithHeadnotes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.ExpertProfilePage" Collapsed="true">
+    <Position X="5.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAABCCAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Pages\ExpertProfilePage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.RelatedInfo.DocumentPage" Collapsed="true">
+    <Position X="8" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AMEAAgQ0EkJQABAARAAABQUIAAEBGCEESQNAACIgCjE=</HashCode>
+      <FileName>Pages\RelatedInfo\DocumentPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.RelatedInfo.RiTabPage" Collapsed="true">
+    <Position X="10.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAEAAAAAAAABAIAIAAAAAAAEACgA=</HashCode>
+      <FileName>Pages\RelatedInfo\RiTabPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.CommonAuthenticatedWestlawNextPage" Collapsed="true">
+    <Position X="4.25" Y="3" Width="3" />
+    <InheritanceLine Type="Framework.Common.UI.Pages.CommonAuthenticatedWestlawNextPage" ManuallyRouted="true">
+      <Path>
+        <Point X="6.875" Y="1.441" />
+        <Point X="7.895" Y="1.441" />
+        <Point X="7.895" Y="2.439" />
+        <Point X="5.75" Y="2.439" />
+        <Point X="5.75" Y="3" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\CommonAuthenticatedWestlawNextPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="1.79" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.CommonAuthenticatedWestlawNextPage" Collapsed="true">
+    <Position X="5" Y="0.75" Width="3.75" />
+    <InheritanceLine Type="Framework.Common.UI.Pages.BaseModuleRegressionPage" ManuallyRouted="true">
+      <Path>
+        <Point X="2" Y="2.25" />
+        <Point X="2" Y="2.065" />
+        <Point X="6.875" Y="2.065" />
+        <Point X="6.875" Y="1.441" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>BAAAEDEAQAAEAAQAAAAAAAQAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Pages\CommonAuthenticatedWestlawNextPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.898" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.RelatedInfo.BillActivityPage" Collapsed="true">
+    <Position X="3.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAABAAAAAAAA=</HashCode>
+      <FileName>Pages\RelatedInfo\BillActivityPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.RelatedInfo.BillTrackingPage" Collapsed="true">
+    <Position X="5.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Pages\RelatedInfo\BillTrackingPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.RelatedInfo.CaselawAppellateHistoryPage" Collapsed="true">
+    <Position X="7.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABRgAEISAAAAAAAAAAIAgoAAAAAAAgDAQCCIAAA=</HashCode>
+      <FileName>Pages\RelatedInfo\CaselawAppellateHistoryPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.RelatedInfo.CitingReferencesPage" Collapsed="true">
+    <Position X="9.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hDgAGAVigAAAAiAQIkAIwAAGAGABAAnAAwjQQAEMEAE=</HashCode>
+      <FileName>Pages\RelatedInfo\CitingReferencesPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.RelatedInfo.ContextAndAnalysisPage" Collapsed="true">
+    <Position X="11.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQgAAACgAAAAEAAAAAgAAAAEAAAAQCAAAAAAQQ=</HashCode>
+      <FileName>Pages\RelatedInfo\ContextAndAnalysisPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.RelatedInfo.FilingsPage" Collapsed="true">
+    <Position X="13.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCBEEsQgAAAAAAEAAAWAkAAAACgAEAACAADQAAAGABA=</HashCode>
+      <FileName>Pages\RelatedInfo\FilingsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.RelatedInfo.LegislativeHistoryMaterialsPage" Collapsed="true">
+    <Position X="15" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAwgABAAAAAAAAAAAAAAAAAAAAAAAADAAAACAAA=</HashCode>
+      <FileName>Pages\RelatedInfo\LegislativeHistoryMaterialsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.RelatedInfo.NegativeTreatmentPage" Collapsed="true">
+    <Position X="16.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAQggAAAIAggAAwIAAAAQBABAQBBAQDAQAAgAAA=</HashCode>
+      <FileName>Pages\RelatedInfo\NegativeTreatmentPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.RelatedInfo.NotesOfDecisionsPage" Collapsed="true">
+    <Position X="18.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAACgJDAAAAgAAAadAQADAMgAAiEIBADAAgBAAAA=</HashCode>
+      <FileName>Pages\RelatedInfo\NotesOfDecisionsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.RelatedInfo.OtherHistoryPage" Collapsed="true">
+    <Position X="20.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBAAAABgQQAAAAAAAAAAAAIAAAACEAAAAADAAAAIAAA=</HashCode>
+      <FileName>Pages\RelatedInfo\OtherHistoryPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.RelatedInfo.RelatedOpinionPage" Collapsed="true">
+    <Position X="22.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAQgAAAAAAAgAAAAQAAAAgAACgAAAQCAAAAAAAA=</HashCode>
+      <FileName>Pages\RelatedInfo\RelatedOpinionPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.RelatedInfo.StatuteHistoryPage" Collapsed="true">
+    <Position X="24.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AADQAYQjAAgQCBAgIEiIFQACACACAAqCEQDA1IBAAwo=</HashCode>
+      <FileName>Pages\RelatedInfo\StatuteHistoryPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

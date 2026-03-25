@@ -1,0 +1,10 @@
+﻿{
+  // Maps TypeaheadSearchSuggestionsType
+
+  "CauseOfAction": {
+    "LocatorString": ".//div[@id='causeOfAction']"
+  },
+  "LegalIssue": {
+    "LocatorString": ".//div[@id='section_legalIssue']"
+  }
+}

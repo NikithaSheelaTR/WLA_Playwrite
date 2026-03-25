@@ -1,0 +1,15 @@
+﻿{
+  // Maps Content Types for Research Recommendations to WebElementInfo
+  "Cases": {
+    "LocatorString": "//li[contains(@id, 'co_id_ContentType_') and .//*[.='Cases']]",
+    "Text": "Cases"
+  },
+  "SecondarySources": {
+    "LocatorString": "//li[contains(@id, 'co_id_ContentType_') and .//*[.='Secondary Sources']]",
+    "Text": "Secondary Sources"
+  },
+  "StatutesAndCourtRules": {
+    "LocatorString": "//li[contains(@id, 'co_id_ContentType_') and .//*[.='Statutes & Court Rules']]",
+    "Text": "Statutes & Court Rules"
+  }
+}

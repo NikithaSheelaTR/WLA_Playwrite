@@ -1,0 +1,19 @@
+{
+  // Maps ContentSectionMenuDropdownOptions to WebElementInfo
+  "Delete": {
+    "Text": "Delete",
+    "LocatorString": "//li[contains(@class, 'a11yDropdown-item') and .//span[text()='Delete']]"
+  },
+  "Edit": {
+    "Text": "Edit",
+    "LocatorString": "//li[@id='cp_editContentSection_button_0_0']"
+  },
+  "Rename": {
+    "Text": "Rename",
+    "LocatorString": "//li[contains(@class, 'a11yDropdown-item') and .//span[text()='Rename']]"
+  },
+  "Rearrange": {
+    "Text": "Rearrange",
+    "LocatorString": "//li[contains(@class, 'a11yDropdown-item') and .//span[text()='Rearrange']]"
+  }
+}

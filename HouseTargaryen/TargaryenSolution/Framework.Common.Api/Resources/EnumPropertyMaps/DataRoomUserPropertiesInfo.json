@@ -1,0 +1,8 @@
+﻿{
+  // Maps DataRoomUserProperties to BaseTextModel
+
+  "DocketsOrderPreferences": { "Text": "DocketsOrderPreferences" },
+  "FolderAnalysisKeyciteBaselineStatus": { "Text": "FOLDER_ANALYSIS_KEYCITE_BASELINE_STATUS" },
+  "FolderAnalysisRecodocsBaselineStatus": { "Text": "FOLDER_ANALYSIS_RECODOCS_BASELINE_STATUS" },
+  "SendRunnerPreferences": { "Text": "SendRunnerPreferences" }
+}

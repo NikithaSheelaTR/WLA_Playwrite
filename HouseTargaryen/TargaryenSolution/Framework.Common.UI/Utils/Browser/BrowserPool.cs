@@ -1,0 +1,185 @@
+﻿namespace Framework.Common.UI.Utils.Browser
+{
+    using System;
+    using System.Collections.Concurrent;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading;
+
+    /// <summary>
+    /// Represents a pool of available Browser objects and provides a unified means of working with a Browser abstraction.
+    /// </summary>
+    public sealed class BrowserPool
+    {
+        /// <summary>
+        /// The default browser reference name.
+        /// </summary>
+        public const string DefaultBrowserName = "default";
+
+        private static readonly object Locker = new object();
+
+        /// <summary>
+        /// Save browserName and corresponding Browser object as thread safe dictionary(browserName_threadId, Browser)
+        /// </summary>
+        private static readonly ConcurrentDictionary<string, Browser> BrowsersDictionary = new ConcurrentDictionary<string, Browser>();
+
+        /// <summary>
+        /// Save Thread Id and active browserName for this thread
+        /// </summary>
+        private static readonly ConcurrentDictionary<int, string> ThreadActiveBrowser = new ConcurrentDictionary<int, string>();
+
+        /// <summary>
+        /// Get the reference names of all active browser instances.
+        /// </summary>
+        public static List<string> BrowserNames
+        {
+            get
+            {
+                BrowserPool.RemoveDisposedInstances();
+                return BrowsersDictionary.Keys.ToList();
+            }
+        }
+
+        /// <summary>
+        /// Get the current browser instance for the specific thread
+        /// </summary>
+        public static Browser CurrentBrowser
+        {
+            get
+            {
+                string browserName = ThreadActiveBrowser[Thread.CurrentThread.ManagedThreadId];
+                return BrowsersDictionary[BrowserPool.GetBrowserNameWithThreadId(browserName)];
+            }
+        }
+
+        /// <summary>
+        /// Get the browser instance by the thread id
+        /// </summary>
+        /// <param name="threadId">ThreadId</param>
+        /// <returns>The <see cref="Browser"/>.</returns>
+        public static Browser GetBrowserByThreadId(int threadId) 
+            => BrowsersDictionary[$"{ThreadActiveBrowser[threadId]}_{threadId}"];
+
+        /// <summary>
+        /// Dispose of a browser instance
+        /// Remove corresponding key value pair from the BrowsersDictionary and ThreadActiveBrowser
+        /// </summary>
+        /// <param name="browserName">The reference name of a browser.</param>
+        public static void DisposeOfBrowser(string browserName)
+        {
+            Browser browser;
+
+            BrowsersDictionary.TryGetValue(BrowserPool.GetBrowserNameWithThreadId(browserName), out browser);
+            browser?.Dispose();
+
+            BrowserPool.RemoveDisposedInstances();
+
+            // remove the active browser name from the dictionary(threadId, browserName)
+            ThreadActiveBrowser.TryRemove(Thread.CurrentThread.ManagedThreadId, out browserName);
+        }
+
+        /// <summary>
+        /// Dispose all browsers for the current thread in the pool.
+        /// </summary>
+        public static void DisposeOfBrowsers()
+        {
+            string browserName;
+
+            lock (Locker)
+            {
+                BrowsersDictionary.Where(pair => pair.Key.Contains(Thread.CurrentThread.ManagedThreadId.ToString()))
+                                  .Select(pair => pair.Value).ToList().ForEach(value => value.Dispose());
+            }
+
+            ThreadActiveBrowser.TryRemove(Thread.CurrentThread.ManagedThreadId, out browserName);
+
+            BrowserPool.RemoveDisposedInstances();
+        }
+
+        /// <summary>
+        /// Change the context by switching the current browser.
+        /// </summary>
+        /// <param name="browserName">The reference name of a browser.</param>
+        public static void MakeCurrentBrowser(string browserName)
+        {
+            BrowserPool.RemoveDisposedInstances();
+
+            lock (Locker)
+            {
+                if (BrowsersDictionary.ContainsKey(BrowserPool.GetBrowserNameWithThreadId(browserName)))
+                {
+                    ThreadActiveBrowser.AddOrUpdate(Thread.CurrentThread.ManagedThreadId, browserName, (key, oldValue) => browserName);
+                }
+                else
+                {
+                    throw new ArgumentOutOfRangeException(nameof(browserName), $"No browser with reference name '{browserName}' is available");
+                }
+            }
+        }
+
+        /// <summary>
+        /// Only register a new instance of Browser with a valid reference name, if no browser with such a name exists in the pool, and makes it current.
+        /// </summary>
+        /// <param name="browserName">The reference name of a browser.</param>
+        /// <param name="newBrowser">The Browser object to register in the pool.</param>
+        public static void RegisterAndMakeCurrentBrowser(string browserName, Browser newBrowser)
+        {
+            BrowserPool.RegisterBrowser(browserName, newBrowser);
+            BrowserPool.MakeCurrentBrowser(browserName);
+        }
+
+        /// <summary>
+        /// Only registers a new instance of Browser with the default reference name, if no browser with such a name exists in the pool, and makes it current.
+        /// </summary>
+        /// <param name="newBrowser">The Browser object to register in the pool.</param>
+        public static void RegisterAndMakeCurrentBrowser(Browser newBrowser)
+            => BrowserPool.RegisterAndMakeCurrentBrowser(DefaultBrowserName, newBrowser);
+
+        /// <summary>
+        /// Only register a new instance of Browser with a valid reference name, if no browser with such a name exists in the pool.
+        /// </summary>
+        /// <param name="browserName">The reference name of a browser.</param>
+        /// <param name="newBrowser">The Browser object to register in the pool.</param>
+        public static void RegisterBrowser(string browserName, Browser newBrowser)
+        {
+            if (string.IsNullOrEmpty(browserName))
+            {
+                throw new ArgumentException("A browser reference name must not be NULL or empty string.", nameof(browserName));
+            }
+
+            BrowserPool.RemoveDisposedInstances();
+
+            if (!BrowsersDictionary.TryAdd(BrowserPool.GetBrowserNameWithThreadId(browserName), newBrowser))
+            {
+                throw new InvalidOperationException("The browser with the same name already exists.");
+            }
+        }
+
+        /// <summary>
+        /// Return full browser name in the format of BrowserName_ThreadId to store it in the BrowserList dictionary
+        /// </summary>
+        /// <param name="browserName">browser name</param>
+        /// <returns>The <see cref="string"/>.</returns>
+        private static string GetBrowserNameWithThreadId(string browserName)
+            => browserName.EndsWith($"_{Thread.CurrentThread.ManagedThreadId}")
+                   ? browserName
+                   : $"{browserName}_{Thread.CurrentThread.ManagedThreadId}";
+
+        /// <summary>
+        /// Remove all unusable Browser instances from the pool.
+        /// </summary>
+        private static void RemoveDisposedInstances()
+        {
+            lock (Locker)
+            {
+                IEnumerable<string> keys = BrowsersDictionary.Where(pair => pair.Value.IsDisposed).Select(pair => pair.Key);
+
+                foreach (string key in keys)
+                {
+                    Browser value;
+                    BrowsersDictionary.TryRemove(key, out value);
+                }
+            }
+        }
+    }
+}

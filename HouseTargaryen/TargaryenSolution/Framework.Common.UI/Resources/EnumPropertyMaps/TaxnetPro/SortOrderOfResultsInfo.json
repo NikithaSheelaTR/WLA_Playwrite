@@ -1,0 +1,14 @@
+﻿{
+  "Relevance": {
+    "Id": "co_search_advancedSearch_SearchResultsCaseLawOrder_0",
+    "Text": "Relevancy"
+  },
+  "ReverseChronology": {
+    "Id": "co_search_advancedSearch_SearchResultsCaseLawOrder_2",
+    "Text": "Reverse Chronological"
+  },
+  "TableOfContentsOrder": {
+    "Id": "co_search_advancedSearch_SearchResultsCaseLawOrder_1",
+    "Text": "Table Of Contents Order"
+  }
+}

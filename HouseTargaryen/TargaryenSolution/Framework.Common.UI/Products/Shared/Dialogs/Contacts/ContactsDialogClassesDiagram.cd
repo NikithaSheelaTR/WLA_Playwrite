@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Framework.Common.UI.Products.Shared.Dialogs.Contacts.BaseContactsGroupsDialog" Collapsed="true">
+    <Position X="7.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAIIIAAAAAAACAAAAACAAAAAAQAEABAAAAAA=</HashCode>
+      <FileName>Products\Shared\Dialogs\Contacts\BaseContactsGroupsDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.Shared.Dialogs.Contacts.ContactsDialog" Collapsed="true">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\Shared\Dialogs\Contacts\ContactsDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.Shared.Dialogs.Contacts.ContactsGroupsDialog" Collapsed="true">
+    <Position X="5.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\Shared\Dialogs\Contacts\ContactsGroupsDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.Shared.Dialogs.Contacts.CustomContactsGroupsDialog" Collapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\Shared\Dialogs\Contacts\CustomContactsGroupsDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.Shared.Dialogs.Contacts.CustomPageContactsDialog" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\Shared\Dialogs\Contacts\CustomPageContactsDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.Shared.Dialogs.Contacts.BaseContactsManagedDialog" Collapsed="true">
+    <Position X="2" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAIIAAAAAAAACAAAAACAAAAAAAAAAFCAAAAA=</HashCode>
+      <FileName>Products\Shared\Dialogs\Contacts\BaseContactsManagedDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.Shared.Dialogs.Contacts.MyContactsDialog" Collapsed="true">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAEAAAAAAAAAAAAAAQAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\Shared\Dialogs\Contacts\MyContactsDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

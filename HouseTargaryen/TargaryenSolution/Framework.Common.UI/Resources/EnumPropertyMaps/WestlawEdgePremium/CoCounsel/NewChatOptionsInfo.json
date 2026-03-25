@@ -1,0 +1,11 @@
+{
+    "NewChat": {
+        "Text": "New chat",
+        "LocatorString": ".//span[contains(text(), 'New chat')]"
+    },
+
+    "NewMatterFolder": {
+        "Text": "New matter folder",
+        "LocatorString": ".//span[contains(text(), 'New matter folder')]"
+    }
+}

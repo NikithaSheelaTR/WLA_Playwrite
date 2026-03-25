@@ -1,0 +1,63 @@
+﻿{
+  // Maps KeyCiteFlag to WebElementInfo
+  "Blue": {
+    "ClassName": "co_bFlagSm",
+    "SourceFile": "flag_blue",
+    "Text": "B"
+  },
+  "BlueH": {
+    "ClassName": "co_blueHSm",
+    "SourceFile": "H_icon_sm",
+    "Text": "H"
+  },
+  "CourtDocs": {
+    "ClassName": "co_courtDocSm",
+    "SourceFile": "courtdoc_sm",
+    "Text": "H"
+  },
+  "Gray": {
+    "ClassName": "",
+    "SourceFile": "",
+    "Text": "G"
+  },
+  "GreenC": {
+    "ClassName": "co_greenCSm",
+    "SourceFile": "C_icon_sm",
+    "Text": ""
+  },
+  "ImpliedOverruling": {
+    "ClassName": "co_impliedOverrulingsFlagSm",
+    "SourceFile": "caution_orange",
+    "Text": ""
+  },
+  "LegalMemo": {
+    "ClassName": "co_legalMemoSm",
+    "SourceFile": "legalmemo_sm",
+    "Text": ""
+  },
+  "LegalMemoranda": {
+    "ClassName": "co_legalMemo",
+    "SourceFile": "legalmemo_sm",
+    "Text": ""
+  },
+  "NoFlag": {
+    "ClassName": "",
+    "SourceFile": "",
+    "Text": "W"
+  },
+  "Red": {
+    "ClassName": "co_rFlagSm",
+    "SourceFile": "flag_red",
+    "Text": "R"
+  },
+  "Striped": {
+    "ClassName": "co_rStripedFlagSm",
+    "SourceFile": "flag_red_striped_small",
+    "Text": ""
+  },
+  "Yellow": {
+    "ClassName": "co_yFlagSm",
+    "SourceFile": "flag_yellow",
+    "Text": "Y"
+  }
+}

@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.ContentTypeSearchResultPages.BaseContentTypeSearchResultPage&lt;TItem&gt;" Collapsed="true">
+    <Position X="16.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAgAAAABAIAAAACAAAIkAAAAAAAAABAQAA=</HashCode>
+      <FileName>Products\WestLawNext\Pages\SearchResult\ContentTypeSearchResultPages\BaseContentTypeSearchResultPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.ContentTypeSearchResultPages.CompanyInvestigatorSearchResultPage" Collapsed="true">
+    <Position X="11.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\WestLawNext\Pages\SearchResult\ContentTypeSearchResultPages\CompanyInvestigatorSearchResultPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.ContentTypeSearchResultPages.ContentTypeSearchResultsPage" Collapsed="true">
+    <Position X="15.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\WestLawNext\Pages\SearchResult\ContentTypeSearchResultPages\ContentTypeSearchResultsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.ContentTypeSearchResultPages.CustomDigestSearchResultsPage" Collapsed="true">
+    <Position X="18.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Products\WestLawNext\Pages\SearchResult\ContentTypeSearchResultPages\CustomDigestSearchResultsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.ContentTypeSearchResultPages.DocketsSearchResultPage" Collapsed="true">
+    <Position X="22.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\WestLawNext\Pages\SearchResult\ContentTypeSearchResultPages\DocketsSearchResultPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.ContentTypeSearchResultPages.ExpertMaterialsSearchResultPage" Collapsed="true">
+    <Position X="9" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\WestLawNext\Pages\SearchResult\ContentTypeSearchResultPages\ExpertMaterialsSearchResultPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.ContentTypeSearchResultPages.NewsSearchResultPage" Collapsed="true">
+    <Position X="13.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\WestLawNext\Pages\SearchResult\ContentTypeSearchResultPages\NewsSearchResultPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.ContentTypeSearchResultPages.PreviewSearchResultPage" Collapsed="true">
+    <Position X="18" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\WestLawNext\Pages\SearchResult\ContentTypeSearchResultPages\PreviewSearchResultPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.ContentTypeSearchResultPages.ReportSearchResultPage" Collapsed="true">
+    <Position X="20.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\WestLawNext\Pages\SearchResult\ContentTypeSearchResultPages\ReportSearchResultPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.ContentTypeSearchResultPages.StatutesAndRegulationsSearchResultPage" Collapsed="true">
+    <Position X="24.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\WestLawNext\Pages\SearchResult\ContentTypeSearchResultPages\StatutesAndRegulationsSearchResultPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.BaseCategorySearchResultPage&lt;TItem&gt;" Collapsed="true">
+    <Position X="16.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAAAAAEAwAIAAgAAAAAAAAAAAWAAIEgAAEAAAAAAAgA=</HashCode>
+      <FileName>Products\WestLawNext\Pages\SearchResult\BaseCategorySearchResultPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.BaseFindSearchResultPage" Collapsed="true">
+    <Position X="16.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABEAAAAAAAAAAAAAAAAAAACAAAAIAAAAAIAAIAAAAA=</HashCode>
+      <FileName>Products\WestLawNext\Pages\SearchResult\BaseFindSearchResultPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.BaseSearchResultPage" Collapsed="true">
+    <Position X="16.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAIAACAAAAAAQABAAAAAAABAAAAAEAAAA=</HashCode>
+      <FileName>Products\WestLawNext\Pages\SearchResult\BaseSearchResultPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.BaseSearchResultPageWithResultList&lt;TItem&gt;" Collapsed="true">
+    <Position X="13.25" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.BaseSearchResultPage" FixedToPoint="true">
+      <Path>
+        <Point X="17.25" Y="1.191" />
+        <Point X="17.25" Y="1.625" />
+        <Point X="14" Y="1.625" />
+        <Point X="14" Y="1.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Products\WestLawNext\Pages\SearchResult\BaseSearchResultPageWithResultList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.CategorySearchResultPage" Collapsed="true">
+    <Position X="21" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAIAAgAAAAYAAAAAAWAAIEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\WestLawNext\Pages\SearchResult\CategorySearchResultPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.FermiSearchResultPage" Collapsed="true">
+    <Position X="12" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAQAAAAAAIBAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\WestLawNext\Pages\SearchResult\FermiSearchResultPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.FindSearchResultPage" Collapsed="true">
+    <Position X="18.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Products\WestLawNext\Pages\SearchResult\FindSearchResultPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.KeyNumberSearchResultPage" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAIBAACgAAAAAAgAAAAAAIAAAAAAAACAAAAIAAAEA=</HashCode>
+      <FileName>Products\WestLawNext\Pages\SearchResult\KeyNumberSearchResultPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.OverviewSearchResultPage" Collapsed="true">
+    <Position X="18.75" Y="2" Width="1.5" />
+    <InheritanceLine Type="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.BaseSearchResultPage" FixedToPoint="true">
+      <Path>
+        <Point X="17.25" Y="1.191" />
+        <Point X="17.25" Y="1.625" />
+        <Point X="19.562" Y="1.625" />
+        <Point X="19.562" Y="2" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AABAAAAACAAAAgAAAAQAAAACACAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\WestLawNext\Pages\SearchResult\OverviewSearchResultPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.ResearchRecommendationsSearchResultPage" Collapsed="true">
+    <Position X="9" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAEACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\WestLawNext\Pages\SearchResult\ResearchRecommendationsSearchResultPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Products.WestLawNext.Pages.SearchResult.TenMostRecentResultsPage" Collapsed="true">
+    <Position X="14.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\WestLawNext\Pages\SearchResult\TenMostRecentResultsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

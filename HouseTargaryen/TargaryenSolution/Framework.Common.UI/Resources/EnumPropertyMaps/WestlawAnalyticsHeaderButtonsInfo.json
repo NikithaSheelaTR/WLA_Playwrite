@@ -1,0 +1,18 @@
+{
+  // Maps WestlawAnalyticsHeaderButtons to WebElementInfo
+  "Alerts": {
+    "LocatorString": "//li[@id='wa_alertsTab']/a"
+  },
+  "Analytics": {
+    "LocatorString": "//li[@id='wa_firmHealthTab']/a"
+  },
+  "BillingInvestigation": {
+    "LocatorString": "//li[@id='wa_billingInvestigationTab']/a"
+  },
+  "Reports": {
+    "LocatorString": "//li[@id='wa_quickView']/a"
+  },
+  "Settings": {
+    "LocatorString": "//ul[@class='wa_globalNavigation']//li[@id='wa_settingsTab']/a"
+  }  
+}

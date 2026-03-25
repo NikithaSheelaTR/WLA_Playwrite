@@ -1,0 +1,75 @@
+{
+  // Maps Graphs types to WebElementInfo
+  "CpcClass": {
+    "Text": "CPC Class",
+    "LocatorString": ".//li[text() = 'CPC Class']"
+  },
+  "DesignCategory": {
+    "Text": "Design Category",
+    "LocatorString": ".//li[text() = 'Design Category']"
+  },
+  "DesignType": {
+    "Text": "Design Type",
+    "LocatorString": ".//li[text() = 'Design Type']"
+  },
+  "Examiner": {
+    "Text": "Examiner",
+    "LocatorString": ".//li[text() = 'Examiner']"
+  },
+  "FiledDate": {
+    "Text": "Filed Date",
+    "LocatorString": ".//li[text() = 'Filed Date']"
+  },
+  "GrantedDate": {
+    "Text": "Granted Date",
+    "LocatorString": ".//li[text() = 'Granted Date']"
+  },
+  "Inventor": {
+    "Text": "Inventor",
+    "LocatorString": ".//li[text() = 'Inventor']"
+  },
+  "InternationalClass": {
+    "Text": "International Class",
+    "LocatorString": ".//li[text() = 'International Class']"
+  },
+  "Jurisdiction": {
+    "Text": "Jurisdiction",
+    "LocatorString": ".//li[text() = 'Jurisdiction']"
+  },
+  "Owner": {
+    "Text": "Owner",
+    "LocatorString": ".//li[text() = 'Owner']"
+  },
+  "PublicationDate": {
+    "Text": "Publication Date",
+    "LocatorString": ".//li[text() = 'Publication Date']"
+  },
+  "PriorityDate": {
+    "Text": "Priority Date",
+    "LocatorString": ".//li[text() = 'Priority Date']"
+  },
+  "PatentType": {
+    "Text": "Patent Type",
+    "LocatorString": ".//li[text() = 'Patent Type']"
+  },
+  "PublishedDate": {
+    "Text": "Published Date",
+    "LocatorString": ".//li[text() = 'Published Date']"
+  },
+  "RegistrationDate": {
+    "Text": "Registration Date",
+    "LocatorString": ".//li[text() = 'Registration Date']"
+  },
+  "Status": {
+    "Text": "Status",
+    "LocatorString": ".//li[text() = 'Status']"
+  },
+  "UsClass": {
+    "Text": "U.S. Class",
+    "LocatorString": ".//li[text() = 'U.S. Class']"
+  },
+  "ViennaCode": {
+    "Text": "Vienna Code",
+    "LocatorString": ".//li[text() = 'Vienna Code']"
+  }
+}

@@ -1,0 +1,20 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/reportportal/agent-net-vstest/master/ReportPortal.VSTest.TestLogger/ReportPortal.config.schema",
+  "enabled": true,
+  "server": {
+    "url": "https://reportportal-cr.1129.aws-int.thomsonreuters.com/api/v1",
+    "project": "WL_GROWTH",
+    "MaximumConnectionsNumber": 100,
+    "authentication": {
+      "uuid": "WL-GROWTH_Y02fSa9rRQiyg-qlAFjYO3sDSmusMR62QSB0IQI5zPKEgGiK_rtDaxd1yW1uU2yI"
+    }
+  },
+  "launch": {
+    "name": "Local Run",
+    "description": "Test run for WlnGrowth WestlawAdvantage",
+    "debugMode": false,
+    "tags": [ "Local", ".NET" ]
+  },
+  "rootNamespaces": [
+  ]
+}

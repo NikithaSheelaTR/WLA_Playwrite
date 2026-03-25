@@ -1,0 +1,16 @@
+﻿  {
+  "Notes": {
+    "Text": "Notes",
+    "LocatorString": ".//li[@role = 'menuitemradio']/span[contains(text(), 'Notes')]"
+  },
+
+  "Outlines": {
+    "Text": "Outlines",
+    "LocatorString": ".//li[@role = 'menuitemradio']/span[contains(text(), 'Outlines')]"
+  },
+
+  "QuickCheck": {
+    "Text": "Quick Check",
+    "LocatorString": ".//li[@role = 'menuitemradio']/span[contains(text(), 'Quick Check')]"
+  }
+}

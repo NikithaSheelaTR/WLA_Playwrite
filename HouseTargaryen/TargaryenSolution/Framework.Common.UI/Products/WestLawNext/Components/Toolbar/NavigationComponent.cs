@@ -1,0 +1,87 @@
+﻿namespace Framework.Common.UI.Products.WestLawNext.Components.Toolbar
+{
+    using Framework.Common.UI.Interfaces;
+    using Framework.Common.UI.Products.Shared.Components;
+    using Framework.Common.UI.Utils.QualityLibraryFacade.Library.Extensions;
+
+    using OpenQA.Selenium;
+
+    /// <summary>
+    ///     Contains all methods pertaining to the NavigationComponent
+    /// </summary>
+    public class NavigationComponent : BaseModuleRegressionComponent
+    {
+        private static readonly By ContainerLocator = By.XPath("//li[@id = 'co_docToolbarDocumentNavigation' or @id = 'documentsNavigationWidget']");
+
+        private static readonly By NavigationNumberTextLocator = By.XPath("//span[@class='co_navigationText']//strong[1]");
+
+        private static readonly By NextResultButtonLocator = By.XPath("//*[contains(@id,'document') and contains(@id,'ResultsNavigationNext')]");
+
+        private static readonly By PreviousResultButtonLocator = By.XPath("//*[contains(@id,'document') and contains(@id,'ResultsNavigationPrevious')]");
+
+        /// <summary>
+        /// Component locator
+        /// </summary>
+        protected override By ComponentLocator => ContainerLocator;
+
+        /// <summary>
+        /// Clicks Next Button in doc to doc navigation
+        /// </summary>
+        /// <typeparam name="T">T</typeparam>
+        /// <returns>New instance of T page</returns>
+        public T ClickNextDocumentButton<T>() where T : ICreatablePageObject
+        {
+            DriverExtensions.WaitForElement(NextResultButtonLocator).Click();
+            return DriverExtensions.CreatePageInstance<T>();
+        }
+
+        /// <summary>
+        /// Clicks Previous Button in doc to doc navigation
+        /// </summary>
+        /// <typeparam name="T">T</typeparam>
+        /// <returns>New instance of T page</returns>
+        public T ClickPreviousDocumentButton<T>() where T : ICreatablePageObject
+        {
+            DriverExtensions.WaitForElement(PreviousResultButtonLocator).Click();
+            return DriverExtensions.CreatePageInstance<T>();
+        }
+
+        /// <summary>
+        /// Gets the current doc navigation number number
+        /// </summary>
+        /// <returns>The navigation number of the current document</returns>
+        public string GetCurrentDocumentNavigationNumber() => DriverExtensions.WaitForElement(NavigationNumberTextLocator).Text;
+
+        /// <summary>
+        /// Checks if the NavigationComponent is Displayed
+        /// </summary>
+        /// <returns>Whether or not the NavigationComponent is displayed</returns>
+        public override bool IsDisplayed() => DriverExtensions.IsDisplayed(this.ComponentLocator, 5);
+
+        /// <summary>
+        /// Checks if the NextDocButton is Enabled
+        /// </summary>
+        /// <returns>Whether or not the NextDocButton is enabled</returns>
+        public bool IsNextResultButtonEnabled()
+            => !DriverExtensions.GetAttribute("class", NextResultButtonLocator).Contains("disabled");
+
+        /// <summary>
+        /// Checks if the PreviousDocButton is Enabled
+        /// </summary>
+        /// <returns>Whether or not the PreviousDocButton is enabled</returns>
+        public bool IsPreviousResultButtonEnabled()
+            => !DriverExtensions.GetAttribute("class", PreviousResultButtonLocator).Contains("disabled");
+
+        /// <summary>
+        /// Checks if the NextDocButton is displayed
+        /// </summary>
+        /// <returns>Whether or not the NextDocButton is displayed</returns>
+        public bool IsNextResultButtonDisplayed() => DriverExtensions.IsDisplayed(NextResultButtonLocator);
+
+        /// <summary>
+        /// Checks if the previous result button is displayed
+        /// </summary>
+        /// <returns>Whether or not the NextDocButton is enabled</returns>
+        public bool IsPreviousResultButtonDisplayed() => DriverExtensions.IsDisplayed(PreviousResultButtonLocator);
+    }
+}

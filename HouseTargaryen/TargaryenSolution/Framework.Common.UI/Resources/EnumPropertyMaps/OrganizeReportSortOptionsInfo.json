@@ -1,0 +1,32 @@
+﻿{
+	// Maps OrganizeReportSortOptions to WebElementInfo
+	"AtoZ": {
+		"Text": "A-Z"
+	},
+
+	"CourtLevel": {
+		"Text": "Court Level"
+	},
+
+	"Custom": {
+		"Text": "Custom"
+	},
+
+	"Default": {
+		"Text": "Default"
+	},
+
+	"NewestToOldest": {
+		"Text": "Newest to Oldest"
+	},
+
+	"OldestToNewest": {
+		"Text": "Oldest to Newest"
+	},
+
+	"ZtoA": {
+		"Text": "Z-A"
+	}
+}
+
+	

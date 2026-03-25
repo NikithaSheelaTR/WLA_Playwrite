@@ -1,0 +1,69 @@
+﻿{
+  // Maps SearchSortOptionInfo to WebElementInfo
+  "Alphabetically": {
+    "Text": "Alphabetical (A-Z)"
+  },
+  "CaseTitle": {
+    "Text": "Case title"
+  },
+  "ChangeDefault": {
+    "Text": "<Change Default>"
+  },
+  "ChooseASortType": {
+    "Text": "Choose a sort type..."
+  },
+  "Court": {
+    "Text": "Court"
+  },
+  "CourtLevel": {
+    "Text": "Court level"
+  },
+  "Date": {
+    "Text": "Date"
+  },
+  "DateDefault": {
+    "Text": "Date (Default)"
+  },
+  "Default": {
+    "Text": "Default"
+  },
+  "Forty": {
+    "Text": "40"
+  },
+  "Knos": {
+    "Text": "Key Nature of Suit"
+  },
+  "MostCited": {
+    "Text": "Most cited"
+  },
+  "MostUsed": {
+    "Text": "Most used"
+  },
+  "ProceduralOrder": {
+    "Text": "Procedural Order"
+  },
+  "Relevance": {
+    "Text": "Relevance"
+  },
+  "TableOfContents": {
+    "Text": "Table of Contents"
+  },
+  "TermFrequency": {
+    "Text": "Term frequency"
+  },
+  "Thirty": {
+    "Text": "30"
+  },
+  "Title": {
+    "Text": "Title"
+  },
+  "TopicThenDate": {
+    "Text": "Topic then Date"
+  },
+  "TopicThenMostCited": {
+    "Text": "Topic then Most Cited"
+  },
+  "Twenty": {
+    "Text": "20"
+  }
+}

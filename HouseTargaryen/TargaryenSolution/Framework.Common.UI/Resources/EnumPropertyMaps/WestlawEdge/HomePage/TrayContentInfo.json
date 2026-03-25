@@ -1,0 +1,43 @@
+{
+  // Maps CopyWithReference to WebElementInfo
+  "CompareVersions": {
+    "LocatorString": ".//div[@class='Promo-content']/div/a[@aria-label = 'View Compare Versions']",
+    "Text": "Statutes Compare and Regulations Compare"
+  },
+  "QuickCheck": {
+    "LocatorString": ".//div[@class='Promo-content']/div/a[@aria-label = 'View Quick Check']",
+    "Text": "Quick Check"
+  },
+  "KeyCite": {
+    "LocatorString": ".//div[@class='Promo-content']/div/a[@aria-label = 'View KeyCite']",
+    "Text": "KeyCite"
+  },
+  "KeyCiteOverrulingRisk": {
+    "LocatorString": ".//div[@class='Promo-content']/div/a[@aria-label = 'View KeyCite Overruling Risk']",
+    "Text": "KeyCite Overruling Risk"
+  },
+  "KeyNumberSystem": {
+    "LocatorString": ".//div[@class='Promo-content']/div/a[@aria-label = 'View Key Number Classification System']",
+    "Text": "Key Number System"
+  },
+  "LegislativeInsights": {
+    "LocatorString": ".//div[@class='Promo-content']/div/a[@aria-label = 'View Legislative Insights']",
+    "Text": "Legislative Insights"
+  },
+  "LitigationAnalytics": {
+    "LocatorString": ".//div[@class='Promo-content']/div/a[@aria-label = 'View Legal Analytics']",
+    "Text": "Litigation Analytics"
+  },
+  "JurisdictionSurveys": {
+    "LocatorString": ".//div[@class='Promo-content']/div/a[@aria-label = 'View Jurisdictional Surveys']",
+    "Text": "Jurisdiction Surveys"
+  },
+  "NaturalLegalLanguage": {
+    "LocatorString": ".//div[@class='Promo-content']/div/a[@aria-label = 'View Natural Legal Language']",
+    "Text": "Natural Legal Language"
+  },
+  "WestSearchPlus": {
+    "LocatorString": ".//div[@class='Promo-content']/div/a[@aria-label = 'View West Search Plus']",
+    "Text": "WestSearch Plus"
+  }
+}

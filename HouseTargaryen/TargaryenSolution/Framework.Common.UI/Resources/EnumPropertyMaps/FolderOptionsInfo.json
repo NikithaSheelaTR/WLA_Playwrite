@@ -1,0 +1,40 @@
+﻿{
+  // Maps FolderOptions enumeration to WebElementInfo
+  "Copy": {
+    "Text": "Copy",
+    "Id": "co_ro_fo_copy"
+  },
+  "Delete": {
+    "Text": "Delete",
+    "Id": "co_ro_fo_delete"
+  },
+  "Export": {
+    "Text": "Export",
+    "Id": "co_ro_fo_export"
+  },
+  "ExportToAmazonKindle": {
+    "Text": "Export to Amazon Kindle",
+    "Id": "co_ro_fo_exportToKindle"
+  },
+  "FolderSharing": {
+    "Text": "Folder Sharing",
+    "Id": "co_ro_fo_sharing"
+  },
+  "Move": {
+    "Text": "Move",
+    "Id": "co_ro_fo_move"
+  },
+  "Rename": {
+    "Text": "Rename",
+    "Id": "co_ro_fo_rename"
+  },
+  "Share": {
+    "Text": "Share",
+    "Id": "co_ro_fo_sharing"
+  },
+  "Upload": {
+    "Text": "Upload",
+    "Id": "co_ro_fo_fileUpload"
+  }
+}
+

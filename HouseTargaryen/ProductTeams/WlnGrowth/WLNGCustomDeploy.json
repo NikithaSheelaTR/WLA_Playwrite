@@ -1,0 +1,125 @@
+{
+    "shares":  [
+                   {
+                       "filterPattern":  "*.*",
+                       "share":  "s3://a207951-cobaltcm-comm-testtools-prod-use1",
+                       "excludeDirs":  "artifact",
+                       "sourceFolder":  "(Build.ArtifactStagingDirectory)",
+                       "name":  "build",
+                       "targetFolder":  "\\QED\\WLNR\\SevenKingdoms\\HouseTargaryen\\ProductTeams\\WlnGrowth",
+                       "includeSubFolders":  "true",
+                       "excludeFiles":  ""
+                   },
+                   {
+                       "filterPattern":  "*.xml",
+                       "share":  "s3://a207951-cobaltcm-comm-testtools-prod-use1",
+                       "excludeDirs":  "",
+                       "sourceFolder":  "(Build.SourcesDirectory)",
+                       "name":  "XmlFiles",
+                       "targetFolder":  "\\QED\\WLNR\\SevenKingdoms\\HouseTargaryen\\ProductTeams\\WlnGrowth",
+                       "includeSubFolders":  "true",
+                       "excludeFiles":  ""
+                   },
+                   {
+                       "filterPattern":  "*.*settings",
+                       "share":  "s3://a207951-cobaltcm-comm-testtools-prod-use1",
+                       "excludeDirs":  "",
+                       "sourceFolder":  "(Build.SourcesDirectory)",
+                       "name":  "Testsettings",
+                       "targetFolder":  "\\QED\\WLNR\\SevenKingdoms\\HouseTargaryen\\ProductTeams\\WlnGrowth",
+                       "includeSubFolders":  "true",
+                       "excludeFiles":  ""
+                   },
+                   {
+                       "filterPattern":  "*.txt",
+                       "share":  "s3://a207951-cobaltcm-comm-testtools-prod-use1",
+                       "excludeDirs":  "",
+                       "sourceFolder":  "(Build.SourcesDirectory)",
+                       "name":  "TxtFiles",
+                       "targetFolder":  "\\QED\\WLNR\\SevenKingdoms\\HouseTargaryen\\ProductTeams\\WlnGrowth",
+                       "includeSubFolders":  "true",
+                       "excludeFiles":  ""
+                   },
+                   {
+                       "filterPattern":  "*.mpf",
+                       "share":  "s3://a207951-cobaltcm-comm-testtools-prod-use1",
+                       "excludeDirs":  "",
+                       "sourceFolder":  "(Build.SourcesDirectory)",
+                       "name":  "Mp4Files",
+                       "targetFolder":  "\\QED\\WLNR\\SevenKingdoms\\HouseTargaryen\\ProductTeams\\WlnGrowth",
+                       "includeSubFolders":  "true",
+                       "excludeFiles":  ""
+                   },
+                   {
+                       "filterPattern":  "*.jpg",
+                       "share":  "s3://a207951-cobaltcm-comm-testtools-prod-use1",
+                       "excludeDirs":  "",
+                       "sourceFolder":  "(Build.SourcesDirectory)",
+                       "name":  "JpgFiles",
+                       "targetFolder":  "\\QED\\WLNR\\SevenKingdoms\\HouseTargaryen\\ProductTeams\\WlnGrowth",
+                       "includeSubFolders":  "true",
+                       "excludeFiles":  ""
+                   },
+                   {
+                       "filterPattern":  "*.zip",
+                       "share":  "s3://a207951-cobaltcm-comm-testtools-prod-use1",
+                       "excludeDirs":  "",
+                       "sourceFolder":  "(Build.SourcesDirectory)",
+                       "name":  "ZipFiles",
+                       "targetFolder":  "\\QED\\WLNR\\SevenKingdoms\\HouseTargaryen\\ProductTeams\\WlnGrowth",
+                       "includeSubFolders":  "true",
+                       "excludeFiles":  ""
+                   },
+                   {
+                       "filterPattern":  "*.vsmdi",
+                       "share":  "s3://a207951-cobaltcm-comm-testtools-prod-use1",
+                       "excludeDirs":  "",
+                       "sourceFolder":  "(Build.SourcesDirectory)",
+                       "name":  "TestListFile",
+                       "targetFolder":  "\\QED\\WLNR\\SevenKingdoms\\HouseTargaryen\\ProductTeams\\WlnGrowth",
+                       "includeSubFolders":  "true",
+                       "excludeFiles":  ""
+                   },
+                   {
+                       "filterPattern":  "*.config",
+                       "share":  "s3://a207951-cobaltcm-comm-testtools-prod-use1",
+                       "excludeDirs":  "",
+                       "sourceFolder":  "(Build.SourcesDirectory)",
+                       "name":  "ConfigFile",
+                       "targetFolder":  "\\QED\\WLNR\\SevenKingdoms\\HouseTargaryen\\ProductTeams\\WlnGrowth",
+                       "includeSubFolders":  "true",
+                       "excludeFiles":  ""
+                   },
+                   {
+                       "filterPattern":  "*.png",
+                       "share":  "s3://a207951-cobaltcm-comm-testtools-prod-use1",
+                       "excludeDirs":  "",
+                       "sourceFolder":  "(Build.SourcesDirectory)",
+                       "name":  "PngFile",
+                       "targetFolder":  "\\QED\\WLNR\\SevenKingdoms\\HouseTargaryen\\ProductTeams\\WlnGrowth",
+                       "includeSubFolders":  "true",
+                       "excludeFiles":  ""
+                   },
+                   {
+                       "filterPattern":  "*.pdf",
+                       "share":  "s3://a207951-cobaltcm-comm-testtools-prod-use1",
+                       "excludeDirs":  "",
+                       "sourceFolder":  "(Build.SourcesDirectory)",
+                       "name":  "PdfFile",
+                       "targetFolder":  "\\QED\\WLNR\\SevenKingdoms\\HouseTargaryen\\ProductTeams\\WlnGrowth",
+                       "includeSubFolders":  "true",
+                       "excludeFiles":  ""
+                   },
+                   {
+                       "filterPattern":  "*.exe",
+                       "share":  "s3://a207951-cobaltcm-comm-testtools-prod-use1",
+                       "excludeDirs":  "",
+                       "sourceFolder":  "(Build.SourcesDirectory)",
+                       "name":  "ExeFile",
+                       "targetFolder":  "\\QED\\WLNR\\SevenKingdoms\\HouseTargaryen\\ProductTeams\\WlnGrowth",
+                       "includeSubFolders":  "true",
+                       "excludeFiles":  ""
+                   }
+               ]
+}
+

@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Framework.Common.UI.Pages.BaseModuleRegressionPage" Collapsed="true">
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgBAAAAAAIACAAAAAAgAhAAEIACAAEEAAACAAEAAAo=</HashCode>
+      <FileName>Pages\BaseModuleRegressionPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TRGR.Quality.QedArsenal.QualityLibrary.WebDriver.Pages.BasePage" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.CommonAuthenticatedWestlawNextPage" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAEDEAQAAEAAQAAAAAAAQAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Pages\CommonAuthenticatedWestlawNextPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Components.Document.AnnotationsPopUpWidget" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAACAgDABQBBABQAAAEAAAAAAgAIAAQAACA=</HashCode>
+      <FileName>Components\Document\AnnotationsPopUpWidget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Components.Document.DocumentNavigationWidget" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAgAAAAAAAAAAAAAAYgAIAABECAAAAAAAAAAEA=</HashCode>
+      <FileName>Components\Document\DocumentNavigationWidget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Components.Facets.NarrowPane">
+    <Position X="1.25" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Framework.Common.UI.Components.Facets.NarrowPane.AddAttorneyModal" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Components\Facets\NarrowPane.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Framework.Common.UI.Components.Facets.NarrowPane.AddJudgeFacetModal" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Components\Facets\NarrowPane.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Framework.Common.UI.Components.Facets.NarrowPane.AddLawFirmFacetModal" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Components\Facets\NarrowPane.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Framework.Common.UI.Components.Facets.NarrowPane.PublicationFacetModal" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Components\Facets\NarrowPane.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>XEQgFoJAiSQEMoQKwCLBBNwIwrHAIZgGiE6GgIAtQEM=</HashCode>
+      <FileName>Components\Facets\NarrowPane.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Components.RI.GlobalNavigation" Collapsed="true">
+    <Position X="14" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAgAAAAAIAABAAIAAAAAAAAAABAAAAAAAAAAAI=</HashCode>
+      <FileName>Components\RI\GlobalNavigation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Components.RI.KcFacetPane" Collapsed="true">
+    <Position X="16.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BZhGlkUgQ1oiqQFIgQGdNAAgGIgECYaCkeQjwMwHABw=</HashCode>
+      <FileName>Components\RI\KcFacetPane.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Components.RI.ReferenceGrid" Collapsed="true">
+    <Position X="18.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>tyKUgIBogMUCgBQggZgQEAEBoAAGAIE0JAxABAAAAEE=</HashCode>
+      <FileName>Components\RI\ReferenceGrid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Components.Toolbar" Collapsed="true">
+    <Position X="20.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DCNKwAikDASiBQDgKgMCQkK1qHQogm8AQPggAkEBcRA=</HashCode>
+      <FileName>Components\Toolbar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Components.Toolbars.ToolbarGoToWidget" Collapsed="true">
+    <Position X="23" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AcAAAAAAAAgAEAABAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\Toolbars\ToolbarGoToWidget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Components.Toolbars.ToolbarNavigationWidget" Collapsed="true">
+    <Position X="25.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAQABEAAAAAAAAAACEA=</HashCode>
+      <FileName>Components\Toolbars\ToolbarNavigationWidget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Components.Toolbars.ToolbarSearchWidget" Collapsed="true">
+    <Position X="27.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAAAAQggAAAAAAAAABAAAAAQAIAAAAAAAAAAAAAABAg=</HashCode>
+      <FileName>Components\Toolbars\ToolbarSearchWidget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Components.Toolbars.ToolbarTocWidget" Collapsed="true">
+    <Position X="29.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAABAAAAAAAAAQABAACAAAAAA=</HashCode>
+      <FileName>Components\Toolbars\ToolbarTOCWidget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Dialogs.FolderingDialogs.SaveToFolderDialog" Collapsed="true">
+    <Position X="32" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAIAAAgAKAAEAAAAAAAACgAAAIACAQAAAAAAAAEAAA=</HashCode>
+      <FileName>Dialogs\FolderingDialogs\SaveToFolderDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Dialogs.PreviewResultsModal" Collapsed="true">
+    <Position X="34.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAQAEAAAAAAAAA=</HashCode>
+      <FileName>Dialogs\PreviewResultsModal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.AccessibilityPage" Collapsed="true">
+    <Position X="36.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\AccessibilityPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Alerts.CreateAlertPage" Collapsed="true">
+    <Position X="38.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>xgGgEglAAAKgCAIoiEBACEBoQAuDDkDBAAFUQAAgQwA=</HashCode>
+      <FileName>Pages\Alerts\CreateAlertPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Alerts.ManageAlertsPage" Collapsed="true">
+    <Position X="41" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBAAAAAAABBiBaBQCAAACBAAAAAAgBBAAABCCAIAAAA=</HashCode>
+      <FileName>Pages\Alerts\ManageAlertsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.CaseNotebookPage" Collapsed="true">
+    <Position X="43.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIABgAAAAAIAAAAAAQAAAgUAEAAAAAIIBAAAABAA=</HashCode>
+      <FileName>Pages\CaseNotebookPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.CommonClientIdPage" Collapsed="true">
+    <Position X="45.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAwBEAFAIhAAAAAYQIQAAQAAFAEEIAAAAiCBAAgwU=</HashCode>
+      <FileName>Pages\CommonClientIdPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.CommonFolderingDockWidget" Collapsed="true">
+    <Position X="47.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgCAKAAACAAAB0AAAACAAAAAAAIAACAIAAAAAAAAEAA=</HashCode>
+      <FileName>Pages\CommonFolderingDockWidget.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.CommonRoutingPage" Collapsed="true">
+    <Position X="50" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEABABACAAAgBEgAAAAAAACAAAAAAACE=</HashCode>
+      <FileName>Pages\CommonRoutingPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.CommonSignOffPage" Collapsed="true">
+    <Position X="52.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABQAAgAAABAAAAAAAACAAAAoAiAAAEAAIAAAAAAgA=</HashCode>
+      <FileName>Pages\CommonSignOffPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.CommonSignOnPage" Collapsed="true">
+    <Position X="54.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgABMhAQwgBAAAAAAiAAAAAAAAgACAAWAAAAYCBECQA=</HashCode>
+      <FileName>Pages\CommonSignOnPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.CommonWestlawNextHeaderSection" Collapsed="true">
+    <Position X="56.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIBTISEEiCgMgBBAAEAABBAAAQyAADIID4BABBII=</HashCode>
+      <FileName>Pages\CommonWestlawNextHeaderSection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.CommonWestLawNextHeaderSectionWithoutSearch" Collapsed="true">
+    <Position X="59" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAgAQABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\CommonWestLawNextHeaderSectionWithoutSearch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.DraftingAssistantPage" Collapsed="true">
+    <Position X="61.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAABBAACBBAAACAAEFABAQAAAACgACEIAAAAAAEKE=</HashCode>
+      <FileName>Pages\DraftingAssistantPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Error.PageNotFoundErrorPage" Collapsed="true">
+    <Position X="63.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAQAQAAEAAAAAAAACACAAAA=</HashCode>
+      <FileName>Pages\Error\PageNotFoundErrorPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Error.RegisterNewProfilePage" Collapsed="true">
+    <Position X="65.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACACAAAA=</HashCode>
+      <FileName>Pages\Error\RegisterNewProfilePage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Error.UnauthorizedPage" Collapsed="true">
+    <Position X="68" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAA=</HashCode>
+      <FileName>Pages\Error\UnauthorizedPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.ExpertQuestionsAdvancedSearchPage" Collapsed="true">
+    <Position X="70.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAQAAAAAAAAAAAAAAABAAAACEAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\ExpertQuestionsAdvancedSearchPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.ImportUserPropertiesPage" Collapsed="true">
+    <Position X="72.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAIAIAAAAABAAAgIA=</HashCode>
+      <FileName>Pages\ImportUserPropertiesPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.KmSignOnPage" Collapsed="true">
+    <Position X="74.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBAACAAQAAAABAAAAAAEAABAAAAAEBAAgEJAAAAAAAA=</HashCode>
+      <FileName>Pages\KmSignOnPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mashup.MashupBasePage" Collapsed="true">
+    <Position X="77" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAQAAgIAAAAAACQAAUAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mashup\MashupBasePage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Matters.ConcoursePage" Collapsed="true">
+    <Position X="79.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Matters\ConcoursePage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mobile.MobileBasePage" Collapsed="true">
+    <Position X="81.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgIAAAAAAAAAAAAAgAQgCAAAACAAAAAgEAAAUACiCA=</HashCode>
+      <FileName>Pages\Mobile\MobileBasePage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.OffersPage" Collapsed="true">
+    <Position X="83.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DACAAAAEAAAAAAgQAABAAAAAgAAABIAACAIAAAAAAAA=</HashCode>
+      <FileName>Pages\OffersPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Patron.PatronHelpPage" Collapsed="true">
+    <Position X="86" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAQAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Patron\PatronHelpPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Patron.PatronUsernamePage" Collapsed="true">
+    <Position X="88.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgEABgAgAAAAAAAAAAAAAAAABBAAAIEAKAAABAAAQA=</HashCode>
+      <FileName>Pages\Patron\PatronUsernamePage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Patron.SponsorAllTakenPage" Collapsed="true">
+    <Position X="90.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAACAAAAAAAAQACAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Pages\Patron\SponsorAllTakenPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Patron.SponsorUnauthorizedPage" Collapsed="true">
+    <Position X="92.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAA=</HashCode>
+      <FileName>Pages\Patron\SponsorUnauthorizedPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.PdfViewerPage" Collapsed="true">
+    <Position X="95" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEoAEACACAAAAAABBQgAAAAgAJgABAAAAAAgAA=</HashCode>
+      <FileName>Pages\PdfViewerPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.PricingPage" Collapsed="true">
+    <Position X="97.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAIAAAAAAAAAAAAAAAAACAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Pages\PricingPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.RegistrationKeyPage" Collapsed="true">
+    <Position X="99.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEEAQAgAAACAAAAAAAAAAAAAAAAAAAAAAAAAgAAQA=</HashCode>
+      <FileName>Pages\RegistrationKeyPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.RelatedInfo.RelatedTopicsResultsPage" Collapsed="true">
+    <Position X="101.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAACAEAAIAAAAAgAAIAAAAA=</HashCode>
+      <FileName>Pages\RelatedInfo\RelatedTopicsResultsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.TermsAgreementPage" Collapsed="true">
+    <Position X="104" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAgAAAAAAAAAIAwACAAAACEAAAAAAACAAAAQI=</HashCode>
+      <FileName>Pages\TermsAgreementPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Tools.AlertCenterPage" Collapsed="true">
+    <Position X="106.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Tools\AlertCenterPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Tools.LiveChatConsolePage" Collapsed="true">
+    <Position X="108.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAAACAAAAgAQBAQAAQAEEDCAAAQAAAAAIBBAAUAIIAA=</HashCode>
+      <FileName>Pages\Tools\LiveChatConsolePage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Tools.LiveChatLoginPage" Collapsed="true">
+    <Position X="110.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACAAABAgAAABQAAAAAAAAgABAEAAAAAAAAACAAAIA=</HashCode>
+      <FileName>Pages\Tools\LiveChatLoginPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Tools.MyPlanPage" Collapsed="true">
+    <Position X="113" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BEAFAAEQSAACoAFgAQgiEACAAAAAAAAIAgAAAAABBAA=</HashCode>
+      <FileName>Pages\Tools\MyPlanPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.UserEmulatePage" Collapsed="true">
+    <Position X="115.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAgAEAAQAAAAAAAAAAAAAAABAAAAAABAAAAQA=</HashCode>
+      <FileName>Pages\UserEmulatePage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.CommonSearchHomePage" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAABRNAAAAoJEAggABCggEUAgCCAAEAQABCFCEADCAA=</HashCode>
+      <FileName>Pages\CommonSearchHomePage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.CommonAuthenticatedWestlawNextPage" Collapsed="true">
+    <Position X="6.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\CommonAuthenticatedWestlawNextPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Browse.CommonBrowsePage" Collapsed="true">
+    <Position X="8.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAIAAQAIAAAAAAAAgEAAEAIACCkAA=</HashCode>
+      <FileName>Pages\Browse\CommonBrowsePage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.CommonAdvancedSearchPage" Collapsed="true">
+    <Position X="10.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAICAAAgACAACBAAEACEAAAAQAAQBAACBAAAACAgUAQ=</HashCode>
+      <FileName>Pages\CommonAdvancedSearchPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Alerts.ManageNewsletterAlertsPage" Collapsed="true">
+    <Position X="41" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Pages\Alerts\ManageNewsletterAlertsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Components.Folder.ActiveFolderComponent" Collapsed="true">
+    <Position X="47.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAgACMBAAAAACIiBAAAwAIACACAggEAAQAgQCk=</HashCode>
+      <FileName>Components\Folder\ActiveFolderComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Components.Header.DocumentHeader" Collapsed="true">
+    <Position X="54.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAIAgAA=</HashCode>
+      <FileName>Components\Header\DocumentHeader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Components.Header.SearchResultsHeader" Collapsed="true">
+    <Position X="56.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAGgAAAAAAAAAABAAAACAAAAA=</HashCode>
+      <FileName>Components\Header\SearchResultsHeader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.CommonWestlawNextHeaderSection" Collapsed="true">
+    <Position X="59" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\CommonWestlawNextHeaderSection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mashup.ClassicDocumentPage" Collapsed="true">
+    <Position X="70.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mashup\ClassicDocumentPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mashup.ClassicOverviewSearchResultsPage" Collapsed="true">
+    <Position X="72.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAQAAAAAAAAABAAgAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mashup\ClassicOverviewSearchResultsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mashup.ClassicSearchResultsPage" Collapsed="true">
+    <Position X="74.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mashup\ClassicSearchResultsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mashup.GraphicalBillsPage" Collapsed="true">
+    <Position X="77" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAACBAAAAAAAAIAAAgACAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mashup\GraphicalBillsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mashup.MedicalLitigatorSearchPage" Collapsed="true">
+    <Position X="79.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAIAAAAAAAMAAAAAEAAAAQAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Pages\Mashup\MedicalLitigatorSearchPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Mashup.PatentsSearchPage" Collapsed="true">
+    <Position X="81.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAgAEAAAAQAAAAAEIAgAAABAAA=</HashCode>
+      <FileName>Pages\Mashup\PatentsSearchPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Common.UI.Pages.Tools.CaseEvaluatorPage" Collapsed="true">
+    <Position X="83.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAIAEBAAIAAAAAAgABAAAAQAQQAAAAAAAAgAAKAA=</HashCode>
+      <FileName>Pages\Tools\CaseEvaluatorPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

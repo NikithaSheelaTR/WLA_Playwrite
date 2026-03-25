@@ -1,0 +1,30 @@
+{
+	// Maps KeyCiteFlag to WebElementInfo
+	"AiAssistedResearch": {
+		"LocatorString": "//*[contains(@class,'premium24 premium24_chat-blue')]/ancestor::a",
+		"Text": "AI-Assisted Research"
+	},
+	"CompareText": {
+		"LocatorString": "//*[contains(@class,'premium24 premium24_compareText-blue')]/ancestor::a",
+    "Text": "Compare Text"
+	},
+	"GraphicalHistory": {
+		"LocatorString": "//*[contains(@class,'premium24 premium24_graphicalHistory-blue')]/ancestor::a",
+    "Text": "Graphical History"
+	},
+	"KeepList": {
+		"LocatorString": "//*[contains(@class,'premium24 premium24_keepList-blue')]/ancestor::button",
+    "Text": "Keep List"
+	},
+	"NoTool": {
+		"LocatorString": ""
+	},
+	"OutlineBuilder": {
+		"LocatorString": "//*[contains(@class,'premium24 premium24_outlineBuilder-blue')]/ancestor::a",
+    "Text": "Outline Builder"
+	},
+	"QuickCheck": {
+		"LocatorString": "//*[contains(@class,'premium24 premium24_quickCheck-blue')]/ancestor::a",
+		"Text": "Litigation Document Analyzer"
+	}
+}

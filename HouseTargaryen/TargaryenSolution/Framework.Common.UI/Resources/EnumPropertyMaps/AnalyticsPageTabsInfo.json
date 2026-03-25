@@ -1,0 +1,11 @@
+{
+  // Maps AnalyticsPageTabs to WebElementInfo
+  "ChargeableToClientVsNotChargeableToClient": {
+    "LocatorString": "//li[@id='wa_firmHealthStatisticBillingTab']/a",
+    "Text": "Chargeable to Client vs Not Chargeable to Client"
+  },
+  "InPlanVsOutOfPlan": {
+    "LocatorString": "//li[@id='wa_firmHealthStatisticPlanTab']/a",
+    "Text": "In Plan vs Out of Plan"
+  }
+}

@@ -1,0 +1,30 @@
+﻿{
+  // Maps ExpertByExpertiseHeaders to BaseTextInfo
+  "ExpertiseType": {
+    "Text": "Expertise Type"
+  },
+  "PercentageOftotal": {
+    "Text": "Percentage of Total"
+  },
+  "TotalNumCases": {
+    "Text": "Total Number of Cases"
+  },
+  "YearColumn1": {
+    "Text": ""
+  },
+  "YearColumn2": {
+    "Text": ""
+  },
+  "YearColumn3": {
+    "Text": ""
+  },
+  "YearColumn4": {
+    "Text": ""
+  },
+  "YearColumn5": {
+    "Text": ""
+  },
+  "YearColumn6": {
+    "Text": ""
+  }
+}
