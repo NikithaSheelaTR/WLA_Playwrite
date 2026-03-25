@@ -140,8 +140,8 @@
       <HintPath>$(SolutionDir)packages\OpenSmtp.1.11.0.34196\lib\OpenSmtp.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
-    <Reference Include="QedArsenal.QualityLibrary.Core, Version=2207.0.6.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$(SolutionDir)packages\QedArsenal.QualityLibrary.Core.2207.0.6-build\lib\net45\QedArsenal.QualityLibrary.Core.dll</HintPath>
+    <Reference Include="Selenium.Playwright.Shim">
+      <HintPath>..\..\..\src\Shim\Selenium.Playwright.Shim\bin\Debug\netstandard2.0\Selenium.Playwright.Shim.dll</HintPath>
     </Reference>
     <Reference Include="ReportPortal.Client, Version=3.10.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>$(SolutionDir)packages\ReportPortal.Client.3.10.0\lib\net462\ReportPortal.Client.dll</HintPath>

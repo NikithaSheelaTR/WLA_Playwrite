@@ -69,11 +69,11 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>$(SolutionDir)packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="QedArsenal.QualityLibrary.Core, Version=2207.0.6.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$(SolutionDir)packages\QedArsenal.QualityLibrary.Core.2207.0.6-build\lib\net45\QedArsenal.QualityLibrary.Core.dll</HintPath>
+    <Reference Include="Selenium.Playwright.Shim">
+      <HintPath>..\..\..\..\..\src\Shim\Selenium.Playwright.Shim\bin\Debug\netstandard2.0\Selenium.Playwright.Shim.dll</HintPath>
     </Reference>
-    <Reference Include="QedArsenal.QualityLibrary.WebDriver, Version=2207.0.6.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$(SolutionDir)packages\QedArsenal.QualityLibrary.WebDriver.2207.0.6-build\lib\net45\QedArsenal.QualityLibrary.WebDriver.dll</HintPath>
+    <Reference Include="Microsoft.Playwright">
+      <HintPath>..\..\..\..\..\src\Shim\Selenium.Playwright.Shim\bin\Debug\netstandard2.0\Microsoft.Playwright.dll</HintPath>
     </Reference>
     <Reference Include="ReportPortal.Client, Version=3.10.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>$(SolutionDir)packages\ReportPortal.Client.3.10.0\lib\net462\ReportPortal.Client.dll</HintPath>
@@ -130,12 +130,6 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$(SolutionDir)packages\Selenium.WebDriver.3.141.0\lib\net45\WebDriver.dll</HintPath>
-    </Reference>
-    <Reference Include="WebDriver.Support, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$(SolutionDir)packages\Selenium.Support.3.141.0\lib\net45\WebDriver.Support.dll</HintPath>
-    </Reference>
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>

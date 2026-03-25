@@ -160,11 +160,11 @@
       <HintPath>$(SolutionDir)packages\PDFsharp.1.32.3057.0\lib\net20\PdfSharp.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="QedArsenal.QualityLibrary.Core, Version=2207.0.6.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$(SolutionDir)packages\QedArsenal.QualityLibrary.Core.2207.0.6-build\lib\net45\QedArsenal.QualityLibrary.Core.dll</HintPath>
+    <Reference Include="Selenium.Playwright.Shim">
+      <HintPath>..\..\..\src\Shim\Selenium.Playwright.Shim\bin\Debug\netstandard2.0\Selenium.Playwright.Shim.dll</HintPath>
     </Reference>
-    <Reference Include="QedArsenal.QualityLibrary.WebDriver, Version=2207.0.6.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$(SolutionDir)packages\QedArsenal.QualityLibrary.WebDriver.2207.0.6-build\lib\net45\QedArsenal.QualityLibrary.WebDriver.dll</HintPath>
+    <Reference Include="Microsoft.Playwright">
+      <HintPath>..\..\..\src\Shim\Selenium.Playwright.Shim\bin\Debug\netstandard2.0\Microsoft.Playwright.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -178,12 +178,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="Thomson.Novus.ProductAPI, Version=24.8.2.1, Culture=neutral, PublicKeyToken=b06d0a70726cd750, processorArchitecture=MSIL">
       <HintPath>$(SolutionDir)packages\Thomson.Novus.ProductAPI.24.8.2.1\lib\net472\Thomson.Novus.ProductAPI.dll</HintPath>
-    </Reference>
-    <Reference Include="WebDriver, Version=3.14.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$(SolutionDir)packages\Selenium.WebDriver.3.14.0\lib\net45\WebDriver.dll</HintPath>
-    </Reference>
-    <Reference Include="WebDriver.Support, Version=3.14.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$(SolutionDir)packages\Selenium.Support.3.14.0\lib\net45\WebDriver.Support.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
