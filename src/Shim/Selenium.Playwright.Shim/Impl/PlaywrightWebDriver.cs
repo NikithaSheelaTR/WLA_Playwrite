@@ -31,6 +31,7 @@ namespace Selenium.Playwright.Shim.Impl
 
         public PlaywrightWebDriver(ChromeOptions chromeOptions = null)
         {
+            EnsurePlaywrightDriver();
             _playwright = SyncHelper.RunSync(() => Microsoft.Playwright.Playwright.CreateAsync());
 
             var launchOptions = new BrowserTypeLaunchOptions
@@ -328,6 +329,98 @@ namespace Selenium.Playwright.Shim.Impl
                 modifiedScript = modifiedScript.Replace($"arguments[{i}]", $"arg{i}");
 
             return $"({string.Join(", ", paramNames)}) => new Promise((resolve) => {{ var callback = resolve; {modifiedScript} }})";
+        }
+
+        /// <summary>
+        /// Ensures the .playwright driver folder is available at AppContext.BaseDirectory
+        /// so that Microsoft.Playwright can find its Node.js driver at runtime.
+        /// </summary>
+        private static void EnsurePlaywrightDriver()
+        {
+            var baseDir = AppContext.BaseDirectory;
+            var targetPlaywright = System.IO.Path.Combine(baseDir, ".playwright");
+            if (System.IO.Directory.Exists(targetPlaywright))
+                return;
+
+            // Search for .playwright in several candidate locations
+            string sourcePlaywright = null;
+            var candidates = new List<string>();
+
+            // 1. Next to the shim DLL
+            var shimDir = System.IO.Path.GetDirectoryName(typeof(PlaywrightWebDriver).Assembly.Location);
+            if (!string.IsNullOrEmpty(shimDir))
+                candidates.Add(System.IO.Path.Combine(shimDir, ".playwright"));
+
+            // 2. Next to the Microsoft.Playwright DLL
+            var pwDir = System.IO.Path.GetDirectoryName(typeof(Microsoft.Playwright.IPlaywright).Assembly.Location);
+            if (!string.IsNullOrEmpty(pwDir))
+                candidates.Add(System.IO.Path.Combine(pwDir, ".playwright"));
+
+            // 3. Walk up from the working directory looking for src\Shim\publish\.playwright
+            var cur = System.IO.Directory.GetCurrentDirectory();
+            for (int i = 0; i < 10 && cur != null; i++)
+            {
+                candidates.Add(System.IO.Path.Combine(cur, "src", "Shim", "publish", ".playwright"));
+                candidates.Add(System.IO.Path.Combine(cur, ".playwright"));
+                cur = System.IO.Directory.GetParent(cur)?.FullName;
+            }
+
+            // 4. Walk up from AppContext.BaseDirectory
+            cur = baseDir;
+            for (int i = 0; i < 10 && cur != null; i++)
+            {
+                candidates.Add(System.IO.Path.Combine(cur, "src", "Shim", "publish", ".playwright"));
+                cur = System.IO.Directory.GetParent(cur)?.FullName;
+            }
+
+            foreach (var candidate in candidates)
+            {
+                if (System.IO.Directory.Exists(candidate))
+                {
+                    sourcePlaywright = candidate;
+                    break;
+                }
+            }
+
+            if (sourcePlaywright != null && !System.IO.Directory.Exists(targetPlaywright))
+            {
+                try
+                {
+                    // Create a directory junction (symlink) to avoid copying large files
+                    var psi = new System.Diagnostics.ProcessStartInfo("cmd.exe",
+                        $"/c mklink /J \"{targetPlaywright}\" \"{sourcePlaywright}\"")
+                    {
+                        UseShellExecute = false,
+                        CreateNoWindow = true
+                    };
+                    var proc = System.Diagnostics.Process.Start(psi);
+                    proc.WaitForExit(5000);
+
+                    if (!System.IO.Directory.Exists(targetPlaywright))
+                    {
+                        CopyDirectory(sourcePlaywright, targetPlaywright);
+                    }
+                }
+                catch
+                {
+                    CopyDirectory(sourcePlaywright, targetPlaywright);
+                }
+            }
+        }
+
+        private static void CopyDirectory(string sourceDir, string destDir)
+        {
+            System.IO.Directory.CreateDirectory(destDir);
+            foreach (var file in System.IO.Directory.GetFiles(sourceDir))
+            {
+                var destFile = System.IO.Path.Combine(destDir, System.IO.Path.GetFileName(file));
+                System.IO.File.Copy(file, destFile, true);
+            }
+            foreach (var dir in System.IO.Directory.GetDirectories(sourceDir))
+            {
+                var destSubDir = System.IO.Path.Combine(destDir, System.IO.Path.GetFileName(dir));
+                CopyDirectory(dir, destSubDir);
+            }
         }
     }
 }
