@@ -64,4 +64,11 @@ namespace OpenQA.Selenium
         public NoAlertPresentException(string message) : base(message) { }
         public NoAlertPresentException(string message, Exception innerException) : base(message, innerException) { }
     }
+
+    public class NotFoundException : WebDriverException
+    {
+        public NotFoundException() : base() { }
+        public NotFoundException(string message) : base(message) { }
+        public NotFoundException(string message, Exception innerException) : base(message, innerException) { }
+    }
 }

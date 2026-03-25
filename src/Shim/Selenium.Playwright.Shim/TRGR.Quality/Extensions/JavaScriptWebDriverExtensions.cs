@@ -54,11 +54,6 @@ namespace TRGR.Quality.QedArsenal.QualityLibrary.WebDriver.Extensions
             catch { return true; }
         }
 
-        public static void GeckoWait(this IWebDriver driver)
-        {
-            Thread.Sleep(500);
-        }
-
         public static bool WaitForPageLoad(this IWebDriver driver, int timeoutInMilliseconds = 30000)
         {
             try

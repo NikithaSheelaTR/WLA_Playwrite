@@ -118,26 +118,5 @@ namespace TRGR.Quality.QedArsenal.QualityLibrary.WebDriver.Extensions
             catch { return false; }
         }
 
-        public static bool IsEnabled(this IWebDriver driver, By by)
-        {
-            try { return driver.FindElement(by).Enabled; }
-            catch { return false; }
-        }
-
-        public static bool IsScrollableElementInView(this IWebDriver driver, By elementWithinScrollBy, By divWithScrollBy)
-        {
-            try
-            {
-                var result = ((IJavaScriptExecutor)driver).ExecuteScript(
-                    @"var elem = arguments[0]; var container = arguments[1];
-                      var elemRect = elem.getBoundingClientRect();
-                      var containerRect = container.getBoundingClientRect();
-                      return elemRect.top >= containerRect.top && elemRect.bottom <= containerRect.bottom;",
-                    driver.FindElement(elementWithinScrollBy),
-                    driver.FindElement(divWithScrollBy));
-                return result is bool b && b;
-            }
-            catch { return false; }
-        }
     }
 }

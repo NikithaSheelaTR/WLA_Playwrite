@@ -55,15 +55,15 @@ namespace TRGR.Quality.QedArsenal.QualityLibrary.Core.Enums.WebDriver
     /// </summary>
     public static class MouseEventEnumExtensions
     {
-        public static MouseEventAttribute GetAttribute<T>(this Enum enumValue) where T : Attribute
+        public static MouseEventAttribute GetMouseEventAttribute(this Enum enumValue)
         {
             var type = enumValue.GetType();
             var memberInfo = type.GetMember(enumValue.ToString());
             if (memberInfo.Length > 0)
             {
-                var attrs = memberInfo[0].GetCustomAttributes(typeof(T), false);
+                var attrs = memberInfo[0].GetCustomAttributes(typeof(MouseEventAttribute), false);
                 if (attrs.Length > 0)
-                    return (MouseEventAttribute)(Attribute)attrs[0];
+                    return (MouseEventAttribute)attrs[0];
             }
             return new MouseEventAttribute(enumValue.ToString().ToLower());
         }

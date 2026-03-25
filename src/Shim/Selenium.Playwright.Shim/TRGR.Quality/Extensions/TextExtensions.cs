@@ -75,16 +75,6 @@ namespace TRGR.Quality.QedArsenal.QualityLibrary.WebDriver.Extensions
             return text ?? string.Empty;
         }
 
-        public static string GetTextSafe(this IWebDriver driver, IWebElement container, By elementBy)
-        {
-            try
-            {
-                var element = container.FindElement(elementBy);
-                return GetTextFromElement(element);
-            }
-            catch { return string.Empty; }
-        }
-
         public static bool IsTextInElement(this IWebDriver driver, By by, string text)
         {
             try
@@ -98,14 +88,6 @@ namespace TRGR.Quality.QedArsenal.QualityLibrary.WebDriver.Extensions
         public static bool IsTextOnPage(this IWebDriver driver, string text)
         {
             return driver.PageSource.Contains(text);
-        }
-
-        public static string GetHiddenText(this IWebDriver driver, IWebElement container, params By[] elementBys)
-        {
-            var element = container.FindElementByChainedBys(elementBys);
-            var text = (string)((IJavaScriptExecutor)driver).ExecuteScript(
-                "return arguments[0].textContent;", element);
-            return text ?? string.Empty;
         }
 
         private static string GetTextFromElement(IWebElement element)

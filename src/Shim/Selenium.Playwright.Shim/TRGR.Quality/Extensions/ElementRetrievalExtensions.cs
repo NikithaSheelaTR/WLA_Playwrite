@@ -51,12 +51,6 @@ namespace TRGR.Quality.QedArsenal.QualityLibrary.WebDriver.Extensions
             return innerContainer.FindElements(elementsBys.Last()).ToList();
         }
 
-        public static IList<IWebElement> GetElements(this IWebDriver driver, IWebElement container, By elementsBy,
-            Func<IWebElement, bool> condition)
-        {
-            return container.FindElements(elementsBy).Where(condition).ToList();
-        }
-
         public static IList<IWebElement> GetAllChildrenElements(this IWebDriver driver,
             IList<IWebElement> parentElements, By childrenBy)
         {
@@ -94,11 +88,6 @@ namespace TRGR.Quality.QedArsenal.QualityLibrary.WebDriver.Extensions
         {
             var elements = driver.GetElements(elementBys);
             return elements.Where(e => TextMatches(GetElementText(e, optionsQl), searchText, optionsQl)).ToList();
-        }
-
-        public static IWebElement GetFocusedElement(this IWebDriver driver)
-        {
-            return (IWebElement)((IJavaScriptExecutor)driver).ExecuteScript("return document.activeElement;");
         }
 
         public static IWebElement GetParentElement(this IWebDriver driver, IWebElement element)

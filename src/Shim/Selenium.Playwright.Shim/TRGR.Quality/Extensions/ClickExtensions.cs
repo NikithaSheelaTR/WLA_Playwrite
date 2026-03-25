@@ -38,10 +38,5 @@ namespace TRGR.Quality.QedArsenal.QualityLibrary.WebDriver.Extensions
             ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].click();", element);
         }
 
-        public static void DoubleClick(this IWebDriver driver, IWebElement element)
-        {
-            var actions = new OpenQA.Selenium.Interactions.Actions(driver);
-            actions.DoubleClick(element).Perform();
-        }
     }
 }

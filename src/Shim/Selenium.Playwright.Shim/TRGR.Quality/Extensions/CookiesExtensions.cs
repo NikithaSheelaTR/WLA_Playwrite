@@ -19,11 +19,6 @@ namespace TRGR.Quality.QedArsenal.QualityLibrary.WebDriver.Extensions
             return cookie?.Value ?? string.Empty;
         }
 
-        public static string GetSiteCookieValue(this IWebDriver driver)
-        {
-            return driver.GetCookieValue("site");
-        }
-
         public static void RefreshPage(this IWebDriver driver)
         {
             driver.Navigate().Refresh();

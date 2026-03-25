@@ -11,10 +11,10 @@ namespace TRGR.Quality.QedArsenal.QualityLibrary.WebDriver.Extensions
     {
         private static int _defaultImplicitWaitSeconds = 10;
 
-        public static void WaitForCondition(this IWebDriver driver, Func<object, bool> condition, int timeOut = 30)
+        public static int CurrentImplicitWait
         {
-            var wait = new OpenQA.Selenium.Support.UI.WebDriverWait(driver, TimeSpan.FromSeconds(timeOut));
-            wait.Until(d => condition(d));
+            get { return _defaultImplicitWaitSeconds; }
+            set { _defaultImplicitWaitSeconds = value; }
         }
 
         public static void DisableTimeout(this IWebDriver driver)
@@ -31,46 +31,6 @@ namespace TRGR.Quality.QedArsenal.QualityLibrary.WebDriver.Extensions
         {
             _defaultImplicitWaitSeconds = waitInSeconds;
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(waitInSeconds);
-        }
-
-        public static IWebElement SafeGetElement(this IWebDriver driver, By locator)
-        {
-            try { return driver.FindElement(locator); }
-            catch (NoSuchElementException) { return null; }
-        }
-
-        public static IWebElement SafeGetElement(this IWebDriver driver, IWebElement parent, By locator)
-        {
-            try { return parent.FindElement(locator); }
-            catch (NoSuchElementException) { return null; }
-        }
-
-        public static bool TryGetElement(this IWebDriver driver, By element, out IWebElement webElement)
-        {
-            try
-            {
-                webElement = driver.FindElement(element);
-                return true;
-            }
-            catch (NoSuchElementException)
-            {
-                webElement = null;
-                return false;
-            }
-        }
-
-        public static bool TryGetElement(this IWebDriver driver, IWebElement parent, By element, out IWebElement webElement)
-        {
-            try
-            {
-                webElement = parent.FindElement(element);
-                return true;
-            }
-            catch (NoSuchElementException)
-            {
-                webElement = null;
-                return false;
-            }
         }
 
         public static IWebElement WaitForElement(this IWebDriver driver, By by, int timeOut = 30000)
@@ -248,18 +208,6 @@ namespace TRGR.Quality.QedArsenal.QualityLibrary.WebDriver.Extensions
                 }
                 catch { return false; }
             });
-        }
-
-        public static void WaitForNewTabLoaded(this IWebDriver driver, int tabsCount, int timeout = 15)
-        {
-            var wait = new OpenQA.Selenium.Support.UI.WebDriverWait(driver, TimeSpan.FromSeconds(timeout));
-            wait.Until(d => d.WindowHandles.Count > tabsCount);
-        }
-
-        public static void WaitForTabClosed(this IWebDriver driver, int tabsCount, int timeout = 15)
-        {
-            var wait = new OpenQA.Selenium.Support.UI.WebDriverWait(driver, TimeSpan.FromSeconds(timeout));
-            wait.Until(d => d.WindowHandles.Count < tabsCount);
         }
 
         public static bool WaitForTextInElement(this IWebDriver driver, string lookedFor, By by)
