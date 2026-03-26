@@ -30,7 +30,16 @@ namespace Selenium.Playwright.Shim.Impl
 
     internal class PlaywrightTimeouts : ITimeouts
     {
-        public TimeSpan ImplicitWait { get; set; } = TimeSpan.FromSeconds(0);
+        private TimeSpan _implicitWait = TimeSpan.FromSeconds(10);
+        public TimeSpan ImplicitWait
+        {
+            get => _implicitWait;
+            set
+            {
+                PlaywrightWebDriver.Trace($"Timeouts.ImplicitWait set to {value.TotalSeconds}s");
+                _implicitWait = value;
+            }
+        }
         public TimeSpan PageLoad { get; set; } = TimeSpan.FromSeconds(300);
         public TimeSpan AsynchronousJavaScript { get; set; } = TimeSpan.FromSeconds(30);
     }
@@ -66,7 +75,35 @@ namespace Selenium.Playwright.Shim.Impl
 
         public void Maximize()
         {
-            SyncHelper.RunSync(() => _driver.Page.SetViewportSizeAsync(1920, 1080));
+            PlaywrightWebDriver.Trace("Window.Maximize starting...");
+            try
+            {
+                // Use CDP to maximize the actual OS-level browser window
+                // (matches Selenium's driver.Manage().Window.Maximize() behavior)
+                var cdpSession = SyncHelper.RunSync(() => _driver.Page.Context.NewCDPSessionAsync(_driver.Page));
+
+                // Get the window id first
+                var result = SyncHelper.RunSync(() => cdpSession.SendAsync("Browser.getWindowForTarget"));
+                var windowId = result.Value.GetProperty("windowId").GetInt32();
+
+                // Set window bounds to maximized state
+                var setParams = new System.Collections.Generic.Dictionary<string, object>
+                {
+                    ["windowId"] = windowId,
+                    ["bounds"] = new System.Collections.Generic.Dictionary<string, object>
+                    {
+                        ["windowState"] = "maximized"
+                    }
+                };
+                SyncHelper.RunSync(() => cdpSession.SendAsync("Browser.setWindowBounds", setParams));
+                PlaywrightWebDriver.Trace("Window.Maximize via CDP completed.");
+            }
+            catch (System.Exception ex)
+            {
+                PlaywrightWebDriver.Trace($"Window.Maximize CDP failed: {ex.Message}, falling back to viewport");
+                SyncHelper.RunSync(() => _driver.Page.SetViewportSizeAsync(1920, 1080));
+            }
+            PlaywrightWebDriver.Trace("Window.Maximize completed.");
         }
 
         public void Minimize()

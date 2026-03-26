@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Text.RegularExpressions;
 using Microsoft.Playwright;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -17,6 +18,22 @@ namespace Selenium.Playwright.Shim.Impl
         private readonly PlaywrightOptions _options;
         private readonly PlaywrightTargetLocator _targetLocator;
         private bool _disposed;
+        private static string _shimDirectory;
+        private static string _publishDirectory;
+        private static readonly string _traceFile = System.IO.Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),
+            "playwright_shim_trace.log");
+
+        internal static void Trace(string message)
+        {
+            try
+            {
+                var line = $"[{DateTime.Now:HH:mm:ss.fff}] {message}";
+                System.IO.File.AppendAllText(_traceFile, line + Environment.NewLine);
+                System.Console.WriteLine(line);
+            }
+            catch { /* best effort */ }
+        }
 
         // Track the "current" page for frame/window switching
         private IPage _activePage;
@@ -29,15 +46,137 @@ namespace Selenium.Playwright.Shim.Impl
 
         public IBrowserContext Context => _context;
 
+        /// <summary>
+        /// Static constructor: runs once before any instance is created.
+        /// Sets up assembly resolution so all Playwright BCL dependencies 
+        /// (System.ComponentModel.Annotations, System.Text.Json, etc.) 
+        /// can be found even under vstest deployment.
+        /// </summary>
+        static PlaywrightWebDriver()
+        {
+            _shimDirectory = System.IO.Path.GetDirectoryName(
+                typeof(PlaywrightWebDriver).Assembly.Location);
+
+            // Find the publish folder (where ALL dependencies live)
+            _publishDirectory = FindPublishDirectory();
+
+            AppDomain.CurrentDomain.AssemblyResolve += (sender, args) =>
+            {
+                var name = new System.Reflection.AssemblyName(args.Name).Name;
+
+                // Check where the shim DLL is loaded from (bin\Debug or vstest deploy)
+                var dll = System.IO.Path.Combine(_shimDirectory, name + ".dll");
+                if (System.IO.File.Exists(dll))
+                    return System.Reflection.Assembly.LoadFrom(dll);
+
+                // Fall back to publish folder (has all BCL deps)
+                if (_publishDirectory != null)
+                {
+                    dll = System.IO.Path.Combine(_publishDirectory, name + ".dll");
+                    if (System.IO.File.Exists(dll))
+                        return System.Reflection.Assembly.LoadFrom(dll);
+                }
+
+                return null;
+            };
+        }
+
+        /// <summary>
+        /// Walks up from the shim DLL directory looking for src\Shim\publish\.
+        /// Also checks from the Playwright DLL location, AppContext.BaseDirectory,
+        /// and the original source path (from PDB) to handle vstest deploy scenarios
+        /// where DLLs are copied to a different tree.
+        /// </summary>
+        private static string FindPublishDirectory()
+        {
+            var startDirs = new List<string>
+            {
+                _shimDirectory,
+                System.IO.Path.GetDirectoryName(typeof(Microsoft.Playwright.Playwright).Assembly.Location),
+                AppContext.BaseDirectory
+            };
+
+            // Try to find the original source path from the PDB/debug info
+            // The shim DLL was compiled from src\Shim\Selenium.Playwright.Shim\
+            // so the PDB should contain the original path
+            try
+            {
+                var shimAssemblyPath = typeof(PlaywrightWebDriver).Assembly.Location;
+                var pdbPath = System.IO.Path.ChangeExtension(shimAssemblyPath, ".pdb");
+                if (System.IO.File.Exists(pdbPath))
+                {
+                    // Read first 4KB of PDB to find source path references
+                    var pdbBytes = System.IO.File.ReadAllBytes(pdbPath);
+                    var pdbText = System.Text.Encoding.UTF8.GetString(pdbBytes);
+                    // Look for paths like C:\Github\WLA_Playwrite\src\Shim\...
+                    var match = System.Text.RegularExpressions.Regex.Match(
+                        pdbText, @"([A-Za-z]:\\[^\0]*?\\src\\Shim\\)");
+                    if (match.Success)
+                    {
+                        var srcShimDir = match.Groups[1].Value;
+                        var publishFromPdb = System.IO.Path.Combine(srcShimDir, "publish");
+                        if (System.IO.Directory.Exists(publishFromPdb))
+                            return publishFromPdb;
+                        // Also try the parent dir
+                        startDirs.Add(System.IO.Path.GetDirectoryName(srcShimDir.TrimEnd('\\')));
+                    }
+                }
+            }
+            catch { /* best effort */ }
+
+            // Also scan common Git repo locations
+            var drives = new[] { "C" };
+            var githubDirs = new[] { "Github", "git", "repos", "source" };
+            foreach (var drive in drives)
+            {
+                foreach (var gitDir in githubDirs)
+                {
+                    var gitRoot = $@"{drive}:\{gitDir}";
+                    if (System.IO.Directory.Exists(gitRoot))
+                    {
+                        try
+                        {
+                            foreach (var repoDir in System.IO.Directory.GetDirectories(gitRoot))
+                            {
+                                var candidate = System.IO.Path.Combine(repoDir, "src", "Shim", "publish");
+                                if (System.IO.Directory.Exists(candidate) &&
+                                    System.IO.File.Exists(System.IO.Path.Combine(candidate, "Selenium.Playwright.Shim.dll")))
+                                    return candidate;
+                            }
+                        }
+                        catch { /* access denied, etc. */ }
+                    }
+                }
+            }
+
+            foreach (var startDir in startDirs)
+            {
+                if (string.IsNullOrEmpty(startDir)) continue;
+                var dir = startDir;
+                for (int i = 0; i < 15 && dir != null; i++)
+                {
+                    var candidate = System.IO.Path.Combine(dir, "src", "Shim", "publish");
+                    if (System.IO.Directory.Exists(candidate) &&
+                        System.IO.File.Exists(System.IO.Path.Combine(candidate, "Selenium.Playwright.Shim.dll")))
+                        return candidate;
+                    dir = System.IO.Directory.GetParent(dir)?.FullName;
+                }
+            }
+            return null;
+        }
+
         public PlaywrightWebDriver(ChromeOptions chromeOptions = null)
         {
+            Trace($"Constructor starting. ShimDir={_shimDirectory}, PublishDir={_publishDirectory}");
             EnsurePlaywrightDriver();
+            Trace("EnsurePlaywrightDriver done. Creating Playwright...");
             _playwright = SyncHelper.RunSync(() => Microsoft.Playwright.Playwright.CreateAsync());
+            Trace("Playwright created. Launching browser...");
 
             var launchOptions = new BrowserTypeLaunchOptions
             {
                 Headless = false,
-                Channel = "chromium"
+                Channel = "chrome"  // Use system-installed Chrome (has corporate proxy/certs)
             };
 
             // Map ChromeOptions arguments to Playwright launch options
@@ -63,12 +202,28 @@ namespace Selenium.Playwright.Shim.Impl
             }
 
             _browser = SyncHelper.RunSync(() => _playwright.Chromium.LaunchAsync(launchOptions));
+            Trace("Browser launched. Creating context...");
+
+            // Check if --start-maximized is in the args
+            bool startMaximized = chromeOptions != null &&
+                chromeOptions.Arguments.Any(a => a == "--start-maximized");
 
             var contextOptions = new BrowserNewContextOptions
             {
-                ViewportSize = new ViewportSize { Width = 1920, Height = 1080 },
                 IgnoreHTTPSErrors = true
             };
+
+            // When --start-maximized is used, set ViewportSize to No Viewport
+            // so the page content area matches the actual maximized window.
+            // ViewportSize.NoViewport tells Playwright not to override the viewport.
+            if (startMaximized)
+            {
+                contextOptions.ViewportSize = ViewportSize.NoViewport;
+            }
+            else
+            {
+                contextOptions.ViewportSize = new ViewportSize { Width = 1920, Height = 1080 };
+            }
 
             // Apply device scale factor if specified
             if (chromeOptions != null)
@@ -86,17 +241,39 @@ namespace Selenium.Playwright.Shim.Impl
             }
 
             _context = SyncHelper.RunSync(() => _browser.NewContextAsync(contextOptions));
+            Trace("Context created. Creating page...");
             _page = SyncHelper.RunSync(() => _context.NewPageAsync());
             _activePage = _page;
+            Trace("Page created. Initializing options...");
 
             _options = new PlaywrightOptions(this);
             _targetLocator = new PlaywrightTargetLocator(this);
+            Trace("Constructor completed successfully.");
         }
 
         public string Url
         {
             get => Page.Url;
-            set => SyncHelper.RunSync(() => Page.GotoAsync(value));
+            set
+            {
+                try
+                {
+                    Trace($"Url setter starting: {value}");
+                    SyncHelper.RunSync(() => Page.GotoAsync(value, new PageGotoOptions
+                    {
+                        WaitUntil = WaitUntilState.Load,
+                        Timeout = 60000
+                    }));
+                    CurrentFrame = null;
+                    CurrentFrameLocator = null;
+                    Trace($"Url setter completed: {value} (actual: {Page.Url})");
+                }
+                catch (PlaywrightException ex)
+                {
+                    Trace($"Url setter failed: {ex.Message}");
+                    throw new OpenQA.Selenium.WebDriverException($"Navigation to '{value}' failed: {ex.Message}", ex);
+                }
+            }
         }
 
         public string Title => SyncHelper.RunSync(() => Page.TitleAsync());
@@ -132,6 +309,7 @@ namespace Selenium.Playwright.Shim.Impl
 
         public IWebElement FindElement(By by)
         {
+            Trace($"FindElement [{Page.Url}]: {by}");
             var locatorStr = ByConverter.ToPlaywrightLocator(by);
             ILocator locator;
 
@@ -145,22 +323,32 @@ namespace Selenium.Playwright.Shim.Impl
             }
 
             // Wait for the element with implicit wait timeout
-            var timeout = _options.GetImplicitWaitMs();
+            var timeoutMs = _options.GetImplicitWaitMs();
+            if (timeoutMs <= 0)
+            {
+                // Selenium ImplicitWait=0 means "don't wait, fail immediately if not found".
+                // Use CountAsync() which checks immediately without waiting.
+                var count = SyncHelper.RunSync(() => locator.CountAsync());
+                if (count == 0)
+                    throw new NoSuchElementException($"Unable to locate element: {by}");
+                return new PlaywrightWebElement(locator.First, this);
+            }
+
             try
             {
                 SyncHelper.RunSync(() => locator.First.WaitForAsync(new LocatorWaitForOptions
                 {
                     State = WaitForSelectorState.Attached,
-                    Timeout = timeout
+                    Timeout = timeoutMs
                 }));
             }
-            catch (PlaywrightException)
+            catch (Exception)
             {
                 throw new NoSuchElementException($"Unable to locate element: {by}");
             }
 
-            var count = SyncHelper.RunSync(() => locator.CountAsync());
-            if (count == 0)
+            var count2 = SyncHelper.RunSync(() => locator.CountAsync());
+            if (count2 == 0)
                 throw new NoSuchElementException($"Unable to locate element: {by}");
 
             return new PlaywrightWebElement(locator.First, this);
@@ -181,6 +369,18 @@ namespace Selenium.Playwright.Shim.Impl
             }
 
             var timeout = _options.GetImplicitWaitMs();
+            if (timeout <= 0)
+            {
+                // Selenium ImplicitWait=0 means "don't wait, return immediately".
+                var count = SyncHelper.RunSync(() => locator.CountAsync());
+                if (count == 0)
+                    return new ReadOnlyCollection<IWebElement>(new List<IWebElement>());
+                var elements = new List<IWebElement>();
+                for (int i = 0; i < count; i++)
+                    elements.Add(new PlaywrightWebElement(locator.Nth(i), this));
+                return elements.AsReadOnly();
+            }
+
             try
             {
                 SyncHelper.RunSync(() => locator.First.WaitForAsync(new LocatorWaitForOptions
@@ -189,36 +389,58 @@ namespace Selenium.Playwright.Shim.Impl
                     Timeout = Math.Max(timeout, 1000)
                 }));
             }
-            catch (PlaywrightException)
+            catch (Exception)
             {
                 return new ReadOnlyCollection<IWebElement>(new List<IWebElement>());
             }
 
-            var count = SyncHelper.RunSync(() => locator.CountAsync());
-            var elements = new List<IWebElement>();
-            for (int i = 0; i < count; i++)
             {
-                elements.Add(new PlaywrightWebElement(locator.Nth(i), this));
+                var count = SyncHelper.RunSync(() => locator.CountAsync());
+                var elements = new List<IWebElement>();
+                for (int i = 0; i < count; i++)
+                    elements.Add(new PlaywrightWebElement(locator.Nth(i), this));
+                return elements.AsReadOnly();
             }
-            return elements.AsReadOnly();
         }
 
         public object ExecuteScript(string script, params object[] args)
         {
-            // Map IWebElement args to Playwright element handles
-            var mappedArgs = MapArguments(args);
+            Trace($"ExecuteScript: script='{script}', args.Length={args?.Length ?? 0}");
 
-            if (args.Length > 0)
+            // For scripts with a single element arg, evaluate via JavaScript on the locator
+            // This exactly matches Selenium's IJavaScriptExecutor behavior (runs JS in browser context).
+            if (args != null && args.Length == 1 && args[0] is PlaywrightWebElement singleElement)
             {
-                return SyncHelper.RunSync(() => Page.EvaluateAsync<object>(
-                    WrapScriptForArgs(script, args.Length), mappedArgs));
+                var modScript = script.Replace("arguments[0]", "element");
+                Trace($"ExecuteScript (single element): modScript='{modScript}'");
+                var result = SyncHelper.RunSync(() => singleElement.Locator.EvaluateAsync<object>(
+                    $"(element) => {{ {modScript} }}"));
+                Trace($"ExecuteScript (single element) result: {result}, URL after: {Page.Url}");
+                return result;
             }
-            return SyncHelper.RunSync(() => Page.EvaluateAsync<object>(script));
+
+            // No element args — evaluate script directly
+            if (args == null || args.Length == 0)
+            {
+                // Selenium allows scripts starting with "return" — Playwright needs an expression
+                var evalScript = script.TrimStart();
+                if (evalScript.StartsWith("return ", StringComparison.Ordinal) || evalScript.StartsWith("return;", StringComparison.Ordinal))
+                    evalScript = "() => { " + evalScript + " }";
+                Trace($"ExecuteScript (no args): original='{script}', eval='{evalScript}'");
+                var result = SyncHelper.RunSync(() => Page.EvaluateAsync<object>(evalScript));
+                Trace($"ExecuteScript result: {result}");
+                return result;
+            }
+
+            // Multiple non-element args — pass as plain values
+            var mappedArgs = MapNonElementArguments(args);
+            return SyncHelper.RunSync(() => Page.EvaluateAsync<object>(
+                WrapScriptForArgs(script, args.Length), mappedArgs));
         }
 
         public object ExecuteAsyncScript(string script, params object[] args)
         {
-            var mappedArgs = MapArguments(args);
+            var mappedArgs = MapNonElementArguments(args);
             if (args.Length > 0)
             {
                 return SyncHelper.RunSync(() => Page.EvaluateAsync<object>(
@@ -279,22 +501,13 @@ namespace Selenium.Playwright.Shim.Impl
             CurrentFrameLocator = null;
         }
 
-        private object[] MapArguments(object[] args)
+        private static object[] MapNonElementArguments(object[] args)
         {
             if (args == null || args.Length == 0) return args;
 
             var mapped = new object[args.Length];
             for (int i = 0; i < args.Length; i++)
-            {
-                if (args[i] is PlaywrightWebElement pwe)
-                {
-                    mapped[i] = SyncHelper.RunSync(() => pwe.Locator.ElementHandleAsync());
-                }
-                else
-                {
-                    mapped[i] = args[i];
-                }
-            }
+                mapped[i] = args[i]; // only plain values — element args handled before this point
             return mapped;
         }
 
@@ -332,94 +545,58 @@ namespace Selenium.Playwright.Shim.Impl
         }
 
         /// <summary>
-        /// Ensures the .playwright driver folder is available at AppContext.BaseDirectory
-        /// so that Microsoft.Playwright can find its Node.js driver at runtime.
+        /// Ensures Playwright can find its Node.js driver.
+        /// Sets the PLAYWRIGHT_DRIVER_SEARCH_PATH environment variable to point
+        /// to the .playwright folder in the publish directory.
+        /// This is more reliable than junctions under vstest deploy scenarios.
         /// </summary>
         private static void EnsurePlaywrightDriver()
         {
-            var baseDir = AppContext.BaseDirectory;
-            var targetPlaywright = System.IO.Path.Combine(baseDir, ".playwright");
-            if (System.IO.Directory.Exists(targetPlaywright))
+            // Find where .playwright source lives
+            string playwrightPath = null;
+
+            // Check next to the shim DLL
+            var shimCandidate = System.IO.Path.Combine(_shimDirectory, ".playwright");
+            if (System.IO.Directory.Exists(shimCandidate))
+                playwrightPath = shimCandidate;
+
+            // Check in publish folder
+            if (playwrightPath == null && _publishDirectory != null)
+            {
+                var pubCandidate = System.IO.Path.Combine(_publishDirectory, ".playwright");
+                if (System.IO.Directory.Exists(pubCandidate))
+                    playwrightPath = pubCandidate;
+            }
+
+            if (playwrightPath == null)
+            {
+                Trace("WARNING: .playwright driver folder not found!");
                 return;
-
-            // Search for .playwright in several candidate locations
-            string sourcePlaywright = null;
-            var candidates = new List<string>();
-
-            // 1. Next to the shim DLL
-            var shimDir = System.IO.Path.GetDirectoryName(typeof(PlaywrightWebDriver).Assembly.Location);
-            if (!string.IsNullOrEmpty(shimDir))
-                candidates.Add(System.IO.Path.Combine(shimDir, ".playwright"));
-
-            // 2. Next to the Microsoft.Playwright DLL
-            var pwDir = System.IO.Path.GetDirectoryName(typeof(Microsoft.Playwright.IPlaywright).Assembly.Location);
-            if (!string.IsNullOrEmpty(pwDir))
-                candidates.Add(System.IO.Path.Combine(pwDir, ".playwright"));
-
-            // 3. Walk up from the working directory looking for src\Shim\publish\.playwright
-            var cur = System.IO.Directory.GetCurrentDirectory();
-            for (int i = 0; i < 10 && cur != null; i++)
-            {
-                candidates.Add(System.IO.Path.Combine(cur, "src", "Shim", "publish", ".playwright"));
-                candidates.Add(System.IO.Path.Combine(cur, ".playwright"));
-                cur = System.IO.Directory.GetParent(cur)?.FullName;
             }
 
-            // 4. Walk up from AppContext.BaseDirectory
-            cur = baseDir;
-            for (int i = 0; i < 10 && cur != null; i++)
-            {
-                candidates.Add(System.IO.Path.Combine(cur, "src", "Shim", "publish", ".playwright"));
-                cur = System.IO.Directory.GetParent(cur)?.FullName;
-            }
+            // Set env var so Playwright.CreateAsync() finds the driver
+            Trace($"Setting PLAYWRIGHT_DRIVER_SEARCH_PATH={playwrightPath}");
+            Environment.SetEnvironmentVariable("PLAYWRIGHT_DRIVER_SEARCH_PATH", playwrightPath);
 
-            foreach (var candidate in candidates)
-            {
-                if (System.IO.Directory.Exists(candidate))
-                {
-                    sourcePlaywright = candidate;
-                    break;
-                }
-            }
-
-            if (sourcePlaywright != null && !System.IO.Directory.Exists(targetPlaywright))
+            // Also create a junction at AppContext.BaseDirectory as fallback
+            var baseDir = AppContext.BaseDirectory;
+            var target = System.IO.Path.Combine(baseDir, ".playwright");
+            if (!System.IO.Directory.Exists(target) && System.IO.Directory.Exists(baseDir))
             {
                 try
                 {
-                    // Create a directory junction (symlink) to avoid copying large files
                     var psi = new System.Diagnostics.ProcessStartInfo("cmd.exe",
-                        $"/c mklink /J \"{targetPlaywright}\" \"{sourcePlaywright}\"")
+                        $"/c mklink /J \"{target}\" \"{playwrightPath}\"")
                     {
                         UseShellExecute = false,
-                        CreateNoWindow = true
+                        CreateNoWindow = true,
+                        RedirectStandardOutput = true,
+                        RedirectStandardError = true
                     };
                     var proc = System.Diagnostics.Process.Start(psi);
                     proc.WaitForExit(5000);
-
-                    if (!System.IO.Directory.Exists(targetPlaywright))
-                    {
-                        CopyDirectory(sourcePlaywright, targetPlaywright);
-                    }
                 }
-                catch
-                {
-                    CopyDirectory(sourcePlaywright, targetPlaywright);
-                }
-            }
-        }
-
-        private static void CopyDirectory(string sourceDir, string destDir)
-        {
-            System.IO.Directory.CreateDirectory(destDir);
-            foreach (var file in System.IO.Directory.GetFiles(sourceDir))
-            {
-                var destFile = System.IO.Path.Combine(destDir, System.IO.Path.GetFileName(file));
-                System.IO.File.Copy(file, destFile, true);
-            }
-            foreach (var dir in System.IO.Directory.GetDirectories(sourceDir))
-            {
-                var destSubDir = System.IO.Path.Combine(destDir, System.IO.Path.GetFileName(dir));
-                CopyDirectory(dir, destSubDir);
+                catch { /* best effort */ }
             }
         }
     }

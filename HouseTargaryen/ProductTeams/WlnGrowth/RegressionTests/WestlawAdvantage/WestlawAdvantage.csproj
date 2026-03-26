@@ -88,6 +88,10 @@
     <Reference Include="Microsoft.Playwright">
       <HintPath>..\..\..\..\..\src\Shim\publish\Microsoft.Playwright.dll</HintPath>
     </Reference>
+    <Reference Include="System.ComponentModel.Annotations">
+      <HintPath>..\..\..\..\..\src\Shim\publish\System.ComponentModel.Annotations.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="ReportPortal.Client, Version=3.10.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>$(SolutionDir)packages\ReportPortal.Client.3.10.0\lib\net462\ReportPortal.Client.dll</HintPath>
     </Reference>
@@ -232,6 +236,12 @@
     </Content>
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Content Include="..\..\..\..\..\src\Shim\publish\System.ComponentModel.Annotations.dll">
+      <Link>System.ComponentModel.Annotations.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Import Project="$(SolutionDir)packages\ReportPortal.Shared.3.10.0\build\\net462\ReportPortal.Shared.targets" Condition="Exists('$(SolutionDir)packages\ReportPortal.Shared.3.10.0\build\\net462\ReportPortal.Shared.targets')" />

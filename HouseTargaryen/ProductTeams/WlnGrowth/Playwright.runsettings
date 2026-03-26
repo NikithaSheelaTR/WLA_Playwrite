@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <RunConfiguration>
+    <ResultsDirectory>.</ResultsDirectory>
+    <!-- Playwright requires x64 for its Node.js driver -->
+    <TargetPlatform>x64</TargetPlatform>
+  </RunConfiguration>
+  <MSTest>
+    <ForcedLegacyMode>true</ForcedLegacyMode>
+    <SettingsFile>Local.testsettings</SettingsFile>
+    <DeleteDeploymentDirectoryAfterTestRunIsComplete>false</DeleteDeploymentDirectoryAfterTestRunIsComplete>
+    <MapInconclusiveToFailed>false</MapInconclusiveToFailed>
+    <InProcMode>false</InProcMode>
+  </MSTest>
+</RunSettings>

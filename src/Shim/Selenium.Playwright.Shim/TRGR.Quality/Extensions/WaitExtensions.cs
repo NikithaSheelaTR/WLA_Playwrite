@@ -252,5 +252,33 @@ namespace TRGR.Quality.QedArsenal.QualityLibrary.WebDriver.Extensions
         {
             ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].focus();", element);
         }
+
+        public static void WaitForPageLoad(this IWebDriver driver)
+        {
+            if (driver is Selenium.Playwright.Shim.Impl.PlaywrightWebDriver pw)
+            {
+                try
+                {
+                    Selenium.Playwright.Shim.Impl.SyncHelper.RunSync(() =>
+                        pw.Page.WaitForLoadStateAsync(Microsoft.Playwright.LoadState.DOMContentLoaded,
+                            new Microsoft.Playwright.PageWaitForLoadStateOptions { Timeout = 60000 }));
+                }
+                catch { /* page may already be loaded */ }
+            }
+        }
+
+        public static void WaitForJavaScript(this IWebDriver driver)
+        {
+            if (driver is Selenium.Playwright.Shim.Impl.PlaywrightWebDriver pw)
+            {
+                try
+                {
+                    Selenium.Playwright.Shim.Impl.SyncHelper.RunSync(() =>
+                        pw.Page.WaitForFunctionAsync("() => document.readyState === 'complete'",
+                            null, new Microsoft.Playwright.PageWaitForFunctionOptions { Timeout = 30000 }));
+                }
+                catch { /* page may already be ready */ }
+            }
+        }
     }
 }

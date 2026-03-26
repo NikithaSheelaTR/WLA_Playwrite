@@ -45,7 +45,7 @@ namespace Selenium.Playwright.Shim.Impl
 
         public bool Enabled => SyncHelper.RunSync(() => Locator.IsEnabledAsync());
 
-        public bool Selected => SyncHelper.RunSync(() => Locator.IsCheckedAsync());
+        public bool Selected => SyncHelper.RunSync(() => Locator.EvaluateAsync<bool>("el => !!(el.selected || el.checked)"));
 
         public Point Location
         {
@@ -87,6 +87,7 @@ namespace Selenium.Playwright.Shim.Impl
 
         public void Click()
         {
+            PlaywrightWebDriver.Trace($"Click: locator={Locator}");
             SyncHelper.RunSync(() => Locator.ClickAsync());
         }
 
@@ -128,10 +129,18 @@ namespace Selenium.Playwright.Shim.Impl
                 var mapped = KeyMapper.MapKeys(text);
                 SyncHelper.RunSync(() => Locator.PressAsync(mapped));
             }
+            else if (text.Length == 1)
+            {
+                // Single character (e.g., from SendKeysSlow): focus the element once
+                // then type via page-level keyboard. This avoids the overhead of
+                // PressSequentiallyAsync's full actionability checks per character,
+                // which caused 2-5 second delays per keystroke on CIAM password fields.
+                SyncHelper.RunSync(() => Locator.FocusAsync());
+                SyncHelper.RunSync(() => _driver.Page.Keyboard.TypeAsync(text));
+            }
             else
             {
-                // For regular text input, use type (which types character by character)
-                // But first check if element is a file input
+                // Multi-character text: check if it's a file input first
                 var inputType = SyncHelper.RunSync(() => Locator.EvaluateAsync<string>(
                     "el => el.tagName === 'INPUT' ? el.type : ''"));
 
@@ -141,7 +150,9 @@ namespace Selenium.Playwright.Shim.Impl
                 }
                 else
                 {
-                    SyncHelper.RunSync(() => Locator.FillAsync(text));
+                    // Use PressSequentiallyAsync to match Selenium SendKeys behavior.
+                    // Selenium fires keyDown/keyPress/keyUp for each character.
+                    SyncHelper.RunSync(() => Locator.PressSequentiallyAsync(text, new Microsoft.Playwright.LocatorPressSequentiallyOptions { Delay = 50 }));
                 }
             }
         }
