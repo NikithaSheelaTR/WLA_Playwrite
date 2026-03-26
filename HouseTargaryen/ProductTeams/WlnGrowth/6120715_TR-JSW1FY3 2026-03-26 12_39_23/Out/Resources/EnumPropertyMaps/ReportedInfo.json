@@ -1,0 +1,11 @@
+{
+  // Maps Reported Facet Options to WebElementInfo
+  "Reported": {
+    "LocatorString": "//*[@id='co_facetItem_reportedReported'] | //*[@id='coid_relatedinfo_ReportedStatus1_link']",
+    "Text": "Reported"
+  },
+  "Unreported": {
+    "LocatorString": "//*[@id='co_facetItem_reportedUnreported'] | //*[@id='coid_relatedinfo_ReportedStatus2_link']",
+    "Text": "Unreported"
+  }
+}

@@ -1,0 +1,59 @@
+﻿{
+  // Maps TaxnetProHeaderTabs to WebElementInfo
+  "AdvancedSearch": {
+    "Id": "CustomDropDownMenu_co_menuSearch_menuSearch_AdvancedSearch",
+    "Text": "Advanced Search"
+  },
+  "APFFCentre": {
+    "Id": "CustomDropDownMenu_co_menuSearch_menuSearch_APFFCentre",
+    "Test": "APFF Centre"
+  },
+  "BasicSearch": {
+    "Id": "CustomDropDownMenu_co_menuSearch_menuSearch_BasicSearch",
+    "Test": "Basic Search"
+  },
+  "CaseLaw": {
+    "Id": "CustomDropDownMenu_co_menuSearch_menuSearch_CaseLaw",
+    "Text": "Case Law"
+  },
+  "Commentary": {
+    "Id": "CustomDropDownMenu_co_menuSearch_menuSearch_Commentary",
+    "Test": "Commentary"
+  },
+  "CorporateTaxCentre": {
+    "Id": "CustomDropDownMenu_co_menuSearch_menuSearch_CorporateTaxCentre",
+    "Test": "Corporate Tax Centre"
+  },
+  "CustomsExciseCentre": {
+    "Id": "CustomDropDownMenu_co_menuSearch_menuSearch_CustomsExciseCentre",
+    "Test": "Customs & Excise Centre"
+  },
+  "GovernmentDocuments": {
+    "Id": "CustomDropDownMenu_co_menuSearch_menuSearch_GovernmentDocuments",
+    "Test": "Government Documents"
+  },
+  "Legislation": {
+    "Id": "CustomDropDownMenu_co_menuSearch_menuSearch_Legislation",
+    "Test": "Legislation"
+  },
+  "SavedSearches": {
+    "Id": "CustomDropDownMenu_co_menuSearch_menuSearch_SavedSearches",
+    "Test": "Saved Searches"
+  },
+  "TaxDisputesResolutionCentre": {
+    "Id": "CustomDropDownMenu_co_menuSearch_menuSearch_TaxDisputesResolutionCentre",
+    "Test": "Tax Disputes & Resolution Centre"
+  },
+  "TaxEstatePlanningCentre": {
+    "Id": "CustomDropDownMenu_co_menuSearch_menuSearch_TaxEstatePlanningCentre",
+    "Test": "Tax & Estate Planning Centre"
+  },
+  "TaxnetProPlus": {
+    "Id": "CustomDropDownMenu_co_menuSearch_menuSearch_TaxnetProPLUS",
+    "Test": "Taxnet Pro"
+  },
+  "Taxnews": {
+    "Id": "CustomDropDownMenu_co_menuSearch_menuSearch_TaxNews",
+    "Test": "TaxNews"
+  }
+}

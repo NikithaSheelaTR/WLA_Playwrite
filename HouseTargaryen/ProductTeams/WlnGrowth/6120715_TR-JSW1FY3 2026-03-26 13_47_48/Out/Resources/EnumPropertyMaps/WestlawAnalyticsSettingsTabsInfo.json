@@ -1,0 +1,47 @@
+﻿{
+  // Maps WestlawAnalyticsSettingsTabs to WebElementInfo
+  "AccountSettings": {
+    "LocatorString": "//li[@id='wa_accountSettingsTab']/a",
+    "Text": "Account Settings"
+  },
+  "AccountStructure": {
+    "LocatorString": "//li[@id='wa_settingsAccountStructureTab']/a",
+    "Text": "Account Structure"
+  },
+  "ClientAndMatters": {
+    "LocatorString": "//li[@id='wa_accountSettingsClientMatterTab']/a",
+    "Text": "Cost Recovery Caps"
+  },
+  "CostRecoveryCaps": {
+    "LocatorString": "//li[@id='wa_settingsPricingSettingsTab']/a",
+    "Text": "Cost Recovery Caps"
+  },
+  "CTS": {
+    "LocatorString": "//*[contains(@class,'Navigation wa_tabs')]//li[@id='wa_settingsTab']/a",
+    "Text": "CTS"
+  },
+  "Features": {
+    "LocatorString": "//li[@id='wa_settingsFeaturesSettingsTab']/a",
+    "Text": "Features"
+  },
+  "Email": {
+    "LocatorString": "//li[@id='wa_settingsEmailTab']/a",
+    "Text": "E-mail"
+  },
+  "EnableFeaturesForYourFirm": {
+    "LocatorString": "//li[@id='wa_settingsEnableFeaturesTab']/a",
+    "Text": "Enable feautures for your firm"
+  },
+  "InternalAdmin": {
+    "LocatorString": "//li[@id='wa_settingsAdminTab']/a",
+    "Text": "Internal Admin"
+  },
+  "PracticeArea": {
+    "LocatorString": "//li[@id='wa_accountSettingsPracticeAreaTab']/a",
+    "Text": "Internal Admin"
+  },
+  "ReasonCode": {
+    "LocatorString": "//li[@id='wa_accountSettingsReasonCodeTab']/a",
+    "Text": "Internal Admin"
+  }
+}

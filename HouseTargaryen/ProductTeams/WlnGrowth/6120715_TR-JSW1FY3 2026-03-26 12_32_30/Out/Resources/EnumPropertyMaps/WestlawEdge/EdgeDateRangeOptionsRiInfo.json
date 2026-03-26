@@ -1,0 +1,93 @@
+﻿{
+  "All": {
+    "Text": "all",
+    "OptionCountLocatorString": "",
+    "FirstFieldLocatorString": "",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//input[@id='selectOptions_all']"
+  },
+  "AllDatesAfter": {
+    "Text": "all dates after",
+    "OptionCountLocatorString": "",
+    "FirstFieldLocatorString": "//input[contains(@id,'SearchFacetRange-') and contains(@id,'Start')]",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//input[@id='selectOptions_after']"
+  },
+  "AllDatesBefore": {
+    "Text": "all dates before",
+    "OptionCountLocatorString": "",
+    "FirstFieldLocatorString": "//input[contains(@id,'SearchFacetRange-') and contains(@id,'End')]",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//input[@id='selectOptions_before']"
+  },
+  "DateRange": {
+    "Text": "date range",
+    "OptionCountLocatorString": "",
+    "FirstFieldLocatorString": "//input[contains(@id,'SearchFacetRange-') and contains(@id,'Start')]",
+    "SecondFieldLocatorString": "//input[contains(@id,'SearchFacetRange-') and contains(@id,'End')]",
+    "LocatorString": "//input[@id='selectOptions_fromUntil']"
+  },
+  "Last6Months": {
+    "Text": "last 6 months",
+    "OptionCountLocatorString": "(/descendant-or-self::node()/span[@class='SearchFacet-outputTextValue'])[1]",
+    "FirstFieldLocatorString": "",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//input[@id='selectOptions_last6Months']"
+  },
+  "Last7Days": {
+    "Text": "last 7 days",
+    "OptionCountLocatorString": "",
+    "FirstFieldLocatorString": "",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//span[@class='SearchFacet-buttonTextValue' and (text()='Last 7 days')]"
+  },
+  "Last12Months": {
+    "Text": "last 12 months",
+    "OptionCountLocatorString": "(/descendant-or-self::node()/span[@class='SearchFacet-outputTextValue'])[2]",
+    "FirstFieldLocatorString": "",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//input[@id='selectOptions_last12Months']"
+  },
+  "Last30Days": {
+    "Text": "last 30 days",
+    "OptionCountLocatorString": "",
+    "FirstFieldLocatorString": "",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//span[@class='SearchFacet-buttonTextValue' and (text()='Last 30 days')]"
+  },
+  "Last2Years": {
+    "Text": "last 2 years",
+    "OptionCountLocatorString": "(/descendant-or-self::node()/span[@class='SearchFacet-outputTextValue'])[3]",
+    "FirstFieldLocatorString": "",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//input[@id='selectOptions_last2Years']"
+  },
+  "Last3Years": {
+    "Text": "last 3 years",
+    "OptionCountLocatorString": "(/descendant-or-self::node()/span[@class='SearchFacet-outputTextValue'])[3]",
+    "FirstFieldLocatorString": "",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//input[@id='selectOptions_last3Years']"
+  },
+  "Last90Days": {
+    "Text": "last 90 days",
+    "OptionCountLocatorString": "",
+    "FirstFieldLocatorString": "",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//span[@class='SearchFacet-buttonTextValue' and (text()='Last 90 days')]"
+  },
+  "SpecificDate": {
+    "Text": "specific date",
+    "OptionCountLocatorString": "",
+    "FirstFieldLocatorString": "//input[contains(@id,'SearchFacetRange-') and contains(@id,'Start')]",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//input[@id='selectOptions_on']"
+  },
+  "Today": {
+    "Text": "today",
+    "OptionCountLocatorString": "",
+    "FirstFieldLocatorString": "",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//span[@class='SearchFacet-buttonTextValue' and (text()='Today')]"
+  }
+}

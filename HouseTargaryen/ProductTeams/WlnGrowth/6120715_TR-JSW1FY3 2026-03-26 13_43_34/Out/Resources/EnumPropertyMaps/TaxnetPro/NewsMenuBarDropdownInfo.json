@@ -1,0 +1,62 @@
+{
+  "AllTaxNews": {
+    "Id": "CustomDropDownMenu_co_menuNews_menuNews_AllTaxNews",
+    "Text": "All TaxNews"
+  },
+  "CaseLaw": {
+    "Id": "CustomDropDownMenu_co_menuNews_menuNews_CaseLaw",
+    "Test": "Case Law"
+  },
+  "Commentary": {
+    "Id": "CustomDropDownMenu_co_menuNews_menuNews_Commentary",
+    "Text": "Commentary"
+  },
+  "GovernmentDocuments": {
+    "Id": "CustomDropDownMenu_co_menuNews_menuNews_GovernmentDocuments",
+    "Test": "Government Documents"
+  },
+  "Legislation": {
+    "Id": "CustomDropDownMenu_co_menuNews_menuNews_Legislation",
+    "Text": "Legislation"
+  },
+  "GSTOrHST": {
+    "Id": "CustomDropDownMenu_co_menuNews_menuNews_GST_HST",
+    "Test": "GST/HST"
+  },
+  "IncomeTax": {
+    "Id": "CustomDropDownMenu_co_menuNews_menuNews_IncomeTax",
+    "Text": "Income Tax"
+  },
+  "ProvincesOrTerritories": {
+    "Id": "CustomDropDownMenu_co_menuNews_menuNews_Provinces_Territories",
+    "Test": "Provinces/Territories"
+  },
+  "APFFCentre": {
+    "Id": "CustomDropDownMenu_co_menuNews_menuNews_APFFCentre",
+    "Text": "APFF Centre"
+  },
+  "CorporateTaxCentre": {
+    "Id": "CustomDropDownMenu_co_menuNews_menuNews_CorporateTaxCentre",
+    "Test": "Corporate Tax Centre"
+  },
+  "CustomsAndExciseCentre": {
+    "Id": "CustomDropDownMenu_co_menuNews_menuNews_CustomsExciseCentre",
+    "Text": "Customs & ExciseCentre"
+  },
+  "FederatedPressCentre": {
+    "Id": "CustomDropDownMenu_co_menuNews_menuNews_FederatedPressCentre",
+    "Test": "Federated Press Centre"
+  },
+  "TaxDisputesAndResolutionCentre": {
+    "Id": "CustomDropDownMenu_co_menuNews_menuNews_TaxDisputesResolutionCentre",
+    "Text": "Tax Disputes & Resolution Centre"
+  },
+  "TaxAndEstatePlanningCentre": {
+    "Id": "CustomDropDownMenu_co_menuNews_menuNews_TaxEstatePlanningCentre",
+    "Text": "Tax & Estate Planning Centre"
+  },
+  "TaxNewsPage": {
+    "Id": "CustomDropDownMenu_co_menuNews_menuNews_TaxNewsPage",
+    "Text": "TaxNews Page"
+  }
+}

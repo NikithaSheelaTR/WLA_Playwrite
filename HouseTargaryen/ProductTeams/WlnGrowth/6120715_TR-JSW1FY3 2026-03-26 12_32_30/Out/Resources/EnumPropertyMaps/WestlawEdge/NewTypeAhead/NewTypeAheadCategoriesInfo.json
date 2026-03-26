@@ -1,0 +1,80 @@
+﻿{
+  // NewTypeAheadCategories to WebElementInfo
+
+  "AdministrativeDecisionsAndGuidance": {
+    "Text": "Administrative Decisions & Guidance"
+  },
+  "Briefs": {
+    "Text": "Briefs"
+  },
+  "ExpertMaterials": {
+    "Text": "Expert Materials"
+  },
+  "Dockets": {
+    "Text": "Dockets"
+  },
+  "LitigationAnalytics": {
+    "Text": "Litigation Analytics"
+  },
+  "Cases": {
+    "Text": "Cases"
+  },
+  "CasesAndDecisionsFrench": {
+    "Text": "Jurisprudence"
+  },
+  "ContentPages": {
+    "Text": "Content Pages"
+  },
+  "Federal": {
+    "Text": "Federal"
+  },
+  "GovernmentAndRegulatoryMaterials": {
+    "Text": "Government & Regulatory Materials"
+  },
+  "JuryVerdicts": {
+    "Text": "Jury Verdicts"
+  },
+  "LegalTopics": {
+    "Text": "LegalTopics"
+  },
+  "Legislation": {
+    "Text": "Legislation"
+  },
+  "OtherDocuments": {
+    "Text": "Other Documents"
+  },
+  "OtherJurisdictions": {
+    "Text": "Other Jurisdictions"
+  },
+  "PrecisionResearch": {
+    "Text": "Precision Research"
+  },
+  "ProposedAndAdoptedLegislation": {
+    "Text": "Proposed & Adopted Legislation"
+  },
+  "SearchSuggestions": {
+    "Text": "Search Suggestions"
+  },
+  "SecondarySources": {
+    "Text": "Secondary Sources"
+  },
+  "Snapshots": {
+    "Text": "Snapshots"
+  },
+  "State": {
+    "Text": "State"
+  },
+  "Tools": {
+    "Text": "Tools"
+  },
+  "TrialCourtDocuments": {
+    "Text": "Trial Court Documents"
+  },
+  "TrialCourtOrders": {
+    "Text": "Trial Court Orders"
+  },
+  "WestlawAnswers": {
+    "Text": "Westlaw Answers"
+  }
+}
+

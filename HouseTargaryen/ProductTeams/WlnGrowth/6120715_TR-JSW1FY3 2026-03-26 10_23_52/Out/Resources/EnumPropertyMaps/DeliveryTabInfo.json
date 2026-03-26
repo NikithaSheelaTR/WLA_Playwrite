@@ -1,0 +1,67 @@
+{
+  // Maps DeliveryTab to WebElementInfo
+  "AddCoverPage": {
+    "Id": "coid_userSettingsDeliveryCoverPageOption",
+    "Text": "Add a cover page to each request"
+  },
+  "CorrespondingDocumentWithKeyCiteLists": {
+    "Id": "coid_userSettingsDeliveryRICorrespondingDocumentOption",
+    "Text": "Corresponding document with KeyCite lists"
+  },
+  "DocumentFormat": {
+    "Id": "coid_userSettingsDeliveryFileFormatOption",
+    "Text": "Document Format"
+  },
+  "DualColumnLayoutForCases": {
+    "Id": "coid_userSettingsDeliveryDualColumnLayoutOption",
+    "Text": "Dual column layout for Cases"
+  },
+  "ExpandedMarginForNotes": {
+    "Id": "coid_userSettingsDeliveryRightNoteMarginOption",
+    "Text": "Expanded Margin for Notes"
+  },
+  "FontSize": {
+    "Id": "coid_userSettingsDeliveryFontSizeOption",
+    "Text": "Font Size"
+  },
+  "Footnotes": {
+    "Id": "coid_userSettingsDeliveryFootnotesOption",
+    "Text": "Footnotes"
+  },
+  "FullKeyNumberHierarchy": {
+    "Id": "coid_userSettingsDeliveryShowFullWKNHierarchyOption",
+    "Text": "Show Full Key Number Hierarchy"
+  },
+  "KeyCiteTreatment": {
+    "Id": "coid_userSettingsDeliveryKeyCiteTreatmentOption",
+    "Text": "KeyCite Treatment"
+  },
+  "Links": {
+    "Id": "coid_userSettingsDeliveryLinkColorOption",
+    "Text": "Links"
+  },
+  "MultipleDocumentsFormat": {
+    "Id": "coid_userSettingsDeliveryFileContainerOption",
+    "Text": "Multiple Documents Format"
+  },
+  "OnlyPagesWithTerms": {
+    "Id": "coid_userSettingsDeliverySearchTermsOption",
+    "Text": "Only pages with terms"
+  },
+  "OriginalImageLink": {
+    "Id": "coid_userSettingsDeliveryOriginalImageLinkOption",
+    "Text": "Original Image Link"
+  },
+  "TermHighlighting": {
+    "Id": "coid_userSettingsDeliveryTermHighlightingOption",
+    "Text": "Term Highlighting"
+  },
+  "Underline": {
+    "Id": "coid_userSettingsDeliveryLinkUnderline",
+    "Text": "Underline"
+  },
+  "WestHeadnotes": {
+    "Id": "coid_userSettingsDeliveryIncludeHeadnotesOption",
+    "Text": "West Headnotes"
+  }
+}

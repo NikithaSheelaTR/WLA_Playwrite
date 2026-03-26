@@ -1,0 +1,31 @@
+{
+  // Maps View to WebElementInfo
+  "Parties": {
+    "Text": "Parties",
+    "LocatorString": "//div[@class='la-ToggleButton']/button[contains(@aria-label ,'Parties')]"
+  },
+
+  "Attorneys": {
+    "Text": "Attorneys",
+    "LocatorString": "//div[@class='la-ToggleButton']/button[contains(@aria-label ,'Attorneys')]"
+  },
+
+  "Firms": {
+    "Text": "Firms",
+    "LocatorString": "//div[@class='la-ToggleButton']/button[@id = 'co_la_firms_button']"
+  },
+  "Distribution": {
+    "Text": "Distribution",
+    "LocatorString": "//div[@class='la-ToggleButton']/button[contains(@aria-label ,'Distribution')]"
+  },
+
+  "CountTrend": {
+    "Text": "Count trend",
+    "LocatorString": "//div[@class='la-ToggleButton']/button[contains(@aria-label ,'Count trend')]"
+  },
+
+  "ValueTrend": {
+    "Text": "Value trend",
+    "LocatorString": "//div[@class='la-ToggleButton']/button[contains@id = 'co_la_firms_button']"
+  }
+}

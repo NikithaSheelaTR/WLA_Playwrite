@@ -1,0 +1,9 @@
+{
+  // Maps GraphicalStatuteBox to WebElementInfo
+  "GraphicalStatuteCaseTreatmentsArea": {
+    "LocatorString": "//div[@id='co_relatedInfo_resultList_statuteDocument_caseTreatment']"
+  },
+  "GraphicalStatuteCurrentTextArea": {
+    "LocatorString": "//label[contains(text(), 'Current Text')]/ancestor::div[contains(@id, 'co_relatedInfo_resultList_statuteDocument')]"
+  }
+}

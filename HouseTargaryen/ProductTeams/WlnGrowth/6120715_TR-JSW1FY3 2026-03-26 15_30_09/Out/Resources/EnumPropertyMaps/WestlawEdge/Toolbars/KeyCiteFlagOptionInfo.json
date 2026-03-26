@@ -1,0 +1,19 @@
+﻿{
+  // Maps KeyCiteFlagOption to WebElementInfo
+  "Appealed": {
+    "Text": "Appealed (Federal)",
+    "LocatorString": "//div[@class='dropdownContainer']//input[@value='blueKeyCiteFlags']"
+  },
+  "NegativeTreatment": {
+    "Text": "Negative treatment",
+    "LocatorString": "//div[@class='dropdownContainer']//input[@value='yellowKeyCiteFlags']"
+  },
+  "OverrulingRisk": {
+    "Text": "Overruling risk",
+    "LocatorString": "//div[@class='dropdownContainer']//input[@value='impliedOverrulingsKeyCiteFlags']"
+  },
+  "SevereNegativeTreatment": {
+    "Text": "Severe negative treatment",
+    "LocatorString": "//div[@class='dropdownContainer']//input[@value='redKeyCiteFlags']"
+  }
+}

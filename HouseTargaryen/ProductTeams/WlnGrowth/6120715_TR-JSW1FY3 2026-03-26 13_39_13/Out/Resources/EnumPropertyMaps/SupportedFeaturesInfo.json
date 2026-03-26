@@ -1,0 +1,375 @@
+﻿{
+  // Maps SupportedFeatures to WebElementInfo
+  "Alerts": {
+    "Id": "co_SupportedFeature_Alerts",
+    "Text": "Alerts"
+  },
+  "AuthorityCompiler": {
+    "Id": "co_SupportedFeature_AuthorityCompiler",
+    "Text": "AuthorityCompiler"
+  },
+  "BankruptcyExplorer": {
+    "Id": "co_SupportedFeature_BankruptcyExplorer",
+    "Text": "BankruptcyExplorer"
+  },
+  "Browse": {
+    "Id": "co_SupportedFeature_Browse",
+    "Text": "Browse"
+  },
+  "BrowsePreview": {
+    "Id": "co_SupportedFeature_BrowsePreview",
+    "Text": "BrowsePreview"
+  },
+  "BusinessInvestigator": {
+    "Id": "co_SupportedFeature_BusinessInvestigator",
+    "Text": "BusinessInvestigator"
+  },
+  "BusinessLawCenter": {
+    "Id": "co_SupportedFeature_BusinessLawCenter",
+    "Text": "BusinessLawCenter"
+  },
+  "CaseEvaluator": {
+    "Id": "co_SupportedFeature_CaseEvaluator",
+    "Text": "CaseEvaluator"
+  },
+  "CaseEvaluatorWln": {
+    "Id": "co_SupportedFeature_CaseEvaluatorWln",
+    "Text": "CaseEvaluatorWln"
+  },
+  "CaseNotebook": {
+    "Id": "co_SupportedFeature_CaseNotebook",
+    "Text": "CaseNotebook"
+  },
+  "Cdn": {
+    "Id": "co_SupportedFeature_Cdn",
+    "Text": "Cdn"
+  },
+  "ClientId": {
+    "Id": "co_SupportedFeature_ClientId",
+    "Text": "ClientId"
+  },
+  "Collaboration": {
+    "Id": "co_SupportedFeature_Collaboration",
+    "Text": "Collaboration"
+  },
+  "Contacts": {
+    "Id": "co_SupportedFeature_Contacts",
+    "Text": "Contacts"
+  },
+  "CopyUserData": {
+    "Id": "co_SupportedFeature_CopyUserData",
+    "Text": "CopyUserData"
+  },
+  "CoreUI": {
+    "Id": "co_SupportedFeature_CoreUI",
+    "Text": "CoreUI"
+  },
+  "CosiInteractive": {
+    "Id": "co_SupportedFeature_CosiInteractive",
+    "Text": "CosiInteractive"
+  },
+  "CustomPages": {
+    "Id": "co_SupportedFeature_CustomPages",
+    "Text": "CustomPages"
+  },
+  "DataComparisonReport": {
+    "Id": "co_SupportedFeature_DataComparisonReport",
+    "Text": "DataComparisonReport"
+  },
+  "Delivery": {
+    "Id": "co_SupportedFeature_Delivery",
+    "Text": "Delivery"
+  },
+  "DocketGateway": {
+    "Id": "co_SupportedFeature_DocketGateway",
+    "Text": "DocketGateway"
+  },
+  "Dockets": {
+    "Id": "co_SupportedFeature_Dockets",
+    "Text": "Dockets"
+  },
+  "DocumentOrdering": {
+    "Id": "co_SupportedFeature_DocumentOrdering",
+    "Text": "DocumentOrdering"
+  },
+  "Documents": {
+    "Id": "co_SupportedFeature_Documents",
+    "Text": "Documents"
+  },
+  "Dropbox": {
+    "Id": "co_SupportedFeature_Dropbox",
+    "Text": "Dropbox"
+  },
+  "DunAndBradstreetBusiness": {
+    "Id": "co_SupportedFeature_DunAndBradstreetBusiness",
+    "Text": "DunAndBradstreetBusiness"
+  },
+  "EmbeddedText": {
+    "Id": "co_SupportedFeature_EmbeddedText",
+    "Text": "EmbeddedText"
+  },
+  "EnterpriseSearch": {
+    "Id": "co_SupportedFeature_EnterpriseSearch",
+    "Text": "EnterpriseSearch"
+  },
+  "Errors": {
+    "Id": "co_SupportedFeature_Errors",
+    "Text": "Errors"
+  },
+  "ExperianBusinessCredit": {
+    "Id": "co_SupportedFeature_ExperianBusinessCredit",
+    "Text": "ExperianBusinessCredit"
+  },
+  "ExpertDueDiligence": {
+    "Id": "co_SupportedFeature_ExpertDueDiligence",
+    "Text": "ExpertDueDiligence"
+  },
+  "ExpertEvaluator": {
+    "Id": "co_SupportedFeature_ExpertEvaluator",
+    "Text": "ExpertEvaluator"
+  },
+  "ExternalSearch": {
+    "Id": "co_SupportedFeature_ExternalSearch",
+    "Text": "ExternalSearch"
+  },
+  "FavoritesOrganizer": {
+    "Id": "co_SupportedFeature_FavoritesOrganizer",
+    "Text": "FavoritesOrganizer"
+  },
+  "FederatedSearch": {
+    "Id": "co_SupportedFeature_FederatedSearch",
+    "Text": "FederatedSearch"
+  },
+  "FindAndPrint": {
+    "Id": "co_SupportedFeature_FindAndPrint",
+    "Text": "FindAndPrint"
+  },
+  "Folders": {
+    "Id": "co_SupportedFeature_Folders",
+    "Text": "Folders"
+  },
+  "FoldersExternalSharing": {
+    "Id": "co_SupportedFeature_FoldersExternalSharing",
+    "Text": "FoldersExternalSharing"
+  },
+  "Glossary": {
+    "Id": "co_SupportedFeature_Glossary",
+    "Text": "Glossary"
+  },
+  "GraphicalFacets": {
+    "Id": "co_SupportedFeature_GraphicalFacets",
+    "Text": "GraphicalFacets"
+  },
+  "IPad": {
+    "Id": "co_SupportedFeature_IPad",
+    "Text": "IPad"
+  },
+  "Image": {
+    "Id": "co_SupportedFeature_Image",
+    "Text": "Image"
+  },
+  "KM": {
+    "Id": "co_SupportedFeature_KM",
+    "Text": "KM"
+  },
+  "KeyNumberSearch": {
+    "Id": "co_SupportedFeature_KeyNumberSearch",
+    "Text": "KeyNumberSearch"
+  },
+  "LinkIn": {
+    "Id": "co_SupportedFeature_LinkIn",
+    "Text": "LinkIn"
+  },
+  "LinkOut": {
+    "Id": "co_SupportedFeature_LinkOut",
+    "Text": "LinkOut"
+  },
+  "LiveChat": {
+    "Id": "co_SupportedFeature_LiveChat",
+    "Text": "LiveChat"
+  },
+  "MatterBenchmarking": {
+    "Id": "co_SupportedFeature_MatterBenchmarking",
+    "Text": "MatterBenchmarking"
+  },
+  "Mobile": {
+    "Id": "co_SupportedFeature_Mobile",
+    "Text": "Mobile"
+  },
+  "MyPlan": {
+    "Id": "co_SupportedFeature_MyPlan",
+    "Text": "MyPlan"
+  },
+  "NYOfficalDigest": {
+    "Id": "co_SupportedFeature_NYOfficalDigest",
+    "Text": "NYOfficalDigest"
+  },
+  "OutlineBuilder": {
+    "Id": "co_SupportedFeature_OutlineBuilder",
+    "Text": "OutlineBuilder"
+  },
+  "PageHeaderV2": {
+    "Id": "co_SupportedFeature_PageHeaderV2",
+    "Text": "PageHeaderV2"
+  },
+  "PeopleMap": {
+    "Id": "co_SupportedFeature_PeopleMap",
+    "Text": "PeopleMap"
+  },
+  "PmdProtectedContent": {
+    "Id": "co_SupportedFeature_PmdProtectedContent",
+    "Text": "PmdProtectedContent"
+  },
+  "PortalManager": {
+    "Id": "co_SupportedFeature_PortalManager",
+    "Text": "PortalManager"
+  },
+  "PracticalLaw": {
+    "Id": "co_SupportedFeature_PracticalLaw",
+    "Text": "PracticalLaw"
+  },
+  "PricingGuide": {
+    "Id": "co_SupportedFeature_PricingGuide",
+    "Text": "PricingGuide"
+  },
+  "PrivateFiles": {
+    "Id": "co_SupportedFeature_PrivateFiles",
+    "Text": "PrivateFiles"
+  },
+  "ProductView": {
+    "Id": "co_SupportedFeature_ProductView",
+    "Text": "ProductView"
+  },
+  "Professional": {
+    "Id": "co_SupportedFeature_Professional",
+    "Text": "Professional"
+  },
+  "Promotions": {
+    "Id": "co_SupportedFeature_Promotions",
+    "Text": "Promotions"
+  },
+  "PublicRecords": {
+    "Id": "co_SupportedFeature_PublicRecords",
+    "Text": "PublicRecords"
+  },
+  "PublicationFavorites": {
+    "Id": "co_SupportedFeature_PublicationFavorites",
+    "Text": "PublicationFavorites"
+  },
+  "RecentHistory": {
+    "Id": "co_SupportedFeature_RecentHistory",
+    "Text": "RecentHistory"
+  },
+  "Redline": {
+    "Id": "co_SupportedFeature_Redline",
+    "Text": "Redline"
+  },
+  "RelatedInformation": {
+    "Id": "co_SupportedFeature_RelatedInformation",
+    "Text": "RelatedInformation"
+  },
+  "RelatedTopics": {
+    "Id": "co_SupportedFeature_RelatedTopics",
+    "Text": "RelatedTopics"
+  },
+  "ReportShared": {
+    "Id": "co_SupportedFeature_ReportShared",
+    "Text": "ReportShared"
+  },
+  "ReverseProxy": {
+    "Id": "co_SupportedFeature_ReverseProxy",
+    "Text": "ReverseProxy"
+  },
+  "RiptideIntegration": {
+    "Id": "co_SupportedFeature_RiptideIntegration",
+    "Text": "RiptideIntegration"
+  },
+  "RoadRunner": {
+    "Id": "co_SupportedFeature_RoadRunner",
+    "Text": "RoadRunner"
+  },
+  "Search": {
+    "Id": "co_SupportedFeature_Search",
+    "Text": "Search"
+  },
+  "SearchTemplatePreview": {
+    "Id": "co_SupportedFeature_SearchTemplatePreview",
+    "Text": "SearchTemplatePreview"
+  },
+  "SharePointSearch": {
+    "Id": "co_SupportedFeature_SharePointSearch",
+    "Text": "SharePointSearch"
+  },
+  "SharedNotes": {
+    "Id": "co_SupportedFeature_SharedNotes",
+    "Text": "SharedNotes"
+  },
+  "SharepointWidgets": {
+    "Id": "co_SupportedFeature_SharepointWidgets",
+    "Text": "SharepointWidgets"
+  },
+  "SiteMap": {
+    "Id": "co_SupportedFeature_SiteMap",
+    "Text": "SiteMap"
+  },
+  "SocialPlatform": {
+    "Id": "co_SupportedFeature_SocialPlatform",
+    "Text": "SocialPlatform"
+  },
+  "SourceLink": {
+    "Id": "co_SupportedFeature_SourceLink",
+    "Text": "SourceLink"
+  },
+  "StateQACompare": {
+    "Id": "co_SupportedFeature_StateQACompare",
+    "Text": "StateQACompare"
+  },
+  "SuggestedDocuments": {
+    "Id": "co_SupportedFeature_SuggestedDocuments",
+    "Text": "SuggestedDocuments"
+  },
+  "SuperBrowse": {
+    "Id": "co_SupportedFeature_SuperBrowse",
+    "Text": "SuperBrowse"
+  },
+  "Survey": {
+    "Id": "co_SupportedFeature_Survey",
+    "Text": "Survey"
+  },
+  "TocReportView": {
+    "Id": "co_SupportedFeature_TocReportView",
+    "Text": "TocReportView"
+  },
+  "TypeAhead": {
+    "Id": "co_SupportedFeature_TypeAhead",
+    "Text": "TypeAhead"
+  },
+  "UserAgreement": {
+    "Id": "co_SupportedFeature_UserAgreement",
+    "Text": "UserAgreement"
+  },
+  "UserDocuments": {
+    "Id": "co_SupportedFeature_UserDocuments",
+    "Text": "UserDocuments"
+  },
+  "UserEmulation": {
+    "Id": "co_SupportedFeature_UserEmulation",
+    "Text": "UserEmulation"
+  },
+  "UserSettings": {
+    "Id": "co_SupportedFeature_UserSettings",
+    "Text": "UserSettings"
+  },
+  "Waywo": {
+    "Id": "co_SupportedFeature_Waywo",
+    "Text": "Waywo"
+  },
+  "Web2Mashup": {
+    "Id": "co_SupportedFeature_Web2Mashup",
+    "Text": "Web2Mashup"
+  },
+  "WebContent": {
+    "Id": "co_SupportedFeature_WebContent",
+    "Text": "WebContent"
+  }
+}

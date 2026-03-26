@@ -1,0 +1,26 @@
+﻿{
+	// Maps KeyCiteFlag to WebElementInfo
+	"Blue": {
+		"ClassName": "icon25 icon_caution-customFour QuickAccess-icon"
+		
+	},
+	"Gray": {
+		"ClassName": "icon25 icon_caution-customSix QuickAccess-icon"
+		
+	},
+	"ImpliedOverruling": {
+		"ClassName": "icon25 icon_caution-customOne QuickAccess-icon"
+	},
+	"NoFlag": {
+		"ClassName": "No"
+	},
+	"Red": {
+		"ClassName": "icon25 icon_flag-customThree QuickAccess-icon"
+	},
+	"Striped": {
+		"ClassName": "icon25 icon_flag-customFive QuickAccess-icon"
+	},
+	"Yellow": {
+		"ClassName": "icon25 icon_flag-customTwo QuickAccess-icon"
+	}
+}

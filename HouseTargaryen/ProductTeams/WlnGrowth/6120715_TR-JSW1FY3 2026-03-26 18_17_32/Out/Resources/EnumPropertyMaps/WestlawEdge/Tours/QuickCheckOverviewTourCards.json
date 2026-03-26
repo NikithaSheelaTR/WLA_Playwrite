@@ -1,0 +1,9 @@
+{
+  // Maps QuickCheckOverviewTourCards to WebElementInfo
+  "QuickCheckOverviewCard": {
+    "Text": "Discover the advantages of intelligent document analysis\r\nQuick Check leverages AI to go beyond traditional legal research methodologies and recommend relevant authority that may have been missed.\r\nThe report is organized according to the headings in your document and includes at-a-glance information to help you quickly and easily identify how each recommendation might be helpful."
+  },
+  "QuickCheckLatestFeaturesCard": {
+    "Text": "Exclusive to Westlaw Precision: Analyze more documents than ever before. Documents can now be analyzed even when they contain no citations. Simply choose the jurisdiction you want to continue the analysis.\r\nUse this to analyze initial pleadings, emails, articles, draft briefs, or any other documents you might need. Learn more about Westlaw Precision."
+  }
+}

@@ -1,0 +1,15 @@
+﻿{
+  // Maps WestlawOptions to WebElementInfo
+  "WestlawNext": {
+    "Id": "radioWestlawNext",
+    "Text": "Search Westlaw"
+  },
+  "WestlawNextCanada": {
+    "Id": "radioWestlawNextCanada",
+    "Text": "Search Westlaw Canada"
+  },
+  "WestlawNextUk": {
+    "Id": "radioWestlawUK",
+    "Text": "Search Westlaw UK"
+  }
+}

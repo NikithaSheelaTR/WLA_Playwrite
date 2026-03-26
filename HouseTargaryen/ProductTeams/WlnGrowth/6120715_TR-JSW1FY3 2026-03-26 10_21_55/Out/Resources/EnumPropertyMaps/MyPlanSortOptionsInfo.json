@@ -1,0 +1,9 @@
+{
+  // Maps MyPlanSortOptions to BaseTextModel
+  "Name": {
+    "Text": "Name"
+  },
+  "ContentType": {
+    "Text": "Content Type" 
+  } 
+}

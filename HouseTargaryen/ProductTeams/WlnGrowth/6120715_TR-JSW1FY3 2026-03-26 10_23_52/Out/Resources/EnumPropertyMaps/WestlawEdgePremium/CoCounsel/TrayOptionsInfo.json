@@ -1,0 +1,21 @@
+{
+  "MoveToLeft": {
+    "Text": "Move to left",
+    "LocatorString": ".//saf-menu-item[contains(@class, 'moveToLeftMenuItem')]"
+  },
+
+  "MoveToRight": {
+    "Text": "Move to right",
+    "LocatorString": ".//saf-menu-item[contains(@class, 'moveToRightMenuItem')]"
+  },
+
+  "Hide": {
+    "Text": "Hide",
+    "LocatorString": ".//saf-menu-item[not(contains(@class, 'move')) and contains(@class, 'coCounsel')]"
+  },
+
+  "OpenInCoCounsel": {
+    "Text": "Open in CoCounsel",
+    "LocatorString": ".//saf-menu-item[not(contains(@class, 'move')) and .//span[contains(text(), 'Open in CoCounsel')]]"
+  }
+}

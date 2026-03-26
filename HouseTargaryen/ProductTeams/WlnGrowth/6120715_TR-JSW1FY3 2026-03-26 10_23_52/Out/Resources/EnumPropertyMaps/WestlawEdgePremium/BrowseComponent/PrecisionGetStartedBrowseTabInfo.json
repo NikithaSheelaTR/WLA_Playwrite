@@ -1,0 +1,31 @@
+﻿  {
+  // Maps AthensGetStartedBrowseTab to WebElementInfo
+  "ContentTypes": {
+    "Text": "Content types",
+    "LocatorString": "//*[@id='tab_ContentTypes']"
+  },
+  "CustomPages": {
+      "Text": "Custom pages",
+      "LocatorString": "//*[@id='tab_CustomPages']"
+  },
+  "Favorites": {
+      "Text": "Favorites",
+      "LocatorString": "//*[@id='tab_Favorites']"
+  },
+  "FederalMaterials": {
+      "Text": "Federal materials",
+      "LocatorString": "//*[@id='tab_FederalMaterials']"
+  },
+  "PracticeAreas": {
+      "Text": "Practice areas",
+      "LocatorString": "//*[@id='tab_PracticeAreas']"
+  },
+  "StateMaterials": {
+      "Text": "State materials",
+      "LocatorString": "//*[@id='tab_StateMaterials']"
+  },
+  "Tools": {
+      "Text": "Tools",
+      "LocatorString": "//*[@id='tab_Tools']"
+ }
+}

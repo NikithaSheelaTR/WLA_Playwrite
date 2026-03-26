@@ -1,0 +1,23 @@
+{
+   // Maps FeaturesTab enumeration to WebElementInfo
+  "Annotations": {
+    "Text": "Hide all annotations shared by inactive users",
+    "Id": "HideAnnotationsSharedByInactiveUsers"
+  },
+  "BestPortion": {
+    "Text": "Enable Best Portion navigation",
+    "Id": "EnableBestPortionNavigation"
+  },
+  "CheckpointIntegration": {
+    "Text": "Enable View Option",
+    "Id": "DisplayCheckpointLinks"
+  },
+  "ResearchRecommendations": {
+    "Text": "Enable Research Recommendations",
+    "Id": "ResearchAcceleratorEnabled"
+  },
+  "WestlawAnswers": {
+    "Text": "Enable Westlaw Answers",
+    "Id": "coid_userSettingsSearchQuestionAnswer"
+  }
+}

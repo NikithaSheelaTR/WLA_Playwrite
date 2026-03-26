@@ -1,0 +1,18 @@
+{
+  // Maps MyContactsGroupSearchScope to WebElementInfo
+  "AllGroups": {
+    "text": "AllGroups",
+    "LocatorString": "//div[@class='a11yDropdown']/ul/li[1]/span"
+
+  },
+  "Organization": {
+    "text": "Organization",
+    "LocatorString": "//div[@class='a11yDropdown']/ul/li[3]/span"
+
+  },
+  "Personal": {
+    "text": "Personal",
+    "LocatorString": "//div[@class='a11yDropdown']/ul/li[2]/span"
+
+  }
+}

@@ -1,0 +1,18 @@
+﻿{
+  // Maps EventHeaders to TextInfoModel
+  "RecommendedDocuments": {
+    "Text": "Recommended Documents"
+  },
+  "ReferencesCited": {
+    "Text": "References Cited"
+  },
+  "RulesAffectedBy": {
+    "Text": "Rules Affected By"
+  },
+  "StatutesAffectedBy": {
+    "Text": "Statutes Affected By"
+  },
+  "Validity": {
+    "Text": "Validity"
+  }
+}

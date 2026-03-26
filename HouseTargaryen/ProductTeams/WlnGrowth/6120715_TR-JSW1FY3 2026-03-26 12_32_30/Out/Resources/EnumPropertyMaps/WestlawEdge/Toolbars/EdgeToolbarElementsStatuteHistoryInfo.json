@@ -1,0 +1,23 @@
+﻿{
+  "CategoryLabel": {
+    "LocatorString": "//*[@id='co_categoryLabelContainer']"
+  },
+  "CreateKeyCiteAlert": {
+    "LocatorString": "//*[@class='co_keyCiteAlert_link']"
+  },
+  "Delivery": {
+    "LocatorString": "//*[@id='deliveryLink1']"
+  },
+  "DeliveryArrow": {
+    "LocatorString": "//*[@id='deliveryDropButton1']"
+  },
+  "Detail": {
+    "LocatorString": "//div[@id='co_searchDetailSliderTab']"
+  },
+  "SaveToFolder": {
+    "LocatorString": "//div[@class='co_saveTo']/*[contains(@class,'co_dropdownTitle')]"
+  },
+  "SearchWithin": {
+    "LocatorString": "//button[@id='versions_searchWithin_toolbarButton']"
+  }
+}

@@ -1,0 +1,95 @@
+﻿{
+  // Maps ToolsLink to WebElementInfo
+  "AmericanMaritimeCases": {
+    "Text": "American Maritime Cases (AMC)",
+    "LocatorString": "//*[contains(text(), \"American Maritime Cases (AMC)\")]"
+  },
+  "AndersonUniformCommercialCodeIndex": {
+    "Text": "Anderson Uniform Commercial Code Index",
+    "LocatorString": "//*[contains(text(), \"Anderson Uniform Commercial Code Index\")]"
+  },
+  "BlacksLawDictionary": {
+    "Text": "Black's Law Dictionary",
+    "LocatorString": "//*[text()=\"Black's Law Dictionary\"]"
+  },
+  "CasesAndDecisions": {
+    "Text": "Cases and Decisions",
+    "LocatorString": "//*[contains(text(), \"Cases and Decisions\")]"
+  },
+  "CurrentIndexToLegalPeriodicals": {
+    "Text": "Current Index to Legal Periodicals",
+    "LocatorString": "//*[contains(text(), \"Current Index to Legal Periodicals\")]"
+  },
+  "DocToolsWidgetFormAssemble": {
+    "Text": "Form Assemble",
+    "LocatorString": "//*[contains(text(), \"Form Assemble\")]"
+  },
+  "EasyEdit": {
+    "Text": "Easy Edit",
+    "LocatorString": "//*[contains(text(), \"Easy Edit\")]"
+  },
+  "ExpertChallengeReports": {
+    "Text": "Expert Challenge Reports",
+    "LocatorString": "//*[contains(text(), \"Expert Challenge Reports\")]"
+  },
+  "ExpertEvaluatorReports": {
+    "Text": "Expert Evaluator Reports",
+    "LocatorString": "//*[contains(text(), \"Expert Evaluator Reports\")]"
+  },
+  "FindAndKeyCiteCaseByName": {
+    "Text": "Find and KeyCite a Case by Name",
+    "LocatorString": "//*[contains(text(), \"Find and KeyCite a Case by Name\")]"
+  },
+  "FindByCaseNumber": {
+    "Text": "Find by Case Number",
+    "LocatorString": "//*[contains(text(), \"Find by Case Number\")]"
+  },
+  "FullSecondarySourcesLibrary": {
+    "Text": "Full Secondary Sources Library",
+    "LocatorString": "//*[contains(text(), \"Full Secondary Sources Library\")]"
+  },
+  "Jurisprudence": {
+    "Text": "Jurisprudence",
+    "LocatorString": "//*[contains(text(), \"Jurisprudence\")]"
+  },
+  "LawReviewsJournalsIndex": {
+    "Text": "Law Reviews & Journals Index",
+    "LocatorString": "//*[contains(text(), \"Law Reviews & Journals Index\")]"
+  },
+  "LegalResourceIndex": {
+    "Text": "Legal Resource Index",
+    "LocatorString": "//*[contains(text(), \"Legal Resource Index\")]"
+  },
+  "SecondarySourcesIndex": {
+    "Text": "Secondary Sources Index",
+    "LocatorString": "//*[contains(text(), \"Secondary Sources Index\")]"
+  },
+  "SelectedTextsPeriodicals": {
+    "Text": "Selected Texts & Periodicals",
+    "LocatorString": "//*[contains(text(), \"Selected Texts & Periodicals\")]"
+  },
+  "TribunalDecisionCoverage": {
+    "Text": "Tribunal Decision Coverage",
+    "LocatorString": "//*[contains(text(), \"Tribunal Decision Coverage\")]"
+  },
+  "UniformCommercialCodeCasesAdministrativeMaterials": {
+    "Text": "Uniform Commercial Code Cases & Administrative Materials",
+    "LocatorString": "//*[contains(text(), \"Uniform Commercial Code Cases & Administrative Materials\")]"
+  },
+  "WestlawBulletinsTopicalHighlights": {
+    "Text": "Westlaw Bulletins & Topical Highlights",
+    "LocatorString": "//*[contains(text(), \"Westlaw Bulletins & Topical Highlights\")]"
+  },
+  "WordsAndPhrases": {
+    "Text": "Words & Phrases",
+    "LocatorString": "//*[contains(text(), \"Words & Phrases\")]"
+  },
+  "WorldJournals": {
+    "Text": "World Journals",
+    "LocatorString": "//*[contains(text(), \"World Journals\")]"
+  },
+  "FormsPrecedents": {
+    "Text": "Forms & Precedents",
+    "LocatorString": "//*[contains(text(), \"Forms & Precedents\")]"
+  }
+}

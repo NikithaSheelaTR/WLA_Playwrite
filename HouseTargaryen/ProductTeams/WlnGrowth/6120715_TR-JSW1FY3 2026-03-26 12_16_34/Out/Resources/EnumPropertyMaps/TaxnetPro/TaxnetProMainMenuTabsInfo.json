@@ -1,0 +1,27 @@
+﻿{
+  // Maps TaxnetProHeaderTabs to WebElementInfo
+  "Centres": {
+    "LocatorString": "//span[@id='CustomDropDownMenu_co_menuCentres']//a",
+    "Text": "Centres"
+  },
+  "Experts": {
+    "LocatorString": "//span[@id='CustomDropDownMenu_co_menuExperts']//a",
+    "Text": "Experts"
+  },
+  "Home": {
+    "LocatorString": "//span[@id='CustomDropDownMenu_co_menuHome']//a",
+    "Text": "Home"
+  },
+  "News": {
+    "LocatorString": "//span[@id='CustomDropDownMenu_co_menuNews']//a",
+    "Text": "News"
+  },
+  "Search": {
+    "LocatorString": "//span[@id='CustomDropDownMenu_co_menuSearch']//a",
+    "Text": "Search"
+  },
+  "TableOfContents": {
+    "LocatorString": "//span[@id='CustomDropDownMenu_co_menuTableofContents']//a",
+    "Text": "Table of Contents"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  // Maps BillingTab to WebElementInfo
+  "AskAtSignOnBilling": {
+    "LocatorString": "//input[@value='A']"
+  },
+  "BillByDocument": {
+    "LocatorString": "//input[@value='D']"
+  },
+  "BillByLine": {
+    "LocatorString": "//input[@value='L']"
+  },
+  "HourlyBilling": {
+    "LocatorString": "//input[@value='H']"
+  },
+  "TransactionalBilling": {
+    "LocatorString": "//input[@value='T']"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  // Maps AlertsDeliveryOption to WebElementInfo
+  "Email": {
+    "Id": "enableEmailDelivery",
+    "Text": "Email"
+  },
+  "HistoryOnly": {
+    "Id": "enableHistoryOnlyDelivery",
+    "Text": "History Only"
+  },
+  "Html": {
+    "Id": "enableHTMLDelivery",
+    "Text": "HTML"
+  },
+  "Portal": {
+    "Id": "enablePortalDelivery",
+    "Text": "Portal"
+  },
+  "Rss": {
+    "Id": "enableRSSDelivery",
+    "Text": "RSS"
+  },
+  "Xml": {
+    "Id": "enableXMLDelivery",
+    "Text": "XML"
+  }
+}

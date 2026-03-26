@@ -1,0 +1,19 @@
+﻿{
+  // Maps CostRecoveryTabs to WebElementInfo
+  "ActiveCaps": {
+    "LocatorString": "//li[@id='wa_manageCapsTab']/a",
+    "Text": "Active Caps"
+  },
+  "CreateMonthlyCap": {
+    "LocatorString": "//li[@id='wa_monthlyCapsTab']/a",
+    "Text": "Create a Monthly Cap"
+  },
+  "CreateSessionCap": {
+    "LocatorString": "//li[@id='wa_sessionCapsTab']/a",
+    "Text": "Create a Session Cap"
+  },
+  "InactiveCaps": {
+    "LocatorString": "//li[@id='wa_inactiveCapsTab']/a",
+    "Text": "Inactive Caps"
+  }
+}

@@ -1,0 +1,174 @@
+﻿{
+  "AllFederalTaxLegislation": {
+    "LocatorString": "//input[@id='co_search_advancedSearch_LEGIS_0_All']",
+    "Text": "All Federal Tax Legislation"
+  },
+  "AllNonTaxLegislation": {
+    "LocatorString": "//input[@id='co_search_advancedSearch_LEGIS_2_All']",
+    "Text": "All Non-Tax Legislation"
+  },
+  "AllProvincialTerritorialTaxLegislation": {
+    "LocatorString": "//input[@value='TNP_FUE TNP_INC TNP_PRP TNP_RES TNP_TOB TNP_PRT TNP_SAL TNP_PAY TNP_LMC']",
+    "Text": "All Provincial/Territorial Tax Legislation"
+  },
+  "BusinessCompaniesActs": {
+    "LocatorString": "//input[@value='TNP_BCA']",
+    "Text": "Business & Companies Acts"
+  },
+  "CanadianCourtSystem": {
+    "LocatorString": "//input[@value='(TNP_LCC & (TNP_CNT TNP_LNO TNP_LMC TNP_TCC))']",
+    "Text": "Canadian Court System"
+  },
+  "CanadianInternationalTradeTribunalAct": {
+    "LocatorString": "//input[@value='TNP_CIT']",
+    "Text": "Canadian International Trade Tribunal Act"
+  },
+  "CourtActsRules": {
+    "LocatorString": "//input[@value='(TNP_LCC & TNP_LNO)']",
+    "Text": "Court Acts and Rules"
+  },
+  "CustomsAct": {
+    "LocatorString": "//input[@value='TNP_CUS']",
+    "Text": "Customs Act"
+  },
+  "CustomsTariffRegs": {
+    "LocatorString": "//input[@value='TNP_CCR TNP_TCR']",
+    "Text": "Customs Tariff & Regs"
+  },
+  "CustomsTariffRegsHistorical": {
+    "LocatorString": "//input[@value='TNP_CHR TNP_THR']",
+    "Text": "Customs Tariff & Regs [Historical]"
+  },
+  "EnvironmentalLegislation": {
+    "LocatorString": "//input[@value='TNP_ENV']",
+    "Text": "Environmental Legislation"
+  },
+  "EstateTrustsRelatedActs": {
+    "LocatorString": "//input[@value='TNP_ETR']]",
+    "Text": "Estate & Trusts Related Acts"
+  },
+  "ExciseAct": {
+    "LocatorString": "//input[@value='TNP_EXA']",
+    "Text": "Excise Act"
+  },
+  "ExciseTaxActGstRegs": {
+    "LocatorString": "//input[@value='TNP_EXG']",
+    "Text": "Excise Tax Act and GST Regs"
+  },
+  "ExportAct": {
+    "LocatorString": "//input[@value='TNP_EXP']",
+    "Text": "Export Act"
+  },
+  "ExportImportPermitsAct": {
+    "LocatorString": "//input[@value='TNP_EIP']",
+    "Text": "Export and Import Permits Act"
+  },
+  "FamilyLawActs": {
+    "LocatorString": "//input[@value='TNP_FAM']",
+    "Text": "Family Law Acts"
+  },
+  "FuelTaxes": {
+    "LocatorString": "//input[@value='TNP_FUE']",
+    "Text": "Fuel Taxes"
+  },
+  "IncomeCapitalTaxes": {
+    "LocatorString": "//input[@value='TNP_INC']",
+    "Text": "Income and Capital Taxes"
+  },
+  "IncomeTaxAct": {
+    "LocatorString": "//input[@value='TNP_ITA']",
+    "Text": "Income Tax Act"
+  },
+  "IncomeTaxApplicationRules": {
+    "LocatorString": "//input[@value='TNP_IAR']",
+    "Text": "Income Tax Application Rules"
+  },
+  "IncomeTaxRegulations": {
+    "LocatorString": "//input[@value='TNP_ITR']",
+    "Text": "Income Tax Regulations"
+  },
+  "InsuranceActs": {
+    "LocatorString": "//input[@value='TNP_INS']",
+    "Text": "Insurance Acts"
+  },
+  "InterpretationAct": {
+    "LocatorString": "//input[@value='TNP_INT']",
+    "Text": "Interpretation Act"
+  },
+  "OtherLegislation": {
+    "LocatorString": "//input[@value='TNP_LNO']",
+    "Text": "Other Legislation"
+  },
+  "PartnershipActs": {
+    "LocatorString": "//input[@value='TNP_PTA']",
+    "Text": "Partnership Acts"
+  },
+  "PayrollTaxes": {
+    "LocatorString": "//input[@value='TNP_PAY']",
+    "Text": "Payroll Taxes"
+  },
+  "PensionRelatedActs": {
+    "LocatorString": "//input[@value='TNP_PEN']",
+    "Text": "Pension Related Acts"
+  },
+  "ProceduralActs": {
+    "LocatorString": "//input[@value='TNP_PRO']",
+    "Text": "Procedural Acts"
+  },
+  "PropertyRelatedActs": {
+    "LocatorString": "//input[@value='TNP_PRA']",
+    "Text": "Property Related Acts"
+  },
+  "PropertyTaxes": {
+    "LocatorString": "//input[@value='TNP_PRP']",
+    "Text": "Property Taxes"
+  },
+  "PropertyTransferTaxes": {
+    "LocatorString": "//input[@value='TNP_PRT']",
+    "Text": "Property Transfer Taxes"
+  },
+  "RemissionOrders": {
+    "LocatorString": "//input[@value='TNP_REM']",
+    "Text": "Remission Orders"
+  },
+  "RelatedLegislation": {
+    "LocatorString": "//input[@value='TNP_REL TNP_BCA TNP_PEN TNP_INC TNP_INS TNP_RES TNP_ITR TNP_PTA TNP_PRO']",
+    "Text": "Related Legislation"
+  },
+  "ReportingStandards": {
+    "LocatorString": "//input[@value='TNP_RPS']",
+    "Text": "Reporting Standards"
+  },
+  "ResourceTaxes": {
+    "LocatorString": "//input[@value='TNP_RES']",
+    "Text": "Resource Taxes"
+  },
+  "SalesTaxes": {
+    "LocatorString": "//input[@value='TNP_SAL']",
+    "Text": "Sales Taxes"
+  },
+  "SecuritiesLegislation": {
+    "LocatorString": "//input[@value='TNP_SEC']",
+    "Text": "Securities Legislation"
+  },
+  "SoftwoodLumberProductsExportChargeAct": {
+    "LocatorString": "//input[@value='TNP_SLP']",
+    "Text": "Softwood Lumber Products Export Charge Act"
+  },
+  "SpecialImportMeasuresActRegs": {
+    "LocatorString": "//input[@value='TNP_SIM TNP_SRM']",
+    "Text": "Special Import Measures Act & Regs"
+  },
+  "TobaccoTaxes": {
+    "LocatorString": "//input[@value='TNP_TOB']",
+    "Text": "Tobacco Taxes"
+  },
+  "TerritorialRelatedLegislation": {
+    "LocatorString": "//input[@value='TNP_LMC']",
+    "Text": "Territorial Related Legislation"
+  },
+  "TreatiesAgreements": {
+    "LocatorString": "//input[@value='TNP_STR TNP_TRK TNP_TRU TNP_TRE TNP_TRB TNP_OTR']",
+    "Text": "Treaties & Agreements"
+  }
+}

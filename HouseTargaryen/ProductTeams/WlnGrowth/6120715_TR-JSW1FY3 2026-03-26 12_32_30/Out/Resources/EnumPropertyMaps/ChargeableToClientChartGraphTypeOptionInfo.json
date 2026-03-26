@@ -1,0 +1,18 @@
+{
+    // Maps AlertsDeliveryOption to BaseTextModel
+  "AmountChargeableToClient": {
+    "Text": "Amount Chargeable to Client"
+  },
+  "AmountNotChargeableToClient": {
+    "Text": "Amount Not Chargeable to Client"
+  },
+  "ChargeableToClient": {
+    "Text": "% Chargeable to Client"
+  },
+  "NotChargeableToClient": {
+    "Text": "% Not Chargeable to Client"
+  },
+  "StandardCharge": {
+    "Text": "Standard Charge"
+  }
+}

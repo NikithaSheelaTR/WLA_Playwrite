@@ -1,0 +1,23 @@
+﻿{
+	// TypeAheadDialogInfo
+	"Insiders": {
+		"Text": "Insiders",
+		"SectionLocator": "//li[@id = 'coid_autoCompleteSection_blcinsider']",
+		"LocatorString": "//a[@id='blcinsider']"
+	},
+	"MutualFunds": {
+		"Text": "Mutual Funds",
+		"SectionLocator": "//li[@id = 'coid_autoCompleteSection_blcfund']",
+		"LocatorString": "//a[@id='blcfund']"
+	},
+	"OtherResources": {
+		"Text": "Other Resources",
+		"SectionLocator": "//li[@id = 'coid_autoCompleteSection_other_resources']",
+		"LocatorString": "//a[@id='other_resources']"
+	},
+	"Companies": {
+		"Text": "Companies",
+		"SectionLocator": "//li[@id = 'coid_autoCompleteSection_blccompany']",
+		"LocatorString": "//a[@id='blccompany']"
+	}
+}

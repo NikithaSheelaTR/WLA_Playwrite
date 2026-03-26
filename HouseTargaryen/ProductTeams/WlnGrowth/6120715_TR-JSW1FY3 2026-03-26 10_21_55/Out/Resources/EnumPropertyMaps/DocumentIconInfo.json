@@ -1,0 +1,28 @@
+{
+  // Maps DocumentIcon to WebElementInfo
+  "KeyCiteFlag": {
+    "SourceFile": "",
+    "LocatorMask": "{0}/..",
+    "LocatorString": ".//span[@class= 'co_foldering_keyciteContainer']//img"
+  },
+  "Km": {
+    "SourceFile": "images/co_document_icon_km.png",
+    "LocatorMask": "{0}/..",
+    "LocatorString": ".//li[@class='co_document_icon_exemplar']/img"
+  },
+  "NoteAdded": {
+    "SourceFile": "images/co_document_icon_notes.png",
+    "LocatorMask": "{0}/..",
+    "LocatorString": ".//li[contains(@class,'co_document_icon_notes')]//img"
+  },
+  "PreviouslyViewed": {
+    "SourceFile": "images/co_document_icon_previouslyviewed.png",
+    "LocatorMask": "{0}/..",
+    "LocatorString": ".//li[@class='co_document_icon_previouslyviewed']//img"
+  },
+  "SavedToFolder": {
+    "LocatorMask": "{0}/..",
+    "SourceFile": "images/co_document_icon_foldered.png",
+    "LocatorString": ".//li[@class='co_document_icon_foldered']//img"
+  }
+}

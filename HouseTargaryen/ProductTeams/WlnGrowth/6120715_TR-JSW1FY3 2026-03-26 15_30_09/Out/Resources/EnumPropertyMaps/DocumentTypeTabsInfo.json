@@ -1,0 +1,15 @@
+﻿{
+  // Maps DocumentType to WebElementInfo
+  "Cases": {
+    "Text": "Cases",
+    "LocatorString": "//a[@class='co_tabLink ng-binding' and contains(text(),'Cases')]"
+  },
+  "StatutesAndCourtRules": {
+    "Text": "Statutes & Court Rules",
+    "LocatorString": "//a[@class='co_tabLink ng-binding' and contains(text(),'Statutes & Court Rules')]"
+  },
+  "SecondarySources": {
+    "Text": "Secondary Sources",
+    "LocatorString": "//a[@class='co_tabLink ng-binding' and contains(text(),'Secondary Sources')]"
+  }
+}

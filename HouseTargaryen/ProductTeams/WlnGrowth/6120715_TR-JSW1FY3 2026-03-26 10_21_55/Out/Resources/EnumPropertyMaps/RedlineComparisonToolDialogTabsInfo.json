@@ -1,0 +1,11 @@
+{
+  // Maps RedlineComparisonToolDialogTabs to WebElementInfo
+  "SelectToCompare": {
+    "Text": "Select To Compare",
+    "LocatorString": "//a[contains(@class,'co_tabLink') and text()='Select To Compare']"
+  },
+  "ViewSavedComparisons": {
+    "Text": "View Saved Comparisons",
+    "LocatorString": "//a[contains(@class,'co_tabLink') and text()='View Saved Comparisons']"
+  }
+}

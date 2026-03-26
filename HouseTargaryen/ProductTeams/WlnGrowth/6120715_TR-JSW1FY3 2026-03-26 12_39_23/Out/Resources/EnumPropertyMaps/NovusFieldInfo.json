@@ -1,0 +1,5 @@
+{
+  // Maps NovusField to BaseTextModel
+  "MostCited": { "Text": "cb.cite.count" },
+  "MostUsed": { "Text": "cb.total.act.score" }
+}

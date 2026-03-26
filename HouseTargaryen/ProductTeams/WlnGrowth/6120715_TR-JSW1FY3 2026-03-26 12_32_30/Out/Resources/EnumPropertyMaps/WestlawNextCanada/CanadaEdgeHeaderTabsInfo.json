@@ -1,0 +1,38 @@
+{
+  // Maps IndigoHeaderTabs to WebElementInfo
+  "ClientId": {
+    "LocatorString": "//button[@class = 'co_clientID_recent co_globalNavLink']"
+  },
+  "CoCounsel": {
+    "LocatorString": "//li[@id='co_aiAssistantContainer']//a",
+    "Text": "CoCounsel"
+  },
+  "MySubscriptions": {
+    "LocatorString": "//a[@class='co_dropdownBoxanchorLabel' and contains(text(),'My Subscriptions') or contains(text(),'Mes abonnements')]",
+    "Text": "My Subscriptions"
+  },
+  "Folders": {
+    "LocatorString": "//div/a[text() = 'Folders' or text()='Dossiers']",
+    "Text": "Folders"
+  },
+  "History": {
+    "LocatorString": "//div/a[text() = 'History' or text()='Historique']",
+    "Text": "History"
+  },
+  "MyLinks": {
+    "LocatorString": "//li[@id='co_frequentFavoritesContainer']//a[@class='co_dropdownBoxanchorLabel']",
+    "Text": "My Links"
+  },
+  "Notifications": {
+    "LocatorString": "//a[@class ='co_dropdownBoxanchorLabel' and text() = 'Notifications']",
+    "Text": "Notifications"
+  },
+  "ProfileAndSignOut": {
+    "LocatorString": "//button[@id='coid_website_signOffRegion']",
+    "Text": "Profile and sign out"
+  },
+  "Tools": {
+    "LocatorString": "//button[@oldtitle='Tools']",
+    "Text": "Tools"
+  }
+}

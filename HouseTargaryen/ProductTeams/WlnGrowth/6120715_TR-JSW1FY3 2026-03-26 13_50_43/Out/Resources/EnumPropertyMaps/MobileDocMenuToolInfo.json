@@ -1,0 +1,27 @@
+﻿{
+  // Maps MobileDocMenuTool to WebElementInfo
+  "AddNote": {
+    "Text": "Add Note",
+    "LocatorString": ".//a[contains(text(), 'Add Note')]"
+  },
+  "DownloadOriginalDocument": {
+    "Text": "Download original document",
+    "LocatorString": ".//a[text()='Download original document']"
+  },
+  "EmailDocument": {
+    "Text": "Email Document",
+    "LocatorString": ".//a[@id='emailDocumentLink']"
+  },
+  "EmailList": {
+    "Text": "Email List",
+    "LocatorString": ".//a[@id='coid_website_emailListLink']"  
+  }, 
+  "SaveToMatters": {
+    "Text": "Save to Matters",
+    "LocatorString": ".//a[@id='coid_website_toAddDocumentToMatterLink']"
+  },
+  "SaveToResearch": {
+    "Text": "Save to Research",
+    "LocatorString": ".//a[@id='A1' and contains(text(),'Research')]"
+  }
+}

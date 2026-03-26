@@ -1,0 +1,27 @@
+{
+  "Taxnews": {
+    "Id": "tnp_typeaheadTaxNews_moreSuggestion",
+    "LocatorString": "//li[@id = 'TaxNews_TypeAheadGroupListItem']",
+    "Text": "TaxNews"
+  },
+  "AnswerPath": {
+    "Id": "tnp_typeaheadAnswerPath_moreSuggestion",
+    "LocatorString": "//li[@id = 'Answer Path_TypeAheadGroupListItem']",
+    "Text": "Answer Path"
+  },
+  "CaseLaw": {
+    "Id": "tnp_typeaheadCaseLaw_moreSuggestion",
+    "LocatorString": "//li[@id = 'Case Law_TypeAheadGroupListItem']",
+    "Text": "Case Law"
+  },
+  "CRAViews": {
+    "Id": "tnp_typeaheadCraViews_moreSuggestion",
+    "LocatorString": "//li[@id = 'CRA Views_TypeAheadGroupListItem']",
+    "Text": "CRA Views"
+  },
+  "Legislation": {
+    "Id": "tnp_typeaheadLegislation_moreSuggestion",
+    "LocatorString": "//li[@id = 'Legislation_TypeAheadGroupListItem']",
+    "Text": "Legislation"
+  }
+}

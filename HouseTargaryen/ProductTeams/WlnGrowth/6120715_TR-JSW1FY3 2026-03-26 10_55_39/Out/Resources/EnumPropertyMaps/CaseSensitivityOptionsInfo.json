@@ -1,0 +1,7 @@
+{
+  // Maps CaseSensitivityOptions to BaseTextModel
+  "AllLowercase": { "Text": "All Lowercase" },
+  "AllUppercase": { "Text": "All Uppercase" },
+  "AtLeastOneUppercase": { "Text": "At Least One Uppercase" },
+  "NotCaseSensitive": { "Text": "Not Case-Sensitive" }
+}

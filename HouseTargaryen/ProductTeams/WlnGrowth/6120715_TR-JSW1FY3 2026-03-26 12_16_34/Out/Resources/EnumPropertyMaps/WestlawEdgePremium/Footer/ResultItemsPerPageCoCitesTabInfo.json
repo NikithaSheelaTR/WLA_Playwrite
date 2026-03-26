@@ -1,0 +1,14 @@
+﻿{
+  "Twenty": {
+    "Text": "20",
+    "LocatorString": ".//li[@id = 'resultsPerPageOption_20']"
+  },
+  "Fifty": {
+    "Text": "50",
+    "LocatorString": ".//li[@id = 'resultsPerPageOption_50']"
+  },
+  "OneHundred": {
+    "Text": "100",
+    "LocatorString": ".//li[@id = 'resultsPerPageOption_100']"
+  }
+}

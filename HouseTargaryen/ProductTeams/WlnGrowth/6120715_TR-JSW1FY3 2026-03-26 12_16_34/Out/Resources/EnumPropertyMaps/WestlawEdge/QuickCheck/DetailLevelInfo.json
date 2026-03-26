@@ -1,0 +1,16 @@
+{
+  // Maps DetailLevel to WebElementInfo
+  "LessDetail": {
+    "LocatorString": ".//li[./span[.='Less Detail']] | .//li[./span[.='Less detail']]", 
+    "Text": "Less Detail"
+  },
+  "MoreDetail": {
+    "LocatorString": ".//li[./span[.='More Detail']] | .//li[./span[.='More detail']]", 
+    "Text": "More Detail"
+  },
+  "MostDetail": {
+    "LocatorString": ".//li[./span[.='Most Detail']] | .//li[./span[.='Most detail']]", 
+    "Text": "Most Detail"
+  }
+}
+

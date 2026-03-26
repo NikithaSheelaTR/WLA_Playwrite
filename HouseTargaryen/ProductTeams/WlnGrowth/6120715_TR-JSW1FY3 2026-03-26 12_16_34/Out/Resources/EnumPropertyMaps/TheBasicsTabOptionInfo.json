@@ -1,0 +1,43 @@
+{
+  // Maps TheBasicsTabOption to WebElementInfo
+  "DeliverAs": {
+    "Id": "co_delivery_fileContainer",
+    "Text": "As"
+  },
+  "FormatFullText": {
+    "Id": "co_delivery_format_fulltext",
+    "Text": "Format"
+  },
+  "FormatList": {
+    "Id": "co_delivery_format_list",
+    "Text": "Format"
+  },
+  "FormattingAndRequirements": {
+    "Id": "co_deliveryKindleMoreInfo",
+    "Text": "Formatting and requirements"
+  },
+  "KindleEmailAddress": {
+    "Id": "co_delivery_emailAddress",
+    "Text": "Kindle Email Address"
+  },
+  "NumberOfDocuments": {
+    "Id": "coid_RecipientDeliverAsFullTextCount",
+    "Text": "Number Of Documents"
+  },
+  "NumberOfItems": {
+    "Id": "coid_RecipientDeliverAsListCount",
+    "Text": "Number Of Items"
+  },
+  "OnlyPagesWithTerms": {
+    "Id": "co_deliveryWhatToDeliverDocumentPagesWithTermsOnly",
+    "Text": "Only pages with search terms"
+  },
+  "Subject": {
+    "Id": "co_delivery_subject",
+    "Text": "Subject"
+  },
+  "WhatToDeliver": {
+    "Id": "co_delivery_whatToDeliverContainer",
+    "Text": "What to Deliver"
+  }
+}

@@ -1,0 +1,39 @@
+﻿//Maps Goverment links to GovermentLinksInfo model
+{
+  "OutOfSubscriptionLinks": {
+    "Links": [
+      "Code of Civility",
+      "Code of Judicial Conduct",
+      "Court of Judicial Discipline Rules of Procedure",
+      "Pennsylvania Rules of Judicial Administration",
+      "Pennsylvania Disciplinary Board Rules",
+      "Pennsylvania Rules of Civil Procedure",
+      "Rules Governing the Conduct of Members of the Court of Judicial Discipline",
+      "Rules of Criminal Procedure",
+      "Rules of Professional Conduct",
+      "Rules of Evidence",
+      "Rules Governing Appeals from the Court of Judicial Discipline",
+      "Title 43 P.S. Labor",
+      "Title 44 P.S. Legal Holidays and Observances",
+      "Title 45 P.S. Legal Notices",
+      "Title 45 Pa.C.S.A. Legal Notices",
+      "Title 47 P.S. Liquor",
+      "Title 49 P.S. Mechanics' Liens",
+      "Title 50 Pa.C.S.A. Mental Health [Reserved]",
+      "Title 51 Pa.C.S.A. Military Affairs",
+      "Title 52 P.S. Mines and Mining",
+      "Title 52 Pa.C.S.A. Mines and Mining [Reserved]",
+      "Title 54 Pa.C.S.A. Names",
+      "Title 57 Pa.C.S.A. Notaries Public",
+      "Judicial Conduct Board Members Conduct Rules",
+      "Internal Operating Procedures of the Supreme Court",
+      "Pennsylvania Rules of Disciplinary Enforcement",
+      "Pennsylvania Rules for Continuing Legal Education",
+      "Pennsylvania Continuing Legal Education Board Regulations",
+      "Operating Procedures of the Superior Court",
+      "Judicial Conduct Board Rules of Procedure",
+      "Case Records Public Access Policy of the Unified Judicial System of Pennsylvania",
+      "PA ST Dist J Refs & Annos"
+    ]
+  }
+}

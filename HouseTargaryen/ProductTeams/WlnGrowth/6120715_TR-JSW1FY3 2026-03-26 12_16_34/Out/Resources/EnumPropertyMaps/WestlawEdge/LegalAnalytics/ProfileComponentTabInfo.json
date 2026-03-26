@@ -1,0 +1,22 @@
+{
+  "Experience": {
+    "Text": "Experience",
+    "LocatorString": ".//li[@id='co_la_caseHistoryReport_tab']"
+  },
+  "KnowYourJudge": {
+    "Text": "Know your judge",
+    "LocatorString": ".//li[@id='co_la_knowYourJudge_tab']"
+  },
+  "Motions": {
+    "Text": "Motions",
+    "LocatorString": ".//li[@id='co_la_motionReport_tab']"
+  },
+  "Overview": {
+    "Text": "Overview",
+    "LocatorString": ".//li[@id='co_la_profile_tab']"
+  },
+  "References": {
+    "Text": "References",
+    "LocatorString": "//a[@id='coid_relatedInfo_riProfessionalReferences_link']"
+  }
+}

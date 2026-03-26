@@ -1,0 +1,12 @@
+{
+  // Maps TermsFrequency to WebElementInfo
+  "AllOfTheseTerms": {
+    "Id": "co_termfrequency_all"
+  },
+  "AnyOfTheseTerms": {
+    "Id": "co_termfrequency_any"
+  },
+  "ThisExactPhrase": {
+    "Id": "co_termfrequency_exact"
+  }
+}

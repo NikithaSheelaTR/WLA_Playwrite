@@ -1,0 +1,6 @@
+{
+    "PDF": {
+        "Text": "PDF",
+        "LocatorString": "//saf-menu-item-v3[contains(@id, 'delivery-button-item-0')]"
+    }
+}

@@ -1,0 +1,39 @@
+﻿// Maps Columns from BaseGridComponent to WebElementInfo
+{
+  "AddedBy": {
+    "LocatorString": ".//td[contains(@class, 'co_detailsTable_clientId') or  contains(@ class, 'TableCell--clientId')]",
+    "Text": "Added By"
+  },
+  "ClientId": {
+    "LocatorString": ".//td[contains(@class, 'co_detailsTable_clientId')]",
+    "Text": "Client ID"
+  },
+  "Content": {
+    "LocatorString": ".//td[contains(@class, 'co_detailsTable_type') or  contains(@ class, 'TableCell--type')]",
+    "Text": "Content"
+  },
+  "DateAdded": {
+    "LocatorString": ".//td[contains(@class, 'co_detailsTable_date')]",
+    "Text": "Date Added"
+  },
+  "DateTime": {
+    "LocatorString": ".//td[contains(@class, 'co_detailsTable_date') or  contains(@ class, 'TableCell--date')]",
+    "Text": "Date/Time"
+  },
+  "Description": {
+    "LocatorString": ".//td[contains(@class, 'co_detailsTable_content')]",
+    "Text": "Description"
+  },
+  "Event": {
+    "LocatorString": ".//td[contains(@class, 'co_detailsTable_event')]",
+    "Text": "Event"
+  },
+    "Folder": {
+    "LocatorString": ".//td[contains(@class, 'co_detailsTable_folder') or  contains(@ class, 'TableCell--folder')]",
+    "Text": "Folder"
+  },
+  "Title": {
+    "LocatorString": ".//td[contains(@class, 'co_detailsTable_content') or  contains(@ class, 'TableCell--Description')]",
+    "Text": "Title"
+  }
+}

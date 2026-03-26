@@ -1,0 +1,22 @@
+{
+  // Maps SearchWithin to WebElementInfo (Search Within Toolbar dialog options)
+  "LookForTermsInTheSameParagraphCheckbox": {
+    "LocatorString": "//input[@id='searchWithinParagraphWidget']"
+  },
+  "RecentSearchesButton": {
+    "LocatorString": "//button[@class='co_recentSearchesLink']"
+  },
+  "RecentSearchesQuery": {
+    "LocatorString": "//ul[@class='co_searchSuggestionContainer']//a",
+    "LocatorMask": "//ul[@class='co_searchSuggestionContainer']//a[contains(text(), '{0}')]"
+  },
+  "SearchButton": {
+    "LocatorString": "//button[contains(@class,'co_buttonSubmit')]"
+  },
+  "SearchInput": {
+    "LocatorString": "//input[@id='co_dropdownInput']"
+  },
+  "UndoButton": {
+    "LocatorString": "//button[contains(@class,'co_buttonUndo')]"
+  }
+}

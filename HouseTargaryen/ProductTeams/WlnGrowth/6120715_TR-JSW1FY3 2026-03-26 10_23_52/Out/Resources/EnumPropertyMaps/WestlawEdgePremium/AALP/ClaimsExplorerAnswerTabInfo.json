@@ -1,0 +1,13 @@
+{
+  // Maps BrowseTab to WebElementInfo
+  "Federal": {
+    "Text": "Federal",
+    "LocatorString": ".//*[@id='tab_federal' or @data-testid='federal-tab']",
+    "Id": "tab_federal"
+  },
+  "State": {
+    "Text": "State",
+    "LocatorString": ".//*[@id='tab_state' or @data-testid='state-tab']",
+    "Id": "tab_state"
+  }
+}

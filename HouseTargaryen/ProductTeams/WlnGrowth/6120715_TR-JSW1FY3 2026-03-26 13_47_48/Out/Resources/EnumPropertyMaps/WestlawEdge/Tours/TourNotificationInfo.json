@@ -1,0 +1,19 @@
+{
+  // Maps TourNotification to WebElementInfo
+  "LitigationAnalyticsClickOnNextTabNotification": {
+    "LocatorString": ".//div[@id='co_tour_Dockets']",
+    "Text": "Select Dockets to continue"
+  },
+  "LitigationAnalyticsClickOnProfileTabNotification": {
+    "LocatorString": ".//div[@id='co_tour_Overview']",
+    "Text": "Select Overview to continue"
+  },
+  "LitigationAnalyticsSearchNotification": {
+    "LocatorString": ".//div[text()='Type and select the name of a federal district court judge']",
+    "Text": "Type and select the name of a federal district court judge"
+  },
+  "LitigationAnalyticsSearchResultNotification": {
+    "LocatorString": ".//div[text()='Select a relevant result to continue']",
+    "Text": "Select a relevant result to continue"
+  }
+}

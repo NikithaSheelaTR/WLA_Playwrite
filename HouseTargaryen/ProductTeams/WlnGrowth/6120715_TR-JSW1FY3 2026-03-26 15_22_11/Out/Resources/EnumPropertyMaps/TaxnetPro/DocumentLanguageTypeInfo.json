@@ -1,0 +1,10 @@
+﻿{
+  "English": {
+    "LocatorString": "//input[contains(@id, 'language') and contains(@id, 'ENG')]",
+    "Text": "English"
+  },
+  "French": {
+    "LocatorString": "//input[contains(@id, 'language') and contains(@id, 'FR')]",
+    "Text": "French"
+  }
+}

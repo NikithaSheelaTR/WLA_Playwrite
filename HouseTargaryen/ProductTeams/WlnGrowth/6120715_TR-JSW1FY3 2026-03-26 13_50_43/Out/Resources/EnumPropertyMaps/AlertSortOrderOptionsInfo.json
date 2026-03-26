@@ -1,0 +1,10 @@
+{
+  // Maps AlertSortOrderOptions to WebElementInfo
+  "Date": {
+    "Text": "Date"
+  },
+
+  "Relevance": {
+    "Text": "Relevance"
+  }
+}

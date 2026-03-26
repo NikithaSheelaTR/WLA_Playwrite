@@ -1,0 +1,34 @@
+{
+    "Judge": {
+        "Name": "Judge",
+        "LocatorString": "//button[@id = 'co_la_judgeWldId_filterCategory']"
+    },
+    "CaseType": {
+        "Name": "Case Type",
+        "LocatorString": "//button[@id = 'co_la_caseTypeHierarchyFlatV2_filterCategory']"
+    },
+    "Party": {
+        "Name": "Party",
+        "LocatorString": "//button[@id = 'co_la_participant_filterCategory']"
+    },
+    "MotionType": {
+        "Name": "Motion type",
+        "LocatorString": "//button[@id = 'co_la_motionTypeHierarchyFlat_filterCategory']"
+    },
+    "AreaOfExpertise": {
+        "Name": "Area of expertise",
+        "LocatorString": "//button[@id = 'co_la_expertiseHierarchiyFlat_filterCategory']"
+    },
+    "TransactionStatus": {
+        "Name": "Transaction status",
+        "LocatorString": "//button[@id = 'mna_TransactionDetails_Status']"
+    },
+    "LawFirm": {
+        "Name": "Law firm",
+        "LocatorString": "//button[@id = 'co_la_lawFirmLocationFlattenHierarchy_filterCategory']"
+    },
+    "DamagesType": {
+        "Name": "Damages type",
+        "LocatorString": "//button[@id = 'co_la_damageTypeFlattenHierarchy_filterCategory']"
+    }
+}

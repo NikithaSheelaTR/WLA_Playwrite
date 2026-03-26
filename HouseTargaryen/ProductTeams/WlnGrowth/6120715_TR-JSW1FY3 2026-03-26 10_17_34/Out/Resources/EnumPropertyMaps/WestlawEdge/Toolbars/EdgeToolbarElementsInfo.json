@@ -1,0 +1,154 @@
+﻿{
+    // Maps ToolbarOptions to WebElementInfo
+    "SearchAndSummarizeRutter": {
+        "LocatorString": "//a[contains(@class, 'co_primaryBtn Button--small') and contains(@aria-label, 'Search & Summarize Rutter')]"
+    },
+    "SearchAndSummarizeOConnors": {
+        "LocatorString": "//a[contains(@class, 'co_primaryBtn Button--small') and contains(normalize-space(@aria-label), \"O'Connor's\")]"
+    },
+    "SearchAndSummarizeEthics": {
+        "LocatorString": "//a[contains(@class, 'co_primaryBtn Button--small') and contains(@aria-label, 'Search & Summarize Ethics')]"
+    },
+    "BackToResearchRecommendationsButton": {
+        "LocatorString": "//a[contains(@class,'co_btnBack') or text()='Back to Research Recommendations']"
+    },
+    "CategoryLabel": {
+        "LocatorString": "//*[@id='co_categoryLabelContainer']"
+    },
+    "ClearAll": {
+        "LocatorString": "//*[@id='coid_clearAllCheckboxes']"
+    },
+    "CopyArrow": {
+        "LocatorString": "//button[@aria-label ='Copy Menu']"
+    },
+    "CopyCitation": {
+        "LocatorString": "//*[@id ='co_copyCitation']"
+    },
+    "CopyLink": {
+        "LocatorString": "//*[@id ='co_linkBuilder']"
+    },
+    "CompareText": {
+        "LocatorString": "//a[@id='coid_redline_toolbarButtonLink']"
+    },
+    "CompareVersions": {
+        "LocatorString": "//a[@id='co_statuteCompareButton']"
+    },
+    "CreateDealTrackAlert": {
+        "LocatorString": "//*[@id='co_document_dealTrackMenuLink']"
+    },
+    "CreateKeyCiteAlert": {
+        "LocatorString": "//*[@class='co_keyCiteAlert_link']"
+    },
+    "CreateAlertDropdown": {
+        "LocatorString": "//button[@id='co_search_alertMenuLink']"
+    },
+    "Delete": {
+        "LocatorString": "//li[@class='co_deleteItemsButton']/a"
+    },
+    "Delivery": {
+        "LocatorString": "//*[@id='deliveryLink1'] | //li[@id='co_deliveryWidget']//button | //*[@id='deliveryWidgetButton1']"
+    },
+    "DeliveryArrow": {
+        "LocatorString": ".//button[contains(@class, 'co_dropDownAnchor')] | .//*[contains(@id, 'deliveryWidgetButton') or contains(@id, 'deliveryDropButton')]"
+    },
+    "Detail": {
+        "LocatorString": "//div[contains(@id, 'co_searchDetailSlider')]"
+    },
+    "DisplayOptions": {
+        "LocatorString": "//*[@id='co_displayOptionsLink']"
+    },
+    "DocketUpdate": {
+        "LocatorString": "//*[@id='co_docketsUpdate']"
+    },
+    "DocToolbarCompareVersions": {
+        "LocatorString": "//div[@id='co_documentToolbarStatuteCompare']"
+    },
+    "DownloadWidget": {
+        "LocatorString": "//div[@id='co_DownloadWidget']"
+    },
+    "EasyEdit": {
+        "LocatorString": "//span[@class='co_documentTool_easyEdit']"
+    },
+    "EmailWidget": {
+        "LocatorString": "//div[@id='co_EmailWidget']"
+    },
+    "EmptyTrash": {
+        "LocatorString": "//a[@class='co_emptyTrash']"
+    },
+    "FocusHighlighting": {
+        "LocatorString": "//button[contains(@class, 'co_focusHighlightConfigColor')]"
+    },
+    "GoTo": {
+        "LocatorString": "//input[@id='co_document_starPage_starPageNavInput']"
+    },
+    "Graphic": {
+        "LocatorString": "//div[@id='co_navZoom']"
+    },
+    "History": {
+        "LocatorString": "//li[@id='coid_historyFacet_item']"
+    },
+    "IgnoreButton": {
+        "LocatorString": "//a[@title='Ignore']"
+    },
+    "IgnoreLabel": {
+        "LocatorString": "//strong[text()='Ignored']"
+    },
+    "ItemsSelectedMessage": {
+        "LocatorString": "//li[@id='co_docToolbarItemsSelected']/span"
+    },
+    // When new KeyCite button will be available without FAC, need to remove the old part of the  locator
+    "KeyCiteIcon": {
+        "LocatorString": "//*[@id='co_inlineKeyCitesButtonAnchor']|//div[@id='keyCiteButtonContainer']/button"
+    },
+    "NewFolder": {
+        "LocatorString": ".//*[contains(@class,'icon_addFolder-blue')] | //*[@id='co_ro_folder_menu']/li[@class='co_createNewFolder']/button"
+    },
+    "Outline": {
+        "LocatorString": "//li[@id='co_sectionSearch']/div/a"
+    },
+    "PoweredByKeyCite": {
+        "LocatorString": "//a[@id = 'co_powByKC']"
+    },
+    "PrintWidget": {
+        "LocatorString": "//div[@id='co_PrintWidget']"
+    },
+    "ReadingMode": {
+        "LocatorString": "//*[@id='co_infiniteScrollLink']"
+    },
+    "ResearchReport": {
+        "LocatorString": "//*[@id='viewDocumentWithTocFolderBtn']"
+    },
+    "ReturnToList": {
+        "LocatorString": "//span[contains(@class,'icon_back_arrow')]"
+    },
+    "SaveSearch": {
+        "LocatorString": "//button[@id='co_search_saveAsMenuLink']"
+    },
+    "SaveToFolder": {
+        "LocatorString": "//div[@class='co_saveTo']/*[contains(@class,'co_dropdownTitle')]"
+    },
+    "ScreenMode": {
+        "LocatorString": "//*[@id='co_fullscreenModeLink']"
+    },
+    "SearchWithin": {
+        "LocatorString": "//div[@id='co_docSearchWithinContainer']/*[contains(@class,'co_dropdownTitle')]"
+    },
+    "ShareFolder": {
+        "LocatorString": "//li[@class='co_folderSharingButton']"
+    },
+    "SortBy": {
+        "LocatorString": "//*[contains(@id,'sort')]/select | //div[@id='co_search_sortDropDownControl']"
+    },
+    "StarPageNavigation": {
+        "LocatorString": "//div[@id='co_starPage']"
+    },
+    "TableOfContents": {
+        "LocatorString": "//a[text()='Table of Contents']"
+    },
+    "TermNavigation": {
+        "LocatorString": "//div[@id='co_searchTermMenu']"
+    },
+    "Upload": {
+        "LocatorString": "//a[@class='co_uploadFile_icon']"
+    }
+}

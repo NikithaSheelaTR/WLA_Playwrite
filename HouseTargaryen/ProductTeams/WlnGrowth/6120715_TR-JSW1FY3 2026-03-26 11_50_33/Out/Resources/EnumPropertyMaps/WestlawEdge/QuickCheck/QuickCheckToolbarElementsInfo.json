@@ -1,0 +1,9 @@
+﻿{
+  // Maps DocAnalyzer ToolbarOptions to WebElementInfo
+  "Detail": {
+    "LocatorString": ".//div[@id='DA-detailLevelSelectorContainer']/button"
+  },
+  "SaveToFolder": {
+    "LocatorString": ".//div[@class='co_saveTo']/*"
+  }
+}

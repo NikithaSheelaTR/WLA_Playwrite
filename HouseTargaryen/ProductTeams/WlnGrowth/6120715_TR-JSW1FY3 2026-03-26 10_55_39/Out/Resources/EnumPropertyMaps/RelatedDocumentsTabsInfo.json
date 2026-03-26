@@ -1,0 +1,27 @@
+﻿{
+  // Maps RelatedDocumentsTabs to WebElementInfo
+  "Briefs": {
+    "Text": "Briefs",
+    "LocatorString": "//ul[contains(@class,'Tab-list')]/li[text()='Briefs']"
+  },
+
+  "FormFamilies": {
+    "Text": "Form families",
+    "LocatorString": "//ul[contains(@class,'Tab-list')]/li[text()='Form families']"
+  },
+
+  "SecondarySources": {
+    "Text": "Secondary Sources",
+    "LocatorString": "//ul[contains(@class,'Tab-list')]/li[text()='Secondary Sources']"
+  },
+
+  "SelectedTopics": {
+    "Text": "Selected topics",
+    "LocatorString": "//ul[contains(@class,'Tab-list')]/li[text()='Selected topics']"
+  },
+
+  "TrialCourtDocuments": {
+    "Text": "Trial Court Documents",
+    "LocatorString": "//ul[contains(@class,'Tab-list')]/li[text()='Trial Court Documents']"
+  }
+}

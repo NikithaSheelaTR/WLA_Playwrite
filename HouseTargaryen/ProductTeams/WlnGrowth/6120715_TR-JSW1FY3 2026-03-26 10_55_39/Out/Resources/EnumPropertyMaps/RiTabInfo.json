@@ -1,0 +1,213 @@
+﻿{
+  // Maps RiTabs to WebElementInfo
+  "Agreements": {
+    "Text": "Agreements"
+  },
+
+  "Cases": {
+    "Text": "Cases"
+  },
+
+  "CitedWith": {
+    "Text": "Cited With"
+  },
+
+  "CitingReferences": {
+    "Text": "Citing References"
+  },
+
+  "CitingReferencesFrench": {
+    "Text": "Références citant"
+  },
+
+  "Commentary": {
+    "Text": "Commentary"
+  },
+
+  "Compliance": {
+    "Text": "Compliance"
+  },
+
+  "CourtDocs": {
+    "Text": "Court Docs"
+  },
+
+  "Document": {
+    "Text": "Document"
+  },
+
+  "Drawings": {
+    "Text": "Drawings"
+  },
+
+  "Exhibits": {
+    "Text": "Exhibits"
+  },
+
+  "Experts": {
+    "Text": "Experts"
+  },
+
+  "FamilyTree": {
+    "Text": "Family Tree"
+  },
+
+  "FileHistoryTsdr": {
+    "Text": "File History (TSDR)"
+  },
+
+  "FileHistoryPair": {
+    "Text": "File History (PAIR)"
+  },
+
+  "Filing": {
+    "Text": "Filing"
+  },
+
+  "Filings": {
+    "Text": "Filings"
+  },
+
+  "GovernmentDocuments": {
+    "Text": "Government Documents"
+  },
+
+  "History": {
+    "Text": "History"
+  },
+
+  "HistoryAndTreatments": {
+    "Text": "History & Treatments"
+  },
+
+  "HistoryFrench": {
+    "Text": "Historique"
+  },
+
+  "JudicialConsideration": {
+    "Text": "Judicial Consideration"
+  },
+
+  "LegalMemos": {
+    "Text": "Legal Memos"
+  },
+
+  "Legislation": {
+    "Text": "Legislation"
+  },
+
+  "OfferingSummary": {
+    "Text": "Offering Summary"
+  },
+
+  "Original": {
+    "Text": "Original"
+  },
+
+  "References": {
+    "Text": "References"
+  },
+
+  "ReferencesCitee": {
+    "Text": "Références citées"
+  },
+
+  "ReferenceMaterial": {
+    "Text": "Reference Material"
+  },
+
+  "RelatedOpinions": {
+    "Text": "Related Opinions/Dockets"
+  },
+
+  "Report": {
+    "Text": "Report"
+  },
+
+  "Reports": {
+    "Text": "Reports"
+  },
+
+  "Revised": {
+    "Text": "Revised"
+  },
+
+  "TableOfContents": {
+    "Text": "Table of Contents"
+  },
+
+  "TableOfAuthorities": {
+    "Text": "Table of Authorities"
+  },
+
+  "BillActivity": {
+    "Text": "Bill Activity"
+  },
+
+  "MaTransaction": {
+    "Text": "M&A Transactions"
+  },
+
+  "MoreLikeThis": {
+    "Text": "More Like This"
+  },
+
+  "MedicalReferences": {
+    "Text": "Medical References"
+  },
+
+  "NegativeTreatment": {
+    "Text": "Negative Treatment"
+  },
+
+  "ContextAnalysis": {
+    "Text": "Context & Analysis"
+  },
+
+  "NotesOfDecisions": {
+    "Text": "Notes of Decisions"
+  },
+
+  "NotesOfDecision": {
+    "Text": "Notes of Decision"
+  },
+
+  "StatsAffected": {
+    "Text": "Statutes Affected"
+  },
+
+  "BillDraft": {
+    "Text": "Bill Drafts"
+  },
+
+  "BillTracking": {
+    "Text": "Bill Tracking"
+  },
+
+  "LegislativeHistoryMaterials": {
+    "Text": "Legislative History Materials"
+  },
+
+  "PeInvestments": {
+    "Text": "PE Investments"
+  },
+
+  "PeFundsAndFirms": {
+    "Text": "PE Funds & Firms"
+  },
+
+  "RulesAffected": {
+    "Text": "Rules Affected"
+  },
+
+  "IpTools": {
+    "Text": "IP Tools"
+  },
+
+  "SecondarySources": {
+    "Text": "Secondary Sources"
+  },
+  "WebAnalytics": {
+    "Text": "Web Analytics"
+  }
+}

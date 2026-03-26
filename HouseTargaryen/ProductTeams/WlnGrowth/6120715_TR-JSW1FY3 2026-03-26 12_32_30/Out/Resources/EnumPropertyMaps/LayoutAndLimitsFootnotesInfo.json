@@ -1,0 +1,10 @@
+{
+  // Maps LayoutAndLimitsFootnotes to WebElementInfo
+  "EndOfDocument": {
+    "Text": "End of Document"
+  },
+
+  "Inline": {
+    "Text": "Inline"
+  }
+ }

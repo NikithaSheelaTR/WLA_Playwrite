@@ -1,0 +1,19 @@
+﻿{
+  // Maps KeyCiteFlag to WebElementInfo
+  "CourtLevel": {
+    "LocatorString": "//ul[@aria-label='Sort by']/li/span[text()='Court level']",
+    "Text": "Court level"
+  },
+  "Date": {
+    "LocatorString": "//ul[@aria-label='Sort by']/li/span[text()='Date']",
+    "Text": "Date"
+  },
+  "MostCited": {
+    "LocatorString": "//ul[@aria-label='Sort by']/li/span[text()='Most Cited']",
+    "Text": "Most Cited"
+  },
+  "Relevance": {
+    "LocatorString": "//ul[@aria-label='Sort by']/li/span[text()='Relevance']",
+    "Text": "Relevance"
+  }
+}

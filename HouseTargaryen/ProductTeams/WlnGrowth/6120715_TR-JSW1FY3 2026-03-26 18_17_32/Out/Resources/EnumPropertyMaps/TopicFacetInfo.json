@@ -1,0 +1,51 @@
+﻿{
+  // Maps TopicFacet to BaseTextModel
+  "AdministrativeLaw": {
+    "Text": "Administrative Law"
+  },
+  "AdmiraltyAndMaritime": {
+    "Text": "Admiralty & Maritime"
+  },
+  "Antitrust": {
+    "Text": "Antitrust"
+  },
+  "Civil": {
+    "Text": "Civil"
+  },
+  "Commercial": {
+    "Text": "Commercial"
+  },
+  "CommercialLaw": {
+    "Text": "Commercial Law"
+  },
+  "Corporations": {
+    "Text": "Corporations"
+  },
+  "Criminal": {
+    "Text": "Criminal"
+  },
+  "FamilyLaw": {
+    "Text": "Family Law"
+  },
+  "FinanceAndBanking": {
+    "Text": "Finance & Banking"
+  },
+  "Immigration": {
+    "Text": "Immigration"
+  },
+  "IntellectualProperty": {
+    "Text": "Intellectual Property"
+  },
+  "LaborAndEmployment": {
+    "Text": "Labor & Employment"
+  },
+  "PersonalInjury": {
+    "Text": "Personal Injury"
+  },
+  "RealProperty": {
+    "Text": "Real Property"
+  },
+  "Tax": {
+    "Text": "Tax"
+  }
+}

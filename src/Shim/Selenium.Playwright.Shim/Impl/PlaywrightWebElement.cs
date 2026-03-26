@@ -165,9 +165,17 @@ namespace Selenium.Playwright.Shim.Impl
 
         public IWebElement FindElement(By by)
         {
+            // Handle custom By subclasses (e.g. ByChained) that override FindElement
+            if (by.Mechanism == null)
+            {
+                PlaywrightWebDriver.Trace($"WebElement.FindElement delegating to custom By: {by}");
+                return by.FindElement(this);
+            }
+
             var locatorStr = ByConverter.ToPlaywrightLocator(by);
             var scoped = Locator.Locator(locatorStr);
             var count = SyncHelper.RunSync(() => scoped.CountAsync());
+            PlaywrightWebDriver.Trace($"WebElement.FindElement: by={by}, locator='{locatorStr}', count={count}");
             if (count == 0)
                 throw new NoSuchElementException($"Unable to locate element: {by}");
             return new PlaywrightWebElement(scoped.First, _driver);
@@ -175,6 +183,10 @@ namespace Selenium.Playwright.Shim.Impl
 
         public ReadOnlyCollection<IWebElement> FindElements(By by)
         {
+            // Handle custom By subclasses (e.g. ByChained) that override FindElements
+            if (by.Mechanism == null)
+                return by.FindElements(this);
+
             var locatorStr = ByConverter.ToPlaywrightLocator(by);
             var scoped = Locator.Locator(locatorStr);
             var count = SyncHelper.RunSync(() => scoped.CountAsync());

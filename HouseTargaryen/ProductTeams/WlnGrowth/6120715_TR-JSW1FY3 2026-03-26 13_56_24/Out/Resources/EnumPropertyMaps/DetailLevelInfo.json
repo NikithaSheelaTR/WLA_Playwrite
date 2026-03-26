@@ -1,0 +1,15 @@
+{
+  // Maps DetailLevel to WebElementInfo
+  "LessDetail": {
+    "LocatorString": ".//li//*[contains(text(),'Less Detail')] | .//*[contains(text(),'Less detail')] | .//*[contains(text(),'Moins de détails')]",
+    "Text": "Less Detail"
+  },
+  "MoreDetail": {
+    "LocatorString": ".//li//*[contains(text(),'More Detail')] | .//*[contains(text(),'More detail')] | .//*[contains(text(),'Plus de détails')]",
+    "Text": "More Detail"
+  },
+  "MostDetail": {
+    "LocatorString": ".//li//*[contains(text(),'Most Detail')] | .//*[contains(text(),'Most detail')] | .//*[contains(text(),'Le maximum de détails')]",
+    "Text": "Most Detail"
+  }
+}

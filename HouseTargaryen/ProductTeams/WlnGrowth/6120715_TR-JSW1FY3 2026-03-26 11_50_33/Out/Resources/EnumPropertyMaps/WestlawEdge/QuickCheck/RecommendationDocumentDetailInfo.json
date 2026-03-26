@@ -1,0 +1,11 @@
+﻿{
+  // Maps RecommendationDocumentDetailInfo
+  "MotionType": {
+    "LocatorString": ".//b[contains(text(), 'Motion type:')]/parent::li",
+    "Text": "Motion type: "
+  },
+  "MovantAtTrialLevel": {
+    "LocatorString": ".//b[contains(text(), 'Movant at trial level:')]/parent::li",
+    "Text": "Movant at trial level: "
+  }
+}

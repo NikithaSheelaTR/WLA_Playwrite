@@ -1,0 +1,33 @@
+﻿{
+  // Maps BrowserEnum to WebElementInfo
+  "AllContent": {
+    "Text": "All Content",
+    "LocatorString": "//*[@id='co_browseWidgetTab1']",
+    "Id": "co_browseWidgetTab1"
+  },
+  "FederalMaterials": {
+    "Text": "Federal Materials",
+    "LocatorString": "//*[@id='co_browseWidgetTab2']",
+    "Id": "co_browseWidgetTab2"
+  },
+  "FindAndKeyCite": {
+    "Text": "Find & KeyCite",
+    "LocatorString": "",
+    "Id": ""
+  },
+  "StateMaterials": {
+    "Text": "State Materials",
+    "LocatorString": "//*[@id='co_browseWidgetTab3']",
+    "Id": "co_browseWidgetTab3"
+  },
+  "PracticeAreas": {
+    "Text": "Practice Areas",
+    "LocatorString": "//*[@id='co_browseWidgetTab4']",
+    "Id": "co_browseWidgetTab4"
+  },
+  "Tools": {
+    "Text": "Tools",
+    "LocatorString": "//*[@id='co_browseWidgetTab5']",
+    "Id": "co_browseWidgetTab5"
+  }
+}

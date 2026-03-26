@@ -1,0 +1,45 @@
+{
+  // Maps ReferenceGridColumns to WebElementInfo
+  "AbridgmentClassifications": {
+    "LocatorMask": "{0}//th[@class='co_detailsTable_topics' and (text() = 'Abridgment Classifications' or text()=\"Classifications d'Abridgment\")]"
+  },
+  "SelectAll": {
+    "LocatorMask": "{0}//th[@class='co_detailsTable_select']"
+  },
+  "Treatment": {
+    "LocatorMask": "{0}//th[@class='co_detailsTable_treatment' and (text() = 'Treatment' or text()='Interprétation')]"
+  },
+  "Title": {
+    "LocatorMask": "{0}//th[text() = 'Title' or text() = 'Titre']"
+  },
+  "DateTitle": {
+    "LocatorMask": "{0}//*[text() = 'Date']"
+  },
+  "Date": {
+    "LocatorMask": "{0}//th[contains(@class, 'co_detailsTable_date')]"
+  },
+  "Type": {
+    "LocatorMask": "{0}//th[@class='co_detailsTable_type' and text() = 'Type']"
+  },
+  "Depth": {
+    "LocatorMask": "{0}//th[contains(@class, 'co_detailsTable_depth')]"
+  },
+  "Headnotes": {
+    "LocatorMask": "{0}//th[@class='co_detailsTable_headnotes' and text() = 'Headnote(s)']"
+  },
+  "LegislativeSubsectionOrClauseCited": {
+    "LocatorMask": "{0}//th[contains(@class, 'co_detailsTable_subsection sortable ascending')]"
+  },
+  "NotesOfDecisionTopics": {
+    "LocatorMask": "{0}//th[@class='co_detailsTable_topics' and text()='NOD Topics']"
+  },
+  "Court": {
+    "LocatorMask": "{0}//th[@class='co_detailsTable_court' and text() = 'Court']"
+  },
+  "Pdf": {
+    "LocatorMask": "{0}//th[@class='co_detailsTable_pdf' and text() = 'PDF']"
+  },
+  "Digest": {
+    "LocatorMask": "{0}//th[@class='co_detailsTable_headnotes' and text() = 'Digest']"
+  }
+}

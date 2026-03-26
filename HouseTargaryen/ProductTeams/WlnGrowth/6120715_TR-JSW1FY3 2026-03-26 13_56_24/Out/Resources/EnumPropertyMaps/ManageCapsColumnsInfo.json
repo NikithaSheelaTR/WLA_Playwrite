@@ -1,0 +1,24 @@
+﻿// Maps ManageCapsColumns to WebElementInfo
+{
+  "BeginDate": {
+    "LocatorString": "//a[text()='Begin Date']"
+  },
+  "AccountLocation": {
+    "LocatorString": "//a[text()='Account/Location']"
+  },
+  "CapAmount": {
+    "LocatorString": "//a[text()='Cap Amount']"
+  },
+  "CapName": {
+    "LocatorString": "//a[text()='Cap Name']"
+  },
+  "CapType": {
+    "LocatorString": "//a[text()='Cap Type']"
+  },
+  "ClientId": {
+    "LocatorString": "//a[text()='Client ID']"
+  },
+  "EndDate": {
+    "LocatorString": "//a[text()='End Date']"
+  }
+}

@@ -1,0 +1,27 @@
+﻿{
+  // Maps AnalyticsClientValidationOptions to WebElementInfo
+  "AllowAttorneysSubmitResearch": {
+    "Text": "Allow attorneys to submit a Research Description with their research.",
+    "LocatorString": "//input[@id='enableResearchDescription']"
+  },
+  "AllowAttorneysToMarkResearch": {
+    "Text": "Allow attorneys to mark their research as \"Chargeable to Client\" or \"Not Chargeable to Client\".",
+    "LocatorString": "//input[@id='enableNonChargeableCheckbox']"
+  },
+  "AllowUsersToModify": {
+    "Text": "Allow Users to Modify",
+    "LocatorString": "//ul[contains(@class,'Column') and not(contains(@style,'display: none'))]//*[@id='allowDefaultClientIdModification']"
+  },
+  "EnablePracticeAreaDesignations": {
+    "Text": "Enable Practice Area Designations for attorneys.",
+    "LocatorString": "//*[@id='enablePracticeAreas']"
+  },
+  "EnableUploadedClientMatters": {
+    "Text": "Enable the use of Clients and Matters uploaded in Analytics.",
+    "LocatorString": "//input[@id='enableUploadedClientMatters']"
+  },
+  "SuspendClientValidation": {
+    "Text": "Suspend Client Validation",
+    "LocatorString": "//ul[contains(@class,'Column') and not(contains(@style,'display: none'))]//*[@id='clientValidationSuspended']"
+  }
+}

@@ -1,0 +1,26 @@
+﻿{
+  "BillDrafts": {
+    "Id": "subItem_kcBillDrafts",
+	"Text": "Bill Drafts"
+  },
+  "EditorsAndRevisorsNotes": {
+    "Id": "subItem_riEditorialMaterials",
+	"Text": "Editor's and Revisor's Notes"
+  },
+  "GraphicalStatute": {
+    "Id": "subItem_riLegislativeTimeline",
+    "Text": "Graphical Statute"
+  },
+  "LegislativeHistoryMaterials": {
+    "Id": "subItem_kcLegislativeMaterials",
+    "Text": "Legislative History Materials"
+  },
+  "Validity": {
+    "Id": "subItem_kcValidity",
+    "Text": "Validity"
+  },
+  "Versions": {
+    "Id": "subItem_riVersions",
+    "Text": "Versions"
+  }
+}

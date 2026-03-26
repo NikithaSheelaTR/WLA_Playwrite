@@ -1,0 +1,27 @@
+{
+  // Maps AnzHomeTrackerAnalytics to WebElementInfo
+  "AccidentCompensationTracker": {
+    "LocatorString": ".//*[contains(@class,'Access-point-content')]//a[contains(text(), 'Accident Compensation Tracker')]",
+    "Text": "Accident Compensation Tracker"
+  },
+  "OSHTracker": {
+    "LocatorString": ".//*[contains(@class,'Access-point-content')]//a[contains(text(), 'OSH Tracker')]",
+    "Text": "OSH Tracker"
+  },
+  "PersonalGrievanceTracker": {
+    "LocatorString": ".//*[contains(@class,'Access-point-content')]//a[contains(text(), 'Personal Grievance Tracker')]",
+    "Text": "Personal Grievance Tracker"
+  },
+  "ResourceManagementTracker": {
+    "LocatorString": ".//*[contains(@class,'Access-point-content')]//a[contains(text(), 'Resource Management Tracker')]",
+    "Text": "Resource Management Tracker"
+  },
+  "SentencingTracker": {
+    "LocatorString": ".//*[contains(@class,'Access-point-content')]//a[contains(text(), 'Sentencing Tracker')]",
+    "Text": "Sentencing Tracker"
+  },
+  "WorkplaceComplaintsTracker": {
+    "LocatorString": ".//*[contains(@class,'Access-point-content')]//a[contains(text(), 'Workplace Complaints Tracker')]",
+    "Text": "Workplace Complaints Tracker"
+  }
+}

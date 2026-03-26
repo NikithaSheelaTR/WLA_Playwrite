@@ -10,7 +10,9 @@
     public class WlaAjsQueryBoxComponent : AiJurisdictionalSurveysQueryBoxComponent
     {
         private static readonly By IncludeCasesCheckboxLocator = By.XPath(".//saf-checkbox[contains(@class,'checkbox--YwWgEE4YlyhJDHoZZlD8')]");
-        private const string IncludeCasesCheckboxScript = "return(arguments[0].shadowRoot.querySelector('input[id=control]'));";
+        private const string IncludeCasesCheckedScript = "return arguments[0].shadowRoot.querySelector('input[id=control]').getAttribute('aria-checked');";
+        private const string IncludeCasesClickScript = "arguments[0].shadowRoot.querySelector('input[id=control]').click();";
+
 
         /// <summary>
         /// Check if Include cases in state juris is selected
@@ -19,9 +21,9 @@
         public bool IsIncludeCasesSelected()
         {
             IWebElement includeCasesElement = DriverExtensions.GetElement(IncludeCasesCheckboxLocator);
-            IWebElement includeCasesCheckbox = (IWebElement)DriverExtensions.ExecuteScript(IncludeCasesCheckboxScript, includeCasesElement);
+            var ariaChecked = (string)DriverExtensions.ExecuteScript(IncludeCasesCheckedScript, includeCasesElement);
 
-            return includeCasesCheckbox.GetAttribute("aria-checked").Contains("true");
+            return ariaChecked != null && ariaChecked.Contains("true");
         }
 
         /// <summary>
@@ -32,8 +34,7 @@
             if (!IsIncludeCasesSelected())
             {
                 IWebElement includeCasesElement = DriverExtensions.GetElement(IncludeCasesCheckboxLocator);
-                IWebElement includeCasesCheckbox = (IWebElement)DriverExtensions.ExecuteScript(IncludeCasesCheckboxScript, includeCasesElement);
-                includeCasesCheckbox.Click();
+                DriverExtensions.ExecuteScript(IncludeCasesClickScript, includeCasesElement);
             }
         }
     }

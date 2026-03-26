@@ -1,0 +1,23 @@
+﻿{
+  // Maps DocumentListHeadersInfo to WebElementInfo
+  "CheckAll": {
+    "LocatorString": "//table[contains(@class, 'co_documentReportTable')]/tbody//td[./input[@type='checkbox']]",
+    "Text": ""
+  },
+  "CountyDistrict": {
+    "LocatorString": "//table[contains(@class, 'co_documentReportTable')]/tbody//td[@class='co_documentReportTable_county ng-binding']",
+    "Text": "County/District"
+  },
+  "Date": {
+    "LocatorString": "//table[contains(@class, 'co_documentReportTable')]/tbody//td[@class='co_documentReportTable_date ng-binding']",
+    "Text": "Date"
+  },
+  "PlaintiffDefendant": {
+    "LocatorString": "//table[contains(@class, 'co_documentReportTable')]/tbody//td[@class='co_documentReportTable_awardType ng-binding']",
+    "Text": "Plaintiff/Defendant"
+  },
+  "Title": {
+    "LocatorString": "//table[contains(@class, 'co_documentReportTable')]/tbody//td[./a[contains(@id, 'cobalt_result_docket_title')]]",
+    "Text": "Title"
+  }
+}

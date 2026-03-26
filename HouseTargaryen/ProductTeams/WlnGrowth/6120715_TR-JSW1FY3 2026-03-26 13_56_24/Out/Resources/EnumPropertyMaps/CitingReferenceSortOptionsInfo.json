@@ -1,0 +1,30 @@
+﻿{
+  // Maps CitingReferenceSortOptions to WebElementInfo
+  "CourtLevel" : {
+    "Text":  "Court Level" 
+  },
+  "DateNewestFirst": {
+    "Text": "Date: Newest First"
+  },
+  "DateOldestFirst": {
+    "Text": "Date: Oldest First"
+  },
+  "DepthHighestFirst": {
+    "Text": "Depth: Highest First"
+  },
+  "DepthLowestFirst": {
+    "Text": "Depth: Lowest First"
+  },
+  "Relevance": {
+    "Text": "Relevance"
+  },
+  "TitleAZ": {
+    "Text": "Title: A-Z"
+  },
+  "TitleZA": {
+    "Text": "Title: Z-A"
+  },
+  "TreatmentType": {
+    "Text": "Treatment Type"
+  }
+}

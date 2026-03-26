@@ -1,0 +1,19 @@
+{
+  // Maps SearchResultSource to BaseTextModel
+  "AllCases": { "Text": "ALL_CASES" },
+  "BriefJuris": { "Text": "BRIEF_JURIS" },
+  "CasesJuris": { "Text": "CASES_JURIS" },
+  "CaseFinder": { "Text": "CASE_FINDER" },
+  "ColdStart": { "Text": "COLD_START" },
+  "FermiDiscovered": { "Text": "FERMIDISCOVERED" },
+  "FermiSeed": { "Text": "FERMISEED" },
+  "KeyNumberFinder": { "Text": "KEY_NUMBER_FINDER" },
+  "Longtail": { "Text": "LONGTAIL" },
+  "Lost": { "Text": "LOST" },
+  "OldCaseReranked": { "Text": "OLD_CASE_RERANKED" },
+  "PartyName": { "Text": "PARTYNAME" },
+  "PassThrough": { "Text": "NOVUS_PASSTHROUGH" },
+  "StatutesJuris": { "Text": "STATUTES_JURIS" },
+  "StateTrialCourtJuris": { "Text": "STATE_TRIAL_COURT_JURIS" },
+  "TrialCourtJuris": { "Text": "TRIAL_COURT_JURIS" }
+}

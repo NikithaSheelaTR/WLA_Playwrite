@@ -1,0 +1,22 @@
+{
+  // Maps DeliveryMethodOptions to WebElementInfo
+  "Email": {
+    "Id": "co_documentOrderingDeliveredByEmail",
+    "Text": "Email"
+  },
+
+  "Fax": {
+    "Id": "co_documentOrderingDeliveredByFax",
+    "Text": "Fax"
+  },
+
+  "FirstClassMail": {
+    "Id": "co_documentOrderingDeliveredByMail",
+    "Text": "First Class Mail"
+  },
+
+  "OvernightCourier": {
+    "Id": "co_documentOrderingDeliveredByOvernight",
+    "Text": "Overnight Carrier"
+  }
+}

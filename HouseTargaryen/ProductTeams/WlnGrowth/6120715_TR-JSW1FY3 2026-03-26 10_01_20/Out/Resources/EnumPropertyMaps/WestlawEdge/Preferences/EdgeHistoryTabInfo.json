@@ -1,0 +1,21 @@
+﻿{
+  // Maps IndigoHistoryTab to WebElementInfo
+  "AttachmentFormatDocRadioButton": {
+    "LocatorString": "//input[@value='Doc']"
+  },
+  "AttachmentFormatPdfRadioButton": {
+    "LocatorString": "//input[@value='Pdf']"
+  },
+  "AttachmentFormatWordPerfectRadioButton": {
+    "LocatorString": "//input[@value='Wpd']"
+  },
+  "AttachmentFormatWordProcessorRtfRadioButton": {
+    "LocatorString": "//input[@value='Rtf']"
+  },
+  "EmailDetailedSessionSummaryCheckbox": {
+    "LocatorString": "//input[./parent::label/span[contains(.,'Email detailed')]]"
+  },
+  "EmailSessionSummaryToTextbox": {
+    "LocatorString": "//input[./parent::label/span[text()='Email']]"
+  }
+}

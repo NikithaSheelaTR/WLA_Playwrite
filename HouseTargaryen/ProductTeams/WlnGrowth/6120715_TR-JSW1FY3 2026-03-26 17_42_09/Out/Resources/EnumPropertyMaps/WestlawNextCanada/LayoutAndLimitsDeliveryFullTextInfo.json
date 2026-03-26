@@ -1,0 +1,11 @@
+﻿{
+  "No": {
+    "Id": "coid_delivery_DeliverFullTextDecisionOnlyNoOption",
+    "Text": "No – Select material"
+  },
+
+  "Yes": {
+    "Id": "coid_delivery_DeliverFullTextDecisionOnlyYesOption",
+    "Text": "Yes – Decision only. No headers, footers or additional material"
+  }
+}

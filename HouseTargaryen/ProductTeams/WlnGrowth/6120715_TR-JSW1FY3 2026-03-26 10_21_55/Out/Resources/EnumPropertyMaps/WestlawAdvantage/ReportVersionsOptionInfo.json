@@ -1,0 +1,14 @@
+﻿{
+  "FirstVersion": {
+    "Text": "Version 1",
+    "LocatorString": ".//saf-option-v3[contains(@class, 'AnswerVersionSelector') and contains(@aria-posinset,'1')]"
+  },
+  "SecondVersion": {
+    "Text": "Version 2",
+    "LocatorString": ".//saf-option-v3[contains(@class, 'AnswerVersionSelector') and contains(@aria-posinset,'2')]"
+  },
+  "ThirdVersion": {
+    "Text": "Version 3",
+    "LocatorString": ".//saf-option-v3[contains(@class, 'AnswerVersionSelector') and contains(@aria-posinset,'3')]"
+  }
+}

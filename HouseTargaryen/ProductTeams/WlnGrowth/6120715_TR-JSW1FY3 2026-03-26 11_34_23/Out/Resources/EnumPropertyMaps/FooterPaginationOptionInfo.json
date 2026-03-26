@@ -1,0 +1,18 @@
+{
+  "FirstPage": {
+    "ClassName": "co_first",
+    "Text": "First Page"
+  },
+  "PreviousPage": {
+    "ClassName": "co_prev",
+    "Text": "Previous Page"
+  },
+  "NextPage": {
+    "ClassName": "co_next",
+    "Text": "Next Page"
+  },
+  "LastPage": {
+    "ClassName": "co_last",
+    "Text": "Last Page"
+  }  
+}

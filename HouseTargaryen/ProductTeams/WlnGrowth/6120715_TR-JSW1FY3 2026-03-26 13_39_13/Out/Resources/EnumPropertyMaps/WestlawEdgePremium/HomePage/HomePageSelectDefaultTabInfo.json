@@ -1,0 +1,11 @@
+﻿{
+    // Maps History tabs to WebElementInfo
+  "ForMe": {
+    "LocatorString": "//*[@id='tab_userTab']",
+    "Text": "For me"
+  },
+  "ForMyOrganization": {
+    "LocatorString": "//*[@id='tab_firmTab']",
+    "Text": "For my organization"
+  }
+}

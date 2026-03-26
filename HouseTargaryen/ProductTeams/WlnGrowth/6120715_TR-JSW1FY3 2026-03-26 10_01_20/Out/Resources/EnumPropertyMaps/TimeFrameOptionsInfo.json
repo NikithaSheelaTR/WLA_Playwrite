@@ -1,0 +1,15 @@
+{
+  // Maps TimeFrameOptions to WebElementInfo
+  "DailyCap": {
+    "Text": "Daily Cap"
+  },
+  "MonthlyCap": {
+    "Text": "Monthly Cap"
+  },
+  "TimedCap": {
+    "Text": "Timed Cap"
+  },
+  "WeeklyCap": {
+    "Text": "Weekly Cap"
+  }
+}

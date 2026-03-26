@@ -1,0 +1,60 @@
+﻿{
+  // Maps CopyWithReference to WebElementInfo
+  "AddHyperlinkToCitation": {
+    "LocatorString": "//input[contains(@id,'coid_CitationIncludeHyperlinkReference')]"
+  },
+  "AddQuotationsAroundCopiedText": {
+    "LocatorString": "//input[contains(@id, 'coid_CitationQuotationsAroundCopiedText')]"
+  },
+  "AllowCiteAdvisor": {
+    "LocatorString": "//input[@value='CAFormat']"
+  },
+  "CitationFormat": {
+    "LocatorString": "//select[preceding-sibling::label/span[text()='Citation format']]"
+  },
+  "IncludeOneCitationPerAuthorityOfficalReporter": {
+    "LocatorString": "//input[@value='officialReporterOnly']"
+  },
+  "IncludeOneCitationPerAuthorityNationalReporter": {
+    "LocatorString": "//input[@value='westReporterOnly']"
+  },
+  "IncludeSubsequentHistory": {
+    "LocatorString": "//input[@type='checkbox' and ./parent::label/span[text()='Include subsequent history']]"
+  },
+  "IncludeCitationsToAllReporters": {
+    "LocatorString": "//input[@value='allReporter']"
+  },
+  "ItalicizeCitation": {
+    "LocatorString": "//input[@type='checkbox' and ./parent::label/span[contains(.,'Italicize appropriate citation')]]"
+  },
+  "LawReviews": {
+    "LocatorString": "//input[@value='LawReviews']"
+  },
+  "LegalBriefs": {
+    "LocatorString": "//input[@value='LegalBriefs']"
+  },
+  "ReferenceSameLineFollowingText": {
+    "LocatorString": "//input[@value='sameLineFollowingText']"
+  },
+  "ReferenceSeparateLineFollowingText": {
+    "LocatorString": "//input[@value='includeSeparateLineFollowingText']"
+  },
+  "ReferenceSeparateLinePrecedingText": {
+    "LocatorString": "//input[@value='includeSeparateLinePrecedingText']"
+  },
+  "UnderlineCitation": {
+    "LocatorString": "//input[@type='checkbox' and ./parent::label/span[contains(.,'Underline appropriate citation')]]"
+  },
+  "LineOptionsHeader": {
+    "LocatorString": "//span[@class='UserSettings-section-title' and text()='Line Options']"
+  },
+  "SeparateLineFollowingText": {
+    "LocatorString": "//input[@value='separateLineFollowingText' and @name='radioGroupName_CitationReferenceLineOptions']"
+  },
+  "SeparateLinePrecedingText": {
+    "LocatorString": "//input[@value='separateLinePrecedingText' and @name='radioGroupName_CitationReferenceLineOptions']"
+  },
+  "AddHeader": {
+    "LocatorString": "//span[@class='UserSettings-section-title' and text()='Add']"
+  }
+}

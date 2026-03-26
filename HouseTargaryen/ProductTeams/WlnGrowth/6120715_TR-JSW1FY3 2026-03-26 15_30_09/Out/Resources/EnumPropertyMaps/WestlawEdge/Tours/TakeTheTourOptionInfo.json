@@ -1,0 +1,15 @@
+{
+  // Maps TakeTheTourOption to WebElementInfo
+  "DontShowMeThis": {
+    "LocatorString": ".//a[@id='coid_doNotShowButton']",
+    "Text": "Don't show me this"
+  },
+  "MayBeLater": {
+    "LocatorString": ".//a[@id='coid_cancelButton']",
+    "Text": "May be later"
+  },
+  "TakeTheTour": {
+    "LocatorString": ".//input[@id='coid_confirmButton']",
+    "Text": "Take the tour"
+  }
+}

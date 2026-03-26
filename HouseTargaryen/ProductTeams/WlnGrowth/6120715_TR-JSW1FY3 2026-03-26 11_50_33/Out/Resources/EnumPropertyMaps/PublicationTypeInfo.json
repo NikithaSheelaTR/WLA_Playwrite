@@ -1,0 +1,51 @@
+{
+  // Maps PublicationType to BaseTextModel
+  "AmericanLawReports": {
+    "Text": "ALR"
+  },
+  "CLESeminarMaterials": {
+    "Text": "CLE & Seminar Materials"
+  },
+  "FiftyStateSurveys": {
+    "Text": "50 State Surveys"
+  },
+  "FiftyStateSurveysRegulations": {
+    "Text": "50 State Surveys: Regulations"
+  },
+  "FiftyStateSurveysStatutes": {
+    "Text": "50 State Surveys: Statutes"
+  },
+  "Forms": {
+    "Text": "Forms"
+  },
+  "JurisprudenceAndEncyclopedias": {
+    "Text": "Jurisprudence & Encyclopedias"
+  },
+  "JuryInstructions": {
+    "Text": "Jury Instructions"
+  },
+  "KeyRules": {
+    "Text": "KeyRules"
+  },
+  "LawReviewsAndJournals": {
+    "Text": "Law Reviews & Journals"
+  },
+  "LegalNewspapersAndNewsletters": {
+    "Text": "Legal Newspapers & Newsletters"
+  },
+  "PersonalInjury": {
+    "Text": "Personal Injury"
+  },
+  "RestatementsPrinciplesOfTheLaw": {
+    "Text": "Restatements & Principles of the Law"
+  },
+  "TextsAndTreatises": {
+    "Text": "Texts & Treatises"
+  },
+  "UniformLawsAnnotatedULA": {
+    "Text": "Uniform Laws Annotated (ULA)"
+  },
+  "WoltersKluwerCCH": {
+    "Text": "Wolters Kluwer (CCH)"
+  }
+}

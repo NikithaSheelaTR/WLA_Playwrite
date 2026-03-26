@@ -1,0 +1,15 @@
+﻿{
+  // Maps CourtLevel to WebElementInfo
+  "Trial": {
+    "LocatorString": ".//li[./span[.='Trial']]",
+    "Text": "Trial"
+  },
+  "HighestAppellate": {
+    "LocatorString": ".//li[./span[.='Highest appellate']]",
+    "Text": "Highest Appellate"
+  },
+  "IntermediateAppellate": {
+    "LocatorString": ".//li[./span[.='Intermediate appellate']]",
+    "Text": "Intermediate Appellate"
+  }
+}

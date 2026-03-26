@@ -1,0 +1,9 @@
+{
+  // Maps ImportUser to WebElementInfo
+  "Delivery": { "LocatorString": "#co_GatherCheck" },
+  "Favorites": { "LocatorString": "#co_FavoritesCheck" },
+  "Folders": { "LocatorString": "#co_FoldersCheck" },
+  "Highlighting": { "LocatorString": "#co_HighlightingCheck" },
+  "History": { "LocatorString": "#co_HistoryCheck" },
+  "Notes": { "LocatorString": "#co_NotesCheck" }
+}

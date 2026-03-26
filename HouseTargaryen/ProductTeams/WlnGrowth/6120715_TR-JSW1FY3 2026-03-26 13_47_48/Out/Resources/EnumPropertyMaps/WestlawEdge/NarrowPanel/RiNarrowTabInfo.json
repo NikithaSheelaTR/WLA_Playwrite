@@ -1,0 +1,13 @@
+﻿{ 
+  // Maps RiNarrowTab to WebElementInfo
+  "RiContentTypes": {
+    "Id": "tab_ContentTypes",
+    "LocatorString": "//ul[@class='Tab-list']//*[text()='Content types']",
+    "Text": "Content types"
+  },
+  "RiFilters": {
+    "Id": "tab_Filters",
+    "LocatorString": "//ul[@class='Tab-list']//*[text()='Filters']",
+    "Text": "Filters"
+  }
+}

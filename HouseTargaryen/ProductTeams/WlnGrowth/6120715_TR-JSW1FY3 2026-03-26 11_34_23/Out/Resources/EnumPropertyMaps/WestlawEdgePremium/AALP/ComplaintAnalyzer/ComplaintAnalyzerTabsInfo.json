@@ -1,0 +1,11 @@
+{
+  // Maps ComplaintAnalyzerTabs to WebElementInfo
+    "UploadADocument": {
+        "Text": "Upload a document",
+        "LocatorString": ".//saf-tab-v3[@data-testid='upload-document-tab'] | .//saf-tab[@data-testid='upload-document-tab']"
+    },
+    "EnterComplaintText": {
+        "Text": "Enter complaint text",
+        "LocatorString": ".//saf-tab-v3[@data-testid='enter-complaint-text-tab'] | .//saf-tab[@data-testid='enter-complaint-text-tab']"
+    }
+}

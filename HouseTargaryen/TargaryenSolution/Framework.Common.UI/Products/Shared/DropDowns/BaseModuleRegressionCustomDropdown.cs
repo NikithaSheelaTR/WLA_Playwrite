@@ -122,7 +122,7 @@
         /// <returns></returns>
         protected virtual bool IsDropdownExpanded()
         {
-            string dropdownClass = DriverExtensions.GetElement(this.Dropdown).GetAttribute("class");
+            string dropdownClass = this.Dropdown.GetAttribute("class");
             return dropdownClass.Contains("Expanded", StringComparison.InvariantCultureIgnoreCase);
         }
 

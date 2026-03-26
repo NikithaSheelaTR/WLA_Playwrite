@@ -1,0 +1,11 @@
+﻿{
+  "CurrentDocument": {
+    "Id": "co_deliveryFromSingleDocument_0",
+    "Text": "Current Document"
+  },
+
+  "ResultList": {
+    "Id": "co_deliveryFromSearchResultList_1",
+    "Text": "Result List"
+  }
+}

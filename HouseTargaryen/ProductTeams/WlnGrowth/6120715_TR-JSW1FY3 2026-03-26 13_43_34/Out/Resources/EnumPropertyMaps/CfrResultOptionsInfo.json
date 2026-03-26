@@ -1,0 +1,11 @@
+﻿{
+	// Maps ResultOptions to WebElementInfo
+	"TextWithNotesOfDecision": {
+		"Text": "Text with Notes of Decision",
+		"Id": "coid_cfrFulltextDocuments"
+	},
+	"TextWithoutNotesOfDecision": {
+		"Text": "Text without Notes of Decision",
+		"Id": "coid_cfrStatutoryTextOnly"
+	}
+}

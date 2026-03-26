@@ -1,0 +1,14 @@
+﻿{
+  "FindAndPrint": {
+    "Id": "FindAndPrint"
+  },
+  "GlobalSearch": {
+    "Id": "Search"
+  },
+  "Links": {
+    "Id": "ContentLinks"
+  },
+  "FindByPartyName": {
+    "Id": "FindByPartyName"
+  }
+}

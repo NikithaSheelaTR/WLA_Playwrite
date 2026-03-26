@@ -1,0 +1,19 @@
+{
+  // Maps Outlines sort Orders to WebElementInfo
+  "DateAdded": {
+    "LocatorString": ".//li[contains(@id, 'dateAdded')]/span/span",
+    "Text": "Date added"
+  },
+  "LastUpdated": {
+    "LocatorString": ".//li[contains(@id, 'lastUpdated')]/span/span",
+    "Text": "Last updated"
+  },
+  "TitleA": {
+    "LocatorString": ".//li[contains(@id, 'titleAZ')]/span/span",
+    "Text": "Title A-Z"
+  },
+  "TitleZ": {
+    "LocatorString": ".//li[contains(@id, 'titleZA')]/span/span",
+    "Text": "Title Z-A"
+  }
+}

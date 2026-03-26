@@ -1,0 +1,20 @@
+{
+  "FiveYears": {
+    "Id": "5 years"
+  },
+  "ThreeYears" :{
+    "Id": "3 years"
+  },
+  "OneYear" : {
+    "Id": "1 year"
+  },
+  "SixMonths" : {
+    "Id": "6 year"
+  },
+  "ThreeMonths": {
+    "Id": "3 months"
+  },
+  "OneMonth" : {
+    "Id": "1 month"
+  }
+}

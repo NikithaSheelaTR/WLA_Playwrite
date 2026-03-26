@@ -1,0 +1,10 @@
+{
+  // Maps HeadnotesViewModes to WebElementInfo
+
+  "GridView": {
+    "LocatorString": "//button[@oldtitle='Grid View']"
+  },
+  "ListView": {
+    "LocatorString": "//button[@oldtitle='List View']"
+  }
+ }

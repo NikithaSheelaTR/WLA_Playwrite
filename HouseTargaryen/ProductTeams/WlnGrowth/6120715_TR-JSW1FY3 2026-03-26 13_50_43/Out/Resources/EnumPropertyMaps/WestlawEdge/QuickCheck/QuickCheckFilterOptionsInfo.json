@@ -1,0 +1,59 @@
+﻿{
+  // Maps DocAnalyzerReportTabs to WebElementInfo
+  "FrequentlyCited": {
+    "Text": "Frequently cited",
+    "LocatorString": ".//input[contains(@id, 'co_facetItem_tagscitedMoreOften')]",
+    "Id": "co_facetItem_tagscitedMoreOften"
+
+  },
+
+  "HigherCourt": {
+    "Text": "Higher court",
+    "LocatorString": ".//input[contains(@id, 'co_facetItem_tagshigherCourt')]",
+    "Id": "co_facetItem_tagshigherCourt"
+  },
+
+  "HideResultsViewed": {
+    "Text": "Results not viewed in last 30 days",
+    "LocatorString": ".//input[contains(@id, 'co_facetItem_previousUserInteractionsnotViewedRecently')]",
+    "Id": "co_facetItem_previousUserInteractionsnotViewedRecently"
+  },
+
+  "HideAnnotatedResults": {
+    "Text": "Hide annotated results",
+    "LocatorString": ".//input[contains(@id, 'co_facetItem_previousUserInteractionsnotAnnotated')]",
+    "Id": "co_facetItem_previousUserInteractionsnotAnnotated"
+  },
+
+  "HideFolderedResults": {
+    "Text": "Results not saved to folder",
+    "LocatorString": ".//input[contains(@id, 'co_facetItem_previousUserInteractionsnotFoldered')]",
+    "Id": "co_facetItem_previousUserInteractionsnotFoldered"
+  },
+
+  "ImpactsCitedCase": {
+    "Text": "Impacts cited cases",
+    "LocatorString": ".//input[contains(@id, 'co_facetItem_tagstriggeredRedFlag')]",
+    "Id": "co_facetItem_tagstriggeredRedFlag"
+  },
+
+  "MoreRecent": {
+    "Text": "More recent",
+    "LocatorString": ".//input[contains(@id, 'co_facetItem_tagsmoreRecent')]",
+    "Id": "co_facetItem_tagsmoreRecent"
+  },
+
+  "SameCourt": {
+    "Text": "Same court",
+    "LocatorString": ".//input[contains(@id, 'co_facetItem_tagssameCourt')]",
+    "Id": "co_facetItem_tagssameCourt"
+  },
+
+  "SameJudge": {
+    "Text": "Same judge",
+    "LocatorString": ".//input[contains(@id, 'co_facetItem_tagssameJudge')]",
+    "Id": "co_facetItem_tagssameJudge"
+  }
+}
+
+

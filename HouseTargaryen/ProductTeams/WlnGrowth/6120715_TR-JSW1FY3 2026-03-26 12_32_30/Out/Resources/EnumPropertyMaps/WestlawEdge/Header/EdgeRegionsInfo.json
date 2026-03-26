@@ -1,0 +1,27 @@
+{
+  // Maps EdgeRegionsEnum to WebElementInfo
+  "Asia": {
+    "Text": "Asia"
+  },
+  "Australia": {
+    "Text": "Australia"
+  },
+  "Canada": {
+    "Text": "Canada"
+  },
+  "China": {
+    "Text": "China"
+  },
+  "Global": {
+    "Text": "Global"
+  },
+  "NewZealand": {
+    "Text": "New Zealand"
+  },
+  "Uk": {
+    "Text": "UK"
+  },
+  "Us": {
+    "Text": "US"
+  }
+}

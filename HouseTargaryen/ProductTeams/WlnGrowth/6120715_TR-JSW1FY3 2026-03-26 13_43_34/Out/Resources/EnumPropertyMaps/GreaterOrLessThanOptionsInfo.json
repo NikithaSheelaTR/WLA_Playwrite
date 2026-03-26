@@ -1,0 +1,9 @@
+{
+  // Maps GreaterOrLessThanOptions to WebElementInfo
+  "IsGreaterThan": {
+    "Text": "Is greater than"
+  },
+  "IsLessThan": {
+    "Text": "Is less than" 
+  } 
+}

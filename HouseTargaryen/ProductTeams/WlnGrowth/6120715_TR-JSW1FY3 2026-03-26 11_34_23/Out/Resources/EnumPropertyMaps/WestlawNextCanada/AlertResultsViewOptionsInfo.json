@@ -1,0 +1,10 @@
+{
+  "ListView": {
+    "Text": "List View",
+    "LocatorString": "//li[@id='coid_gridviewdropdown_list']/a | //*[text()='List View']"
+  },
+  "GridView": {
+    "Text": "Grid View",
+    "LocatorString": "//li[@id='coid_gridviewdropdown_grid']/a | //*[text()='Grid View']"
+  }
+}

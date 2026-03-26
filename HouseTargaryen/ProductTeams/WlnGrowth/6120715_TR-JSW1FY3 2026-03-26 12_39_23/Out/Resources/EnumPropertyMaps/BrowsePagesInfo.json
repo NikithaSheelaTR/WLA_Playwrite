@@ -1,0 +1,135 @@
+﻿{
+  // Maps BrowsePages to WebElementInfo
+  "AdministrativeDecisionsAndGuidance": {
+    "Id": "Administrative Decisions & Guidance",
+    "Text": "AdministrativeDecisionsGuidance"
+  },
+  "AmericanFederalTaxReporter": {
+    "Id": "American Federal Tax Reporter)",
+    "Text": "SecondarySources/TaxSecondarySources/ResearchInstituteofAmericaRIA/FederalTaxationRIA/AmericanFederalTaxReporterRIA"
+  },
+  "AnnualReportstoShareholders": {
+    "Id": "Annual Reports to Shareholders ",
+    "Text": "BusinessLawCenter/AnnualReportstoShareholders"
+  },
+  "ArbitrationAwards": {
+    "Id": "Arbitration Awards",
+    "Text": "ArbitrationMaterials/ArbitrationAwards"
+  },
+  "BlacksLawDictionary": {
+    "Id": "Black's Law Dictionary",
+    "Text": "SecondarySources/BlacksLawDictionary"
+  },
+  "Blogs": {
+    "Id": "Blogs",
+    "Text": "News/Blogs"
+  },
+  "Cases": {
+    "Id": "Cases",
+    "Text": "Cases"
+  },
+  "CodeOfFederalRegulations2015": {
+    "Id": "Code of Federal Regulations - 2015 ",
+    "Text": "Regulations/HistoricalRegulations/CodeofFederalRegulationsHistorical/CodeofFederalRegulations2015"
+  },
+  "CorporationsProposedAndAdoptedRegulations": {
+    "Id": "Corporations Proposed & Adopted Regulations",
+    "Text": "ProposedAdoptedRegulationsCurrent/CorporationsProposedAdoptedRegulations"
+  },
+  "CorporationsTrialCourtOrders": {
+    "Id": "Corporations Trial Court Orders",
+    "Text": "TrialCourtOrders/CorporationsTrialCourtOrders"
+  },
+  "Dockets": {
+    "Id": "Dockets",
+    "Text": "Dockets"
+  },
+  "EarlyTimes": {
+    "Id": "Early Times",
+    "Text": "News/InternationalNews/AsiaNews/IndiaNewspapers/EarlyTimes"
+  },
+  "EuropeanUnion": {
+    "Id": "European Union",
+    "Text": "InternationalMaterials/EuropeanUnion"
+  },
+  "EuropeanUnionCases": {
+    "Id": "European Union Cases",
+    "Text": "InternationalMaterials/EuropeanUnion/EuropeanUnionCases"
+  },
+  "EuropeanUnionLegislation": {
+    "Id": "European Union Legislation",
+    "Text": "InternationalMaterials/EuropeanUnion/EuropeanUnionLegislation"
+  },
+  "FederalTrademarks": {
+    "Id": "Federal Trademarks",
+    "Text": "PractitionerInsightsforIntellectualProperty/Trademarks/FederalTrademarks"
+  },
+  "IntellectualProperty": {
+    "Id": "Intellectual Property",
+    "Text": "IntellectualProperty"
+  },
+  "InternationalAdministrativeMaterials": {
+    "Id": "InternationalAdministrativeMaterials",
+    "Text": "InternationalMaterials/InternationalAdministrativeMaterials"
+  },
+  "InternationalArbitrationAwards": {
+    "Id": "International Arbitration: Awards",
+    "Text": "ArbitrationMaterials/InternationalArbitrationAwards"
+  },
+  "InternationalCases": {
+    "Id": "International Cases",
+    "Text": "InternationalMaterials/InternationalCases"
+  },
+  "InternationalCentreForSettlementOfInvestmentDisputesArbitrationAwards": {
+    "Id": "International Centre for Settlement of Investment Disputes Arbitration Awards",
+    "Text": "ArbitrationMaterials/InternationalArbitrationAwards/InternationalCentreforSettlementofInvestmentDisputesArbitrationAwards"
+  },
+  "News": {
+    "Id": "News",
+    "Text": "News"
+  },
+  "NewYorkOfficialReports": {
+    "Id": "NewYorkOfficialReports",
+    "Text": "Cases/NewYorkStateFederalCases/NewYorkStateCases/NewYorkOfficialReportsMaterials/NewYorkOfficialReports"
+  },
+  "PatentsAndApplications": {
+    "Id": "Patents & Applications",
+    "Text": "PractitionerInsightsforIntellectualProperty/PatentsApplications"
+  },
+  "ProposedEnactedLegislation": {
+    "Id": "Proposed & Enacted Legislation",
+    "Text": "ProposedEnactedLegislation"
+  },
+  "SampleAgreements": {
+    "Id": "Sample Agreements",
+    "Text": "SampleAgreements"
+  },
+  "SecondarySources": {
+    "Id": "Secondary Sources",
+    "Text": "SecondarySources"
+  },
+  "StatutesAndCourtRules": {
+    "Id": "Statutes & Court Rules",
+    "Text": "StatutesCourtRules"
+  },
+  "Trademarks": {
+    "Id": "Trademarks",
+    "Text": "PractitionerInsightsforIntellectualProperty/Trademarks"
+  },
+  "WestlawBulletinsAndTopicalHighlights": {
+    "Id": "Westlaw Bulletins & Topical Highlights",
+    "Text": "SecondarySources/LegalNewspapersNewsletters/WestlawBulletinsTopicalHighlights"
+  },
+  "WordsAndPhrases": {
+    "Id": "Words & Phrases",
+    "Text": "Cases/WordsandPhrases"
+  },
+  "UnitedStatesCodeAnnotated2016": {
+    "Id": "United States Code Annotated - 2016",
+    "Text": "StatutesCourtRules/HistoricalStatutes/UnitedStatesCodeAnnotatedHistorical/UnitedStatesCodeAnnotated2016"
+  },
+  "UnreleasedCategoryPages": {
+    "Id": "Unreleased Category Pages",
+    "Text": "UnreleasedCategoryPages"
+  }
+}

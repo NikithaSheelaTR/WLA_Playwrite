@@ -1,0 +1,20 @@
+{
+  // Maps Canada Next footer links to WebElementInfo
+
+  "Accessibility": {
+    "LocatorString": "//ul[@id='co_footerCopyright']//a[contains(@href,'accessibility') or contains(@href,'accessibilite')]",
+    "Text": "Accessibility"
+  },
+  "ContactUs": {
+    "LocatorString": "//li[@id='co_footerContactUs']/a",
+    "Text": "Contact Us"
+  },
+  "ImproveWestlawCanada": {
+    "LocatorString": "//a[@id='coid_websiteFooter_pageSurvey']",
+    "Text": "Improve Westlaw Canada"
+  },
+  "Privacy": {
+    "LocatorString": "//ul[@id='co_footerCopyright']//a[contains(@href,'privacy') or contains(@href,'confidentialite')]",
+    "Text": "Privacy"
+  }
+}

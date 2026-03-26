@@ -1,0 +1,27 @@
+{
+  // Maps KeyCiteComponentLocators to WebElementInfo
+  "CitatorFlag": {
+    "LocatorString": "//div[@id='co_readingModeCitatorFlag']"
+  },
+  "Court": {
+    "LocatorString": ".//span[@class='co_snt_courtLine']"
+  },
+  "Date": {
+    "LocatorString": ".//span[@class='co_snt_dateFiled'] | .//span[@class='co_snt_writDate']"
+  },
+  "Flag": {
+    "LocatorString": "//a[contains(@id,'coid_relatedInfo_SNT_Statute_kcFlag')]"
+  },
+  "InfoContainer": {
+    "LocatorString": "//div[@id='co_readingModeNegativeTreatment']"
+  },
+  "NegativeTreatmentLink": {
+    "LocatorString": ".//a"
+  },
+  "Phrase": {
+    "LocatorString": ""
+  },
+  "StaticPhrase": {
+    "LocatorMask": "coid_relatedInfo_SNT_Statute_staticPhrase_{0}"
+  }
+}

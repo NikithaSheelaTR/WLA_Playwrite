@@ -1,0 +1,18 @@
+{
+    // Maps AdvancedSearchField to BaseTextModel
+  "AmountInPlan": {
+    "Text": "Amount In Plan"
+  },
+  "AmountOutOfPlan": {
+    "Text": "Amount Out of Plan"
+  },
+  "InPlan": {
+    "Text": "% In Plan"
+  },
+  "OutOfPlan": {
+    "Text": "% Out of Plan"
+  },
+  "StandardCharge": {
+    "Text": "Standard Charge"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  // Maps HistorySections to WebElementInfo for Westlaw Edge and Precision
+  "GraphicalStatute": {
+    "Id": "subItem_riLegislativeTimeline",
+    "Text": "Graphical Statute"
+  },
+  "Validity": {
+    "Id": "subItem_kcValidity",
+    "Text": "Validity"
+  },
+  "Versions": {
+    "Id": "subItem_riVersions",
+    "Text": "Versions"
+  },
+  "EditorsAndRevisorsNotes": {
+    "Id": "subItem_riEditorialMaterials",
+    "Text": "Editor's and Revisor's Notes"
+  },
+  "BillDrafts": {
+    "Id": "subItem_kcBillDrafts",
+    "Text": "Bill Drafts"
+  },
+  "LegislativeHistoryMaterials": {
+    "Id": "subItem_kcLegislativeMaterials",
+    "Text": "Legislative History Materials"
+  },
+  "RegulatoryHistory": {
+    "Id": "subItem_kcRegulatoryHistory",
+    "Text": "Regulatory History"
+  }
+}

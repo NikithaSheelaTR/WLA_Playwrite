@@ -1,0 +1,9 @@
+﻿{
+  // Maps StartsWithOptions enumeration to BaseTextModel
+  "ExactMatch": {
+    "Text": "Exact Match"
+  },
+  "StartsWith": {
+    "Text": "Starts with"
+  }
+}

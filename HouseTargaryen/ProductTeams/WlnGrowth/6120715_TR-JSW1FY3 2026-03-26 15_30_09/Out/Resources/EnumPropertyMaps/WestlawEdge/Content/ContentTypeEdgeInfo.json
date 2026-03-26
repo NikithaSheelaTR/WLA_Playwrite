@@ -1,0 +1,487 @@
+{
+  "AdminDecisions": {
+    "Text": "Admin Decisions",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "AdministrativeDecisionsAndGuidance": {
+    "Text": "Administrative Decisions & Guidance",
+    "SearchResultsLocatorString": "adminDecision",
+    "NarrowPaneLinkLocatorString": "ADMINDECISION"
+  },
+  "AdministrativeFilings": {
+    "Text": "Administrative Filings",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "AllResults": {
+    "Text": "All Results",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": "ALL_RESULTS"
+  },
+  "Alert24andNewsBulletins": {
+    "Text": "Alert 24 & News Bulletins",
+    "SearchResultsLocatorString": "Alert 24 & News Bulletins",
+    "NarrowPaneLinkLocatorString": "Alert 24 & News Bulletins"
+  },
+  "AllCases": {
+    "Text": "All Cases",
+    "SearchResultsLocatorString": "allcases",
+    "NarrowPaneLinkLocatorString": "ALLCASES"
+  },
+  "AllLegislation": {
+    "Text": "All Legislation",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "AllSecondarySources": {
+    "Text": "All Secondary Sources",
+    "SearchResultsLocatorString": "analytical",
+    "NarrowPaneLinkLocatorString": "ANALYTICAL"
+  },
+  "AppellateCourtDocuments": {
+    "Text": "Appellate Court Documents",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "Arbitration": {
+    "Text": "Arbitration",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "ArbitrationAwards": {
+    "Text": "Arbitration Awards",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "ArbitrationMaterials": {
+    "Text": "Arbitration Materials",
+    "SearchResultsLocatorString": "arbitration",
+    "NarrowPaneLinkLocatorString": "ARBITRATION"
+  },
+  "ArticlesAndNewsletters": {
+    "Text": "Articles and Newsletters",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "AtoZofNewZealandLaw": {
+    "Text": "A to Z of New Zealand Law",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "Books": {
+    "Text": "Books",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "Briefs": {
+    "Text": "Briefs",
+    "SearchResultsLocatorString": "brief",
+    "NarrowPaneLinkLocatorString": "BRIEF"
+  },
+  "BusinessLawCenter": {
+    "Text": "Business Law Center",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "CanadianEncyclopedicDigest": {
+    "Text": "Canadian Encyclopedic Digest",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "CapitolWatch": {
+    "Text": "Capitol Watch",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "Cases": {
+    "Text": "Cases",
+    "SearchResultsLocatorString": "case",
+    "NarrowPaneLinkLocatorString": "CASE"
+  },
+  "CasesAndDecisions": {
+    "Text": "Cases and Decisions",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "CivilTrialCourtOrders": {
+    "Text": "Civil Trial Court Orders"
+  },
+  "CompanyInvestigator": {
+    "Text": "Company Investigator",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "CompiledHistory": {
+    "Text": "Compiled History",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "CongressionalRecord": {
+    "Text": "Congressional Record",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "CustomDigest": {
+    "Text": "",
+    "SearchResultsLocatorString": "customdigest",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "Dockets": {
+    "Text": "Dockets",
+    "SearchResultsLocatorString": "docket",
+    "NarrowPaneLinkLocatorString": "DOCKET"
+  },
+  "DrugDeviceGuidesAndSummaries": {
+    "Text": "Drug/Device Guides & Summaries",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "EstatesandTrustsSource": {
+    "Text": "Estates&TrustsSource",
+    "SearchResultsLocatorString": "EstatesandTrustsSource"
+  },
+  "ExpertMaterials": {
+    "Text": "Expert Materials",
+    "SearchResultsLocatorString": "expertWitness",
+    "NarrowPaneLinkLocatorString": "EXPERTWITNESS"
+  },
+  "ExpertTestimony": {
+    "Text": "Expert Testimony",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "Forms": {
+    "Text": "Forms",
+    "SearchResultsLocatorString": "form",
+    "NarrowPaneLinkLocatorString": "FORM"
+  },
+  "FormsAndPrecedents": {
+    "Text": "Forms & Precedents",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "GeneralCounselResources": {
+    "Text": "General Counsel Resources",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "GeneralTaxAnalyticalMaterials": {
+    "Text": "General Tax Analytical Materials",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "GovernmentAndRegulatoryMaterials": {
+    "Text": "Government & Regulatory Materials",
+    "SearchResultsLocatorString": "Government & Regulatory Materials",
+    "NarrowPaneLinkLocatorString": "GOVERNMENT_REGULATORY"
+  },
+  "Headnote": {
+    "Text": "",
+    "SearchResultsLocatorString": "headnote",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "Headnotes": {
+    "Text": "Headnotes",
+    "SearchResultsLocatorString": "Headnotes",
+    "NarrowPaneLinkLocatorString": "HEADNOTES"
+  },
+  "InsolvencyCourtFilings": {
+    "Text": "Insolvency Court Filings",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "IntellectualProperty": {
+    "Text": "Intellectual Property",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "InternationalMaterials": {
+    "Text": "International Materials",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "IrsTax": {
+    "Text": "IRS Tax",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "JointCommitteePrints": {
+    "Text": "Joint Committee Prints",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "JuryVerdicts": {
+    "Text": "Jury Verdicts",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "JuryVerdictsAndSettlements": {
+    "Text": "Jury Verdicts & Settlements",
+    "SearchResultsLocatorString": "juryVerdict",
+    "NarrowPaneLinkLocatorString": "JURYVERDICT"
+  },
+  "KeyNumber": {
+    "Text": "Key Numbers",
+    "SearchResultsLocatorString": "keynumber",
+    "NarrowPaneLinkLocatorString": "KEYNUMBER"
+  },
+  "KpmgTax": {
+    "Text": "KPMG Tax",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "LawSource": {
+    "Text": "LawSource",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "LegalAnalysis": {
+    "Text": "Legal Analysis",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "LegalMemoranda": {
+    "Text": "Legal Memoranda",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "Legislation": {
+    "Text": "Legislation",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "LegislativeHistory": {
+    "Text": "Legislative History",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "LitigationAnalytics": {
+    "Text": "Litigation Analytics",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "MedicalIllustrations": {
+    "Text": "Medical Illustrations",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "Minnesota": {
+    "Text": "Minnesota",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "News": {
+    "Text": "News",
+    "SearchResultsLocatorString": "news",
+    "NarrowPaneLinkLocatorString": "NEWS"
+  },
+  "NewsAndCurrentAwareness": {
+    "Text": "News & Current Awareness",
+    "SearchResultsLocatorString": "News & Current Awareness",
+    "NarrowPaneLinkLocatorString": "News & Current Awareness"
+  },
+  "NewsRoom": {
+    "Text": "NewsRoom",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "Overview": {
+    "Text": "Overview",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "PendingLegislation": {
+    "Text": "Pending Legislation",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "PendingRegulations": {
+    "Text": "Pending Regulations",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "PleadingsAndMotions": {
+    "Text": "Pleadings & Motions",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": "PMM"
+  },
+  "PleadingsMotionsAndFactaBriefs": {
+    "Text": "Pleadings, Motions and Facta/Briefs",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "PolicyDocumentsAndDirectives": {
+    "Text": "Policy Documents and Directives",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "PracticalLaw": {
+    "Text": "Practical Law",
+    "SearchResultsLocatorString": "knowhow",
+    "NarrowPaneLinkLocatorString": "KNOWHOW"
+  },
+  "PresidentialMessages": {
+    "Text": "Presidential Messages",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "Profiler": {
+    "Text": "Profiler",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "ProposedAndAdoptedRegulations": {
+    "Text": "Proposed & Adopted Regulations",
+    "SearchResultsLocatorString": "pendingreg",
+    "NarrowPaneLinkLocatorString": "PENDINGREG"
+  },
+  "ProposedAndEnactedLegislation": {
+    "Text": "Proposed & Enacted Legislation",
+    "SearchResultsLocatorString": "pendingleg",
+    "NarrowPaneLinkLocatorString": "PENDINGLEG"
+  },
+  "PwCTax": {
+    "Text": "PwC Tax",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "Regulations": {
+    "Text": "Regulations",
+    "SearchResultsLocatorString": "regulation",
+    "NarrowPaneLinkLocatorString": "REGULATION"
+  },
+  "Reports": {
+    "Text": "Reports",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "Rules": {
+    "Text": "Rules",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "SampleAgreements": {
+    "Text": "Sample Agreements",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "SecondarySources": {
+    "Text": "Secondary Sources",
+    "SearchResultsLocatorString": "analytical",
+    "NarrowPaneLinkLocatorString": "ANALYTICAL"
+  },
+  "SecuritiesRegulatoryMaterialsAndBulletins": {
+    "Text": "Securities Regulatory Materials and Bulletins",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "Statutes": {
+    "Text": "Statutes",
+    "SearchResultsLocatorString": "statute",
+    "NarrowPaneLinkLocatorString": "STATUTE"
+  },
+  "StatutesAndCourtRules": {
+    "Text": "Statutes & Court Rules",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "StatutesAndRegulations": {
+    "Text": "Statutes and Regulations",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "TaxBriefs": {
+    "Text": "Tax Briefs",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "TaxCases": {
+    "Text": "Tax Cases",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "TaxProposedAndAdoptedRegulations": {
+    "Text": "Tax Proposed & Adopted Regulations",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "TaxProposedAndEnactedLegislation": {
+    "Text": "Tax Proposed & Enacted Legislation",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "TaxRegulations": {
+    "Text": "Tax Regulations",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "TaxStatutes": {
+    "Text": "Tax Statutes",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "TaxTrialFilings": {
+    "Text": "Tax Trial Filings",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "Testimony": {
+    "Text": "Testimony",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "TextsAndAnnotations": {
+    "Text": "Texts and Annotations",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "TheLawsOfAustralia": {
+    "Text": "The Laws of Australia",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "TopicsAndKeynumbers": {
+    "Text": "Topics & Key Numbers",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "TrialCourtDocuments": {
+    "Text": "Trial Court Documents",
+    "SearchResultsLocatorString": "pmm",
+    "NarrowPaneLinkLocatorString": "PMM"
+  },
+  "TrialCourtOrders": {
+    "Text": "Trial Court Orders",
+    "SearchResultsLocatorString": "tco",
+    "NarrowPaneLinkLocatorString": "TCO"
+  },
+  "TrialTranscriptsAndOralArguments": {
+    "Text": "Trial Transcripts & Oral Arguments",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "UnreleasedCategoryPages": {
+    "Text": "Unreleased Category Pages",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "WestKm": {
+    "Text": "West km",
+    "SearchResultsLocatorString": "km",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "WestlawTaxForEy": {
+    "Text": "Westlaw Tax for EY",
+    "SearchResultsLocatorString": "",
+    "NarrowPaneLinkLocatorString": ""
+  },
+  "WordAndPhrases": {
+    "Text": "Words and Phrases",
+    "SearchResultsLocatorString": "WORDSPHRASES"
+  },
+  "LINX": {
+    "Text": "LINX",
+    "SearchResultsLocatorString": ""
+  }
+}

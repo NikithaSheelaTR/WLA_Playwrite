@@ -1,0 +1,117 @@
+{
+  // Maps ContactAndBillingInformation to WebElementInfo
+  "AdditionalDocumentInformation": {
+    "Id": "co_documentOrderingAdditionalDeliveryInformation",
+    "Text": "Additional Document Information"
+  },
+
+  "Address1": {
+    "Id": "co_documentOrderingAddress1",
+    "Text": "Address 1"
+  },
+
+  "Address1Billing": {
+    "Id": "co_documentOrderingDeliveryAddress1",
+    "Text": "Address 1 Billing"
+  },
+
+  "Address2": {
+    "Id": "co_documentOrderingAddress2",
+    "Text": "Address 2"
+  },
+
+  "Address2Billing": {
+    "Id": "co_documentOrderingDeliveryAddress2",
+    "Text": "Address 2B illing"
+  },
+
+  "City": {
+    "Id": "co_documentOrderingCity",
+    "Text": "City"
+  },
+
+  "CityBilling": {
+    "Id": "co_documentOrderingDeliveryCity",
+    "Text": "City Billing"
+  },
+
+  "Company": {
+    "Id": "co_documentOrderingCompany",
+    "Text": "Company"
+  },
+
+  "CompanyBilling": {
+    "Id": "co_documentOrderingDeliveryCompany",
+    "Text": "Company Billing"
+  },
+
+  "Country": {
+    "Id": "co_documentOrderingCountry",
+    "Text": "Country"
+  },
+
+  "CountryBilling": {
+    "Id": "co_documentOrderingDeliveryCountry",
+    "Text": "Country Billing"
+  },
+
+  "EmailAddress": {
+    "Id": "co_documentOrderingEmailAddress",
+    "Text": "Email Address"
+  },
+
+  "EmailAddressBilling": {
+    "Id": "co_documentOrderingDeliveryEmailAddress",
+    "Text": "Email Address Billing"
+  },
+
+  "FaxNumber": {
+    "Id": "co_documentOrderingFaxNumber",
+    "Text": "Fax Number"
+  },
+
+  "FaxNumberBilling": {
+    "Id": "co_documentOrderingDeliveryFaxNumber",
+    "Text": "Fax Number Billing"
+  },
+
+  "FullName": {
+    "Id": "co_documentOrderingFullName",
+    "Text": "Full Name"
+  },
+
+  "FullNameBilling": {
+    "Id": "co_documentOrderingDeliveryFullName",
+    "Text": "Full Name Billing"
+  },
+
+  "StateBilling": {
+    "Id": "co_documentOrderingDeliveryState",
+    "Text": "State Billing"
+  },
+
+  "StateProvince": {
+    "Id": "co_documentOrderingState",
+    "Text": "State Province"
+  },
+
+  "PostalCode": {
+    "Id": "co_documentOrderingPostalCode",
+    "Text": "Postal Code"
+  },
+
+  "PostalCodeBilling": {
+    "Id": "co_documentOrderingDeliveryPostalCode",
+    "Text": "Postal Code Billing"
+  },
+
+  "PhoneNumber": {
+    "Id": "co_documentOrderingPhoneNumber",
+    "Text": "Phone Number"
+  },
+
+  "PhoneNumberBilling": {
+    "Id": "co_documentOrderingDeliveryPhoneNumber",
+    "Text": "Phone Number Billing"
+  }
+}

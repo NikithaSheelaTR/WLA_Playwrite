@@ -1,0 +1,9 @@
+{
+  // Maps Cited Status to WebElementInfo
+  "CurrentlyCited": {
+    "LocatorString": "//a[@id='coid_relatedinfo_FormerlyCitedStatus1_link']"
+  },
+  "FormerlyCited": {
+    "LocatorString": "//a[@id='coid_relatedinfo_FormerlyCitedStatus2_link']"
+  }
+}

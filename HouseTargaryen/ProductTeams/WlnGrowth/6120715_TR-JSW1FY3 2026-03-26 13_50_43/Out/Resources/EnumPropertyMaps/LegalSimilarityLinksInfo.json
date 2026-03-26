@@ -1,0 +1,6 @@
+﻿{
+  "MaterialFacts": {
+    "Text": "Material Facts",
+    "LocatorString": "//*[contains(@class, 'co_searchResults_materialFact_title')]"
+  }  
+}

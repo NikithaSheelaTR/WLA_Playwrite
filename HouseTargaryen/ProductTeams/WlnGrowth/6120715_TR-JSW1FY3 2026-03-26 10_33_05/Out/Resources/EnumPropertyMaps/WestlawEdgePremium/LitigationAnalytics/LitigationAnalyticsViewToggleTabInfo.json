@@ -1,0 +1,12 @@
+{
+// Maps View to WebElementInfo
+  "Chart": {
+    "Text": "Chart",
+    "LocatorString": "//div[@class='la-ToggleButton']/button[@title='Chart']"
+  },
+
+  "Table": {
+    "Text": "Map",
+    "LocatorString": "//div[@class='la-ToggleButton']/button[@title='Map']"
+  }
+}

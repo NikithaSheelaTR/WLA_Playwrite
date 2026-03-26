@@ -18,8 +18,7 @@
     <!-- Remote driver URI. Valid uri pattern is "http://{ip}:{port}/wd/hub/".
     Default value "http://127.0.0.1:4444/wd/hub/" is taken from TestEnvironmentRepository.xml -->
     <add key="REMOTE_DRIVER_URI" value="" />
-    <!-- Path to the Selenium Drivers Folder -->
-    <add key="SELENIUM_DRIVERS_DIR" value="C:\SeleniumDrivers" />
+    
 
     <!-- ROUTING SETTINGS PAGE -->
     <!-- OPT. A comma/semicolon separated list of FACs to grant. -->

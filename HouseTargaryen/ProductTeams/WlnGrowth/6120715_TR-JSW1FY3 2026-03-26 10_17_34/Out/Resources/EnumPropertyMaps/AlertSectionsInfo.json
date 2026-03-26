@@ -1,0 +1,23 @@
+{
+  // Maps EditAlertSectionLinks to AlertSectionInfo
+  "Basics": {
+    "SectionId": "basicsSection", 
+    "EditSectionLinkId": "coid_editLink_Basics"
+  },
+  "Content": {
+    "SectionId": "contentSection",
+    "EditSectionLinkId": "coid_editLink_Content"
+  },
+  "Delivery": {
+    "SectionId": "deliverySection", 
+    "EditSectionLinkId": "coid_editLink_Delivery"
+  },
+  "Schedule": {
+    "SectionId": "scheduleSection",
+    "EditSectionLinkId": "coid_editLink_Schedule"
+  },
+  "Search": {
+    "SectionId": "searchSection", 
+    "EditSectionLinkId": "coid_editLink_Search"
+  } 
+}

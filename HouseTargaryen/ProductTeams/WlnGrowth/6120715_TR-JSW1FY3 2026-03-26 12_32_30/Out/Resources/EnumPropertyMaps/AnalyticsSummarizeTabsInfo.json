@@ -1,0 +1,23 @@
+{
+  // Maps AnalyticsSummarizeTabs to WebElementInfo
+  "Client": {
+    "Id": "wa_firmHealthSummarizeByClientTab",
+    "Text": "Client"
+  },
+  "OfficeLocation": {
+    "Id": "wa_firmHealthSummarizeByLocationTab",
+    "Text": "Office Location"
+  },
+  "PracticeArea": {
+    "ID": "wa_firmHealthSummarizeByPracticeAreaTab",
+    "Text": "Practice Area"
+  },
+  "ProductPlatform": {
+    "Id": "wa_firmHealthSummarizeByProductAdoptionTab",
+    "Text": "Product Platform"
+  },
+  "User": {
+    "Id": "wa_firmHealthSummarizeByUserTab",
+    "Text": "User"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  // Maps SearchWithin to WebElementInfo (Search Within Facet dialog options)
+  "DisabledRecentSearchesQuery": {
+    "LocatorString": "//ul[contains(@id,'WithinFacet')]//div[@class='co_disabled']"
+  },
+  "LookForTermsInTheSameParagraphCheckbox": {
+    "LocatorString": "//input[@id='searchWithinParagraphWidgetId']"
+  },
+  "RecentSearchesButton": {
+    "LocatorString": "//button[contains(@class,'SearchFacet-button SearchFacet-buttonSearch')]"
+  },
+  "RecentSearchesQuery": {
+    "LocatorString": "//button[@class = 'SearchFacet-button SearchFacet-buttonSelect']",
+    "LocatorMask": "//button[@class = 'SearchFacet-button SearchFacet-buttonSelect' and text()='{0}']"
+  },
+  "SearchButton": {
+    "LocatorString": "//button[text()='Search' or text()='Continue'] | //button[@class='SearchFacet-button SearchFacet-buttonSubmit SearchFacet-buttonSearch--secondary'] | //*[@class='co_primaryBtn']"
+  },
+  "SearchInput": {
+    "LocatorString": "//div[@id='coid_SearchWithinLightbox']//input[contains(@name, 'SearchFacetSearchWithin')] | //div[@id='coid_lightboxOverlay']//input[@name='SearchFacetSearchWithin-inputKeyword']"
+  }
+}

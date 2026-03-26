@@ -1,0 +1,6 @@
+{
+  "WordDocument": {
+    "Text": "WordDocument",
+    "LocatorString": "//div[contains(@data-testid, 'download-menu-:')]"
+  }
+}

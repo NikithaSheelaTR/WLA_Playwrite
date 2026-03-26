@@ -1,0 +1,10 @@
+﻿{
+  "SearchAll": {
+    "LocatorString": ".//li[contains(@class,'Tab') and text()='Search all']",
+    "Text": "Search all"
+  },
+  "SearchByAttribute": {
+    "LocatorString": ".//li[contains(@class,'Tab') and text()='Search by attribute']",
+    "Text": "Search by attribute"
+  }
+}

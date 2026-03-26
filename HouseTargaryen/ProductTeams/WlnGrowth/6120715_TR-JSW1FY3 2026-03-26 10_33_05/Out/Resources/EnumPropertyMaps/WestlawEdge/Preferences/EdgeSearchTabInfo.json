@@ -1,0 +1,78 @@
+﻿{
+  // Maps IndigoSearchTab to WebElementInfo
+  "AdministrativeDecisionsDropdown": {
+    "LocatorString": "//select[./parent::div//span[contains(.,'Administrative decisions') or contains(., 'Administrative Decisions')]]"
+  },
+  "AlwaysRunBooleanSearchCheckbox": {
+    "LocatorString": "//input[@type='checkbox' and ./parent::label/span[contains(.,'Searches containing AND')]]"
+  },
+  "AlwaysRunSearchesAsBooleanTermsAndConnectorsCheckbox": {
+    "LocatorString": "//input[@type='checkbox' and ./parent::label/span[contains(.,\"searches containing 'AND'\")]] | //input[@id='coid_userSettingsSearchCobalt.UDS.Client.Domain.PreferenceIdentifierOption']"
+  },
+  "AlwaysRunSingleQuotedCheckbox": {
+    "LocatorString": "//input[@type='checkbox' and ./parent::label/span[contains(.,'Searches containing only a single')]]"
+  },
+  "BriefsDropdown": {
+    "LocatorString": "//select[./parent::div//span[text()='Briefs']]"
+  },
+  "CasesDropdown": {
+    "LocatorString": "//select[./parent::div//span[text()='Cases']]"
+  },
+  "DocketsDropdown": {
+    "LocatorString": "//select[./parent::label/span[text()='Dockets']]"
+  },
+  "DocumentDisplayHideSearchHighlightingCheckbox": {
+    "LocatorString": "//input[@type='checkbox' and ./parent::label/span[contains(.,'Hide search highlighting')]]"
+  },
+  "ExpertMaterialsDropdown": {
+    "LocatorString": "//select[./parent::div//span[contains(.,'Expert materials') or contains(., 'Expert Materials')]]"
+  },
+  "FormsDropdown": {
+    "LocatorString": "//select[./parent::div//span[text()='Forms']]"
+  },
+  "JuryVerdictsDropdown": {
+    "LocatorString": "//select[./parent::div//span[contains(.,'Jury verdicts') or contains(., 'Jury Verdicts')]]"
+  },
+  "IncreaseWordBoundaryDropdown": {
+    "LocatorString": "//select[./parent::label/span[contains(.,'Increase number of words before and after') or contains(., 'Increase number of words before and after')]]"
+  },
+  "LegislationDropdown": {
+    "LocatorString": "//select[./parent::div//span[text()='Legislation']]"
+  },
+  "NewsAndCurrentAwarenessDropdown": {
+    "LocatorString": "//select[./parent::div//span[text()='News & Current Awareness']]"
+  },
+  "NewsDropdown": {
+    "LocatorString": "//select[./parent::label/span[text()='News']]"
+  },
+  "NewsRoomDropdown": {
+    "LocatorString": "//select[./parent::div//span[text()='News Room']]"
+  },
+  "PracticalLawDropdown": {
+    "LocatorString": "//select[./parent::label/span[text()='Practical Law']]"
+  },
+  "PrecisionSearchIncludeSynonymsCheckBox": {
+    "LocatorString": "//input[@type='checkbox' and ./parent::label/span[text()='Include synonyms (such as \"NY\" for \"New York\") in Precision Research suggestions and filter results']]"
+  },
+  "ProposedAndAdoptedRegulationsDropdown": {
+    "LocatorString": "//select[./parent::div//span[contains(.,'Proposed and adopted') or contains(., 'Proposed & Adopted')]]"
+  },
+  "ProposedAndEnactedLegislationsDropdown": {
+    "LocatorString": "//select[./parent::div//span[contains(.,'Proposed and enacted') or contains(., 'Proposed & Enacted')]]"
+  },
+  "RegulationsDropdown": {
+    "LocatorString": "//select[./parent::div//span[text()='Regulations']]"
+  },
+  "SecondarySourcesDropdown": {
+    "LocatorString": "//select[./parent::div//span[contains(.,'Secondary Sources') or contains(., 'Secondary sources')]]"
+  },
+  "StatutesDropdown": {
+    "LocatorString": "//select[./parent::div//span[contains(.,'Statutes')]]"
+  },
+  "TrialCourtDocumentsDropdown": {
+    "LocatorString": "//select[./parent::div//span[contains(.,'Trial court documents') or contains(., 'Trial Court Documents')]]"
+  },
+  "TrialCourtOrdersDropdown": {
+    "LocatorString": "//select[./parent::div//span[contains(.,'Trial court orders') or contains(., 'Trial Court Orders')]]"
+  }
+}

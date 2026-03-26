@@ -1,0 +1,27 @@
+{
+  // Maps FacetOptionAreasOfLaw to FacetOptionAreasOfLawInfo
+  "ContractClaimsAndDefences": {
+    "LocatorString": ".//*[text()='Contract Claims and Defences']",
+    "Text": "Contract Claims and Defences"
+  },
+  "EquitableClaimsAndRemedies": {
+    "LocatorString": ".//*[text()='Equitable Claims and Remedies']",
+    "Text": "Equitable Claims and Remedies"
+  },
+  "GeneralDefencesForAllTypesOfClaims": {
+    "LocatorString": ".//*[text()='General Defences for All Types of Claims']",
+    "Text": "General Defences for All Types of Claims"
+  },
+  "Pleadings": {
+    "LocatorString": ".//*[text()='Pleadings']",
+    "Text": "Pleadings"
+  },
+  "ResearchTools": {
+    "LocatorString": ".//*[text()='Research Tools']",
+    "Text": "Research Tools"
+  },
+  "TortClaimsAndDefences": {
+    "LocatorString": ".//*[text()='Tort Claims and Defences']",
+    "Text": "Tort Claims and Defences"
+  }
+}

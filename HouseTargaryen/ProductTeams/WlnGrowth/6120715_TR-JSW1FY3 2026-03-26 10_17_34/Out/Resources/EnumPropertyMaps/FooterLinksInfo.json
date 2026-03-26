@@ -1,0 +1,93 @@
+{
+  // Maps FooterLinks to WebElementInfo
+
+  "Accessibility": {
+    "Id": "",
+    "Text": "Accessibility",
+    "LocatorString": ".//*[text() = 'Accessibility']"
+  },
+
+  "ContactUs": {
+    "Id": "co_footerContactUs",
+    "Text": "Contact Us",
+    "LocatorString": ".//li[@id = 'co_footerContactUs']/a"
+  },
+
+  "CorrectionalHelpGuide": {
+    "Id": "coid_websiteFooter_helplink",
+    "Text": "Help Guide",
+    "LocatorString": ".//li[@id = 'coid_websiteFooter_helplink']/a | .//a[@id = 'coid_websiteFooter_helplink']"
+  },
+
+  "ImproveWestlaw": {
+    "Id": "coid_websiteFooter_pageSurvey",
+    "Text": "Improve Westlaw/Report an error",
+    "LocatorString": ".//*[@id = 'coid_websiteFooter_pageSurvey']"
+  },
+
+  "LiveChat": {
+    "Id": "coid_websiteFooter_livechatlink",
+    "Text": "Live Chat",
+    "LocatorString": ".//*[@id = 'coid_websiteFooter_livechatlink']"
+  },
+
+  "MyContacts": {
+    "Id": "coid_websiteFooter_contacts",
+    "Text": "My Contacts",
+    "LocatorString": ".//*[@id = 'coid_websiteFooter_contacts']"
+  },
+
+  "PrivacyStatement": {
+    "Id": "coid_websiteFooter_privacyPolicyLink",
+    "Text": "Privacy Statement",
+    "LocatorString": ".//*[text()= 'Privacy Statement']"
+  },
+
+  "PatronHelpGuide": {
+    "Id": "coid_website_productStartGuide",
+    "Text": "Patron Help Guide",
+    "LocatorString": ".//*[@id = 'coid_website_productStartGuide']"
+  },
+
+  "Preferences": {
+    "Id": "coid_websiteFooter_userSettings",
+    "Text": "Preferences",
+    "LocatorString": ".//*[@id = 'coid_websiteFooter_userSettings']"
+  },
+
+  "Security": {
+    "Id": "",
+    "Text": "Security",
+    "LocatorString": ".//*[text() = 'Security']"
+  },
+
+  "SupplierTerms": {
+    "Id": "coid_website_supplierTerms",
+    "Text": "Supplier Terms",
+    "LocatorString": ".//*[@id = 'coid_website_supplierTerms']"
+  },
+
+  "SignOff": {
+    "Id": "coid_websiteFooter_signofflink",
+    "Text": "Sign Off",
+    "LocatorString": ".//*[@id = 'coid_websiteFooter_signofflink']"
+  },
+
+  "TransferMyData": {
+    "Id": "coid_website_transferContent_exportData",
+    "Text": "Transfer My Data",
+    "LocatorString": ".//*[@id = 'coid_website_transferContent_exportData']"
+  },
+
+  "TrainingAndSupport": {
+    "Id": "coid_websiteFooter_helplink",
+    "Text": "Training & Support",
+    "LocatorString": ".//*[@id = 'coid_websiteFooter_helplink']"
+  },
+
+  "WhatsNew": {
+    "Id": "coid_website_whatIsNew",
+    "Text": "What's New",
+    "LocatorString": ".//*[@id = 'coid_website_whatIsNew']"
+  }
+}

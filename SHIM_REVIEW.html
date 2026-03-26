@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shim Architecture Review — WLA Playwright</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6; color: #333;
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            padding: 20px;
+        }
+        .container {
+            max-width: 1050px; margin: 0 auto; background: white;
+            border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.4); overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+            color: white; padding: 40px; text-align: center;
+        }
+        .header h1 { font-size: 2.2em; margin-bottom: 10px; font-weight: 700; }
+        .header .subtitle { font-size: 1.1em; opacity: 0.85; margin-top: 8px; }
+        .metadata { display: flex; justify-content: center; gap: 14px; margin-top: 20px; flex-wrap: wrap; }
+        .metadata-item {
+            background: rgba(255,255,255,0.1); padding: 8px 18px;
+            border-radius: 8px; font-size: 0.9em;
+        }
+        .metadata-item strong { color: #fbbf24; }
+        .content { padding: 40px; }
+        .section { margin-bottom: 44px; }
+        h2 { color: #2d3748; font-size: 1.8em; margin-bottom: 18px; padding-bottom: 10px; border-bottom: 3px solid #4299e1; }
+        h3 { color: #4a5568; font-size: 1.25em; margin-top: 22px; margin-bottom: 10px; }
+        p { margin-bottom: 12px; }
+
+        /* Verdict banners */
+        .verdict-warn {
+            background: linear-gradient(135deg, #c05621 0%, #7b341e 100%);
+            color: white; padding: 36px; border-radius: 12px; text-align: center; margin: 20px 0;
+            box-shadow: 0 6px 20px rgba(192,86,33,0.4);
+        }
+        .verdict-warn .verdict-label { font-size: 3.5em; font-weight: 900; letter-spacing: 3px; }
+        .verdict-warn .verdict-sub   { font-size: 1.2em; opacity: 0.9; margin-top: 10px; }
+
+        .verdict-partial {
+            background: linear-gradient(135deg, #b7791f 0%, #744210 100%);
+            color: white; padding: 36px; border-radius: 12px; text-align: center; margin: 20px 0;
+            box-shadow: 0 6px 20px rgba(183,121,31,0.4);
+        }
+        .verdict-partial .verdict-label { font-size: 3.5em; font-weight: 900; letter-spacing: 3px; }
+        .verdict-partial .verdict-sub   { font-size: 1.2em; opacity: 0.9; margin-top: 10px; }
+
+        /* Summary boxes */
+        .summary-box {
+            background: linear-gradient(135deg, #2b6cb0 0%, #1a365d 100%);
+            color: white; padding: 26px 30px; border-radius: 10px; margin: 20px 0;
+        }
+        .summary-box h3 { color: white; margin-top: 0; }
+
+        /* Cards */
+        .card { background: #f7fafc; border-radius: 8px; padding: 20px; margin: 14px 0; border-left: 4px solid #4299e1; }
+        .card h4 { color: #2d3748; margin-bottom: 10px; font-size: 1.05em; }
+        .card.green  { border-color: #48bb78; background: #f0fff4; }
+        .card.red    { border-color: #fc8181; background: #fff5f5; }
+        .card.yellow { border-color: #ed8936; background: #fffaf0; }
+        .card.blue   { border-color: #4299e1; background: #ebf8ff; }
+        .card.purple { border-color: #9f7aea; background: #faf5ff; }
+
+        /* Root cause box — highlighted */
+        .root-cause {
+            background: #1a202c; color: #e2e8f0;
+            border-radius: 10px; padding: 28px 30px; margin: 20px 0;
+            border-left: 6px solid #fc8181;
+        }
+        .root-cause h3 { color: #fc8181; margin-top: 0; font-size: 1.3em; }
+        .root-cause .cause-num {
+            display: inline-block; background: #fc8181; color: #1a202c;
+            border-radius: 50%; width: 26px; height: 26px;
+            text-align: center; line-height: 26px; font-weight: 700;
+            margin-right: 8px; font-size: 0.9em;
+        }
+
+        /* Code blocks */
+        pre {
+            background: #1a202c; color: #e2e8f0; padding: 18px 22px;
+            border-radius: 8px; overflow-x: auto; font-size: 0.82em;
+            line-height: 1.7; margin: 12px 0;
+        }
+        pre .hl  { color: #fbbf24; font-weight: bold; }   /* highlight — problem line */
+        pre .ok  { color: #68d391; }                        /* green — correct */
+        pre .dim { color: #718096; }                        /* grey — context */
+        code {
+            background: #edf2f7; color: #553c9a;
+            padding: 2px 7px; border-radius: 4px; font-size: 0.88em;
+        }
+        pre code { background: transparent; color: #e2e8f0; padding: 0; }
+
+        /* Tables */
+        table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 0.9em; }
+        thead tr { background: linear-gradient(135deg, #2d3748, #4a5568); color: white; }
+        thead th { padding: 11px 14px; text-align: left; font-weight: 600; }
+        tbody tr:nth-child(even) { background: #f7fafc; }
+        tbody tr:hover { background: #ebf8ff; }
+        tbody td { padding: 10px 14px; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
+
+        ul { margin: 10px 0 10px 24px; }
+        li { margin: 7px 0; }
+
+        /* Badges */
+        .badge {
+            display: inline-block; padding: 3px 10px; border-radius: 12px;
+            font-size: 0.78em; font-weight: 600;
+        }
+        .badge-ok     { background: #c6f6d5; color: #22543d; }
+        .badge-bug    { background: #fed7d7; color: #742a2a; }
+        .badge-warn   { background: #fefcbf; color: #744210; }
+        .badge-info   { background: #bee3f8; color: #1a365d; }
+
+        /* Grid */
+        .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 16px 0; }
+        .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 16px 0; }
+
+        /* Fix steps */
+        .fix-step {
+            background: #f7fafc; border: 1px solid #e2e8f0;
+            border-radius: 8px; padding: 18px 20px; margin: 12px 0;
+        }
+        .fix-step .step-num {
+            display: inline-block; background: #4299e1; color: white;
+            border-radius: 50%; width: 28px; height: 28px; text-align: center;
+            line-height: 28px; font-weight: 700; margin-right: 10px;
+        }
+        .fix-step h4 { display: inline; color: #2d3748; }
+
+        .footer {
+            background: #2d3748; color: white; padding: 28px 40px; text-align: center;
+        }
+        .footer h2 { color: #fbbf24; margin-bottom: 6px; font-size: 1.2em; }
+        .footer p  { opacity: 0.7; font-size: 0.88em; margin-top: 5px; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>🔍 Shim Architecture Review</h1>
+        <div class="subtitle">WLA Playwright — Full Shim Implementation Assessment</div>
+        <div class="metadata">
+            <div class="metadata-item"><strong>Repo:</strong> WLA_Playwrite</div>
+            <div class="metadata-item"><strong>Approach:</strong> Full Namespace-Compatible Shim</div>
+            <div class="metadata-item"><strong>Target:</strong> .NET 4.8 / netstandard2.0</div>
+            <div class="metadata-item"><strong>Reviewed:</strong> March 2026</div>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- VERDICT -->
+        <div class="section">
+            <div class="verdict-warn">
+                <div class="verdict-label">⚠️ BLOCKED</div>
+                <div class="verdict-sub">
+                    Browser opens correctly. Playwright infrastructure is sound.<br>
+                    Tests do not execute actions. Four specific root causes identified below.
+                </div>
+            </div>
+        </div>
+
+        <!-- APPROACH SUMMARY -->
+        <div class="section">
+            <h2>📐 What Was Built</h2>
+            <div class="summary-box">
+                <h3>Full Shim Architecture (not Spike 1 Namespace Shadowing)</h3>
+                <p>
+                    The WLA_Playwrite implementation takes a different route than the Spike 1 proof-of-concept.
+                    Instead of namespace shadowing + reflection, it builds a full
+                    <strong>Selenium.Playwright.Shim</strong> library that provides all
+                    <code>OpenQA.Selenium.*</code> and <code>TRGR.Quality.QedArsenal.*</code>
+                    types in-namespace. <code>DriverFactory.cs</code> is modified to create
+                    <code>PlaywrightWebDriver</code> directly. All other framework and test files
+                    compile against the shim instead of real Selenium/QedArsenal NuGets.
+                </p>
+            </div>
+
+            <div class="grid2">
+                <div class="card green">
+                    <h4>✅ What's Correct</h4>
+                    <ul>
+                        <li><code>By</code> mechanism strings match <code>ByConverter</code> exactly</li>
+                        <li><code>SyncHelper.RunSync</code> uses <code>Task.Run(...).GetResult()</code> — no deadlock risk</li>
+                        <li><code>WebDriverWait.Until()</code> properly polls with exception handling</li>
+                        <li>TRGR.Quality stubs delegate correctly to <code>IWebDriver</code></li>
+                        <li><code>DriverFactory.InitializeChromeDriver</code> creates <code>PlaywrightWebDriver</code></li>
+                        <li>Navigation: <code>GoToUrl</code>, <code>Back</code>, <code>Refresh</code> properly implemented</li>
+                        <li>Cookie management fully implemented</li>
+                        <li>Screenshot via <code>Page.ScreenshotAsync()</code> — correct</li>
+                    </ul>
+                </div>
+                <div class="card red">
+                    <h4>❌ What's Broken</h4>
+                    <ul>
+                        <li>Browser opens but stays on <code>about:blank</code> — sign-on never navigates</li>
+                        <li>Implicit wait is <strong>0ms</strong> — elements fail to resolve on page load</li>
+                        <li><code>JavascriptClick</code> passes <code>PlaywrightWebElement</code> as JS arg — crashes at runtime</li>
+                        <li><code>WaitForPageLoad</code> / <code>WaitForJavaScript</code> missing from shim QedArsenal stubs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ROOT CAUSES -->
+        <div class="section">
+            <h2>🐛 Root Causes — "Browser Opens, No Actions"</h2>
+
+            <!-- ROOT CAUSE 1 -->
+            <div class="root-cause">
+                <h3><span class="cause-num">1</span> Implicit Wait Is Zero — Elements Time Out Instantly</h3>
+                <p style="margin-top:12px; color:#cbd5e0;">
+                    <code>PlaywrightTimeouts.ImplicitWait</code> defaults to <strong>0 seconds</strong>.
+                    Every call to <code>FindElement</code> passes <code>Timeout = 0</code> to
+                    <code>locator.WaitForAsync()</code>. Playwright treats 0 ms as an immediate check —
+                    if the element is not attached at that exact millisecond, it throws
+                    <code>PlaywrightException</code>, which becomes <code>NoSuchElementException</code>.
+                    The outer <code>WebDriverWait</code> polls but each inner attempt never waits for
+                    the DOM to settle. Fast-loading elements may still resolve, but any element behind
+                    a network call or animation silently fails.
+                </p>
+                <pre><span class="dim">// PlaywrightOptions.cs</span>
+<span class="ok">internal class PlaywrightTimeouts : ITimeouts</span>
+{
+<span class="hl">    public TimeSpan ImplicitWait { get; set; } = TimeSpan.FromSeconds(0);  // ← BUG: 0ms</span>
+}
+
+<span class="dim">// PlaywrightWebDriver.cs — FindElement</span>
+var timeout = _options.GetImplicitWaitMs();  <span class="hl">// returns 0.0f</span>
+SyncHelper.RunSync(() =&gt; locator.First.WaitForAsync(new LocatorWaitForOptions
+{
+<span class="hl">    Timeout = timeout   // 0ms → Playwright checks once, immediately throws if not there</span>
+}));</pre>
+                <p style="color:#a0aec0; font-size:0.9em; margin-top:8px;">
+                    <strong>Fix:</strong> Set <code>ImplicitWait = TimeSpan.FromSeconds(10)</code> as default.
+                    This gives Playwright a sensible retry window matching the original Selenium behavior.
+                </p>
+            </div>
+
+            <!-- ROOT CAUSE 2 -->
+            <div class="root-cause">
+                <h3><span class="cause-num">2</span> <code>JavascriptClick</code> Crashes at Runtime — Wrong JS Arg Type</h3>
+                <p style="margin-top:12px; color:#cbd5e0;">
+                    The shim's <code>ClickExtensions.JavascriptClick()</code> passes a
+                    <code>PlaywrightWebElement</code> to <code>ExecuteScript("arguments[0].click()", element)</code>.
+                    <code>PlaywrightWebDriver.ExecuteScript</code> calls <code>MapArguments</code>,
+                    which calls <code>pwe.Locator.ElementHandleAsync()</code> to convert the locator
+                    to a Playwright <code>IElementHandle</code>. Playwright has deprecated
+                    <code>ElementHandleAsync()</code> and it can return <code>null</code> or throw
+                    when called on strict-mode locators. The wrapped <code>WebDriverException</code>
+                    propagates up. Framework code that wraps this in <code>SafeMethodExecutor</code>
+                    silently swallows it — the click never happens.
+                </p>
+                <pre><span class="dim">// PlaywrightWebDriver.cs — MapArguments</span>
+if (args[i] is PlaywrightWebElement pwe)
+{
+<span class="hl">    mapped[i] = SyncHelper.RunSync(() =&gt; pwe.Locator.ElementHandleAsync());
+    // ↑ ElementHandleAsync is deprecated; returns null on strict locators</span>
+}
+
+<span class="dim">// ClickExtensions.cs</span>
+public static void JavascriptClick(this IWebDriver driver, IWebElement element)
+{
+<span class="hl">    ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].click();", element);
+    // ↑ element is PlaywrightWebElement — MapArguments fails to resolve it</span>
+}</pre>
+                <p style="color:#a0aec0; font-size:0.9em; margin-top:8px;">
+                    <strong>Fix:</strong> Replace <code>ElementHandleAsync()</code> with
+                    <code>page.EvaluateAsync("(el) =&gt; el.click()", locator)</code> directly.
+                    Do not pass <code>PlaywrightWebElement</code> through the JS arg pipeline.
+                    Instead, detect it in <code>ExecuteScript</code> and rewrite the call entirely.
+                </p>
+            </div>
+
+            <!-- ROOT CAUSE 3 -->
+            <div class="root-cause">
+                <h3><span class="cause-num">3</span> Missing <code>WaitForPageLoad</code> / <code>WaitForJavaScript</code> in QedArsenal Stubs</h3>
+                <p style="margin-top:12px; color:#cbd5e0;">
+                    <code>BaseWebObject</code>'s constructor calls <code>DriverExtensions.WaitForPageLoad()</code>
+                    and <code>DriverExtensions.WaitForJavaScript()</code> statically. These are provided
+                    by <code>Framework.Common.UI</code>'s <code>WebDriverExtensions.cs</code>, which
+                    internally calls the QedArsenal extension methods on <code>IWebDriver</code>.
+                    The shim's <code>WaitExtensions</code> stub does <strong>not include</strong>
+                    <code>WaitForPageLoad(this IWebDriver driver)</code> or
+                    <code>WaitForJavaScript(this IWebDriver driver)</code>.
+                    If the Framework facade calls those methods via the QedArsenal extension interface,
+                    they resolve to missing stubs — compile error or silent no-op depending on how
+                    they're referenced. Every page object constructor silently skips the DOM-ready wait.
+                </p>
+                <pre><span class="dim">// BaseWebObject.cs — constructor (Framework.Common.UI, UNCHANGED)</span>
+public BaseWebObject()
+{
+<span class="hl">    DriverExtensions.WaitForPageLoad();     // ← calls QedArsenal WaitForPageLoad</span>
+<span class="hl">    DriverExtensions.WaitForJavaScript();   // ← calls QedArsenal WaitForJavaScript</span>
+}
+
+<span class="dim">// Shim WaitExtensions.cs — MISSING these two methods:</span>
+<span class="hl">// WaitForPageLoad(this IWebDriver driver) — NOT PRESENT</span>
+<span class="hl">// WaitForJavaScript(this IWebDriver driver) — NOT PRESENT</span></pre>
+                <p style="color:#a0aec0; font-size:0.9em; margin-top:8px;">
+                    <strong>Fix:</strong> Add both methods to the shim's
+                    <code>TRGR.Quality\Extensions\WaitExtensions.cs</code>.
+                    Implement <code>WaitForPageLoad</code> using
+                    <code>page.WaitForLoadStateAsync(LoadState.DOMContentLoaded)</code>
+                    and <code>WaitForJavaScript</code> using
+                    <code>page.WaitForFunctionAsync("() =&gt; document.readyState === 'complete'")</code>.
+                </p>
+            </div>
+
+            <!-- ROOT CAUSE 4 -->
+            <div class="root-cause">
+                <h3><span class="cause-num">4</span> <code>GotoAsync</code> Uses <code>Url</code> Setter But Sign-On Calls <code>Navigate().GoToUrl()</code></h3>
+                <p style="margin-top:12px; color:#cbd5e0;">
+                    Two navigation paths exist. <code>PlaywrightWebDriver.Url</code> setter calls
+                    <code>Page.GotoAsync(value)</code> with <strong>no explicit wait-until state</strong>
+                    — it uses Playwright's default (<code>Load</code> event).
+                    <code>PlaywrightNavigation.GoToUrl</code> uses <code>DOMContentLoaded</code> with 60s timeout.
+                    The WLA sign-on page is a JavaScript-heavy SPA. When the framework uses the
+                    <code>Url</code> setter (common in BrowserPool sign-on flow), navigation completes
+                    at the network level but the React app hasn't rendered. Subsequent
+                    <code>FindElement</code> calls execute against an empty DOM shell.
+                    All locators return <code>NoSuchElementException</code>. Sign-on fails silently
+                    (caught by <code>SafeMethodExecutor</code>). Browser stays at the sign-on URL
+                    but no actions are performed.
+                </p>
+                <pre><span class="dim">// PlaywrightWebDriver.cs</span>
+public string Url
+{
+    set
+    {
+<span class="hl">        SyncHelper.RunSync(() =&gt; Page.GotoAsync(value));
+        // ↑ No WaitUntil specified — uses Playwright default (Load event)
+        // SPA may not be render-ready after Load fires</span>
+    }
+}
+
+<span class="dim">// PlaywrightNavigation.cs — correctly uses DOMContentLoaded + 60s</span>
+<span class="ok">SyncHelper.RunSync(() =&gt; _driver.Page.GotoAsync(url, new PageGotoOptions {</span>
+<span class="ok">    WaitUntil = WaitUntilState.DOMContentLoaded, Timeout = 60000 }));</span></pre>
+                <p style="color:#a0aec0; font-size:0.9em; margin-top:8px;">
+                    <strong>Fix:</strong> Update the <code>Url</code> setter to use the same options as
+                    <code>GoToUrl</code>: <code>WaitUntilState.DOMContentLoaded</code> with a 60s timeout.
+                    After navigation, add a <code>Page.WaitForLoadStateAsync(LoadState.NetworkIdle)</code>
+                    call to ensure the React shell has settled before element lookups begin.
+                </p>
+            </div>
+        </div>
+
+        <!-- WHAT IS WORKING -->
+        <div class="section">
+            <h2>✅ What Is Working Correctly</h2>
+            <table>
+                <thead>
+                    <tr><th>Component</th><th>File</th><th>Status</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>By</code> mechanism strings</td><td>By.cs + ByConverter.cs</td><td><span class="badge badge-ok">✅ Correct</span></td></tr>
+                    <tr><td><code>SyncHelper.RunSync</code></td><td>SyncHelper.cs</td><td><span class="badge badge-ok">✅ No deadlock risk</span></td></tr>
+                    <tr><td><code>WebDriverWait.Until()</code> polling</td><td>WebDriverWait.cs</td><td><span class="badge badge-ok">✅ Correct</span></td></tr>
+                    <tr><td>QedArsenal element retrieval stubs</td><td>ElementRetrievalExtensions.cs</td><td><span class="badge badge-ok">✅ Delegates correctly</span></td></tr>
+                    <tr><td>QedArsenal click stubs</td><td>ClickExtensions.cs</td><td><span class="badge badge-ok">✅ <code>Click()</code> correct (not JS variant)</span></td></tr>
+                    <tr><td>Navigation <code>GoToUrl</code></td><td>PlaywrightNavigation.cs</td><td><span class="badge badge-ok">✅ DOMContentLoaded + 60s</span></td></tr>
+                    <tr><td>Cookie management</td><td>PlaywrightOptions.cs</td><td><span class="badge badge-ok">✅ Fully implemented</span></td></tr>
+                    <tr><td>Screenshots</td><td>PlaywrightWebDriver.cs</td><td><span class="badge badge-ok">✅ Via Page.ScreenshotAsync</span></td></tr>
+                    <tr><td><code>DriverFactory</code> Chrome path</td><td>DriverFactory.cs</td><td><span class="badge badge-ok">✅ Creates PlaywrightWebDriver</span></td></tr>
+                    <tr><td>Browser launch (headless flag, args)</td><td>PlaywrightWebDriver.cs</td><td><span class="badge badge-ok">✅ Maps ChromeOptions correctly</span></td></tr>
+                    <tr><td>Window management</td><td>PlaywrightOptions.cs</td><td><span class="badge badge-ok">✅ Viewport-based maximize</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- SECONDARY RISKS -->
+        <div class="section">
+            <h2>⚠️ Secondary Risks (After Primary Fixes)</h2>
+
+            <div class="grid2">
+                <div class="card yellow">
+                    <h4>⚠️ <code>WaitForAsync(Timeout=0)</code> Semantics</h4>
+                    <p>
+                        Even after fixing the default, if code explicitly calls
+                        <code>driver.Manage().Timeouts().ImplicitWait = TimeSpan.Zero</code>
+                        (via <code>DisableTimeout()</code>), <code>FindElement</code> will again
+                        pass <code>Timeout=0</code> to Playwright. Playwright treats <code>0</code>
+                        as "use browser default" (30s) in some builds and "instant fail" in others.
+                        Verify behavior with the specific Playwright v1.44.0 build in use.
+                    </p>
+                </div>
+                <div class="card yellow">
+                    <h4>⚠️ <code>SendKeys</code> Special Keys Only <code>PressAsync</code></h4>
+                    <p>
+                        <code>PlaywrightWebElement.SendKeys</code> routes special-key sequences
+                        (Unicode <code>\ue000–\ue03d</code>) to <code>Locator.PressAsync(mapped)</code>.
+                        But <code>Keys.Tab</code>, <code>Keys.Enter</code> etc. from the framework
+                        may arrive mixed with regular text (e.g., <code>"value" + Keys.Tab</code>).
+                        The current code only handles pure-special or pure-text — mixed input breaks.
+                    </p>
+                </div>
+                <div class="card yellow">
+                    <h4>⚠️ <code>WaitForJavaScript</code> on SPA Pages</h4>
+                    <p>
+                        WLA uses a React SPA. <code>document.readyState === 'complete'</code> fires
+                        before React finishes rendering. The <code>WaitForJavaScript</code> stub
+                        should additionally wait for any <code>window.jQuery</code> or app-specific
+                        ready signal if the original QedArsenal implementation did so.
+                    </p>
+                </div>
+                <div class="card yellow">
+                    <h4>⚠️ Frame Switching State</h4>
+                    <p>
+                        <code>PlaywrightTargetLocator.Frame()</code> sets
+                        <code>CurrentFrame</code> on the driver. This is a driver-level field,
+                        not page-level. If a test switches tabs then back, <code>CurrentFrame</code>
+                        may still point to a frame from the previous page. Add
+                        <code>CurrentFrame = null</code> in <code>SetActivePage()</code> (already present)
+                        but also on any navigation in <code>Url</code> setter and <code>GoToUrl</code>.
+                    </p>
+                </div>
+                <div class="card yellow">
+                    <h4>⚠️ <code>GetParentElement</code> JS Return Type</h4>
+                    <p>
+                        <code>ElementRetrievalExtensions.GetParentElement</code> does:
+                        <code>(IWebElement)driver.ExecuteScript("return arguments[0].parentNode;", element)</code>.
+                        <code>PlaywrightWebDriver.ExecuteScript</code> returns <code>object</code>
+                        from <code>Page.EvaluateAsync&lt;object&gt;</code> — a JSON-deserialized value,
+                        not an <code>IWebElement</code>. The cast to <code>IWebElement</code> throws
+                        <code>InvalidCastException</code> at runtime.
+                    </p>
+                </div>
+                <div class="card yellow">
+                    <h4>⚠️ <code>FindPublishDirectory</code> Filesystem Scan</h4>
+                    <p>
+                        The static constructor in <code>PlaywrightWebDriver</code> scans
+                        <code>C:\Github\*\src\Shim\publish</code> looking for the Playwright driver.
+                        This will fail on CI machines with different drive letters or
+                        non-standard repo paths. Hardcoded drive and directory names
+                        (<code>C</code>, <code>Github</code>, <code>git</code>, <code>repos</code>)
+                        make this brittle. Use an environment variable or embedded resource instead.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- APPROACH COMPARISON -->
+        <div class="section">
+            <h2>📊 Approach Comparison — Full Shim vs Spike 1</h2>
+            <table>
+                <thead>
+                    <tr><th>Dimension</th><th>Full Shim (current)</th><th>Spike 1 Namespace Shadowing</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>New files</td>
+                        <td>~55 files in shim + DriverFactory change</td>
+                        <td>4 files + 2 modified</td>
+                    </tr>
+                    <tr>
+                        <td>Test file changes</td>
+                        <td><span class="badge badge-ok">Zero</span></td>
+                        <td><span class="badge badge-ok">Zero</span></td>
+                    </tr>
+                    <tr>
+                        <td>Reflection usage</td>
+                        <td><span class="badge badge-ok">None</span></td>
+                        <td><span class="badge badge-warn">Extensive (sealed classes)</span></td>
+                    </tr>
+                    <tr>
+                        <td>QedArsenal dependency</td>
+                        <td><span class="badge badge-ok">Fully removed</span></td>
+                        <td><span class="badge badge-warn">Still present (via extern alias)</span></td>
+                    </tr>
+                    <tr>
+                        <td>Maintenance surface</td>
+                        <td>Shim stubs must track QedArsenal API changes</td>
+                        <td>Reflection calls must track sealed method names</td>
+                    </tr>
+                    <tr>
+                        <td>Extensibility to other products</td>
+                        <td><span class="badge badge-ok">High — shim is reusable</span></td>
+                        <td>Per-project new BaseWebUiTest needed</td>
+                    </tr>
+                    <tr>
+                        <td>Current status</td>
+                        <td><span class="badge badge-warn">Browser opens, 4 bugs blocking actions</span></td>
+                        <td><span class="badge badge-ok">AJS tests passing (Spike)</span></td>
+                    </tr>
+                    <tr>
+                        <td>Recommended path</td>
+                        <td><span class="badge badge-ok">✅ Continue — fix 4 root causes</span></td>
+                        <td>Not recommended for full migration</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="card blue" style="margin-top:14px;">
+                <h4>Verdict on Approach Choice</h4>
+                <p>
+                    The full shim approach is <strong>architecturally superior</strong> for the full migration goal.
+                    It eliminates QedArsenal entirely, creates a reusable shim library for other products,
+                    and avoids fragile reflection. The Spike 1 approach was valid for a 5-day feasibility proof
+                    but is not the right foundation for production. Continue with the shim — fix the 4 root causes below.
+                </p>
+            </div>
+        </div>
+
+        <!-- FIX PLAN -->
+        <div class="section">
+            <h2>🔧 Fix Plan — Priority Order</h2>
+
+            <div class="fix-step">
+                <span class="step-num">1</span>
+                <h4>Set default <code>ImplicitWait</code> to 10 seconds</h4>
+                <p style="margin-top:10px; margin-left:38px; color:#4a5568;">
+                    In <code>PlaywrightTimeouts</code>, change
+                    <code>TimeSpan.FromSeconds(0)</code> to <code>TimeSpan.FromSeconds(10)</code>.
+                    This gives every <code>FindElement</code> call a 10-second Playwright
+                    auto-wait window, matching the original Selenium implicit wait behavior.
+                    <strong>Estimated fix: 1 line.</strong>
+                </p>
+            </div>
+
+            <div class="fix-step">
+                <span class="step-num">2</span>
+                <h4>Fix <code>Url</code> setter navigation</h4>
+                <p style="margin-top:10px; margin-left:38px; color:#4a5568;">
+                    In <code>PlaywrightWebDriver.Url</code> setter, add
+                    <code>PageGotoOptions { WaitUntil = WaitUntilState.DOMContentLoaded, Timeout = 60000 }</code>
+                    — match <code>PlaywrightNavigation.GoToUrl</code> exactly.
+                    Then add <code>Page.WaitForLoadStateAsync(LoadState.NetworkIdle, timeout: 10000)</code>
+                    wrapped in try-catch (NetworkIdle may not fire on all pages).
+                    <strong>Estimated fix: 5 lines.</strong>
+                </p>
+            </div>
+
+            <div class="fix-step">
+                <span class="step-num">3</span>
+                <h4>Add <code>WaitForPageLoad</code> and <code>WaitForJavaScript</code> to shim</h4>
+                <p style="margin-top:10px; margin-left:38px; color:#4a5568;">
+                    In <code>TRGR.Quality\Extensions\WaitExtensions.cs</code>, add:
+                </p>
+                <pre style="margin: 8px 0 0 38px;">
+<span class="ok">public static void WaitForPageLoad(this IWebDriver driver)</span>
+{
+    if (driver is Selenium.Playwright.Shim.Impl.PlaywrightWebDriver pw)
+        SyncHelper.RunSync(() =&gt; pw.Page.WaitForLoadStateAsync(
+            Microsoft.Playwright.LoadState.DOMContentLoaded));
+}
+
+<span class="ok">public static void WaitForJavaScript(this IWebDriver driver)</span>
+{
+    if (driver is Selenium.Playwright.Shim.Impl.PlaywrightWebDriver pw)
+        SyncHelper.RunSync(() =&gt; pw.Page.WaitForFunctionAsync(
+            "() =&gt; document.readyState === 'complete'"));
+}</pre>
+            </div>
+
+            <div class="fix-step">
+                <span class="step-num">4</span>
+                <h4>Fix <code>JavascriptClick</code> — bypass <code>ElementHandleAsync</code></h4>
+                <p style="margin-top:10px; margin-left:38px; color:#4a5568;">
+                    In <code>PlaywrightWebDriver.ExecuteScript</code>, detect when script is
+                    <code>"arguments[0].click();"</code> and the first arg is a
+                    <code>PlaywrightWebElement</code>, then route directly to
+                    <code>pwe.Locator.ClickAsync()</code> instead of going through
+                    <code>EvaluateAsync</code>. Alternatively, remove <code>ElementHandleAsync</code>
+                    entirely from <code>MapArguments</code> and pass a JS handle via
+                    <code>Locator.EvaluateAsync("el =&gt; el", [])</code> which returns a serializable ref.
+                    <strong>Estimated fix: 15 lines.</strong>
+                </p>
+            </div>
+        </div>
+
+        <!-- DIAGNOSTIC STEPS -->
+        <div class="section">
+            <h2>🔬 How to Confirm Root Causes</h2>
+            <p>Run one AJS test with these checks before applying fixes:</p>
+            <table>
+                <thead><tr><th>#</th><th>Check</th><th>How</th><th>Expected if broken</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Confirm <code>ImplicitWait = 0</code></td>
+                        <td>Add <code>Console.WriteLine(_options.GetImplicitWaitMs())</code> in <code>FindElement</code></td>
+                        <td>Prints <code>0</code></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Confirm <code>Url</code> setter is used for sign-on</td>
+                        <td>Add <code>Console.WriteLine($"[Playwright] Url setter: {value}")</code> in setter</td>
+                        <td>Prints sign-on URL before React is ready</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Confirm <code>WaitForPageLoad</code> is missing</td>
+                        <td>Search for it in the shim; check if Framework.Common.UI compiles without it</td>
+                        <td>Missing from shim; Framework may have an internal no-op</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Confirm <code>JavascriptClick</code> crashes</td>
+                        <td>Set a breakpoint or log in <code>MapArguments</code></td>
+                        <td><code>ElementHandleAsync()</code> returns null or throws</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Confirm sign-on reaches the site</td>
+                        <td>Add <code>Console.WriteLine($"[Playwright] Page URL after init: {Page.Url}")</code> at end of <code>InitializeTestCase</code></td>
+                        <td>Prints <code>about:blank</code> or sign-on URL (not WLA homepage)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- VERDICT FINAL -->
+        <div class="section">
+            <div class="verdict-partial">
+                <div class="verdict-label">🔧 4 FIXES NEEDED</div>
+                <div class="verdict-sub">
+                    Architecture is sound. Shim approach is correct for the full migration.<br>
+                    Fix implicit wait → navigation timing → missing stubs → JS click.<br>
+                    AJS tests should execute after these four targeted changes.
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /content -->
+
+    <div class="footer">
+        <h2>WLA Playwright — Shim Review Complete</h2>
+        <p>4 root causes | 4 targeted fixes | Full shim approach recommended</p>
+        <p>Playwright v1.44.0 | .NET Framework 4.8 | netstandard2.0 shim</p>
+        <p style="margin-top:6px;">March 2026</p>
+    </div>
+
+</div>
+</body>
+</html>

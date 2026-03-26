@@ -1,0 +1,11 @@
+﻿{
+  // Maps SmartFoldersDocumentType to BaseTextElementInfo
+  "FolderedDocuments": {
+    "Text": "Foldered Documents",
+    "LocatorString": "//*[@class='highcharts-series-group']//*[@fill='#48a0ef']"
+  },
+  "RecommendedDocuments": {
+    "Text": "Recommended Documents",
+    "LocatorString": "//*[@class='highcharts-series-group']//*[@fill='#15548c']"
+  }
+}

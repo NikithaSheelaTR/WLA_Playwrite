@@ -1,0 +1,66 @@
+// Maps Funds to BlcFundsModelInfo
+{
+  "Allianze": {
+    "Query": "allianz funds",
+    "Title": "ALLIANZ FUNDS",
+    "FormerName": [ "PIMCO FUNDS MULTI MANAGER SERIES", "PIMCO ADVISORS INSTITUTIONAL FUNDS", "PIMCO FUNDS EQUITY ADVISORS SERIES" ],
+    "FormerNameCount": "3",
+    "CIK": "0000867297",
+    "SID": "S000007963",
+    "SeriesName": "AllianzGI NFJ Dividend Value Fund",
+    "SeriesFormerName": "Allianz NFJ Dividend Value Fund",
+    "SeriesFormerNameCount": "2",
+    "ClassId": "C000021609",
+    "SeriesClassName": "Institutional",
+    "Ticker": "NFJEX",
+    "V2": "y"
+  },
+
+  "Frontier": {
+    "Query": "frontier funds",
+    "Title": "FRONTIER FUNDS INC",
+    "FormerName": [ "FREEDOM CAPITAL PORTFOLIO FUNDS INC" ],
+    "FormerNameCount": "1",
+    "CIK": "0000880571",
+    "SID": "S000018607",
+    "SeriesName": "Frontegra Sky International Equity Fund",
+    "SeriesFormerName": "Frontegra Sky International Value Fund",
+    "SeriesFormerNameCount": "2",
+    "ClassId": "C000051615",
+    "SeriesClassName": "Institutional Class",
+    "Ticker": "FSKEX",
+    "V2": "y"
+  },
+
+  "LineMid": {
+    "Query": "Line mid",
+    "Title": "VALUE LINE MID CAP FOCUSED FUND, INC.",
+    "FormerName": [ "VALUE LINE FUND INC" ],
+    "FormerNameCount": "1",
+    "CIK": "0000102756",
+    "SID": "S000007570",
+    "SeriesName": "VALUE LINE MID CAP FOCUSED FUND, INC.",
+    "SeriesFormerName": "VALUE LINE FUND INC",
+    "SeriesFormerNameCount": "1",
+    "ClassId": "C000020635",
+    "SeriesClassName": "VALUE LINE MID CAP FOCUSED FUND, INC.",
+    "Ticker": "VLIFX",
+    "V2": "n"
+  },
+
+  "F1290": {
+    "Query": "1290 Funds",
+    "Title": "1290 FUNDS",
+    "FormerName": [ "1290 Funds Trust" ],
+    "FormerNameCount": "1",
+    "CIK": "0001605941",
+    "SID": "S000045912",
+    "SeriesName": "1290 SmartBeta Equity Fund",
+    "SeriesFormerName": "none",
+    "SeriesFormerNameCount": "0",
+    "ClassId": "C000143085",
+    "SeriesClassName": "Class C",
+    "Ticker": "TNBCX",
+    "V2": "y"
+  }
+}

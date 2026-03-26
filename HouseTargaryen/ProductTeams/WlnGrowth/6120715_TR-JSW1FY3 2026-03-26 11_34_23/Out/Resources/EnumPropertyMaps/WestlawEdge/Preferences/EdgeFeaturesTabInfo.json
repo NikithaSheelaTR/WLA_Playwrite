@@ -1,0 +1,43 @@
+{
+  // Maps FeaturesTab enumeration to WebElementInfo
+  "AiAssistedResearchCitations": {
+    "LocatorString": "//div[@class='UserSettings-checkbox ' and .//span[text()='AI-Assisted Research citations']]",
+    "Text": "AI-Assisted Research Citations"
+  },
+  "Annotations": {
+    "LocatorString": "//div[@class='UserSettings-checkbox ' and .//span[text()='Hide annotations']]",
+    "Text": "Hide Annotations"
+  },
+  "BestPortion": {
+    "LocatorString": "//div[@class='UserSettings-checkbox ' and .//span[text()='Best Portion']]",
+    "Text": "Best Portion"
+  },
+  "CheckpointIntegration": {
+    "LocatorString": "//div[@class='UserSettings-checkbox ' and .//span[text()='Integration with Checkpoint']]",
+    "Text": "Integration with Checkpoint"
+  },
+  "ConcurrenceDissentIndicators": {
+    "LocatorString": "//div[@class='UserSettings-checkbox ' and .//span[text()='Concurrence & dissent indicators']]",
+    "Text": "Concurrence & dissent indicators"
+  },
+  "LawSummaries": {
+    "LocatorString": "//div[@class='UserSettings-checkbox ' and .//span[text()='Law Summaries']]",
+    "Text": "Law Summaries"
+  },
+  "LitigationAnalytics": {
+    "LocatorString": "//div[@class='UserSettings-checkbox ' and .//span[text()='Litigation Analytics suggestions']]",
+    "Text": "Litigation Analytics suggestions"
+  },
+  "ResearchRecommendations": {
+    "LocatorString": "//div[@class='UserSettings-checkbox ' and .//span[text()='Research Recommendations']]",
+    "Text": "Research Recommendations"
+  },
+  "SearchSuggestions": {
+    "LocatorString": "//div[@class='UserSettings-checkbox ' and .//span[text()='Search Suggestions']]",
+    "Text": "Search Suggestions"
+  },
+  "ShowPrecisionResearch": {
+    "LocatorString": "//div[@class='UserSettings-checkbox ' and .//span[text() ='Show Precision Research']]",
+    "Text": "Show Precision Research"
+  }
+}

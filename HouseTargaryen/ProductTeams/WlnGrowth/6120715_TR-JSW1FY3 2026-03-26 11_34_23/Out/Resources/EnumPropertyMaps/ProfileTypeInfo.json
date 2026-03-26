@@ -1,0 +1,18 @@
+{
+   // Maps MetadocField to BaseTextModel
+  "Arbitrators": {
+    "Text": "Home/Profiler/ProfilerProfilesofArbitrators"
+  },
+  "AttorneyAndJudges": {
+    "Text": "Home/Profiler/ProfilerProfilesofAttorneysJudges"
+  },
+  "Characters": {
+    "Text": "Home/CompanyInvestigator"
+  },
+  "ExpertLibrary": {
+    "Text": "Home/Profiler/ProfilerProfilesofExpertWitnesses"
+  },
+  "PeopleMap": {
+    "Text": "Home/PublicRecords"
+  }
+}

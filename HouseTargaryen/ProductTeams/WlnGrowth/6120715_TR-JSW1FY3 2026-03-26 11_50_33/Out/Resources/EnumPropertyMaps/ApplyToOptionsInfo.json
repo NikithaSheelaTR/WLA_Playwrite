@@ -1,0 +1,18 @@
+{
+  // Maps ApplyToOptions to WebElementInfo
+  "AllUsersByLocation": {
+    "Text": "All Users by Location"
+  },
+  "Client": {
+    "Text": "Client"
+  },
+  "Location": {
+    "Text": "Location"
+  },
+  "PracticeArea": {
+    "Text": "Practice Area"
+  },
+  "SpecificUser": {
+    "Text": "Specific User"
+  }
+}

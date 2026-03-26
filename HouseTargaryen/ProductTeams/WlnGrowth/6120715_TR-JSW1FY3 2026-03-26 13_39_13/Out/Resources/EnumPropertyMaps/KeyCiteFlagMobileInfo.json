@@ -1,0 +1,22 @@
+﻿{
+  // Maps KeyCiteFlag to WebElementInfo for WLN mobile
+  "Blue": {
+    "SourceFile": "small_B_flag.png"
+  },
+
+  "Gray": {
+    "SourceFile": "small_G_flag.png"
+  },
+
+  "NoFlag": {
+    "SourceFile": ""
+  },
+
+  "Red": {
+    "SourceFile": "small_R_flag.png"
+  },
+
+  "Yellow": {
+    "SourceFile": "small_Y_flag.png"
+  }
+}

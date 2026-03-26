@@ -1,0 +1,24 @@
+{
+  // Maps NotesOfDesicionsLinks to WebElementInfo
+  "CategoryAmendmentOfProcessOrProofOfServiceLink": {
+    "Id": "I88C2ECF2DF3D11E09E30CFCCF2216C1F"
+  },
+  "CategoryGenerallyLink1": {
+    "Id": "I28F4EA02DF7211E09E30CFCCF2216C1F"
+  },
+  "CategoryGenerallyLink2": {
+    "Id": "I88789D82DF3D11E09E30CFCCF2216C1F"
+  },
+  "CategoryHagueConvetionOnServiceAbroadLink": {
+    "Id": "I894BA4F2DF3D11E09E30CFCCF2216C1F"
+  },
+  "CategoryCorporationsPartnershipsAndUnincorporatedAssociations": {
+	  "Id": "I88EA4B12DF3D11E09E30CFCCF2216C1F"
+  },
+  "SubCategoryBidsLink": {
+    "Id": "IFD78B8C0E4BC11E5B555A16D408CF35F"
+  },
+  "SubCategoryPersonsOrEntitiesServedLink": {
+    "Id": "I894BCC10DF3D11E09E30CFCCF2216C1F"
+  }
+}

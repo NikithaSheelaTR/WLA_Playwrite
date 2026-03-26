@@ -1,0 +1,12 @@
+{
+  // Maps WeblinksSearchType to BaseTextModel
+  "CaseName": { "Text": "Case Name" },
+  "Citation": { "Text": "Citation" },
+  "DecisionDate": { "Text": "Decision Date" },
+  "DocketNumberOrCounsel": { "Text": "Docket Number or Counsel" },
+  "Field": { "Text": "Field Search" },
+  "JudgeAndOpinionType": { "Text": "Judge and Opinion Type" },
+  "PartyName": { "Text": "Party Name" },
+  "Text": { "Text": "Text Search" },
+  "Word": { "Text": "Word" }
+}

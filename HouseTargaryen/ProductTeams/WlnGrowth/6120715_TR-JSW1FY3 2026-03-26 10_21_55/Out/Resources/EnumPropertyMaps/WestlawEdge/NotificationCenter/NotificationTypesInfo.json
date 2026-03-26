@@ -1,0 +1,39 @@
+﻿{
+  // Maps AdvancedSearchField to BaseTextModel
+  "All": {
+    "Text": "All"
+  },
+  "CourtWireAlert": {
+    "Text": "Court Wire Alert"
+  },
+  "DocketAlert": {
+    "Text": "Docket Alert"
+  },
+  "DocketTrack": {
+    "Text": "Docket Track"
+  },
+  "FolderAnalysis": {
+    "Text": "Folder Analysis"
+  },
+  "KeyCite": {
+    "Text": "KeyCite"
+  },
+  "SharedDocument": {
+    "Text": "Shared document"
+  },
+  "SharedFolder": {
+    "Text": "Shared folder"
+  },
+  "SharedHighlight": {
+    "Text": "Shared highlight"
+  },
+  "SharedNote": {
+    "Text": "Shared note"
+  },
+  "SharedSnippet": {
+    "Text": "Shared snippet"
+  },
+  "WestClip": {
+    "Text": "WestClip"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  // Maps Canada EAlert Type Toolbar to WebElementInfo
+
+  "All": {
+    "Id": "coid_alert_alertType_All",
+    "Text": "All"
+  },
+  "BillTracker": {
+    "Id": "coid_alert_alertType_POBWatch",
+    "Text": "Bill Tracker"
+  },
+  "JurisdictionAlert": {
+    "Id": "coid_alert_alertType_JurisdictionAlert",
+    "Text": "Jurisdiction Alert"
+  },
+  "KeyCite": {
+    "Id": "coid_alert_alertType_KeyCiteCanada",
+    "Text": "KeyCite"
+  },
+  "Primeur": {
+    "Id": "coid_alert_alertType_PrimeurNextCanada",
+    "Text": "Primeur"
+  },
+  "StatuteMonitor": {
+    "Id": "coid_alert_alertType_POBAlert",
+    "Text": "Statute Monitor"
+  },
+  "WestClip": {
+    "Id": "coid_alert_alertType_WestClipCanada",
+    "Text": "WestClip"
+  }
+}

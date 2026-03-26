@@ -1,0 +1,11 @@
+﻿{
+  // Maps CompareTextTabs to WebElementInfo
+  "SelectToCompare": {
+    "Text": "Select to compare",
+    "LocatorString": "//li[@id = 'tab_SelectToCompare']"
+  },
+  "ViewSavedComparisons": {
+    "Text": "View saved comparisons",
+    "LocatorString": "//li[@id = 'tab_ViewSavedComparisons']"
+  }
+}

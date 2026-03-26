@@ -1,0 +1,12 @@
+{
+  // Maps FacetOptionFields to WebElementInfo
+  "Selector": {
+    "LocatorString": ".//input[@type = 'checkbox']"
+  },
+  "Title": {
+    "LocatorString": ".//span[contains(@class, 'SearchFacet-labelText')]"
+  },
+  "Count": {
+    "LocatorString": ".//span[@class='SearchFacet-outputTextValue']"
+  }
+}

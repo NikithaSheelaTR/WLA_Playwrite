@@ -1,0 +1,9 @@
+{
+  // Maps NotesOfDecisions Facet Options to WebElementInfo
+  "No": {
+    "LocatorString": "//a[@id='coid_relatedinfo_HasNOD1_link']"
+  },
+  "Yes": {
+    "LocatorString": "//a[@id='coid_relatedinfo_HasNOD2_link']"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  // Maps ReportPageTables to WebElementInfo
+  "AppellateCourtDocuments": { "Id": "tableAppellateCourtDocuments" },
+  "AppellateDecisions": { "Id": "tableAppellateDecisions" },
+  "AwardAmountAnalysis": { "Id": "tableAwardsAnalysis" },
+  "AwardsByCounty": { "Id": "tableAwardsByCounty" },
+  "AwardsByLargest": { "Id": "tableAwardsLargest" },
+  "AwardsByParty": { "Id": "tableAwardsByParty" },
+  "ExpertDistribution": { "Id": "tableExpertDistribution" },
+  "ExpertsByExpertise": { "Id": "tableExpertsByExpertise" },
+  "MedicalIllustrations": { "Id": "tableMedicalIllustrations" },
+  "MedicalResources": { "Id": "tableMedicalResources" },
+  "TrialCourtMemoranda": { "Id": "tableTrialCourtMemoranda" },
+  "VerdictAndSettlement": { "Id": "tableVerdictAndSettlements" }
+}

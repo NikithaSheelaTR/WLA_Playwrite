@@ -1,0 +1,54 @@
+﻿{
+    // Maps IndigoDeliveryTab to WebElementInfo
+    "AddCoverPage": {
+        "LocatorString": "//input[@type='checkbox' and ./parent::label/span[contains(.,'Add a cover page')]]"
+    },
+    "CorrespondingDocumentWithKeyCiteLists": {
+        "LocatorString": "//input[@type='checkbox' and ./parent::label/span[text()='Corresponding document with KeyCite lists']]"
+    },
+    "DocumentFormat": {
+        "LocatorString": "//select[./parent::label/span[text()='Document format']]"
+    },
+    "DualColumnLayoutForCases": {
+        "LocatorString": "//input[@type='checkbox' and ./parent::label/span[text()='Dual column layout for cases']]"
+    },
+    "ExpandedMarginForNotes": {
+        "LocatorString": "//input[@type='checkbox' and ./parent::label/span[text()='Expanded margin for notes']]"
+    },
+    "Footnotes": {
+        "LocatorString": "//select[./parent::label/span[text()='Footnotes']]"
+    },
+    "FullKeyNumberHierarchy": {
+        "LocatorString": "//input[@type='checkbox' and ./parent::label/span[text()='Show full Key Number hierarchy']]"
+    },
+    "KeyCiteTreatment": {
+        "LocatorString": "//input[@type='checkbox' and ./parent::label/span[text()='KeyCite treatment']]"
+    },
+    "LinkColorBlack": {
+        "LocatorString": "//input[@type='radio' and @value='Black']"
+    },
+    "LinkColorBlue": {
+        "LocatorString": "//input[@type='radio' and @value='Blue']"
+    },
+    "MultipleDocuments": {
+        "LocatorString": "//select[./parent::label/span[text()='Multiple documents']]"
+    },
+    "OnlyPagesWithTerms": {
+        "LocatorString": "//input[@type='checkbox' and ./parent::label/span[text()='Only pages with terms']]"
+    },
+    "OriginalImageLink": {
+        "LocatorString": "//input[@type='checkbox' and ./parent::label/span[text()='Original image link']]"
+    },
+    "TermHighlighting": {
+        "LocatorString": "//input[@type='checkbox' and ./parent::label/span[text()='Term highlighting']]"
+    },
+    "Underline": {
+        "LocatorString": "//input[@type='checkbox' and ./parent::label/span[text()='Underline']]"
+    },
+    "WestHeadnotes": {
+        "LocatorString": "//input[@type='checkbox' and ./parent::label/span[text()='West Headnotes']]"
+    },
+    "DeliveryDocumentFormat": {
+        "LocatorString": "//label[span[text()='Document format']]/following-sibling::select"
+    }
+}

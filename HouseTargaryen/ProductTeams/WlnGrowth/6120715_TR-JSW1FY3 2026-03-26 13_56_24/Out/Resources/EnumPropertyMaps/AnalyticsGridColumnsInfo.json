@@ -1,0 +1,18 @@
+{
+    // Maps AnalyticsGridColumns to WebElementInfo
+  "Description": {
+    "LocatorString": "//div[contains(@class,'wa_gridColumnDescription')]/a"
+  },
+  "InPlan": {
+    "LocatorString": "//div[contains(@class,'wa_gridColumnActualChargeInPlan')]/a"
+  },
+  "OutOfPlan": {
+    "LocatorString": "//div[contains(@class,'wa_gridColumnActualChargeOutOfPlan')]/a"
+  },
+  "PercentOutOfPlan": {
+    "LocatorString": "//div[contains(@class,'wa_gridColumnActualChargePercentOutOfPlan')]/a"
+  },
+  "StandadtCharge": {
+    "LocatorString": "//div[contains(@class,'wa_gridColumnActualCharge')]/a[text()='Standard Charge']"
+  }
+}

@@ -1,0 +1,36 @@
+﻿{
+  // Maps IndigoDocumentKeyCiteFlags to WebElementInfo
+  "Blue": {
+    "LocatorString": "//a[contains(@class,'co_inlineKeyCiteFlagLink co_bFlagLg')]",
+    "ClassName": "co_bFlagLg"
+  },
+  "BlueH": {
+    "LocatorString": "//a[contains(@aria-label,'KeyCite Blue Letter H') or contains(@aria-label,'Historique KeyCite')]",
+    "ClassName": "co_citatorFlagText"
+  },
+  "Gray": {
+    "LocatorString": "//a[contains(@class,'co_inlineKeyCiteFlagLink co_multipleFlags')]",
+    "ClassName": "co_bFlagLg"
+  },
+  "ImpliedOverruling": {
+    "LocatorString": "//a[contains(@class,'co_inlineKeyCiteFlagLink') and descendant::img[contains(@src,'caution_orange_small')]]",
+    "ClassName": "co_cautionLg"
+  },
+  "NoFlag": {
+    "LocatorString": "",
+    "ClassName": ""
+  },
+  "Red": {
+    "LocatorString": "//a[contains(@class,'co_inlineKeyCiteFlagLink')] | //button[contains(@class,'co_inlineKeyCiteFlagLink')] | //span[@class='co_citatorFlag co_rFlagLg']/a",
+    "ClassName": "co_rFlagLg"
+  },
+  "Striped": {
+    "LocatorString": "//a[contains(@class,'co_rStripedFlagSm')]",
+    "ClassName": "co_rStripedFlagSm"
+  },
+  "Yellow": {
+    "LocatorString": "//a[contains(@class,'co_inlineKeyCiteFlagLink co_yFlagLg')] |//button[contains(@class,'co_inlineKeyCiteFlagLink co_yFlagLg')] | //span[contains(@class,'co_citatorFlag co_yFlagLg')]",
+    "ClassName": "co_yFlagLg"
+  }
+}
+

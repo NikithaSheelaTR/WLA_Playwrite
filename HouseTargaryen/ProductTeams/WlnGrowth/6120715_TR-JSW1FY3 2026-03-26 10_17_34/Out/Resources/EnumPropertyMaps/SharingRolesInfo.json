@@ -1,0 +1,23 @@
+{
+  // Maps SharingRoles to BaseTextModel
+  "Contributor": {
+    "Text": "Contributor",
+    "LocatorString": "//option[@value='CONTRIBUTOR']"  
+  },
+  "Deniedaccess": {
+    "Text": "Deniedaccess",
+    "LocatorString": "//option[@value='DENIEDACCESS']"
+  },
+  "NotSpecified": {
+    "Text": "",
+    "LocatorString": ""
+  },
+  "Owner": {
+    "Text": "Owner",
+    "LocatorString": "//option[@value='OWNER']"
+  },
+  "Reviewer": {
+    "Text": "Reviewer",
+    "LocatorString": "//option[@value='REVIEWER']"
+  }
+}

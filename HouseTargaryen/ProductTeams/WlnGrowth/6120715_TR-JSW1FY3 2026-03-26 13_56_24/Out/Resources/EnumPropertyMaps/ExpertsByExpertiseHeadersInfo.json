@@ -1,0 +1,15 @@
+﻿{
+  // Maps ExpertByExpertiseHeaders to BaseTextInfo
+  "ExpertsByExpertise": {
+    "Text": "Experts by Expertise"
+  },
+  "ExpertsForDefendant": {
+    "Text": "Experts for Defendant"
+  },
+  "ExpertsForPlaintiff": {
+    "Text": "Experts for Plaintiff"
+  },
+  "TotalNumCases": {
+    "Text": "Total Number of Cases"
+  }
+}

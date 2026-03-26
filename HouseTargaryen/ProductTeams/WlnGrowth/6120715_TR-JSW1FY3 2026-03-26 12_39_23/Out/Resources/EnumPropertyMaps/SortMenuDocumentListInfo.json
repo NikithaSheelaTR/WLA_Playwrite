@@ -1,0 +1,21 @@
+﻿{
+  // Maps SortMenuDocumentListInfo enumeration to BaseTextModel
+  "CountyAtoZ": {
+    "Text": "County A-Z"
+  },
+  "CountyZtoA": {
+    "Text": "County Z-A"
+  },
+  "DateNewestFirst": {
+    "Text": "Date: Newest First"
+  },
+  "DateOldestFirst": {
+    "Text": "Date: Oldest First"
+  },
+  "PlaintiffDefendantAtoZ": {
+    "Text": "Plaintiff/Defendant: A-Z"
+  },
+  "PlaintiffDefendantZtoA": {
+    "Text": "Plaintiff/Defendant: Z-A"
+  }
+}

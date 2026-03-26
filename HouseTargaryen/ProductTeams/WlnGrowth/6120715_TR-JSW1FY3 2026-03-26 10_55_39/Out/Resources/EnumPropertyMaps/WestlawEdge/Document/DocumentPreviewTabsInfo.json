@@ -1,0 +1,13 @@
+{
+  // Maps DocumentPreviewTab to WebElementInfo
+  "MyAnnotations": {
+    "Id": "tab_co_annotationsPanel",
+    "LocatorString": "//li[@id = 'tab_co_annotationsPanel']",
+    "Text": "My annotations"
+  },
+  "Folders": {
+    "Id": "tab_co_foldersPanel",
+    "LocatorString": "//li[@id = 'tab_co_foldersPanel']",
+    "Text": "Folders"
+  }
+}

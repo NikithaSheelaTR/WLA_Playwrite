@@ -1,0 +1,47 @@
+﻿// Maps NewDocumentAnalyzerReportTabs to WebElementInfo
+{
+  "ArgumentsAndCounterArguments": {
+    "LocatorString": "//*[text()='Arguments and counterarguments']",
+    "Text": "Arguments and counterarguments"
+  },
+  "JudicialCitedAuthority": {
+    "LocatorString": "//div[@class='RecommendationHeaderContent']//*[@class='co_tabLink DA-TOATab']",
+    "Text": "Cited Authority"
+  },
+  "JudicialRecommendations": {
+    "LocatorString": "//div[@class='RecommendationHeaderContent']//*[@class='co_tabLink DA-RecommendationTab']",
+    "Text": "Party"
+  },
+  "JudicialQuoteAlerts": {
+    "LocatorString": "//div[@class='RecommendationHeaderContent']//*[@class='co_tabLink DA-QuoteCheck']",
+    "Text": "Quotation analysis"
+  },
+  "JudicialLanguageAnalysis": {
+    "LocatorString": "//div[@class='RecommendationHeaderContent']//*[@class='co_tabLink DA-QuoteCheck']",
+    "Text": "Language analysis"
+  },
+  "LanguageAnalysis": {
+    "LocatorString": "//*[text()='Language analysis']",
+    "Text": "Language analysis"
+  },
+  "OmittedAuthority": {
+    "LocatorString": "//a[text()='Omitted authority']",
+    "Text": "Omitted authority"
+  },
+  "Recommendations": {
+    "LocatorString": "//a[text()='Recommendations']",
+    "Text": "Recommendations"
+  },
+  "TableOfAuthorities": {
+    "LocatorString": "//a[text()='Table of authorities']",
+    "Text": "Table of authorities"
+  },
+  "QuotationAnalysis": {
+    "LocatorString": "//*[text()='Quotation analysis']",
+    "Text": "Quotation analysis"
+  },
+  "WarningsForCitedAuthority": {
+    "LocatorString": "//a[text()='Warnings for cited authority']",
+    "Text": "Warnings for cited authority"
+  }
+}

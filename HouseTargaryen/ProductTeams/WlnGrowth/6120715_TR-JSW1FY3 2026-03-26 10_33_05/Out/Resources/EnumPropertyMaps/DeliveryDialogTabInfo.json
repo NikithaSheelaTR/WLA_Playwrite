@@ -1,0 +1,23 @@
+{
+  // Maps DeliveryDialogTab to WebElementInfo
+  "TheBasics": {
+    "Text": "The Basics",
+    "Id": "co_deliveryOptionsTab1",
+    "LocatorString": "//*[@id= 'co_deliveryOptionsTab1' and not(contains(@class,'co_tabInactive'))]"
+  },
+  "Recipients": {
+    "Text": "Recipients",
+    "Id": "co_deliveryOptionsTab1",
+    "LocatorString": "//*[@id= 'co_deliveryOptionsTab1' and not(contains(@class,'co_tabInactive'))]"
+  },
+  "LayoutAndLimits": {
+    "Text": "Layout and Limits",
+    "Id": "co_deliveryOptionsTab2",
+    "LocatorString": "//*[@id= 'co_deliveryOptionsTab2' and not(contains(@class,'co_tabInactive'))]"
+  },
+  "ContentToAppend": {
+    "Text": "Content to Append",
+    "Id": "co_deliveryOptionsTab3",
+    "LocatorString": "//*[@id= 'co_deliveryOptionsTab3' and not(contains(@class,'co_tabInactive'))]"
+  }
+}

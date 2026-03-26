@@ -1,0 +1,12 @@
+﻿{
+  // Maps PublicationSeries enum to WebElementInfo
+  "ArizonaPracticeSeries": {
+    "Text": "Arizona Practice Series"
+  },
+  "ColoradoPracticeSeries": {
+    "Text": "Colorado Practice Series"
+  },
+  "RutterGroup": {
+    "Text": "Rutter Group"
+  }
+}

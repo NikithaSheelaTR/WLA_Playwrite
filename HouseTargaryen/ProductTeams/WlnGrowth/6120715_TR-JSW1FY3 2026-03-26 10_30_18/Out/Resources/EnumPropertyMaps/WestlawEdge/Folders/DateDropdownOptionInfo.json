@@ -1,0 +1,8 @@
+﻿{
+  "DateAdded": {
+    "LocatorString": ".//li[./span[text() = 'Date added']]"
+  },
+  "DateModified": {
+    "LocatorString": ".//li[./span[text() = 'Date modified']]"
+  }
+}

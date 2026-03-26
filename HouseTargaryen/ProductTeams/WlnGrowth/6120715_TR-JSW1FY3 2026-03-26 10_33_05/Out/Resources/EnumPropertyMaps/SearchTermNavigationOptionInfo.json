@@ -1,0 +1,66 @@
+{
+  // Maps SearchTermNavigationOption enumeration to WebElementInfo
+  "AllCitedWith": {
+    "Text": "All Cited With",
+    "ClassName": "co_termNav_allCoCitesTerm",
+    "LocatorString": "//a[@class='co_termNav_allCoCitesTerm'] | //span[@class='co_termNav_allCoCitesTerm']"
+  },
+  "AllTerm": {
+    "Text": "All Terms",
+    "ClassName": "co_termNav_allTerm",
+    "LocatorString": "//*[contains(@class,'co_termNav_allTerm')]"
+  },
+  "BestPortion": {
+    "Text": "Best Portion",
+    "ClassName": "co_termNav_bestPortion",
+    "LocatorString": "//span[contains(@class, 'co_termNav_bestPortion')]"
+  },
+  "CoCitedDoc": {
+    "ClassName": "co_termNav_citingCoCitesTerm",
+    "LocatorString": "//*[contains(@class,'co_termNav_citingCoCitesTerm')]"
+  },
+  "CoCitesOriginalDoc": {
+    "ClassName": "co_termNav_baseCoCitesTerm",
+    "LocatorString": "//*[contains(@class,'co_termNav_baseCoCitesTerm')]"
+  },
+  "DocumentHighlights": {
+    "Text": "Document highlights",
+    "ClassName": "co_termNav_UserHighlighting",
+    "LocatorString": "//a[@class='co_termNav_UserHighlighting'] | //li//span[@class='a11yDropdown-itemText co_termNav_UserHighlighting']"
+  },
+  "EdgeAllTerm": {
+    "Text": "All Terms",
+    "ClassName": "a11yDropdown-itemText co_termNav_allTerm",
+    "LocatorString": "//span[contains(@class, 'co_termNav_allTerm')]"
+  },
+  "HideHighlights": {
+    "Text": "Hide all highlights",
+    "ClassName": "a11yDropdown-itemText co_termNav_HideHighlighting | co_termNav_HideHighlightingListItem",
+    "LocatorString": "//*//span[contains(@class,'co_termNav_HideHighlighting')]"
+  },
+  "OriginalTerm": {
+    "ClassName": "co_termNav_searchTerm",
+    "LocatorString": "//*[@id='co_searchTermMenuDropDown']//*[contains(@class, 'co_termNav_searchTerm')] | //a[contains(@class,'co_termNav_searchTerm')]"
+  },
+  "OverrulingRisk": {
+    "Text": "Overruling Risk",
+    "ClassName": "co_termNav_overrulingRisk",
+    "LocatorString": "//*[contains(@class,'co_termNav_overrulingRisk')]"
+  },
+  "OverruledInPart": {
+    "Text": "Overruled in part",
+    "ClassName": "co_termNav_partiallyOverruled",
+    "LocatorString": "//*[contains(@class, 'co_termNav_partiallyOverruled')]"
+  },
+  "SearchWithin": {
+    "Text": "Search within",
+    "ClassName": "co_termNav_findTerm FlyoutArrow",
+    "LocatorString": "//a[contains(@class, 'co_termNav_findTerm')] | //span/span[contains(@class, 'co_termNav_findTerm')]"
+  },
+  "SelectedTerms": {
+    "Text": "Selected Terms",
+    "ClassName": "co_termNav_FocusHighlighting",
+    "LocatorString": "//a[@class = 'co_termNav_FocusHighlighting'] | //span[contains(@class, 'co_termNav_FocusHighlighting')]"
+  }
+}
+

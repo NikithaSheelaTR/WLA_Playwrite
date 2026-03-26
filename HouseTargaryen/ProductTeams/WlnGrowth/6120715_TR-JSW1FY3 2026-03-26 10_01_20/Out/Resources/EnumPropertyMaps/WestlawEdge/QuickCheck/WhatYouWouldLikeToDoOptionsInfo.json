@@ -1,0 +1,9 @@
+﻿// Maps WhatYouWouldLikeToDoOptions to WebElementInfo
+{
+  "CheckYourWork": {
+    "LocatorString": "//input[@id='checkwork']"
+  },
+  "AnalyzeOpponents": {
+    "LocatorString": "//input[@id='opponentbrief']"
+  }
+}

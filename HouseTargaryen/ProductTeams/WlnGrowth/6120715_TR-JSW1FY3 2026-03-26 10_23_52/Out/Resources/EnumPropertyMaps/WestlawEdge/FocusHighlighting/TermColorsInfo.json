@@ -1,0 +1,50 @@
+{
+  "Black": {
+    "BackgroundColorCode": "rgba(0, 0, 0, 0)"
+  },
+
+  "Blue": {
+    "BackgroundColorCode": "rgba(134, 195, 255, 1)"
+  },
+
+
+  "DarkYellow": {
+    "BackgroundColorCode": "rgba(255, 255, 102, 1)"
+  },
+
+  "Orange": {
+    "BackgroundColorCode": "rgba(255, 191, 101, 1)"
+  },
+
+  "Mustard": {
+    "BackgroundColorCode": "rgba(250, 222, 100, 1)"
+  },
+
+  "Green": {
+    "BackgroundColorCode": "rgba(153, 255, 102, 1)"
+  },
+
+  "Pink": {
+    "BackgroundColorCode": "rgba(255, 186, 250, 1)"
+  },
+
+  "Purple": {
+    "BackgroundColorCode": "rgba(190, 190, 252, 1)"
+  },
+
+  "Red": {
+    "BackgroundColorCode": "rgba(255, 151, 151, 1)"
+  },
+
+  "Turquoise": {
+    "BackgroundColorCode": "rgba(149, 246, 220, 1)"
+  },
+
+  "Yellow": {
+    "BackgroundColorCode": "rgba(255, 248, 96, 1)"
+  },
+
+  "White": {
+    "BackgroundColorCode": "rgba(255, 255, 255, 1)"
+  }
+}

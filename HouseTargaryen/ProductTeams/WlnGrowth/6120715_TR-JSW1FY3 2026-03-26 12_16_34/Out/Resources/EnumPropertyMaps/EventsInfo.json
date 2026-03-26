@@ -1,0 +1,42 @@
+﻿{
+    // Maps Events to TextInfoModel
+    "AIResearch": {
+        "Text": "AI Research"
+    },
+    "DocumentView": {
+        "Text": "Document View"
+    },
+    "DocumentViewInFrench": {
+        "Text": "Affichage du document"
+    },
+    "Filter": {
+        "Text": "Filter"
+    },
+    "FilterInFrench": {
+        "Text": "Filtre"
+    },
+    "IpTools": {
+        "Text": "IP Tools"
+    },
+    "KeyCite": {
+        "Text": "KeyCite"
+    },
+    "RelatedInformation": {
+        "Text": "Related Information"
+    },
+    "ResearchRecommendations": {
+        "Text": "Research Recommendations"
+    },
+    "Search": {
+        "Text": "Search"
+    },
+    "SearchInFrench": {
+        "Text": "Recherche"
+    },
+    "KnowYourJudge": {
+        "Text": "Know Your Judge"
+    },
+    "ParallelSearch": {
+        "Text": "Parallel Search"
+    }
+}

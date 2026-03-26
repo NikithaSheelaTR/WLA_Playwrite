@@ -1,0 +1,11 @@
+﻿{
+  // Maps DocketsAdvancedTabs to WebElementInfo
+  "AdvancedSearch": {
+    "LocatorString": "//div[@id='co_advancedSearchContent']//*[@id='OD']",
+    "Text": "Advanced search"
+  },
+  "SearchDocketsPdfsAndCourtFilings": {
+    "LocatorString": "//div[@id='co_advancedSearchContent']//*[@id='ITCBRFPDF']",
+    "Text": "Search dockets, available PDFs, and court filings"
+  }
+}

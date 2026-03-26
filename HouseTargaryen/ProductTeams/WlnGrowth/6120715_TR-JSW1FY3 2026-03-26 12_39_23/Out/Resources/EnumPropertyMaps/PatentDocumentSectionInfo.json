@@ -1,0 +1,80 @@
+{
+  "PatentAbstract": {
+    "LocatorString": "//strong[text()='Abstract']/../../following-sibling::td//div[contains(@class,'co_paragraphText')]"
+  },
+  "PatentApplicationDate": {
+    "LocatorString": "//span[text()='Application Date:']/../parent::*"
+  },
+  "PatentApplicationNumber": {
+    "LocatorString": "//span[text()='Application Number:']/../parent::*"
+  },
+  "PatentAssignees": {
+    "LocatorString": "//span[text()='Assignee(s):']/../following-sibling::div"
+  },
+  "PatentAttorneyOrAgents": {
+    "LocatorString": "//span[text()='Attorney(s) or Agent(s):']/../following-sibling::*"
+  },
+  "PatentCitation": {
+    "LocatorString": "//table[contains(@class,'header')]//h2/../..//following-sibling::div"
+  },
+  "PatentClaimList": {
+    "LocatorString": "//strong[text()='Claims']/../../following-sibling::td//div[contains(@class,'co_paragraphText')]"
+  },
+  "PatentErliestPriorityDate": {
+    "LocatorString": "//span[text()='Earliest Priority Date:']/../parent::*"
+  },
+  "PatentExaminer": {
+    "LocatorString": "//span[text()='Examiner(s):']/../following-sibling::*"
+  },
+  "PatentPrimaryExaminer": {
+    "LocatorString": "//span[text()='Primary Examiner (Department):']/../following-sibling::div"
+  },
+  "PatentGrantedDate": {
+    "LocatorString": "//span[text()='Granted Date:']/../parent::*"
+  },
+  "PatentGrantedPatentNumber": {
+    "LocatorString": "//span[text()='Granted Patent Number:']/../parent::*"
+  },
+  "PatentHeaderTitle": {
+    "LocatorString": "//table[contains(@class,'co_layout_headerTable')]//h2"
+  },
+  "PatentInternationalClassesIpc1To7": {
+    "LocatorString": "//strong[text()='International Classes (IPC 1-7):']/parent::div | //span[text()='International Classes (IPC 1-7):']/../parent::*"
+  },
+  "PatentInternationalClassesIpc8": {
+    "LocatorString": "//strong[text()='International Classes (IPC 8):']/parent::div | //span[text()='International Classes (IPC 8):']/../parent::*"
+  },
+  "PatentInventors": {
+    "LocatorString": "//span[text()='Inventor(s):']/../following-sibling::*"
+  },
+  "PatentLanguage": {
+    "LocatorString": "//span[text()='Language:']/../parent::*"
+  },
+  "PatentNumberOfClaims": {
+    "LocatorString": "//span[text()='Number of Claims:']/../parent::*"
+  },
+  "PatentPctApplications": {
+    "LocatorString": "//span[text()='PCT Application(s):']/../parent::*"
+  },
+  "PatentPctPublications": {
+    "LocatorString": "//span[text()='PCT Publication(s):']/../parent::*"
+  },
+  "PatentPriorityPublications": {
+    "LocatorString": "//span[text()='Priority Publication(s):']/../following-sibling::*"
+  },
+  "PatentPublishedApplicationNumber": {
+    "LocatorString": "//span[text()='Published Application Number:']/../parent::*"
+  },
+  "PatentPublishedApplicationDate": {
+    "LocatorString": "//span[text()='Published Application Date:']/../parent::*"
+  },
+  "PatentSpecification": {
+    "LocatorString": "//strong[text()='Specification']/../../following-sibling::td//div[contains(@class,'co_paragraphText')]"
+  },
+  "PatentTitle": {
+    "LocatorString": "//span[text()='Title:']/../parent::*"
+  },
+  "PatentsAndApplications": {
+    "LocatorString": "//span[text()='Patents and Applications:']/../following-sibling::*"
+  }
+}

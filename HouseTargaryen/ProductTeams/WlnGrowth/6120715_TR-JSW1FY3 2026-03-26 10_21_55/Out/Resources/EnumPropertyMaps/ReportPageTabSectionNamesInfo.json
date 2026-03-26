@@ -1,0 +1,15 @@
+{
+  // Maps ReportPageTabSectionNames to BaseTextModel
+  "AppellateCourtDocuments": { "Text": "Appellate Court Documents" },
+  "AppellateDecisions": { "Text": "Appellate Decisions" },
+  "AwardsAmountAnalysis": { "Text": "Awards Amounts Analysis" },
+  "AwardsByCountyDistrict": { "Text": "Awards by County/District" },
+  "AwardsByParty": { "Text": "Awards by Party" },
+  "ExpertiseDistribution": { "Text": "Expertise Distribution" },
+  "ExpertsByExpertise": { "Text": "Experts by Expertise" },
+  "LargestAwards": { "Text": "Largest Awards" },
+  "MedicalIllustrations": { "Text": "Medical Illustrations" },
+  "MedicalResources": { "Text": "Medical Resources" },
+  "TrialCourtMemoranda": { "Text": "Trial Court Memoranda" },
+  "VerdictSettlementSummaries": { "Text": "Verdict and Settlement Summaries" }
+}

@@ -1,0 +1,19 @@
+{
+    // Maps ComplaintAnalyzerResultTabs to WebElementInfo
+    "Summary": {
+        "Text": "Summary",
+        "LocatorString": ".//saf-tab-v3[@data-testid='results-summary-tab'] | .//saf-tab[@data-testid='results-summary-tab']"
+    },
+    "Claims": {
+        "Text": "Claims",
+        "LocatorString": ".//saf-tab-v3[@aria-label='Claims'] | .//saf-tab[@aria-label='Claims']"
+    },
+    "EventTimeline": {
+        "Text": "Event timeline",
+        "LocatorString": ".//saf-tab-v3[@aria-label='Event timeline'] | .//saf-tab[@aria-label='Event timeline']"
+    },
+    "Defenses": {
+        "Text": "Defenses",
+        "LocatorString": ".//saf-tab-v3[@aria-label='Defenses'] | .//saf-tab[@aria-label='Defenses']"
+    }
+}

@@ -1,0 +1,24 @@
+﻿{
+  // Maps HighlightColor to WebElementInfo
+  "Black": {
+    "LocatorString": ".//*[contains(@class, 'highlightBox black')] | .//*[contains(@class, 'ColorOption--black')]"
+  },
+  "Blue": {
+    "LocatorString": ".//*[contains(@class, 'highlightBox blue')] | .//*[contains(@class, 'ColorOption--blue')]"
+  },
+  "Green": {
+    "LocatorString": ".//*[contains(@class, 'highlightBox green')] | .//*[contains(@class, 'ColorOption--green')]"
+  },
+  "Orange": {
+    "LocatorString": ".//*[contains(@class, 'highlightBox orange')] | .//*[contains(@class, 'ColorOption--orange')]"
+  },
+  "Pink": {
+    "LocatorString": ".//*[contains(@class, 'highlightBox pink')] | .//*[contains(@class, 'ColorOption--pink')]"
+  },
+  "Purple": {
+    "LocatorString": ".//*[contains(@class, 'highlightBox purple')] | .//*[contains(@class, 'ColorOption--purple')]"
+  },
+  "Yellow": {
+    "LocatorString": ".//*[contains(@class, 'highlightBox yellow')] | .//*[contains(@class, 'ColorOption--yellow')]"
+  }
+}

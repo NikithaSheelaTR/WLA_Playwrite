@@ -1,0 +1,563 @@
+{
+  // Maps AdvancedSearchField to WebElementInfo
+  "Abstract": {
+    "Id": "co_search_advancedSearch_ABSTRACT",
+    "Text": "Abstract"
+  },
+  "AdminDicPreliminary": {
+    "Id": "co_search_advancedSearch_cb_PRELIM",
+    "Text": "Preliminary"
+  },
+  "Agency": {
+    "Id": "co_search_advancedSearch_cb_SOURCE",
+    "Text": "Agency"
+  },
+  "AllCaps": {
+    "Id": "co_search_advancedSearch_ALLCAPS",
+    "Text": "ALLCAPS"
+  },
+  "AllOfTheseTerms": {
+    "Id": "co_search_advancedSearch_queryAll",
+    "Text": "All of these terms"
+  },
+  "Annotations": {
+    "Id": "co_search_advancedSearch_cb_ANNOTATIONS",
+    "Text": "Annotations"
+  },
+  "AnyOfTheseTerms": {
+    "Id": "co_search_advancedSearch_queryAny",
+    "Text": "Any of these terms"
+  },
+  "ApplicationNumber": {
+    "Id": "co_search_advancedSearch_SN",
+    "Text": "Application Number"
+  },
+  "AstAuthor": {
+    "Id": "co_search_advancedSearch_cb_AUTHOR",
+    "Text": "Author"
+  },
+  "AstCaseType": {
+    "Id": "co_search_advancedSearch_cb_CASE-TYPE",
+    "Text": "Case Type"
+  },
+  "AstCitation": {
+    "Id": "co_search_advancedSearch_CI",
+    "Text": "Citation"
+  },
+  "AstExpertWitness": {
+    "Id": "co_search_advancedSearch_cb_EXPERT-WITNESSES",
+    "Text": "Expert Witness"
+  },
+  "AstSummary": {
+    "Id": "co_search_advancedSearch_cb_SUMMARY",
+    "Text": "Summary"
+  },
+  "AstText": {
+    "Id": "co_search_advancedSearch_cb_TEXT",
+    "Text": "Text"
+  },
+  "AstTitle": {
+    "Id": "co_search_advancedSearch_cb_TITLE",
+    "Text": "Title"
+  },
+  "AstWordsPhrases": {
+    "Id": "co_search_advancedSearch_WP",
+    "Text": "Words & Phrases"
+  },
+  "Attorney": {
+    "Id": "co_search_advancedSearch_cb_ATTORNEY",
+    "Text": "Attorney"
+  },
+  "AttorneyAgent": {
+    "Id": "co_search_advancedSearch_ATTORNEY-AGENT",
+    "Text": "Attorney/Agent"
+  },
+  "AttorneyUsSupremeCourt": {
+    "Id": "co_search_advancedSearch_AT",
+    "Text": "Key Search Terms"
+  },
+  "Author": {
+    "Id": "co_search_advancedSearch_AU",
+    "Text": "Author"
+  },
+  "Background": {
+    "Id": "co_search_advancedSearch_cb_BACKGROUND",
+    "Text": "Background"
+  },
+  "ButNotAnyOfTheseTerms": {
+    "Id": "co_search_advancedSearch_queryNone",
+    "Text": "But not any of these terms"
+  },
+  "Caps": {
+    "Id": "co_search_advancedSearch_CAPS",
+    "Text": "CAPS"
+  },
+  "Caption": {
+    "Id": "co_search_advancedSearch_cb_CAPTION",
+    "Text": "Caption"
+  },
+  "CasesCited": {
+    "Id": "co_search_advancedSearch_CITEREF",
+    "Text": "Cases Cited"
+  },
+  "CaseTitlePartyName": {
+    "Id": "co_search_advancedSearch_TIPN",
+    "Text": "Case Title/Party Name"
+  },
+  "CasesDocketNumber": {
+    "Id": "co_search_advancedSearch_cb_DOCKET-NUMBER",
+    "Text": "Docket Number"
+  },
+  "CasesWrittenBy": {
+    "Id": "co_search_advancedSearch_cb_WRITTEN-BY",
+    "Text": "WrittenBy"
+  },
+  "CaseType": {
+    "Id": "co_search_advancedSearch_listItem_CTP",
+    "Text": "CaseType"
+  },
+  "Chapter": {
+    "Id": "co_search_advancedSearch_CHP",
+    "Text": "Chapter"
+  },
+  "Citation": {
+    "Id": "co_search_advancedSearch_cb_CITATION",
+    "Text": "Citation"
+  },
+  "CitedReferences": {
+    "Id": "co_search_advancedSearch_REFERENCES",
+    "Text": "Cited References"
+  },
+  "Claims": {
+    "Id": "co_search_advancedSearch_CLAIMS",
+    "Text": "Claims"
+  },
+  "CommentaryHeadingNumber": {
+    "Id": "co_search_advancedSearch_COMMHEAD",
+    "Text": "Commentary Heading/Number"
+  },
+  "Concurring": {
+    "Id": "co_search_advancedSearch_cb_CONCURRING",
+    "Text": "Concurring"
+  },
+  "CooperativePatentClass": {
+    "Id": "co_search_advancedSearch_CPC",
+    "Text": "Cooperative Patent Class"
+  },
+  "County": {
+    "Id": "co_search_advancedSearch_cb_COUNTY",
+    "Text": "County"
+  },
+  "Court": {
+    "Id": "co_search_advancedSearch_CO",
+    "Text": "Court"
+  },
+  "CourtAbbreviation": {
+    "Id": "co_search_advancedSearch_cb_COURT",
+    "Text": "Court Abbreviation"
+  },
+  "CourtFileNumber": {
+    "Id": "co_search_advancedSearch_CFN",
+    "Text": "Court File Number"
+  },
+  "CourtNamePrelim": {
+    "Id": "co_search_advancedSearch_cb_PRELIM",
+    "Text": "Court Name/Prelim"
+  },
+  "Credit": {
+    "Id": "co_search_advancedSearch_cb_CREDIT",
+    "Text": "Credit"
+  },
+  "Counsel": {
+    "Id": "co_search_advancedSearch_CSL",
+    "Text": "Counsel"
+  },
+  "Date": {
+    "Id": "co_dateFacetButton",
+    "Text": "Date"
+  },
+  "Debtor": {
+    "Id": "co_search_advancedSearch_DEB",
+    "Text": "Debtor"
+  },
+  "Decider": {
+    "Id": "co_search_advancedSearch_JU",
+    "Text": "Decider"
+  },
+  "DefinedTerms": {
+    "Id": "co_search_advancedSearch_DT",
+    "Text": "Defined Terms"
+  },
+  "DefinitionText": {
+    "Id": "co_search_advancedSearch_TE",
+    "Text": "Definition text"
+  },
+  "DesignCategory": {
+    "Id": "co_search_advancedSearch_DS",
+    "Text": "Design Category"
+  },
+  "DesignType": {
+    "Id": "co_search_advancedSearch_DT",
+    "Text": "Design Type"
+  },
+  "DictionaryTerm": {
+    "Id": "co_search_advancedSearch_CA",
+    "Text": "Dictionary term (for single letter term, please use quotes: \"A\")"
+  },
+  "Digest": {
+    "Id": "co_search_advancedSearch_cb_DIGEST",
+    "Text": "Digest"
+  },
+  "Dissenting": {
+    "Id": "co_search_advancedSearch_cb_DISSENTING",
+    "Text": "Dissenting"
+  },
+  "DocketJudge": {
+    "Id": "co_search_advancedSearch_JU",
+    "Text": "Judge"
+  },
+  "DocketNumber": {
+    "Id": "co_search_advancedSearch_DN",
+    "Text": "Docket Number"
+  },
+  "DocketParticipantName": {
+    "Id": "co_search_advancedSearch_ParticipantName",
+    "Text": "Participant Name"
+  },
+  "DocumentLengthDropdown": {
+    "Id": "co_search_advancedSearch_DOCLENGTH",
+    "Text": "Document Length"
+  },
+  "DocumentType": {
+    "Id": "co_search_advancedSearch_cb_DOC-TYPE",
+    "Text": "Document Type"
+  },
+  "ExactTrademark": {
+    "Id": "co_search_advancedSearch_ET",
+    "Text": "Exact Trademark"
+  },
+  "ExcludeTerms": {
+    "Id": "co_search_advancedSearch_queryNone",
+    "Text": "These terms"
+  },
+  "Expertise": {
+    "Id": "co_search_advancedSearch_cb_EXPERTISE",
+    "Text": "Expertise"
+  },
+  "ExpertiseTestHistory": {
+    "Id": "co_search_advancedSearch_EXP",
+    "Text": "Expertise"
+  },
+  "ExpertPublication": {
+    "Id": "co_search_advancedSearch_EXPUB",
+    "Text": "Expertise"
+  },
+  "ExpertWitness": {
+    "Id": "co_search_advancedSearch_EWIND",
+    "Text": "Expert Witness"
+  },
+  "ExpertWitnessName": {
+    "Id": "co_search_advancedSearch_IND",
+    "Text": "First and Last Name"
+  },
+  "FilingApplicationNumber": {
+    "Id": "co_search_advancedSearch_APP-FILE-NUMBER",
+    "Text": "Filing Application Number"
+  },
+  "FilingDateDropDown": {
+    "Id": "co_dateWidget_DA",
+    "Text": "Date"
+  },
+  "FirstName": {
+    "Id": "co_search_advancedSearch_FN",
+    "Text": "First Name"
+  },
+  "FormTitle": {
+    "Id": "co_search_advancedSearch_TITLE",
+    "Text": "Form Title"
+  },
+  "FullText": {
+    "Id": "co_search_advancedSearch_cb_FULL-TEXT",
+    "Text": "Full-Text"
+  },
+  "GoodsServicesDescription": {
+    "Id": "co_search_advancedSearch_GS",
+    "Text": "Goods Services Description"
+  },
+  "Headnote": {
+    "Id": "co_search_advancedSearch_cb_HEADNOTE",
+    "Text": "Headnote"
+  },
+  "HistoricalNotes": {
+    "Id": "co_search_advancedSearch_cb_HIST-NOTE",
+    "Text": "Historical Notes"
+  },
+  "Holding": {
+    "Id": "co_search_advancedSearch_cb_HOLDING",
+    "Text": "Holding"
+  },
+  "Injury": {
+    "Id": "co_search_advancedSearch_cb_INJURY",
+    "Text": "Injury"
+  },
+  "InternationalPatentClass": {
+    "Id": "co_search_advancedSearch_IPC",
+    "Text": "International Patent Class"
+  },
+  "InternationalTradeMarkClass": {
+    "Id": "co_search_advancedSearch_IC",
+    "Text": "International Class"
+  },
+  "InternalRevenueCodeParagraph": {
+    "Id": "co_ircParagraph",
+    "Text": "Paragraph"
+  },
+  "InternalRevenueCodeSection": {
+    "Id": "co_ircSection",
+    "Text": "Section"
+  },
+  "InternalRevenueCodeSubsection": {
+    "Id": "co_ircSubsection",
+    "Text": "Subsection"
+  },
+  "Inventor": {
+    "Id": "co_search_advancedSearch_INVENTORS",
+    "Text": "Inventor"
+  },
+  "IssueDateDropDown": {
+    "Id": "co_dateWidget_ISSUEDATE_dropdown_listItem",
+    "Text": "Issue Date"
+  },
+  "Judge": {
+    "Id": "co_search_advancedSearch_cb_JUDGE",
+    "Text": "Judge"
+  },
+  "KeyNumberClassification": {
+    "Id": "co_search_advancedSearch_CL",
+    "Text": "Key Number / Classification"
+  },
+  "Knos": {
+    "Id": "co_search_advancedSearch_KNOS_link",
+    "Text": "Enter a KNOS"
+  },
+  "Language": {
+    "Id": "co_search_advancedSearch_LA",
+    "Text": "Language"
+  },
+  "Lead": {
+    "Id": "co_search_advancedSearch_cb_LEAD",
+    "Text": "Lead"
+  },
+  "LeadParagraph": {
+    "Id": "co_search_advancedSearch_HLD",
+    "Text": "Lead Paragraph"
+  },
+  "LegalPrinciple": {
+    "Id": "co_search_advancedSearch_LP",
+    "Text": "Legal Principle"
+  },
+  "LegalRepresentative": {
+    "Id": "co_search_advancedSearch_LW",
+    "Text": "Legal Representative/Law Firm"
+  },
+  "LegislationCitedProvision": {
+    "Id": "co_search_advancedSearch_LCP",
+    "Text": "Legislation Cited (Provision)"
+  },
+  "LegislationCitedTitle": {
+    "Id": "co_search_advancedSearch_LEGREF",
+    "Text": "Legislation Cited (Title)"
+  },
+  "LegislationProvisionNumber": {
+    "Id": "co_search_advancedSearch_LPN",
+    "Text": "Legislation (Provision Number)"
+  },
+  "LegislationProvisionTitle": {
+    "Id": "co_search_advancedSearch_LPT",
+    "Text": "Legislation (Provision Title)"
+  },
+  "LegislationTitle": {
+    "Id": "co_search_advancedSearch_TI",
+    "Text": "Legislation Title"
+  },
+  "Location": {
+    "Id": "co_search_advancedSearch_cb_LOCATION",
+    "Text": "Location"
+  },
+  "NameTitle": {
+    "Id": "co_search_advancedSearch_listItem_cb_TITLE",
+    "Text": "Name / Title"
+  },
+  "NoCaps": {
+    "Id": "co_search_advancedSearch_NOCAPS",
+    "Text": "NO CAPS"
+  },
+  "Nos": {
+    "Id": "co_search_advancedSearch_listItem_NOS",
+    "Text": "Nos"
+  },
+  "Notes": {
+    "Id": "co_search_advancedSearch_cb_NOTES",
+    "Text": "Notes"
+  },
+  "Opinions": {
+    "Id": "co_search_advancedSearch_OP",
+    "Text": "Opinions"
+  },
+  "Owner": {
+    "Id": "co_search_advancedSearch_OWNERS",
+    "Text": "Owner"
+  },
+  "Panel": {
+    "Id": "co_search_advancedSearch_cb_PANEL",
+    "Text": "Panel"
+  },
+  "ParagraphHeading": {
+    "Id": "co_search_advancedSearch_LP",
+    "Text": "Paragraph Heading"
+  },
+  "ParticipantName": {
+    "Id": "co_search_advancedSearch_PTN",
+    "Text": "Participant Name"
+  },
+  "Parties": {
+    "Id": "co_search_advancedSearch_TI",
+    "Text": "Parties"
+  },
+  "PartyName": {
+    "Id": "co_search_advancedSearch_cb_TITLE",
+    "Text": "Party Name"
+  },
+  "PartyType": {
+    "Id": "co_search_advancedSearch_listItem_PartyType",
+    "Text": "PartyType"
+  },
+  "PatentFilingDateDropDown": {
+    "Id": "co_dateWidget_FILEDATE_dropdown_listItem",
+    "Text": "Filing Date"
+  },
+  "PatentNumber": {
+    "Id": "co_search_advancedSearch_PN",
+    "Text": "Patent Number"
+  },
+  "PatentNumberIp": {
+    "Id": "co_search_advancedSearch_PAT-NUMBER",
+    "Text": "Patent Number"
+  },
+  "Preliminary": {
+    "Id": "co_search_advancedSearch_PR",
+    "Text": "Preliminary"
+  },
+  "PreliminaryCaption": {
+    "Id": "co_search_advancedSearch_PRCA",
+    "Text": "Preliminary/Caption"
+  },
+  "PublicationName": {
+    "Id": "co_search_advancedSearch_SO",
+    "Text": "Publication Name"
+  },
+  "PublishedApplicationDateDropDown": {
+    "Id": "co_dateWidget_PUBDATE_dropdown_listItem",
+    "Text": "Published Application Date"
+  },
+  "PublishedApplicationNumber": {
+    "Id": "co_search_advancedSearch_PUB-APP-NUMBER",
+    "Text": "Published Application Number"
+  },
+  "RegistrationNumber": {
+    "Id": "co_search_advancedSearch_RN",
+    "Text": "Registration Number"
+  },
+  "Source": {
+    "Id": "co_search_advancedSearch_SO",
+    "Text": "Source"
+  },
+  "State": {
+    "Id": "co_search_advancedSearch_STATE",
+    "Text": "Location"
+  },
+  "Status": {
+    "Id": "co_search_advancedSearch_STS",
+    "Text": "Status"
+  },
+  "Summary": {
+    "Id": "co_search_advancedSearch_SU",
+    "Text": "Summary"
+  },
+  "Synopsis": {
+    "Id": "co_search_advancedSearch_cb_SYNOPSIS",
+    "Text": "Synopsis"
+  },
+  "SynopsisDigest": {
+    "Id": "co_search_advancedSearch_SYDIN",
+    "Text": "Synopsis/Digest"
+  },
+  "SynopsisHeadnote": {
+    "Id": "co_search_advancedSearch_SYHN",
+    "Text": "Synopsis/Headnote"
+  },
+  "TableOfContent": {
+    "Id": "co_search_advancedSearch_cb_TC",
+    "Text": "Table of Content"
+  },
+  "Text": {
+    "Id": "co_search_advancedSearch_TE",
+    "Text": "Text"
+  },
+  "ThisExactPhrase": {
+    "Id": "co_search_advancedSearch_queryExact",
+    "Text": "This exact phrase"
+  },
+  "Title": {
+    "Id": "co_search_advancedSearch_TI",
+    "Text": "Title"
+  },
+  "Topic": {
+    "Id": "co_search_advancedSearch_cb_TOPIC",
+    "Text": "Topic"
+  },
+  "Trademark": {
+    "Id": "co_search_advancedSearch_TM",
+    "Text": "Trademark"
+  },
+  "TrademarkAttorneyAgent": {
+    "Id": "co_search_advancedSearch_FC",
+    "Text": "AttorneyAgent"
+  },
+  "TrademarkInternationalClass": {
+    "Id": "co_search_advancedSearch_IC",
+    "Text": "International Class"
+  },
+  "TrademarkOwner": {
+    "Id": "co_search_advancedSearch_OW",
+    "Text": "Owner"
+  },
+  "TreasuryRegulationsParagraph": {
+    "Id": "co_trParagraph",
+    "Text": "Paragraph"
+  },
+  "TreasuryRegulationsSection": {
+    "Id": "co_trSection",
+    "Text": "Section"
+  },
+  "TreasuryRegulationsSubparagraph": {
+    "Id": "co_trSubparagraph",
+    "Text": "Paragraph"
+  },
+  "UsPatentClass": {
+    "Id": "co_search_advancedSearch_USCL",
+    "Text": "US Patent Class"
+  },
+  "WordsPhrases": {
+    "Id": "co_search_advancedSearch_cb_WORD-PHRASE",
+    "Text": "Words & Phrases"
+  },
+  "WrittenBy": {
+    "Id": "co_search_advancedSearch_cb_AUTHOR",
+    "Text": "Written By"
+  },
+  "FormsandPrecedents": {
+    "Id": "co_search_advancedSearch_listItem_HEADNUM",
+    "Text": "Forms & Precedents Heading/Number"
+  }
+}

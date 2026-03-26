@@ -1,0 +1,67 @@
+﻿// Maps NotificationsTabCheckboxes to WebElementInfo
+{
+	"AlwaysOpenAlerts": {
+		"Text": "Always open Alerts",
+		"LocatorString": "//span[text()='Always open Alerts']/preceding-sibling::input"
+	},
+	"BillTrackerNotifications": {
+		"Text": "Bill Tracker notifications",
+		"LocatorString": "//span[text()='Bill Tracker notifications']/preceding-sibling::input"
+	},
+	"CourtWireNotifications": {
+		"Text": "Court Wire notifications",
+		"LocatorString": "//span[text()='Court Wire notifications']/preceding-sibling::input"
+	},
+	"DocketAlertNotifications": {
+		"Text": "Docket Alert notifications",
+		"LocatorString": "//span[text()='Docket Alert notifications']/preceding-sibling::input"
+	},
+	"DocketTrackNotifications": {
+		"Text": "Docket Track notifications",
+		"LocatorString": "//span[text()='Docket Track notifications']/preceding-sibling::input"
+	},
+	"DocumentsAddedToSharedFolder": {
+		"Text": "Documents added to shared folder",
+		"LocatorString": "//span[text()='Documents added to shared folder']/preceding-sibling::input"
+	},
+	"FolderAnalysis": {
+		"Text": "Folder Analysis",
+		"LocatorString": "//span[text()='Folder Analysis']/preceding-sibling::input"
+	},
+	"HidePopUpAfterFiveSeconds": {
+		"Text": "Hide pop-up after 5 seconds",
+		"LocatorString": "//span[text()='Hide pop-up after 5 seconds']/preceding-sibling::input"
+	},
+	"JurisdictionAlertNotifications": {
+		"Text": "Jurisdiction Alert notifications",
+		"LocatorString": "//span[text()='Jurisdiction Alert notifications']/preceding-sibling::input"
+	},
+	"KeyCiteNotifications": {
+		"Text": "KeyCite notifications",
+		"LocatorString": "//span[text()='KeyCite notifications']/preceding-sibling::input"
+	},
+	"SharedFolders": {
+		"Text": "Shared folders",
+		"LocatorString": "//span[text()='Shared folders']/preceding-sibling::input"
+	},
+	"SharedHighlights": {
+		"Text": "Shared highlights",
+		"LocatorString": "//span[text()='Shared highlights']/preceding-sibling::input"
+	},
+	"SharedNotes": {
+		"Text": "Shared notes",
+		"LocatorString": "//span[text()='Shared notes']/preceding-sibling::input"
+	},
+	"SharedSnippets": {
+		"Text": "Shared snippets",
+		"LocatorString": "//span[text()='Shared snippets']/preceding-sibling::input"
+	},
+	"StatuteMonitorNotifications": {
+		"Text": "Statute Monitor notifications",
+		"LocatorString": "//span[text()='Statute Monitor notifications']/preceding-sibling::input"
+	},
+	"WestClipNotifications": {
+		"Text": "WestClip notifications",
+		"LocatorString": "//span[text()='WestClip notifications']/preceding-sibling::input"
+	}
+}

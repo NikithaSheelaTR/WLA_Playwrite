@@ -1,0 +1,33 @@
+﻿// Maps Landing page navigation to WebElementInfo
+{
+  "DeviceManagement": {
+    "Text": "Device Management"
+  },
+  "Folders": {
+    "Text": "Folders"
+  },
+  "GovernmentAgency": {
+    "Text": "Track Government Agency"
+  },
+  "History": {
+    "Text": "History"
+  },
+  "PracticeAreas": {
+    "Text": "Practice Areas"
+  },
+  "Preferences": {
+    "Text": "Preferences"
+  },
+  "SignOff": {
+    "Text": "Sign Off"
+  },
+  "TrackCompany": {
+    "Text": "Track Company"
+  },
+  "TrackPracticeArea": {
+    "Text": "Track Practice Area"
+  },
+  "Updates": {
+    "Text": "Updates"
+  }
+}

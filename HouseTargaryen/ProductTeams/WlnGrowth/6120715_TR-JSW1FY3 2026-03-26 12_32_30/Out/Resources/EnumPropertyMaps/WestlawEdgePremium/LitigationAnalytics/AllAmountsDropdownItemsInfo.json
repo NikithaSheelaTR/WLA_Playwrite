@@ -1,0 +1,14 @@
+{
+  "AllAmounts": {
+    "Text": "All amounts"
+  },
+  "AllAmountsLessThan": {
+    "Text": "All amounts less than"
+  },
+  "AllAmountsGreaterThan": {
+    "Text": "All amounts greater than"
+  },
+  "AmountsRange": {
+    "Text": "Amounts range"
+  }
+}

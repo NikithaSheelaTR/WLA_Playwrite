@@ -1,0 +1,9 @@
+﻿{
+  // Maps NotesOfDecisionsToolbarElements to WebElementInfo
+  "SearchWithin": {
+    "LocatorString": "//div[@id='co_docToolbar']//li[@id='co_nodSearchWithin']//button[@class='co_dropDownButton']"
+  },
+  "Sort": {
+    "LocatorString": "//div[contains(@id,'sortDropDownControl')]"
+  }
+}

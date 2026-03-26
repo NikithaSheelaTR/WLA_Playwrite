@@ -1,0 +1,14 @@
+﻿{
+  // Maps NodSortByOptions enumeration to WebElementInfo
+  "ChooseASortType": {
+    "Text": "Choose a sort type..."
+  },
+
+  "ProceduralOrder": {
+    "Text": "Procedural Order"
+  },
+
+  "Alphabetically": {
+    "Text": "Alphabetical (A-Z)"
+  }
+}

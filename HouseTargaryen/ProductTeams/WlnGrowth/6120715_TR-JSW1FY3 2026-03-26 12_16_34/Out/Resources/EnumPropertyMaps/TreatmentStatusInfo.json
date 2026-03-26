@@ -1,0 +1,9 @@
+{
+  // Maps TreatmentStatus to WebElementInfo
+  "HideNegative": {
+    "LocatorString": "//a[@data-facetkey='hideNegative']"
+  },
+  "ViewNegativeOnly": {
+    "LocatorString": "//a[@data-facetkey='showNegative']"
+  }
+}

@@ -1,0 +1,11 @@
+﻿{
+	// Maps NumberOfItems to WebElementInfo
+	"AllItems": {
+		"Id": "co_deliveryItemsToDeliverAllNods",
+		"Text": "All items"
+	},
+	"AllSelectedItems": {
+		"Id": "co_deliveryItemsToDeliverSelectedNods",
+		"Text": "All selected items"
+	}
+}

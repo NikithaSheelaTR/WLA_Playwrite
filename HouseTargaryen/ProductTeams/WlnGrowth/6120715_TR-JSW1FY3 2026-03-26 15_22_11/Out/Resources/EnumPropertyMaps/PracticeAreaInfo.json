@@ -1,0 +1,108 @@
+﻿{
+  // Maps PracticeArea enum to WebElementInfo
+  "AdmiraltyAndMaritime": {
+    "Text": "Admiralty & Maritime"
+  },
+  "Antitrust": {
+    "Text": "Antitrust"
+  },
+  "Bankruptcy": {
+    "Text": "Bankruptcy"
+  },
+  "CapitalMarkets": {
+    "Text": "Capital Markets"
+  },
+  "CommercialLaw": {
+    "Text": "Commercial Law"
+  },
+  "ConstructionLaw": {
+    "Text": "Construction Law"
+  },
+  "CorporateCounsel": {
+    "Text": "Corporate Counsel"
+  },
+  "CorporateGovernance": {
+    "Text": "Corporate Governance"
+  },
+  "Corporations": {
+    "Text": "Corporations"
+  },
+  "Criminal": {
+    "Text": "Criminal"
+  },
+  "CriminalLaw": {
+    "Text": "Criminal Law"
+  },
+  "EmployeeBenefitsAndExecutiveCompensation": {
+    "Text": "Employee Benefits & Executive Compensation"
+  },
+  "Employment": {
+    "Text": "Employment"
+  },
+  "EnvironmentalHealthAndSafety": {
+    "Text": "Environmental Health and Safety"
+  },
+  "EnvironmentAndResources": {
+    "Text": "Environment & Resources"
+  },
+  "EnergyAndEnvironment": {
+    "Text": "Energy & Environment"
+  },
+  "EstatePlanning": {
+    "Text": "Estate Planning"
+  },
+  "FamilyLaw": {
+    "Text": "Family Law"
+  },
+  "FinanceAndBanking": {
+    "Text": "Finance & Banking"
+  },
+  "GovernmentContracts": {
+    "Text": "Government Contracts"
+  },
+  "HealthLaw": {
+    "Text": "Health Law"
+  },
+  "Immigration": {
+    "Text": "Immigration"
+  },
+  "InsuranceCompliance": {
+    "Text": "Insurance Compliance"
+  },
+  "InsuranceLaw": {
+    "Text": "Insurance Law"
+  },
+  "IntellectualProperty": {
+    "Text": "Intellectual Property"
+  },
+  "MedicalLitigation": {
+    "Text": "Medical Litigation"
+  },
+  "MergersAndAcquisitions": {
+    "Text": "Mergers & Acquisitions"
+  },
+  "MilitaryLaw": {
+    "Text": "Military Law"
+  },
+  "MunicipalLaw": {
+    "Text": "Municipal Law"
+  },
+  "NativeAmericanLaw": {
+    "Text": "Native American Law"
+  },
+  "ProductsLiability": {
+    "Text": "Products Liability"
+  },
+  "PersonalInjury": {
+    "Text": "Personal Injury"
+  },
+  "RealProperty": {
+    "Text": "Real Property"
+  },
+  "SecuritiesEnforcementAndLitigation": {
+    "Text": "Securities Enforcement & Litigation"
+  },
+  "Tax": {
+    "Text": "Tax"
+  }
+}

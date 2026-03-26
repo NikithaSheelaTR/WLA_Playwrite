@@ -1,0 +1,15 @@
+﻿// Maps NotificationsTabDisplayRadioButtons to WebElementInfo
+{
+	"DisplayIconAndPopUp": {
+		"Text": "Display icon and pop-up",
+		"LocatorString": "//input[@value='DisplayIconAndToast']"
+	},
+	"DisplayIconOnly": { 
+		"Text": "Display icon only",
+		"LocatorString": "//input[@value='DisplayIconOnly']"
+	},
+  "MuteAllNotifications": {
+		"Text": "Mute all notifications",
+		"LocatorString": "//input[@value='HideAll']"
+	}
+}

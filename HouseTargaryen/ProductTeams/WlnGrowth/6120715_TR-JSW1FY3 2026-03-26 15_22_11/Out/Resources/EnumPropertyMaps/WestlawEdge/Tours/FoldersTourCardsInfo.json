@@ -1,0 +1,24 @@
+﻿{
+	// Maps FoldersTourCards to WebElementInfo
+	"FoldersCard1": {
+		"Text": "Drag the edge of the folder tree panel or use the keyboard to display more or less of your folder tree."
+	},
+	"FoldersCard2": {
+		"Text": "Add a new folder from the toolbar."
+	},
+	"FoldersCard3": {
+		"Text": "Use the actions menu to add a note, copy, move, pin, rename, share, export, upload or delete for the current folder."
+	},
+	"FoldersCard4": {
+		"Text": "Documents, snippets and subfolders also have actions menus."
+	},
+	"FoldersCard5": {
+		"Text": "Pin up to 5 important folders, documents, or snippets to quick access using the actions menu. Collapse the section by clicking ▼."
+	},
+	"FoldersCard6": {
+		"Text": "Sort items by the date they were added or last modified with the date column dropdown."
+	},
+	"FoldersCard7": {
+		"Text": "Get document recommendations based on your current research with Folder Analysis."
+	}
+}

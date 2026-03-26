@@ -1,0 +1,26 @@
+﻿{
+    "Court": {
+        "Name": "Court",
+        "LocatorString": "//button[@id = 'co_la_courtV2UniqueId_filterCategory']"
+    },
+
+    "Date": {
+        "Name": "Date",
+        "LocatorString": "//button[@id = 'co_la_dateRange_filterCategory']"
+    },
+
+    "CaseType": {
+        "Name": "Case type",
+        "LocatorString": "//button[@id='co_la_caseTypeHierarchyFlatV2_filterCategory']"
+    },
+
+    "Attorney": {
+        "Name": "Attorney",
+        "LocatorString": "//button[@id = 'co_la_attorneyWldId_filterCategory']"
+    },
+
+    "Lawfirm": {
+        "Name": "Law firm",
+        "LocatorString": "//button[@id = 'co_la_lawFirmLocationFlattenHierarchy_filterCategory']"
+    }
+}

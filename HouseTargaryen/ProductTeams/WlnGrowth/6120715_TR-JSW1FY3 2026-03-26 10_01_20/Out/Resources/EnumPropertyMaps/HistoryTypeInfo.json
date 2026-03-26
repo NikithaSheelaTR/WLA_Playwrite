@@ -1,0 +1,12 @@
+﻿{
+  // Maps HistoryType to WebElementInfo
+  "AllHistory": {
+    "Id": "co_ro_history_search_types_all_history_clickable"
+  },
+  "Documents": {
+    "Id": "co_ro_history_search_types_documents_clickable"
+  },
+  "Searches": {
+    "Id": "co_ro_history_search_types_searches_clickable"
+  }
+}

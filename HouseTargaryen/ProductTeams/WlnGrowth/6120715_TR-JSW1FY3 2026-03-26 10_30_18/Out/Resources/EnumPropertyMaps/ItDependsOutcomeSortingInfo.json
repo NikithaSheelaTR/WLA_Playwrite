@@ -1,0 +1,14 @@
+{
+  "CaseName": {
+    "LocatorString": ".//th[@sort-value='title']"
+  },
+  "Court": {
+    "LocatorString": ".//th[@sort-value='courtlineName']"
+  },
+  "CaseOutcome": {
+    "LocatorString": ".//th[@sort-value='caseOutcome']"
+  },
+  "Date": {
+    "LocatorString": ".//th[@sort-value='date']"
+  }
+}

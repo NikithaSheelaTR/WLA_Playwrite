@@ -1,0 +1,15 @@
+﻿{
+  // Other business reports
+  "DunAndBradStreet": {
+    "Text": "Dun & Bradstreet Reports"
+  },
+  "Experian": {
+    "Text": "Experian Business Credit Reports"
+  },
+  "HooversCompany": {
+    "Text": "Hoover's Company Profiles"
+  },
+  "Investext": {
+    "Text": "Investext Reports"
+  }
+}

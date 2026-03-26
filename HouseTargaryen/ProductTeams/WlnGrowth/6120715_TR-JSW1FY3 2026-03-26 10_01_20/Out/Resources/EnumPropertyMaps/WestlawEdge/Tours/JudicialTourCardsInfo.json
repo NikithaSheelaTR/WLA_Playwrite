@@ -1,0 +1,44 @@
+{
+    "JudicialCard1": {
+        "Text": "On the Omitted authority tab you'll find cases and other materials relevant to the issues in the uploaded documents but that were not cited in them."
+    },
+    "JudicialCard2": {
+        "Text": "The Omitted by both tab provides relevant cases cited by neither party.\r\nA. Case details provides information about the procedural background of the recommended case.\r\nB. Recommendation tags highlight when a case has been frequently cited, is from the high court in its jurisdiction, or was decided in the last 2 years."
+    },
+    "JudicialCard3": {
+        "Text": "A. Summary information and outcomes for each issue are provided for each case. Gavel icons emphasize the outcomes most relevant to the issues in the uploaded document(s).\r\nB. Quick Check lists the headings from the uploaded document(s) for which the case is relevant. Expand each heading to see details about why the case was recommended for those legal issues."
+    },
+    "JudicialCard4": {
+        "Text": "The Omitted by party tab provides recommended authority relevant to headings in each document assigned to a specific party.\r\nA. Quick Check Judicial provides focused recommendations for each section of the uploaded documents. The report is organized according to the headings within the documents and can be filtered to focus only on the issues in which you're most interested.\r\nB. Easily see how a case might be useful with relevant language and outcomes. Quick Check Judicial analyzes the language of the uploaded documents to tailor the report and pinpoint the most relevant parts of the recommended case for quick review.\r\nC. Quick Check Judicial also alerts you when one of the recommended cases is related to some of the cases already cited in the uploaded document."
+    },
+    "JudicialCard5": {
+        "Text": "The Cited authority tab contains a list of authority cited in the analyzed documents that can be found on Westlaw."
+    },
+    "JudicialCard6": {
+        "Text": "A. Below each cited document you'll see which parties have cited it and in which document(s) it was found. Any authority that has been cited by both parties receives a special tag for quick review.\r\nB. For cases that have any negative KeyCite treatment, including Westlaw Edge's exclusive KeyCite Overruling Risk warnings, Quick Check Judicial identifies the relevant language from within the treating case to let you know why the KeyCite flag exists."
+    },
+    "PrecisionJudicialCard6": {
+        "Text": "A. Below each cited document you'll see which parties have cited it and in which document(s) it was found. Any authority that has been cited by both parties receives a special tag for quick review.\r\nB. For cases that have any negative KeyCite treatment, including Westlaw Precision's KeyCite Overruling Risk warnings, Quick Check Judicial identifies the relevant language from within the treating case to let you know why the KeyCite flag exists."
+    },
+    "JudicialCard7": {
+        "Text": "The Quotation analysis tab allows you to compare case quotations from the uploaded documents to the language in the cited case on Westlaw."
+    },
+    "JudicialCard8": {
+        "Text": "Differences are flagged when a quotation from an uploaded document does not match the cited language on Westlaw."
+    },
+    "JudicialCard9": {
+        "Text": "Sort each document's quotations to show differences first or by the order of appearance in the document."
+    },
+    "JudicialCard9New": {
+        "Text": "Sort the document’s quotations by potential severity or by the order of appearance in the document."
+    },
+    "JudicialClickOmittedAuthorityTabCard": {
+        "Text": "Click on Omitted authority tab"
+    },
+    "JudicialClickCitedAuthorityTabCard": {
+        "Text": "Click on Cited authority tab"
+    },
+    "JudicialClickQuotationsTabCard": {
+        "Text": "Click on Quotations analysis tab"
+    }
+}

@@ -1,0 +1,17 @@
+{
+  // Maps JudicialConsiderationSortByOptions enumeration to WebElementInfo
+  "JurisdictionCourtLevel": {
+    "Text": "Jurisdiction/Court Level",
+    "LocatorString": "//ul[@id='co_search_sortOptions']//span[text()='Court Level' or text()='Instance']"
+  },
+
+  "DateNewest": {
+    "Text": "Date (Newest)",
+    "LocatorString": "//ul[@id='co_search_sortOptions']//span[text()='Date (Newest)' or text()='Date (la plus récente)']"
+  },
+
+  "DateOldest": {
+    "Text": "Date (Oldest)",
+    "LocatorString": "//ul[@id='co_search_sortOptions']//span[text()='Date (Oldest)' or text()='Date (la plus ancienne)']"
+  }
+}

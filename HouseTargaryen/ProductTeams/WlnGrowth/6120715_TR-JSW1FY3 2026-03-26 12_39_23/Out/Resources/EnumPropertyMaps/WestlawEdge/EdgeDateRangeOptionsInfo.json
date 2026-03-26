@@ -1,0 +1,94 @@
+{
+  // Maps DateRangeOptions enumeration to DateRangeOptionsModel
+  "All": {
+    "Text": "All",
+    "OptionCountLocatorString": "",
+    "FirstFieldLocatorString": "",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//input[@id='selectOptions_all'] | //label[./span[text()='All']]/input[@class='SearchFacet-inputCheckbox'] | //a[text()='All']"
+  },
+  "AllDatesAfter": {
+    "Text": "all dates after",
+    "OptionCountLocatorString": "",
+    "FirstFieldLocatorString": "//input[contains(@id,'SearchFacetRange-') and contains(@id,'Start')] | //div[@class='la-DateFilter-inputDateContainer'][1]/input | //input[contains(@id,'co_dateWidgetCustomRangeText') and contains(@id, 'after')]",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//input[@id='selectOptions_after'] | //label[./span[text()='All dates after']]/input[@class='SearchFacet-inputCheckbox'] | //a[text()='All Dates After'] | //input[@value='after']"
+  },
+  "AllDatesBefore": {
+    "Text": "all dates before",
+    "OptionCountLocatorString": "",
+    "FirstFieldLocatorString": "//input[contains(@id,'SearchFacetRange-') and contains(@id,'End')] | //div[@class='la-DateFilter-inputDateContainer'][1]/input | //input[@id='co_dateWidgetCustomRangeText_Date_before'] | //input[@class='co_input_before']",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//input[@id='selectOptions_before'] | //label[./span[text()='All dates before']]/input[@class='SearchFacet-inputCheckbox'] | //li[@id='co_dateWidgetCustomRangeExpando_Date_before']/a | //input[@value='before']"
+  },
+  "DateRange": {
+    "Text": "date range",
+    "OptionCountLocatorString": "",
+    "FirstFieldLocatorString": "//input[contains(@id,'SearchFacetRange-') and contains(@id,'Start')] | //div[@class='la-DateFilter-inputDateContainer'][1]/input | //input[@id='co_dateWidgetCustomRangeText_Date_fromUntil']",
+    "SecondFieldLocatorString": "//input[contains(@id,'SearchFacetRange-') and contains(@id,'End')] | //div[@class='la-DateFilter-inputDateContainer'][2]/input | //input[@id='co_dateWidgetCustomRangeUntilText_Date_fromUntil']",
+    "LocatorString": "//input[@id='selectOptions_fromUntil'] | //label[./span[text()='Date range']]/input[@class='SearchFacet-inputCheckbox'] | //li[@id='co_dateWidgetCustomRangeExpando_Date_fromUntil']/a"
+  },
+  "Last6Months": {
+    "Text": "last 6 months",
+    "OptionCountLocatorString": "(/descendant-or-self::node()/span[@class='SearchFacet-outputTextValue'])[1]",
+    "FirstFieldLocatorString": "",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//input[@id='selectOptions_last6mo'] | //label[./span[text()='Last 6 months']]/input[@class='SearchFacet-inputCheckbox'] | //span[@id='co_dateWidgetSelectRangeLink_Date_last6mo']/a | //input[@value='last6mo']"
+  },
+  "Last7Days": {
+    "Text": "last 7 days",
+    "OptionCountLocatorString": "",
+    "FirstFieldLocatorString": "",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//input[@id='selectOptions_last7days']"
+  },
+  "Last12Months": {
+    "Text": "last 12 months",
+    "OptionCountLocatorString": "(/descendant-or-self::node()/span[@class='SearchFacet-outputTextValue'])[2]",
+    "FirstFieldLocatorString": "",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//input[@id='selectOptions_last12mo'] | //label[./span[text()='Last 12 months']]/input[@class='SearchFacet-inputCheckbox'] | //span[@id='co_dateWidgetSelectRangeLink_Date_last12mo']/a | //input[@value='last12mo']"
+  },
+  "Last30Days": {
+    "Text": "last 30 days",
+    "OptionCountLocatorString": "",
+    "FirstFieldLocatorString": "",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//input[@id='selectOptions_last30days']"
+  },
+  "Last2Years": {
+	  "Text": "last 2 years",
+	  "OptionCountLocatorString": "(/descendant-or-self::node()/span[@class='SearchFacet-outputTextValue'])[3]",
+	  "FirstFieldLocatorString": "",
+	  "SecondFieldLocatorString": "",
+	  "LocatorString": "//input[@id='selectOptions_last2yr']"
+  },
+  "Last3Years": {
+    "Text": "last 3 years",
+    "OptionCountLocatorString": "(/descendant-or-self::node()/span[@class='SearchFacet-outputTextValue'])[3]",
+    "FirstFieldLocatorString": "",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//input[@id='selectOptions_last3yr'] | //label[./span[text()='Last 3 years']]/input[@class='SearchFacet-inputCheckbox'] | //span[@id='co_dateWidgetSelectRangeLink_Date_last3yr']/a | //input[@value='last3yr']"
+  },
+  "Last90Days": {
+    "Text": "last 90 days",
+    "OptionCountLocatorString": "",
+    "FirstFieldLocatorString": "",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//input[@id='selectOptions_last90days']"
+  },
+  "SpecificDate": {
+    "Text": "specific date",
+    "OptionCountLocatorString": "",
+    "FirstFieldLocatorString": "//input[contains(@id,'SearchFacetRange-') and contains(@id,'Start')] | //div[@class='la-DateFilter-inputDateContainer'][1]/input | //input[@id='co_dateWidgetCustomRangeText_Date_on']",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//label[@for='selectOptions_on'] | //label[./span[text()='Specific date']]/input[@class='SearchFacet-inputCheckbox'] | //li[@id='co_dateWidgetCustomRangeExpando_Date_on']/a"
+  },
+  "Today": {
+    "Text": "today",
+    "OptionCountLocatorString": "",
+    "FirstFieldLocatorString": "",
+    "SecondFieldLocatorString": "",
+    "LocatorString": "//input[@id='selectOptions_today'] | //*[text()='Today']"
+  }
+}

@@ -1,0 +1,36 @@
+﻿{
+  // Maps SelectYearDatepickerOptions enumeration to BaseTextModel
+  "TwoThousandSeventeen": {
+    "Text": "2017"
+  },
+  "TwoThousandEighteen": {
+    "Text": "2018"
+  },
+  "TwoThousandNineteen": {
+    "Text": "2019"
+  },
+  "TwoThousandTwenty": {
+    "Text": "2020"
+  },
+  "TwoThousandTwentyOne": {
+    "Text": "2021"
+  },
+  "TwoThousandTwentyTwo": {
+    "Text": "2022"
+  },
+  "TwoThousandTwentyThree": {
+    "Text": "2023"
+  },
+  "TwoThousandTwentyFour": {
+    "Text": "2024"
+  },
+  "TwoThousandTwentyFive": {
+    "Text": "2025"
+  },
+  "TwoThousandTwentySix": {
+    "Text": "2026"
+  },
+  "TwoThousandTwentySeven": {
+    "Text": "2027"
+  }
+}

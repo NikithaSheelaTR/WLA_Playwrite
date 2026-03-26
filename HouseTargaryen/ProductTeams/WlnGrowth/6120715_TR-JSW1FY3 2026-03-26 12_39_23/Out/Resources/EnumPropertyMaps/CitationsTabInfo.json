@@ -1,0 +1,148 @@
+﻿{
+  // Maps CitationsTab to WebElementInfo
+  "AddHyperlinkToCitationCheckbox": {
+    "Id": "coid_userSettingsCitationIncludeHyperlinkReferenceOption",
+    "Text": "Add hyperlink to citation",
+    "LocatorString": "//input[@id='coid_userSettingsCitationIncludeHyperlinkReferenceOption']"
+  },
+  "AdditionsHeader": {
+    "LocatorString": "//span[@class='UserSettings-section-title' and text()='Additions']"
+  },
+  "AddSelectedTextAsParentheticalAfterReference": {
+    "LocatorString": "//input[@value='addSelectedTextAsParentheticalAfterReference' and @name='radioGroupName_CitationSelectedTextOptions']"
+  },
+  "AddSelectedTextAsParentheticalAfterReferenceNewIcon": {
+    "LocatorString": "//span[@class='custom-new-icon' and @id='radioLabel_addSelectedTextAsParentheticalAfterReference']"
+  },
+  "AllowCiteAdvisorRadioButton": {
+    "Id": "coid_userSettingsParallelCitationsCAFormat",
+    "Text": "Allow West CiteAdvisor to suggest which citations to include",
+    "LocatorString": "//input[@id='coid_userSettingsParallelCitationsCAFormat']"
+  },
+  "AllowCopyWithReferenceToSuggest": {
+    "LocatorString": "//input[@value='CAFormat']"
+  },
+  "CitationFormat": {
+    "LocatorString": "//select[@id='select-CiteAdvisorRulesSet']"
+  },
+  "CitationFormatDropdown": {
+    "Id": "coid_userSettingsCitationFormatOption",
+    "Text": "Citation Format",
+    "LocatorString": "//select[@id='coid_userSettingsCitationFormatOption']"
+  },
+  "CitationFormatDropdownHeader": {
+    "LocatorString": "//h3[label[@for='coid_userSettingsCitationFormatOption']]"
+  },
+  "CitationFormatHeader": {
+    "LocatorString": "//label[@for='select-CiteAdvisorRulesSet']/span"
+  },
+  "CitationFormattingCheckboxHeader": {
+    "LocatorString": "//h3[@class='co_formLabel' and contains(text(),'Citation Formatting')]"
+  },
+  "CitationFormattingHeader": {
+    "LocatorString": "//span[@class='UserSettings-section-title' and text()='Citation formatting']"
+  },
+  "CitationStyleDropdown": {
+    "Id": "coid_userSettingsCitationStyleOption",
+    "Text": "Citation Style",
+    "LocatorString": "//select[@id='coid_userSettingsCitationStyleOption']"
+  },
+  "CitationStyleDropdownHeader": {
+    "LocatorString": "//h3[label[@for='coid_userSettingsCitationStyleOption']]"
+  },
+  "CitationStyleHeader": {
+    "LocatorString": "//span[@class='UserSettings-section-title' and text()='Citation style']"
+  },
+  "CitationTabTitle": {
+    "LocatorString": "//h3[contains(text(),'Copy Citation')]"
+  },
+  "CiteOfficialReporterRadioButton": {
+    "Id": "coid_userSettingsOneCitationofficialReporterOnly",
+    "Text": "Cite to the official reporter if possible",
+    "LocatorString": "//input[@id='coid_userSettingsOneCitationofficialReporterOnly']"
+  },
+  "CiteWestNationalReporterRadioButton": {
+    "Id": "coid_userSettingsOneCitationwestReporterOnly",
+    "Text": "Cite to West's National Reporter System if possible",
+    "LocatorString": "//input[@id='coid_userSettingsOneCitationwestReporterOnly']"
+  },
+  "CopyReferenceOnly": {
+    "LocatorString": "//input[@value='copyReferenceOnly' and @name='radioGroupName_CitationSelectedTextOptions']"
+  },
+  "CopyReferenceOnlyNewIcon": {
+    "LocatorString": "//span[@class='custom-new-icon' and @id='radioLabel_copyReferenceOnly']"
+  },
+  "CreateLinkFromReference": {
+    "LocatorString": "//input[contains(@id,'CitationIncludeHyperlinkReference')]"
+  },
+  "HyperlinkHeader": {
+    "LocatorString": "//h3[@class='co_formLabel' and contains(text(),'Hyperlink')]"
+  },
+  "IncludeCitationsToAllReporters": {
+    "LocatorString": "//input[@value='allReporter']"
+  },
+  "IncludeCitationsToAllReportersRadioButton": {
+    "Id": "coid_userSettingsParallelCitationsallReporter",
+    "Text": "Include citations to all available reporters",
+    "LocatorString": "//input[@id='coid_userSettingsParallelCitationsallReporter']"
+  },
+  "IncludeOneCitationPerAuthorityRadioButton": {
+    "Id": "coid_userSettingsParallelCitationsOneCitation",
+    "Text": "Include only one citation per authority cited",
+    "LocatorString": "//input[@id='coid_userSettingsParallelCitationsOneCitation']"
+  },
+  "IncludeOnlyOneCitationOfficialReporter": {
+    "LocatorString": "//input[@value='officialReporterOnly']"
+  },
+  "IncludeOnlyOneCitationWestReporter": {
+    "LocatorString": "//input[@value='westReporterOnly']"
+  },
+  "IncludeSeparateLineFollowingText": {
+    "LocatorString": "//input[@value='includeSeparateLineFollowingText' and @name='radioGroupName_CitationSelectedTextOptions']"
+  },
+  "IncludeSeparateLinePrecedingText": {
+    "LocatorString": "//input[@value='includeSeparateLinePrecedingText' and @name='radioGroupName_CitationSelectedTextOptions']"
+  },
+  "IncludeSubsequentHistory": {
+    "LocatorString": "//input[contains(@id,'coid_CiteAdvisorIncludeHistory_checkbox_')]"
+  },
+  "IncludeSubsequentHistoryCheckbox": {
+    "Id": "coid_userSettingsCitationIncludeHistoryOption",
+    "Text": "Include Subsequent History",
+    "LocatorString": "//input[@id='coid_userSettingsCitationIncludeHistoryOption']"
+  },
+  "ItalicizeCitation": {
+    "LocatorString": "//input[contains(@id,'coid_CiteAdvisorItalicizeTitle_checkbox_')]"
+  },
+  "ItalicizeTitleCheckbox": {
+    "Id": "coid_userSettingsCitationItalicizeTitleOption",
+    "Text": "Italicize Title",
+    "LocatorString": "//input[@id='coid_userSettingsCitationItalicizeTitleOption']"
+  },
+  "LawReviews": {
+    "LocatorString": "//input[@value='LawReviews']"
+  },
+  "LegalBriefs": {
+    "LocatorString": "//input[@value='LegalBriefs']"
+  },
+  "ParallelCitationsHeader": {
+    "LocatorString": "//span[@class='UserSettings-section-title' and text()='Parallel citations']"
+  },
+  "ParallelCitationsRadioButtonHeader": {
+    "LocatorString": "//h3[@class='co_formLabel' and contains(text(),'Parallel Citations')]"
+  },
+  "PutQuotationsAroundCopiedText": {
+    "LocatorString": "//input[contains(@id,'CitationQuotationsAroundCopiedText')]"
+  },
+  "SelectedTextOptionsHeader": {
+    "LocatorString": "//span[@class='UserSettings-section-title' and text()='Selected text options']"
+  },
+  "UnderlineCitation": {
+    "LocatorString": "//input[contains(@id,'coid_CiteAdvisorUnderlineTitle_checkbox_')]"
+  },
+  "UnderlineTitleCheckbox": {
+    "Id": "coid_userSettingsCitationUnderlineTitleOption",
+    "Text": "Underline Title",
+    "LocatorString": "//input[@id='coid_userSettingsCitationUnderlineTitleOption']"
+  }
+}

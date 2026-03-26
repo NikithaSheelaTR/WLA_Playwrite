@@ -1,0 +1,9 @@
+{
+    // Maps AnalyticsChargeableOptions to BaseTextModel
+  "Chargeable": {
+    "Text": "Chargeable"
+  },
+  "NonChargeable": {
+    "Text": "Non-chargeable"
+  }
+}

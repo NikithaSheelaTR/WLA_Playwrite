@@ -1,0 +1,19 @@
+{
+  // Maps AlertsContentTab to BaseTextModel
+  "AllContent": { "Text": "All Content" },
+  "AllCourts": { "Text": "All Courts" },
+  "AllLegalContent": { "Text": "All Legal Content" },
+  "ContentTypes": { "Text": "Content types" },
+  "Favorites": { "Text": "Favorites" },
+  "Federal": { "Text": "Federal" },
+  "FederalMaterials": { "Text": "Federal Materials" },
+  "PracticeAreas": { "Text": "Practice Areas" },
+  "Products": { "Text": "Products" },
+  "Resents": { "Text": "Resents" },
+  "SpecialtyAreas": { "Text": "Specialty areas" },
+  "State": { "Text": "State" },
+  "StateMaterials": { "Text": "State Materials" },
+  "TaxContent": { "Text": "Tax Content" },
+  "Territory": { "Text": "Territory" },
+  "Topical": { "Text": "Topical" }
+}

@@ -1,0 +1,19 @@
+{
+  // Maps SmartTermsTabs to WebElementInfo
+  "Industry": {
+    "Text": "Industry",
+    "Id": "co_smartTermTabIndustry"
+  },
+  "Subject": {
+    "Text": "Subject",
+    "Id": "co_smartTermTabSubject"
+  },
+  "Company": {
+    "Text": "Industry",
+    "Id": "co_smartTermTabCompany"
+  },
+  "Location": {
+    "Text": "Location",
+    "Id": "co_smartTermTabLocation"
+  }
+}

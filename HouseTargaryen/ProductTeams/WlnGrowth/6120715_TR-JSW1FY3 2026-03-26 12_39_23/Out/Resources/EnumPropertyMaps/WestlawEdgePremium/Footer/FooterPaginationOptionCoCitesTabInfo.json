@@ -1,0 +1,14 @@
+﻿{
+  "FirstPage": {
+    "LocatorString": ".//a[@aria-label = 'First page']"
+  },
+  "PreviousPage": {
+    "LocatorString": ".//a[@aria-label = 'Previous page']"
+  },
+  "NextPage": {
+    "LocatorString": ".//a[@aria-label = 'Next page']"
+  },
+  "LastPage": {
+    "LocatorString": ".//a[@aria-label = 'Last page']"
+  }
+}

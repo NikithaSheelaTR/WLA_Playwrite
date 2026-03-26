@@ -1,0 +1,82 @@
+{
+  // Maps Key features to WebElementInfo
+  "AIAssistedResearch": {
+    "Text": "AI-Assisted Research"
+  },
+
+  "AIAssistedResearchInFrench": {
+    "Text": "Recherche assistée par l'IA"
+  },
+
+  "CompareText": {
+    "Text": "Compare Text"
+  },
+
+  "CompareTextInFrench": {
+    "Text": "Comparer le texte"
+  },
+
+  "EnhancedSearch": {
+    "Text": "Enhanced Search"
+  },
+
+  "EnhancedSearchInFrench": {
+    "Text": "Recherche améliorée"
+  },
+
+  "EnhancedToolsSearchResults": {
+    "Text": "Enhanced Tools to navigate Search results"
+  },
+
+  "EnhancedToolsSearchResultsInFrench": {
+    "Text": "Outils améliorés pour naviguer dans les résultats de recherche"
+  },
+
+  "EnhanceLitigationPractice": {
+    "Text": "Enhance your Litigation Practice"
+  },
+
+  "EnhanceLitigationPracticeInFrench": {
+    "Text": "Améliorez votre pratique en matière de litiges"
+  },
+
+  "GraphicalViewHistory": {
+    "Text": "Graphical View of History"
+  },
+
+  "GraphicalViewHistoryInFrench": {
+    "Text": "Affichage graphique de l'historique"
+  },
+
+  "JudicialConsideration": {
+    "Text": "Judicial Consideration"
+  },
+
+  "JudicialConsiderationInFrench": {
+    "Text": "Examen judiciaire"
+  },
+
+  "LitigationDocumentAnalyzer": {
+    "Text": "Litigation Document Analyzer"
+  },
+
+  "LitigationDocumentAnalyzerInFrench": {
+    "Text": "Analyseur de documents de litige"
+  },
+
+  "NextGenerationKeyCite": {
+    "Text": "Next Generation KeyCite"
+  },
+
+  "NextGenerationKeyCiteInFrench": {
+    "Text": "KeyCite de nouvelle génération"
+  },
+
+  "OutlineBuilder": {
+    "Text": "Outline Builder"
+  },
+
+  "OutlineBuilderInFrench": {
+    "Text": "Créateur d'aperçu"
+  }
+}

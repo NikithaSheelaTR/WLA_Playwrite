@@ -1,0 +1,15 @@
+{
+  // Maps SorIpFacetDropdown enumeration to BaseTextModel
+  "CountLeast": {
+    "Text": "Count: Least"
+  },
+  "CountMost": {
+    "Text": "Count: Most"
+  },
+  "TitleAtoZ": {
+    "Text": "Title: A-Z"
+  },
+  "TitleZtoA": {
+    "Text": "Title: Z-A"
+  }
+}

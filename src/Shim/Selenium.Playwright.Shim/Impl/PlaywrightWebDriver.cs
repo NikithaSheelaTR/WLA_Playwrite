@@ -225,8 +225,9 @@ namespace Selenium.Playwright.Shim.Impl
                 contextOptions.ViewportSize = new ViewportSize { Width = 1920, Height = 1080 };
             }
 
-            // Apply device scale factor if specified
-            if (chromeOptions != null)
+            // Apply device scale factor if specified (only when viewport is set,
+            // Playwright does not allow deviceScaleFactor with null viewport)
+            if (chromeOptions != null && !startMaximized)
             {
                 var scaleFactor = chromeOptions.Arguments
                     .FirstOrDefault(a => a.StartsWith("force-device-scale-factor="));
@@ -310,6 +311,11 @@ namespace Selenium.Playwright.Shim.Impl
         public IWebElement FindElement(By by)
         {
             Trace($"FindElement [{Page.Url}]: {by}");
+
+            // Handle custom By subclasses (e.g. ByChained) that override FindElement
+            if (by.Mechanism == null)
+                return by.FindElement(this);
+
             var locatorStr = ByConverter.ToPlaywrightLocator(by);
             ILocator locator;
 
@@ -356,6 +362,10 @@ namespace Selenium.Playwright.Shim.Impl
 
         public ReadOnlyCollection<IWebElement> FindElements(By by)
         {
+            // Handle custom By subclasses (e.g. ByChained) that override FindElements
+            if (by.Mechanism == null)
+                return by.FindElements(this);
+
             var locatorStr = ByConverter.ToPlaywrightLocator(by);
             ILocator locator;
 
@@ -413,8 +423,20 @@ namespace Selenium.Playwright.Shim.Impl
             {
                 var modScript = script.Replace("arguments[0]", "element");
                 Trace($"ExecuteScript (single element): modScript='{modScript}'");
-                var result = SyncHelper.RunSync(() => singleElement.Locator.EvaluateAsync<object>(
+                var handle = SyncHelper.RunSync(() => singleElement.Locator.EvaluateHandleAsync(
                     $"(element) => {{ {modScript} }}"));
+                var elementHandle = handle.AsElement();
+                if (elementHandle != null)
+                {
+                    // Script returned a DOM element — stamp with unique attr and wrap as IWebElement
+                    var uid = "shim-" + Guid.NewGuid().ToString("N");
+                    SyncHelper.RunSync(() => elementHandle.EvaluateAsync(
+                        "(el, id) => el.setAttribute('data-shim-id', id)", uid));
+                    var locator = Page.Locator($"[data-shim-id='{uid}']");
+                    Trace($"ExecuteScript (single element) result: DOM element, shim-id={uid}");
+                    return new PlaywrightWebElement(locator, this);
+                }
+                var result = SyncHelper.RunSync(() => handle.JsonValueAsync<object>());
                 Trace($"ExecuteScript (single element) result: {result}, URL after: {Page.Url}");
                 return result;
             }

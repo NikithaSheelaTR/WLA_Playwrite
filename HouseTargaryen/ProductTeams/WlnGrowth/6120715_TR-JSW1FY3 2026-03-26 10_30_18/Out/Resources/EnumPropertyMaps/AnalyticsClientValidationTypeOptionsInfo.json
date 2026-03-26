@@ -1,0 +1,15 @@
+﻿{
+  // Maps AnalyticsClientValidationTypeOptions enumeration to WebElementInfo
+  "ClientMask": {
+    "Text": "Client Mask"
+  },
+  "ClientUrl": {
+    "Text": "Client URL"
+  },
+  "DefaultClientId": {
+    "Text": "Default Client Id"
+  },
+  "WestHosted": {
+    "Text": "West-Hosted"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  // Maps AlertType to WebElementInfo for Toolbar
+  "WestClip": { "Id": "co_search_alertMenuOptionLink_WestClip" },
+  "BusinessLawCenter": { "Id": "co_search_alertMenuOptionLink_BusinessLawCenterAlert" },
+  "DealTrack": {"Id": "co_document_dealTrackMenuOptionLink_DealTrack" } 
+}

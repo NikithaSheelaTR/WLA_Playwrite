@@ -1,0 +1,29 @@
+﻿{
+  "Briefs": {
+    "Text": "Briefs"
+  },
+  "Cases": {
+    "Text": "Cases"
+  },
+  "Regulations": {
+    "Text": "Regulations"
+  },
+  "SecondarySources": {
+    "Text": "Secondary Sources"
+  },
+  "SecondarySourcesLibrary": {
+    "Text": "Secondary Sources Library"
+  },
+  "Statutes": {
+    "Text": "Statutes"
+  },
+  "StatutesAndCourtRules": {
+    "Text": "Statutes & Court Rules"
+  }, 
+  "TrialCourtDocuments": {
+    "Text": "Trial court documents"
+  },
+  "TrialCourtOrders": {
+    "Text": "Trial court orders"
+  }
+}

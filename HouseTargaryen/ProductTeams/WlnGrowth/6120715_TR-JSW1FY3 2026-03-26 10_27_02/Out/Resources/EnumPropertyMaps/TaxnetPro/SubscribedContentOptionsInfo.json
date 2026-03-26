@@ -1,0 +1,10 @@
+{
+  "AllContent": {
+    "LocatorString": "//ul[@id='co_searchPPVToolItems1']//span[text()='All content']",
+    "Text": "All content"
+  },
+  "SubscribedContent": {
+    "LocatorString": "//ul[@id='co_searchPPVToolItems1']//span[text()='Subscribed content']",
+    "Text": "Subscribed content"
+  }
+}

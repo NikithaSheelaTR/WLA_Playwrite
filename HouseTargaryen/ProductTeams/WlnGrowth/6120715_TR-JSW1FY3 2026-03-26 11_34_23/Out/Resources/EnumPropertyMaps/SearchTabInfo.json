@@ -1,0 +1,139 @@
+{
+  // Maps SearchTab to WebElementInfo
+  "AlwaysRunBooleanSearchCheckbox": {
+    "LocatorString": "input[data-preferencekey='ForceTermsAndConnectors']",
+    "Text": "Always run searches containing 'AND', 'OR', '&' or quoted phrases as Boolean Terms & Connectors."
+  },
+  "AdminDecisionsDate": {
+    "LocatorString": "input[name=DefaultSortType_ADMINDECISION][value=DATE_DESCENDING]",
+    "Text": "Administrative Decisions & Guidance"
+  },
+  "AdminDecisionsRelevance": {
+    "LocatorString": "input[name=DefaultSortType_ADMINDECISION][value=RELEVANCE]",
+    "Text": "Administrative Decisions & Guidance"
+  },
+  "BriefsDate": {
+    "LocatorString": "input[name=DefaultSortType_BRIEF][value=DATE_DESCENDING]",
+    "Text": "Briefs"
+  },
+  "BriefsRelevance": {
+    "LocatorString": "input[name=DefaultSortType_BRIEF][value=RELEVANCE]",
+    "Text": "Briefs"
+  },
+  "CasesDate": {
+    "LocatorString": "input[name=DefaultSortType_CASE][value=DATE_DESCENDING]",
+    "Text": "Cases"
+  },
+  "CasesMostCited": {
+    "LocatorString": "input[name=DefaultSortType_CASE][value=MOST_CITED]",
+    "Text": "Cases"
+  },
+  "CasesMostUsed": {
+    "LocatorString": "input[name=DefaultSortType_CASE][value=MOST_USED]",
+    "Text": "Cases"
+  },
+  "CasesRelevance": {
+    "LocatorString": "input[name=DefaultSortType_CASE][value=RELEVANCE]",
+    "Text": "Cases"
+  },
+  "ExpertMaterialsDate": {
+    "LocatorString": "input[name=DefaultSortType_EXPERTWITNESS][value=DATE_DESCENDING]",
+    "Text": "Expert Materials"
+  },
+  "ExpertMaterialsRelevance": {
+    "LocatorString": "input[name=DefaultSortType_EXPERTWITNESS][value=RELEVANCE]",
+    "Text": "Expert Materials"
+  },
+  "FormsMostCited": {
+    "LocatorString": "input[name=DefaultSortType_FORM][value=MOST_CITED]",
+    "Text": "Forms"
+  },
+  "FormsRelevance": {
+    "LocatorString": "input[name=DefaultSortType_FORM][value=RELEVANCE]",
+    "Text": "Forms"
+  },
+  "JuryVerdictsDate": {
+    "LocatorString": "input[name=DefaultSortType_JURYVERDICT][value=DATE_DESCENDING]",
+    "Text": "Jury Verdicts & Settlements"
+  },
+  "JuryVerdictsRelevance": {
+    "LocatorString": "input[name=DefaultSortType_JURYVERDICT][value=RELEVANCE]",
+    "Text": "Jury Verdicts & Settlements"
+  },
+  "NewsDate": {
+    "LocatorString": "input[name=DefaultSortType_NEWS][value=DATE_DESCENDING]",
+    "Text": "News"
+  },
+  "NewsRelevance": {
+    "LocatorString": "input[name=DefaultSortType_NEWS][value=RELEVANCE]",
+    "Text": "News"
+  },
+  "ProposedEnactedLegisDate": {
+    "LocatorString": "input[name=DefaultSortType_PENDINGLEG][value=DATE_DESCENDING]",
+    "Text": "Proposed & Enacted Legislation"
+  },
+  "ProposedEnactedLegisRelevance": {
+    "LocatorString": "input[name=DefaultSortType_PENDINGLEG][value=RELEVANCE]",
+    "Text": "Proposed & Enacted Legislation"
+  },
+  "ProposedAdoptedRegulationsDate": {
+    "LocatorString": "input[name=DefaultSortType_PENDINGREG][value=DATE_DESCENDING]",
+    "Text": "Proposed & Adopted Regulations"
+  },
+  "ProposedAdoptedRegulationsRelevance": {
+    "LocatorString": "input[name=DefaultSortType_PENDINGREG][value=RELEVANCE]",
+    "Text": "Proposed & Adopted Regulations"
+  },
+  "RegulationsDate": {
+    "LocatorString": "input[name=DefaultSortType_REGULATION][value=DATE_DESCENDING]",
+    "Text": "Regulations"
+  },
+  "RegulationsRelevance": {
+    "LocatorString": "input[name=DefaultSortType_REGULATION][value=RELEVANCE]",
+    "Text": "Regulations"
+  },
+  "RegulationsTableOfContents": {
+    "LocatorString": "input[name=DefaultSortType_REGULATION][value=TABLE_OF_CONTENTS]",
+    "Text": "Regulations"
+  },
+  "SecondarySourcesDate": {
+    "LocatorString": "input[name=DefaultSortType_ANALYTICAL][value=DATE_DESCENDING]",
+    "Text": "Secondary Sources"
+  },
+  "SecondarySourcesMostCited": {
+    "LocatorString": "input[name=DefaultSortType_ANALYTICAL][value=MOST_CITED]",
+    "Text": "Secondary Sources"
+  },
+  "SecondarySourcesRelevance": {
+    "LocatorString": "input[name=DefaultSortType_ANALYTICAL][value=RELEVANCE]",
+    "Text": "Secondary Sources"
+  },
+  "StatutesAndCourtRulesMostCited": {
+    "LocatorString": "input[name=DefaultSortType_STATUTE][value=MOST_CITED]",
+    "Text": "Statutes & Court Rules"
+  },
+  "StatutesAndCourtRulesRelevance": {
+    "LocatorString": "input[name=DefaultSortType_STATUTE][value=RELEVANCE]",
+    "Text": "Statutes & Court Rules"
+  },
+  "StatutesAndCourtRulesTableOfContents": {
+    "LocatorString": "input[name=DefaultSortType_STATUTE][value=TABLE_OF_CONTENTS]",
+    "Text": "Statutes & Court Rules"
+  },
+  "TrialCourtDate": {
+    "LocatorString": "input[name=DefaultSortType_TCO][value=DATE_DESCENDING]",
+    "Text": "Trial Court Orders"
+  },
+  "TrialCourtDocsDate": {
+    "LocatorString": "input[name=DefaultSortType_PMM][value=DATE_DESCENDING]",
+    "Text": "Trial Court Documents"
+  },
+  "TrialCourtDocsRelevance": {
+    "LocatorString": "input[name=DefaultSortType_PMM][value=RELEVANCE]",
+    "Text": "Trial Court Documents"
+  },
+  "TrialCourtRelevance": {
+    "LocatorString": "input[name=DefaultSortType_TCO][value=RELEVANCE]",
+    "Text": "Trial Court Orders"
+  }
+}

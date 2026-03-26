@@ -1,0 +1,5 @@
+VSTest version 17.14.0 (x64)
+
+Starting test discovery, please wait...
+A total of 1 test files matched the specified pattern.
+Test Run deployment issue: Failed to get the file for deployment item 'Resources/Rerunner/ReportPortalReruner.exe': System.IO.FileNotFoundException: Could not find file 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\RegressionTests\WestlawAdvantage\bin\Debug\ReportPortalReruner.exe'.

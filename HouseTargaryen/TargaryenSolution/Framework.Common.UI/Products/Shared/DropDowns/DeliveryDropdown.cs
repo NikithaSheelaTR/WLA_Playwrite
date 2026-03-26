@@ -135,7 +135,7 @@
         protected override bool IsDropdownExpanded()
         {
             DriverExtensions.ScrollToTop();
-            string dropdownClass = DriverExtensions.GetElement(this.Dropdown).GetAttribute("class");
+            string dropdownClass = this.Dropdown.GetAttribute("class");
             return dropdownClass.Contains("expanded", StringComparison.InvariantCultureIgnoreCase);
         }
     }

@@ -1,0 +1,19 @@
+{
+  // Maps the Intellectual Property categories to WebElementInfo
+  "AllIntellectualProperty": {
+    "Text": "All Intellectual Property",
+    "LocatorString": "#coid_categoryTab1_main_0"
+  },
+  "Patent": {
+    "Text": "Patent",
+    "LocatorString": "#coid_categoryTab2_main_0"
+  },
+  "Trademark": {
+    "Text": "Trademark",
+    "LocatorString": "#coid_categoryTab3_main_0"
+  },
+  "Copyright": {
+    "Text": "Copyright",
+    "LocatorString": "#coid_categoryTab4_main_0"
+  }
+}

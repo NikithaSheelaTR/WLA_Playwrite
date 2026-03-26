@@ -1,0 +1,17 @@
+﻿{ // Maps BrowseTab to WebElementInfo
+  "ContentTypes": {
+    "Text": "Content types",
+    "LocatorString": "//li[contains(@facetid,'DocumentType') and contains(@style,'block')]//a",
+    "Id": "DocumentType"
+  },
+  "Jurisdiction": {
+    "Text": "Jurisdiction",
+    "LocatorString": "//li[contains(@facetid,'Jurisdiction') and contains(@style,'block')]//a",
+    "Id": "Jurisdiction"
+  },
+  "SearchWithinResults": {
+    "Text": "Search Within Results",
+    "LocatorString": "//li[contains(@facetid,'Keyword') and contains(@style,'block')]//a",
+    "Id": "Keywords"
+  }
+}

@@ -1,0 +1,11 @@
+﻿// Maps GradingToolBreadCrumb to WebElementInfo
+{
+  "Experiment": {
+    "LocatorString": "//div[@id='coid_website_breadCrumbTrail']/a[text()='Experiment']",
+    "Text": "Experiment"
+  },
+  "Home": {
+    "LocatorString": "//div[@id='coid_website_breadCrumbTrail']/a[text()='Home']",
+    "Text": "Home"
+  }
+}

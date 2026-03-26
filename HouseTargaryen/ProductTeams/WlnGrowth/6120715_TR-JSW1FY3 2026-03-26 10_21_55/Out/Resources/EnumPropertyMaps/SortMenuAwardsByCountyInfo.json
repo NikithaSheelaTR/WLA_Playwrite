@@ -1,0 +1,39 @@
+﻿{
+  // Maps SortMenuAwardsByCounty enumeration to BaseTextModel
+  "AverageAwardHighestFirst": {
+    "Text": "Average  Award: Highest First"
+  },
+  "AverageAwardLowestFirst": {
+    "Text": "Average  Award: Lowest First"
+  },
+  "CountyAtoZ": {
+    "Text": "County: A-Z"
+  },
+  "CountyZtoA": {
+    "Text": "County: Z-A"
+  },
+  "HighestAwardHighestFirst": {
+    "Text": "Highest Award: Highest First"
+  },
+  "HighestAwardLowestFirst": {
+    "Text": "Highest Award: Lowest First"
+  },
+  "MedianAwardHighestFirst": {
+    "Text": "Median Award: Highest First"
+  },
+  "MedianAwardLowestFirst": {
+    "Text": "Median Award: Lowest First"
+  },
+  "NumberAwardsHighestFirst": {
+    "Text": "Number of Awards: Highest First"
+  },
+  "NumberAwardsLowestFirst": {
+    "Text": "Number of Awards: Lowest First"
+  },
+  "PercentageTotalHighestFirst": {
+    "Text": "Percentage of Total: Highest First"
+  },
+  "PercentageTotalLowestFirst": {
+    "Text": "Percentage of Total: Lowest First"
+  }
+}

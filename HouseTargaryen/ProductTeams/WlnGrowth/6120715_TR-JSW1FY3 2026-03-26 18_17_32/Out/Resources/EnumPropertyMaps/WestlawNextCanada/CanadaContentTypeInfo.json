@@ -1,0 +1,38 @@
+{
+  // Maps Canada Content Type Toolbar to WebElementInfo
+  "BoardAndTribunalDecisions": {
+    "Text": "Board and Tribunal Decisions"
+  },
+
+  "CanadianAbridgmentDigests": {
+    "Text": "Canadian Abridgment Digests"
+  },
+
+  "Cases": {
+    "Text": "Cases"
+  },
+
+  "CausesOfActionDefencesAndRemedies": {
+    "Text": "Causes of Action, Defences and Remedies"
+  },
+
+  "CollectiveAgreementSummaries": {
+    "Text": "Collective Agreement Summaries"
+  },
+
+  "LegislativeWatch": {
+    "Text": "Legislative Watch"
+  },
+
+  "OBriensEncyclopediaOfForms": {
+    "Text": "O'Brien's Encyclopedia of Forms"
+  },
+
+  "StatutesAndRegulations": {
+    "Text": "Statutes and Regulations"
+  },
+
+  "TextsAndAnnotations": {
+    "Text": "Texts and Annotations"
+  }
+}

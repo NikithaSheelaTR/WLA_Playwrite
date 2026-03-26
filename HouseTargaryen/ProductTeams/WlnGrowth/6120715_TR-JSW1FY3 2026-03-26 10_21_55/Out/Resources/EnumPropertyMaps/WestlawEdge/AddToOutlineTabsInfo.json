@@ -1,0 +1,12 @@
+{ // Maps Add To Outline tabs to WebElementInfo
+  "Outline": {
+    "Text": "Outline",
+    "LocatorString": "//li[@id='tab_outlineTab']",
+    "Id": "tab_outlineTab"
+  },
+  "AddNote": {
+    "Text": "Add note",
+    "LocatorString": "//li[@id='tab_addNoteTab']",
+    "Id": "tab_addNoteTab"
+  }
+}

@@ -1,0 +1,38 @@
+{
+    "Experience": {
+        "Text": "Experience",
+        "LocatorString": ".//li[@id='co_la_caseHistoryReport_tab']"
+    },
+    "Motions": {
+        "Text": "Motions",
+        "LocatorString": ".//li[@id='co_la_motionReport_tab']"
+    },
+    "Overview": {
+        "Text": "Overview",
+        "LocatorString": ".//li[@id='co_la_profile_tab']"
+    },
+    "References": {
+        "Text": "References",
+        "LocatorString": ".//li[@id='co_la_references_tab']"
+    },
+    "Damages ": {
+        "Text": "Damages",
+        "LocatorString": ".//li[@id='co_la_damages_tab']"
+    },
+  "Outcomes ": {
+    "Text": "Outcomes",
+    "LocatorString": ".//li[@id='co_la_partyOutcomeReport_tab']"
+  },
+    "ExpertChallenges": {
+        "Text": "Expert challenges",
+        "LocatorString": "//li[@id='co_la_expertsReport_tab']"
+    },
+    "Deals": {
+        "Text": "Deals",
+        "LocatorString": "//li[@id='co_la_deals_tab']"
+    },
+    "Patents": {
+        "Text": "Patents",
+        "LocatorString": "//li[@id='co_la_patents_tab']"
+    }
+}

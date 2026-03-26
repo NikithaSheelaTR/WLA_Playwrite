@@ -1,0 +1,22 @@
+﻿{
+  // Maps KeyCiteFlag to WebElementInfo
+  "Blue": {
+    "ClassName": "GH-Node-Appeal-Stripe"
+
+  },
+  "ImpliedOverruling": {
+    "ClassName": "GH-Node-Overruling"
+  },
+  "NoFlag": {
+    "ClassName": "No"
+  },
+  "Red": {
+    "ClassName": "GH-Node-Severe"
+  },
+  "Striped": {
+    "ClassName": "GH-Node-Partially-Overruled-Stripe"
+   },
+  "Yellow": {
+    "ClassName": "GH-Node-Negative"
+  }
+}

@@ -1,0 +1,15 @@
+﻿{
+  // Maps SandardHeaderLinks enumeration to WebElementInfo
+  "Help": {
+    "LocatorString": "//li[@id='co_helpBtn']/a",
+    "Text": "Help"
+  },
+  "Home": {
+    "LocatorString": "//li[@id='co_homebtn']/a",
+    "Text": "Home"
+  },
+  "Search": {
+    "LocatorString": "//li[@id='co_searchBtn']/a",
+    "Text": "Search"
+  }
+}

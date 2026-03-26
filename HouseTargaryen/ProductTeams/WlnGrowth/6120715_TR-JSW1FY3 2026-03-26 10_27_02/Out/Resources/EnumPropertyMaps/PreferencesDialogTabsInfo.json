@@ -1,0 +1,52 @@
+{
+  // Maps PreferencesDialogTabs to WebElementInfo
+  "Profile": {
+    "Text": "Profile",
+    "LocatorString": "//a[@class='co_tabLink' and contains(text(),'Profile')]"
+  },
+
+  "Billing": {
+    "Text": "Billing",
+    "LocatorString": "//a[@class='co_tabLink' and contains(text(),'Billing')]"
+  },
+
+  "Search": {
+    "Text": "Search",
+    "LocatorString": "//a[@class='co_tabLink' and contains(text(),'Search') or contains(text(),'Rechercher')]"
+  },
+
+  "Features": {
+    "Text": "Features",
+    "LocatorString": "//a[@class='co_tabLink' and contains(text(),'Features')]"
+  },
+
+  "Delivery": {
+    "Text": "Delivery",
+    "LocatorString": "//a[@class='co_tabLink' and contains(text(),'Delivery')]"
+  },
+
+  "Citations": {
+    "Text": "Citations",
+    "LocatorString": "//a[@class='co_tabLink' and contains(text(),'Citations')] | //li[@id='tab_Citations']"
+  },
+
+  "Test": {
+    "Text": "Test",
+    "LocatorString": "//a[@class='co_tabLink' and contains(text(),'Test')]"
+  },
+
+  "History": {
+    "Text": "History",
+    "LocatorString": "//a[@class='co_tabLink' and contains(text(),'History')]"
+  },
+
+  "Help": {
+    "Text": "Help",
+    "LocatorString": "//a[@class='co_tabLink' and contains(text(),'Help')]"
+  },
+
+  "Display": {
+    "Text": "Display",
+    "LocatorString": "//a[@class='co_tabLink' and contains(text(),'Display')]"
+  }
+}

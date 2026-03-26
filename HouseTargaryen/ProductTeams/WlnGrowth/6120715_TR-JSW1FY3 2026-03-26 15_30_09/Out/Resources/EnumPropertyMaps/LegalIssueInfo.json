@@ -1,0 +1,18 @@
+﻿{
+  // Maps LegalIssue to BaseTextModel
+  "Issue1": {
+    "Text": "Issue #1"
+  },
+  "Issue2": {
+    "Text": "Issue #2"
+  },
+  "Issue3": {
+    "Text": "Issue #3"
+  },
+  "Issue4": {
+    "Text": "Issue #4"
+  },
+  "Issue5": {
+    "Text": "Issue #5"
+  }
+}

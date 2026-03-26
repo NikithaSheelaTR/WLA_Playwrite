@@ -1,0 +1,18 @@
+﻿{
+  "Summary": {
+    "LocatorString": ".//saf-tree-item[text()='Summary']",
+    "Text": "Summary"
+  },
+  "Arguments": {
+    "LocatorString": ".//saf-tree-item[text()='Arguments']",
+    "Text": "Arguments"
+  },
+  "RelatedArguments": {
+    "LocatorString": ".//saf-tree-item[text()='Related arguments']",
+    "Text": "Related arguments"
+  },
+  "RelatedDefenses": {
+    "LocatorString": ".//saf-tree-item[text()='Related defenses']",
+    "Text": "Related defenses"
+  }
+}

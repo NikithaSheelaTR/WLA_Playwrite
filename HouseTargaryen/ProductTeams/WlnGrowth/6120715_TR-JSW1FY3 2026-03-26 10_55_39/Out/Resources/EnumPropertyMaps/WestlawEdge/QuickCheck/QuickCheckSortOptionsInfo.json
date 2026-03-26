@@ -1,0 +1,35 @@
+{ // Maps SortQuotationsDropdownOptions to WebElementInfo
+	"AppearanceInDocument": {
+		"LocatorString": ".//li[.='Appearance in document']",
+		"Text": "Appearance in document"
+	},
+	"Date": {
+		"LocatorString": ".//li[.='Date']",
+		"Id": "DATE_DESCENDING",
+		"Text": "Date"
+	},
+	"DepthOfDiscussion": {
+		"LocatorString": ".//li[.='Depth of discussion']",
+		"Text": "Depth of discussion"
+	},
+	"DifferencesFirst": {
+		"LocatorString": ".//li[.='Differences first']",
+		"Text": "Differences first"
+	},
+	"OrderOfAppearanceInDocument": {
+		"LocatorString": ".//li[.='Order of appearance in document']",
+		"Text": "Order of appearance in document"
+	},
+	"PotentialSeverity": {
+		"LocatorString": ".//li[.='Potential severity']",
+		"Text": "Potential severity"
+	},
+	"SeverityOfTreatment": {
+		"LocatorString": ".//li[.='Severity of treatment']",
+		"Text": "Severity of treatment"
+	},
+	"TableOfAuthorities": {
+		"LocatorString": ".//li[.='Table of Authorities']",
+		"Text": "Table of Authorities"
+	}
+}

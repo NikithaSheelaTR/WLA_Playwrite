@@ -1,0 +1,58 @@
+{
+  // Maps Canada Edge footer links to WebElementInfo
+
+  "Accessibility": {
+    "Id": "coid_websiteFooter_accessibilityLink",
+    "Text": "Accessibility"
+  },
+
+  "ContactUs": {
+    "Id": "coid_websiteFooter_contactUsLink",
+    "Text": "Contact us"
+  },
+
+  "GettingStarted": {
+    "Id": "coid_website_quickStartGuide",
+    "Text": "Getting Started"
+  },
+
+  "Help": {
+    "Id": "coid_websiteFooter_helplink",
+    "Text": "Help"
+  },
+
+  "ImproveEdgeCanada": {
+    "Id": "coid_websiteFooter_pageSurvey",
+    "Text": "Improve Westlaw Edge Canada"
+  },
+
+  "LocaleToggle": {
+    "Id": "coid_websiteFooter_localeToggle",
+    "Text": "Basculer vers l’interface française"
+  },
+
+  "Privacy": {
+    "Id": "coid_websiteFooter_privacyPolicyLink",
+    "Text": "Privacy"
+  },
+
+  "Preferences": {
+    "Id": "coid_websiteFooter_userSettings",
+    "Text": "Preferences"
+  },
+
+  "SignOut": {
+    "Id": "coid_websiteFooter_signofflink",
+    "Text": "Sign out"
+  },
+
+  "TrainingAndSupport": {
+    "Id": "coid_websiteFooter_helplink",
+    "Text": "Training and support"
+  },
+
+  "TransferMyData": {
+    "Id": "coid_website_transferContent_exportData",
+    "Text": "Transfer My Data"
+  }
+}

@@ -1,0 +1,12 @@
+﻿  // Maps AthensPrecisionFilterSortOptions
+
+{
+  "NumberOfCases": {
+    "LocatorString": ".//li//*[contains(text(),'Number of cases')]",
+    "Text": "Number of cases"
+  },
+  "Name": {
+    "LocatorString": ".//li//*[contains(text(),'Name')]",
+    "Text": "Name"
+  }
+}

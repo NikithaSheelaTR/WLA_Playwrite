@@ -1,0 +1,27 @@
+﻿{
+  // Maps SortMenuExpertByExpertiseInfo enumeration to BaseTextModel
+  "ExpertsDefendantHighestFirst": {
+    "Text": "Experts for Defendant: Highest First"
+  },
+  "ExpertsDefendantLowestFirst": {
+    "Text": "Experts for Defendant: Lowest First"
+  },
+  "ExpertsExpertiseAtoZ": {
+    "Text": "Experts by Expertise: A-Z"
+  },
+  "ExpertsExpertiseZtoA": {
+    "Text": "Experts by Expertise: Z-A"
+  },
+  "ExpertsPlaintiffHighestFirst": {
+    "Text": "Experts for Plaintiff: Highest First"
+  },
+  "ExpertsPlaintiffLowestFirst": {
+    "Text": "Experts for Plaintiff: Lowest First"
+  },
+  "TotalNumberCasesHighestFirst": {
+    "Text": "Total Number of Cases: Highest First"
+  },
+  "TotalNumberCasesLowestFirst": {
+    "Text": "Total Number of Cases: Lowest First"
+  }
+}

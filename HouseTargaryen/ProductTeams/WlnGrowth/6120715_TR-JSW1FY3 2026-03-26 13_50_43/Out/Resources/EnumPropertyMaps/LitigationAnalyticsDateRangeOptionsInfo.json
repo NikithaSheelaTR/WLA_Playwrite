@@ -1,0 +1,11 @@
+{
+  "Last6Months": { "Text": "Last 6 months" },
+  "Last12Months": { "Text": "Last 12 months" },
+  "Last3Years": { "Text": "Last 3 years" },
+  "Last5Years": { "Text": "Last 5 years" },
+  "All": { "Text": "All" },
+  "AllDatesBefore": { "Text": "All dates before" },
+  "AllDatesAfter": { "Text": "All dates after" },
+  "SpecificDate": { "Text": "Specific date" },
+  "DateRange": { "Text": "Date range" }
+}

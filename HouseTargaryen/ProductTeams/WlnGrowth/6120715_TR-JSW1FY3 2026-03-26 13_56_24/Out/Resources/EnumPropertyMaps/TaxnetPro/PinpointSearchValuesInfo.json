@@ -1,0 +1,56 @@
+﻿{
+  "CaseName": {
+    "Text": "Case Name"
+  },
+  "Citation": {
+    "Text": "Citation"
+  },
+  "CustomsAct": {
+    "Text": "Customs Act"
+  },
+  "CustomsTariff": {
+    "Text": "Customs Tariff"
+  },
+  "DMemoranda": {
+    "Text": "D Memoranda"
+  },
+  "ExciseTaxActRegulations": {
+    "Text": "Excise Tax Act Regulations"
+  },
+  "ExciseTaxActSection": {
+    "Text": "Excise Tax Act Section"
+  },
+  "GovernmentDocumentNumber": {
+    "Text": "Government Document Number"
+  },
+  "IncomeTaxRegulations": {
+    "Text": "Income Tax Regulations"
+  },
+  "IncomeTaxActSection": {
+    "Text": "Income Tax Act Section"
+  },
+  "SalesTaxBritishColumbia": {
+    "Text": "Sales Tax British Columbia"
+  },
+  "SalesTaxManitoba": {
+    "Text": "Sales Tax Manitoba"
+  },
+  "SalesTaxNewBrunswick": {
+    "Text": "Sales Tax New Brunswick"
+  },
+  "SalesTaxNovaScotia": {
+    "Text": "Sales Tax Nova Scotia"
+  },
+  "SalesTaxOntario": {
+    "Text": "Sales Tax Ontario"
+  },
+  "SalesTaxPrinceEdwardIsland": {
+    "Text": "Sales Tax Prince Edward Island"
+  },
+  "SalesTaxQuebec": {
+    "Text": "Sales Tax Quebec"
+  },
+  "SalesTaxSaskatchewan": {
+    "Text": "Sales Tax Saskatchewan"
+  } 
+}

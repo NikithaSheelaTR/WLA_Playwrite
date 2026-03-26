@@ -1,0 +1,23 @@
+{
+  // Maps DocAnalyzerReportTabs to WebElementInfo
+  "MotionType": {
+    "LocatorString": ".//b[contains(text(), 'Motion type:')]/parent::li",
+    "Text": "Motion type: "
+  },
+  "MovantAtTrialLevel": {
+    "LocatorString": ".//b[contains(text(), 'Movant at trial level:')]/parent::li",
+    "Text": "Movant at trial level: "
+  },
+  "TrialLevelOutcome": {
+    "LocatorString": ".//b[contains(text(), 'Trial level outcome:')]/parent::li",
+    "Text": "Trial level outcome: "
+  },
+  "AppellateLevelOutcome": {
+    "LocatorString": ".//b[contains(text(), 'Appellate level outcome:')]/parent::li",
+    "Text": "Appellate level outcome: "
+  },
+  "HighestLevelOutcome": {
+    "LocatorString": ".//b[contains(text(), 'Highest level outcome:')]/parent::li",
+    "Text": "Highest level outcome: "
+  }
+}

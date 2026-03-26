@@ -1,0 +1,11 @@
+﻿{
+  // Maps CompareTextReportTabs to WebElementInfo
+    "CompareView": {
+    "Text": "Compare View",
+    "LocatorString": "//li[@id = 'tab_InlineCompareContent']"
+  },
+    "SideBySideView": {
+    "Text": "Side By Side View",
+    "LocatorString": "//li[@id = 'tab_SideBySideCompareContent']"
+  }
+}

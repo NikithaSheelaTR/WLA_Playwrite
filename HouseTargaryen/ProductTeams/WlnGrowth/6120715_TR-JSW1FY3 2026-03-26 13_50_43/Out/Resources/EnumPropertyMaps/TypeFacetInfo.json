@@ -1,0 +1,13 @@
+﻿{
+  // TypeFacetInfo to WebElementInfo
+  "Document": {
+    "LocatorString": "//label[contains(text(),'Document')]/preceding-sibling::input",
+    "LocatorMask": "//li[contains(@id,'co_facet') and ./label[text()='Document']]/span[@class='co_facetCount']",
+    "Text": "Document"
+  },
+  "Snippet": {
+    "LocatorString": "//li[contains(@id,'co_facet') and ./label[text()='Snippet']]/input[@type='checkbox']",
+    "LocatorMask": "//li[contains(@id,'co_facet') and ./label[text()='Snippet']]/span[@class='co_facetCount']",
+    "Text": "Snippet"
+  }
+}

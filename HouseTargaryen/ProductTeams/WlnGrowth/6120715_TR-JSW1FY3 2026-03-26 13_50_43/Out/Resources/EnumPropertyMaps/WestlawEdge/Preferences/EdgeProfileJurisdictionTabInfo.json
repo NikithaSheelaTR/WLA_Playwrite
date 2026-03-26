@@ -1,0 +1,21 @@
+{
+  // Maps ProfileTab enumeration to WebElementInfo
+  "Au": {
+    "LocatorString": "//span[text()='AU']/preceding-sibling::input" 
+  },
+  "Canada": {
+     "LocatorString": "//span[text()='Canada']/preceding-sibling::input" 
+  },
+  "Eu": {
+     "LocatorString": "//span[text()='EU']/preceding-sibling::input" 
+  },
+  "Nz": {
+    "LocatorString": "//span[text()='NZ']/preceding-sibling::input" 
+  },
+  "Uk": {
+   "LocatorString": "//span[text()='UK']/preceding-sibling::input" 
+  },
+  "Us": {
+    "LocatorString": "//span[text()='US']/preceding-sibling::input" 
+  }
+}

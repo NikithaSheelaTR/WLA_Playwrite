@@ -1,0 +1,30 @@
+{
+  // Maps IndigoGlobalNavigationRightPane to WebElementInfo
+  "ClientId": {
+    "LocatorString": "//button[@title = 'Client ID']"
+  },
+  "Community": {
+    "LocatorString": "//li[@id = 'co_communityContainer']/a",
+    "Text": "Community"
+  },
+  "Favorites": {
+    "LocatorString": "//li[@id = 'co_frequentFavoritesContainer']/a",
+    "Text": "Favorites"
+  },
+  "Folders": {
+    "LocatorString": "//li[@id = 'co_recentFoldersContainer']/a",
+    "Text": "Folders"
+  },
+  "History": {
+    "LocatorString": "//li[@id = 'co_recentHistoryContainer']/a",
+    "Text": "History"
+  },
+  "Notifications": {
+    "LocatorString": "//li[@id = 'co_notificationContainer']/a",
+    "Text": "Notifications"
+  },
+  "SignOut": {
+    "LocatorString": "//li[@id = 'co_oneClickSignoutContainer']/a",
+    "Text": "Sign out"
+  }
+}

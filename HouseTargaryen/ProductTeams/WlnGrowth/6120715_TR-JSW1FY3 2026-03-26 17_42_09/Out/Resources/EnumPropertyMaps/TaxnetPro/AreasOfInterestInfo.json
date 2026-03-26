@@ -1,0 +1,34 @@
+﻿{
+  "AllAreasOfInterest": {
+    "LocatorString": "//input[@id='co_search_advancedSearch_AOI_All']",
+    "Text": "All Areas of Interest"
+  },
+  "ApffCentre": {
+    "LocatorString": "//div[@id='co_search_advancedSearch_AOI']//input[@value='TNP_API TNP_APP TNP_APT']",
+    "Text": "APFF Centre"
+  },
+  "CorporateTaxCentre": {
+    "LocatorString": "//div[@id='co_search_advancedSearch_AOI']//input[@value='TNP_CTC']",
+    "Text": "Corporate Tax Centre"
+  },
+  "CustomsExciseCentre": {
+    "LocatorString": "//div[@id='co_search_advancedSearch_AOI']//input[@value='TNP_CEX']",
+    "Text": "Customs & Excise Centre"
+  },
+  "Federal": {
+    "LocatorString": "//div[@id='co_search_advancedSearch_AOI']//input[@value='TNP_FIT']",
+    "Text": "Federal"
+  },
+  "GstHst": {
+    "LocatorString": "//div[@id='co_search_advancedSearch_AOI']//input[@value='TNP_GST']",
+    "Text": "GST/HST"
+  },
+  "TaxDisputesResolutionCentre": {
+    "LocatorString": "//div[@id='co_search_advancedSearch_AOI']//input[@value='TNP_TDR TNP_CAS']",
+    "Text": "Tax Disputes & Resolution Centre"
+  },
+  "TaxEstatePlanningCentre": {
+    "LocatorString": "//div[@id='co_search_advancedSearch_AOI']//input[@value='TNP_TEP']",
+    "Text": "Tax & Estate Planning Centre"
+  }
+}

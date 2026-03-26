@@ -1,0 +1,35 @@
+{
+  // Maps ManagePageDropdownOptions to WebElementInfo
+  "AddContentSection": {
+    "Text": "Add Content Section",
+    "LocatorString": "//*[@id='cp_addContentSection_button']"
+  },
+  "AddQuickSearchSection": {
+    "Text": "Add Quick Search Section",
+    "LocatorString": "//*[@id='cp_addQuickSearchSection_button']"
+  },
+  "AdminSettings": {
+    "Text": "Admin Settings",
+    "LocatorString": "//*[@id='cp_adminSettings_button']"
+  },
+  "DeletePage": {
+    "Text": "Delete Page",
+    "LocatorString": "//*[@id='cp_deletePage_button']"
+  },
+  "EditPage": {
+    "Text": "Edit Page",
+    "LocatorString": "//*[@id='cp_editPage_button']"
+  },
+  "SendCopy": {
+    "Text": "Send Copy",
+    "LocatorString": "//*[@id='cp_copy_button']"
+  },
+  "SharePage": {
+    "Text": "Share Page",
+    "LocatorString": "//*[@id='cp_share_button']"
+  },
+  "ToolsSection": {
+    "Text": "Tools Section",
+    "LocatorString": "//*[@id='cp_addToolsSection_button']"
+  }
+}

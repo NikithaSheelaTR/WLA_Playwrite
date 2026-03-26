@@ -1,0 +1,19 @@
+{
+  // Maps CostConditionOptions to WebElementInfo
+  "ChargeableToClient": {
+    "Text": "Chargeable to Client"
+  },
+  "InPlan": {
+    "Text": "In-Plan"
+  },
+  "NotChargeableToClient": {
+    "Text": "Not Chargeable to Client"
+  },
+  "OutOfPlan": {
+    "Text": "Out-of-Plan"
+  },
+  "TotalUsage": {
+    "Text": "Total Usage"
+  }
+}
+

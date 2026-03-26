@@ -1,0 +1,36 @@
+{
+  "Attorneys": {
+    "Text": "Attorneys",
+    "LocatorString": "//li[@id='tab-Attorneys']"
+  },
+  "LawFirms": {
+    "Text": "Law Firms",
+    "LocatorString": "//li[@id='tab-LawFirms']"
+  },
+  "Judges": {
+    "Text": "Judges",
+    "LocatorString": "//li[@id='tab-Judges']"
+  },
+  "Courts": {
+    "Text": "Courts",
+    "LocatorString": "//li[@id='tab-Courts']"
+  },
+
+  "Damages": {
+    "Text": "Damages",
+    "LocatorString": "//li[@id='tab-Damages']"
+  },
+  "CaseTypes": {
+    "Text": "Case Types",
+    "LocatorString": "//li[@id='tab-CaseTypes']"
+  },
+  "Companies": {
+    "Text": "Companies",
+    "LocatorString": "//li[@id='tab-Companies']"
+  },
+
+  "OpportunityFinder": {
+    "Text": "OpportunityFinder",
+    "LocatorString": "//li[@id='tab-OpportunityFinder']"
+  }
+}

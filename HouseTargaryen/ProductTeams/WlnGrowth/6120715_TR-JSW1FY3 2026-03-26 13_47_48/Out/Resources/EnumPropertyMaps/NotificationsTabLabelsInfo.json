@@ -1,0 +1,19 @@
+﻿// Maps NotificationsTabLabels to WebElementInfo
+{
+	"AlertNotifications": {
+		"Text": "Alert notifications",
+		"LocatorString": "//h3[text()='Alert notifications']/following-sibling::p"
+	},
+	"Notifications": {
+		"Text": "Notifications",
+		"LocatorString": "//h3[text()='Notifications']/following-sibling::span"
+	},
+	"Recommendations": {
+		"Text": "Recommendations",
+		"LocatorString": "//h3[text()='Recommendations']"
+	},
+	"SharedContent": {
+		"Text": "Shared content",
+		"LocatorString": "//h3[text()='Shared content']"
+	}	
+}

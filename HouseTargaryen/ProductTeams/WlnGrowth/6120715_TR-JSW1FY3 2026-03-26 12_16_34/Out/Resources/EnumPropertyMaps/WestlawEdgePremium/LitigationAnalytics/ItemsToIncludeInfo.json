@@ -1,0 +1,55 @@
+﻿{
+  " Charts": {
+    "Id": "co_deliveryWhatToDeliverLegalAnalyticsGraphCharts",
+    "Name": "Charts",
+    "LocatorString": "//input[@id ='co_deliveryWhatToDeliverLegalAnalyticsGraphCharts']"
+  },
+
+  " AllCharts": {
+    "Id": "co_deliveryWhatToDeliverLegalAnalyticsAllCharts",
+    "Name": "Charts",
+    "LocatorString": "//input[@id ='co_deliveryWhatToDeliverLegalAnalyticsAllCharts']"
+  },
+
+  "Tables": {
+    "Id": "coid_chkDdcLayoutIncludeCasesWithNoNegativeTreatment",
+    "Name": "Tables",
+    "LocatorString": "//input[@id ='co_deliveryWhatToDeliverLegalAnalyticsGraphTables']"
+  },
+
+  "AllTables": {
+    "Id": "co_deliveryWhatToDeliverLegalAnalyticsAllTables",
+    "Name": "Tables",
+    "LocatorString": "//input[@id ='co_deliveryWhatToDeliverLegalAnalyticsAllTables']"
+  },
+
+  "ListOfMotionsAndOrders": {
+    "Id": "co_deliveryWhatToDeliverLegalAnalyticsGraphCharts",
+    "Name": "List of motions & orders",
+    "LocatorString": "//input[@id ='co_deliveryWhatToDeliverLegalAnalyticsGraphDocumentList']"
+  },
+
+  "Maps": {
+    "Id": "co_deliveryWhatToDeliverLegalAnalyticsAllMaps",
+    "Name": "Maps",
+    "LocatorString": "//input[@id ='co_deliveryWhatToDeliverLegalAnalyticsAllMaps']"
+  },
+
+  "ResultList": {
+    "Id": "co_deliveryWhatToDeliverLegalAnalyticsAllDocumentList",
+    "Name": "List",
+    "LocatorString": "//input[@id ='co_deliveryWhatToDeliverLegalAnalyticsAllDocumentList']"
+  },
+
+  "Profile": {
+    "Id": "co_deliveryWhatToDeliverLegalAnalyticsAllProfile",
+    "Name": "Profile",
+    "LocatorString": "//input[@id ='co_deliveryWhatToDeliverLegalAnalyticsAllProfile']"
+  },
+
+  "ListOfDockets": {
+    "Id": "co_deliveryWhatToDeliverLegalAnalyticsGraphDocumentList",
+    "Name": "List of dockets",
+    "LocatorString": "//input[@id ='co_deliveryWhatToDeliverLegalAnalyticsGraphDocumentList']"
+  }
+}

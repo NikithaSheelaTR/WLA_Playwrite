@@ -1,0 +1,21 @@
+﻿// Maps CompanyInvestigatorReportSections to BaseTextModel
+{
+  "CurrentOfficersAndDirectors": {
+    "Text": "Current Officers & Directors"
+  },
+  "News": {
+    "Text": "News"
+  },
+  "InternationalProspectuses144As": {
+    "Text": "International Prospectuses & 144As"
+  },
+  "SedarFilings": {
+    "Text": "SEDAR Filings"
+  },
+  "SubsidiariesDisclosed": {
+    "Text": "Subsidiaries Disclosed in SEC Filings"
+  },
+  "UkListingAuthorityFilings": {
+    "Text": "UK Listing Authority Filings"
+  }
+}

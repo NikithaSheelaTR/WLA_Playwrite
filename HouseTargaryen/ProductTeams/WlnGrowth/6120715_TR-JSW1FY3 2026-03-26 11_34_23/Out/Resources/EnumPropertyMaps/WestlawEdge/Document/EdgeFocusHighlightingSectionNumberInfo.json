@@ -1,0 +1,21 @@
+﻿{
+	"DefaultTerm": {
+		"LocatorString": ".//span[contains(@class, 'MultiColor--default')]"
+	},
+	"FifthTerm": {
+		"LocatorString": ".//span[contains(@class, 'MultiColor--five')]"
+	},
+	"FirstTerm": {
+		"LocatorString": ".//span[contains(@class, 'MultiColor--one')] | .//span[@class='co_searchTerm']"
+	},
+	"FourthTerm": {
+		"LocatorString": ".//span[contains(@class, 'MultiColor--four')]"
+	},
+
+	"SecondTerm": {
+		"LocatorString": ".//span[contains(@class, 'MultiColor--two')]"
+	},
+	"ThirdTerm": {
+		"LocatorString": ".//span[contains(@class, 'MultiColor--three')]"
+	}
+}

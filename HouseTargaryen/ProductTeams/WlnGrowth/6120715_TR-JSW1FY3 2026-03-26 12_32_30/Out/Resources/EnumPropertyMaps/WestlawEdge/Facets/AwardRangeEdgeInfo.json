@@ -1,0 +1,39 @@
+{
+  // Maps AwardRange to AwardWebElementInfo
+  "None": {
+    "Text": "$0",
+    "OptionCountLocatorString": "(/descendant-or-self::node()/span[@class='SearchFacet-outputTextValue'])[1]"
+  },
+  "From1To49000": {
+    "Text": "$1 - $49,999",
+    "OptionCountLocatorString": "(/descendant-or-self::node()/span[@class='SearchFacet-outputTextValue'])[2]"
+  },
+  "From50000To99999": {
+    "Text": "$50,000 - $99,999",
+    "OptionCountLocatorString": "(/descendant-or-self::node()/span[@class='SearchFacet-outputTextValue'])[3]"
+  },
+  "From100000To199999": {
+    "Text": "$100,000 - $199,999",
+    "OptionCountLocatorString": "(/descendant-or-self::node()/span[@class='SearchFacet-outputTextValue'])[4]"
+  },
+  "From200000To499999": {
+    "Text": "$200,000 - $499,999",
+    "OptionCountLocatorString": "(/descendant-or-self::node()/span[@class='SearchFacet-outputTextValue'])[5]"
+  },
+  "From500000To999999": {
+    "Text": "$500,000 - $999,999",
+    "OptionCountLocatorString": "(/descendant-or-self::node()/span[@class='SearchFacet-outputTextValue'])[6]"
+  },
+  "From1MTo2M": {
+    "Text": "$1M - $1,999,999",
+    "OptionCountLocatorString": "(/descendant-or-self::node()/span[@class='SearchFacet-outputTextValue'])[7]"
+  },
+  "From2MTo5M": {
+    "Text": "$2M - $4,999,999",
+    "OptionCountLocatorString": "(/descendant-or-self::node()/span[@class='SearchFacet-outputTextValue'])[8]"
+  },
+  "Over5M": {
+    "Text": "$5M+",
+    "OptionCountLocatorString": "(/descendant-or-self::node()/span[@class='SearchFacet-outputTextValue'])[9]"
+  }
+}

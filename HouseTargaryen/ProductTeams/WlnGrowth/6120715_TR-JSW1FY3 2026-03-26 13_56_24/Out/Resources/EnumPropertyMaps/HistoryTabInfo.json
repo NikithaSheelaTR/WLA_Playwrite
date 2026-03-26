@@ -1,0 +1,15 @@
+{
+  // Maps HistoryTab to WebElementInfo
+  "AttachmentFormatDropdown": {
+    "Id": "coid_userSettingsDeliverHistoryEmailFormatOption",
+    "Text": "Attachment Format"
+  },
+  "EmailDetailedSessionSummaryCheckbox": {
+    "Id": "coid_userSettingsDeliverHistoryAtSignOffOption",
+    "Text": "Email detailed session summary at sign off"
+  },
+  "EmailSessionSummaryToTextbox": {
+    "Id": "coid_userSettingsDeliverHistoryAtSignOffEmailAddressOption",
+    "Text": "To"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  // Maps AddToCompareOptions to BaseTextModel
+  "ShowAllChanges": { "Text": "Show All Changes" },
+  "ViewOnlyDeletions": { "Text": "View only Deletions" },
+  "ViewOnlyInsertions": { "Text": "View only Insertions" }
+}

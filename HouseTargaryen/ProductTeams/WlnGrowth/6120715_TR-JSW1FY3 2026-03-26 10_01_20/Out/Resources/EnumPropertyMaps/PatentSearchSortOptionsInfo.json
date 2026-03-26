@@ -1,0 +1,78 @@
+{
+  // Maps SearchSortOption to WebElementInfo
+  "CitationAtoZ": {
+    "Text": "Citation A-Z"
+  },
+  "CitationZtoA": {
+    "Text": "Citation Z-A"
+  },
+  "DesignTypeAtoZ": {
+    "Text": "Design Type A-Z"
+  },
+  "DesignTypeZtoA": {
+    "Text": "Design Type Z-A"
+  },
+  "FiledDateNewestFirst": {
+    "Text": "Filed Date Newest First"
+  },
+  "FiledDateOldestFirst": {
+    "Text": "Filed Date Oldest First"
+  },
+  "GrantedDateNewestFirst": {
+    "Text": "Granted Date Newest First"
+  },
+  "GrantedDateOldestFirst": {
+    "Text": "Granted Date Oldest First"
+  },
+  "InternationalClassAtoZ": {
+    "Text": "International Class A-Z"
+  },
+  "InternationalClassZtoA": {
+    "Text": "International Class Z-A"
+  },
+  "MarkAtoZ": {
+    "Text": "Mark A-Z"
+  },
+  "MarkZtoA": {
+    "Text": "Mark Z-A"
+  },
+  "OwnerAtoZ": {
+    "Text": "Owner A-Z"
+  },
+  "OwnerZtoA": {
+    "Text": "Owner Z-A"
+  },
+  "PriorityDateNewestFirst": {
+    "Text": "Priority Date Newest First"
+  },
+  "PriorityDateOldestFirst": {
+    "Text": "Priority Date Oldest First"
+  },
+  "PublicationDateNewestFirst": {
+    "Text": "Publication Date Newest First"
+  },
+  "PublicationDateOldestFirst": {
+    "Text": "Publication Date Oldest First"
+  },
+  "Relevance": {
+    "Text": "Relevance"
+  },
+  "RegistrationDateNewestFirst": {
+    "Text": "Registration Date Newest First"
+  },
+  "RegistrationDateOldestFirst": {
+    "Text": "Registration Date Oldest First"
+  },
+  "StatusAtoZ": {
+    "Text": "Status A-Z"
+  },
+  "StatusZtoA": {
+    "Text": "Status Z-A"
+  },
+  "TitleAtoZ": {
+    "Text": "Title A-Z"
+  },
+  "TitleZtoA": {
+    "Text": "Title Z-A"
+  }
+}

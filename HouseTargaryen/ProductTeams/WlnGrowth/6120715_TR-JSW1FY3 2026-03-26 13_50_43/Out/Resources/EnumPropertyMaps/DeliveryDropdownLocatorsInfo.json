@@ -1,0 +1,15 @@
+﻿{
+  // Maps DeliveryDropdownLocators to WebElementInfo
+  "DropdownArrow": {
+    "LocatorString": ".//button[contains(@class, 'co_dropDownAnchor')] | .//*[contains(@id, 'deliveryWidgetButton') or contains(@id, 'deliveryDropButton')]"
+  },
+  "DropdownButton": {
+    "LocatorString": ".//a[contains(@id, 'deliveryLink') or contains(@class, 'deliveryLink')]"
+  },
+  "Option": {
+    "LocatorString": ".//li[contains(@id,'deliveryRow')]"
+  },
+  "SelectedOption": {
+    "LocatorString": ".//li[contains(@id,'deliveryRow') and @class='checked']/a | .//*[contains(@id, 'deliveryLinkButton')]//span[not(contains(@class, 'icon'))]"
+  }
+}

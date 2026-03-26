@@ -1,0 +1,52 @@
+﻿{
+  // Maps DeliveryMethod to WebElementInfo
+  "CompareDownload": {
+    "Text": "Compare Download",
+    "LocatorString": "//div[@id='co_snippetCompare_deliveryContainer']//span[@class='a11yDropdown-itemText' and contains(text(), 'Download')]"
+  },
+
+  "Download": {
+    "Text": "Download",
+    "LocatorString": ".//*[starts-with(@id, 'delivery') and contains(@id, 'Download')] | //*[@class='a11yDropdown-itemText' and contains(text(), 'Download') or contains(text(),'Télécharger')] | //*[@id='deliveryLinkRow1Download']|//a[@title='Download' and (@id='deliveryLinkRow2Download' or @id='deliveryLinkRow1Download')] | //*[@class='a11yDropdown-itemText' and contains(text(),'Download')]"
+  },
+
+  "Dropbox": {
+    "Text": "Dropbox",
+    "LocatorString": ".//*[starts-with(@id, 'delivery') and contains(@id, 'Dropbox')] | .//*[@class='a11yDropdown-itemText' and contains(text(), 'Dropbox')]"
+  },
+
+  "Email": {
+    "Text": "Email",
+    "LocatorString": ".//*[starts-with(@id, 'delivery') and contains(@id, 'Email')] | .//*[@class='a11yDropdown-itemText' and contains(text(), 'Email') or contains(text(),'Envoyer par courriel')] | //*[@id='deliveryLinkRow1Email']"
+  },
+
+  "Print": {
+    "Text": "Print",
+    "LocatorString": ".//*[starts-with(@id, 'delivery') and contains(@id, 'Print')] | .//*[@class='a11yDropdown-itemText' and contains(text(), 'Print') or contains(text(),'Imprimer')]"
+  },
+
+  "Kindle": {
+    "Text": "Kindle",
+    "LocatorString": ".//*[starts-with(@id, 'delivery') and contains(@id, 'Kindle')] | .//*[@class='a11yDropdown-itemText' and contains(text(), 'Kindle')]"
+  },
+
+  "LEAP": {
+    "Text": "LEAP",
+    "LocatorString": ".//*[starts-with(@id, 'delivery') and contains(@title, 'LEAP')] | .//*[contains(@class, 'fitzroy')]/ancestor::li[@role='menuitemradio']"
+  },
+
+  "CaseNotebook": {
+    "Text": "CaseNotebook",
+    "LocatorString": ".//*[starts-with(@id, 'delivery') and contains(@id, 'CaseNotebook')] | .//*[contains(@class, 'casenotebook')]/ancestor::li[@role='menuitem'] | .//*[@class='a11yDropdown-itemText' and contains(text(), 'Export to Case Notebook')]"
+  },
+
+  "ExportToKindle": {
+    "Text": "",
+    "LocatorString": ".//*[starts-with(@id, 'delivery') and contains(@id, 'Kindle')]"
+  },
+
+  "ExportToCaseNotebook": {
+    "Text": "",
+    "LocatorString": "//div[@id='deliveryWidgetMenu1']//a[@title='Export to Case Notebook'] | .//*[contains(@class, 'casenotebook')]/ancestor::li[@role='menuitem'] | .//span[text()='Export to Case Notebook']/ancestor::li[@role='menuitem']"
+  }
+}

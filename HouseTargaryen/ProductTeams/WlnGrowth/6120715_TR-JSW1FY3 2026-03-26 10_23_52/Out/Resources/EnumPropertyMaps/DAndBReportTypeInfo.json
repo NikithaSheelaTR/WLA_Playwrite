@@ -1,0 +1,15 @@
+﻿{
+  // Maps DAndBReportType to WebElementInfo.
+  "Bir": {
+    "Text": "BIR",
+    "Id": "coid_website_link_BIR"
+  },
+  "Comprehensive": {
+    "Text": "Comprehensive",
+    "Id": "coid_website_link_COMPR"
+  },
+  "Ibir": {
+    "Text": "IBIR",
+    "Id": "coid_website_link_IBIR"
+  }
+}

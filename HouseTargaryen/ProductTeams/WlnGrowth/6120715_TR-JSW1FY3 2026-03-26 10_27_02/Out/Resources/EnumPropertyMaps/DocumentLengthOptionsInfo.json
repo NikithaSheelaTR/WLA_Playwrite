@@ -1,0 +1,22 @@
+{
+  // Maps DocumentLengthOptions enumeration to WebElementInfo
+  "AnyDocumentLength": {
+    "Text": "Any Document Length"
+  },
+
+  "ShortArticlesAbstractsOnly": {
+    "Text": "Short Articles/Abstracts Only(<200 Words)"
+  },
+
+  "NoShortArticlesOrAbstracts": {
+    "Text": "No Short Articles or Abstracts(>200 Words)"
+  },
+
+  "MediumLengthArticlesOnly": {
+    "Text": "Medium Length Articles Only(>200 Words, <1000 Words)"
+  },
+
+  "LongArticlesOnly": {
+    "Text": "Long Articles Only(>1000 Words)"
+  }
+}

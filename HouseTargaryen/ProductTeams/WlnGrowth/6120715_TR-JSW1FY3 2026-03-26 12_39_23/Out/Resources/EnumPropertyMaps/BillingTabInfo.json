@@ -1,0 +1,27 @@
+{
+  // Maps BillingTab to WebElementInfo
+  "AskAtSignOnBillingRadioButton": {
+    "Id": "coid_userSettingsBillingMethodA",
+    "Text": "Ask at Sign On"
+  },
+  "BillByDocumentRadioButton": {
+    "Id": "coid_userSettingsBillingDeliveriesD",
+    "Text": "Bill By Document"
+  },
+  "BillByLineRadioButton": {
+    "Id": "coid_userSettingsBillingDeliveriesL",
+    "Text": "Bill By Line"
+  },
+  "HourlyBillingRadioButton": {
+    "Id": "coid_userSettingsBillingMethodH",
+    "Text": "Hourly"
+  },
+  "PauseSessionCheckbox": {
+    "Id": "co_userSettingsShowPauseLink",
+    "Text": "Show link to pause session"
+  },
+  "TransactionalBillingRadioButton": {
+    "Id": "coid_userSettingsBillingMethodT",
+    "Text": "Transactional"
+  }
+}

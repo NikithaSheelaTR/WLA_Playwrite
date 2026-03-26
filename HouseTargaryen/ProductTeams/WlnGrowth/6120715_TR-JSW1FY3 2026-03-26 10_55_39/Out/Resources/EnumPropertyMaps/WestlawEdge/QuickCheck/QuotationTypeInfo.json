@@ -1,0 +1,22 @@
+﻿{
+	"ViewAll": {
+		"LocatorString": ".//a[contains(text(),'View all')]",
+		"Text": "View all"
+	},
+	"Paraphrases": {
+		"LocatorString": ".//a[contains(text(), 'Paraphrases')]",
+		"Text": "Paraphrases"
+	},
+	"MatchedQuotations": {
+		"LocatorString": ".//*[contains(.,'Matched quotations')]/parent::div/parent::li",
+		"Text": "Matched quotations"
+	},
+	"UnmatchedQuotations": {
+		"LocatorString": ".//a[contains(.,'Unmatched quotations')]",
+		"Text": "Unmatched quotations"
+	},
+	"AllQuotations": {
+		"LocatorString": ".//a[contains(.,'All quotations')]",
+		"Text": "All quotations"
+	}
+}

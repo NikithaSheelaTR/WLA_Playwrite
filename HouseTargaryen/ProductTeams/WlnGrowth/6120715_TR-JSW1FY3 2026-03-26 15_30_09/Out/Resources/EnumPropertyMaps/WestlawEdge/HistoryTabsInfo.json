@@ -1,0 +1,11 @@
+﻿{
+    // Maps History tabs to WebElementInfo
+  "GraphicalView": {
+    "LocatorString": "//*[@class='HistoryTabHeaderContainer']//a/span[text() = 'Graphical view' or text()='Vue graphique']",
+    "Text": "Graphical view"
+  },
+  "ListView": {
+    "LocatorString": "//*[@class='HistoryTabHeaderContainer']//a/span[text() = 'List view']",
+    "Text": "List view"
+  }
+}

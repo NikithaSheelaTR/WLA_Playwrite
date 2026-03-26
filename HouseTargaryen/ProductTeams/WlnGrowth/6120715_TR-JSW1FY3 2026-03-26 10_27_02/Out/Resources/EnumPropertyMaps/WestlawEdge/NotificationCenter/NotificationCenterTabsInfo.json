@@ -1,0 +1,11 @@
+﻿{
+  // Maps NotificationCenterTabs to WebElementInfo
+  "Alerts": {
+    "LocatorString": "//li[text()='Alerts']",
+    "Text": "Alerts"
+  },
+  "Notifications": {
+    "LocatorString": "//li[text()='Notifications']",
+    "Text": "Notifications"
+  }
+}

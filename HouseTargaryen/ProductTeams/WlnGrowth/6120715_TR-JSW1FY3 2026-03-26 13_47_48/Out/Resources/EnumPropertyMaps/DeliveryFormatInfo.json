@@ -1,0 +1,16 @@
+{
+    // Maps DeliveryFormat to BaseTextModel
+    "Csv": { "Text": "Microsoft Excel (CSV)" },
+    "Doc": { "Text": "Microsoft Word" },
+    "DocNew": { "Text": "Microsoft Word 97-2003 (.doc)" },
+    "DocWithShortForm": { "Text": "MS Word" },
+    "DocWithSpecificationFormat": { "Text": "Microsoft Word (.doc)" },
+    "Docx": { "Text": "Microsoft Word (.docx)" },
+    "InlineHtml": { "Text": "Inline HTML" },
+    "Pdf": { "Text": "PDF" },
+    "Rtf": { "Text": "Word Processor (RTF)" },
+    "Unspecified": { "Text": "" },
+    "WordAttachment": { "Text": "MS Word Attachment" },
+    "WordAttachmentFrench": { "Text": "Pièce jointe en format MS Word" },
+    "Wpd": { "Text": "WordPerfect" }
+}

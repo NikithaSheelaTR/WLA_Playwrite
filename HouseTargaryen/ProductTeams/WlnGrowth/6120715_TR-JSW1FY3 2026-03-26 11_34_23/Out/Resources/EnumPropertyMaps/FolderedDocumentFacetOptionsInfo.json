@@ -1,0 +1,11 @@
+{
+  // Maps AnnotatedDocumentsFacetOptions to WebElementInfo
+  "SavedToFolder": {
+    "LocatorString": ".//li[@id='co_facetfoldered']/input[@type='checkbox']",
+    "Text": "Saved to a Folder"
+  },
+  "NotSavedToFolder": {
+    "LocatorString": ".//li[@id='co_facetnotFoldered']/input[@type='checkbox']",
+    "Text": "Not Saved to a Folder"
+  }
+}

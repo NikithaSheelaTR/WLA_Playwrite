@@ -1,0 +1,27 @@
+﻿{
+  // Maps Alert Schedule Frequency option to BaseTextModel
+  "BiWeekly": {
+    "Text": "Bi-Weekly"
+  },
+  "Continuous": {
+    "Text": "Continuous"
+  },
+  "Daily": {
+    "Text": "Daily"
+  },
+  "Monthly": {
+    "Text": "Monthly"
+  },
+  "OneTime": {
+    "Text": "One time (deliver now)"
+  },
+  "SpecifyDays": {
+    "Text": "Specify Days"
+  },
+  "WeekdaysMondayFriday": {
+    "Text": "Weekdays (M-F)"
+  },
+  "Weekly": {
+    "Text": "Weekly"
+  }
+}

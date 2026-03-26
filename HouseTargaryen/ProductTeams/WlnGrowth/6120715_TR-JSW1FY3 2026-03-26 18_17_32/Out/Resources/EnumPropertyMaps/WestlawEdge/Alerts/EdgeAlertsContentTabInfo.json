@@ -1,0 +1,8 @@
+﻿{
+  // Maps IndigoAlertsContentTab to BaseTextModel
+  "ContentTypes": { "Text": "Content types" },
+  "FederalMaterials": { "Text": "Federal materials" },
+  "StateMaterials": { "Text": "State materials" },
+  "PracticeAreas": { "Text": "Practice areas" },
+  "Favorites": { "Text": "Favorites" }
+}

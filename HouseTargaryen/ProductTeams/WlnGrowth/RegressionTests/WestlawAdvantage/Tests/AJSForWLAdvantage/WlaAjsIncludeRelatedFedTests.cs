@@ -316,6 +316,7 @@
             Thread.Sleep(1000);
             surveysPage = surveysPage.CreateSurveyButtonTop.Click<AiJurisdictionalSurveysPage>();
             SafeMethodExecutor.WaitUntil(() => !surveysPage.ProgressLabel.Displayed);
+            
 
             SafeMethodExecutor.WaitUntil(() => surveysPage.SurveyResult.TimeStampLabel.Displayed);
             var downloadDialog = surveysPage.Toolbar.DeliveryDropdown.SelectOption<DownloadDialog>(DeliveryMethod.Download);

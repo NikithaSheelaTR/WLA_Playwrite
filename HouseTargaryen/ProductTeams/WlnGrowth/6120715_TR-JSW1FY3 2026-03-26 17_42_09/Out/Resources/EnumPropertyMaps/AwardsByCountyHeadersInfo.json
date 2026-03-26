@@ -1,0 +1,21 @@
+﻿{
+  // Maps AwardsByCountyHeaders Options to BaseTextModel
+  "AverageAward": {
+    "Text": "Average Award"
+  },
+  "CountyDistrict": {
+    "Text": "County/District"
+  },
+  "HighestAward": {
+    "Text": "Highest Award"
+  },
+  "MedianAward": {
+    "Text": "Median Award"
+  },
+  "NumberOfAwards": {
+    "Text": "Number of Awards"
+  },
+  "PercentageOfTotal": {
+    "Text": "Percentage of Total"
+  }
+}

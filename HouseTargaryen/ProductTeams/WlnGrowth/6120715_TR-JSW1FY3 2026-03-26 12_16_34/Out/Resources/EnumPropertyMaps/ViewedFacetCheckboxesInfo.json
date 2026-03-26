@@ -1,0 +1,11 @@
+{
+  // Maps Viewet facet checkboxes to WebElementInfo
+    "NotViewed": {
+    "Text": "Not Viewed",
+    "LocatorString": "//input[contains(@id, 'co_facetItem_previouslyViewedTm')]"
+  },
+  "Viewed": {
+    "Text": "Viewed",
+    "LocatorString": "//input[contains(@id, 'co_facetItem_previouslyViewedVm')]"
+  }
+}

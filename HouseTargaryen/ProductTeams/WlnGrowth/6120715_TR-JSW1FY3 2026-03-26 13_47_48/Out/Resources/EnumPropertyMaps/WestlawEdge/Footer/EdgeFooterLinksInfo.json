@@ -1,0 +1,63 @@
+{
+  // Maps Indgio footer links to WebElementInfo
+
+  "Accessibility": {
+    "Id": "",
+    "Text": "Accessibility"
+  },
+
+  "ContactUs": {
+    "Id": "co_footerContactUs",
+    "Text": "Contact us"
+  },
+
+  "ImproveWestlaw": {
+    "Id": "coid_websiteFooter_pageSurvey",
+    "Text": "Improve Westlaw Edge/Report an error"
+  },
+
+  "FullDesktop": {
+    "Id": "coid_websiteFooter_fulldesktoplink",
+    "Text": "Full Desktop",
+    "LocatorString": ".//a[@id = 'coid_websiteFooter_fulldesktoplink']"
+  },
+
+  "LiveChat": {
+    "Id": "coid_websiteFooter_livechatlink",
+    "Text": "Live chat"
+  },
+
+  "Privacy": {
+    "Id": "",
+    "Text": "Privacy"
+  },
+
+  "SignOut": {
+    "Id": "coid_websiteFooter_signofflink",
+    "Text": "Sign out"
+  },
+
+  "Security": {
+    "Text": "Security"
+  },
+
+  "SupplierTerms": {
+    "Id": "coid_website_supplierTerms",
+    "Text": "Supplier terms"
+  },
+
+  "TrainingAndSupport": {
+    "Id": "coid_websiteFooter_helplink",
+    "Text": "Training and support"
+  },
+
+  "TransferYourData": {
+    "Id": "coid_website_transferContent_exportData",
+    "Text": "Transfer My Data"
+  },
+
+  "PricingGuide": {
+    "Id": "coid_website_whatIsNew",
+    "Text": "Pricing guide"
+  }
+}

@@ -1,0 +1,31 @@
+{
+    // Maps DeepResearchResultTabs to WebElementInfo
+    "Report": {
+        "LocatorString": "//button[@data-testid='header-tab-reporttab']",
+        "Id": "reportTab"
+    },
+    "Verify": {
+        "LocatorString": "//button[@data-testid='header-tab-verifytab']",
+        "Id": "verifyTab"
+    },
+    "FollowUp": {
+        "LocatorString": "//button[@data-testid='header-tab-followuptab']",
+        "Id": "followUpTab"
+    },
+    "Sources": {
+        "LocatorString": "//button[@data-testid='header-tab-sourcestab']",
+        "Id": "sourcesTab"
+    },
+    "CasesOnBothSides": {
+        "LocatorString": "//button[@data-testid='header-tab-casesonbothsidestab']",
+        "Id": "casesOnBothSidesTab"
+    },
+    "Enhance": {
+        "LocatorString": "//button[@data-testid='header-tab-enhancetab']",
+        "Id": "enhanceTab"
+    },
+    "ResearchSteps": {
+        "LocatorString": "//button[@data-testid='header-tab-researchstepstab']",
+        "Id": "researchStepsTab"
+    }
+}

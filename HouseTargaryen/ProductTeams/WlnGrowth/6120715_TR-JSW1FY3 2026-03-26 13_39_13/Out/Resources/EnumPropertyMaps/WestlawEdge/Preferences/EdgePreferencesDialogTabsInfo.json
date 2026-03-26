@@ -1,0 +1,51 @@
+﻿{
+  // Maps IndigoPreferencesDialogTabs to WebElementInfo
+  "Billing": {
+    "LocatorString": "//ul[@aria-label='Preferences']/li[@role='tab' and contains(text(),'Billing')]",
+    "Text": "Billing"
+  },
+  "Citations": {
+    "LocatorString": "//ul[@aria-label='Preferences']/li[@role='tab' and contains(text(),'Citations')]",
+    "Text": "Citations"
+  },
+  "CopyWithReference": {
+    "LocatorString": "//ul[@aria-label='Preferences']/li[@role='tab' and contains(text(),'Copy with Reference')]",
+    "Text": "Copy Citation & Copy with Reference"
+  },
+  "Delivery": {
+    "LocatorString": "//ul[@aria-label='Preferences']/li[@role='tab' and contains(text(),'Delivery')]",
+    "Text": "Delivery"
+  },
+  "Display": {
+    "LocatorString": "//ul[@aria-label='Preferences']/li[@role='tab' and contains(text(),'Display')]",
+    "Text": "Display"
+  },
+  "Features": {
+    "LocatorString": "//ul[@aria-label='Preferences']/li[@role='tab' and contains(text(),'Features')]",
+    "Text": "Features"
+  },
+  "Help": {
+    "LocatorString": "//ul[@aria-label='Preferences']/li[@role='tab' and contains(text(),'Help')]",
+    "Text": "Help"
+  },
+  "History": {
+    "LocatorString": "//ul[@aria-label='Preferences']/li[@role='tab' and contains(text(),'History')]",
+    "Text": "History"
+  },
+  "Notifications": {
+    "LocatorString": "//li[@aria-controls='panel_Notifications']",
+    "Text": "Notifications"
+  },
+  "Profile": {
+    "LocatorString": "//ul[@aria-label='Preferences']/li[@role='tab' and contains(text(),'Profile')]",
+    "Text": "Profile"
+  },
+  "Search": {
+    "LocatorString": "//ul[@aria-label='Preferences']/li[@role='tab' and contains(text(),'Search')]",
+    "Text": "Search"
+  },
+  "Test": {
+    "LocatorString": "//ul[@aria-label='Preferences']/li[@role='tab' and contains(text(),'Test')]",
+    "Text": "Test"
+  }
+}

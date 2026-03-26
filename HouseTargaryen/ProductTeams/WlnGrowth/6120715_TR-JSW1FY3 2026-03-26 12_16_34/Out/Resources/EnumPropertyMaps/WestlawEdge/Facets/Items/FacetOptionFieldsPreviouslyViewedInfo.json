@@ -1,0 +1,12 @@
+{
+  // Maps FacetOptionFields to WebElementInfo
+  "Selector": {
+    "LocatorString": ".//input[@type = 'radio']"
+  },
+  "Title": {
+    "LocatorString": ".//label[contains(@for, 'selectOptions')]"
+  },
+  "Count": {
+    "LocatorString": ".//span[@class='SearchFacet-outputTextValue']"
+  }
+}

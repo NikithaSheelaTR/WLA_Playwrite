@@ -1,0 +1,51 @@
+{
+  // TypeAheadSections to WebElementInfo
+  "AdministrativeDecisionsAndGuidance": {
+    "LocatorString": "//li[@id = 'coid_autoCompleteSection_elastic_admindecision']",
+    "Text": "Administrative Decisions & Guidance"
+  },
+  "Cases": {
+    "LocatorString": "//li[@id = 'coid_autoCompleteSection_elastic_case']",
+    "Text": "Cases"
+  },
+  "CasesAndDecisionFrench": {
+    "LocatorString": "//li[@id='coid_autoCompleteSection_elastic_canada_fr_laref']",
+    "Text": "Jurisprudence"
+  },
+  "Dockets": {
+    "LocatorString": "//li[@id = 'coid_autoCompleteSection_elastic_docket']",
+    "Text": "Dockets"
+  },
+  "Legislation": {
+    "LocatorString": "//li[@id = 'coid_autoCompleteSection_elastic_legis']",
+    "Text": "Dockets"
+  },
+  "LookingForThis": {
+    "LocatorString": "//li[contains(@id, 'coid_autoCompleteSection_elastic_') and contains(@id, 'categorypage')] | //div[@id='Looking for this?_ContentType']//li | //div[@id='Est-ce ce que vous recherchez?_ContentType']//li",
+    "Text": "Looking for this?"
+  },
+  "OtherCourtDocuments": {
+    "LocatorString": "//li[@id = 'coid_autoCompleteSection_elastic_othercourtdocument']",
+    "Text": "Other Court Documents"
+  },
+  "Regulations": {
+    "LocatorString": "//li[@id = 'coid_autoCompleteSection_elastic_regulation']",
+    "Text": "Regulations"
+  },
+  "SecondarySources": {
+    "LocatorString": "//li[@id = 'coid_autoCompleteSection_elastic_analytical']",
+    "Text": "Secondary Sources"
+  },
+  "Snapshots": {
+    "LocatorString": "//li[contains(@id, '_elastic_snapshots') and contains(@style, 'display: list')]",
+    "Text": "Snapshots"
+  },
+  "StatutesAndCourtRules": {
+    "LocatorString": "//li[@id = 'coid_autoCompleteSection_elastic_statute']",
+    "Text": "Statutes & Court Rules"
+  },
+  "WestlawAnswers": {
+    "LocatorString": "//li[contains(@id,'elastic_westlawanswers_static') and not(@style='display: none;')]",
+    "Text": "Westlaw Answers"
+  }
+}

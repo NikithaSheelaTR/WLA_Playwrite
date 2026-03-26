@@ -1,0 +1,23 @@
+{
+  // Maps MyContent to WebElementInfo
+  "CustomPages": {
+    "Id": "tab_CustomPagesPaneId",
+    "Text": "Custom pages"
+  },
+  "ELibraries": {
+    "Id": "tab_eLibrariesPaneId",
+    "Text": "eLibraries"
+  },
+  "Favorites": {
+    "Id": "tab_FavoritesPaneId",
+    "Text": "Favorites"
+  },
+  "Folders": {
+    "Id": "tab_FoldersPaneId",
+    "Text": "Folders"
+  },
+  "History": {
+    "Id": "tab_HistoryPaneId",
+    "Text": "History"
+  }
+}

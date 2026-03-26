@@ -1,0 +1,39 @@
+// Maps CompartmentType to WebElementInfo
+{
+  "DraftingAssistant": {
+    "LocatorString": ".//*[@id='co_compartment']//a[.='Drafting Assistant']",
+    "Text": "Drafting Assistant"
+  },
+  "MyTr": {
+    "LocatorString": ".//*[@id='co_compartment']//a[.='MyTR']",
+    "Text": "MyTR"
+  },
+  "PracticalLaw": {
+    "LocatorString": ".//*[@id='co_compartment']//a[.='Practical Law']",
+    "Text": "Practical Law"
+  },
+  "PracticalLawConnect": {
+    "LocatorString": ".//*[@id='co_compartment']//a[.='Practical Law Connect']",
+    "Text": "Practical Law Connect"
+  },
+  "ProView": {
+    "LocatorString": ".//*[@id='co_compartment']//a[.='ProView']",
+    "Text": "ProView"
+  },
+  "Westlaw": {
+    "LocatorString": ".//*[@id='co_compartment']//li/*",
+    "Text": "Westlaw"
+  },
+  "WestlawFormBuilder": {
+    "LocatorString": ".//*[@id='co_compartment']//a[.='Westlaw Form Builder']",
+    "Text": "Westlaw Form Builder"
+  },
+  "WestlawToday": {
+    "LocatorString": ".//*[@id='co_compartment']//a[.='Westlaw Today']",
+    "Text": "Westlaw Today"
+  },
+  "WestLegalEdcenter": {
+    "LocatorString": "//*[@id='co_compartment']//a[.='West LegalEdcenter']",
+    "Text": "West LegalEdcenter"
+  }
+}

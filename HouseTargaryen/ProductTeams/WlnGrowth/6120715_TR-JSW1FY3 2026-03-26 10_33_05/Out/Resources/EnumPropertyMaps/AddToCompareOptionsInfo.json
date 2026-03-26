@@ -1,0 +1,5 @@
+{
+  // Maps AddToCompareOptions to BaseTextModel
+  "Tabular": { "Text": "Tabular" },
+  "Text": { "Text": "Text" }
+}

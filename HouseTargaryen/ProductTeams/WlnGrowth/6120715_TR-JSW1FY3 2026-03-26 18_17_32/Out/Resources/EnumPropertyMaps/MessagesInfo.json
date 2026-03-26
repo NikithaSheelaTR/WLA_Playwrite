@@ -1,0 +1,96 @@
+﻿{
+  // Maps Messages to MessagesInfoModel
+  "AnotherCannotBeCopied": {
+    "Text": "Another '{0}' cannot be copied to '{1}'"
+  },
+  "AreReadyToDownload": {
+    "Text": "The items are ready to download."
+  },
+  "CannotAddDuplicates": {
+    "Text": " Cannot add duplicates."
+  },
+  "CompanyNameRequired": {
+    "Text": "Company Name (Required) requires all of the following fields State (Required)."
+  },
+  "CopiedTo": {
+    "Text": "{0} copied to '{1}'."
+  },
+  "CopiedItems": {
+    "Text": "{0} of {1} items copied to '{2}'."
+  },
+  "ExcludesKmContent": {
+    "Text": "Excludes KM Content"
+  },
+  "FolderAndSubfoldersNoLongerShared": {
+    "Text": "'{0}' and its subfolders are no longer shared."
+  },
+  "FolderAndSubfoldersShared": {
+    "Text": "'{0}' and its subfolders are now shared."
+  },
+  "FolderMovedToTrash": {
+    "Text": "The contents of '{0}' were moved to Trash."
+  },
+  "FolderNoLongerShared": {
+    "Text": "'{0}' is no longer shared."
+  },
+  "FolderShared": {
+    "Text": "'{0}' is now shared."
+  },
+  "HasBeenMovedTo": {
+    "Text": "'{0}' has been moved to '{1}'"
+  },
+  "HasBeenCopiedTo": {
+    "Text": "'{0}' has been copied to '{1}'"
+  },
+  "ItemsEmailed": {
+    "Text": "The items will be emailed."
+  },
+  "IsNowContributor": {
+    "Text": " is now a Contributor."
+  },
+  "IsNowReviewer": {
+    "Text": " is now a Reviewer."
+  },
+  "IsReadyToDownload": {
+    "Text": "{0} is ready to download."
+  },
+  "KmDeliveryMessage": {
+    "Text": "KM documents will be excluded from your request."
+  },
+  "MovedItems": {
+    "Text": "{0} of {1} items moved to '{2}'."
+  },
+  "MovedItemsToTrash": {
+    "Text": "{0} of {1} items moved to Trash."
+  },
+  "MovedTo": {
+    "Text": "{0} moved to '{1}'."
+  },
+  "MovedToTrash": {
+    "Text": "{0} moved to Trash."
+  },
+  "NotCopiedTo": {
+    "Text": "not copied to"
+  },
+  "RootFolder": {
+    "Text": "{0}'s Research"
+  },
+  "SavedTo": {
+    "Text": "{0} saved to '{1}'."
+  },
+  "SavedItems": {
+    "Text": "{0} of {1} items saved to '{2}'."
+  },
+  "SearchTemplate": {
+    "Text": "{0} Template Search"
+  },
+  "SharingPermissionsRemoved": {
+    "Text": "Your sharing permissions were removed."
+  },
+  "TheItemIsReadyToDownload": {
+    "Text": "The item is ready to download."
+  },
+  "YouCannotAddDuplicates": {
+    "Text": " You cannot add duplicates, move items added by others, or move items across organizations."
+  }
+}

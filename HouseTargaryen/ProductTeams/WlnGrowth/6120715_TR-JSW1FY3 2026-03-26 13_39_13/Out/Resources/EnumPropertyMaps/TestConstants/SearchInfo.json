@@ -1,0 +1,134 @@
+﻿{
+  // Maps Search to SearchInfoModel
+  "AdvancedDn14490": {
+    "CourtSelections": [ "U.S. Supreme Court Dockets", "Federal Bankruptcy Court Dockets" ],
+    "Docket": "14-490",
+    "Query": "advanced: DN(14-490)"
+  },
+  "AdvancedMurderMarriage": {
+    "Query": "advanced: (murder marriage)"
+  },
+  "AdvancedSandHillsSo": {
+    "Agency": "Bench and Bar Minnesota",
+    "AllOfTheseTerms": "Sand /s hills",
+    "Query": "advanced: (Sand /s hills) & SO(Bench and Bar Minnesota)"
+  },
+  "AirCanada": {
+    "CompanyName": "AIR CANADA"
+  },
+  "Automated": {
+    "Query": "automated"
+  },
+  "BanksAndCoSt": {
+    "CompanyName": "BANKS & CO",
+    "State": "California"
+  },
+  "BestBuyCtStZp": {
+    "CompanyName": "Best Buy",
+    "City": "Richfield",
+    "State": "Minnesota",
+    "Zip": "55423"
+  },
+  "BlackBerry": {
+    "Query": "BB",
+    "CompanyName": "BLACKBERRY LTD"
+    },
+    "BritishPetroleumPlcDuns": {
+      "CompanyName": "BP P.L.C.",
+      "Duns": "21-004-2669"
+    },
+    "NETFLIXINCDuns": {
+      "CompanyName": "Netflix Inc. (NFLX) ",
+      "Duns": "79-964-6716"
+    },
+    "Case": {
+      "Query": "case"
+    },
+    "Cases": {
+      "Query": "cases"
+    },
+    "Crime": {
+      "Query": "crime"
+    },
+    "Dogg": {
+      "Query": "dogg"
+    },
+    "FindByCaseNotUpdatable": {
+      "Court": "Cook County",
+      "Docket": "2014-M1-724970",
+      "State": "Illinois"
+    },
+    "FindByCaseUpdatable": {
+      "Court": "U.S. Supreme Court",
+      "Docket": "14-363"
+    },
+    "GoogleSt": {
+      "CompanyName": "Google",
+      "State": "California"
+    },
+    "Justice": {
+      "Query": "justice"
+    },
+    "Law": {
+      "Query": "law"
+    },
+    "Legal": {
+      "Query": "legal"
+    },
+    "MarriagePayment": {
+      "ThisExactPhrase": "marriage payment"
+    },
+    "Merger": {
+      "AllOfTheseTerms": "Merger"
+    },
+    "Microsoft": {
+      "CompanyName": "microsoft"
+    },
+    "MurderMarriage": {
+      "Query": "murder marriage"
+    },
+    "MurderSMan": {
+      "Query": "murder /s man"
+    },
+    "OfficeDepot": {
+      "CompanyName": "Office Depot"
+    },
+    "PrimaryCare": {
+      "Query": "primary care"
+    },
+    "ProtocolDepartmentOfState": {
+      "DefinitionText": "Protocol",
+      "ExcludeTerms": "Department of State",
+      "Query": "advanced: CA(Protocol) % Department of State"
+    },
+    "ProtocolEnhancedTelevision": {
+      "DictionaryTerm": "Protocol",
+      "ExcludeTerms": "enhanced television",
+      "Query": "advanced: CA(Protocol) % enhanced television"
+    },
+    "ProtocolProgrammedRules": {
+      "DefinitionText": "programmed rules",
+      "DictionaryTerm": "Protocol",
+      "Query": "advanced: CA(Protocol) & TE(Programmed Rules)"
+    },
+    "ProtocolTeDiplomats": {
+      "DefinitionText": "Office of Protocol",
+      "DictionaryTerm": "Protocol",
+      "ExcludeTerms": "diplomats",
+      "Query": "advanced: CA(Protocol) & TE(Office of Protocol) % diplomats"
+    },
+    "Research": {
+      "Query": "research"
+    },
+    "RyanairHoldingDuns": {
+      "CompanyName": "RYANAIR HOLDINGS PUBLIC LIMITED COMPANY.",
+      "Duns": "989205216"
+    },
+    "Target": {
+      "CompanyName": "target",
+      "Query": "advanced: CN(target)"
+    },
+    "Work": {
+      "Query": "work"
+    }
+  }

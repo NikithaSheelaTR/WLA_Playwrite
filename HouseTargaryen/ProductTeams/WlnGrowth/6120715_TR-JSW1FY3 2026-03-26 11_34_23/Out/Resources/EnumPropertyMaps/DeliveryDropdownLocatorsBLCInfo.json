@@ -1,0 +1,15 @@
+﻿{
+  // Maps BLC DeliveryDropdownLocators to WebElementInfo
+  "DropdownArrow": {
+    "LocatorString": ".//a[contains(@class, 'co_tbButton co_dropDownAnchor')]"
+  },
+  "DropdownButton": {
+    "LocatorString": ".//a[contains(@class, 'co_tbButton co_focusReturnTarget')]"
+  },
+  "Option": {
+    "LocatorString": ".//li[contains(@delivery-type,'deliveryTypes')]"
+  },
+  "SelectedOption": {
+    "LocatorString": ".//li[contains(@delivery-type,'deliveryTypes.download')]"
+  }
+}

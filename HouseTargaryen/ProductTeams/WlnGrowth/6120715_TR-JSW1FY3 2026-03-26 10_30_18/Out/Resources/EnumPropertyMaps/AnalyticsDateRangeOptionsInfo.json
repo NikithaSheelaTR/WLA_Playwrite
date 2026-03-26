@@ -1,0 +1,27 @@
+{
+  // Maps AnalyticsDateRangeOptions to WebElementInfo
+  "LastMonth": {
+    "Text": "Last Month",
+    "LocatorString": "//ul[@class='wa_options']/li[@data-time-frame='LastMonth']"
+  },
+  "Last3Months": {
+    "Text": "Last 3 Months",
+    "LocatorString": "//ul[@class='wa_options']/li[@data-time-frame='Last3Months']"
+  },
+  "Last6Months": {
+    "Text": "Last 6 Months",
+    "LocatorString": "//ul[@class='wa_options']/li[@data-time-frame='Last6Months']"
+  },
+  "LastWeek": {
+    "Text": "Last Week",
+    "LocatorString": "//ul[@class='wa_options']/li[@data-time-frame='LastWeek']"
+  },
+  "Last2Weeks": {
+    "Text": "Last 2 Weeks",
+    "LocatorString": "//ul[@class='wa_options']/li[@data-time-frame='Last2Weeks']"
+  },
+    "SelectCustomRange": {
+    "Text": "Custom Range",
+    "LocatorString": "//ul[@class='wa_options']/li[@data-time-frame='Custom']"  
+  }
+}

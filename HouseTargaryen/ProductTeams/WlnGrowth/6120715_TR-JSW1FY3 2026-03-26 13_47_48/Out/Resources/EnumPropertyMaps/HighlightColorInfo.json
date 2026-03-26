@@ -1,0 +1,24 @@
+﻿{
+  // Maps HighlightColor to WebElementInfo
+  "Black": {
+    "ClassName": "black"
+  },
+  "Blue": {
+    "ClassName": "blue"
+  },
+  "Green": {
+    "ClassName": "green"
+  },
+  "Orange": {
+    "ClassName": "orange"
+  },
+  "Pink": {
+    "ClassName": "pink'"
+  },
+  "Purple": {
+    "ClassName": "purple"
+  },
+  "Yellow": {
+    "ClassName": "yellow"
+  }
+}

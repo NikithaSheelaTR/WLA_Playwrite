@@ -1,0 +1,9 @@
+{
+  // Maps ReportPageTabs to WebElementInfo
+  "ExcludedTab": { "Id": "excludedTab" },
+  "ExcludedTables": { "Id": "excludedTables" },
+  "IncludedTab": { "Id": "includedTab" },
+  "IncludedTables": { "Id": "includedTables" },
+  "NoDataTab": { "Id": "noDataTab" },
+  "NoDataTables": { "Id": "noDataTables" }
+}

@@ -1,0 +1,36 @@
+{
+  // Maps DocumentAnalyzerTourCards to WebElementInfo
+  "DocAnalyzerBlueCard1": {
+    "Text": "Click the Warnings for cited authority tab."
+  },
+  "DocAnalyzerBlueCard2": {
+    "Text": "Click the Quotation analysis tab."
+  },
+  "DocAnalyzerBlueCard3": {
+    "Text": "Click the Table of authorities tab."
+  },
+  "DocAnalyzerCard1": {
+    "Text": "On the Recommendations tab you'll find cases and other materials relevant to the issues in the selected text but were not cited in it."
+  },
+  "DocAnalyzerCard2": {
+    "Text": "A. Your selected text from the original document appears at the top to provide context for the recommendations.\r\nB. Easily see how a case might be useful with relevant language and outcomes. Quick Check analyzes the language of the selected text to tailor the report and pinpoint the most relevant parts of the recommended cases for quick review."
+  },
+  "DocAnalyzerCard3": {
+    "Text": "A. Case details provides information about the procedural background of the recommended case.\r\nB. Case tags highlight when a case has been frequently cited, is from the high court in its jurisdiction, or was decided in the last 2 years."
+  },
+  "DocAnalyzerCard4": {
+    "Text": "The Warnings for cited authority tab allow you to verify that the authority cited within the selected text is still good law."
+  },
+  "DocAnalyzerCard5": {
+    "Text": "A. For cases that have any negative KeyCite treatment, including Westlaw Edge's exclusive KeyCite Overruling Risk warnings, Quick Check identifies the relevant language from within the treating case to let you know why the KeyCite flag exists.\r\nB. Citation tags highlight when a case was decided 10 or more years ago, or when a case is not commonly cited to in judicial opinions."
+  },
+  "DocAnalyzerCard6": {
+    "Text": "The Quotation analysis tab allows you to compare quotations from the selected text to the language in the cited documents on Westlaw."
+  },
+  "DocAnalyzerCard7": {
+    "Text": "Differences are flagged when a quotation from the selected text does not match the cited language on Westlaw."
+  },
+  "DocAnalyzerCard8": {
+    "Text": "Depth of discussion provides a visual preview of how much a citation was discussed in the selected text. Citations with deeper discussion may merit more thorough review."
+  }
+}

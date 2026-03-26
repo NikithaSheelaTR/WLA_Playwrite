@@ -1,0 +1,14 @@
+﻿{
+  "Examined": {
+    "LocatorString": "//label[@class='SearchFacet-label' and ./div[@class='co_relatedInfo_dotBar_4']]"
+  },
+  "Cited": {
+    "LocatorString": "//label[@class='SearchFacet-label' and ./div[@class='co_relatedInfo_dotBar_2']]"
+  },
+  "Mentioned": {
+    "LocatorString": "//label[@class='SearchFacet-label' and ./div[@class='co_relatedInfo_dotBar_1']]"
+  },
+  "Discussed": {
+    "LocatorString": "//label[@class='SearchFacet-label' and ./div[@class='co_relatedInfo_dotBar_3']]"
+  }
+}

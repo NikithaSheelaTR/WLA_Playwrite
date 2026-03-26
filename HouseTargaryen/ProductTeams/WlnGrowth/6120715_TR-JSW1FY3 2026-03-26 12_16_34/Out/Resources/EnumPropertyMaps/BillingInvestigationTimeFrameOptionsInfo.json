@@ -1,0 +1,12 @@
+﻿{
+  // Maps Billing Investigation Time Frame Options to BaseTextModel
+  "MonthToDate": {
+    "Text": "Month to date"
+  },
+  "PreviousMonth": {
+    "Text": "Previous month"
+  },
+  "SpecificDateRange": {
+    "Text":  "Specific date range" 
+  }
+}

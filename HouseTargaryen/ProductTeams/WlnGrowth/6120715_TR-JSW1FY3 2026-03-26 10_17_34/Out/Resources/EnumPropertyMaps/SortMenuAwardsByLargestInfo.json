@@ -1,0 +1,33 @@
+﻿{
+  // Maps SortMenuAwardsByLargest enumeration to BaseTextModel
+  "AmountHighestFirst": {
+    "Text": "Amount: Highest First"
+  },
+  "AmountLowestFirst": {
+    "Text": "Amount: Lowest First"
+  },
+  "CountyAtoZ": {
+    "Text": "County: A-Z"
+  },
+  "CountyZtoA": {
+    "Text": "County: Z-A"
+  },
+  "DateNewestFirst": {
+    "Text": "Date: Newest First"
+  },
+  "DateOldestFirst": {
+    "Text": "Date: Oldest First"
+  },
+  "TitleAtoZ": {
+    "Text": "Title: A-Z"
+  },
+  "TitleZtoA": {
+    "Text": "Title: Z-A"
+  },
+  "TypeAtoZ": {
+    "Text": "Type: A-Z"
+  },
+  "TypeZtoA": {
+    "Text": "Type: Z-A"
+  }
+}

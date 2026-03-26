@@ -1,0 +1,10 @@
+﻿{
+  "Currentview": {
+    "Text": "Current view from",
+    "LocatorString": ".//input[@id='co_deliveryWhatToDeliverLegalAnalyticsWYSIWYG']"
+  },
+    "CustomizedReport": {
+        "Text": "Customized report",
+        "LocatorString": ".//input[@id='co_deliveryWhatToDeliverLegalAnalyticsTabs']"
+    }
+}

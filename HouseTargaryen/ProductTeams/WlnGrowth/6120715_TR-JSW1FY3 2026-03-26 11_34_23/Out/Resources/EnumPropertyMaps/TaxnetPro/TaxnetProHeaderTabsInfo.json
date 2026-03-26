@@ -1,0 +1,29 @@
+﻿{
+  // Maps TaxnetProHeaderTabs to WebElementInfo
+  "ClientId": {
+    "LocatorString": "//a[@class = 'co_clientID_recent']"
+  },
+  "Feedback": {
+    "LocatorString": "//a[@id='coid_feedbackLink']",
+    "Text": "Feedback"
+  },
+  "Folders": {
+    "LocatorString": "//div/a[text() = 'Folders']",
+    "Text": "Folders"
+  },
+  "Help": {
+    "LocatorString": "//div[@id='coid_helpMenuContainer']//a[text()='Help']",
+    "Text": "Help"
+  },
+  "History": {
+    "LocatorString": "//div/a[text() = 'History']",
+    "Text": "History"
+  },
+  "LanguageToggle": {
+    "LocatorString": "//a[@id='coid_localeLink']"
+  },
+  "Options": {
+    "LocatorString": "//a[@id='coid_optionsLink']",
+    "Text": "Options"
+  }
+}

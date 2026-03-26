@@ -1,0 +1,20 @@
+﻿{
+// Maps DisplayFontOptions to WebElementInfo
+	"Georgia": {
+		"Text": "Georgia",
+		"LocatorString": "//input[@id = 'co_dipOpt_fontGeorgia']"
+	},
+	"SourceSansPro": {
+		"Text": "Source Sans Pro",
+		"LocatorString": "//input[@id = 'co_dipOpt_fontSourceSans']"
+	},
+
+	"TimesNewRoman": {
+		"Text": "Times New Roman",
+		"LocatorString": "//input[@id = 'co_dipOpt_fontTimesNewRoman']"
+	},
+	"Verdana": {
+		"Text": "Verdana",
+		"LocatorString": "//input[@id = 'co_dipOpt_fontVerdana']"
+	}
+}

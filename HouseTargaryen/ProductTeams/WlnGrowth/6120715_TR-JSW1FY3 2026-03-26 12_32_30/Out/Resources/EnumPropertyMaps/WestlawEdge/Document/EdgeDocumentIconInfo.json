@@ -1,0 +1,15 @@
+﻿{
+  // Maps IndigoDocumentIcon to WebElementInfo
+  "Km": {
+    "LocatorString": "//a[@id='coid_relatedInfo_KMCitingReferences_link']/img[@title='KM']"
+  },
+  "RecentAnnotations": {
+    "LocatorString": "//a[@id='co_document_icon_notes_img']"
+  },
+  "RecentFolders": {
+    "LocatorString": "//a[@id='co_document_icon_foldered_img'] | //a[@title='Recent folders']"
+  },
+  "RecentViews": {
+    "LocatorString": "//a[@id='co_document_icon_previouslyviewed_img']"
+  }
+}

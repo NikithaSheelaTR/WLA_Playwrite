@@ -1,0 +1,27 @@
+{
+  // Maps KeyCiteComponentLocators to WebElementInfo for Statutes
+  "CitatorFlag": {
+    "LocatorString": "//div[@id='co_readingModeCitatorFlag']"
+  },
+  "Court": {
+    "LocatorString": ".//span[@id='coid_relatedInfo_SNT_Statute_court']"
+  },
+  "Date": {
+    "LocatorString": ".//span[@id='coid_relatedInfo_SNT_Statute_date']"
+  },
+  "Flag": {
+    "LocatorString": "//a[contains(@id,'coid_relatedInfo_SNT_Statute_kcFlag')]"
+  },
+  "InfoContainer": {
+    "LocatorString": "//div[@id='co_readingModeNegativeTreatment']"
+  },
+  "NegativeTreatmentLink": {
+    "LocatorString": ".//a[@id='coid_relatedInfo_SNT_Statute_title']"
+  },
+  "Phrase": {
+    "LocatorString": ".//span[@id='coid_relatedInfo_SNT_Statute_treatmentPhrase']"
+  },
+  "StaticPhrase": {
+    "LocatorMask": "coid_relatedInfo_SNT_Statute_staticPhrase_{0}"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  // Maps IndigoBrowseTab to WebElementInfo
+  "ContenTypes": {
+    "Id": "tab1",
+    "LocatorString": "//*[@id='tab1']",
+    "Text": "Content types"
+  },
+  "FederalMaterials": {
+    "Id": "tab2",
+    "LocatorString": "//*[@id='tab2']",
+    "Text": "Federal materials"
+  },
+  "PracticeAreas": {
+    "Id": "tab4",
+    "LocatorString": "//*[@id='tab4']",
+    "Text": "Practice areas"
+  },
+  "StateMaterials": {
+    "Id": "tab3",
+    "LocatorString": "//*[@id='tab3']",
+    "Text": "State materials"
+  },
+  "Tools": {
+    "Id": "tab5",
+    "LocatorString": "//*[@id='tab5']",
+    "Text": "Tools"
+  },
+  "International": {
+    "Text": "International",
+    "LocatorString": "//li[@role='tab' and contains(text(),'International')]",
+    "Id": "tab3"
+  }
+}

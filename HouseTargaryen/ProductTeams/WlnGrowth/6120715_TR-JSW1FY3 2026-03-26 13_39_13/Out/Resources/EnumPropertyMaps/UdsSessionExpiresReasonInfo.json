@@ -1,0 +1,14 @@
+{
+	// Maps UdsSessionExpiresReason to BaseTextModel
+	"Notset": { "Text": "Notset" },
+	"ConcurrentUsers": { "Text": "Concurrent_Users" },
+	"CustomerSupport": { "Text": "Customer_Support" },
+	"SsoTokenExpired": { "Text": "Sso_Token_Expired" },
+	"UserSignedOff": { "Text": "User_Signed_Off" },
+	"UserInactivity": { "Text": "User_Inactivity" },
+	"NoActiveBrowser": { "Text": "No_Active_Browser" },
+	"Maintenance": { "Text": "Maintenance" },
+	"IncompleteSignon": { "Text": "Incomplete_Signon" },
+	"UserThrottling": { "Text": "User_Throttling" },
+	"TargetedUser": { "Text": "Targeted_User" }
+}

@@ -1,0 +1,68 @@
+﻿{
+  // Maps BrowseTab to WebElementInfo
+  "AiAssistedResearch": {
+    "Text": "AI-Assisted Research",
+    "LocatorString": "//*[@id='tab1' or text()='AI-Assisted Research']",
+    "Id": "tab1"
+  },
+  "ContentTypes": {
+    "Text": "Content types",
+    "LocatorString": "//*[@id='tab1' or text()='Content types']",
+    "Id": "tab1"
+  },
+  "FederalMaterials": {
+    "Text": "Federal materials",
+    "LocatorString": "//*[@id='tab2' or text()='Federal materials']",
+    "Id": "tab2"
+  },
+  "International": {
+    "Text": "International",
+    "LocatorString": "//li[@role='tab' and contains(text(),'International')]",
+    "Id": "tab3"
+  },
+  "Jurisdiction": {
+    "Text": "Jurisdiction",
+    "LocatorString": "//li[@id='tab1' and text()='Jurisdiction']",
+    "Id": "tab1"
+  },
+  "MyContent": {
+    "Text": "MyContent",
+    "LocatorString": "//li[@role='tab' and contains(text(),'My content')]",
+    "Id": "tab5"
+  },
+  "Offering": {
+    "Text": "Offering",
+    "LocatorString": "//li[@id='tab1' and text()='Offering']",
+    "Id": "tab1"
+  },
+  "PracticeAreas": {
+    "Text": "Practice areas",
+    "LocatorString": "//li[@role='tab' and contains(text(),'Practice areas')]",
+    "Id": "tab4"
+  },
+  "PrecisionSearch": {
+    "Text": "Precision search",
+    "LocatorString": "//li[@id='tab2' and text()='Precision Research']",
+    "Id": "tab2"
+  },
+  "ProductsAndFeatures": {
+    "Text": "Products and Features",
+    "LocatorString": "//*[@id='tab6' or text()='Products and Features']",
+    "Id": "tab6"
+  },
+  "Products": {
+    "Text": "Products",
+    "LocatorString": "//*[@id='tab5' or text()='Products']",
+    "Id": "tab5"
+  },
+  "StateMaterials": {
+    "Text": "State materials",
+    "LocatorString": "//*[@id='tab3' or text()='State materials']",
+    "Id": "tab3"
+  },
+  "Tools": {
+    "Text": "Tools",
+    "LocatorString": "//li[@role='tab' and contains(text(),'Tools')]",
+    "Id": "tab6"
+  }  
+}

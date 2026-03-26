@@ -1,0 +1,9 @@
+{
+  // Maps Status to WebElementInfo
+  "EnactedLegislation": {
+    "LocatorString": "//input[contains(@aria-label,'Enacted Legislation')]"
+  },
+  "ProposedLegislation": {
+    "LocatorString": "//input[contains(@aria-label,'Proposed Legislation')]"
+  }
+}

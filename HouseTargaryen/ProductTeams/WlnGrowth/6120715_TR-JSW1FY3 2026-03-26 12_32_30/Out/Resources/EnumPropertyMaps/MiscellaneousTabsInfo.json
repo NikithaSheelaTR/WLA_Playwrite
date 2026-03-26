@@ -1,0 +1,18 @@
+{
+  "CustomPages": {
+    "LocatorString": "//li[@id = 'tab_CustomPagesPaneId' or @aria-controls = 'panel_CustomPagesPaneId']",
+    "Text": "CustomPages"
+  },
+  "Favorites": {
+    "LocatorString": "//li[@id = 'tab_FavoritesPaneId' or @aria-controls = 'panel_FavoritesPaneId']",
+    "Text": "Favorites"
+  },
+  "Folders": {
+    "LocatorString": "//li[@id = 'tab_FoldersPaneId' or @aria-controls = 'panel_FoldersPaneId']",
+    "Text": "Folders"
+  },
+  "History": {
+    "LocatorString": "//li[@id = 'tab_HistoryPaneId' or @aria-controls = 'panel_HistoryPaneId']",
+    "Text": "History"
+  }
+}

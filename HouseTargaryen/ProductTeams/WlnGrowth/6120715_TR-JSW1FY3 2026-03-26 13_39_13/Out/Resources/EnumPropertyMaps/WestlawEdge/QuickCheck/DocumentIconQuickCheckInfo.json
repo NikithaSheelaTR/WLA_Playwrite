@@ -1,0 +1,33 @@
+{
+  // Maps DocumentIcon to WebElementInfo
+  "KeyCiteFlag": {
+    "SourceFile": "",
+    "ClassName": "",
+    "LocatorMask": "{0}/..",
+    "LocatorString": ".//span[@class= 'co_foldering_keyciteContainer']"
+  },
+  "Km": {
+    "SourceFile": "images/co_document_icon_km.png",
+    "ClassName": "",
+    "LocatorMask": "{0}/..",
+    "LocatorString": ".//li[@class='co_document_icon_exemplar']/img"
+  },
+  "NoteAdded": {
+    "SourceFile": "images/co_document_icon_notes.png",
+    "ClassName": "PUI-button PUI-button--annotated",
+    "LocatorMask": "{0}/..",
+    "LocatorString": ".//button[@class='PUI-button PUI-button--annotated']"
+  },
+  "PreviouslyViewed": {
+    "SourceFile": "images/co_document_icon_previouslyviewed.png",
+    "ClassName": "PUI-button PUI-button--viewed",
+    "LocatorMask": "{0}/..",
+    "LocatorString": ".//button[@class='PUI-button PUI-button--viewed']"
+  },
+  "SavedToFolder": {
+    "LocatorMask": "{0}/..",
+    "ClassName": "PUI-button PUI-button--foldered",
+    "SourceFile": "images/co_document_icon_foldered.png",
+    "LocatorString": ".//button[@class='PUI-button PUI-button--foldered']"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  // Maps History Options to WebElementInfo
+  "PrincipalHistory": {
+    "Text": "Principal History",
+    "LocatorString": "//ul[@id='co_history_viewOptions']/li[span[contains(text(),'Principal History')]]"
+  },
+  "PreviousHistory": {
+    "Text": "Previous History",
+    "LocatorString": "//ul[@id='co_history_viewOptions']/li[span[contains(text(),'Previous History')]]"
+  },
+  "SubsequentHistory": {
+    "Text": "Subsequent History",
+    "LocatorString": "//ul[@id='co_history_viewOptions']/li[span[contains(text(),'Subsequent History')]]"
+  },
+  "NegativeDirectHistory": {
+    "Text": "Negative Direct History",
+    "LocatorString": "//ul[@id='co_history_viewOptions']/li[span[contains(text(),'Negative Direct History')]]"
+  },
+  "AllHistory": {
+    "Text": "All History",
+    "LocatorString": "//ul[@id='co_history_viewOptions']/li[span[text()='All History']]"
+  }
+}

@@ -1,0 +1,27 @@
+﻿{
+  //Maps Taxnet Pro Preference tabs to Web element Info
+  "Delivery": {
+    "LocatorString": "//a[@id='coid_userSettingsTab1Link']",
+    "Text": "Delivery"
+  },
+  "Display": {
+    "LocatorString": "//a[@id='coid_userSettingsTab0Link']",
+    "Text": "Display"
+  },
+  "Email": {
+    "LocatorString": "//a[@id='coid_userSettingsTab2Link']",
+    "Text": "Email"
+  },
+  "LanguageSearch": {
+    "LocatorString": "//a[@id='coid_userSettingsTab3Link']",
+    "Text": "Language/Search"
+  },
+  "NewsLetters": {
+    "LocatorString": "//a[@id='coid_userSettingsTab4Link']",
+    "Text": "Newsletters"
+  },
+  "SessionTracker": {
+    "LocatorString": "//a[@id='coid_userSettingsTab5Link']",
+    "Text": "Newsletters"
+  }
+}

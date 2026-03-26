@@ -1,0 +1,11 @@
+{
+  // Maps the DocketsRequestsGridColumns to WebElementInfo
+  "Court": { "LocatorString": "co_detailsTable_court" },
+  "DateRequested": { "LocatorString": "co_detailsTable_dateRequested" },
+  "Description": { "LocatorString": "co_detailsTable_caseTitle" },
+  "DocketNumber": { "LocatorString": "co_detailsTable_docketNumber" },
+  "EntryNumber": { "LocatorString": "co_detailsTable_entryNumber" },
+  "ExpirationDate": { "LocatorString": "co_detailsTable_expirationDate" },
+  "Select": { "LocatorString": "co_detailsTable_select" },
+  "Status": { "LocatorString": "co_detailsTable_status" }
+}

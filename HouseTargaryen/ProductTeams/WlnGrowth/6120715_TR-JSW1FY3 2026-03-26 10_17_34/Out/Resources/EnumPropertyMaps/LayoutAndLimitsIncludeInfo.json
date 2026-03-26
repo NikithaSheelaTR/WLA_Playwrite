@@ -1,0 +1,176 @@
+{
+    // Maps LayoutAndLimitsInclude to WebElementInfo
+    "ArgumentsAndCounterArguments": {
+        "Id": "coid_da_ArgumentSummary",
+        "Text": "Arguments and counterarguments",
+        "LocatorString": "//label[@for ='coid_da_ArgumentSummary']/input"
+    },
+
+    "AIRelevancyOverview": {
+        "Id": "coid_chkDdcLayoutAIRelevancyOverview",
+        "Text": "AI Relevancy Overview",
+        "LocatorString": "//label[@for ='coid_chkDdcLayoutWestSearchRelevancyExplainer']/input"
+    },
+
+    "AISummary": {
+        "Id": "coid_chkDdcLayoutAISummary",
+        "Text": "AI Summary",
+        "LocatorString": "//label[@for ='coid_chkDdcLayoutAISummary']/input"
+    },
+
+    " CaseAnnotation": {
+        "Id": "coid_chkDdcLayoutCaseAnnotation",
+        "Text": "Case Annotation",
+        "LocatorString": "//label[@for ='coid_chkDdcLayoutCaseAnnotation']/input"
+    },
+
+    "CasesWithNoNegativeTreatment": {
+        "Id": "coid_chkDdcLayoutIncludeCasesWithNoNegativeTreatment",
+        "Text": "Cited authority: Include cases with no negative treatment",
+        "LocatorString": "//label[@for ='coid_chkDdcLayoutIncludeCasesWithNoNegativeTreatment']/input"
+    },
+
+    "CoverPage": {
+        "Id": "coid_chkDdcLayoutCoverPage",
+        "Text": "Cover Page",
+        "LocatorString": "//label[@for ='coid_chkDdcLayoutCoverPage']/input | //input[@id ='coid_chkDdcLayoutCoverPage']"
+    },
+
+    "CoverPageTextBox": {
+        "Id": "coid_DdcLayoutCoverPageComment",
+        "Text": "Cover Page Text Box",
+        "LocatorString": "//*[@id='coid_DdcLayoutCoverPageComment']"
+    },
+
+    "ExpandedMarginForNotes": {
+        "Id": "coid_chkDdcLayoutRightNoteMarging",
+        "Text": "Expanded Margin for Notes",
+        "LocatorString": "//label[@for ='coid_chkDdcLayoutRightNoteMarging']/input"
+    },
+
+    "FullKeyNumberHierarchy": {
+        "Id": "coid_chkDdcLayoutFullWKNHierarchy",
+        "Text": "Show the full Key Number hierarchy",
+        "LocatorString": "//label[@for ='coid_chkDdcLayoutFullWKNHierarchy']/input"
+    },
+
+    "InlineKeyCiteFlags": {
+        "Id": "coid_chkDdcLayoutInlineKeyCiteFlags",
+        "Text": "Inline KeyCite Flags",
+        "LocatorString": "//label[@for ='coid_chkDdcLayoutInlineKeyCiteFlags']/input"
+    },
+
+    "IncludeCitationsInTheResponse": {
+        "Id": "coid_chkDdcLayoutIncludeInlineCitations",
+        "Text": "Include citations in the response",
+        "LocatorString": "//input[@id ='coid_chkDdcLayoutIncludeInlineCitations']"
+    },
+
+    "JudicialCitedAuthority": {
+        "Id": "coid_da_CitedAuthority",
+        "Text": "Cited authority",
+        "LocatorString": "//label[@for ='coid_da_CitedAuthority']/input"
+    },
+
+    "JudicialOmittedAuthority": {
+        "Id": "coid_da_OmittedAuthority",
+        "Text": "Omitted authority",
+        "LocatorString": "//label[@for ='coid_da_OmittedAuthority']/input"
+    },
+
+    "JudicialQuotationAnalysis": {
+        "Id": "coid_da_Quotations",
+        "Text": "Quotation analysis",
+        "LocatorString": "//label[@for ='coid_da_Quotations']/input"
+    },
+
+    "KeyCiteTreatment": {
+        "Id": "coid_chkDdcLayoutKeyCiteTreatment",
+        "Text": "KeyCite Treatment",
+        "LocatorString": "//label[@for ='coid_chkDdcLayoutKeyCiteTreatment']/input"
+    },
+
+    "LegalSimilarityInformation": {
+        "Id": "coid_chkDdcLayoutLegalSimilarity",
+        "Text": "Show precision search information",
+        "LocatorString": "//label[@for ='coid_chkDdcLayoutLegalSimilarity']/input"
+    },
+
+    "OriginalImageLink": {
+        "Id": "coid_chkDdcLayoutOriginalImageLink",
+        "Text": "Original Image Link",
+        "LocatorString": "//label[@for ='coid_chkDdcLayoutOriginalImageLink']/input"
+    },
+
+    "OverrulingRiskHighlighting": {
+        "Id": "coid_chkDdcLayoutOriginalImageLink",
+        "Text": "Original Image Link",
+        "LocatorString": "//label[@for ='coid_chkDdcLayoutOverrulingRiskHighlighting']/input"
+    },
+
+    "OverruledInPartHighlighting": {
+        "Id": "coid_chkDdcLayoutPartiallyOverruledHighlighting",
+        "Text": "Overruled In Part Highlighting",
+        "LocatorString": "//label[@for ='coid_chkDdcLayoutPartiallyOverruledHighlighting']/input"
+    },
+
+    "Proceedings": {
+        "Id": "coid_chkDdcLayoutProceedings",
+        "Text": "Proceedings",
+        "LocatorString": "//label[@for ='coid_chkDdcLayoutProceedings']/input"
+    },
+
+    "QuotationAnalysis": {
+        "Id": "coid_da_Quotations",
+        "Text": "Quotation analysis",
+        "LocatorString": "//label[@for ='coid_da_Quotations']/input"
+    },
+
+    "Recommendations": {
+        "Id": "coid_da_Recommendations",
+        "Text": "Recommendations",
+        "LocatorString": "//label[@for ='coid_da_Recommendations']/input"
+    },
+
+    "RecommendationTags": {
+        "Id": "coid_chkDdcLayoutRecommendationTags",
+        "Text": "Recommendation tags",
+        "LocatorString": "//label[@for ='coid_chkDdcLayoutRecommendationTags']/input"
+    },
+
+    "StatutoryTextOnly": {
+        "Id": "coid_chkDdcLayoutStatutoryTextOnly",
+        "Text": "Statutory Text Only",
+        "LocatorString": "//label[@for ='coid_chkDdcLayoutStatutoryTextOnly']/input"
+    },
+
+    "TableOfAuthorities": {
+        "Id": "coid_da_TableOfAuthorities",
+        "Text": "Table of authorities",
+        "LocatorString": "//label[@for ='coid_da_TableOfAuthorities']/input"
+    },
+
+    "TermHighlighting": {
+        "Id": "coid_chkDdcLayoutTermHighlighting",
+        "Text": "Term Highlighting",
+        "LocatorString": "//label[@for ='coid_chkDdcLayoutTermHighlighting']/input"
+    },
+
+    "UnmatchedQuotations": {
+        "Id": "coid_chkDdcLayoutIncludeUnmatchedQuotations",
+        "Text": "Quotation analysis: Include unmatched quotations",
+        "LocatorString": "//label[@for ='coid_chkDdcLayoutIncludeUnmatchedQuotations']/input"
+    },
+
+    "WarningsForCitedAuthority": {
+        "Id": "coid_da_KeyciteWarnings",
+        "Text": "Warnings for cited authority",
+        "LocatorString": "//label[@for ='coid_da_KeyciteWarnings']/input"
+    },
+
+    "WestHeadnotes": {
+        "Id": "coid_chkDdcLayoutIncludeHeadnotes",
+        "Text": "West Headnotes",
+        "LocatorString": "//label[@for ='coid_chkDdcLayoutIncludeHeadnotes']/input"
+    }
+}

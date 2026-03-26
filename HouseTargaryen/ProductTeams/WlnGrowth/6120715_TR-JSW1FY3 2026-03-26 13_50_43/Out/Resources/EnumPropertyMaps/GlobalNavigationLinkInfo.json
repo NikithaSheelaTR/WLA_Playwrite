@@ -1,0 +1,57 @@
+﻿{
+  // Maps GlobalNavigationLink to WebElementInfo
+  "Alerts": {
+    "LocatorString": "//li[@id='co_alertsCenterContainer']/a"
+  },
+  "ClientId": {
+    "LocatorString": "//*[@id='co_clientID_recent_0'] | //*[@id='co_urlClientLink']"
+  },
+  "ClientIdArrow": {
+    "LocatorString": "//span[@id='co_clientIDStateIcon_0']"
+  },
+  "CoCounsel": {
+    "LocatorString": "//*[@id='coCounselOpenButton']"
+  },
+  "Community": {
+    "LocatorString": "//a[@class='co_dropdownBoxanchorLabel' and contains (text(),'Community')]"
+  },
+  "CommunityArrow": {
+    "LocatorString": "//button[@aria-label='Open Community']"
+  },
+  "Favorites": {
+    "LocatorString": "//a[@class='co_dropdownBoxanchorLabel' and text()='Favorites']"
+  },
+  "FavoritesArrow": {
+    "LocatorString": "//button[@title='Favorites Menu']"
+  },
+  "Folders": {
+    "LocatorString": "//a[@class='co_dropdownBoxanchorLabel' and (text()='Folders' or text()='Dossiers')]"
+  },
+  "FoldersArrow": {
+    "LocatorString": "//button[@aria-label='Recent Folders Menu']"
+  },
+  "Help": {
+    "LocatorString": "//li[@id='co_appHelpMicroExperience']//button"
+  },
+  "History": {
+    "LocatorString": "//a[@class='co_dropdownBoxanchorLabel' and (text()='History' or text()='Historique')]"
+  },
+  "HistoryArrow": {
+    "LocatorString": "//button[@oldtitle='Recent History Menu' or contains(@oldtitle,'historique récent')]"
+  },
+  "LegalTopics": {
+    "LocatorString": "//li[@id='crsw_CanAbrKeyContainer']/a"
+  },
+  "Pause": {
+    "LocatorString": "//li[@id='co_sessionPauseContainer']/a"
+  },
+  "ProfileSettings": {
+    "LocatorString": "//*[@id='coid_website_signOffRegion']/span[contains(@class,'icon_user')] | //button[@aria-label='Profile']"
+  },
+  "ProfileSettingsArrow": {
+    "LocatorString": "//*[@id='coid_website_signOffRegion']/span[contains(@class,'icon_down_arrow')]"
+  },
+  "SignOff": {
+    "LocatorString": "//li[@id='co_signOffContainer']/a"
+  }
+}

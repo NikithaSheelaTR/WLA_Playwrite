@@ -1,0 +1,11 @@
+﻿{
+	//Map for FilerSearchItem
+	"FormerName": { "LocatorString": ".//div[@class='co_searchContent']//span[contains(text(), 'Former Name:')]" },
+	"Naic": { "LocatorString": ".//div[@class='co_searchContent']//div[@ng-if='company.showNAIC']" },
+	"LocationHq": { "LocatorString": ".//div[@class='co_searchContent']//div[@ng-if='company.showHQLoc']" },
+	"LocationInc": { "LocatorString": ".//div[@class='co_searchContent']//div[@ng-if='company.showIncLoc']" },
+	"PrimarySic": { "LocatorString": ".//div[@class='co_searchContent']//div[@ng-if='company.showSIC']" },
+	"Status": { "LocatorString": ".//div[@class='co_searchContent']//span" },
+	"Ticker": { "LocatorString": ".//div[@class='co_searchContent']//div[@ng-if='company.showTicker']" },
+	"Title" : {"LocatorString" : ".//a[@class='draggable_document_link ng-binding']"}
+}

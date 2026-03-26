@@ -1,0 +1,37 @@
+{
+  "AddNote": {
+    "Id": "co_noteMenu_addNew",
+    "Text": "Add Note",
+    "LocatorString": "//li[@id='co_noteMenu_addNew']"
+  },
+  "ShareAllMyAnnotations": {
+    "Id": "co_noteMenu_shareAllNotes",
+    "Text": "Share All My Annotations",
+    "LocatorString": "//li[@id='co_noteMenu_shareAllNotes']"
+  },
+  "StopSharingMyAnnotations": {
+    "Id": "co_noteMenu_unShareAllNotes",
+    "Text": "Stop Sharing My Annotations",
+    "LocatorString": "//li[@id='co_noteMenu_unShareAllNotes']"
+  },
+  "ShowAllAnnotations": {
+    "Id": "co_allAnnotations",
+    "Text": "Show All Annotations",
+    "LocatorString": "//li[@id='co_allAnnotations']"
+  },
+  "ShowAllMyAnnotations": {
+    "Id": "co_myAnnotations",
+    "Text": "Show My Annotations",
+    "LocatorString": "//li[@id='co_myAnnotations']"
+  },
+  "HideAllAnnotations": {
+    "Id": "co_hideAllAnnotations",
+    "Text": "Hide All Annotations",
+    "LocatorString": "//li[@id='co_hideAllAnnotations']"
+  },
+  "ShowAnnotationsCheckbox": {
+    "Id": "co_annotationsToggle",
+    "Text": "Show Annotations",
+     "LocatorString":  "//li[@id='co_annotationsToggle']/a"  
+  }     
+}

@@ -1,0 +1,16 @@
+//LocatorString used on omitted authority tab
+//Id used on Assigned doc to party page (Id=LocatorString here)
+
+{
+  "OmittedByBoth": {
+    "LocatorString": "//ul[@class='co_tabs DA-partyTabs']//li[contains(., 'Omitted by both')]"
+  },
+  "FirstParty": {
+    "LocatorString": "//ul[@class='co_tabs DA-partyTabs']//li[not(contains(., 'Omitted by both'))][1]/h2",
+    "Id": "//*[@id='coid_qc_firstParty']//following-sibling::ul[1]"
+  },
+  "SecondParty": {
+    "LocatorString": "//ul[@class='co_tabs DA-partyTabs']//li[not(contains(., 'Omitted by both'))][2]/h2",
+    "Id": "//*[@id='coid_qc_secondParty']//following-sibling::ul[1]"
+  }
+}

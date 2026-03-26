@@ -1,0 +1,19 @@
+﻿{
+  // Maps ToolbarElements for Research Recommendations to WebElementInfo
+    "Delivery": {
+        "LocatorString": ".//*[contains(@id, 'deliveryLink')]//span[text() = 'Download']|.//*[contains(@id, 'deliveryWidget')]//div//button",
+        "Text": "Delivery"
+    },
+  "DeliveryArrow": {
+    "LocatorString": ".//*[contains(@id, 'deliveryDropButton')]//span",
+    "Text": "Delivery"
+  },
+  "Detail": {
+    "LocatorString": ".//div[starts-with(@id, 'co_rxslider') and contains(@id, '_DetailSliderLink')]",
+    "Text": "Detail"
+  },
+  "SaveToFolder": {
+    "LocatorString": "//div[@class='co_rx_saveToWidget header']/div[@class='co_saveTo']/*[contains(@class,'co_dropdownTitle')]",
+    "Text": "Save To Folder"
+  }
+}

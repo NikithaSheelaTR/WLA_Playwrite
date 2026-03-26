@@ -1,0 +1,12 @@
+﻿{
+  "Outcome": {
+    "Text": "Outcome",
+    "LocatorString": "//*[@id='co_la_byOutcome']",
+    "Id": "co_la_byOutcome"
+  },
+  "TimeToRule": {
+    "Text": "Time to rule",
+    "LocatorString": "//*[@id='co_la_byTimeToRule']",
+    "Id": "co_la_byTimeToRule"
+  }
+}

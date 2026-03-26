@@ -1,0 +1,15 @@
+﻿{
+  // Maps DepthOfTreatmentOptions to WebElementInfo
+  "CitedTreatment": {
+    "LocatorString": "//a[@data-facetkey='2']"
+  },
+  "DiscussedTreatment": {
+    "LocatorString": "//a[@data-facetkey='3']"
+  },
+  "ExaminedTreatment": {
+    "LocatorString": "//a[@data-facetkey='4']"
+  },
+  "MentionedTreatment": {
+    "LocatorString": "//a[@data-facetkey='1']"
+  }
+}

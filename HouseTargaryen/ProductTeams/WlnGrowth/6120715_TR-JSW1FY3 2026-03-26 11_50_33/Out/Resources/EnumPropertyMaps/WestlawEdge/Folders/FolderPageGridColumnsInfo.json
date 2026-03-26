@@ -1,0 +1,15 @@
+﻿{
+  // Maps the FolderPageGridColumns to WebElementInfo
+  "Content": { 
+  "LocatorString": "TableCell--Description"
+  },
+  "Date": { 
+  "LocatorString": "TableCell--date"
+  },
+  "Select": {
+  "LocatorString": "TableCell--Select"
+  },
+  "Type": {
+  "LocatorString1": "TableCell--type"
+  }
+}

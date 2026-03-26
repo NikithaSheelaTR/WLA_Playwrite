@@ -1,0 +1,22 @@
+{
+  // Maps ExcludeDocumentTypeOptions to WebElementInfo for alert page
+  "Obituaries": {
+    "Id": "co_search_advancedSearch_obituaries_checkbox",
+    "Text": "Obituaries"
+  },
+
+  "PersonalAnnouncements": {
+    "Id": "co_search_advancedSearch_personalAnnouncements_checkbox",
+    "Text": "Personal Announcements"
+  },
+
+  "Sports": {
+    "Id": "co_search_advancedSearch_sport_checkbox",
+    "Text": "Sports"
+  },
+
+  "RoutineMarketFinancialData": {
+    "Id": "co_search_advancedSearch_routineMarketFinancialData_checkbox",
+    "Text": "Routine Market / Financial Data"
+  }
+}

@@ -1,0 +1,15 @@
+﻿{
+  // Maps Outlines alignment Orders to WebElementInfo
+  "Center": {
+    "LocatorString": ".//li[contains(@id, 'center')]",
+    "Text": "Centered"
+  },
+  "Hierarchy": {
+    "LocatorString": ".//li[contains(@id, 'hierarchy')]",
+    "Text": "Hierarchy"
+  },
+  "Left": {
+    "LocatorString": ".//li[contains(@id, 'left')]",
+    "Text": "Left"
+  }
+}

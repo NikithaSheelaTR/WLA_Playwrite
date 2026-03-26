@@ -1,0 +1,18 @@
+﻿// Maps LargestAwardsHeaders to WebElementInfo
+{
+  "Amount": {
+    "Text": "Amount"
+  },
+  "CountyDistrict": {
+    "Text": "County/District"
+  },
+  "Date": {
+    "Text": "Date"
+  },
+  "Title": {
+    "Text": "Title"
+  },
+  "Type": {
+    "Text": "Type Areas"
+  }
+}

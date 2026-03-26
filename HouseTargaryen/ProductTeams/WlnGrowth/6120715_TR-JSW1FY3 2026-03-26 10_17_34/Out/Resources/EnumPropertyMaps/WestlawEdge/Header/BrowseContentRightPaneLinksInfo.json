@@ -1,0 +1,31 @@
+﻿{
+	// Maps BrowseContentRightPaneLinks to WebElementInfo
+	"Alabama": {
+		"LocatorString": "//span[text() = 'Alabama']",
+		"Text": "Alabama"
+	},
+	"Antitrust": {
+		"LocatorString": "//span[text() = 'Antitrust']",
+		"Text": "Antitrust"
+	},
+	"Argentina": {
+		"LocatorString": "//span[text() = 'Argentina']",
+		"Text": "Argentina"
+	},
+	"Brazil": {
+		"LocatorString": "//span[text() = 'Brazil']",
+		"Text": "Brazil"
+	},
+	"CaseEvaluator": {
+		"LocatorString": "//span[text() = 'Case Evaluator']",
+		"Text": "Case Evaluator"
+	},
+	"Cases": {
+		"LocatorString": "//span[text() = 'Cases']",
+		"Text": "Cases"
+	},
+	"FederalCases": {
+		"LocatorString": "//span[text() = 'Federal Cases']",
+		"Text": "Federal Cases"
+	}
+}

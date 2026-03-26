@@ -1,0 +1,20 @@
+﻿{
+// Maps DisplaySizeOptions to WebElementInfo
+
+	"ExtraLarge": {
+		"Text": "Extra large",
+		"LocatorString": "//input[@id = 'co_disOpt_textSizeExtraLarge']"
+	},
+	"Large": {
+		"Text": "Large",
+		"LocatorString": "//input[@id = 'co_disOpt_textSizeLarge']"
+	},
+	"Medium": {
+		"Text": "Medium",
+		"LocatorString": "//input[@id = 'co_disOpt_textSizeMedium']"
+	},
+	"Small": {
+		"Text": "Small",
+		"LocatorString": "//input[@id = 'co_disOpt_textSizeSmall']"
+	}
+}

@@ -1,0 +1,19 @@
+{
+  // Maps AlertType to WebElementInfo on Alert Page
+  "BillTracker": { "Text": "Bill Tracker" },
+  "BusinessLawCenter": { "Text": "Business Law Center Alert" },
+  "CapitolWatchTrack": { "Text": "Capitol Watch Track" },
+  "CourtWire": { "Text": "Court Wire Alert" },
+  "Docket": { "Text": "Docket Alert" },
+  "DocketTrack": { "Text": "Docket Track" },
+  "JurisdictionAlert": { "Text": "Jurisdiction Alert" },
+  "KeyCite": { "Text": "KeyCite" },
+  "Publication": { "Text": "Publication Alert" },
+  "PairTrack": { "Text": "PAIR Track" },
+  "Primeur": { "Text": "Primeur" },
+  "StatuteMonitor": { "Text": "Statute Monitor" },
+  "TsdrTrack": { "Text": "TSDR Track" },
+  "TrademarkImage": { "Text": "Trademark Image Alert" },
+  "WestClip": { "Text": "WestClip" },
+  "WestlawToday": { "Text": "Westlaw Today" }
+}

@@ -1,0 +1,23 @@
+{
+  // Maps DeliveryMethod to WebElementInfo for vertical delivery component
+  "Download": {
+    "Id": "deliveryLinkRowDownload",
+    "LocatorString": ".//*[@id='deliveryLinkRowDownload']"
+  },
+  "Email": {
+    "Id": "deliveryLinkRowEmail",
+    "LocatorString": ".//*[@id='deliveryLinkRowEmail']"
+  },
+  "ExportToCaseNotebook": {
+    "Id": "deliveryLinkRow1Dropbox",
+    "LocatorString": ".//*[@id='deliveryLinkRow1Dropbox']"
+  },
+  "ExportToKindle": {
+    "Id": "deliveryLinkRow1Kindle",
+    "LocatorString": ".//*[@id='deliveryLinkRow1Kindle']"
+  },
+  "Print": {
+    "Id": "deliveryLinkRowPrint",
+    "LocatorString": ".//*[@id='deliveryLinkRowPrint']"
+  }
+}

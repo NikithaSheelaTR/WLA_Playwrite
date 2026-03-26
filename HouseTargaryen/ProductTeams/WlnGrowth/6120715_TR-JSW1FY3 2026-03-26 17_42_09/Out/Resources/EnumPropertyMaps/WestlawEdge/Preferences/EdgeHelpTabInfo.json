@@ -1,0 +1,21 @@
+﻿{
+  // Maps EdgeHelpTab enumeration to WebElementInfo
+  "DocumentAnalyzerOpponentsWorkMode": {
+    "Locatorstring": "//div[@class='UserSettings-section ']//div[contains(.,'opponent')]//input"
+  },
+  "DocumentAnalyzerSelectedTextMode": {
+    "Locatorstring": "//div[@class='UserSettings-section ']//div[contains(.,'Selected Text')]//input"
+  },
+  "DocumentAnalyzerYourWorkMode": {
+    "Locatorstring": "//div[@class='UserSettings-section ']//div[contains(.,'your work')]//input"
+  },
+  "Folders": {
+    "Locatorstring": "//div[@class='UserSettings-section ']//div[contains(.,'Folders')]//input"
+  },
+  "LitigationAnalytics": {
+    "Locatorstring": "//div[@class='UserSettings-section ']//div[contains(.,'Litigation Analytics')]//input"
+  },
+  "HomePage": {
+    "Locatorstring": "//div[@class='UserSettings-section ']//div[contains(.,'Home Page')]//input"
+  }
+}

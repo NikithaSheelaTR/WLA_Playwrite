@@ -1,0 +1,20 @@
+{
+  // Maps LayoutAndLimitsPageRanges to WebElementInfo
+  "FullText": {
+    "Id": "co_delivery_FullText",
+    "Text": "Full text"
+  },
+  "StarPages": {
+    "Id": "co_delivery_StarPageRanges",
+    "Text": "Star pages"
+  },
+  "SynopsisAndProceduralPostureOnly": {
+    "Id": "co_delivery_SynopsisAndProceduralPostureOnly",
+    "Text": "Synopsis & Procedural Posture Only"
+  },
+  "SynopsisOnly": {
+    "Id": "co_delivery_SynopsisOnly",
+    "Text": "Synopsis Only"
+  }
+}
+

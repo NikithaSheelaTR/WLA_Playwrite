@@ -1,0 +1,8 @@
+{
+  // Maps FormType to BaseTextModel
+  "Checklist": { "Text": "Checklists" },
+  "Clause": { "Text": "Clauses" },
+  "ReadyToBuild": { "Text": "Ready to Build" },
+  "TextForm": { "Text": "Text Forms" },
+  "FillableForm": { "Text": "Fillable Form" }
+}

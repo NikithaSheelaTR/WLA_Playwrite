@@ -1,0 +1,12 @@
+﻿{
+  // Maps CompanyInvestigatorReportOptions to WebElementInfo
+  "CiReportBasic": {
+    "Text": "Company Investigator Report (Basic)"
+  },
+  "CiReportPremier": {
+    "Text": "Company Investigator Report (Premier)"
+  },
+  "Overview": {
+    "Text": "Overview"
+  }
+}

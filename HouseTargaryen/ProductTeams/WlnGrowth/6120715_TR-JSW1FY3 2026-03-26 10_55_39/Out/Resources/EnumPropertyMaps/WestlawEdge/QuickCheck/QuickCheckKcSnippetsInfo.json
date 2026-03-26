@@ -1,0 +1,11 @@
+﻿{
+  // Maps DocAnalyzerKcSnippets to WebElementInfo
+  "Red": {
+    "ClassName": "DA-KCSeverelyNegative",
+    "Text": "DA-KCSeverelyNegative"
+  },
+  "Yellow": {
+    "ClassName": "DA-KCNegative",
+    "Text": "DA-KCNegative"
+  }
+}

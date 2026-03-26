@@ -1,0 +1,12 @@
+﻿{
+  "AIDeepResearch": {
+    "Text": "AI Deep Research",
+    "Id": "aiDeepResearchTab",
+    "LocatorString": "//*[@id='aiDeepResearchTab']"
+  },
+  "KeywordAndBooleanSearch": {
+    "Text": "Keyword & Boolean Search",
+    "Id": "keywordAndBooleanSearchTab",
+    "LocatorString": "//*[@id='keywordAndBooleanSearchTab']"
+  }
+}

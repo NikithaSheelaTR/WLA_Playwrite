@@ -1,0 +1,14 @@
+﻿{
+  "CriminalSource": {
+    "LocatorString": "//div[@class='Browse-widget-content']//span[text()='CriminalSource']",
+    "Text": "CriminalSource"
+  },
+  "FamilySource": {
+    "LocatorString": "//div[@class='Browse-widget-content']//span[text()='FamilySource']",
+    "Text": "FamilySource"
+  },
+  "LawSource": {
+    "LocatorString": "//div[@class='Browse-widget-content']//h3[text()='LawSource']",
+    "Text": "LawSource"
+  }
+}

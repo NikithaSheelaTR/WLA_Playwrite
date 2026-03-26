@@ -1,0 +1,21 @@
+{
+  " Overview": {
+    "Name": "Overview",
+    "LocatorString": "//ol[@id = 'co_delivery_legalAnalyticsTabOptions']//input[@name = 'Overview']"
+  },
+
+  "Experience": {
+    "Name": "Experience",
+    "LocatorString": "//ol[@id = 'co_delivery_legalAnalyticsTabOptions']//input[@name = 'Experience']"
+  },
+
+  "Outcomes": {
+    "Name": "Outcomes",
+    "LocatorString": "//ol[@id = 'co_delivery_legalAnalyticsTabOptions']//input[@name = 'Outcomes']"
+  },
+
+  "Motions": {
+    "Name": "Motions",
+    "LocatorString": "//ol[@id = 'co_delivery_legalAnalyticsTabOptions']//input[@name = 'Motions']"
+  }
+}

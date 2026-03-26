@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{57466214-DA49-4F54-8D02-FA6DCA5D9A1B}</ProjectGuid>
+    <ProjectGuid>{89FEB87A-A91E-C47D-0B4E-D273D42446A9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Framework.Common.Api</RootNamespace>
@@ -703,7 +703,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Framework.Core\Framework.Core.csproj">
+    <ProjectReference Include="..\..\Framework.Core\Framework.Core.csproj">
       <Project>{91a989ae-62db-4883-b528-3f0dcee80f4b}</Project>
       <Name>Framework.Core</Name>
     </ProjectReference>
@@ -727,7 +727,6 @@
       <CachedSettingsPropName>Framework_Common_Api_OnePassV3_OnePassServiceWS</CachedSettingsPropName>
     </WebReferenceUrl>
   </ItemGroup>
-
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

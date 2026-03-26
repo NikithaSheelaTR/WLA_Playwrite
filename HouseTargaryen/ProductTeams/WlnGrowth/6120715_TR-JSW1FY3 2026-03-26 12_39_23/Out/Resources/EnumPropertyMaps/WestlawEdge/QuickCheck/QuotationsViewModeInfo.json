@@ -1,0 +1,15 @@
+﻿{
+	// Maps QuotationsViewMode
+  "AllQuotations": {
+    "Text": "All quotations",
+    "LocatorString": "//label[@for='allIdentified']//h5"
+  },
+  "CasesQuotations": {
+    "Text": "Case quotations",
+    "LocatorString": "//label[@for='allVerified']//h5"
+  },
+	"CasesQuotationsWithDifferences": {
+		"Text": "Case quotations with differences",
+		"LocatorString": "//label[@for='verifiedDifferences']//h5"
+	}
+}

@@ -1,0 +1,5 @@
+{
+  // Maps MyPlanDeliveryOption to WebElementInfo
+  "DownloadAll": { "Id": "pdfDownloadAll" },
+  "DownloadSearchResults": { "Id": "pdfDownloadSearchResults" }
+}

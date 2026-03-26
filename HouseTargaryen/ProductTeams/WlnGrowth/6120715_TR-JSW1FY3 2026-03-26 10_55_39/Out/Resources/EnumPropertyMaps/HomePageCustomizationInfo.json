@@ -1,0 +1,19 @@
+﻿{
+  // Maps HomePageCustomization to WebElementInfo
+
+  "CustomPages": {
+    "Text": "Custom Pages"
+  },
+
+  "Favorites": {
+    "Text": "Favorites"
+  },
+
+  "HotDocuments": {
+    "Text": "Hot Documents"
+  },
+
+  "TodayHighlights": {
+    "Text": "Today's Highlights"
+  }
+}

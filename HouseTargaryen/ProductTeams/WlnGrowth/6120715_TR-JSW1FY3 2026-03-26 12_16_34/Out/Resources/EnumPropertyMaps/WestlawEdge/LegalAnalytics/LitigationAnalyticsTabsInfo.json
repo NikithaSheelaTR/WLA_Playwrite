@@ -1,0 +1,14 @@
+﻿{
+  "Companies": {
+    "Text": "Companies",
+    "LocatorString": "//li[@id='tab-Companies']"
+  },
+  "Judges": {
+    "Text": "Judges",
+    "LocatorString": "//li[@id='tab-Judges']"
+  },
+  "LawFirms": {
+    "Text": "Law Firms",
+    "LocatorString": "//li[@id='tab-LawFirms']"
+  }
+}

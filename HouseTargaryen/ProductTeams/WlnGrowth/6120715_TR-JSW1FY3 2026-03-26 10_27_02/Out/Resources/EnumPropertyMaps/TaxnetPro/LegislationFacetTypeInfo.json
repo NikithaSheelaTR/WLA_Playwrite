@@ -1,0 +1,14 @@
+﻿{
+  "Federal": {
+    "Id": "facet_hierarchy_legislationFEDERAL",
+    "Text": "Federal"
+  },
+  "NonTax": {
+    "Id": "facet_hierarchy_legislationNON_TAX",
+    "Text": "Non-Tax"
+  },
+  "ProvincialTerritorial": {
+    "Id": "facet_hierarchy_legislationPROVINCIAL",
+    "Text": "Provincial/Territorial"
+  }
+}

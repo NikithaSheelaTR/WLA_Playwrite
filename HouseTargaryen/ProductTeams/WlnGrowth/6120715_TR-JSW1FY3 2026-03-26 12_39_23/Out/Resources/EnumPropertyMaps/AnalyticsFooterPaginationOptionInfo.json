@@ -1,0 +1,12 @@
+{
+    // Maps AnalyticsFooterPaginationOption to BaseTextModel
+  "FiftyRows": {
+    "Text": "50 Rows"
+  },
+  "HundredRows": {
+    "Text": "100 Rows"
+  },
+  "TwentyRows": {
+    "Text": "20 Rows"
+  }
+}

@@ -1,0 +1,330 @@
+﻿{
+  "Administration": {
+    "LocatorString": "//input[@value='(TNP_TDR & TNP_CDM)']",
+    "Text": "Administration"
+  },
+  "AllApffCentre": {
+    "LocatorString": "//input[@value='TNP_API TNP_APT TNP_APP']",
+    "Text": "All APFF Centre"
+  },
+  "AllCommentary": {
+    "LocatorString": "//input[@id='co_search_advancedSearch_COMMENTARY_0_All']",
+    "Text": "All Commentary"
+  },
+  "AllComplianceGuides": {
+    "LocatorString": "//input[@value='TNP_CGP TNP_CGB TNP_CGT']",
+    "Text": "All Compliance Guides"
+  },
+  "AllCorporateTaxCentre": {
+    "LocatorString": "//input[@id='co_search_advancedSearch_COMMENTARY_2_All']",
+    "Text": "All Corporate Tax Centre"
+  },
+  "AllCustomsExciseCentre": {
+    "LocatorString": "//input[@id='co_search_advancedSearch_COMMENTARY_4_All']",
+    "Text": "All Customs & Excise Centre"
+  },
+  "AllFederatedPressCentre": {
+    "LocatorString": "//input[@value='TNP_FPC TNP_FPP']",
+    "Text": "All Federated Press Centre"
+  },
+  "AllLearningCentre": {
+    "LocatorString": "//input[@value='TNP_LCE TNP_LCT TNP_LCU']",
+    "Text": "All Learning Centre"
+  },
+  "AllOecdMaterials": {
+    "LocatorString": "//input[@value='TNP_OMC TNP_OTP TNP_OCR TNP_OES TNP_OPS']",
+    "Text": "All OECD Materials"
+  },
+  "AllTaxDisputesResolutionCentre": {
+    "LocatorString": "//input[@id='co_search_advancedSearch_COMMENTARY_8_All']",
+    "Text": "All Tax Disputes & Resolution Centre"
+  },
+  "AllTaxEstatePlanningCentre": {
+    "LocatorString": "//input[@id='co_search_advancedSearch_COMMENTARY_9_All']",
+    "Text": "All Tax & Estate Planning Centre"
+  },
+  "AnnotatedCustomsAct": {
+    "LocatorString": "//input[@value='TNP_KIS']",
+    "Text": "Annotated Customs Act (Kiselbach)"
+  },
+  "Articles": {
+    "LocatorString": "//input[@value='TNP_GAR TNP_DAR TNP_IAT TNP_MAR TNP_SAR TNP_TAR']",
+    "Text": "Articles"
+  },
+  "CanadaGstService": {
+    "LocatorString": "//input[@value='TNP_SHR']",
+    "Text": "Canada GST Service - Sherman"
+  },
+  "CanadaTaxService": {
+    "LocatorString": "//input[@value='TNP_MCT']",
+    "Text": "Canada Tax Service"
+  },
+  "CanadianCustomsComplianceHandbook": {
+    "LocatorString": "//input[@value='TNP_BEN']",
+    "Text": "Canadian Customs Compliance Handbook (Bennett Jones)"
+  },
+  "CanadianPetroleumTaxJournals": {
+    "LocatorString": "//input[@value='TNP_CPT']",
+    "Text": "Canadian Petroleum Tax Journals"
+  },
+  "CanadianTaxationLifeInsurance": {
+    "LocatorString": "//input[@value='TNP_PCU']",
+    "Text": "Canadian Taxation of Life Insurance"
+  },
+  "CasesOfNote": {
+    "LocatorString": "//input[@value='(TNP_TDR & TNP_CNT)']",
+    "Text": "Cases of Note"
+  },
+  "CasesUnderAppeal": {
+    "LocatorString": "//input[@value='(TNP_TDR & TNP_CUA)']",
+    "Text": "Cases Under Appeal"
+  },
+  "CaseTracker": {
+    "LocatorString": "//input[@value='(TNP_TDR & TNP_CTK)']",
+    "Text": "Case Tracker"
+  },
+  "CdHoweInstitute": {
+    "LocatorString": "//input[@value='TNP_CDH']",
+    "Text": "C.D. Howe Institute"
+  },
+  "Charts": {
+    "LocatorString": "//input[@value='(TNP_TDR & TNP_CHT)']",
+    "Text": "Charts"
+  },
+  "Checklists": {
+    "LocatorString": "//input[@value='TNP_CHL']",
+    "Text": "Checklists"
+  },
+  "ClientLetters": {
+    "LocatorString": "//input[@value='TNP_CLL']",
+    "Text": "Client Letters"
+  },
+  "ComparativeTables": {
+    "LocatorString": "//input[@value='TNP_PCT']",
+    "Text": "Comparative Tables"
+  },
+  "CorporateTaxPlanningSeries": {
+    "LocatorString": "//input[@value='TNP_FPC']",
+    "Text": "Corporate Tax Planning Series"
+  },
+  "CorporateTaxReturnProvisionsGuides": {
+    "LocatorString": "//input[@value='TNP_CGB']",
+    "Text": "Corporate Tax Return & Provisions Guides"
+  },
+  "CorporationsPartnershipsTrusts": {
+    "LocatorString": "//input[@value='TNP_TOI']",
+    "Text": "Corporations, Partnerships & Trusts - Tobias"
+  },
+  "CraRoundUp": {
+    "LocatorString": "//input[@id='co_search_advancedSearch_COMMENTARY_2_7']",
+    "Text": "CRA Round-Up"
+  },
+  "CraViewsInFocus": {
+    "LocatorString": "//input[@value='TNP_CVF']",
+    "Text": "CRA Views in Focus"
+  },
+  "CustomsExciseArticles": {
+    "LocatorString": "//input[@value='TNP_ART']",
+    "Text": "CustomExciseArticles"
+  },
+  "Energy": {
+    "LocatorString": "//input[@value='TNP_ENL TNP_EAR TNP_ERU TNP_EEB TNP_EIB']",
+    "Text": "Energy"
+  },
+  "EstatePlanningArticles": {
+    "LocatorString": "//input[@value='TNP_PAR']",
+    "Text": "EstatePlanningArticles"
+  },
+  "EstatePlanningChecklists": {
+    "LocatorString": "//input[@value='TNP_PCK']",
+    "Text": "Estate Planning Checklists"
+  },
+  "EstatePlanningRoundUp": {
+    "LocatorString": "//input[@value='(TNP_TEP & TNP_CRU)']",
+    "Text": "Estate CRA Round-Up"
+  },
+  "ExecutiveBriefs": {
+    "LocatorString": "//input[@value='TNP_GBR TNP_DAR TNP_IAT TNP_MAR TNP_SAR TNP_TAR']",
+    "Text": "Executive Briefs"
+  },
+  "FundamentalsOfCanadianIncomeTax": {
+    "LocatorString": "//input[@value='TNP_KRI']",
+    "Text": "Fundamentals of Canadian Income Tax"
+  },
+  "Glossary": {
+    "LocatorString": "//input[@value='(TNP_TDR & TNP_GLO)']",
+    "Text": "Glossary"
+  },
+  "GlossaryCustomsTerms": {
+    "LocatorString": "//input[@value='TNP_GLO']",
+    "Text": "Glossary of Customs Terms"
+  },
+  "GstHstCaseNotes": {
+    "LocatorString": "//input[@value='TNP_GSN']",
+    "Text": "GST & HST Case Notes"
+  },
+  "GstHstTimes": {
+    "LocatorString": "//input[@value='TNP_GTI']",
+    "Text": "GST & HST Times"
+  },
+  "Impot": {
+    "LocatorString": "//input[@value='TNP_API']",
+    "Text": "Impôt"
+  },
+  "Infographics": {
+    "LocatorString": "//input[@value='(TNP_FIT & (TNP_BCV TNP_BCS TNP_BMT TNP_BTP))']",
+    "Text": "Infographics"
+  },
+  "Insights": {
+    "LocatorString": "//input[@value='TNP_ISE TNP_KIS TNP_BEN']",
+    "Text": "Insights"
+  },
+  "LegislativeHistory": {
+    "LocatorString": "//input[@value='TNP_LEH']",
+    "Text": "Legislative History"
+  },
+  "MiningMetals": {
+    "LocatorString": "//input[@value='TNP_MNW TNP_MAT TNP_MRU TNP_MEB TNP_MIB']",
+    "Text": "Mining & Metals"
+  },
+  "MorinAndPapillon": {
+    "LocatorString": "//input[@value='TNP_MOP']",
+    "Text": "Morin and Papillon"
+  },
+  "Newsletters": {
+    "LocatorString": "//input[@id='co_search_advancedSearch_COMMENTARY_0_12']",
+    "Text": "Newsletters"
+  },
+  "NotesSherman": {
+    "LocatorString": "//input[@value='TNP_LEN']",
+    "Text": "Notes - Sherman"
+  },
+  "OecdBeps": {
+    "LocatorString": "//input[@value='TNP_OPS']",
+    "Text": "OECD BEPS"
+  },
+  "OecdCouncilRecommendations": {
+    "LocatorString": "//input[@value='TNP_OCR']",
+    "Text": "OECD Council Recommendations"
+  },
+  "OecdEconomicSurveys": {
+    "LocatorString": "//input[@value='TNP_OES']",
+    "Text": "OECD Economic Surveys"
+  },
+  "OecdModelConventions": {
+    "LocatorString": "//input[@value='TNP_OMC']",
+    "Text": "OECD Model Conventions"
+  },
+  "OecdTransferPricingGuidelines": {
+    "LocatorString": "//input[@value='TNP_OTP']",
+    "Text": "OECD Transfer Pricing Guidelines"
+  },
+  "OilGas": {
+    "LocatorString": "//input[@value='TNP_ONL TNP_OAR TNP_ORU TNP_OEB TNP_OIB']",
+    "Text": "Oil & Gas"
+  },
+  "OtherCommentary": {
+    "LocatorString": "//input[@value='TNP_CNO']",
+    "Text": "Other Commentary"
+  },
+  "PlanificationFinanciere": {
+    "LocatorString": "//input[@value='TNP_APP']",
+    "Text": "Planification financière, fiscale et successorale"
+  },
+  "PersonalTaxPlanningSeries": {
+    "LocatorString": "//input[@value='TNP_FPP']",
+    "Text": "Personal Tax Planning Series"
+  },
+  "PersonalTaxReturnGuides": {
+    "LocatorString": "//input[@value='TNP_CGP']",
+    "Text": "Personal Tax Return Guides"
+  },
+  "PoundsTaxCaseNotes": {
+    "LocatorString": "//input[@value='TNP_PND']",
+    "Text": "Pound's Tax Case Notes"
+  },
+  "PracticalInsights": {
+    "LocatorString": "//input[@value='(TNP_TDR & TNP_CPI)']",
+    "Text": "Practical Insights"
+  },
+  "PrinciplesOfCanadianIncomeTax": {
+    "LocatorString": "//input[@value='TNP_HOM']",
+    "Text": "Principles of Canadian Income Tax - Law, Li, Magee & Wilkie"
+  },
+  "ProbateTables": {
+    "LocatorString": "//input[@value='TNP_PPT']",
+    "Text": "Probate Tables"
+  },
+  "Submissions": {
+    "LocatorString": "//input[@value='TNP_SUB']",
+    "Text": "Submissions"
+  },
+  "TaxationEstatePlanning": {
+    "LocatorString": "//input[@value='TNP_PBR']",
+    "Text": "Taxation and Estate Planning"
+  },
+  "TaxationTrustsEstates": {
+    "LocatorString": "//input[@value='TNP_PFR']",
+    "Text": "Taxation of Trusts and Estates"
+  },
+  "TaxEvents": {
+    "LocatorString": "//input[@value='TNP_LCE']",
+    "Text": "Tax Events"
+  },
+  "TaxExecutivesInstitute": {
+    "LocatorString": "//input[@value='TNP_TEI']",
+    "Text": "Tax Executives Institute"
+  },
+  "Taxes": {
+    "LocatorString": "//input[@value='TNP_APT']",
+    "Text": "Taxes"
+  },
+  "TaxHyperion": {
+    "LocatorString": "//input[@value='TNP_HYP']",
+    "Text": "Tax Hyperion"
+  },
+  "TaxPlannerGuides": {
+    "LocatorString": "//input[@value='TNP_PPG']",
+    "Text": "Tax Planner Guides"
+  },
+  "TaxPractitionersForum": {
+    "LocatorString": "//input[@value='TNP_CTF']",
+    "Text": "Tax Practitioners' Forum"
+  },
+  "TaxTimes": {
+    "LocatorString": "//input[@value='TNP_TAT']",
+    "Text": "Tax Times"
+  },
+  "TaxTopics": {
+    "LocatorString": "//input[@value='TNP_LCT']",
+    "Text": "Tax Topics"
+  },
+  "TaxUpdates": {
+    "LocatorString": "//input[@value='TNP_LCU']",
+    "Text": "Tax Updates"
+  },
+  "TdrcArticles": {
+    "LocatorString": "//input[@value='(TNP_TDR & (TNP_ART TNP_SAR TNP_SUB))']",
+    "Text": "TdrcArticles"
+  },
+  "TdrcChecklists": {
+    "LocatorString": "//input[@value='(TNP_TDR & TNP_CHL)']",
+    "Text": "TdrcChecklists"
+  },
+  "ToolsSolution": {
+    "LocatorString": "//input[@value='TNP_TAS TNP_CHL']",
+    "Text": "Tools & Solutions"
+  },
+  "TrustTaxReturnGuides": {
+    "LocatorString": "//input[@value='TNP_CGT']",
+    "Text": "Trust Tax Return Guides"
+  },
+  "WcoMaterials": {
+    "LocatorString": "//input[@value='TNP_WCO']",
+    "Text": "WCO Materials"
+  },
+  "YelleIncomeTaxReferences": {
+    "LocatorString": "//input[@value='TNP_YEL']",
+    "Text": "Yelle's Income Tax References"
+  }
+}

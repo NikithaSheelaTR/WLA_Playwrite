@@ -1,0 +1,13 @@
+﻿{
+  // Maps NarrowTab to WebElementInfo
+  "ContentTypes": {
+    "Id": "tab-content-types",
+    "LocatorString": "//*[@id = 'tab-content-types']",
+    "Text": "Content types"
+  },
+  "Filters": {
+    "Id": "tab-facets",
+    "LocatorString": "//*[@id = 'tab-facets']",
+    "Text": "Filters"
+  }
+}

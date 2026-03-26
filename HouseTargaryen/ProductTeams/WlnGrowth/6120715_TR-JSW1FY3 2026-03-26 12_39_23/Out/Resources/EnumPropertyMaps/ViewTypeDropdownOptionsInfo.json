@@ -1,0 +1,16 @@
+{
+  // Maps ViewTypeDropdownOptions to WebElementInfo
+  "EnhancedView": {
+    "Text": "Enhanced View",
+    "Id": "co_chViewTypeEnhanced" 
+  },
+  "StandardView": {
+    "Text": "Standard View",
+    "Id": "co_chViewTypeStandard" 
+  },
+  "EhancedTextView": {
+    "Text": "Enhanced Text View",
+    "Id": "co_chViewTypeAccessible"
+  }
+}
+

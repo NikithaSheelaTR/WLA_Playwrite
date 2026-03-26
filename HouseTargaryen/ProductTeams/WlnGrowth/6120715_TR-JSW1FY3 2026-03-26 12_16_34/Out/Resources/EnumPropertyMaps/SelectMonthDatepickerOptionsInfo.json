@@ -1,0 +1,39 @@
+﻿{
+  // Maps SelectMonthDatepickerOptions enumeration to BaseTextModel
+  "Jan": {
+    "Text": "Jan"
+  },
+  "Feb": {
+    "Text": "Feb"
+  },
+  "Mar": {
+    "Text": "Mar"
+  },
+  "Apr": {
+    "Text": "Apr"
+  },
+  "May": {
+    "Text": "May"
+  },
+  "Jun": {
+    "Text": "Jun"
+  },
+  "Jul": {
+    "Text": "Jul"
+  },
+  "Aug": {
+    "Text": "Aug"
+  },
+  "Sep": {
+    "Text": "Sep"
+  },
+  "Oct": {
+    "Text": "Oct"
+  },
+  "Nov": {
+    "Text": "Nov"
+  },
+  "Dec": {
+    "Text": "Dec"
+  }
+}

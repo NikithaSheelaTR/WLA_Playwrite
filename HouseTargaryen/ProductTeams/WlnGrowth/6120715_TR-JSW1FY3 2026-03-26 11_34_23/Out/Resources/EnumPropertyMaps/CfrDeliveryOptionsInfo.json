@@ -1,0 +1,15 @@
+﻿{
+	// Maps DeliveryOptions to WebElementInfo
+	"Print": {
+		"Text": "Print",
+		"LocatorString": "//input[@id = 'coid_cfrPrintDeliveryOption']"
+	},
+	"Download": {
+		"Text": "Download",
+		"LocatorString": "//input[@id = 'coid_cfrDownloadDeliveryOption']"
+	},
+	"Email": {
+		"Text": "Email",
+		"LocatorString": "//input[@id = 'coid_cfrEmailDeliveryOption']"
+	}
+}

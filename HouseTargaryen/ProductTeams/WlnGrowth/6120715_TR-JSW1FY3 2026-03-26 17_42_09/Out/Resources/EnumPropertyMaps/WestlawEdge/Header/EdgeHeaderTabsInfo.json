@@ -1,0 +1,42 @@
+{
+  // Maps IndigoHeaderTabs to WebElementInfo
+  "ClientId": {
+    "LocatorString": "//button[@class = 'co_clientID_recent co_globalNavLink']"
+  },
+  "CoCounsel": {
+    "LocatorString": "//li[@id='co_aiAssistantContainer']//*[@id='coCounselOpenButton'] | //div/a[text()='CoCounsel']",
+    "Text": "CoCounsel"
+  },
+  "Community": {
+    "LocatorString": "//a[@class='co_dropdownBoxanchorLabel' and contains(text(),'Community')]",
+    "Text": "Community"
+  },
+  "Favorites": {
+    "LocatorString": "//li[@id='co_frequentFavoritesContainer']//a[@class='co_dropdownBoxanchorLabel']",
+    "Text": "Favorites"
+  },
+  "Folders": {
+    "LocatorString": "//div/a[text() = 'Folders' or text()='Dossiers']",
+    "Text": "Folders"
+  },
+  "History": {
+    "LocatorString": "//div/a[text() = 'History' or text()='Historique']",
+    "Text": "History"
+  },
+  "MyLinks": {
+    "LocatorString": "//div/a[text() = 'My links']",
+    "Text": "My links"
+  },
+  "Notifications": {
+    "LocatorString": "//a[@class ='co_dropdownBoxanchorLabel' and text() = 'Notifications']",
+    "Text": "Notifications"
+  },
+  "PreferencesAndSignOut": {
+    "LocatorString": "//button[@id='coid_website_signOffRegion']",
+    "Text": "Preferences and sign out"
+  },
+  "TRAIAssistant": {
+    "LocatorString": "//a[@class='co_dropdownBoxanchorLabel' and contains(text(),'TR AI Assistant')]",
+    "Text": "TR AI Assistant"
+  }
+}

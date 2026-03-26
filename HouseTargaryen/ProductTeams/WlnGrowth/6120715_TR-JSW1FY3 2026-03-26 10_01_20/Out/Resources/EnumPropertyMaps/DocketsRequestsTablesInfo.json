@@ -1,0 +1,5 @@
+{
+  // Maps the DocketsRequestsTables to WebElementInfo
+  "PdfDownloadsDocketsRequests": { "Id": "coid_browseConfig_PDF" },
+  "UpdatesDocketsRequests": { "Id": "coid_browseConfig_DKT" }
+}

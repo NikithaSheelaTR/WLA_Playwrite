@@ -1,0 +1,48 @@
+{
+  // Maps LinksNames to BaseTextModel
+  "CopyrightOfficeRegistrations": {
+    "Text": "Copyright Office Registrations"
+  },
+  "CustomizedLibraries": {
+    "Text": "Customized Libraries"
+  },
+  "FindAndKeyCiteATaxDocument": {
+    "Text": "Find & KeyCite A Tax Document"
+  },
+  "IrsCustomizedLibraries": {
+    "Text": "IRS Customized Libraries"
+  },
+  "IrsExclusiveContent": {
+    "Text": "IRS Exclusive Content"
+  },
+  "IpOfficeFilings": {
+    "Text": "IP Office Filings"
+  },
+  "KpmgCustomizedLibraries": {
+    "Text": "KPMG Customized Libraries"
+  },
+  "PatentOfficeFilings": {
+    "Text": "Patent Office Filings"
+  },
+  "PracticalLawConnectTasks": {
+    "Text": "Practical Law Connect Tasks"
+  },
+  "PwCCustomizedLibraries": {
+    "Text": "PwC Customized Libraries"
+  },
+  "Resources": {
+    "Text": "Resources"
+  },
+  "Tools": {
+    "Text": "Tools"
+  },
+  "TopicalLibraries": {
+    "Text": "Topical Libraries"
+  },
+  "TrademarkOfficeFilings": {
+    "Text": "Trademark Office Filings"
+  },
+  "WestlawNext": {
+    "Text": "WestlawNext"
+  }
+}

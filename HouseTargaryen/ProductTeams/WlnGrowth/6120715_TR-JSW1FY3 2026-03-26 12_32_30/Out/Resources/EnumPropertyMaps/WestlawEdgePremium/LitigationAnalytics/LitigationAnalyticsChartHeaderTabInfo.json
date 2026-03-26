@@ -1,0 +1,42 @@
+{
+  // Maps HeaderTabs to WebElementInfo
+  "CaseType": {
+    "Text": "Case type",
+    "LocatorString": ".//li[contains(@id,'CaseType_tab')]"
+  },
+
+  "Participants": {
+    "Text": "Participants",
+    "LocatorString": ".//li[contains(@id,'Participants_tab')]"
+  },
+
+  "Year": {
+    "Text": "Year",
+    "LocatorString": ".//li[contains(@id,'Year_tab')]"
+  },
+
+  "Volume": {
+    "Text": "Volume",
+    "LocatorString": ".//li[contains(@id, 'Volume_tab')]"
+  },
+
+  "TransactionStatus": {
+    "Text": "Transaction status",
+    "LocatorString": ".//li[@id = 'co_la_dealsMaTableLabel_TransactionStatus_tab']"
+  },
+
+  "Distribution": {
+    "Text": "Distribution",
+    "LocatorString": ".//li[contains(@id,'TableLabel_Distribution_tab')]"
+  },
+
+  "FilingRole": {
+    "Text": "FilingRole",
+    "LocatorString": ".//li[contains(@id,'FilingRole_tab')]"
+  },
+
+  "ConsiderationOffered" : {
+    "Text": "Consideration Offered",
+    "LocatorString": ".//li[contains(@id, 'ConsiderationOffered_tab')]"
+  }
+}

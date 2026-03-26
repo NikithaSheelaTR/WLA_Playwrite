@@ -1,0 +1,12 @@
+﻿{
+  // Maps IPhone Mode Preferences to WebElementInfo
+  "Alerts": {
+    "LocatorString": "//input[@value='Push Alerts']"
+  },
+  "SharedDocuments": {
+    "LocatorString": "//input[@value='Push Shared Documents']"
+  },
+  "SharedFolders": {
+    "LocatorString": "//input[@value='Push Shared Folders']"
+  }
+}

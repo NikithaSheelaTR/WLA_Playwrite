@@ -1,0 +1,20 @@
+﻿{
+  "BothNoteSidebar": {
+    "LocatorString": "//li[@id='co_selectedTextMenuListItem_AddNote']//*[@value='both']"
+  },
+  "BothSidebar": {
+    "LocatorString": "//li[@id='co_selectedTextMenuListItem_Highlight']//*[@value='both']"
+  },
+  "LeftNoteSidebar": {
+    "LocatorString": "//li[@id='co_selectedTextMenuListItem_AddNote']//*[@value='left']"
+  },
+  "LeftSidebar": {
+    "LocatorString": "//li[@id='co_selectedTextMenuListItem_Highlight']//*[@value='left']"
+  },
+  "RightNoteSidebar": {
+    "LocatorString": "//li[@id='co_selectedTextMenuListItem_AddNote']//*[@value='right']"
+  },
+  "RightSidebar": {
+    "LocatorString": "//li[@id='co_selectedTextMenuListItem_Highlight']//*[@value='right']"
+  }
+}

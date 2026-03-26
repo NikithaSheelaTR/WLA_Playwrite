@@ -1,0 +1,34 @@
+﻿{
+  "AreaOfLaw": {
+    "LocatorString": ".//*[@id='tab_athensAreaOfLaw']",
+    "Text": "Area of law"
+  },
+  "CauseOfAction": {
+    "LocatorString": ".//*[@id='tab_athensCauseOfAction']",
+    "Text": "Cause of action"
+  },
+  "FactPattern": {
+    "LocatorString": ".//*[@id='tab_athensFactPattern']",
+    "Text": "Fact pattern"
+  },
+  "GoverningLaw": {
+    "LocatorString": ".//*[@id='tab_athensGoverningLaw']",
+    "Text": "Governing law"
+  },
+  "IndustryType": {
+    "LocatorString": ".//*[@id='tab_athensIndustryType']",
+    "Text": "Industry type"
+  },
+  "LegalIssueAndOutcome": {
+    "LocatorString": ".//*[@id='tab_athensLegalIssue']",
+    "Text": "Legal issue"
+  },
+  "MotionTypeAndOutcome": {
+    "LocatorString": ".//*[@id='tab_athensMotionType']",
+    "Text": "Motion type"
+  },
+  "PartyType": {
+    "LocatorString": ".//*[@id='tab_athensPartyType']",
+    "Text": "Party type"
+  }
+}

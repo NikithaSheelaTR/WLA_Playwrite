@@ -1,0 +1,23 @@
+{
+  "FindCaseByCitation": {
+    "Id": "co_queryBuilderWidget_findLaRefCaseByCitationValue"
+  },
+  "FindCaseByName": {
+    "Id": "co_queryBuilderWidget_findLaRefCaseByNameValue"
+  },
+  "FindCommentaryByCitation": {
+    "Id": "co_queryBuilderWidget_findLaRefCommentaryByCitationValue"
+  },
+  "FindLegislationByCitation": {
+    "Id": "co_queryBuilderWidget_findLaRefLegislationByCitationValue"
+  },
+  "FindLegislationByCitationSection": {
+    "Id": "co_queryBuilderWidget_findLaRefLegislationByCitationSection"
+  },
+  "FindLegislationByName": {
+    "Id": "co_queryBuilderWidget_findLaRefLegislationByNameValue"
+  },
+  "FindLegislationByNameSection": {
+    "Id": "co_queryBuilderWidget_findLaRefLegislationByNameSection"
+  }
+}

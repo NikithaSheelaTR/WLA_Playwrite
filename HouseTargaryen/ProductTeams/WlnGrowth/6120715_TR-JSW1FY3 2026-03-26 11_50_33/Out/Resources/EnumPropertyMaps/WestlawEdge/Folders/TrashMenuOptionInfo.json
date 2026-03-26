@@ -1,0 +1,10 @@
+﻿{
+  "PermanentlyDelete": {
+    "Text": "Permanently delete",
+    "LocatorString": ".//li[./span[text() = 'Permanently delete']]"
+  },
+   "PermanentlyDeleteAll": {
+   "Text": "Permanently delete all",
+    "LocatorString": ".//li[./span[text() = 'Permanently delete all']]"
+  }
+}

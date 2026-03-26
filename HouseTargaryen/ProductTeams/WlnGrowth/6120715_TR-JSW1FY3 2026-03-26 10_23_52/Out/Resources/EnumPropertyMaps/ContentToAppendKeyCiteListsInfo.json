@@ -1,0 +1,155 @@
+{
+  // Maps ContentToAppendKeyCiteLists to WebElementInfo
+  "ExcludePleadingsBriefsAndOtherCourtDocs": {
+    "Id": "coid_chkDdcContentAppExcludePleadingsBriefsOther",
+    "Text": "Exclude Pleadings, Briefs, and other Court Documents"
+  },
+  "IncludeHistoryGraphic": {
+    "Id": "coid_chkDdcContentAppellateHistoryDiagram",
+    "Text": "Include History graphic"
+  },
+  "ListOfAllBillDrafts": {
+    "Id": "coid_chkDdcContentAppNBillDrafts",
+    "Text": "List of all Bill Drafts"
+  },
+  "ListOfAllHistoryReferences": {
+    "Id": "coid_chkDdcContentAppellateHistory",
+    "Text": "List of all History references"
+  },
+  "ListOfAllLegislativeHistoryMaterials": {
+    "Id": "coid_chkDdcContentAppFirstNReportsAndMaterials",
+    "Text": "List of all Legislative History Materials"
+  },
+  "ListOfAllNegativeTreatments": {
+    "Id": "coid_chkDdcContentAppAllNNegTreatments",
+    "Text": "List of all Negative Treatments"
+  },
+  "ListOfAllRegulatoryHistory": {
+    "Id": "coid_chkDdcContentAppRegulatoryHistory",
+    "Text": "List of all Regulatory History"
+  },
+  "ListOfAllRelatedOpinions": {
+    "Id": "coid_chkDdcContentAppAllNRelatedOpinions"
+  },
+  "ListOfAllStatutesAffected": {
+    "Id": "coid_chkDdcContentStatutesAffected",
+    "Text": "List of all Statutes Affected"
+  },
+  "ListOfAllValidityReferences": {
+    "Id": "coid_chkDdcContentAppAllNStatuteHistoryNegativeTreatments",
+    "Text": "List of all Validity references"
+  },
+  "ListOfFilingsCheckbox": {
+    "Id": "coid_chkDdcContentFillings"
+  },
+  "ListOfFirst500CitingRefs": {
+    "Id": "coid_chkDdcContentAppCitingRefs",
+    "Text": "List of the first Citing References"
+  },
+  "ListOfFirst500TableOfAuthoritiesRefs": {
+    "Id": "coid_chkDdcContentTableOfAuthorities",
+    "Text": "List of the first 500 Table of Authorities references"
+  },
+  "NoValidityResults": {
+    "LocatorString": "//input[@id='coid_chkDdcContentAppValidityNoRes']/parent::*/parent::*/p",
+    "Text": "There are no Validity results for this citation",
+    "Id": "coid_chkDdcContentAppValidityNoRes",
+    "TagName": "Zero results notification"
+  },
+  "NoBillDraftsResults": {
+    "LocatorString": "//input[@id='coid_chkDdcContentAppBillDraftsNoRes']/parent::*/parent::*/p",
+    "Text": "There are no Bill Drafts for this citation",
+    "Id": "coid_chkDdcContentAppBillDraftsNoRes",
+    "TagName": "Zero results notification"
+  },
+  "NoLegislativeHistoryResults": {
+    "LocatorString": "//input[@id='coid_chkDdcContentAppLegislativeMaterialsNoRes']/parent::*/parent::*/p",
+    "Text": "There are no Legislative History Materials for this citation",
+    "Id": "coid_chkDdcContentAppLegislativeMaterialsNoRes",
+    "TagName": "Zero results notification"
+  },
+  "NoNotesOfDecisionsResults": {
+    "LocatorString": "//input[@id='coid_chkDdcContentAppNotesOfDecisionsNoRes']/parent::*/parent::*/p",
+    "Text": "There are no Notes of Decisions for this citation",
+    "Id": "coid_chkDdcContentAppNotesOfDecisionsNoRes",
+    "TagName": "Zero results notification"
+  },
+  "NoContextAnalysisResults": {
+    "LocatorString": "//input[@id='coid_chkDdcContentAppContextAnalysisNoRes']/parent::*/parent::*/p",
+    "Text": "There are no Context & Analysis results for this citation",
+    "Id": "coid_chkDdcContentAppContextAnalysisNoRes",
+    "TagName": "Zero results notification"
+  },
+  "NoEditorsRevisorsResults": {
+    "LocatorString": "//input[@id='coid_chkDdcContentAppEditorialMaterialsNoRes']/parent::*/parent::*/p",
+    "Text": "There are no Editor's and Revisor's Notes for this citation",
+    "Id": "coid_chkDdcContentAppEditorialMaterialsNoRes",
+    "TagName": "Zero results notification"
+  },
+  "NoCitingReferencesResults": {
+    "LocatorString": "//input[@id='coid_chkDdcContentAppCitingRefsNoRes']/parent::*/parent::*/p",
+    "Text": "There are no Citing References for this citation",
+    "Id": "coid_chkDdcContentAppCitingRefsNoRes",
+    "TagName": "Zero results notification"
+  },
+  "NoNegativeTreatmentResults": {
+    "LocatorString": "//input[@id='coid_chkDdcContentAppNegTreatmentRefsNoRes']/parent::*/parent::*/p",
+    "Text": "There are no Negative Treatment results for this citation",
+    "Id": "coid_chkDdcContentAppNegTreatmentRefsNoRes",
+    "TagName": "Zero results notification"
+  },
+  "NoHistoryResults": {
+    "LocatorString": "//input[@id='coid_chkDdcContentAppHistoryRefsNoRes']/parent::*/parent::*/p",
+    "Text": "There are no History results for this citation",
+    "Id": "coid_chkDdcContentAppHistoryRefsNoRes",
+    "TagName": "Zero results notification"
+  },
+  "NoFilings": {
+    "LocatorString": "//input[@id='coid_chkDdcContentAppFilingsNoRes']/parent::*/parent::*/p",
+    "Text": "There are no Filings for this citation",
+    "Id": "coid_chkDdcContentAppFilingsNoRes",
+    "TagName": "Zero results notification"
+  },
+  "NoTableAuthoritiesResults": {
+    "LocatorString": "//input[@id='coid_chkDdcContentAppTableOfAuthoritiesNoRes']/parent::*/parent::*/p",
+    "Text": "There are no Table of Authorities results for this citation",
+    "Id": "coid_chkDdcContentAppTableOfAuthoritiesNoRes",
+    "TagName": "Zero results notification"
+  },
+  "NoBillActivityResults": {
+    "LocatorString": "//input[@id='coid_chkDdcContentAppBillActivityNoRes']/parent::*/parent::*/p",
+    "Text": "There are no Bill Activity results for this citation",
+    "Id": "coid_chkDdcContentAppBillActivityNoRes",
+    "TagName": "Zero results notification"
+  },
+  "NoBillTrackingResults": {
+    "LocatorString": "//input[@id='coid_chkDdcContentAppBillTrackingNoRes']/parent::*/parent::*/p",
+    "Text": "There are no Bill Tracking results for this citation",
+    "Id": "coid_chkDdcContentAppBillTrackingNoRes",
+    "TagName": "Zero results notification"
+  },
+  "NoReferences": {
+    "LocatorString": "//input[@id='coid_chkDdcContentAppProfessionalReferencesNoRes']/parent::*/parent::*/p",
+    "Text": "There are no References for this citation",
+    "Id": "coid_chkDdcContentAppProfessionalReferencesNoRes",
+    "TagName": "Zero results notification"
+  },
+  "NoRegulatoryHistoryResults": {
+    "LocatorString": "//input[@id='coid_chkDdcContentAppRegulatoryHistoryNoRes']/parent::*/parent::*/p",
+    "Text": "There are no Regulatory History results for this citation",
+    "Id": "coid_chkDdcContentAppRegulatoryHistoryNoRes",
+    "TagName": "Zero results notification"
+  },
+  "NoRelatedOpinionsDocketsResults": {
+    "LocatorString": "//input[@id='coid_chkDdcContentAppOpinionsNoRes']/parent::*/parent::*/p",
+    "Text": "There are no Related Opinions/Dockets for this citation",
+    "Id": "coid_chkDdcContentAppOpinionsNoRes",
+    "TagName": "Zero results notification"
+  },
+  "NoStatutesAffectedResults": {
+    "LocatorString": "//input[@id='coid_chkDdcContentAppStatutesAffectedNoRes']/parent::*/parent::*/p",
+    "Text": "There are no Statutes Affected results for this citation",
+    "Id": "coid_chkDdcContentAppStatutesAffectedNoRes",
+    "TagName": "Zero results notification"
+  }
+}
