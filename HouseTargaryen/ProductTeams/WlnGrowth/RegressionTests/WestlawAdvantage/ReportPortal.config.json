@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/reportportal/agent-net-vstest/master/ReportPortal.VSTest.TestLogger/ReportPortal.config.schema",
+  "enabled": true,
+  "server": {
+    "url": "https://reportportal-cr.1129.aws-int.thomsonreuters.com",
+    "project": "WLR_WESTLAW_REGRESSION",
+    "apiKey": "reportportalmay5_m_60GwsxQses0_7ZO_hBlkzZRlvyOmG3-3WSrsu3AKwLWEW-EHd4PepZskZQGyqP"
+  },
+  "launch": {
+    "name": "WL_Advantage_Playwright",
+    "description": "Test run for WlnGrowth WestlawAdvantage Playwright Tests",
+    "debugMode": false,
+    "attributes": [
+      { "key": "Technology", "value": ".NET" },
+      { "key": "Product", "value": "WestlawAdvantage" },
+      { "key": "Browser", "value": "CH" },
+      { "key": "Category", "value": "Playwright" }
+    ]
+  },
+  "rootNamespaces": [
+  ]
+}

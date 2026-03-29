@@ -1,0 +1,115 @@
+name: WL_DNet_WL_Advantage_Playwright
+
+run-name: ${{ github.workflow }}
+
+on:
+  repository_dispatch:
+    types: [WL_Weekly_C3_Trigger]
+  workflow_dispatch:
+    inputs:
+      TEST_SITE_DotNet:
+        description: 'Setting to default TEST_SITE_DotNet based on selection'
+        required: true
+        type: choice
+        default: 'QEDAWS'
+        options:
+          - DEMOAWS
+          - DEMOAWS2
+          - QEDAWS
+          - QEDAWS2
+          - DEMO
+          - QEDAAWS
+
+jobs:
+  EC2Creation-TestExecution:
+    runs-on:
+      - codebuild-a206472-codebuid-WL-${{ github.run_id }}-${{ github.run_attempt }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Test execution on repository_dispatch
+        if: ${{ github.event_name == 'repository_dispatch' }}
+        uses: ./.github/actions/dotnet
+        with:
+          ami_id: ${{ vars.AMI_ID }}
+          bat_file: WL_DNet_WL_Advantage_Playwright.bat
+          Token: ${{ secrets.GH_PAT }}
+          module: dotnet
+          TEST_ENVIRONMENT: "${{ github.event.client_payload.TEST_SITE_DotNet }}"
+          PROD_DB_VALUE: ${{ secrets.PROD_DB_VALUE }}
+
+      - name: Test execution on workflow_dispatch
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        uses: ./.github/actions/dotnet
+        with:
+          ami_id: ${{ vars.AMI_ID }}
+          bat_file: WL_DNet_WL_Advantage_Playwright.bat
+          Token: ${{ secrets.GH_PAT }}
+          module: dotnet
+          TEST_ENVIRONMENT: "${{ github.event.inputs.TEST_SITE_DotNet }}"
+          PROD_DB_VALUE: ${{ secrets.PROD_DB_VALUE }}
+
+      - name: Check SSM Command Status and Retrieve Logs
+        shell: pwsh
+        run: |
+          $Env:AWS_MAX_ATTEMPTS=20
+          $instanceId = $env:INSTANCE_ID
+          $commandId = $env:COMMAND_ID
+          $documentName = "AWS-RunPowerShellScript"
+          $logFile = "SSM_Command_Output.txt"
+          Write-Host "SSM Command ID: $commandId" | Tee-Object -FilePath $logFile -Append
+          
+          $status = "InProgress"
+          
+          while ($status -eq "InProgress") {
+              Start-Sleep -Seconds 5
+          
+              # Fetch command invocation details
+              $invocation = aws ssm get-command-invocation `
+                --command-id $commandId `
+                --instance-id $instanceId `
+                --output json | ConvertFrom-Json
+          
+              $status = $invocation.Status
+              $stdout = $invocation.StandardOutputContent
+              $stderr = $invocation.StandardErrorContent
+          
+              "Current Status: $status" | Tee-Object -FilePath $logFile -Append               
+              # Exit loop if command is no longer running
+              if ($status -ne "InProgress") { break }
+          }
+          "SSM Command Completed with status: $status" | Tee-Object -FilePath $logFile -Append
+
+      - name: Copy the log file to S3
+        run: |
+          $Env:AWS_MAX_ATTEMPTS=20
+          aws ssm send-command `
+             --instance-ids $env:INSTANCE_ID `
+             --document-name "AWS-RunPowerShellScript" `
+             --parameters 'commands=["aws s3 cp C:\\Clone\\${{ github.workflow }}.txt s3://a206472-cobalt-test-bucket/Output/"]'
+
+      - name: Print the log file.
+        run: |
+          $Env:AWS_MAX_ATTEMPTS=20
+          do {
+            $fileExists = aws s3 ls "s3://a206472-cobalt-test-bucket/Output/${{ github.workflow }}.txt"
+            if (-not $fileExists) {
+                Write-Host "File not found, waiting..."
+                Start-Sleep -Seconds 10
+            }
+          } while (-not $fileExists)
+          aws s3 cp s3://a206472-cobalt-test-bucket/Output/${{ github.workflow }}.txt ${{ github.workspace}}\${{ github.workflow }}.txt
+          ls
+          cat ${{ github.workflow }}.txt
+
+      - name: Deleting the Log file in S3
+        run: |
+          aws s3 rm s3://a206472-cobalt-test-bucket/Output/${{ github.workflow }}.txt
+          ls
+          cat ${{ github.workflow }}.txt
+
+      - name: Delete the EC2 instance
+        run: |
+          $instanceId = $env:INSTANCE_ID
+          aws ec2 terminate-instances --instance-ids $instanceId
