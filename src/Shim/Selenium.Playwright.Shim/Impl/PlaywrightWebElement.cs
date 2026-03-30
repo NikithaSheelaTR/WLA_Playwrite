@@ -34,7 +34,12 @@ namespace Selenium.Playwright.Shim.Impl
             {
                 try
                 {
-                    return SyncHelper.RunSync(() => Locator.InnerTextAsync());
+                    // Use JavaScript to get innerText (matches Selenium behavior)
+                    // but fall back gracefully if the element is detached or not yet rendered.
+                    // innerText respects CSS visibility and collapses whitespace like Selenium.
+                    // textContent does NOT � it includes hidden elements and raw whitespace.
+                    return SyncHelper.RunSync(() => Locator.EvaluateAsync<string>(
+                        "el => el.innerText != null ? el.innerText : (el.textContent || '')"));
                 }
                 catch (PlaywrightException)
                 {
@@ -82,13 +87,81 @@ namespace Selenium.Playwright.Shim.Impl
 
         public void Clear()
         {
-            SyncHelper.RunSync(() => Locator.ClearAsync());
+            SyncHelper.RunSync(() => Locator.ClearAsync(new Microsoft.Playwright.LocatorClearOptions
+            {
+                Timeout = 5000
+            }));
         }
 
         public void Click()
         {
             PlaywrightWebDriver.Trace($"Click: locator={Locator}");
-            SyncHelper.RunSync(() => Locator.ClickAsync());
+
+            // Check if the element (or its closest <a> ancestor) has target="_blank"
+            // which would open a new tab/popup. Notify the driver so WindowHandles
+            // can wait for the new page to appear.
+            bool mightOpenPopup = false;
+            try
+            {
+                mightOpenPopup = SyncHelper.RunSync(() => Locator.EvaluateAsync<bool>(
+                    "el => { var a = el.closest ? el.closest('a') : null; return !!(a && a.target === '_blank'); }"));
+            }
+            catch { /* element might not support closest, proceed with normal click */ }
+
+            if (mightOpenPopup)
+            {
+                _driver.NotifyClickMayOpenPopup();
+                PlaywrightWebDriver.Trace("Click: target=_blank detected, using RunAndWaitForPopup");
+                try
+                {
+                    SyncHelper.RunSync(async () =>
+                    {
+                        var popupTask = _driver.Page.WaitForPopupAsync(
+                            new Microsoft.Playwright.PageWaitForPopupOptions { Timeout = 10000 });
+                        await Locator.ClickAsync(new Microsoft.Playwright.LocatorClickOptions { Timeout = 5000 });
+                        await popupTask;
+                    });
+                }
+                catch (TimeoutException)
+                {
+                    PlaywrightWebDriver.Trace("Click: popup wait timed out, proceeding anyway");
+                }
+            }
+            else
+            {
+                // Selenium Click() does not auto-wait — it clicks immediately or
+                // throws. Playwright auto-waits for visibility, stability, and
+                // actionability.  Use the context default (5s) rather than
+                // Playwright's built-in 30s so the test framework can retry quickly.
+                try
+                {
+                    SyncHelper.RunSync(() => Locator.ClickAsync(new Microsoft.Playwright.LocatorClickOptions
+                    {
+                        Timeout = 5000
+                    }));
+                }
+                catch (Exception ex) when (ex.Message.Contains("element is not enabled"))
+                {
+                    // Selenium allows clicking disabled elements (no exception,
+                    // click dispatched but has no effect in the browser — same
+                    // as normal user click on a disabled button).  Use Force to
+                    // bypass Playwright's actionability check.
+                    PlaywrightWebDriver.Trace("Click: element disabled, retrying with Force=true (Selenium compat)");
+                    SyncHelper.RunSync(() => Locator.ClickAsync(new Microsoft.Playwright.LocatorClickOptions
+                    {
+                        Timeout = 5000,
+                        Force = true
+                    }));
+                }
+                catch (Exception ex) when (ex.Message.Contains("waiting for scheduled navigations to finish"))
+                {
+                    // Selenium click returns immediately after dispatching the
+                    // click event. Playwright additionally waits for navigations
+                    // triggered by the click. Swallow the navigation timeout to
+                    // match Selenium behaviour.
+                    PlaywrightWebDriver.Trace("Click: navigation wait timed out after click, proceeding (Selenium compat)");
+                }
+            }
         }
 
         public string GetAttribute(string attributeName)
@@ -152,7 +225,7 @@ namespace Selenium.Playwright.Shim.Impl
                 {
                     // Use PressSequentiallyAsync to match Selenium SendKeys behavior.
                     // Selenium fires keyDown/keyPress/keyUp for each character.
-                    SyncHelper.RunSync(() => Locator.PressSequentiallyAsync(text, new Microsoft.Playwright.LocatorPressSequentiallyOptions { Delay = 50 }));
+                    SyncHelper.RunSync(() => Locator.PressSequentiallyAsync(text, new Microsoft.Playwright.LocatorPressSequentiallyOptions { Delay = 50, Timeout = 5000 }));
                 }
             }
         }

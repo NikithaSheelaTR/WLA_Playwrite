@@ -222,42 +222,55 @@
         /// </param>
         public static void WaitForFileDownload(string folderPath, string fileName)
         {
+            // Ensure directory exists before waiting for the file
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
+            string fullPath = Path.Combine(folderPath, fileName);
+
             // Set timeout to the time you want to quit
             DateTime timeout = DateTime.Now.Add(TimeSpan.FromSeconds(60));
 
-            while (!File.Exists(Path.Combine(folderPath, fileName)))
+            while (!File.Exists(fullPath))
             {
                 if (DateTime.Now > timeout)
                 {
-                    Console.WriteLine("Application timeout; app_boxed could not be created; try again");
-                    break;
+                    throw new FileNotFoundException(
+                        $"File download timed out after 60 seconds. File not found: {fullPath}",
+                        fullPath);
                 }
 
                 Thread.Sleep(TimeSpan.FromSeconds(1));
             }
 
-            var watcher = new FileSystemWatcher(folderPath, fileName);
-            watcher.Changed += (sender, e) =>
+            // Wait until the file is fully written and can be opened for reading
+            timeout = DateTime.Now.Add(TimeSpan.FromSeconds(60));
+            while (DateTime.Now <= timeout)
             {
                 try
                 {
-                    Thread.Sleep(100); // hack for timing issues
-                    File.Open(
-                        e.FullPath,
-                        FileMode.Open,
-                        FileAccess.Read,
-                        FileShare.Read);
+                    using (File.Open(fullPath, FileMode.Open, FileAccess.Read, FileShare.Read))
+                    {
+                        // File is accessible, download is complete
+                        return;
+                    }
                 }
                 catch (IOException)
                 {
-                    // we couldn't open the file
-                    // this is probably because the copy operation is not done
-                    // just swallow the exception
-                    return;
+                    // File is still being written, wait and retry
+                    Thread.Sleep(500);
                 }
+                catch (UnauthorizedAccessException)
+                {
+                    // File is still locked, wait and retry
+                    Thread.Sleep(500);
+                }
+            }
 
-                // now we have a handle to the file
-            };
+            throw new IOException(
+                $"File exists but could not be opened for reading after 60 seconds: {fullPath}");
         }
     }
 }

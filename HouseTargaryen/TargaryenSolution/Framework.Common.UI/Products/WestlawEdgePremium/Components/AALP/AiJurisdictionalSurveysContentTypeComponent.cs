@@ -2,7 +2,6 @@
 {
     using Framework.Common.UI.Products.Shared.Components;
     using Framework.Common.UI.Utils.QualityLibraryFacade.Library.Extensions;
-    using java.awt;
     using OpenQA.Selenium;
     using System.Collections.Generic;
     using System.Linq;
@@ -12,7 +11,7 @@
     /// </summary>
     public class AiJurisdictionalSurveysContentTypeComponent : BaseModuleRegressionComponent
     {
-        private static readonly By ContentTypeContainerLocator = By.XPath("//div[contains(@class, 'contentTypeCard']");
+        private static readonly By ContentTypeContainerLocator = By.XPath("//div[contains(@class, 'contentTypeCard')]");
         
         private const string ContentTypeLctMask = "saf-checkbox[current-value='{0}']";
         private const string ContentTypeCheckboxScript = "return(arguments[0].shadowRoot.querySelector('input[id=control]'));";

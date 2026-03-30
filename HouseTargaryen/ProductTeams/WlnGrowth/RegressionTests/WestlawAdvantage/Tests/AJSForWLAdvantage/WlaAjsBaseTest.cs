@@ -5,9 +5,14 @@
     using Framework.Core.Utils.Execution;
     using Framework.Common.UI.Products.WestlawAdvantage.Pages;
     using Framework.Common.UI.Products.WestlawEdgePremium.Pages.AALP;
+    using System.Linq;
     using System.Threading;
     using Framework.Common.UI.Products.Shared.Managers;
     using Framework.Common.UI.Raw.WestlawEdge.Pages;
+    using Framework.Core.CommonTypes.Enums;
+    using Framework.Core.CommonTypes.Constants;
+    using Framework.Core.CommonTypes.Configuration;
+    using Framework.Core.Utils.Extensions;
 
     /// <summary>
     /// AJS on WLA Base Test class
@@ -16,6 +21,16 @@
     public class WlaAjsBaseTest : WlaBaseTest
     {
         protected const string AjsTestFolder = "WlaAjsTestFolder";
+
+        protected override void InitializeRoutingPageSettings()
+        {
+            base.InitializeRoutingPageSettings();
+
+            this.Settings.AppendValues(
+                EnvironmentConstants.FeatureAccessControlsOn,
+                SettingUpdateOption.Append,
+                FeatureAccessControl.LinkBuilder);
+        }
 
         /// <summary>
         /// Go to AJS landing page by clicking the feature card on home page.
@@ -32,7 +47,8 @@
 
             Thread.Sleep(2000);
             jurisdictionalSurveysPage.ClosePendoMessage();
-            SafeMethodExecutor.ExecuteUntil(() => jurisdictionalSurveysPage.PageDescription.Displayed, timeoutFromSec: 10);
+            SafeMethodExecutor.WaitUntil(() => jurisdictionalSurveysPage.PageDescription.Displayed, timeoutFromSec: 10);
+            SafeMethodExecutor.WaitUntil(() => jurisdictionalSurveysPage.Jurisdictions.SelectedCountLabel.Displayed, timeoutFromSec: 15);
 
             return jurisdictionalSurveysPage;
         }
@@ -51,6 +67,25 @@
                 researchOrganizerPage.ClearFolderGrid();
             }
             researchOrganizerPage.Header.ClickLogo<AdvantageHomePage>();
+        }
+
+        /// <summary>
+        /// Wait for survey results to fully load by polling until jurisdiction labels are present
+        /// and the Federal Statutes heading is visible (which indicates toolbar buttons are enabled).
+        /// WLA AI surveys can take several minutes to generate; use a 10-minute timeout.
+        /// </summary>
+        protected void WaitForSurveyResultsLoaded(AiJurisdictionalSurveysPage surveysPage, int timeoutFromSec = 600)
+        {
+            SafeMethodExecutor.WaitUntil(
+                () => surveysPage.WlaSurveyResult.GetAllJurisdictionLabels()
+                    .Any(text => !string.IsNullOrWhiteSpace(text)),
+                timeoutFromSec: timeoutFromSec);
+            Thread.Sleep(6000); // Extra wait to ensure all elements are loaded after labels are present
+            // Wait for the Federal Statutes heading to appear — this indicates the survey is fully
+            // rendered and the toolbar buttons (save-to-folder, copy-link) are enabled.
+            SafeMethodExecutor.WaitUntil(
+                () => surveysPage.WlaSurveyResult.FederalStatutesRegulationsHeading.Displayed,
+                timeoutFromSec: 60);
         }
     }
 }

@@ -82,7 +82,14 @@
 
             while (stopwatch.Elapsed.TotalSeconds < timeoutFromSec && !isConditionMet)
             {
-                isConditionMet = method();
+                try
+                {
+                    isConditionMet = method();
+                }
+                catch (Exception)
+                {
+                    isConditionMet = false;
+                }
 
                 if (!isConditionMet)
                 {

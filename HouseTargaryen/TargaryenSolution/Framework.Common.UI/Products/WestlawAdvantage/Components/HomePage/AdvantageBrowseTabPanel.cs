@@ -24,7 +24,7 @@
     /// </summary>
     public class AdvantageBrowseTabPanel : TabPanel<AdvantageBrowseTab>
     {
-        private static readonly By CurrentActiveTabLocator = By.XPath("//li[(@class = 'Tab Tab--active f1-phase1-tab')]");
+        private static readonly By CurrentActiveTabLocator = By.XPath("//li[contains(@class, 'Tab--active') and contains(@class, 'f1-phase1-tab')]");
         private static readonly By TabLabelLocator = By.XPath("//*[@id='coid_browseTabs']//*[contains(@id, 'tab')]");
         private static readonly By GearButtonLocator = By.XPath("//*[@class='icon25 icon_gear-gray']");
 

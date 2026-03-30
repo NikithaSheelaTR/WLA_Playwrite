@@ -17,8 +17,8 @@
     public class AiJurisdictionalSurveysResultComponent : BaseModuleRegressionComponent
     {
         private static readonly By ResultsContainerLocator = By.XPath("//div[contains(@class,'resultJurisdiction')]");
-        private static readonly By QuestionLabelLocator = By.XPath(".//*[@class='__resultsQuestion--Z7ISF25gugcWzcAU3CSN']/h3");
-        private static readonly By SummaryLabelLocator = By.XPath(".//*@class='__resultsSummaryContent--toywiWFAJuqNKJ1F5knn']");
+        private static readonly By QuestionLabelLocator = By.XPath("//*[@class='__resultsQuestion--Z7ISF25gugcWzcAU3CSN']/h2");
+        private static readonly By SummaryLabelLocator = By.XPath(".//*[@class='__resultsSummaryContent--toywiWFAJuqNKJ1F5knn']");
         private static readonly By ResultItemLocator = By.XPath(".//*[@class='__resultJurisdiction--uvjNgz4aJd9WpypGQBc2']");
         private static readonly By TimeStampLabelLocator = By.XPath("//time[contains(@class,'resultsTimeStamp')]");
         private static readonly By DisclaimerLabelLocator = By.XPath("//p[contains(@class,'disclaimer')]");
@@ -36,7 +36,7 @@
         /// <summary>
         /// Question label
         /// </summary>
-        public ILabel QuestionLabel => new Label(this.ComponentLocator, QuestionLabelLocator);
+        public ILabel QuestionLabel => new Label(QuestionLabelLocator);
 
         /// <summary>
         /// Survey results summary label

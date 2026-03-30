@@ -9,8 +9,8 @@
     /// </summary>
     public class AiJurisdictionalSurveysQueryBoxComponent : BaseModuleRegressionComponent
     {
-        private static readonly By QueryBoxContainerLocator = By.XPath("//div[@class='__questionCard--dvC65iElitomSfvnXpp6']");
-        private static readonly By QuestionInputAreaLocator = By.XPath(".//saf-text-area[@id='fiftyStateQuestionInput']");
+        private static readonly By QueryBoxContainerLocator = By.XPath(".//div[contains(@class,'__questionCard-')]");
+        private static readonly By QuestionInputAreaLocator = By.XPath("//saf-text-area[@id='fiftyStateQuestionInput']");
 
         /// <summary>
         /// Enter question in the input area

@@ -103,11 +103,13 @@ namespace Selenium.Playwright.Shim.Impl
 
         public IWebDriver Window(string windowName)
         {
+            PlaywrightWebDriver.Trace($"SwitchTo.Window: windowName='{windowName}', pages.Count={_driver.Context.Pages.Count}");
             var pages = _driver.Context.Pages;
 
             // Try as index
             if (int.TryParse(windowName, out int index) && index >= 0 && index < pages.Count)
             {
+                PlaywrightWebDriver.Trace($"SwitchTo.Window: switching to page index {index}, URL={pages[index].Url}");
                 _driver.SetActivePage(pages[index]);
                 return _driver;
             }
@@ -118,6 +120,7 @@ namespace Selenium.Playwright.Shim.Impl
                 var title = SyncHelper.RunSync(() => page.TitleAsync());
                 if (title == windowName || page.Url.Contains(windowName))
                 {
+                    PlaywrightWebDriver.Trace($"SwitchTo.Window: matched by title/URL, URL={page.Url}");
                     _driver.SetActivePage(page);
                     return _driver;
                 }

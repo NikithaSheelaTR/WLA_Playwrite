@@ -7,7 +7,7 @@
     <add key="TEST_BROWSER" value="CH" />
     <!-- REQ. Valid values are:
     Ci, CiClient, Demo, DemoClient, DemoB, DemoPc1, Qed, QedA, QedB, HotProdQa, HotProd, Prod, ProdA, ProdB. -->
-    <add key="TEST_ENVIRONMENT" value="Demo" />
+    <add key="TEST_ENVIRONMENT" value="Qed" />
 	  <add key="IS_FED_RAMP" value="No" />
 	  <!-- OPT. The culture of tests (affects G11n aspect of a process context). Valid values must be in the form: xx-YY -->
     <add key="TEST_CULTURE" value="en-US" />
