@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\..\..\..\packages\ReportPortal.VSTest.TestLogger.3.9.0\build\net462\ReportPortal.VSTest.TestLogger.props" Condition="Exists('..\..\..\..\..\packages\ReportPortal.VSTest.TestLogger.3.9.0\build\net462\ReportPortal.VSTest.TestLogger.props')" />
   <Import Project="$(SolutionDir)packages\ReportPortal.VSTest.TestLogger.3.4.0\build\net462\ReportPortal.VSTest.TestLogger.props" Condition="Exists('$(SolutionDir)packages\ReportPortal.VSTest.TestLogger.3.4.0\build\net462\ReportPortal.VSTest.TestLogger.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -82,6 +83,15 @@
       <HintPath>$(SolutionDir)packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="ReportPortal.Client, Version=3.11.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\ReportPortal.Client.3.11.1\lib\net462\ReportPortal.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportPortal.Shared, Version=3.11.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\ReportPortal.Shared.3.11.1\lib\net462\ReportPortal.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportPortal.VSTest.TestLogger, Version=3.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\ReportPortal.VSTest.TestLogger.3.9.0\lib\net462\ReportPortal.VSTest.TestLogger.dll</HintPath>
+    </Reference>
     <Reference Include="Selenium.Playwright.Shim">
       <HintPath>..\..\..\..\..\src\Shim\publish\Selenium.Playwright.Shim.dll</HintPath>
     </Reference>
@@ -91,15 +101,6 @@
     <Reference Include="System.ComponentModel.Annotations">
       <HintPath>..\..\..\..\..\src\Shim\publish\System.ComponentModel.Annotations.dll</HintPath>
       <Private>True</Private>
-    </Reference>
-    <Reference Include="ReportPortal.Client, Version=3.10.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$(SolutionDir)packages\ReportPortal.Client.3.10.0\lib\net462\ReportPortal.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="ReportPortal.Shared, Version=3.10.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$(SolutionDir)packages\ReportPortal.Shared.3.10.0\lib\net462\ReportPortal.Shared.dll</HintPath>
-    </Reference>
-    <Reference Include="ReportPortal.VSTest.TestLogger, Version=3.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$(SolutionDir)packages\ReportPortal.VSTest.TestLogger.3.4.0\lib\net462\ReportPortal.VSTest.TestLogger.dll</HintPath>
     </Reference>
     <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\AllTargaryenBasedProjsSolution\packages\RestSharp.105.2.3\lib\net46\RestSharp.dll</HintPath>
@@ -177,13 +178,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="bin\Debug\test.runsettings" />
     <None Include="packages.config" />
+    <None Include="ReportPortal.config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Resources\ReportPortal.config.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Resources\RP.config.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="RunWithReportPortal.bat" />
+    <None Include="RunWithReportPortal.ps1" />
     <None Include="TestData\CoCounsel\Complaint-Zero State.docx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -250,5 +257,10 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
+    <Error Condition="!Exists('..\..\..\..\..\packages\ReportPortal.Shared.3.11.1\build\net462\ReportPortal.Shared.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\ReportPortal.Shared.3.11.1\build\net462\ReportPortal.Shared.targets'))" />
+    <Error Condition="!Exists('..\..\..\..\..\packages\ReportPortal.VSTest.TestLogger.3.9.0\build\net462\ReportPortal.VSTest.TestLogger.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\ReportPortal.VSTest.TestLogger.3.9.0\build\net462\ReportPortal.VSTest.TestLogger.props'))" />
+    <Error Condition="!Exists('..\..\..\..\..\packages\ReportPortal.VSTest.TestLogger.3.9.0\build\net462\ReportPortal.VSTest.TestLogger.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\ReportPortal.VSTest.TestLogger.3.9.0\build\net462\ReportPortal.VSTest.TestLogger.targets'))" />
   </Target>
+  <Import Project="..\..\..\..\..\packages\ReportPortal.Shared.3.11.1\build\net462\ReportPortal.Shared.targets" Condition="Exists('..\..\..\..\..\packages\ReportPortal.Shared.3.11.1\build\net462\ReportPortal.Shared.targets')" />
+  <Import Project="..\..\..\..\..\packages\ReportPortal.VSTest.TestLogger.3.9.0\build\net462\ReportPortal.VSTest.TestLogger.targets" Condition="Exists('..\..\..\..\..\packages\ReportPortal.VSTest.TestLogger.3.9.0\build\net462\ReportPortal.VSTest.TestLogger.targets')" />
 </Project>
