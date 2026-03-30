@@ -230,6 +230,7 @@
         [TestCategory(CurrentTestCategory)]
         [TestCategory(TeamSahniCategory)]
         [TestCategory(FeatureTestCategoryWlaAjsIncludeRelatedFed)]
+        [TestCategory("PlaywrightEC2Test")]
         [TestProperty(EnvironmentConstants.InfrastructureAccessControlsOn, "IAC-AIJS-INCLUDE-RELATED-FEDERAL,IAC-AI-50SS-PROFILE13")]
         public void AjsIncludeRelatedFedHistoryTest()
         {
@@ -300,7 +301,6 @@
         [TestCategory(CurrentTestCategory)]
         [TestCategory(TeamSahniCategory)]
         [TestCategory(FeatureTestCategoryWlaAjsIncludeRelatedFed)]
-        [TestCategory("PlaywrightEC2Test")]
         [TestProperty(EnvironmentConstants.InfrastructureAccessControlsOn, "IAC-AIJS-INCLUDE-RELATED-FEDERAL,IAC-AI-50SS-PROFILE13")]
         public void AjsIncludeRelatedFedDeliveryTest()
         {
