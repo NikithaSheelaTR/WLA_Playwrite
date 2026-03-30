@@ -47,8 +47,8 @@
 
             Thread.Sleep(2000);
             jurisdictionalSurveysPage.ClosePendoMessage();
-            SafeMethodExecutor.ExecuteUntil(() => jurisdictionalSurveysPage.PageDescription.Displayed, timeoutFromSec: 10);
-            SafeMethodExecutor.ExecuteUntil(() => jurisdictionalSurveysPage.Jurisdictions.SelectedCountLabel.Displayed, timeoutFromSec: 15);
+            SafeMethodExecutor.WaitUntil(() => jurisdictionalSurveysPage.PageDescription.Displayed, timeoutFromSec: 10);
+            SafeMethodExecutor.WaitUntil(() => jurisdictionalSurveysPage.Jurisdictions.SelectedCountLabel.Displayed, timeoutFromSec: 15);
 
             return jurisdictionalSurveysPage;
         }
@@ -72,8 +72,9 @@
         /// <summary>
         /// Wait for survey results to fully load by polling until jurisdiction labels are present
         /// and the Federal Statutes heading is visible (which indicates toolbar buttons are enabled).
+        /// WLA AI surveys can take several minutes to generate; use a 10-minute timeout.
         /// </summary>
-        protected void WaitForSurveyResultsLoaded(AiJurisdictionalSurveysPage surveysPage, int timeoutFromSec = 30)
+        protected void WaitForSurveyResultsLoaded(AiJurisdictionalSurveysPage surveysPage, int timeoutFromSec = 600)
         {
             SafeMethodExecutor.WaitUntil(
                 () => surveysPage.WlaSurveyResult.GetAllJurisdictionLabels()
@@ -84,7 +85,7 @@
             // rendered and the toolbar buttons (save-to-folder, copy-link) are enabled.
             SafeMethodExecutor.WaitUntil(
                 () => surveysPage.WlaSurveyResult.FederalStatutesRegulationsHeading.Displayed,
-                timeoutFromSec: 20);
+                timeoutFromSec: 60);
         }
     }
 }

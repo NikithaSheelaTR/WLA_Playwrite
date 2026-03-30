@@ -262,18 +262,22 @@ namespace Selenium.Playwright.Shim.Impl
             SyncHelper.RunSync(() => _context.AddInitScriptAsync(@"
                 (function() {
                     window.__shimClipboardData = '';
-                    const orig = navigator.clipboard.writeText.bind(navigator.clipboard);
-                    navigator.clipboard.writeText = function(text) {
-                        window.__shimClipboardData = text;
-                        return orig(text);
-                    };
-                    const origRead = navigator.clipboard.readText.bind(navigator.clipboard);
-                    navigator.clipboard.readText = function() {
-                        if (window.__shimClipboardData) {
-                            return Promise.resolve(window.__shimClipboardData);
+                    try {
+                        if (navigator.clipboard && navigator.clipboard.writeText) {
+                            const orig = navigator.clipboard.writeText.bind(navigator.clipboard);
+                            navigator.clipboard.writeText = function(text) {
+                                window.__shimClipboardData = text;
+                                try { return orig(text); } catch(e) { return Promise.resolve(); }
+                            };
+                            const origRead = navigator.clipboard.readText.bind(navigator.clipboard);
+                            navigator.clipboard.readText = function() {
+                                if (window.__shimClipboardData) {
+                                    return Promise.resolve(window.__shimClipboardData);
+                                }
+                                try { return origRead(); } catch(e) { return Promise.resolve(window.__shimClipboardData || ''); }
+                            };
                         }
-                        return origRead();
-                    };
+                    } catch(e) {}
                     // Also capture execCommand('copy') which copies selected text
                     document.addEventListener('copy', function(e) {
                         var sel = window.getSelection();

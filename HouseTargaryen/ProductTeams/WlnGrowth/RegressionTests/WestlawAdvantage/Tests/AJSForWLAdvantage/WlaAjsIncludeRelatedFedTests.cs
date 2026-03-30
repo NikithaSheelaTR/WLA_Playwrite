@@ -44,6 +44,7 @@
 
             var surveysPage = NavigateToLandingPage();
 
+            surveysPage.Jurisdictions.WaitForJurisdictionDisabled(JurisIncludeRelatedFed);
             this.TestCaseVerify.IsTrue(
                 "Verify Include related federal is disabled when no juris is selected",
                 surveysPage.Jurisdictions.IsJurisdictionSelectionDisabled(JurisIncludeRelatedFed) &&
@@ -52,6 +53,7 @@
 
             surveysPage.Jurisdictions.SelectJurisdiction(JurisSelectAll);
 
+            surveysPage.Jurisdictions.WaitForJurisdictionSelected(JurisIncludeRelatedFed);
             this.TestCaseVerify.IsTrue(
                 "Verify Include related federal is selected clicking Select All",
                 surveysPage.Jurisdictions.IsJurisdictionSelected(JurisIncludeRelatedFed),
@@ -59,6 +61,7 @@
 
             surveysPage.Jurisdictions.SelectJurisdiction(JurisCA);
 
+            surveysPage.Jurisdictions.WaitForJurisdictionEnabled(JurisIncludeRelatedFed);
             this.TestCaseVerify.IsFalse(
                 "Verify Include related federal is enabled when a juris is selected",
                 surveysPage.Jurisdictions.IsJurisdictionSelectionDisabled(JurisIncludeRelatedFed),
@@ -66,6 +69,7 @@
 
             surveysPage.Jurisdictions.SelectJurisdiction(false, JurisIncludeRelatedFed);
 
+            surveysPage.Jurisdictions.WaitForSelectedCountToContain("2 selected");
             this.TestCaseVerify.IsTrue(
                 "Verify selected count increases by 1 when Include related federal is selected",
                 surveysPage.Jurisdictions.SelectedCountLabel.Text.Contains("2 selected"),
@@ -73,6 +77,8 @@
 
             surveysPage.Jurisdictions.SelectJurisdiction(false, JurisCA);
 
+            surveysPage.Jurisdictions.WaitForJurisdictionDisabled(JurisIncludeRelatedFed);
+            surveysPage.Jurisdictions.WaitForSelectedCountToContain("0 selected");
             this.TestCaseVerify.IsTrue(
                 "Verify Include related federal is disabled when the only selected juris is unselected",
                 surveysPage.Jurisdictions.IsJurisdictionSelectionDisabled(JurisIncludeRelatedFed) &&
@@ -82,6 +88,7 @@
             surveysPage.Jurisdictions.SelectJurisdiction(JurisCA, JurisMN, JurisIncludeRelatedFed);
             surveysPage.Jurisdictions.SelectJurisdiction(false, JurisMN);
 
+            surveysPage.Jurisdictions.WaitForJurisdictionSelected(JurisIncludeRelatedFed);
             this.TestCaseVerify.IsTrue(
                 "Verify Include related federal is selected when unselecting one of many selected juris",
                 surveysPage.Jurisdictions.IsJurisdictionSelected(JurisIncludeRelatedFed),
@@ -205,10 +212,32 @@
             string copiedLink = null;
             SafeMethodExecutor.WaitUntil(() =>
             {
-                var result = DriverExtensions.ExecuteScript(
+                // Primary: read from the shim interceptor's stored value
+                var shimResult = DriverExtensions.ExecuteScript(
                     "return window.__shimClipboardData || ''");
-                copiedLink = result?.ToString();
-                return !string.IsNullOrEmpty(copiedLink) && copiedLink.StartsWith("http");
+                var shimText = shimResult?.ToString();
+                if (!string.IsNullOrEmpty(shimText) && shimText.StartsWith("http"))
+                {
+                    copiedLink = shimText;
+                    return true;
+                }
+                // Fallback: read directly from the Clipboard API (requires clipboard-read permission)
+                try
+                {
+                    var clipResult = DriverExtensions.ExecuteScript(
+                        "return navigator.clipboard.readText()");
+                    var clipText = clipResult?.ToString();
+                    if (!string.IsNullOrEmpty(clipText) && clipText.StartsWith("http"))
+                    {
+                        copiedLink = clipText;
+                        return true;
+                    }
+                }
+                catch (Exception)
+                {
+                    // Clipboard API unavailable or denied — continue polling
+                }
+                return false;
             }, timeoutFromSec: 10);
 
             if (string.IsNullOrEmpty(copiedLink) || !copiedLink.StartsWith("http"))

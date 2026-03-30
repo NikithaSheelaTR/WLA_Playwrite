@@ -5,6 +5,7 @@
     using Framework.Common.UI.Products.Shared.Elements.Buttons;
     using Framework.Common.UI.Products.Shared.Elements.Labels;
     using Framework.Common.UI.Utils.QualityLibraryFacade.Library.Extensions;
+    using Framework.Core.Utils.Execution;
     using OpenQA.Selenium;
     using System.Linq;
 
@@ -127,6 +128,50 @@
             var result = DriverExtensions.ExecuteScript(JurisdictionAriaCheckedScript, jurisdictionElement);
             var ariaChecked = result?.ToString();
             return ariaChecked != null && ariaChecked.Contains("true");
+        }
+
+        /// <summary>
+        /// Polls until the selected count label contains the expected text.
+        /// Use this after clicking a jurisdiction to avoid reading stale label text.
+        /// </summary>
+        public void WaitForSelectedCountToContain(string expectedText, int timeoutFromSec = 10)
+        {
+            SafeMethodExecutor.WaitUntil(
+                () => SelectedCountLabel.Text.Contains(expectedText),
+                timeoutFromSec: timeoutFromSec);
+        }
+
+        /// <summary>
+        /// Polls until the jurisdiction checkbox reports disabled.
+        /// Use before asserting IsJurisdictionSelectionDisabled after a click.
+        /// </summary>
+        public void WaitForJurisdictionDisabled(string jurisdiction, int timeoutFromSec = 10)
+        {
+            SafeMethodExecutor.WaitUntil(
+                () => IsJurisdictionSelectionDisabled(jurisdiction),
+                timeoutFromSec: timeoutFromSec);
+        }
+
+        /// <summary>
+        /// Polls until the jurisdiction checkbox is no longer disabled.
+        /// Use before asserting !IsJurisdictionSelectionDisabled after a click.
+        /// </summary>
+        public void WaitForJurisdictionEnabled(string jurisdiction, int timeoutFromSec = 10)
+        {
+            SafeMethodExecutor.WaitUntil(
+                () => !IsJurisdictionSelectionDisabled(jurisdiction),
+                timeoutFromSec: timeoutFromSec);
+        }
+
+        /// <summary>
+        /// Polls until the jurisdiction checkbox reports checked.
+        /// Use before asserting IsJurisdictionSelected after a click.
+        /// </summary>
+        public void WaitForJurisdictionSelected(string jurisdiction, int timeoutFromSec = 10)
+        {
+            SafeMethodExecutor.WaitUntil(
+                () => IsJurisdictionSelected(jurisdiction),
+                timeoutFromSec: timeoutFromSec);
         }
     }
 }
