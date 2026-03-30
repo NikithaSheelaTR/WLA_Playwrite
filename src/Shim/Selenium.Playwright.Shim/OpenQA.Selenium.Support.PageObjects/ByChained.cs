@@ -41,7 +41,16 @@ namespace OpenQA.Selenium.Support.PageObjects
             {
                 if (i < _bys.Length - 1)
                 {
-                    current = current.FindElement(_bys[i]);
+                    try
+                    {
+                        current = current.FindElement(_bys[i]);
+                    }
+                    catch (NoSuchElementException)
+                    {
+                        // Intermediate container not found — Selenium's FindElements
+                        // never throws, it returns an empty collection.
+                        return new ReadOnlyCollection<IWebElement>(new List<IWebElement>());
+                    }
                 }
                 else
                 {

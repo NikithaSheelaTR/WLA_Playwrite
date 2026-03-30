@@ -9,10 +9,9 @@
     /// </summary>
     public class WlaAjsQueryBoxComponent : AiJurisdictionalSurveysQueryBoxComponent
     {
-        private static readonly By IncludeCasesCheckboxLocator = By.XPath(".//saf-checkbox[contains(@class,'checkbox--YwWgEE4YlyhJDHoZZlD8')]");
+        private static readonly By IncludeCasesCheckboxLocator = By.XPath(".//saf-checkbox[contains(@class,'checkbox-')]");
         private const string IncludeCasesCheckedScript = "return arguments[0].shadowRoot.querySelector('input[id=control]').getAttribute('aria-checked');";
         private const string IncludeCasesClickScript = "arguments[0].shadowRoot.querySelector('input[id=control]').click();";
-
 
         /// <summary>
         /// Check if Include cases in state juris is selected
@@ -21,9 +20,11 @@
         public bool IsIncludeCasesSelected()
         {
             IWebElement includeCasesElement = DriverExtensions.GetElement(IncludeCasesCheckboxLocator);
-            var ariaChecked = (string)DriverExtensions.ExecuteScript(IncludeCasesCheckedScript, includeCasesElement);
+            var result = DriverExtensions.ExecuteScript(IncludeCasesCheckedScript, includeCasesElement);
 
-            return ariaChecked != null && ariaChecked.Contains("true");
+            // The Playwright shim may return the value as a JsonElement, bool, or string
+            // depending on the script result. Use ToString() to safely handle all cases.
+            return result != null && result.ToString().Contains("true");
         }
 
         /// <summary>

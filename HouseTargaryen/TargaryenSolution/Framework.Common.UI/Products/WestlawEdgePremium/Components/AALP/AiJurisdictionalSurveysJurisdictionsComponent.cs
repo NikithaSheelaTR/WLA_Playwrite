@@ -21,6 +21,8 @@
 
         private const string JurisdictionLctMask = "saf-checkbox[current-value='{0}']";
         private const string JurisdictionCheckboxScript = "return(arguments[0].shadowRoot.querySelector('input[id=control]'));";
+        private const string JurisdictionIsDisabledScript = "return arguments[0].shadowRoot.querySelector('input[id=control]').getAttribute('aria-disabled');";
+        private const string JurisdictionAriaCheckedScript = "return arguments[0].shadowRoot.querySelector('input[id=control]').getAttribute('aria-checked');";
        
         /// <summary>
         /// Select jurisdiction(s)
@@ -45,7 +47,7 @@
 
             foreach (string jurisdiction in jurisdictions.ToList())
             {
-                IWebElement jurisdictionElement = DriverExtensions.GetElement(By.CssSelector(string.Format(JurisdictionLctMask, jurisdiction)));
+                IWebElement jurisdictionElement = DriverExtensions.WaitForElement(By.CssSelector(string.Format(JurisdictionLctMask, jurisdiction)));
                 IWebElement jurisdictionCheckbox = (IWebElement)DriverExtensions.ExecuteScript(JurisdictionCheckboxScript, jurisdictionElement);
                 jurisdictionCheckbox.Click();
             }
@@ -108,19 +110,10 @@
         /// <returns>True if disabled, else false</returns>
         public bool IsJurisdictionSelectionDisabled(string jurisdiction)
         {
-            IWebElement jurisdictionElement = DriverExtensions.GetElement(By.CssSelector(string.Format(JurisdictionLctMask, jurisdiction)));
-            IWebElement jurisdictionCheckbox = (IWebElement)DriverExtensions.ExecuteScript(JurisdictionCheckboxScript, jurisdictionElement);
-            
-            try
-            {
-                var ariaDisabled = jurisdictionCheckbox.GetAttribute("aria-disabled");
-                return ariaDisabled != null && ariaDisabled.Contains("true");
-            }
-            catch
-            {
-                // If attribute is not defined or any error occurs, treat as enabled (not disabled)
-                return false;
-            }
+            IWebElement jurisdictionElement = DriverExtensions.WaitForElement(By.CssSelector(string.Format(JurisdictionLctMask, jurisdiction)));
+            var result = DriverExtensions.ExecuteScript(JurisdictionIsDisabledScript, jurisdictionElement);
+            var ariaDisabled = result?.ToString();
+            return ariaDisabled != null && ariaDisabled.Contains("true");
         }
 
         /// <summary>
@@ -130,10 +123,10 @@
         /// <returns>True if selected, else false</returns>
         public bool IsJurisdictionSelected(string jurisdiction)
         {
-            IWebElement jurisdictionElement = DriverExtensions.GetElement(By.CssSelector(string.Format(JurisdictionLctMask, jurisdiction)));
-            IWebElement jurisdictionCheckbox = (IWebElement)DriverExtensions.ExecuteScript(JurisdictionCheckboxScript, jurisdictionElement);
-
-            return jurisdictionCheckbox.GetAttribute("aria-checked").Contains("true");
+            IWebElement jurisdictionElement = DriverExtensions.WaitForElement(By.CssSelector(string.Format(JurisdictionLctMask, jurisdiction)));
+            var result = DriverExtensions.ExecuteScript(JurisdictionAriaCheckedScript, jurisdictionElement);
+            var ariaChecked = result?.ToString();
+            return ariaChecked != null && ariaChecked.Contains("true");
         }
     }
 }

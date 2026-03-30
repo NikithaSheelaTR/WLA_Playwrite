@@ -18,6 +18,7 @@ namespace Selenium.Playwright.Shim.Impl
         private readonly PlaywrightOptions _options;
         private readonly PlaywrightTargetLocator _targetLocator;
         private bool _disposed;
+        private string _downloadDirectory;
         private static string _shimDirectory;
         private static string _publishDirectory;
         private static readonly string _traceFile = System.IO.Path.Combine(
@@ -208,9 +209,22 @@ namespace Selenium.Playwright.Shim.Impl
             bool startMaximized = chromeOptions != null &&
                 chromeOptions.Arguments.Any(a => a == "--start-maximized");
 
+            // Extract download directory from ChromeOptions user profile preferences.
+            // WlaBaseTest sets "download.default_directory" via AddUserProfilePreference;
+            // we must honour that so file-download tests can find their files.
+            if (chromeOptions != null &&
+                chromeOptions.UserProfilePreferences.TryGetValue("download.default_directory", out var rawDownloadDir))
+            {
+                _downloadDirectory = rawDownloadDir as string;
+                if (!string.IsNullOrEmpty(_downloadDirectory) && !System.IO.Directory.Exists(_downloadDirectory))
+                    System.IO.Directory.CreateDirectory(_downloadDirectory);
+            }
+
             var contextOptions = new BrowserNewContextOptions
             {
-                IgnoreHTTPSErrors = true
+                IgnoreHTTPSErrors = true,
+                Permissions = new[] { "clipboard-read", "clipboard-write" },
+                AcceptDownloads = true
             };
 
             // When --start-maximized is used, set ViewportSize to No Viewport
@@ -242,9 +256,47 @@ namespace Selenium.Playwright.Shim.Impl
             }
 
             _context = SyncHelper.RunSync(() => _browser.NewContextAsync(contextOptions));
+
+            // Intercept clipboard writes so readText() works reliably without
+            // page focus (which automated browsers often lack).
+            SyncHelper.RunSync(() => _context.AddInitScriptAsync(@"
+                (function() {
+                    window.__shimClipboardData = '';
+                    const orig = navigator.clipboard.writeText.bind(navigator.clipboard);
+                    navigator.clipboard.writeText = function(text) {
+                        window.__shimClipboardData = text;
+                        return orig(text);
+                    };
+                    const origRead = navigator.clipboard.readText.bind(navigator.clipboard);
+                    navigator.clipboard.readText = function() {
+                        if (window.__shimClipboardData) {
+                            return Promise.resolve(window.__shimClipboardData);
+                        }
+                        return origRead();
+                    };
+                    // Also capture execCommand('copy') which copies selected text
+                    document.addEventListener('copy', function(e) {
+                        var sel = window.getSelection();
+                        if (sel && sel.toString()) {
+                            window.__shimClipboardData = sel.toString();
+                        }
+                    });
+                })();
+            "));
+
+            // Reduce Playwright's default auto-wait timeout from 30s to 5s.
+            // Selenium does NOT auto-wait on element operations (Click, Text,
+            // GetAttribute, etc.) — they return or throw immediately. Playwright
+            // auto-waits on every action. 5s is a compromise: short enough so the
+            // test framework's WebDriverWait can actually retry, long enough for
+            // normal scroll/animation delays.
+            _context.SetDefaultTimeout(5000);
+            _context.SetDefaultNavigationTimeout(60000);
+
             Trace("Context created. Creating page...");
             _page = SyncHelper.RunSync(() => _context.NewPageAsync());
             _activePage = _page;
+            AttachPopupHandler(_page);
             Trace("Page created. Initializing options...");
 
             _options = new PlaywrightOptions(this);
@@ -259,7 +311,6 @@ namespace Selenium.Playwright.Shim.Impl
             {
                 try
                 {
-                    Trace($"Url setter starting: {value}");
                     SyncHelper.RunSync(() => Page.GotoAsync(value, new PageGotoOptions
                     {
                         WaitUntil = WaitUntilState.Load,
@@ -299,11 +350,26 @@ namespace Selenium.Playwright.Shim.Impl
         {
             get
             {
+                // After a click that opens a popup (target="_blank", window.open),
+                // the new page may not yet be in Context.Pages when this is called.
+                // Wait briefly for the popup to be registered.
+                if (_expectPopup)
+                {
+                    var deadline = DateTime.UtcNow.AddMilliseconds(3000);
+                    var initialCount = _context.Pages.Count;
+                    while (_context.Pages.Count == initialCount && DateTime.UtcNow < deadline)
+                    {
+                        System.Threading.Thread.Sleep(100);
+                    }
+                    _expectPopup = false;
+                }
+
                 var handles = new List<string>();
                 for (int i = 0; i < _context.Pages.Count; i++)
                 {
                     handles.Add(i.ToString());
                 }
+                Trace($"WindowHandles: count={handles.Count}, pages=[{string.Join(", ", _context.Pages.Select((p, i) => i + ":" + p.Url.Substring(0, Math.Min(60, p.Url.Length))))}]");
                 return handles.AsReadOnly();
             }
         }
@@ -328,13 +394,34 @@ namespace Selenium.Playwright.Shim.Impl
                 locator = Page.Locator(locatorStr);
             }
 
-            // Wait for the element with implicit wait timeout
+            // Wait for the element with implicit wait timeout.
+            // IMPORTANT: Use a short timeout here so that WebDriverWait (the outer
+            // polling loop in WaitForElement) can retry rapidly. If we block for the
+            // full implicit wait inside FindElement, WebDriverWait never gets a
+            // chance to re-poll and times out after a single attempt.
             var timeoutMs = _options.GetImplicitWaitMs();
-            if (timeoutMs <= 0)
+
+            // Cap the per-attempt wait to 2 seconds. The outer WebDriverWait loop
+            // (typically 30s) handles the overall timeout by calling FindElement
+            // repeatedly, catching NoSuchElementException on each miss.
+            var perAttemptTimeout = timeoutMs <= 0 ? 0 : Math.Min(timeoutMs, 2000);
+
+            if (perAttemptTimeout <= 0)
             {
                 // Selenium ImplicitWait=0 means "don't wait, fail immediately if not found".
                 // Use CountAsync() which checks immediately without waiting.
-                var count = SyncHelper.RunSync(() => locator.CountAsync());
+                int count;
+                try
+                {
+                    count = SyncHelper.RunSync(() => locator.CountAsync());
+                }
+                catch (Exception)
+                {
+                    // PlaywrightException (e.g. "Execution context was destroyed") can be thrown
+                    // during navigation — convert to NoSuchElementException so WebDriverWait can
+                    // catch it and retry on the next poll cycle.
+                    throw new NoSuchElementException($"Unable to locate element: {by}");
+                }
                 if (count == 0)
                     throw new NoSuchElementException($"Unable to locate element: {by}");
                 return new PlaywrightWebElement(locator.First, this);
@@ -345,7 +432,7 @@ namespace Selenium.Playwright.Shim.Impl
                 SyncHelper.RunSync(() => locator.First.WaitForAsync(new LocatorWaitForOptions
                 {
                     State = WaitForSelectorState.Attached,
-                    Timeout = timeoutMs
+                    Timeout = perAttemptTimeout
                 }));
             }
             catch (Exception)
@@ -353,7 +440,15 @@ namespace Selenium.Playwright.Shim.Impl
                 throw new NoSuchElementException($"Unable to locate element: {by}");
             }
 
-            var count2 = SyncHelper.RunSync(() => locator.CountAsync());
+            int count2;
+            try
+            {
+                count2 = SyncHelper.RunSync(() => locator.CountAsync());
+            }
+            catch (Exception)
+            {
+                throw new NoSuchElementException($"Unable to locate element: {by}");
+            }
             if (count2 == 0)
                 throw new NoSuchElementException($"Unable to locate element: {by}");
 
@@ -382,7 +477,15 @@ namespace Selenium.Playwright.Shim.Impl
             if (timeout <= 0)
             {
                 // Selenium ImplicitWait=0 means "don't wait, return immediately".
-                var count = SyncHelper.RunSync(() => locator.CountAsync());
+                int count;
+                try
+                {
+                    count = SyncHelper.RunSync(() => locator.CountAsync());
+                }
+                catch (Exception)
+                {
+                    return new ReadOnlyCollection<IWebElement>(new List<IWebElement>());
+                }
                 if (count == 0)
                     return new ReadOnlyCollection<IWebElement>(new List<IWebElement>());
                 var elements = new List<IWebElement>();
@@ -396,7 +499,7 @@ namespace Selenium.Playwright.Shim.Impl
                 SyncHelper.RunSync(() => locator.First.WaitForAsync(new LocatorWaitForOptions
                 {
                     State = WaitForSelectorState.Attached,
-                    Timeout = Math.Max(timeout, 1000)
+                    Timeout = Math.Min(timeout, 2000)
                 }));
             }
             catch (Exception)
@@ -405,7 +508,15 @@ namespace Selenium.Playwright.Shim.Impl
             }
 
             {
-                var count = SyncHelper.RunSync(() => locator.CountAsync());
+                int count;
+                try
+                {
+                    count = SyncHelper.RunSync(() => locator.CountAsync());
+                }
+                catch (Exception)
+                {
+                    return new ReadOnlyCollection<IWebElement>(new List<IWebElement>());
+                }
                 var elements = new List<IWebElement>();
                 for (int i = 0; i < count; i++)
                     elements.Add(new PlaywrightWebElement(locator.Nth(i), this));
@@ -449,15 +560,33 @@ namespace Selenium.Playwright.Shim.Impl
                 if (evalScript.StartsWith("return ", StringComparison.Ordinal) || evalScript.StartsWith("return;", StringComparison.Ordinal))
                     evalScript = "() => { " + evalScript + " }";
                 Trace($"ExecuteScript (no args): original='{script}', eval='{evalScript}'");
-                var result = SyncHelper.RunSync(() => Page.EvaluateAsync<object>(evalScript));
-                Trace($"ExecuteScript result: {result}");
-                return result;
+                try
+                {
+                    var result = SyncHelper.RunSync(() => Page.EvaluateAsync<object>(evalScript));
+                    Trace($"ExecuteScript result: {result}");
+                    return result;
+                }
+                catch (PlaywrightException ex)
+                {
+                    // Page is mid-navigation (execution context destroyed) — return null so callers
+                    // like WaitForPageLoad treat this as "not ready yet" and keep polling.
+                    Trace($"ExecuteScript (no args) PlaywrightException swallowed: {ex.Message}");
+                    return null;
+                }
             }
 
             // Multiple non-element args — pass as plain values
             var mappedArgs = MapNonElementArguments(args);
-            return SyncHelper.RunSync(() => Page.EvaluateAsync<object>(
-                WrapScriptForArgs(script, args.Length), mappedArgs));
+            try
+            {
+                return SyncHelper.RunSync(() => Page.EvaluateAsync<object>(
+                    WrapScriptForArgs(script, args.Length), mappedArgs));
+            }
+            catch (PlaywrightException ex)
+            {
+                Trace($"ExecuteScript (multi-args) PlaywrightException swallowed: {ex.Message}");
+                return null;
+            }
         }
 
         public object ExecuteAsyncScript(string script, params object[] args)
@@ -477,7 +606,8 @@ namespace Selenium.Playwright.Shim.Impl
             var bytes = SyncHelper.RunSync(() => Page.ScreenshotAsync(new PageScreenshotOptions
             {
                 Type = ScreenshotType.Png,
-                FullPage = false
+                FullPage = false,
+                Timeout = 30000
             }));
             return new Screenshot(bytes);
         }
@@ -516,8 +646,52 @@ namespace Selenium.Playwright.Shim.Impl
             }
         }
 
+        // Flag to indicate a recent click might have opened a popup
+        private volatile bool _expectPopup;
+
+        /// <summary>
+        /// Called by PlaywrightWebElement.Click when the click might open a new page.
+        /// </summary>
+        internal void NotifyClickMayOpenPopup()
+        {
+            _expectPopup = true;
+        }
+
+        /// <summary>
+        /// Attach a Popup handler to a page so that new tabs/windows opened by clicks
+        /// are properly tracked and available via WindowHandles.
+        /// Also attaches a Download handler so files are saved to the configured download directory.
+        /// </summary>
+        private void AttachPopupHandler(IPage page)
+        {
+            page.Popup += (_, popup) =>
+            {
+                Trace($"Popup detected: {popup.Url}");
+                AttachPopupHandler(popup); // track nested popups
+            };
+
+            // Save downloads to the configured directory (mirrors Chrome's download.default_directory).
+            page.Download += (_, download) =>
+            {
+                var dir = _downloadDirectory;
+                if (string.IsNullOrEmpty(dir)) return;
+                try
+                {
+                    var destPath = System.IO.Path.Combine(dir, download.SuggestedFilename);
+                    Trace($"Download started: saving '{download.SuggestedFilename}' to '{destPath}'");
+                    SyncHelper.RunSync(() => download.SaveAsAsync(destPath));
+                    Trace($"Download saved: '{destPath}'");
+                }
+                catch (Exception ex)
+                {
+                    Trace($"Download save failed: {ex.Message}");
+                }
+            };
+        }
+
         internal void SetActivePage(IPage page)
         {
+            Trace($"SetActivePage: switching to page URL={page.Url}");
             _activePage = page;
             CurrentFrame = null;
             CurrentFrameLocator = null;

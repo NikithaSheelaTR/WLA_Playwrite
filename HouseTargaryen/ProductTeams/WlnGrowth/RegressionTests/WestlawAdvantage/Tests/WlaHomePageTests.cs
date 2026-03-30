@@ -83,6 +83,7 @@
             homePage = defaultTabDialog.SaveButton.Click<AdvantageHomePage>();
 
             BrowserPool.CurrentBrowser.Refresh();
+                      
 
             this.TestCaseVerify.IsTrue(
                 checkDefaultTab,
@@ -858,7 +859,7 @@
             BrowserPool.CurrentBrowser.ActivateTab(JurisdictionalSurveysTab);
 
             jurisdictionalSurveysPage.ClosePendoMessage();
-            SafeMethodExecutor.ExecuteUntil(() => jurisdictionalSurveysPage.PageDescription.Displayed, timeoutFromSec: 10);
+            SafeMethodExecutor.WaitUntil(() => jurisdictionalSurveysPage.PageDescription.Displayed, timeoutFromSec: 10);
 
             jurisdictionalSurveysPage.QueryBox.EnterQuestion(SurveyQuestion);
             jurisdictionalSurveysPage.Jurisdictions.SelectJurisdiction(JurisCa);
