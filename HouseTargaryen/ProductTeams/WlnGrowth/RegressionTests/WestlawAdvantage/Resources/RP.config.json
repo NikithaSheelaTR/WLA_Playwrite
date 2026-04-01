@@ -1,4 +1,4 @@
-﻿{
+{
   "$schema": "https://raw.githubusercontent.com/reportportal/agent-net-vstest/master/ReportPortal.VSTest.TestLogger/ReportPortal.config.schema",
   "enabled": true,
   "server": {
@@ -10,7 +10,7 @@
     }
   },
   "launch": {
-    "name": "Local Run",
+    "name": "WL_Advantage_Playwright",
     "description": "Test run for WL Advantage Playwright",
     "debugMode": false,
     "tags": [ "Local", ".NET", "Playwright" ]
