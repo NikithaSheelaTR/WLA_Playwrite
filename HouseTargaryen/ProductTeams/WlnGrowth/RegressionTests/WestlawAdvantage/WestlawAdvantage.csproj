@@ -172,6 +172,7 @@
     <Compile Include="Tests\QuickCheck\QuickCheckArgumentCounterargumentTabTests.cs" />
     <Compile Include="Tests\RelevancyExplainer.cs" />
     <Compile Include="Tests\TestAssemblyGovernor.cs" />
+    <Compile Include="Tests\WestlawEdge\WlnEdgeSmokeFeatureTests.cs" />
     <Compile Include="Tests\WlaBaseTest.cs" />
     <Compile Include="Tests\DeepResearch\WlaDeepResearchTests.cs" />
     <Compile Include="Tests\WlaHomePageTests.cs" />
@@ -260,9 +261,9 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\..\..\..\packages\ReportPortal.Shared.3.11.1\build\net462\ReportPortal.Shared.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\ReportPortal.Shared.3.11.1\build\net462\ReportPortal.Shared.targets'))" />
-    <Error Condition="!Exists('..\..\..\..\..\packages\ReportPortal.VSTest.TestLogger.3.9.0\build\net462\ReportPortal.VSTest.TestLogger.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\ReportPortal.VSTest.TestLogger.3.9.0\build\net462\ReportPortal.VSTest.TestLogger.props'))" />
-    <Error Condition="!Exists('..\..\..\..\..\packages\ReportPortal.VSTest.TestLogger.3.9.0\build\net462\ReportPortal.VSTest.TestLogger.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\ReportPortal.VSTest.TestLogger.3.9.0\build\net462\ReportPortal.VSTest.TestLogger.targets'))" />
+    <Error Condition="!Exists('$(MSBuildProjectDirectory)\..\..\..\..\..\packages\ReportPortal.Shared.3.11.1\build\net462\ReportPortal.Shared.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(MSBuildProjectDirectory)\..\..\..\..\..\packages\ReportPortal.Shared.3.11.1\build\net462\ReportPortal.Shared.targets'))" />
+    <Error Condition="!Exists('$(MSBuildProjectDirectory)\..\..\..\..\..\packages\ReportPortal.VSTest.TestLogger.3.9.0\build\net462\ReportPortal.VSTest.TestLogger.props')" Text="$([System.String]::Format('$(ErrorText)', '$(MSBuildProjectDirectory)\..\..\..\..\..\packages\ReportPortal.VSTest.TestLogger.3.9.0\build\net462\ReportPortal.VSTest.TestLogger.props'))" />
+    <Error Condition="!Exists('$(MSBuildProjectDirectory)\..\..\..\..\..\packages\ReportPortal.VSTest.TestLogger.3.9.0\build\net462\ReportPortal.VSTest.TestLogger.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(MSBuildProjectDirectory)\..\..\..\..\..\packages\ReportPortal.VSTest.TestLogger.3.9.0\build\net462\ReportPortal.VSTest.TestLogger.targets'))" />
   </Target>
   <Import Project="..\..\..\..\..\packages\ReportPortal.Shared.3.11.1\build\net462\ReportPortal.Shared.targets" Condition="Exists('..\..\..\..\..\packages\ReportPortal.Shared.3.11.1\build\net462\ReportPortal.Shared.targets')" />
   <Import Project="..\..\..\..\..\packages\ReportPortal.VSTest.TestLogger.3.9.0\build\net462\ReportPortal.VSTest.TestLogger.targets" Condition="Exists('..\..\..\..\..\packages\ReportPortal.VSTest.TestLogger.3.9.0\build\net462\ReportPortal.VSTest.TestLogger.targets')" />

@@ -120,7 +120,25 @@
 
             WaitForSurveyResultsLoaded(surveysPage);
             WaitForAllHeadingsDisplayed(surveysPage, JurisCAName);
-            Thread.Sleep(10000); // Additional wait to ensure all elements are interactable before assertions
+
+            SafeMethodExecutor.WaitUntil(() =>
+            {
+                try
+                {
+                    return surveysPage.WlaSurveyResult.StateStatutesRegulationsHeading(JurisCAName).Displayed
+                        && surveysPage.WlaSurveyResult.FederalStatutesRegulationsHeading.Displayed
+                        && surveysPage.WlaSurveyResult.CasesStateHeading.Displayed
+                        && surveysPage.WlaSurveyResult.CasesFederalHeading.Displayed;
+                }
+                catch (Exception)
+                { 
+                    return false;
+                }
+            },
+           timeoutFromSec: 60);
+
+            
+
             this.TestCaseVerify.IsTrue(
                 "Verify State Statutes and Regulations heading displayed",
                 surveysPage.WlaSurveyResult.StateStatutesRegulationsHeading(JurisCAName).Displayed,
@@ -185,6 +203,7 @@
         {
             const string SurveyQuestion = "What are the implications for running a red light?";
             const string JurisCA = "CA-CS", JurisMN = "MN-CS", JurisIncludeRelatedFed = "ALLFEDS";
+            const string JurisCAName = "California", JurisMNName = "Minnesota";
             const string CopyLinkTab = "CopyLink page";
 
             var surveysPage = NavigateToLandingPage();
@@ -195,15 +214,24 @@
             surveysPage = surveysPage.CreateSurveyButtonTop.Click<AiJurisdictionalSurveysPage>();
             SafeMethodExecutor.WaitUntil(() => !surveysPage.ProgressLabel.Displayed);
 
-            var jurisFilterNamesOriginal = surveysPage.ContentType.JurisdictionContentTypes;
+            // Wait for results to fully load BEFORE reading filter names
             WaitForSurveyResultsLoaded(surveysPage);
+
+            // Wait for all jurisdiction headings to be rendered before reading labels.
+            // Federal section renders first; state sections appear asynchronously after.
+            // WaitForAllHeadingsDisplayed ensures each state's h4 heading is in the DOM.
+            WaitForAllHeadingsDisplayed(surveysPage, JurisCAName);
+            WaitForAllHeadingsDisplayed(surveysPage, JurisMNName);
+
+            var jurisFilterNamesOriginal = surveysPage.ContentType.JurisdictionContentTypes
+                .Select(NormalizeWhitespace).ToList();
             var labels = surveysPage.WlaSurveyResult.GetAllJurisdictionLabels();
-            var jurisLabelsOnResultOriginal = labels.Where(text => !string.IsNullOrWhiteSpace(text)).ToList();
+            var jurisLabelsOnResultOriginal = labels.Select(NormalizeWhitespace).Where(text => !string.IsNullOrWhiteSpace(text)).ToList();
 
             this.TestCaseVerify.IsTrue(
                "Verify jurisdiction filters names match with jurisdiction labels on result",
-                jurisFilterNamesOriginal.SequenceEqual(jurisLabelsOnResultOriginal),
-               "Jurisdiction filters names not match with jurisdiction labels on result");
+                jurisFilterNamesOriginal.OrderBy(x => x).SequenceEqual(jurisLabelsOnResultOriginal.OrderBy(x => x)),
+               $"Jurisdiction filters names not match with jurisdiction labels on result. Filters: [{string.Join(", ", jurisFilterNamesOriginal)}] Labels: [{string.Join(", ", jurisLabelsOnResultOriginal)}]");
 
             var originalPageHeading = surveysPage.PageHeaderLabel.Text;
 
@@ -255,14 +283,35 @@
             SafeMethodExecutor.WaitUntil(() => BrowserPool.CurrentBrowser.Title != null, timeoutFromSec: 5);
 
             this.DefaultSignOnManager.SignOff();
-            SafeMethodExecutor.WaitUntil(() => BrowserPool.CurrentBrowser.Title != null, timeoutFromSec: 5);
 
-            var homePage = this.SignOnBack().ClickContinueButton<AdvantageHomePage>();
-            SafeMethodExecutor.WaitUntil(() => BrowserPool.CurrentBrowser.Title != null, timeoutFromSec: 5);
+            // Wait for the sign-off page to fully load before re-signing on.
+            // This ensures the session is fully terminated and the routing page
+            // will be ready for interaction on the next sign-on attempt.
+            DriverExtensions.WaitForPageLoad();
+            DriverExtensions.WaitForJavaScript();
+            SafeMethodExecutor.WaitUntil(() => BrowserPool.CurrentBrowser.Title != null, timeoutFromSec: 10);
+
+            // Retry sign-on to handle transient routing page timeouts.
+            // The routing page Save button has a 5s Playwright click timeout
+            // which can be exceeded after a sign-off/sign-on cycle.
+            AdvantageHomePage homePage = null;
+            SafeMethodExecutor.WaitUntil(() =>
+            {
+                try
+                {
+                    homePage = this.SignOnBack().ClickContinueButton<AdvantageHomePage>();
+                    return true;
+                }
+                catch (Exception)
+                {
+                    return false;
+                }
+            }, timeoutFromSec: 60);
+
+            SafeMethodExecutor.WaitUntil(() => BrowserPool.CurrentBrowser.Title != null, timeoutFromSec: 10);
 
             // Navigate to the copied link in a new tab using the framework's tab management
             DriverExtensions.ExecuteScript("window.open(arguments[0]);", copiedLink);
-            Thread.Sleep(2000);
 
             SafeMethodExecutor.WaitUntil(() =>
                 BrowserPool.CurrentBrowser.TabHandles.Count > 1, timeoutFromSec: 10);
@@ -282,9 +331,16 @@
                surveysPageCopiedLinkPage.PageHeaderLabel.Text.Equals(originalPageHeading),
                "Heading is not correct after opening copied link");
 
-            var jurisFilterNamesCopyLink = surveysPageCopiedLinkPage.ContentType.JurisdictionContentTypes;
+            // Wait for all jurisdiction headings on the copy link page before reading labels
+            WaitForAllHeadingsDisplayed(surveysPageCopiedLinkPage, JurisCAName);
+            WaitForAllHeadingsDisplayed(surveysPageCopiedLinkPage, JurisMNName);
+
+            var jurisFilterNamesCopyLink = surveysPageCopiedLinkPage.ContentType.JurisdictionContentTypes
+                .Select(NormalizeWhitespace).ToList();
             var copyLinkLabels = surveysPageCopiedLinkPage.WlaSurveyResult.GetAllJurisdictionLabels();
-            var jurisLabelsOnResultCopyLink = copyLinkLabels.Where(text => !string.IsNullOrWhiteSpace(text)).ToList();
+            var jurisLabelsOnResultCopyLink = copyLinkLabels
+                .Select(NormalizeWhitespace)
+                .Where(text => !string.IsNullOrWhiteSpace(text)).ToList();
 
             this.TestCaseVerify.IsTrue(
                "Verify jurisdiction label names on copy link page are same as those on original result",
@@ -344,7 +400,8 @@
                 () =>
                 {
                     historyPage = BrowserPool.CurrentBrowser.Refresh<EdgeCommonHistoryPage>();
-                    return historyPage.HistoryTable.GetGridItems().First().IsTextLinkDisplayed(SurveyQuestion);
+                    var items = historyPage.HistoryTable.GetGridItems();
+                    return items.Any() && items.First().IsTextLinkDisplayed(SurveyQuestion);
                 },
                 timeoutFromSec: 30);
 
@@ -392,6 +449,80 @@
                 $"Viewing survey from history: juris filter and label not match. " +
                 $"Juris filter expected: [{string.Join(", ", jurisFilterNamesOriginal)}] Juris filter displayed: [{string.Join(", ", jurisFilterNamesHistory)}] " +
                 $"Juris label expected: [{string.Join(", ", jurisLabelsOnResultOriginal)}] Juris label displayed: [{string.Join(", ", jurisLabelsOnResultHistory)}]");
+        }
+
+        /// <summary>
+        /// Test Include related federal option behavior when viewing result from delivery (Task 2292717).
+        /// </summary>
+        [TestMethod]
+        [TestCategory(CurrentTestCategory)]
+        [TestCategory(TeamSahniCategory)]
+        [TestCategory(FeatureTestCategoryWlaAjsIncludeRelatedFed)]
+        [TestProperty(EnvironmentConstants.InfrastructureAccessControlsOn, "IAC-AIJS-INCLUDE-RELATED-FEDERAL,IAC-AI-50SS-PROFILE13")]
+        public void AjsIncludeRelatedFedDeliveryTest()
+        {
+            const string SurveyQuestion = "What is lemon law?";
+            const string JurisCA = "CA-CS", JurisIncludeRelatedFed = "ALLFEDS";
+            const string DeliveryDateFormat = "MM-dd-yyyy";
+
+            FileUtil.DeleteFilesInFolderByMask(FolderToSave, "*.*");
+
+            var surveysPage = NavigateToLandingPage();
+            surveysPage.WlaQueryBox.EnterQuestion(SurveyQuestion);
+            surveysPage.WlaQueryBox.SelectIncludeCases();
+            surveysPage.Jurisdictions.SelectJurisdiction(JurisCA, JurisIncludeRelatedFed);
+            Thread.Sleep(1000);
+            surveysPage = surveysPage.CreateSurveyButtonTop.Click<AiJurisdictionalSurveysPage>();
+            SafeMethodExecutor.WaitUntil(() => !surveysPage.ProgressLabel.Displayed);
+
+            WaitForSurveyResultsLoaded(surveysPage);
+
+            SafeMethodExecutor.WaitUntil(() => surveysPage.SurveyResult.TimeStampLabel.Displayed);
+            var downloadDialog = surveysPage.Toolbar.DeliveryDropdown.SelectOption<DownloadDialog>(DeliveryMethod.Download);
+            downloadDialog.TheBasicsTab.FormatDropdown.SelectOption<DownloadDialog>(DeliveryFormat.Pdf);
+
+            downloadDialog.LayoutAndLimitsTab.SetIncludeSectionOption(LayoutAndLimitsInclude.CoverPage);
+
+            downloadDialog.ClickDownloadButton<ReadyForDeliveryDialog>().ClickDownloadButton<AiJurisdictionalSurveysPage>();
+
+            // Use regex to match the downloaded file regardless of appended numbers
+            var datePattern = DateTime.Now.ToString(DeliveryDateFormat).Replace("-", "\\-");
+            var filePattern = $@"Westlaw Advantage - AI Jurisdictional Survey - {datePattern}(\s*\(\d+\))?\.pdf$";
+
+            var filePath = FileUtil.GetTheDownloadedFileName(filePattern, FolderToSave);
+
+            this.TestCaseVerify.IsTrue(
+                "Verify downloaded PDF file exists",
+                !string.IsNullOrEmpty(filePath) && File.Exists(filePath),
+                $"Downloaded PDF file not found matching pattern: {filePattern}");
+
+            var text = PdfTextExtractor.ExtractTextFromPdf(filePath);
+
+            this.TestCaseVerify.IsTrue(
+               "Verify cover page captured Include federal info correctly",
+               text.Contains("Westlaw AI Jurisdictional Surveys results")
+               && text.Contains($"Question:  {SurveyQuestion}")
+               && text.Contains("Content:  Statutes, regulations, and cases")
+               && text.Contains("Jurisdiction:  Federal, California")
+               && text.Contains($"Survey generated:  {DateTime.Now.ToString("dd MMMM yyyy")}"),
+               "Cover page not captured Include federal info correctly");
+
+            var textWithoutWhitespaces = text.Replace(" ", string.Empty).Replace("\r\n", string.Empty);
+
+            this.TestCaseVerify.IsTrue(
+              "Verify Federal Statutes and regulations header in delivery",
+              textWithoutWhitespaces.Contains("Federal Statutes and regulations".Replace(" ", string.Empty)),
+              "Federal Statutes and regulations header not displayed in delivery");
+
+            this.TestCaseVerify.IsTrue(
+              "Verify State statutes and regulations header in delivery",
+              textWithoutWhitespaces.Contains("California State statutes and regulations".Replace(" ", string.Empty)),
+              "State statutes and regulations header not displayed in delivery");
+
+            this.TestCaseVerify.IsTrue(
+              "Verify Cases State header in delivery",
+              textWithoutWhitespaces.Contains("Cases State".Replace(" ", string.Empty)),
+              "Cases State header not displayed in delivery");
         }
 
         /// <summary>

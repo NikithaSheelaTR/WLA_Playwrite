@@ -112,9 +112,6 @@
     <Compile Include="..\Framework.Core\DataModel\Configuration\KnownExecutionFlags.cs">
       <Link>DataModel\KnownExecutionFlags.cs</Link>
     </Compile>
-    <Compile Include="..\SolutionInfo.cs">
-      <Link>Properties\SolutionInfo.cs</Link>
-    </Compile>
     <Compile Include="DataModel\ApiExecutionFlags.cs" />
     <Compile Include="DataModel\ApiFlagDependencyMap.cs" />
     <Compile Include="DataModel\Configuration\ApiTestExecutionContext.cs" />

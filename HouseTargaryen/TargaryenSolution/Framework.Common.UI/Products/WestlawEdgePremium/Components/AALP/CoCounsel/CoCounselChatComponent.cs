@@ -1,7 +1,9 @@
 ﻿namespace Framework.Common.UI.Products.WestlawEdgePremium.Components.AALP.CoCounsel
 {
     using System.Collections.Generic;
+    using System.Linq;
     using Framework.Common.UI.Interfaces.Elements;
+    using Framework.Core.Utils.Execution;
     using Framework.Common.UI.Products.Shared.Components;
     using Framework.Common.UI.Products.Shared.Elements;
     using Framework.Common.UI.Products.Shared.Elements.Buttons;
@@ -248,6 +250,30 @@
         /// </summary>
         /// <returns>List of results</returns>
         public CoCounselComplaintAnalysisResultItem CoCounselComplaintAnalysisResultItem => new CoCounselComplaintAnalysisResultItem(DriverExtensions.GetElement(this.ComponentLocator));
+
+        /// <summary>
+        /// Waits for Quick Check results to be fully rendered after the spinners disappear.
+        /// Both the ring spinner and the skeleton lines must be gone, and at least one answer
+        /// item must be present before the method returns.
+        /// </summary>
+        /// <param name="timeoutFromSec">Maximum seconds to wait for spinners to clear. Defaults to 300.</param>
+        public void WaitForQuickCheckResultsLoaded(int timeoutFromSec = 300)
+        {
+            SafeMethodExecutor.WaitUntil(() => !this.QuickCheckProgressSpinnerLabel.Displayed, timeoutFromSec: timeoutFromSec);
+            SafeMethodExecutor.WaitUntil(() => !this.QuickCheckProgressLinesLabel.Displayed, timeoutFromSec: 60);
+            SafeMethodExecutor.WaitUntil(() => this.CoCounselQuickCheckAnswerItems.Any(), timeoutFromSec: 30);
+        }
+
+        /// <summary>
+        /// Waits for AI-Assisted Research chat results to be fully rendered.
+        /// The progress spinner must be gone and at least one answer item must be present.
+        /// </summary>
+        /// <param name="timeoutFromSec">Maximum seconds to wait for the spinner to clear. Defaults to 300.</param>
+        public void WaitForAiResultsLoaded(int timeoutFromSec = 300)
+        {
+            SafeMethodExecutor.WaitUntil(() => !this.ProgressLabel.Displayed, timeoutFromSec: timeoutFromSec);
+            SafeMethodExecutor.WaitUntil(() => this.CoCounselQuestionAndAnswerItems.Any(), timeoutFromSec: 30);
+        }
 
         /// <summary>
         /// Select upload path

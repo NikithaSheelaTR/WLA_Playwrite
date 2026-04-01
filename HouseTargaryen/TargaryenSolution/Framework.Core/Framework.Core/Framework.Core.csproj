@@ -201,9 +201,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\SolutionInfo.cs">
-      <Link>Properties\SolutionInfo.cs</Link>
-    </Compile>
     <Compile Include="CommonTypes\Attributes\ExtendedEnumAttribute.cs" />
     <Compile Include="CommonTypes\Configuration\PasswordPool.cs" />
     <Compile Include="CommonTypes\Configuration\SettingUpdateContext.cs" />

@@ -8,6 +8,7 @@
     using Framework.Common.UI.Products.Shared.Elements.Labels;
     using Framework.Common.UI.Products.Shared.Elements.Links;
     using Framework.Common.UI.Products.Shared.Elements.Textboxes;
+    using Framework.Core.Utils.Execution;
     using OpenQA.Selenium;
 
     /// <summary>
@@ -52,6 +53,23 @@
         /// Out of scope message label
         /// </summary>
         public IButton OutOfScopeMessageLabel => new Button(this.ComponentLocator, OutOfScopeMessageLocator);
+
+        /// <summary>
+        /// Waits for the Deep Research result to be fully rendered.
+        /// Spinner disappearing does not guarantee content is ready — this method waits
+        /// for a terminal UI element (download, report, or error) to confirm render is complete.
+        /// </summary>
+        /// <param name="timeoutFromSec">Maximum seconds to wait for the spinner to clear. Defaults to 600.</param>
+        public void WaitForResultsLoaded(int timeoutFromSec = 600)
+        {
+            SafeMethodExecutor.WaitUntil(() => !this.ProgressBarLabel.Displayed, timeoutFromSec: timeoutFromSec);
+            SafeMethodExecutor.WaitUntil(
+                () => this.DownloadReportButton.Displayed
+                    || this.GenerateFullReportButton.Displayed
+                    || this.AlertMessageLabel.Displayed
+                    || this.OutOfScopeMessageLabel.Displayed,
+                timeoutFromSec: 30);
+        }
 
         /// <summary>
         /// Component locator

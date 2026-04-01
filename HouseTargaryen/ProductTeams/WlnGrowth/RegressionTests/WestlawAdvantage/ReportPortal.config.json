@@ -10,7 +10,7 @@
     }
   },
   "launch": {
-    "name": "Local Run",
+    "name": "WLA_PlayWriteAjsTests",
     "description": "Test run for WlnGrowth WestlawPrecision",
     "debugMode": false,
     "tags": [ "Local", ".NET" ]

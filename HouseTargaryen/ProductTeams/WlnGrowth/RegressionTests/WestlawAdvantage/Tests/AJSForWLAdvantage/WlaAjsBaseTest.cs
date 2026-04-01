@@ -40,7 +40,9 @@
             const string JurisdictionalLabel = "AI Jurisdictional Surveys";
 
             var homePage = this.GetHomePage<AdvantageHomePage>();
-            AiJurisdictionalSurveysPage jurisdictionalSurveysPage = homePage.FeaturesIncludedPanel.GetWidgetLinkByTitle(JurisdictionalLabel).Click<AiJurisdictionalSurveysPage>();
+            var widgetLink = homePage.FeaturesIncludedPanel.GetWidgetLinkByTitle(JurisdictionalLabel);
+            SafeMethodExecutor.WaitUntil(() => widgetLink.Displayed, timeoutFromSec: 15);
+            AiJurisdictionalSurveysPage jurisdictionalSurveysPage = widgetLink.Click<AiJurisdictionalSurveysPage>();
 
             BrowserPool.CurrentBrowser.CreateTab(JurisdictionalSurveysTab);
             BrowserPool.CurrentBrowser.ActivateTab(JurisdictionalSurveysTab);
@@ -76,13 +78,12 @@
         /// </summary>
         protected void WaitForSurveyResultsLoaded(AiJurisdictionalSurveysPage surveysPage, int timeoutFromSec = 600)
         {
-            SafeMethodExecutor.WaitUntil(
-                () => surveysPage.WlaSurveyResult.GetAllJurisdictionLabels()
-                    .Any(text => !string.IsNullOrWhiteSpace(text)),
-                timeoutFromSec: timeoutFromSec);
-            Thread.Sleep(6000); // Extra wait to ensure all elements are loaded after labels are present
-            // Wait for the Federal Statutes heading to appear — this indicates the survey is fully
-            // rendered and the toolbar buttons (save-to-folder, copy-link) are enabled.
+            // First: wait for the timestamp — this is set only when the AI has fully generated the result.
+            // Waiting for this is the generic signal; the page's WaitForResultsLoaded encapsulates it.
+            surveysPage.WaitForResultsLoaded(timeoutFromSec);
+
+            // Then: wait for the WLA-specific Federal Statutes heading which confirms the full
+            // result set (including include-related-federal content) has rendered.
             SafeMethodExecutor.WaitUntil(
                 () => surveysPage.WlaSurveyResult.FederalStatutesRegulationsHeading.Displayed,
                 timeoutFromSec: 60);

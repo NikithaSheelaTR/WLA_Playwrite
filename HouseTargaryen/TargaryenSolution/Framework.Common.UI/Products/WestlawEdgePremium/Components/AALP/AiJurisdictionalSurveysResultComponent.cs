@@ -22,7 +22,7 @@
         private static readonly By ResultItemLocator = By.XPath(".//*[@class='__resultJurisdiction--uvjNgz4aJd9WpypGQBc2']");
         private static readonly By TimeStampLabelLocator = By.XPath("//time[contains(@class,'resultsTimeStamp')]");
         private static readonly By DisclaimerLabelLocator = By.XPath("//p[contains(@class,'disclaimer')]");
-        private static readonly By JurisdictionNameLocator = By.XPath(".//h4");
+        private static readonly By JurisdictionNameLocator = By.XPath(".//h4[contains(@class,'resultsSummaryHeading')]");
         private const string StateStatutesRegulationsHeadingLabelLctMask = ".//h4[contains(@class,'resultsSummaryHeading') and normalize-space(.)='{0}']/following-sibling::h5[contains(@class,'resultsSummarySubHeading') and normalize-space(.)='State statutes and regulations']";
 
         //TODO: filter panel
