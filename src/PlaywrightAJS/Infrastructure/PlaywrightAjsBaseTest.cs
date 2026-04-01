@@ -123,10 +123,11 @@ public class PlaywrightAjsBaseTest : PageTest
     {
         const string JurisdictionalLabel = "AI Jurisdictional Surveys";
 
-        // Find and click the AJS feature card on the WLA home page.
-        // TODO: Verify this locator — inspect the home page DOM to find the card.
-        // Likely patterns: a card/link with text "AI Jurisdictional Surveys"
-        var featureCard = Page.Locator($"[data-analytics*='aijs'], [data-automation*='aijs'], a:has-text('{JurisdictionalLabel}'), button:has-text('{JurisdictionalLabel}')").First;
+        // Shim: homePage.FeaturesIncludedPanel.GetWidgetLinkByTitle("AI Jurisdictional Surveys")
+        // The home page widget is a link with the title text. Try the most specific selector
+        // first (aria label / title attr), fall back to text match.
+        // If this fails: run Page.Pause() on the home page and inspect the card element.
+        var featureCard = Page.Locator($"[title='{JurisdictionalLabel}'], a:has-text('{JurisdictionalLabel}'), button:has-text('{JurisdictionalLabel}')").First;
         await featureCard.WaitForAsync(new LocatorWaitForOptions { State = WaitForSelectorState.Visible, Timeout = 15000 });
         await featureCard.ClickAsync();
 

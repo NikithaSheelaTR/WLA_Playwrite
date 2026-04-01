@@ -47,15 +47,10 @@ public class WlaQueryBoxComponentPw
     /// Replaces: (inherited from parent component — EnterQuestion method)
     /// TODO: Verify this locator.
     /// </summary>
+    // Shim: By.XPath("//saf-text-area[@id='fiftyStateQuestionInput']")
+    // Playwright pierces the shadow DOM — textarea lives inside saf-text-area's shadow root.
     private ILocator QueryInput =>
-        _page.Locator(
-            "textarea[data-automation='query-input'], " +
-            "input[data-automation='query-input'], " +
-            "textarea[placeholder*='question' i], " +
-            "textarea[placeholder*='survey' i], " +
-            "[class*='queryInput'] textarea, " +
-            "[class*='queryInput'] input"
-        ).First;
+        _page.Locator("saf-text-area#fiftyStateQuestionInput textarea, saf-text-area#fiftyStateQuestionInput input").First;
 
     /// <summary>
     /// The "Include Cases" checkbox — inside a shadow DOM (&lt;saf-checkbox&gt;).
@@ -74,8 +69,10 @@ public class WlaQueryBoxComponentPw
     ///       If the input id is different, update "input#control" to match.
     ///       Alternative: try "saf-checkbox >> input[type='checkbox']"
     /// </summary>
+    // Shim: By.XPath(".//saf-checkbox[contains(@class,'checkbox-')]") + JS click inside shadow root
+    // Playwright pierces shadow DOM natively — no JS executor needed.
     private ILocator IncludeCasesCheckbox =>
-        _page.Locator("saf-checkbox >> input#control, saf-checkbox >> input[type='checkbox']").First;
+        _page.Locator("saf-checkbox[class*='checkbox-'] input").First;
 
     // ── Actions ───────────────────────────────────────────────────────────────
 

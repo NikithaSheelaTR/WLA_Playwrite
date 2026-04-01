@@ -37,7 +37,7 @@ public class AiJurisdictionalSurveysPagePw
     /// Original XPath equivalent: element with "progress" in automation attr or class
     /// </summary>
     public ILocator ProgressLabel =>
-        _page.Locator("[data-automation='progress-indicator'], .progress-indicator, [class*='progressLabel']");
+        _page.Locator("xpath=//saf-status[@message='Creating your survey. It will appear in History when completed.']");
 
     /// <summary>
     /// The page description text shown on the landing page (before any survey is run).
@@ -45,28 +45,28 @@ public class AiJurisdictionalSurveysPagePw
     /// Replaces: SafeMethodExecutor.ExecuteUntil(() => PageDescription.Displayed)
     /// </summary>
     public ILocator PageDescription =>
-        _page.Locator("[data-automation='page-description'], .page-description, [class*='pageDescription']");
+        _page.Locator("h3#fiftyStateSearchCriteria");
 
     /// <summary>
     /// The "Create Survey" button at the top of the form.
     /// Replaces: surveysPage.CreateSurveyButtonTop.Click&lt;AiJurisdictionalSurveysPage&gt;()
     /// </summary>
     public ILocator CreateSurveyButtonTop =>
-        _page.Locator("[data-automation='create-survey-button-top'], button:has-text('Create')").First;
+        _page.Locator("saf-button#Create-Survey-Button-1");
 
     /// <summary>
     /// The main page heading label.
     /// Replaces: surveysPage.PageHeaderLabel.Text
     /// </summary>
     public ILocator PageHeaderLabel =>
-        _page.Locator("h1, [data-automation='page-header'], [class*='pageHeader']").First;
+        _page.Locator("h1#fiftyStateHeading, h2#fiftyStateHeading").First;
 
     /// <summary>
     /// Success label shown after copying a link.
     /// Replaces: surveysPage.CopiedLinkSuccessLabel.Displayed
     /// </summary>
     public ILocator CopiedLinkSuccessLabel =>
-        _page.Locator("[data-automation='copy-link-success'], [class*='copyLink'][class*='success']");
+        _page.Locator("div.saf-alert__content");
 
     // ── Components ────────────────────────────────────────────────────────────
     public JurisdictionsComponentPw Jurisdictions { get; }

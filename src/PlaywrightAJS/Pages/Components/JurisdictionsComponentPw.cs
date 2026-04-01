@@ -43,37 +43,28 @@ public class JurisdictionsComponentPw
     // ── Locators ─────────────────────────────────────────────────────────────
 
     /// <summary>
-    /// Locator for a specific jurisdiction checkbox by its code (e.g., "CA-CS", "ALLFEDS").
-    ///
-    /// TODO: Inspect the DOM and update this locator.
-    /// The jurisdiction code is passed as used in the original tests:
-    ///   JurisCA = "CA-CS", JurisIncludeRelatedFed = "ALLFEDS", JurisSelectAll = "Select All"
-    ///
-    /// Try these in Playwright Inspector (Page.Pause()) one by one until one works:
-    ///   input[data-value='{code}']
-    ///   input[aria-label='{code}']
-    ///   [data-automation='juris-{code}']
-    ///   label:has-text('{code}') input[type='checkbox']
+    /// Outer saf-checkbox element — used for disabled state checks.
+    /// The shim used: By.CssSelector("saf-checkbox[current-value='{code}']")
+    /// IsDisabledAsync() is checked on the outer element because the disabled
+    /// attribute is applied to the custom element wrapper, not the inner input.
     /// </summary>
-    private ILocator JurisCheckbox(string jurisCode) =>
-        _page.Locator(
-            $"input[data-value='{jurisCode}'], " +
-            $"input[aria-label='{jurisCode}'], " +
-            $"[data-automation='juris-{jurisCode}'] input, " +
-            $"label:has-text('{jurisCode}') input[type='checkbox']"
-        ).First;
+    private ILocator JurisCheckboxElement(string jurisCode) =>
+        _page.Locator($"saf-checkbox[current-value='{jurisCode}']");
+
+    /// <summary>
+    /// Inner input inside the saf-checkbox shadow DOM — used for check/uncheck/isChecked.
+    /// Playwright auto-pierces open shadow roots with CSS descendant combinators.
+    /// The shim reached this via JS: shadowRoot.querySelector('input[id=control]').click()
+    /// </summary>
+    private ILocator JurisCheckboxInput(string jurisCode) =>
+        _page.Locator($"saf-checkbox[current-value='{jurisCode}'] input");
 
     /// <summary>
     /// The "X selected" count label.
-    /// Replaces: surveysPage.Jurisdictions.SelectedCountLabel.Text.Contains("0 selected")
-    ///
-    /// SHIM: .Text → EvaluateAsync("el => el.innerText") → string comparison
-    /// NATIVE: TextContentAsync() → direct, no translation
-    ///
-    /// TODO: Verify locator for the count label.
+    /// Shim: By.XPath(".//span[contains(@class,'jurisdictionCardSelectedCount')]")
     /// </summary>
     public ILocator SelectedCountLabel =>
-        _page.Locator("[data-automation='selected-count'], [class*='selectedCount'], [class*='jurisCount']");
+        _page.Locator("span[class*='jurisdictionCardSelectedCount']");
 
     // ── Actions ───────────────────────────────────────────────────────────────
 
@@ -93,10 +84,9 @@ public class JurisdictionsComponentPw
     {
         foreach (var code in jurisCodes)
         {
-            var checkbox = JurisCheckbox(code);
-            // Playwright auto-waits for the element to be visible + enabled
-            if (!await checkbox.IsCheckedAsync())
-                await checkbox.CheckAsync();
+            var input = JurisCheckboxInput(code);
+            if (!await input.IsCheckedAsync())
+                await input.CheckAsync();
         }
     }
 
@@ -114,9 +104,9 @@ public class JurisdictionsComponentPw
     {
         foreach (var code in jurisCodes)
         {
-            var checkbox = JurisCheckbox(code);
-            if (await checkbox.IsCheckedAsync())
-                await checkbox.UncheckAsync();
+            var input = JurisCheckboxInput(code);
+            if (await input.IsCheckedAsync())
+                await input.UncheckAsync();
         }
     }
 
@@ -132,7 +122,7 @@ public class JurisdictionsComponentPw
     ///   More accurate than negating IsEnabledAsync() in some edge cases.
     /// </summary>
     public async Task<bool> IsJurisdictionSelectionDisabled(string jurisCode) =>
-        await JurisCheckbox(jurisCode).IsDisabledAsync();
+        await JurisCheckboxElement(jurisCode).IsDisabledAsync();
 
     /// <summary>
     /// Returns true if the jurisdiction checkbox is checked/selected.
@@ -145,7 +135,7 @@ public class JurisdictionsComponentPw
     ///   IsCheckedAsync() — direct API, no JavaScript evaluation needed.
     /// </summary>
     public async Task<bool> IsJurisdictionSelected(string jurisCode) =>
-        await JurisCheckbox(jurisCode).IsCheckedAsync();
+        await JurisCheckboxInput(jurisCode).IsCheckedAsync();
 
     /// <summary>
     /// Get the current selected count text (e.g., "2 selected").
