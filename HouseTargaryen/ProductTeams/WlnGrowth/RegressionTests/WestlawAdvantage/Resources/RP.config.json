@@ -1,19 +1,19 @@
-﻿{
+{
   "$schema": "https://raw.githubusercontent.com/reportportal/agent-net-vstest/master/ReportPortal.VSTest.TestLogger/ReportPortal.config.schema",
   "enabled": true,
   "server": {
     "url": "https://reportportal-cr.1129.aws-int.thomsonreuters.com/api/v1",
-    "project": "WL_GROWTH",
+    "project": "wlr_westlaw_regression",
     "MaximumConnectionsNumber": 100,
     "authentication": {
-      "uuid": "WL-GROWTH_Y02fSa9rRQiyg-qlAFjYO3sDSmusMR62QSB0IQI5zPKEgGiK_rtDaxd1yW1uU2yI"
+      "uuid": "reportportalmay5_m_60GwsxQses0_7ZO_hBlkzZRlvyOmG3-3WSrsu3AKwLWEW-EHd4PepZskZQGyqP"
     }
   },
   "launch": {
-    "name": "Local Run",
-    "description": "Test run for WlnGrowth WestlawPrecision",
+    "name": "WL_Advantage_Playwright",
+    "description": "Test run for WL Advantage Playwright",
     "debugMode": false,
-    "tags": [ "Local", ".NET" ]
+    "tags": [ "Local", ".NET", "Playwright" ]
   },
   "rootNamespaces": [
   ]
