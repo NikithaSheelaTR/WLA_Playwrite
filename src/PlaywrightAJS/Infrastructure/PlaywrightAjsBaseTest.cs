@@ -71,28 +71,45 @@ public class PlaywrightAjsBaseTest : PageTest
     {
         await Page.GotoAsync($"{BaseUrl}/Advantage/Home");
 
-        // ── Step 1: Username / OnePass page ──────────────────────────────
-        // TODO: Verify these locators against the actual CIAM sign-on page.
-        // Use Page.Pause() to inspect, or Codegen to re-record.
-        var usernameInput = Page.Locator("input[type='text'][name='username'], input[id='username'], input[placeholder*='username' i]");
+        // ── Step 1: Username ──────────────────────────────────────────────
+        // Locators from CommonSignOnPage.cs:
+        //   By.CssSelector("#Username,#coid_website_userNameTextbox")
+        var usernameInput = Page.Locator("#Username, #coid_website_userNameTextbox");
         await usernameInput.WaitForAsync(new LocatorWaitForOptions { State = WaitForSelectorState.Visible, Timeout = 30000 });
         await usernameInput.FillAsync(TestUsername);
-        await Page.Locator("button[type='submit'], button:has-text('Continue'), button:has-text('Next')").First.ClickAsync();
+        await Page.Locator("button[type='submit']").First.ClickAsync();
+
+        // ── CIAM workaround pause (matches WestlawSignOnManager.cs WaitForJavaScript(3000)) ──
+        await Page.WaitForTimeoutAsync(3000);
 
         // ── Step 2: Password ──────────────────────────────────────────────
-        var passwordInput = Page.Locator("input[type='password']");
+        // Locators from CommonSignOnPage.cs:
+        //   By.CssSelector("#Password,#coid_website_passwordTextbox")
+        var passwordInput = Page.Locator("#Password, #coid_website_passwordTextbox");
         await passwordInput.WaitForAsync(new LocatorWaitForOptions { State = WaitForSelectorState.Visible, Timeout = 15000 });
         await passwordInput.FillAsync(TestPassword);
-        await Page.Locator("button[type='submit'], button:has-text('Sign In'), button:has-text('Continue')").First.ClickAsync();
+        await Page.Locator("button[type='submit']").First.ClickAsync();
+        await Page.WaitForLoadStateAsync(LoadState.DOMContentLoaded);
 
-        // ── Step 3: Client ID page (if shown) ────────────────────────────
-        // The client ID page may or may not appear depending on the user.
-        var clientIdInput = Page.Locator("input[id='clientId'], input[placeholder*='client' i], [data-automation='client-id-input']");
-        var clientIdVisible = await clientIdInput.IsVisibleAsync().ContinueWith(t => t.Result);
-        if (clientIdVisible)
+        // ── Step 3: Cookie settings dialog (if shown) ────────────────────
+        // CommonSignOnPage.cs checks for CookieSettingButton then AllowAllCookies.
+        var cookieSettingBtn = Page.Locator("button:has-text('Cookie Settings')");
+        if (await cookieSettingBtn.IsVisibleAsync())
+        {
+            await cookieSettingBtn.ClickAsync();
+            var allowAllBtn = Page.Locator("button:has-text('Allow All'), button:has-text('Accept All')");
+            await allowAllBtn.First.ClickAsync(new LocatorClickOptions { Timeout = 5000 });
+        }
+
+        // ── Step 4: Client ID page (if shown) ────────────────────────────
+        // Locators from CommonClientIdPage.cs:
+        //   By.XPath("//input[contains(@class,'co_clientIDTextbox') or @id='co_clientIDTextbox'] | //input[@id='clientidr']")
+        //   By.XPath("//input[@id='co_clientIDContinueButton'] | //input[@value='Submit']")
+        var clientIdInput = Page.Locator("xpath=//input[contains(@class,'co_clientIDTextbox') or @id='co_clientIDTextbox'] | //input[@id='clientidr']");
+        if (await clientIdInput.IsVisibleAsync())
         {
             await clientIdInput.FillAsync(TestClientId);
-            await Page.Locator("button:has-text('Continue'), button:has-text('Submit'), button[type='submit']").First.ClickAsync();
+            await Page.Locator("xpath=//input[@id='co_clientIDContinueButton'] | //input[@value='Submit']").First.ClickAsync();
         }
 
         // ── Wait for WLA home page ────────────────────────────────────────
