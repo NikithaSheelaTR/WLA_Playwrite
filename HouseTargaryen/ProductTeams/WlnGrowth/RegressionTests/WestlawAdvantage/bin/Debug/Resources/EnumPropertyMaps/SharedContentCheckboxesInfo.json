@@ -1,0 +1,6 @@
+﻿// Maps SharedContentCheckboxes to WebElementInfo
+{
+  "SharedSnippets": {
+    "LocatorString": "//input[@id='SharedSnippetsEnabled']" 
+  } 
+}

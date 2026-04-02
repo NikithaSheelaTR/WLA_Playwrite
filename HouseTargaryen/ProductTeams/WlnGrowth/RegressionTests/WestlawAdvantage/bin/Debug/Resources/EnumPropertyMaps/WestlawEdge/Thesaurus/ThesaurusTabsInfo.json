@@ -1,0 +1,11 @@
+﻿// Maps ThesaurusTabs to WebElementInfo
+{
+  "RelatedConcepts": {
+    "LocatorString": ".//li[@id='tab_relatedConceptsTabId']",
+    "Text": "Related concepts"
+  },
+  "Synonyms": {
+    "LocatorString": ".//li[@id='tab_SynonymsTabId']",
+    "Text": "Synonyms"
+  }
+}

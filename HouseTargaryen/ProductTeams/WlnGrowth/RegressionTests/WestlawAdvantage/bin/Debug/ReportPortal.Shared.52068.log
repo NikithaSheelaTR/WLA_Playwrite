@@ -1,0 +1,381 @@
+ExponentialRetryRequestExecuter Error: 0 : 18:40:53.0434845 : 2-Test Runner : Unexpected exception: System.TypeInitializationException: The type initializer for 'ReportPortal.Client.Converters.ClientSourceGenerationContext' threw an exception. ---> System.MissingMethodException: Method not found: 'System.Text.Json.JsonEncodedText System.Text.Json.JsonEncodedText.Encode(System.String, System.Text.Encodings.Web.JavaScriptEncoder)'.
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext..cctor()
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext.get_Default()
+   at ReportPortal.Client.Converters.ModelSerializer.<SerializeAsync>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceBaseResource.<SendAsJsonAsync>d__13`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceLaunchResource.<StartAsync>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.<ExecuteAsync>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+TestReporter Error: 0 : 18:46:41.7673511 : 2-Test Runner : System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.TypeInitializationException: The type initializer for 'ReportPortal.Client.Converters.ClientSourceGenerationContext' threw an exception. ---> System.MissingMethodException: Method not found: 'System.Text.Json.JsonEncodedText System.Text.Json.JsonEncodedText.Encode(System.String, System.Text.Encodings.Web.JavaScriptEncoder)'.
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext..cctor()
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext.get_Default()
+   at ReportPortal.Client.Converters.ModelSerializer.<SerializeAsync>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceBaseResource.<SendAsJsonAsync>d__13`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceLaunchResource.<StartAsync>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.<ExecuteAsync>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass23_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 18:46:41.7673511 : 2-Test Runner : System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.TypeInitializationException: The type initializer for 'ReportPortal.Client.Converters.ClientSourceGenerationContext' threw an exception. ---> System.MissingMethodException: Method not found: 'System.Text.Json.JsonEncodedText System.Text.Json.JsonEncodedText.Encode(System.String, System.Text.Encodings.Web.JavaScriptEncoder)'.
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext..cctor()
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext.get_Default()
+   at ReportPortal.Client.Converters.ModelSerializer.<SerializeAsync>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceBaseResource.<SendAsJsonAsync>d__13`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceLaunchResource.<StartAsync>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.<ExecuteAsync>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass23_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 18:46:41.7832979 : 2-Test Runner : System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.TypeInitializationException: The type initializer for 'ReportPortal.Client.Converters.ClientSourceGenerationContext' threw an exception. ---> System.MissingMethodException: Method not found: 'System.Text.Json.JsonEncodedText System.Text.Json.JsonEncodedText.Encode(System.String, System.Text.Encodings.Web.JavaScriptEncoder)'.
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext..cctor()
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext.get_Default()
+   at ReportPortal.Client.Converters.ModelSerializer.<SerializeAsync>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceBaseResource.<SendAsJsonAsync>d__13`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceLaunchResource.<StartAsync>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.<ExecuteAsync>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass23_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 18:46:41.7832979 : 2-Test Runner : System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.TypeInitializationException: The type initializer for 'ReportPortal.Client.Converters.ClientSourceGenerationContext' threw an exception. ---> System.MissingMethodException: Method not found: 'System.Text.Json.JsonEncodedText System.Text.Json.JsonEncodedText.Encode(System.String, System.Text.Encodings.Web.JavaScriptEncoder)'.
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext..cctor()
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext.get_Default()
+   at ReportPortal.Client.Converters.ModelSerializer.<SerializeAsync>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceBaseResource.<SendAsJsonAsync>d__13`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceLaunchResource.<StartAsync>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.<ExecuteAsync>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass23_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 18:46:41.7832979 : 2-Test Runner : System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.TypeInitializationException: The type initializer for 'ReportPortal.Client.Converters.ClientSourceGenerationContext' threw an exception. ---> System.MissingMethodException: Method not found: 'System.Text.Json.JsonEncodedText System.Text.Json.JsonEncodedText.Encode(System.String, System.Text.Encodings.Web.JavaScriptEncoder)'.
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext..cctor()
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext.get_Default()
+   at ReportPortal.Client.Converters.ModelSerializer.<SerializeAsync>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceBaseResource.<SendAsJsonAsync>d__13`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceLaunchResource.<StartAsync>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.<ExecuteAsync>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass23_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 18:46:41.9493376 : 2-Test Runner : System.Exception: Cannot finish test item due starting item failed. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.TypeInitializationException: The type initializer for 'ReportPortal.Client.Converters.ClientSourceGenerationContext' threw an exception. ---> System.MissingMethodException: Method not found: 'System.Text.Json.JsonEncodedText System.Text.Json.JsonEncodedText.Encode(System.String, System.Text.Encodings.Web.JavaScriptEncoder)'.
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext..cctor()
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext.get_Default()
+   at ReportPortal.Client.Converters.ModelSerializer.<SerializeAsync>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceBaseResource.<SendAsJsonAsync>d__13`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceLaunchResource.<StartAsync>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.<ExecuteAsync>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass23_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 18:46:42.0680486 : 2-Test Runner : System.Exception: Cannot finish test item due starting item failed. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.TypeInitializationException: The type initializer for 'ReportPortal.Client.Converters.ClientSourceGenerationContext' threw an exception. ---> System.MissingMethodException: Method not found: 'System.Text.Json.JsonEncodedText System.Text.Json.JsonEncodedText.Encode(System.String, System.Text.Encodings.Web.JavaScriptEncoder)'.
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext..cctor()
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext.get_Default()
+   at ReportPortal.Client.Converters.ModelSerializer.<SerializeAsync>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceBaseResource.<SendAsJsonAsync>d__13`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceLaunchResource.<StartAsync>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.<ExecuteAsync>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass23_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 18:46:42.0680486 : 2-Test Runner : System.Exception: Cannot finish test item due starting item failed. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.TypeInitializationException: The type initializer for 'ReportPortal.Client.Converters.ClientSourceGenerationContext' threw an exception. ---> System.MissingMethodException: Method not found: 'System.Text.Json.JsonEncodedText System.Text.Json.JsonEncodedText.Encode(System.String, System.Text.Encodings.Web.JavaScriptEncoder)'.
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext..cctor()
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext.get_Default()
+   at ReportPortal.Client.Converters.ModelSerializer.<SerializeAsync>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceBaseResource.<SendAsJsonAsync>d__13`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceLaunchResource.<StartAsync>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.<ExecuteAsync>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass23_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 18:46:42.0680486 : 2-Test Runner : System.Exception: Cannot finish test item due starting item failed. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.TypeInitializationException: The type initializer for 'ReportPortal.Client.Converters.ClientSourceGenerationContext' threw an exception. ---> System.MissingMethodException: Method not found: 'System.Text.Json.JsonEncodedText System.Text.Json.JsonEncodedText.Encode(System.String, System.Text.Encodings.Web.JavaScriptEncoder)'.
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext..cctor()
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext.get_Default()
+   at ReportPortal.Client.Converters.ModelSerializer.<SerializeAsync>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceBaseResource.<SendAsJsonAsync>d__13`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceLaunchResource.<StartAsync>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.<ExecuteAsync>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass23_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 18:46:42.0680486 : 2-Test Runner : System.Exception: Cannot finish test item due starting item failed. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.TypeInitializationException: The type initializer for 'ReportPortal.Client.Converters.ClientSourceGenerationContext' threw an exception. ---> System.MissingMethodException: Method not found: 'System.Text.Json.JsonEncodedText System.Text.Json.JsonEncodedText.Encode(System.String, System.Text.Encodings.Web.JavaScriptEncoder)'.
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext..cctor()
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext.get_Default()
+   at ReportPortal.Client.Converters.ModelSerializer.<SerializeAsync>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceBaseResource.<SendAsJsonAsync>d__13`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceLaunchResource.<StartAsync>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.<ExecuteAsync>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass23_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+LaunchReporter Error: 0 : 18:46:42.0848811 : 2-Test Runner : System.Exception: Cannot finish launch due starting launch failed. ---> System.AggregateException: One or more errors occurred. ---> System.TypeInitializationException: The type initializer for 'ReportPortal.Client.Converters.ClientSourceGenerationContext' threw an exception. ---> System.MissingMethodException: Method not found: 'System.Text.Json.JsonEncodedText System.Text.Json.JsonEncodedText.Encode(System.String, System.Text.Encodings.Web.JavaScriptEncoder)'.
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext..cctor()
+   --- End of inner exception stack trace ---
+   at ReportPortal.Client.Converters.ClientSourceGenerationContext.get_Default()
+   at ReportPortal.Client.Converters.ModelSerializer.<SerializeAsync>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceBaseResource.<SendAsJsonAsync>d__13`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Client.Resources.ServiceLaunchResource.<StartAsync>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.<ExecuteAsync>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass23_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---

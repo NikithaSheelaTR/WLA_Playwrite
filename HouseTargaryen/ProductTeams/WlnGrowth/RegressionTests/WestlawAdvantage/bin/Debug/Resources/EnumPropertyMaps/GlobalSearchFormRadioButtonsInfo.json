@@ -1,0 +1,10 @@
+﻿{
+  // Maps GlobalSearchFormRadioButton to WebElementInfo for WLN Portal Manager
+  "CustomPages": {
+    "Locatorstring": "//input[@value='custom']"
+  },
+
+  "SpecificContent": {
+    "LocatorString": "//input[@value='specify']"
+  }
+}

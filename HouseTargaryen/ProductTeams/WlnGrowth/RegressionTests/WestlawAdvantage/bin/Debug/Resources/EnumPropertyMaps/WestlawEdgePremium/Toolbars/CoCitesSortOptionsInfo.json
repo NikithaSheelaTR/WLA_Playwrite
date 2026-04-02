@@ -1,0 +1,27 @@
+﻿{
+  // Maps CoCitesSortOptions to WebElementInfo
+  "CourtLevel": {
+    "LocatorString": ".//li[@id = 'CoCites-Sort-Option_courtdesc']",
+    "Text": "Court level"
+  },
+  "Date": {
+    "LocatorString": ".//li[@id = 'CoCites-Sort-Option_datedesc']",
+    "Text": "Date"
+  },
+  "LeastFrequent": {
+    "LocatorString": ".//li[@id = 'CoCites-Sort-Option_frequencyasc']",
+    "Text": "Least frequent"
+  },
+  "MostCited": {
+    "LocatorString": ".//li[@id = 'CoCites-Sort-Option_mostcited']",
+    "Text": "Most cited"
+  },
+  "MostFrequent": {
+    "LocatorString": ".//li[@id = 'CoCites-Sort-Option_frequencydesc']",
+    "Text": "Most frequent"
+  },
+  "MostUsed": {
+    "LocatorString": ".//li[@id = 'CoCites-Sort-Option_mostused']",
+    "Text": "Most used"
+  }
+}

@@ -1,0 +1,19 @@
+{
+    // Maps KnowYourJudgeReportTabsInfo to WebElementInfo
+    "ClaimBased": {
+        "LocatorString": "//saf-tab-v3[@Id='claims-tab']",
+        "Id": "ClaimsBasedTab"
+    },
+    "FactBased": {
+        "LocatorString": "//saf-tab-v3[@Id='facts-tab']",
+        "Id": "FactBasedTab"
+    },
+    "PrecedentBased": {
+        "LocatorString": "//saf-tab-v3[@Id='precedent-tab']",
+        "Id": "precedentBasedTab"
+    },
+    "OrderSummary": {
+        "LocatorString": "//saf-tab-v3[@Id='order-summary-tab']",
+        "Id": "OrderSummaryTab"
+    }
+}

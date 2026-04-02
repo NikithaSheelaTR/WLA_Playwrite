@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<configSections>
+		<section name="remoteEnvironmentDefinitions" type="Framework.Core.DataModel.Configuration.Sections.RemoteConfigurationSection,Framework.Core" />
+		<section name="localEnvironmentDefinitions" type="Framework.Core.DataModel.Configuration.Sections.LocalConfigurationSection,Framework.Core" />
+	</configSections>
+	<remoteEnvironmentDefinitions>
+		<environments>
+			<add id="None" name="NONE" site="" type="Cobalt" isLower="true" reportingTag="" />
+			<add id="Demo" name="DEMO" site="" type="Cobalt" isLower="true" reportingTag="Demo" />
+			<add id="DemoPc1AWS" name="DEMO" site="use1c1" type="Cobalt" isLower="true" reportingTag="DemoC1" />
+			<add id="DemoBAWS" name="DEMO" site="use1c2" type="Cobalt" isLower="true" reportingTag="DemoC2" />
+			<add id="Qed" name="QED" site="" type="Cobalt" isLower="true" reportingTag="Qed" />
+			<add id="QedAAWS" name="QED" site="use1c1" type="Cobalt" isLower="true" reportingTag="QedC1" />
+			<add id="QedBAWS" name="QED" site="use1c2" type="Cobalt" isLower="true" reportingTag="QedC2" />
+			<add id="ProdA" name="PROD" site="" type="Cobalt" isLower="false" reportingTag="Production" />
+		</environments>
+		<endpoints>
+			<add moduleId="Alerts" productId="WestlawNext" envId="Demo" uri="https://alert-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Alerts" productId="WestlawNext" envId="DemoBAWS" uri="https://alert-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Alerts" productId="WestlawNext" envId="DemoPc1AWS" uri="https://alert-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Alerts" productId="WestlawNext" envId="Qed" uri="https://alert-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com" />
+			<add moduleId="Alerts" productId="WestlawNext" envId="QedAAWS" uri="https://alert-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com" />
+			<add moduleId="Alerts" productId="WestlawNext" envId="QedBAWS" uri="https://alert-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com" />
+			<add moduleId="AlertProductService" productId="WestlawNext" envId="Demo" uri="http://alertproductservice.int.legalservices.demo.westlaw.com" />
+			<add moduleId="AlertProductService" productId="WestlawNext" envId="DemoBAWS" uri="http://alertproductservice.int.legalservices.demo.westlaw.com" />
+			<add moduleId="AlertProductService" productId="WestlawNext" envId="DemoPc1AWS" uri="http://alertproductservice.int.legalservices.demo.westlaw.com" />
+			<add moduleId="AlertProductService" productId="WestlawNext" envId="Qed" uri="http://alertproductservice.int.legalservices.qed.westlaw.com" />
+			<add moduleId="AlertProductService" productId="WestlawNext" envId="QedAAWS" uri="http://alertproductservice.int.legalservices.qed.westlaw.com" />
+			<add moduleId="AlertProductService" productId="WestlawNext" envId="QedBAWS" uri="http://alertproductservice.int.legalservices.qed.westlaw.com" />
+			<add moduleId="Uds" productId="WestKm" envId="Demo" uri="https://region-use1.km.demo.westlaw.com/" />
+			<add moduleId="Uds" productId="WestKm" envId="DemoPc1AWS" uri="https://region-use1.km.demo.westlaw.com/" />
+			<add moduleId="Uds" productId="WestKm" envId="DemoBAWS" uri="https://region-use1.km.demo.westlaw.com/" />
+			<add moduleId="Uds" productId="WestlawNext" envId="Demo" uri="https://uds-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="WestlawNext" envId="DemoBAWS" uri="https://uds-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="WestlawNext" envId="DemoPc1AWS" uri="https://uds-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="WestlawNext" envId="Qed" uri="https://uds-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="WestlawNext" envId="QedAAWS" uri="https://uds-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="WestlawNext" envId="QedBAWS" uri="https://uds-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="WestlawNext" envId="ProdA" uri="https://uds-int-next-prod-westlaw-com.92615.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="WlAnalytics" envId="Demo" uri="https://uds-int-analytics-demo-westlaw-com.8101.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="WlAnalytics" envId="DemoPc1AWS" uri="https://uds-int-analytics-demo-westlaw-com.8101.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="WlAnalytics" envId="DemoBAWS" uri="https://uds-int-analytics-demo-westlaw-com.8101.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="WlAnalytics" envId="Qed" uri="https://uds-int-analytics-qed-westlaw-com.04032.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="WlAnalytics" envId="QedAAWS" uri="https://uds-int-analytics-qed-westlaw-com.04032.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="WlAnalytics" envId="QedBAWS" uri="https://uds-int-analytics-qed-westlaw-com.04032.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="WestlawEdge" envId="Demo" uri="https://uds-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="WestlawEdge" envId="DemoBAWS" uri="https://uds-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="WestlawEdge" envId="DemoPc1AWS" uri="https://uds-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="WestlawEdge" envId="Qed" uri="https://uds-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="WestlawEdge" envId="QedAAWS" uri="https://uds-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="WestlawEdge" envId="QedBAWS" uri="https://uds-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="WestlawEdge" envId="ProdA" uri="https://uds-int-next-prod-westlaw-com.92615.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="Anz" envId="Demo" uri="https://uds-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="Anz" envId="DemoBAWS" uri="https://uds-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="Anz" envId="DemoPc1AWS" uri="https://uds-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="WestlawPrecisionAws" envId="Demo" uri="http://uds-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="WestlawPrecisionAws" envId="DemoBAWS" uri="http://uds-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Uds" productId="WestlawPrecisionAws" envId="DemoPc1AWS" uri="http://uds-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Foldering" productId="WestlawNext" envId="Demo" uri="https://foldering-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Foldering" productId="WestlawNext" envId="DemoBAWS" uri="https://foldering-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Foldering" productId="WestlawNext" envId="DemoPc1AWS" uri="https://foldering-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Foldering" productId="WestlawNext" envId="Qed" uri="https://foldering-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com" />
+			<add moduleId="Foldering" productId="WestlawNext" envId="QedAAWS" uri="https://foldering-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com" />
+			<add moduleId="Foldering" productId="WestlawNext" envId="QedBAWS" uri="https://foldering-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com" />
+			<add moduleId="Foldering" productId="WestlawEdge" envId="Demo" uri="https://foldering-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Foldering" productId="WestlawEdge" envId="DemoBAWS" uri="https://foldering-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Foldering" productId="WestlawEdge" envId="DemoPc1AWS" uri="https://foldering-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Foldering" productId="WestlawEdge" envId="Qed" uri="https://foldering-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com" />
+			<add moduleId="Foldering" productId="WestlawEdge" envId="QedAAWS" uri="https://foldering-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com" />
+			<add moduleId="Foldering" productId="WestlawEdge" envId="QedBAWS" uri="https://foldering-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com" />
+			<add moduleId="Foldering" productId="WestlawPrecisionAws" envId="Demo" uri="https://foldering-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Foldering" productId="WestlawPrecisionAws" envId="DemoBAWS" uri="https://foldering-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="Foldering" productId="WestlawPrecisionAws" envId="DemoPc1AWS" uri="https://foldering-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com" />
+			<add moduleId="CobaltServices" productId="None" envId="Demo" uri="https://cobaltservices-use1-demo.dataroom-preprod.aws-int.thomsonreuters.com" />
+			<add moduleId="CobaltServices" productId="None" envId="DemoBAWS" uri="https://cobaltservices-use1-demo.dataroom-preprod.aws-int.thomsonreuters.com" />
+			<add moduleId="CobaltServices" productId="None" envId="DemoPc1AWS" uri="https://cobaltservices-use1-demo.dataroom-preprod.aws-int.thomsonreuters.com" />
+			<add moduleId="CobaltServices" productId="None" envId="Qed" uri="https://cobaltservices-use1-qed.dataroom-prod.aws-int.thomsonreuters.com" />
+			<add moduleId="CobaltServices" productId="None" envId="QedAAWS" uri="https://cobaltservices-use1-qed.dataroom-prod.aws-int.thomsonreuters.com" />
+			<add moduleId="CobaltServices" productId="None" envId="QedBAWS" uri="https://cobaltservices-use1-qed.dataroom-prod.aws-int.thomsonreuters.com"/>
+			<add moduleId="CobaltServices" productId="WestlawNext" envId="Demo" uri="https://cobaltservices-use1-demo.dataroom-preprod.aws-int.thomsonreuters.com" />
+			<add moduleId="CobaltServices" productId="WestlawNext" envId="DemoBAWS" uri="https://cobaltservices-use1-demo.dataroom-preprod.aws-int.thomsonreuters.com" />
+			<add moduleId="CobaltServices" productId="WestlawNext" envId="DemoPc1AWS" uri="https://cobaltservices-use1-demo.dataroom-preprod.aws-int.thomsonreuters.com" />
+			<add moduleId="CobaltServices" productId="WestlawNext" envId="Qed" uri="https://cobaltservices-use1-qed.dataroom-prod.aws-int.thomsonreuters.com" />
+			<add moduleId="CobaltServices" productId="WestlawNext" envId="QedAAWS" uri="https://cobaltservices-use1-qed.dataroom-prod.aws-int.thomsonreuters.com" />
+			<add moduleId="CobaltServices" productId="WestlawNext" envId="QedBAWS" uri="https://cobaltservices-use1-qed.dataroom-prod.aws-int.thomsonreuters.com" />
+			<add moduleId="None" productId="CobaltSessionInfo" envId="Demo" uri="http://cobalttools.demo.int.westgroup.com/SessionInfo/v2/sessionguid/{0}?environment=DEMO" />
+			<add moduleId="None" productId="CobaltSessionInfo" envId="DemoBAWS" uri="http://cobalttools.demo.int.westgroup.com/SessionInfo/v2/sessionguid/{0}?environment=DEMO" />
+			<add moduleId="None" productId="CobaltSessionInfo" envId="DemoPc1AWS" uri="http://cobalttools.demo.int.westgroup.com/SessionInfo/v2/sessionguid/{0}?environment=DEMO" />
+			<add moduleId="None" productId="CobaltSessionInfo" envId="Qed" uri="http://cobalttools.qed.int.westgroup.com/SessionInfo/v2/sessionguid/{0}?environment=QED" />
+			<add moduleId="None" productId="CobaltSessionInfo" envId="QedAAWS" uri="http://cobalttools.qed.int.westgroup.com/SessionInfo/v2/sessionguid/{0}?environment=QED" />
+			<add moduleId="None" productId="CobaltSessionInfo" envId="QedBAWS" uri="http://cobalttools.qed.int.westgroup.com/SessionInfo/v2/sessionguid/{0}?environment=QED" />
+			<add moduleId="None" productId="CobaltSharedSessionInfo" envId="Demo" uri="http://cobalttools-shared.demo.int.westgroup.com/SessionInfo/v2/sessionguid/{0}?environment=DEMO" />
+			<add moduleId="None" productId="CobaltSharedSessionInfo" envId="DemoBAWS" uri="http://cobalttools-shared.demo.int.westgroup.com/SessionInfo/v2/sessionguid/{0}?environment=DEMO" />
+			<add moduleId="None" productId="CobaltSharedSessionInfo" envId="DemoPc1AWS" uri="http://cobalttools-shared.demo.int.westgroup.com/SessionInfo/v2/sessionguid/{0}?environment=DEMO" />
+			<add moduleId="None" productId="CobaltSharedSessionInfo" envId="Qed" uri="http://cobalttools-shared.qed.int.westgroup.com/SessionInfo/v2/sessionguid/{0}?environment=QED" />
+			<add moduleId="None" productId="CobaltSharedSessionInfo" envId="QedAAWS" uri="http://cobalttools-shared.qed.int.westgroup.com/SessionInfo/v2/sessionguid/{0}?environment=QED" />
+			<add moduleId="None" productId="CobaltSharedSessionInfo" envId="QedBAWS" uri="http://cobalttools-shared.qed.int.westgroup.com/SessionInfo/v2/sessionguid/{0}?environment=QED" />
+			<add moduleId="Website" productId="Anz" envId="Demo" uri="https://region-use1.anzlaw.demo.thomsonreuters.com/" />
+			<add moduleId="Website" productId="Anz" envId="DemoPc1AWS" uri="https://site-use1c1.anzlaw.demo.thomsonreuters.com/" />
+			<add moduleId="Website" productId="Anz" envId="DemoBAWS" uri="https://site-use1c2.anzlaw.demo.thomsonreuters.com/" />
+			<add moduleId="Website" productId="WlAnalytics" envId="Demo" uri="http://gov.analytics.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WlAnalytics" envId="DemoPc1AWS" uri="http://site-use1c1.analytics.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WlAnalytics" envId="DemoBAWS" uri="http://site-use1c2.analytics.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WlAnalytics" envId="Qed" uri="http://gov.analytics.qed.westlaw.com/" />
+			<add moduleId="Website" productId="WlAnalytics" envId="QedAAWS" uri="http://site-use1c1.analytics.qed.westlaw.com/" />
+			<add moduleId="Website" productId="WlAnalytics" envId="QedBAWS" uri="http://site-use1c2.analytics.qed.westlaw.com/" />
+			<add moduleId="Website" productId="WlnMobile" envId="Demo" uri="https://region-use1.m.next.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WlnMobile" envId="DemoPc1AWS" uri="https://site-use1c1.m.next.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WlnMobile" envId="DemoBAWS" uri="https://site-use1c2.m.next.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WlnLinks" envId="Demo" uri="https://region-use1.links.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WlnLinks" envId="DemoPc1AWS" uri="https://site-use1c1.links.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WlnLinks" envId="DemoBAWS" uri="https://site-use1c2.links.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WestlawNext" envId="Demo" uri="https://gov.next.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WestlawNext" envId="DemoPc1AWS" uri="https://site-use1c1.next.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WestlawNext" envId="DemoBAWS" uri="https://site-use1c2.next.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WestlawNext" envId="Qed" uri="https://gov.next.qed.westlaw.com/" />
+			<add moduleId="Website" productId="WestlawNext" envId="QedAAWS" uri="https://site-use1c1.next.qed.westlaw.com/" />
+			<add moduleId="Website" productId="WestlawNext" envId="QedBAWS" uri="https://site-use1c2.next.qed.westlaw.com/" />
+			<add moduleId="Website" productId="WestlawNext" envId="ProdA" uri="https://region-use1.gov.next.westlaw.com/" />
+			<add moduleId="Website" productId="WlnCorrectional" envId="Demo" uri="https://region-use1.nextcorrectional.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WlnCorrectional" envId="DemoPc1AWS" uri="https://site-use1c1.nextcorrectional.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WlnCorrectional" envId="DemoBAWS" uri="https://site-use1c2.nextcorrectional.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WestlawEdge" envId="Demo" uri="https://gov.next.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WestlawEdge" envId="DemoPc1AWS" uri="https://site-use1c1.next.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WestlawEdge" envId="DemoBAWS" uri="https://site-use1c2.next.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WestlawEdge" envId="Qed" uri="https://gov.next.qed.westlaw.com/" />
+			<add moduleId="Website" productId="WestlawEdge" envId="QedAAWS" uri="https://site-use1c1.next.qed.westlaw.com/" />
+			<add moduleId="Website" productId="WestlawEdge" envId="QedBAWS" uri="https://site-use1c2.next.qed.westlaw.com/" />
+			<add moduleId="Website" productId="WestlawEdge" envId="ProdA" uri="https://region-use1.gov.next.westlaw.com/" />
+			<add moduleId="Website" productId="WestlawPrecisionAws" envId="Demo" uri="https://region-use1.next.demo.westlaw.com/" /> 
+			<add moduleId="Website" productId="WestlawPrecisionAws" envId="DemoPc1AWS" uri="https://site-use1c1.next.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WestlawPrecisionAws" envId="DemoBAWS" uri="https://site-use1c2.next.demo.westlaw.com/" />
+			<add moduleId="DOGateway" productId="WestlawNext" envId="Demo" uri="http://dogateway.int.legalservices.demo.westlaw.com/" />
+			<add moduleId="DOGateway" productId="WestlawNext" envId="DemoBAWS" uri="http://dogateway.int.legalservices.demo.westlaw.com/" />
+			<add moduleId="DOGateway" productId="WestlawNext" envId="DemoPc1AWS" uri="http://dogateway.int.legalservices.demo.westlaw.com/" />
+			<add moduleId="DOGateway" productId="WestlawNext" envId="Qed" uri="http://dogateway.int.legalservices.qed.westlaw.com/" />
+			<add moduleId="DOGateway" productId="WestlawNext" envId="QedAAWS" uri="http://dogateway.int.legalservices.qed.westlaw.com/" />
+			<add moduleId="DOGateway" productId="WestlawNext" envId="QedBAWS" uri="http://dogateway.int.legalservices.qed.westlaw.com/" />
+			<add moduleId="LinkResolver" productId="None" envId="DemoPc1AWS" uri="http://wwwqa.westlaw.com/" />
+			<add moduleId="LinkResolver" productId="None" envId="DemoBAWS" uri="http://wwwqa.westlaw.com/" />
+			<add moduleId="LinkResolver" productId="None" envId="Demo" uri="http://wwwqa.westlaw.com/" />
+			<add moduleId="LinkResolver" productId="None" envId="Qed" uri="http://wwwqa.westlaw.com/" />
+			<add moduleId="LinkResolver" productId="None" envId="QedAAWS" uri="http://wwwqa.westlaw.com/" />
+			<add moduleId="LinkResolver" productId="None" envId="QedBAWS" uri="http://wwwqa.westlaw.com/" />
+			<add moduleId="Security" productId="None" envId="Demo" uri="http://security.int.legalservices.demo.westlaw.com" />
+			<add moduleId="Security" productId="None" envId="DemoBAWS" uri="http://security.int.legalservices.demo.westlaw.com" />
+			<add moduleId="Security" productId="None" envId="DemoPc1AWS" uri="http://security.int.legalservices.demo.westlaw.com" />
+			<add moduleId="Security" productId="None" envId="Qed" uri="http://security.int.legalservices.qed.westlaw.com" />
+			<add moduleId="Security" productId="None" envId="QedAAWS" uri="http://security.int.legalservices.qed.westlaw.com" />
+			<add moduleId="Security" productId="None" envId="QedBAWS" uri="http://security.int.legalservices.qed.westlaw.com" />
+			<add moduleId="Website" productId="GovtSites" envId="Demo" uri="https://region-use1.govt.demo.westlaw.com/" />
+			<add moduleId="Website" productId="GovtSites" envId="DemoPc1AWS" uri="https://site-use1c1.govt.demo.westlaw.com/" />
+			<add moduleId="Website" productId="GovtSites" envId="DemoBAWS" uri="https://site-use1c2.govt.demo.westlaw.com/" />
+			<add moduleId="Website" productId="DraftingAssistant" envId="Demo" uri="http://draftingassistant.next.demo.westlaw.com/" />
+			<add moduleId="Website" productId="DraftingAssistant" envId="DemoBAWS" uri="http://draftingassistant.next.demo.westlaw.com/" />
+			<add moduleId="Website" productId="DraftingAssistant" envId="DemoPc1AWS" uri="http://draftingassistant.next.demo.westlaw.com/" />
+			<add moduleId="Website" productId="CaseNotebook" envId="Demo" uri="https://region-use1.casenotebook.next.demo.westlaw.com/" />
+			<add moduleId="Website" productId="CaseNotebook" envId="DemoPc1AWS" uri="https://site-use1c1.casenotebook.next.demo.westlaw.com/" />
+			<add moduleId="Website" productId="CaseNotebook" envId="DemoBAWS" uri="https://site-use1c2.casenotebook.next.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WestKm" envId="Demo" uri="https://region-use1.km.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WestKm" envId="DemoBAWS" uri="https://site-use1c2.km.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WestKm" envId="DemoPc1AWS" uri="https://site-use1c1.km.demo.westlaw.com/" />
+			<add moduleId="Document" productId="WestlawNext" envId="Demo" uri="https://document-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="Document" productId="WestlawNext" envId="DemoBAWS" uri="https://document-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="Document" productId="WestlawNext" envId="DemoPc1AWS" uri="https://document-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="Document" productId="WestlawNext" envId="Qed" uri="http://document-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="Document" productId="WestlawNext" envId="QedAAWS" uri="http://document-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="Document" productId="WestlawNext" envId="QedBAWS" uri="http://document-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="DocPersist" productId="WestlawNext" envId="Demo" uri="http://docpersist-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="DocPersist" productId="WestlawNext" envId="DemoBAWS" uri="http://docpersist-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="DocPersist" productId="WestlawNext" envId="DemoPc1AWS" uri="http://docpersist-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="DocPersist" productId="WestlawNext" envId="Qed" uri="https://docpersist-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="DocPersist" productId="WestlawNext" envId="QedAAWS" uri="https://docpersist-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="DocPersist" productId="WestlawNext" envId="QedBAWS" uri="https://docpersist-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="Image" productId="WestlawNext" envId="Demo" uri="http://image-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="Image" productId="WestlawNext" envId="DemoPc1AWS" uri="http://image-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="Image" productId="WestlawNext" envId="DemoBAWS" uri="http://image-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="Image" productId="WestlawNext" envId="Qed" uri="https://image-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="Image" productId="WestlawNext" envId="QedAAWS" uri="https://image-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="Image" productId="WestlawNext" envId="QedBAWS" uri="https://image-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="Website" productId="WlnOpenWeb" envId="Demo" uri="https://region-use1.content.next.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WlnOpenWeb" envId="DemoPc1AWS" uri="https://site-use1c1.content.next.demo.westlaw.com/" />
+			<add moduleId="Website" productId="WlnOpenWeb" envId="DemoBAWS" uri="https://site-use1c2.content.next.demo.westlaw.com/" />
+			<add moduleId="Search" productId="WestlawNext" envId="Demo" uri="https://search-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="Search" productId="WestlawNext" envId="DemoBAWS" uri="https://search-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="Search" productId="WestlawNext" envId="DemoPc1AWS" uri="https://search-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="Search" productId="WestlawNext" envId="Qed" uri="https://search-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="Search" productId="WestlawNext" envId="QedAAWS" uri="https://search-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="Search" productId="WestlawNext" envId="QedBAWS" uri="https://search-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="DataOrchestration" productId="WestlawNext" envId="Demo" uri="https://dataorchestration-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="DataOrchestration" productId="WestlawNext" envId="DemoBAWS" uri="https://dataorchestration-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="DataOrchestration" productId="WestlawNext" envId="DemoPc1AWS" uri="https://dataorchestration-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="DataOrchestration" productId="WestlawNext" envId="Qed" uri="https://dataorchestration-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="DataOrchestration" productId="WestlawNext" envId="QedAAWS" uri="https://dataorchestration-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="DataOrchestration" productId="WestlawNext" envId="QedBAWS" uri="https://dataorchestration-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="Report" productId="WestlawNext" envId="Demo" uri="https://report-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="Report" productId="WestlawNext" envId="DemoBAWS" uri="https://report-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="Report" productId="WestlawNext" envId="DemoPc1AWS" uri="https://report-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="Report" productId="WestlawNext" envId="Qed" uri="https://report-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="Report" productId="WestlawNext" envId="QedAAWS" uri="https://report-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="Report" productId="WestlawNext" envId="QedBAWS" uri="https://report-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="Nlu" productId="WestlawNext" envId="Demo" uri="https://nlu-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="Nlu" productId="WestlawNext" envId="DemoBAWS" uri="https://nlu-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="Nlu" productId="WestlawNext" envId="DemoPc1AWS" uri="https://nlu-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="Nlu" productId="WestlawNext" envId="Qed" uri="https://nlu-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="Nlu" productId="WestlawNext" envId="QedAAWS" uri="https://nlu-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="Nlu" productId="WestlawNext" envId="QedBAWS" uri="https://nlu-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="EntityId" productId="WestlawNext" envId="Demo" uri="https://entityid-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="EntityId" productId="WestlawNext" envId="DemoBAWS" uri="https://entityid-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="EntityId" productId="WestlawNext" envId="DemoPc1AWS" uri="https://entityid-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="EntityId" productId="WestlawNext" envId="Qed" uri="https://entityid-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="EntityId" productId="WestlawNext" envId="QedAAWS" uri="https://entityid-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="EntityId" productId="WestlawNext" envId="QedBAWS" uri="https://entityid-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="TypeAhead" productId="WestlawNext" envId="Demo" uri="https://typeahead-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="TypeAhead" productId="WestlawNext" envId="DemoBAWS" uri="https://typeahead-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="TypeAhead" productId="WestlawNext" envId="DemoPc1AWS" uri="https://typeahead-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="TypeAhead" productId="WestlawNext" envId="Qed" uri="https://typeahead-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="TypeAhead" productId="WestlawNext" envId="QedAAWS" uri="https://typeahead-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="TypeAhead" productId="WestlawNext" envId="QedBAWS" uri="https://typeahead-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="OnePassWeb" productId="None" envId="Demo" uri="https://signon.qa.thomsonreuters.com/" />
+			<add moduleId="OnePassWeb" productId="None" envId="DemoBAWS" uri="https://signon.qa.thomsonreuters.com/" />
+			<add moduleId="OnePassWeb" productId="None" envId="DemoPc1AWS" uri="https://signon.qa.thomsonreuters.com/" />
+			<add moduleId="OnePassWeb" productId="None" envId="Qed" uri="https://signon.qa.thomsonreuters.com/" />
+			<add moduleId="OnePassWeb" productId="None" envId="QedAAWS" uri="https://signon.qa.thomsonreuters.com/" />
+			<add moduleId="OnePassWeb" productId="None" envId="QedBAWS" uri="https://signon.qa.thomsonreuters.com/" />
+			<add moduleId="OnePassV3" productId="None" envId="Demo" uri="https://onepassservicesqa.westlaw.com" />
+			<add moduleId="OnePassV3" productId="None" envId="DemoBAWS" uri="https://onepassservicesqa.westlaw.com" />
+			<add moduleId="OnePassV3" productId="None" envId="DemoPc1AWS" uri="https://onepassservicesqa.westlaw.com" />
+			<add moduleId="OnePassV3" productId="None" envId="Qed" uri="https://onepassservicesqa.westlaw.com" />
+			<add moduleId="OnePassV3" productId="None" envId="QedAAWS" uri="https://onepassservicesqa.westlaw.com" />
+			<add moduleId="OnePassV3" productId="None" envId="QedBAWS" uri="https://onepassservicesqa.westlaw.com" />
+			<add moduleId="Gateway" productId="None" envId="Demo" uri="https://gateway-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="Gateway" productId="None" envId="DemoBAWS" uri="https://gateway-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="Gateway" productId="None" envId="DemoPc1AWS" uri="https://gateway-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="Gateway" productId="None" envId="Qed" uri="https://gateway-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="Gateway" productId="None" envId="QedAAWS" uri="https://gateway-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="Gateway" productId="None" envId="QedBAWS" uri="https://gateway-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="SearchSpellChecker" productId="WestlawNext" envId="Demo" uri="https://searchspellchecker-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="SearchSpellChecker" productId="WestlawNext" envId="DemoBAWS" uri="https://searchspellchecker-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="SearchSpellChecker" productId="WestlawNext" envId="DemoPc1AWS" uri="https://searchspellchecker-int-next-demo-westlaw-com.30962.aws-int.thomsonreuters.com/" />
+			<add moduleId="SearchSpellChecker" productId="WestlawNext" envId="Qed" uri="https://searchspellchecker-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="SearchSpellChecker" productId="WestlawNext" envId="QedAAWS" uri="https://searchspellchecker-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+			<add moduleId="SearchSpellChecker" productId="WestlawNext" envId="QedBAWS" uri="https://searchspellchecker-int-next-qed-westlaw-com.92615.aws-int.thomsonreuters.com/" />
+		</endpoints>
+		<modules>
+			<add id="None" type="Undefined" reportingTag="" />
+			<add id="Adc" type="CobaltServices" reportingTag="ADC" />
+			<add id="Alerts" type="CobaltModules" reportingTag="Alerts" />
+			<add id="AlertProductService" type="CobaltModules" reportingTag="Alert Product Service" />
+			<add id="AlertsEngine" type="LegalServices" reportingTag="Alerts Engine" />
+			<add id="CobaltServices" type="CobaltServices" reportingTag="" />
+			<add id="DataOrchestration" type="LegalServices" reportingTag="Data Orchestration" />
+			<add id="Document" type="CobaltModules" reportingTag="Document" />
+			<add id="DocPersist" type="CobaltModules" reportingTag="DocPersist" />
+			<add id="EntityId" type="LegalServices" reportingTag="Entity ID" />
+			<add id="Foldering" type="CobaltModules" reportingTag="Foldering" />
+			<add id="FormsAssembly" type="CobaltModules" reportingTag="Forms Assembly" />
+			<add id="DOGateway" type="LegalServices" reportingTag="DOGateway" />
+			<add id="Gateway" type="CobaltModules" reportingTag="Gateway" />
+			<add id="Image" type="LegalServices" reportingTag="Image" />
+			<add id="LinkResolver" type="CobaltModules" reportingTag="Link Resolver" />
+			<add id="Nlu" type="CobaltModules" reportingTag="Nlu" />
+			<add id="RelatedInformation" type="CobaltModules" reportingTag="Related Information" />
+			<add id="Report" type="CobaltModules" reportingTag="Report" />
+			<add id="Search" type="CobaltModules" reportingTag="Search" />
+			<add id="Security" type="LegalServices" reportingTag="" />
+			<add id="StaticContent" type="CobaltModules" reportingTag="Static Content" />
+			<add id="Uds" type="CobaltServices" reportingTag="UDS" />
+			<add id="WebContent" type="CobaltModules" reportingTag="WebContent" />
+			<add id="Website" type="CobaltModules" reportingTag="Website" />
+			<add id="TypeAhead" type="CobaltModules" reportingTag="Website" />
+			<add id="OnePassWeb" type="Undefined" reportingTag="OnePassWeb" />
+			<add id="OnePassV3" type="Undefined" reportingTag="OnePassV3" />
+			<add id="Omr" type="CobaltModules" reportingTag="Omr" />
+			<add id="SearchSpellChecker" type="CobaltModules" reportingTag="SearchSpellChecker" />
+		</modules>
+		<products>
+			<add id="None" type="Undefined" reportingTag="" alias="" />
+			<add id="Anz" type="WestlawNext" reportingTag="" alias="" />
+			<add id="CobaltSessionInfo" type="CobaltTools" reportingTag="" alias="" />
+			<add id="CobaltSharedSessionInfo" type="CobaltTools" reportingTag="" alias="" />
+			<add id="Concourse" type="LegalSolutions" reportingTag="Concourse" alias="ORION.WESTLAW" />
+			<add id="FirmCentral" type="LegalSolutions" reportingTag="Firm Central" alias="SLWB.WESTLAW" />
+			<add id="GovtSites" type="LegalSolutions" reportingTag="Government Weblinks" alias="GOVT.WESTLAW" />
+			<add id="LawSchool" type="WestlawNext" reportingTag="WestlawNext" alias="" />
+			<add id="TaxNetPro3" type="LegalSolutions" reportingTag="Taxnet Pro 3" alias="CARSWELL.TAXNETPRO" />
+			<add id="TaxnetPro3Aws" type="LegalSolutions" reportingTag="Taxnet Pro 3 Aws" alias="CARSWELL.TAXNETPRO.AWS" />
+			<add id="WestlawNext" type="WestlawNext" reportingTag="WestlawNext" alias="WestlawNext" />
+			<add id="WestKm" type="WestlawNext" reportingTag="" alias="" />
+			<add id="WlAnalytics" type="LegalSolutions" reportingTag="WL Analytics" alias="ANALYTICS.WESTLAW" />
+			<add id="WlFormBuilder" type="LegalSolutions" reportingTag="Westlaw FormBuilder" alias="Forms.Westlaw" />
+			<add id="WlnCampus" type="WestlawNext" reportingTag="WLN Campus" alias="" />
+			<add id="WlnCanada" type="LegalSolutions" reportingTag="WestlawNext Canada" alias="CARSWELL.WESTLAW" />
+			<add id="WlnCanadaAws" type="LegalSolutions" reportingTag="WestlawNext Canada Aws" alias="CARSWELL.WESTLAW.AWS" />
+			<add id="WlnCorrectional" type="WestlawNext" reportingTag="Correctional" alias="NEXTCORRECTIONAL.WESTLAW" />
+			<add id="WestlawEdge" type="WestlawNext" reportingTag="WestlawEdge" alias="WestlawNext" />
+			<add id="WestlawEdgePremium" type="WestlawNext" reportingTag="WestlawEdge" alias="WestlawNext" />
+			<add id="WestlawPrecisionAws" type="WestlawNext" reportingTag="WestlawEdgeAws" alias="WestlawNext" />
+			<add id="WlnLinks" type="WestlawNext" reportingTag="Links" alias="" />
+			<add id="WlnMobile" type="WestlawNext" reportingTag="WLN Mobile" alias="" />
+			<add id="WlnPatron" type="WestlawNext" reportingTag="Patron" alias="" />
+			<add id="WlnTax" type="LegalSolutions" reportingTag="WLN Tax" alias="NEXTTAX.WESTLAW" />
+			<add id="DraftingAssistant" type="WestlawNext" reportingTag="" alias="DRAFTING.WESTLAW" />
+			<add id="CaseNotebook" type="WestlawNext" reportingTag="" alias="" />
+			<add id="WlnOpenWeb" type="WestlawNext" reportingTag="" alias="" />
+			<add id="Cayman" type="LegalSolutions" reportingTag="" alias="CAYMAN.THOMSONREUTERS" />
+			<add id="ProView" type="LegalSolutions" reportingTag="Pro View" alias="" />
+			<add id="WlnGlobal" type="WestlawNext" reportingTag="" alias="" />
+			<add id="CheckpointGlobal" type="WestlawNext" reportingTag="" alias="" />
+		</products>
+	</remoteEnvironmentDefinitions>
+	<localEnvironmentDefinitions>
+		<testClients>
+			<add id="None" alias="" type="Undefined" family="Undefined" reportingTag="" />
+			<add id="Edge" alias="EDGE" type="Browser" family="MicrosoftEdge" reportingTag="Edge" />
+			<add id="InternetExplorer9" alias="IE9" type="Browser" family="InternetExplorer" reportingTag="Internet Explorer 9" />
+			<add id="InternetExplorer10" alias="IE10" type="Browser" family="InternetExplorer" reportingTag="Internet Explorer 10" />
+			<add id="InternetExplorer11" alias="IE11" type="Browser" family="InternetExplorer" reportingTag="Internet Explorer 11" />
+			<add id="FirefoxAurora" alias="FFA" type="Browser" family="Firefox" reportingTag="Firefox Aurora" uri="%PROGRAMFILES%/Mozilla Firefox Aurora/firefox.exe" />
+			<add id="FirefoxBeta" alias="FFB" type="Browser" family="Firefox" reportingTag="Firefox Beta" uri="%PROGRAMFILES%/Mozilla Firefox Beta/firefox.exe" />
+			<add id="Firefox" alias="FF" type="Browser" family="Firefox" reportingTag="Firefox" uri="%PROGRAMFILES%/Mozilla Firefox/firefox.exe" />
+			<add id="ChromeCanary" alias="CHC" type="Browser" family="Chrome" reportingTag="Chrome Canary" uri="%APPDATA%/../Local/Google/Chrome SxS/Application/chrome.exe" />
+			<add id="Chrome" alias="CH" type="Browser" family="Chrome" reportingTag="Chrome" />
+			<add id="Safari" alias="SF" type="Browser" family="Safari" reportingTag="Safari" />
+			<add id="Api" alias="API" type="ApiClient" family="Api" reportingTag="" />
+			<add id="CodedUi" alias="CUI" type="DesktopClient" family="CodedUi" reportingTag="" />
+			<add id="RemoteChromeBrowser" alias="RMCH" type="Browser" family="Chrome" remoteDriverUri="http://127.0.0.1:4444/wd/hub/" reportingTag="Chrome" />
+		</testClients>
+	</localEnvironmentDefinitions>
+</configuration>

@@ -1,0 +1,54 @@
+﻿{
+    "AddNote": {
+        "Text": "Add note",
+        "LocatorString": ".//li[contains(@id,'co_actionsMenu_addNote')]"
+    },
+    "CopyMove": {
+        "Text": "Copy / Move",
+        "LocatorString": ".//li[contains(@id, 'co_actionsMenu_copyMove')]"
+    },
+    "Delete": {
+        "Text": "Delete",
+        "LocatorString": ".//li[contains(@id,'co_actionsMenu_delete') or @id = 'co_actionsMenu_trash']"
+    },
+    "DeleteNote": {
+        "Text": "Delete note",
+        "LocatorString": ".//li[@id= 'co_actionsMenu_deleteNote']"
+    },
+    "EditNote": {
+        "Text": "Edit note",
+        "LocatorString": ".//li[@id= 'co_actionsMenu_editNote']"
+    },
+    "Export": {
+        "Text": "Export",
+        "LocatorString": ".//li[@id= 'co_actionsMenu_export']"
+    },
+    "ExportToAmazonKindle": {
+        "Text": "Export to Amazon Kindle",
+        "LocatorString": ".//li[@id= 'co_actionsMenu_exportToAmazon']"
+    },
+    "FolderSharing": {
+        "Text": "Folder sharing",
+        "LocatorString": ".//li[@id= 'co_actionsMenu_share']/span[text() = 'Folder sharing']"
+    },
+    "PinToQuickAccess": {
+        "Text": "Pin to quick access",
+        "LocatorString": ".//li[@id= 'co_actionsMenu_pinToQuickAccess']"
+    },
+    "RemoveFromQuickAccess": {
+        "Text": "Remove from quick access",
+        "LocatorString": ".//li[@id= 'co_actionsMenu_unpinFromQuickAccess']"
+    },
+    "Rename": {
+        "Text": "Rename",
+        "LocatorString": ".//li[contains(@id, 'co_actionsMenu_rename')]"
+    },
+    "ShareFolder": {
+        "Text": "Share folder",
+        "LocatorString": ".//li[contains(@id,'co_actionsMenu_share')]/span[text() = 'Share folder']"
+    },
+    "UploadToFolder": {
+        "Text": "Upload to folder",
+        "LocatorString": ".//li[@id= 'co_actionsMenu_upload']"
+    }
+}

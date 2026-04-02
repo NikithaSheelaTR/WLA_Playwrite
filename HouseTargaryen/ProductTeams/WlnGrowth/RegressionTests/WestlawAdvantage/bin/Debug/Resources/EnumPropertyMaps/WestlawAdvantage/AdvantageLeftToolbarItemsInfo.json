@@ -1,0 +1,73 @@
+﻿{
+    "AIDeepResearch": {
+        "Text": "AIDeepResearch",
+        "LocatorMask": "return(arguments[0].shadowRoot.querySelector('i.fa-light.fa-sharp.fa-telescope'));",
+        "LocatorString": "saf-icon[icon-name='telescope']"
+    },
+    "Search": {
+        "Text": "Search",
+        "LocatorMask": "return(arguments[0].shadowRoot.querySelector('i.fa-light.fa-sharp.fa-magnifying-glass'));",
+        "LocatorString": "saf-icon[icon-name='magnifying-glass']"
+    },
+    "Telescope": {
+        "Text": "Telescope",
+        "LocatorMask": "return(arguments[0].shadowRoot.querySelector('i.fa-light.fa-sharp.fa-telescope'));",
+        "LocatorString": "saf-icon[icon-name='telescope']"
+    },
+    "History": {
+        "Text": "History",
+        "LocatorMask": "return(arguments[0].shadowRoot.querySelector('i.fa-light.fa-sharp.fa-clock-rotate-left'));",
+        "LocatorString": "saf-icon[icon-name='clock-rotate-left']"
+    },
+    "Browse": {
+        "Text": "Browse",
+        "LocatorMask": "return(arguments[0].shadowRoot.querySelector('i.fa-light.fa-sharp.fa-books'));",
+        "LocatorString": "saf-icon[icon-name='books']"
+    },
+    "Folders": {
+        "Text": "Folders",
+        "LocatorMask": "return(arguments[0].shadowRoot.querySelector('i.fa-light.fa-sharp.fa-folders'));",
+        "LocatorString": "saf-icon[icon-name='folders']"
+    },
+    "MyLinks": {
+        "Text": "MyLinks",
+        "LocatorMask": "return(arguments[0].shadowRoot.querySelector('i.fa-light.fa-sharp.fa-link-simple'));",
+        "LocatorString": "saf-icon[icon-name='link-simple']"
+    },
+    "CoCunsel": {
+        "Text": "CoCunsel",
+        "LocatorMask": "return(arguments[0].shadowRoot.querySelector('i.fa-solid.fa-sharp.fa-sparkles'));",
+        "LocatorString": "saf-icon[icon-name='sparkles']"
+    },
+    "Notifications": {
+        "Text": "Notifications",
+        "LocatorMask": "return(arguments[0].shadowRoot.querySelector('i.fa-light.fa-sharp.fa-bell'));",
+        "LocatorString": "saf-icon[icon-name='bell']"
+    },
+    "CliendID": {
+        "Text": "CliendID",
+        "LocatorMask": "return(arguments[0].shadowRoot.querySelector('i.fa-light.fa-sharp.fa-briefcase'));",
+        "LocatorString": "saf-icon[icon-name='briefcase']"
+    },
+    "HelpAndSupport": {
+        "Text": "HelpAndSupport",
+        "LocatorMask": "return(arguments[0].shadowRoot.querySelector('i.fa-light.fa-sharp.fa-circle-question'));",
+        "LocatorString": "saf-icon[icon-name='circle-question']"
+    },
+    "ProfileAndSignOut": {
+        "Text": "ProfileAndSignOut",
+        "LocatorMask": "return(arguments[0].shadowRoot.querySelector('i.fa-light.fa-sharp.fa-circle-user'));",
+        "LocatorString": "saf-icon[icon-name='circle-user']"
+    },
+    "Tools": {
+        "Text": "Tools",
+        "LocatorMask": "return(arguments[0].shadowRoot.querySelector('i.fa-light.fa-sharp.fa-screwdriver-wrench'));",
+        "LocatorString": "saf-icon[icon-name='screwdriver-wrench']"
+    },
+  "SignOut": {
+    "Text": "SignOut",
+    "LocatorMask": "return(arguments[0].shadowRoot.querySelector('button'));",
+    "LocatorString": "saf-button[aria-label ='Sign out']"
+  }
+}
+

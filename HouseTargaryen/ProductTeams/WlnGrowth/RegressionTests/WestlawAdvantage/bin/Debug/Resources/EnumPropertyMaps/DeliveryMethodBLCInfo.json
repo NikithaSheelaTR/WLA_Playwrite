@@ -1,0 +1,14 @@
+﻿{
+  // Maps DeliveryMethod to WebElementInfo for BLCPowerSearch pages
+  "Download": {
+    "LocatorString": "//li[@delivery-type ='deliveryTypes.download']/a"
+  },
+
+  "Email": {
+    "LocatorString": "//li[@delivery-type ='deliveryTypes.email']/a"
+  },
+
+  "Print": {
+    "LocatorString": "//li[@delivery-type ='deliveryTypes.print']/a"
+  }
+}

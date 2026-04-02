@@ -1,0 +1,15 @@
+﻿{
+  // Maps CopyMenuOptionInfo to WebElementInfo
+  "AddCitationToOutline": {
+    "Text": "Add citation to outline",
+    "LocatorString": "//li[@id = 'co_addToOutline_dropdownItem']"
+  },
+  "CopyCitation": {
+    "Text": "Copy citation",
+    "LocatorString": "//li[@id = 'co_copyCitation_dropdownItem']"
+  },
+  "CopyLink": {
+    "Text": "Copy link",
+    "LocatorString": "//li[@id = 'co_copyLink_dropdownItem']"
+  }
+}

@@ -1,0 +1,262 @@
+TestReporter Error: 0 : 16:30:16.2090101 : 2-Test Runner : System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+   at System.Reflection.RuntimeMethodInfo.FetchNonReturnParameters()
+   at System.Reflection.RuntimeMethodInfo.GetParameters()
+   at System.Diagnostics.StackTrace.ToString(TraceFormat traceFormat)
+   at System.Exception.GetStackTrace(Boolean needFileInfo)
+   at System.IO.FileNotFoundException.ToString()
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.Format(String format, Object arg0)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass23_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 16:30:16.2130076 : 2-Test Runner : System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+   at System.Reflection.RuntimeMethodInfo.FetchNonReturnParameters()
+   at System.Reflection.RuntimeMethodInfo.GetParameters()
+   at System.Diagnostics.StackTrace.ToString(TraceFormat traceFormat)
+   at System.Exception.GetStackTrace(Boolean needFileInfo)
+   at System.IO.FileNotFoundException.ToString()
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.Format(String format, Object arg0)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass23_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 16:30:16.2141060 : 2-Test Runner : System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+   at System.Reflection.RuntimeMethodInfo.FetchNonReturnParameters()
+   at System.Reflection.RuntimeMethodInfo.GetParameters()
+   at System.Diagnostics.StackTrace.ToString(TraceFormat traceFormat)
+   at System.Exception.GetStackTrace(Boolean needFileInfo)
+   at System.IO.FileNotFoundException.ToString()
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.Format(String format, Object arg0)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass23_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 16:30:16.2153239 : 2-Test Runner : System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+   at System.Reflection.RuntimeMethodInfo.FetchNonReturnParameters()
+   at System.Reflection.RuntimeMethodInfo.GetParameters()
+   at System.Diagnostics.StackTrace.ToString(TraceFormat traceFormat)
+   at System.Exception.GetStackTrace(Boolean needFileInfo)
+   at System.IO.FileNotFoundException.ToString()
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.Format(String format, Object arg0)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass23_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 16:30:16.2153239 : 2-Test Runner : System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+   at System.Reflection.RuntimeMethodInfo.FetchNonReturnParameters()
+   at System.Reflection.RuntimeMethodInfo.GetParameters()
+   at System.Diagnostics.StackTrace.ToString(TraceFormat traceFormat)
+   at System.Exception.GetStackTrace(Boolean needFileInfo)
+   at System.IO.FileNotFoundException.ToString()
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.Format(String format, Object arg0)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass23_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 16:30:16.2449144 : 2-Test Runner : System.Exception: Cannot finish test item due starting item failed. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+   at System.Reflection.RuntimeMethodInfo.FetchNonReturnParameters()
+   at System.Reflection.RuntimeMethodInfo.GetParameters()
+   at System.Diagnostics.StackTrace.ToString(TraceFormat traceFormat)
+   at System.Exception.GetStackTrace(Boolean needFileInfo)
+   at System.IO.FileNotFoundException.ToString()
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.Format(String format, Object arg0)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass23_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 16:30:31.3634963 : 2-Test Runner : System.Exception: Cannot finish test item due starting item failed. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+   at System.Reflection.RuntimeMethodInfo.FetchNonReturnParameters()
+   at System.Reflection.RuntimeMethodInfo.GetParameters()
+   at System.Diagnostics.StackTrace.ToString(TraceFormat traceFormat)
+   at System.Exception.GetStackTrace(Boolean needFileInfo)
+   at System.IO.FileNotFoundException.ToString()
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.Format(String format, Object arg0)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass23_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 16:30:31.3654910 : 2-Test Runner : System.Exception: Cannot finish test item due starting item failed. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+   at System.Reflection.RuntimeMethodInfo.FetchNonReturnParameters()
+   at System.Reflection.RuntimeMethodInfo.GetParameters()
+   at System.Diagnostics.StackTrace.ToString(TraceFormat traceFormat)
+   at System.Exception.GetStackTrace(Boolean needFileInfo)
+   at System.IO.FileNotFoundException.ToString()
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.Format(String format, Object arg0)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass23_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 16:30:31.3664935 : 2-Test Runner : System.Exception: Cannot finish test item due starting item failed. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+   at System.Reflection.RuntimeMethodInfo.FetchNonReturnParameters()
+   at System.Reflection.RuntimeMethodInfo.GetParameters()
+   at System.Diagnostics.StackTrace.ToString(TraceFormat traceFormat)
+   at System.Exception.GetStackTrace(Boolean needFileInfo)
+   at System.IO.FileNotFoundException.ToString()
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.Format(String format, Object arg0)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass23_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 16:30:31.3677109 : 2-Test Runner : System.Exception: Cannot finish test item due starting item failed. ---> System.AggregateException: One or more errors occurred. ---> System.Exception: Cannot start test item due parent failed to start. ---> System.AggregateException: One or more errors occurred. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+   at System.Reflection.RuntimeMethodInfo.FetchNonReturnParameters()
+   at System.Reflection.RuntimeMethodInfo.GetParameters()
+   at System.Diagnostics.StackTrace.ToString(TraceFormat traceFormat)
+   at System.Exception.GetStackTrace(Boolean needFileInfo)
+   at System.IO.FileNotFoundException.ToString()
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.Format(String format, Object arg0)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass23_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass25_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+LaunchReporter Error: 0 : 16:30:31.3697246 : 2-Test Runner : System.Exception: Cannot finish launch due starting launch failed. ---> System.AggregateException: One or more errors occurred. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at System.Signature.GetSignature(Void* pCorSig, Int32 cCorSig, RuntimeFieldHandleInternal fieldHandle, IRuntimeMethodInfo methodHandle, RuntimeType declaringType)
+   at System.Reflection.RuntimeMethodInfo.FetchNonReturnParameters()
+   at System.Reflection.RuntimeMethodInfo.GetParameters()
+   at System.Diagnostics.StackTrace.ToString(TraceFormat traceFormat)
+   at System.Exception.GetStackTrace(Boolean needFileInfo)
+   at System.IO.FileNotFoundException.ToString()
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.Format(String format, Object arg0)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.<ExecuteAsync>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass23_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---

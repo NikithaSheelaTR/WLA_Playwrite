@@ -1,0 +1,27 @@
+﻿{
+  // Maps RecipientsTabOptions to WebElementInfo
+  "Format": {
+    "Id": "co_delivery_format_fulltext",
+    "Text": "" 
+  },
+  "To": {
+    "Id": "co_delivery_emailAddress",
+    "Text": "" 
+  },
+  "Cc": {
+    "Id": "co_delivery_emailCcAddress",
+    "Text": "" 
+  },
+  "EmailNote": {
+    "Id": "co_delivery_note",
+    "Text": "" 
+  },
+  "DeliverAs": {
+    "Id": "co_delivery_fileContainer",
+    "Text": "" 
+  },
+  "Subject": {
+    "Id": "co_delivery_subject",
+    "Text": ""  
+  } 
+}
