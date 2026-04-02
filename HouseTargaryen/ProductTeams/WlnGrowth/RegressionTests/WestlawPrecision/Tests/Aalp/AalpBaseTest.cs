@@ -20,6 +20,8 @@
     using Framework.Core.Utils.Execution;
     using Framework.Common.UI.Utils.QualityLibraryFacade.Library.Extensions;
     using Framework.Common.UI.Utils.Browser;
+    using Framework.Common.UI.Products.WestlawEdgePremium.Pages.AALP;
+    using Framework.Common.UI.Products.WestlawAdvantage.Pages.DeepResearch;
 
     /// <summary>
     /// The AALP base test.
@@ -224,5 +226,25 @@
             string pageSource = BrowserPool.CurrentBrowser.Driver.PageSource;
             Console.WriteLine("**SessionId:" + pageSource.Substring(pageSource.IndexOf(",\"SessionId") + 13, 34));
         }
+
+        /// <summary>
+        /// Waits for AI Jurisdictional Survey results to be fully loaded.
+        /// Replaces the pattern: WaitUntil(!surveysPage.ProgressLabel.Displayed) + immediate element read,
+        /// which is a race condition — the spinner can disappear before the DOM is rendered.
+        /// </summary>
+        /// <param name="surveysPage">The surveys page instance.</param>
+        /// <param name="timeoutFromSec">Maximum seconds to wait. Defaults to 600.</param>
+        protected void WaitForSurveyResultsLoaded(AiJurisdictionalSurveysPage surveysPage, int timeoutFromSec = 600)
+            => surveysPage.WaitForResultsLoaded(timeoutFromSec);
+
+        /// <summary>
+        /// Waits for AI Deep Research results to be fully rendered.
+        /// Replaces the pattern: WaitUntil(!ProgressBarLabel.Displayed) + immediate element read,
+        /// which is a race condition — the spinner can disappear before the result DOM is ready.
+        /// </summary>
+        /// <param name="deepResearchPage">The deep research page instance.</param>
+        /// <param name="timeoutFromSec">Maximum seconds to wait. Defaults to 600.</param>
+        protected void WaitForDeepResearchResultsLoaded(AiDeepResearchPage deepResearchPage, int timeoutFromSec = 600)
+            => deepResearchPage.ResultComponent.SingleColumnComponent.WaitForResultsLoaded(timeoutFromSec);
     }
 }

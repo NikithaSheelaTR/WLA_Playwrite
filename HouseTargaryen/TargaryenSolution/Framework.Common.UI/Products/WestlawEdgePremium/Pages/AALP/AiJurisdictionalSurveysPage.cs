@@ -6,6 +6,7 @@
     using Framework.Common.UI.Products.Shared.Elements.Buttons;
     using Framework.Common.UI.Products.Shared.Elements.Labels;
     using Framework.Common.UI.Products.Shared.Elements.Textboxes;
+    using Framework.Core.Utils.Execution;
     using OpenQA.Selenium;
     using Framework.Common.UI.Products.WestlawAdvantage.Components.AiJurisdictionalSurveys;
 
@@ -115,6 +116,18 @@
         /// Progress label
         /// </summary>
         public ILabel ProgressLabel => new Label(ProgressLabelLocator);
+
+        /// <summary>
+        /// Waits for the survey results to be fully loaded.
+        /// Spinner disappearing does not guarantee content is rendered — this method waits
+        /// for actual result items to appear in the DOM after the spinner is gone.
+        /// </summary>
+        /// <param name="timeoutFromSec">Maximum seconds to wait for the spinner to clear. Defaults to 600 (AI generation can be slow).</param>
+        public void WaitForResultsLoaded(int timeoutFromSec = 600)
+        {
+            SafeMethodExecutor.WaitUntil(() => !this.ProgressLabel.Displayed, timeoutFromSec: timeoutFromSec);
+            SafeMethodExecutor.WaitUntil(() => this.SurveyResult.TimeStampLabel.Displayed, timeoutFromSec: 60);
+        }
 
         /// <summary>
         /// Close pendo message

@@ -1,0 +1,73 @@
+VSTest version 17.14.0 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Test Run deployment issue: Failed to get the file for deployment item 'Resources/Rerunner/ReportPortalReruner.exe': System.IO.FileNotFoundException: Could not find file 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\ReportPortalReruner.exe'.
+Test Run deployment issue: Failed to copy file 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\Resources/EnumPropertyMaps\WestlawEdgePremium\AALP\ComplaintAnalyzer\ComplaintAnalyzerResultTabsInfo.json' to 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\TestResults\Deploy_6120715 2026-04-01 12_55_12\Out\Resources\EnumPropertyMaps\WestlawEdgePremium\AALP\ComplaintAnalyzer\ComplaintAnalyzerResultTabsInfo.json': System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\TestResults\Deploy_6120715 2026-04-01 12_55_12\Out\Resources\EnumPropertyMaps\WestlawEdgePremium\AALP\ComplaintAnalyzer\ComplaintAnalyzerResultTabsInfo.json'.
+Test Run deployment issue: Failed to copy file 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\Resources/EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\LitigationAnalyticsCascadingFacetsInfo.json' to 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\TestResults\Deploy_6120715 2026-04-01 12_55_12\Out\Resources\EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\LitigationAnalyticsCascadingFacetsInfo.json': System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\TestResults\Deploy_6120715 2026-04-01 12_55_12\Out\Resources\EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\LitigationAnalyticsCascadingFacetsInfo.json'.
+Test Run deployment issue: Failed to copy file 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\Resources/EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\LitigationAnalyticsChartHeaderTabInfo.json' to 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\TestResults\Deploy_6120715 2026-04-01 12_55_12\Out\Resources\EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\LitigationAnalyticsChartHeaderTabInfo.json': System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\TestResults\Deploy_6120715 2026-04-01 12_55_12\Out\Resources\EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\LitigationAnalyticsChartHeaderTabInfo.json'.
+Test Run deployment issue: Failed to copy file 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\Resources/EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\LitigationAnalyticsContainerSubcategoriesInfo.json' to 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\TestResults\Deploy_6120715 2026-04-01 12_55_12\Out\Resources\EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\LitigationAnalyticsContainerSubcategoriesInfo.json': System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\TestResults\Deploy_6120715 2026-04-01 12_55_12\Out\Resources\EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\LitigationAnalyticsContainerSubcategoriesInfo.json'.
+Test Run deployment issue: Failed to copy file 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\Resources/EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\LitigationAnalyticsViewToggleTabInfo.json' to 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\TestResults\Deploy_6120715 2026-04-01 12_55_12\Out\Resources\EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\LitigationAnalyticsViewToggleTabInfo.json': System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\TestResults\Deploy_6120715 2026-04-01 12_55_12\Out\Resources\EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\LitigationAnalyticsViewToggleTabInfo.json'.
+Test Run deployment issue: Failed to copy file 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\Resources/EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\OpportunityFinderChooseOneLegalActivityTypeInfo.json' to 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\TestResults\Deploy_6120715 2026-04-01 12_55_12\Out\Resources\EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\OpportunityFinderChooseOneLegalActivityTypeInfo.json': System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\TestResults\Deploy_6120715 2026-04-01 12_55_12\Out\Resources\EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\OpportunityFinderChooseOneLegalActivityTypeInfo.json'.
+Test Run deployment issue: Failed to copy file 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\Resources/EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\OpportunityFinderColumnsToDisplayInfo.json' to 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\TestResults\Deploy_6120715 2026-04-01 12_55_12\Out\Resources\EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\OpportunityFinderColumnsToDisplayInfo.json': System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\TestResults\Deploy_6120715 2026-04-01 12_55_12\Out\Resources\EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\OpportunityFinderColumnsToDisplayInfo.json'.
+Test Run deployment issue: Failed to copy file 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\Resources/EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\OpportunityFinderCompanydropdownItemsInfo.json' to 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\TestResults\Deploy_6120715 2026-04-01 12_55_12\Out\Resources\EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\OpportunityFinderCompanydropdownItemsInfo.json': System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\TestResults\Deploy_6120715 2026-04-01 12_55_12\Out\Resources\EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\OpportunityFinderCompanydropdownItemsInfo.json'.
+Test Run deployment issue: Failed to copy file 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\Resources/EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\OpportunityFinderIncludeActivityWithinTheLastInfo.json' to 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\TestResults\Deploy_6120715 2026-04-01 12_55_12\Out\Resources\EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\OpportunityFinderIncludeActivityWithinTheLastInfo.json': System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\TestResults\Deploy_6120715 2026-04-01 12_55_12\Out\Resources\EnumPropertyMaps\WestlawEdgePremium\LitigationAnalytics\OpportunityFinderIncludeActivityWithinTheLastInfo.json'.
+  Failed AjsIncludeRelatedFedJurisSelectorTest [14 s]
+  Failed AjsIncludeRelatedFedFolderingTest [167 ms]
+  Error Message:
+   Test method WestlawAdvantage.Tests.AJSForWLAdvantage.WlaAjsIncludeRelatedFedTests.AjsIncludeRelatedFedFolderingTest threw exception: 
+System.TypeInitializationException: The type initializer for 'System.Collections.Generic.EqualityComparer`1' threw an exception. ---> System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown.
+  Stack Trace:
+      at System.Collections.Generic.EqualityComparer`1.CreateComparer()
+   at System.Collections.Generic.EqualityComparer`1..cctor()
+ --- End of inner exception stack trace ---
+    at System.Collections.Generic.Dictionary`2..ctor(Int32 capacity, IEqualityComparer`1 comparer)
+   at Framework.Common.UI.Products.WestlawEdge.Components.Miscellaneous.MiscellaneousTabPanel..ctor()
+   at Framework.Common.UI.Raw.WestlawEdge.Pages.EdgeHomePage..ctor()
+   at Framework.Common.UI.Products.Shared.Managers.EdgeNavigationManager.GoToFoldersPage[T]()
+   at WestlawAdvantage.Tests.AJSForWLAdvantage.WlaAjsBaseTest.PrepareTestFolder()
+   at WestlawAdvantage.Tests.AJSForWLAdvantage.WlaAjsIncludeRelatedFedTests.AjsIncludeRelatedFedFolderingTest()
+
+  Standard Output Messages:
+ [12:55:52.253] Constructor starting. ShimDir=C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\TestResults\Deploy_6120715 2026-04-01 12_55_12\Out, PublishDir=C:\Github\WLA_Playwrite\src\Shim\publish
+ [12:55:52.257] Setting PLAYWRIGHT_DRIVER_SEARCH_PATH=C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\TestResults\Deploy_6120715 2026-04-01 12_55_12\Out\.playwright
+ [12:55:52.259] EnsurePlaywrightDriver done. Creating Playwright...
+ ERROR: [2026-04-01 12:55:52,300] – message:System.ComponentModel.Win32Exception (0x80004005): The paging file is too small for this operation to complete
+    at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo startInfo)
+    at Microsoft.Playwright.Transport.StdIOTransport.StartProcessWithUTF8IOEncoding(Process process) in /_/src/Playwright/Transport/StdIOTransport.cs:line 168
+    at Microsoft.Playwright.Transport.StdIOTransport..ctor() in /_/src/Playwright/Transport/StdIOTransport.cs:line 49
+    at Microsoft.Playwright.Playwright.<CreateAsync>d__0.MoveNext() in /_/src/Playwright/Playwright.cs:line 44
+ --- End of stack trace from previous location where exception was thrown ---
+    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+    at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+    at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+    at Selenium.Playwright.Shim.Impl.SyncHelper.<>c__DisplayClass0_0`1.<RunSync>b__0()
+ --- End of stack trace from previous location where exception was thrown ---
+    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+    at Selenium.Playwright.Shim.Impl.SyncHelper.RunSync[TResult](Func`1 asyncFunc)
+    at Selenium.Playwright.Shim.Impl.PlaywrightWebDriver..ctor(ChromeOptions chromeOptions)
+    at Framework.Common.UI.Utils.Browser.DriverFactory.InitializeChromeDriver(Object browserOptions, String driverLocation)
+    at Framework.Common.UI.Utils.Browser.DriverFactory.GetWebDriver(TestClientId supportedBrowser, Object browserOptions, Uri remoteDriverUri, String driverLocation)
+    at Framework.Common.UI.Utils.Browser.Browser..ctor(TestClientInfo supportedBrowser, Object browserOptions, String driverLocation)
+    at Framework.Common.UI.Tests.BaseWebUiTest.InitializeTestClient()
+    at Framework.Core.Utils.Execution.SafeMethodExecutor.Execute(Action method) in C:\Github\WLA_Playwrite\HouseTargaryen\TargaryenSolution\Framework.Core\Utils\Execution\SafeMethodExecutor.cs:line 23 
+ ERROR: [2026-04-01 12:55:52,302] – message:System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+    at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)
+    at Framework.Common.UI.Utils.Browser.BrowserPool.get_CurrentBrowser()
+    at Framework.Common.UI.Tests.BaseWebUiTest.PrintSessionId()
+    at Framework.Core.Utils.Execution.SafeMethodExecutor.Execute(Action method) in C:\Github\WLA_Playwrite\HouseTargaryen\TargaryenSolution\Framework.Core\Utils\Execution\SafeMethodExecutor.cs:line 23 
+ INFO: [2026-04-01 12:55:52,304] – message:Report portal config json was updated C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\TestResults 
+ ERROR: [2026-04-01 12:55:52,376] – message:System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+    at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)
+    at Framework.Common.UI.Utils.Browser.BrowserPool.get_CurrentBrowser()
+    at Framework.Common.UI.Tests.BaseWebUiTest.PrintSessionId()
+    at Framework.Core.Utils.Execution.SafeMethodExecutor.Execute(Action method) in C:\Github\WLA_Playwrite\HouseTargaryen\TargaryenSolution\Framework.Core\Utils\Execution\SafeMethodExecutor.cs:line 23 
+ INFO: [2026-04-01 12:55:52,378] – message:Report portal config json was updated C:\Github\WLA_Playwrite\HouseTargaryen\ProductTeams\WlnGrowth\6120715_TR-JSW1FY3 2026-03-26 18_17_32\Out\TestResults 
+ ERROR: [2026-04-01 12:55:52,378] – message:System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+    at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)
+    at Framework.Common.UI.Utils.Browser.BrowserPool.get_CurrentBrowser()
+    at WestlawAdvantage.Tests.WlaBaseTest.PerformUiPostconditionRoutines()
+    at Framework.Common.UI.Tests.BaseWebUiTest.PerformUiPostconditions()
+    at Framework.Core.Utils.Execution.SafeMethodExecutor.Execute(Action method) in C:\Github\WLA_Playwrite\HouseTargaryen\TargaryenSolution\Framework.Core\Utils\Execution\SafeMethodExecutor.cs:line 23 
+
+

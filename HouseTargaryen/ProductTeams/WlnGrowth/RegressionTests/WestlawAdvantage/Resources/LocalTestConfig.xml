@@ -7,7 +7,7 @@
     <add key="TEST_BROWSER" value="CH" />
     <!-- REQ. Valid values are:
     Ci, CiClient, Demo, DemoClient, DemoB, DemoPc1, Qed, QedA, QedB, HotProdQa, HotProd, Prod, ProdA, ProdB. -->
-    <add key="TEST_ENVIRONMENT" value="Qed" />
+    <add key="TEST_ENVIRONMENT" value="Demo" />
 	  <add key="IS_FED_RAMP" value="No" />
 	  <!-- OPT. The culture of tests (affects G11n aspect of a process context). Valid values must be in the form: xx-YY -->
     <add key="TEST_CULTURE" value="en-US" />
@@ -18,6 +18,7 @@
     <!-- Remote driver URI. Valid uri pattern is "http://{ip}:{port}/wd/hub/".
     Default value "http://127.0.0.1:4444/wd/hub/" is taken from TestEnvironmentRepository.xml -->
     <add key="REMOTE_DRIVER_URI" value="" />
+    <add key="SELENIUM_DRIVERS_DIR" value="C:\SeleniumDrivers" />
     
 
     <!-- ROUTING SETTINGS PAGE -->
@@ -65,7 +66,7 @@
     Gateway, Image, LinkResolver, RelatedInformation, Report, Search, StaticContent, Uds, WebContent, Website, Security-->
     <add key="TEST_MODULES" value="Website" />
     <!-- REQ. A name of the suite to be reflected in QRT reports. -->
-    <add key="TEST_SUITE" value="LocalTestRun" />
+    <add key="TEST_SUITE" value="WLA_PlayWriteAjsTests" />
     <!-- OPT.  A comma/semicolon separated list of additional QRT tags to label a test run. -->
     <add key="QRT_TAGS" value="" />
     <add key="TEST_EXECUTION_DIR" value="" />

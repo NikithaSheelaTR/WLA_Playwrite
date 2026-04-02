@@ -10,7 +10,24 @@
       "Read(//c/Github/WLA_Playwrite/$USERPROFILE/**)",
       "Bash(find C:Users6120715.nuget -path *playwright* -name *.dll)",
       "Bash(powershell -Command \"[System.Reflection.Assembly]::LoadFrom\\(''C:\\\\Users\\\\6120715\\\\.nuget\\\\packages\\\\microsoft.playwright\\\\1.40.0\\\\lib\\\\netstandard2.0\\\\Microsoft.Playwright.dll''\\); [Microsoft.Playwright.BrowserNewContextOptions].GetProperties\\(\\) | Select-Object Name | Where-Object { $_.Name -match ''download|Download|Accept'' }\")",
-      "Bash(dotnet publish:*)"
+      "Bash(dotnet publish:*)",
+      "Bash(find /c/Github/WLA_Playwrite/HouseTargaryen/ProductTeams/WlnGrowth -name *.trx)",
+      "Bash(find /c/Github/WLA_Playwrite/HouseTargaryen/ProductTeams/WlnGrowth -name *.log -o -name *.txt)",
+      "Bash(msbuild \"HouseTargaryen/ProductTeams/WlnGrowth/RegressionTests/WestlawAdvantage/WestlawAdvantage.csproj\" /p:Configuration=Debug /t:Build /m)",
+      "Bash(\"/c/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/MSBuild.exe\" \"C:/Github/WLA_Playwrite/HouseTargaryen/ProductTeams/WlnGrowth/RegressionTests/WestlawAdvantage/WestlawAdvantage.csproj\" /p:Configuration=Debug /t:Build /m /v:minimal)",
+      "Bash(powershell -Command \"Get-ChildItem 'C:\\\\Program Files\\\\Microsoft Visual Studio' -Recurse -Filter 'vstest.console.exe' 2>$null | Select-Object -First 3 FullName\")",
+      "Bash(powershell -Command \"Get-ChildItem 'C:\\\\Program Files\\\\Microsoft Visual Studio' -Recurse -Filter 'vstest.console.exe' | Select-Object -First 3 FullName\")",
+      "Bash(powershell -Command \"& 'C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\Common7\\\\IDE\\\\Extensions\\\\TestPlatform\\\\vstest.console.exe' 'C:\\\\Github\\\\WLA_Playwrite\\\\HouseTargaryen\\\\ProductTeams\\\\WlnGrowth\\\\RegressionTests\\\\WestlawAdvantage\\\\bin\\\\Debug\\\\WestlawAdvantage.dll' /Tests:AjsIncludeRelatedFedDeliveryTest /Settings:'C:\\\\Github\\\\WLA_Playwrite\\\\HouseTargaryen\\\\ProductTeams\\\\WlnGrowth\\\\RegressionTests\\\\WestlawAdvantage\\\\WestlawAdvantage.runsettings' /logger:console\" 2>&1)",
+      "Bash(powershell -Command \"Get-ChildItem -Path 'C:\\\\Github\\\\WLA_Playwrite' -Recurse -Filter 'playwright.cmd' -ErrorAction SilentlyContinue | Select-Object -First 5 FullName\")",
+      "Bash(powershell -Command \"Get-ChildItem 'C:\\\\Github\\\\WLA_Playwrite\\\\src\\\\Shim\\\\publish\\\\.playwright' -Recurse | Select-Object FullName, Length | Format-Table -AutoSize\")",
+      "Bash(powershell -Command \"Get-ChildItem 'C:\\\\Github\\\\WLA_Playwrite\\\\HouseTargaryen\\\\ProductTeams\\\\WlnGrowth\\\\RegressionTests\\\\WestlawAdvantage\\\\TestResults' -Filter 'Microsoft.Playwright.dll' -Recurse | Select-Object FullName\")",
+      "Bash(powershell -Command \"Copy-Item 'C:\\\\Github\\\\WLA_Playwrite\\\\src\\\\Shim\\\\Selenium.Playwright.Shim\\\\bin\\\\Release\\\\netstandard2.0\\\\Selenium.Playwright.Shim.dll' 'C:\\\\Github\\\\WLA_Playwrite\\\\src\\\\Shim\\\\publish\\\\Selenium.Playwright.Shim.dll' -Force; Copy-Item 'C:\\\\Github\\\\WLA_Playwrite\\\\src\\\\Shim\\\\Selenium.Playwright.Shim\\\\bin\\\\Release\\\\netstandard2.0\\\\Selenium.Playwright.Shim.pdb' 'C:\\\\Github\\\\WLA_Playwrite\\\\src\\\\Shim\\\\publish\\\\Selenium.Playwright.Shim.pdb' -Force; Write-Host 'Copied'\")",
+      "Bash(powershell -Command \"Get-ChildItem 'C:\\\\Github\\\\WLA_Playwrite\\\\HouseTargaryen\\\\ProductTeams\\\\WlnGrowth\\\\RegressionTests\\\\WestlawAdvantage\\\\TestResults' -Filter '*.trx' | Sort-Object LastWriteTime -Descending | Select-Object -First 1 FullName\")",
+      "Bash(powershell -Command \"Get-ChildItem 'C:\\\\Github\\\\WLA_Playwrite\\\\HouseTargaryen\\\\ProductTeams\\\\WlnGrowth\\\\RegressionTests\\\\WestlawAdvantage\\\\TestResults' -Filter '*.trx' -Recurse | Sort-Object LastWriteTime -Descending | Select-Object -First 3 FullName, LastWriteTime\")",
+      "Bash(awk -F: 'NR >= 6')",
+      "Bash(grep -r KeyNotFoundException C:GithubWLA_Playwrite --include=*.cs --include=*.log --include=*.txt --include=*.xml -l)",
+      "Bash(ls -la \"C:/Github/WLA_Playwrite/src/Shim/Selenium.Playwright.Shim/bin/\"*/Selenium.Playwright.Shim.dll)",
+      "Bash(awk 'NR>=20 && NR<=35')"
     ]
   }
 }

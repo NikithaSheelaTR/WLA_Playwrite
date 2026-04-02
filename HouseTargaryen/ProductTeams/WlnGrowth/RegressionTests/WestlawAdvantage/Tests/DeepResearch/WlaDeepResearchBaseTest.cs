@@ -42,7 +42,7 @@
             deepResearchPage.WelcomeComponent.InputComponent.QuestionTextarea.SendKeys(query);
             deepResearchPage.WelcomeComponent.InputComponent.SendButton.Click();
 
-            SafeMethodExecutor.WaitUntil(() => !deepResearchPage.ResultComponent.SingleColumnComponent.ProgressBarLabel.Displayed);
+            deepResearchPage.ResultComponent.SingleColumnComponent.WaitForResultsLoaded();
             return deepResearchPage;
         }
 
@@ -69,7 +69,7 @@
             deepResearchPage.WelcomeComponent.InputComponent.QuestionTextarea.SendKeys(query);
             deepResearchPage.WelcomeComponent.InputComponent.SendButton.Click();
 
-            SafeMethodExecutor.WaitUntil(() => !deepResearchPage.ResultComponent.SingleColumnComponent.ProgressBarLabel.Displayed);
+            deepResearchPage.ResultComponent.SingleColumnComponent.WaitForResultsLoaded();
             return deepResearchPage;
         }
 
