@@ -10,7 +10,7 @@
     }
   },
   "launch": {
-    "name": "Local Run",
+    "name": "WL_Advantage_Playwright",
     "description": "Test run for WL Advantage Playwright",
     "debugMode": false,
     "tags": [ "Local", ".NET", "Playwright" ]
