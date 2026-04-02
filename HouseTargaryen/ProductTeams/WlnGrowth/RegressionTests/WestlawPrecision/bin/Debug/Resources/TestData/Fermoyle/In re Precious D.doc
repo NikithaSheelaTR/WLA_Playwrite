@@ -1,0 +1,2826 @@
+{\rtf1 \ansi 
+{\colortbl;
+\red0\green0\blue0;
+\red255\green255\blue255;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red0\green0\blue255;
+\red0\green255\blue255;
+\red255\green0\blue255;
+\red255\green255\blue0;
+\red0\green0\blue128;
+\red0\green128\blue128;
+\red0\green128\blue0;
+\red128\green0\blue128;
+\red128\green0\blue0;
+\red128\green128\blue0;
+\red128\green128\blue128;
+\red192\green192\blue192;
+\red170\green170\blue170;
+\red33\green33\blue33;
+\red37\green37\blue37;
+\red187\green187\blue187;
+\red85\green85\blue85;
+\red80\green80\blue80;
+\red21\green137\blue21;
+\red119\green119\blue119;
+\red204\green204\blue204;
+\red255\green255\blue102;
+\red56\green124\blue43;
+\red14\green86\blue140;
+\red61\green61\blue61;
+\red151\green151\blue151;
+\red107\green107\blue107;
+\red240\green240\blue240;
+\red105\green105\blue105;
+\red247\green247\blue247;
+\red71\green120\blue194;
+\red255\green255\blue204;
+\red255\green204\blue0;
+\red203\green203\blue203;
+\red245\green245\blue245;
+\red229\green243\blue255;
+\red179\green218\blue255;
+\red153\green153\blue153;
+\red240\green248\blue255;
+\red127\green127\blue127;
+\red185\green185\blue185;
+\red107\green107\blue106;
+\red232\green233\blue232;
+\red249\green250\blue251;
+\red228\green231\blue232;
+\red255\green255\blue174;
+\red225\green237\blue250;
+\red246\green246\blue246;
+\red227\green227\blue227;
+\red20\green93\blue164;
+\red235\green240\blue245;
+\red130\green217\blue201;
+\red86\green86\blue86;
+\red218\green218\blue218;
+\red16\green58\blue89;
+\red216\green220\blue235;
+\red182\green190\blue214;
+\red10\green91\blue166;
+\red33\green74\blue204;
+\red191\green219\blue245;
+\red0\green114\blue54;
+\red214\green9\blue9;
+\red140\green179\blue216;
+\red233\green233\blue233;
+\red255\green248\blue96;
+\red102\green102\blue102;
+\red248\green161\blue28;
+\red111\green34\blue109;
+}
+{\fonttbl {
+\f0 Arial;}{
+\f1 Symbol;}{
+\f2 Times New Roman;}{
+\f3 Source Sans Pro;}{
+\f4 serif;}{
+\f5 georgia;}{
+\f6 sans-serif;}{
+\f7 Helvetica;}{
+\f8 Arial Unicode MS;}
+}
+{\*\generator Apache XML Graphics RTF Library;}
+\fet0 \ftnbj 
+{\*\listtable
+{\list\listtemplateid-401461510\listsimple{\listlevel\leveljc\levelfollow0\levelspace0\levelindent0{\leveltext\'01\u160\'3f}{\levelnumbers}}{\listname ;}\listid230401295}
+}
+{\*\listoverridetable
+{\*\listoverride{\listid230401295\listoverridecount0\ls1}}
+}
+\paperw12240 \paperh15840 \margt1080 \margb1080 \margl1080 \margr1080 \headery720 \footery720 \itap0 \cols2 
+\sectd {\header {
+{\trowd \ltrrow \trleft0 
+\clpadb60 \clpadfb3 \clpadl400 \clpadfl3 \clbrdrt \clbrdrb \brdrcf17 \brdrw20 \brdrs \clbrdrl \trql \clvertalb \clwWidth9380 \cellx9380 
+\clpadb60 \clpadfb3 \clpadl400 \clpadfl3 \clbrdrt \clbrdrb \brdrcf17 \brdrw20 \brdrs \clbrdrr \trql \clwWidth700 \cellx10080 
+\intbl 
+{\b0 \cf1 \f0 \ri0 \i0 \ql \fs18 \li0 
+{\b0 \cf1 \f0 \ul0 \strike0 \i0 \fs18 
+}
+{\b1 \cf21 \f0 \i0 \fs18 
+{\b1 \cf21 \f0 \ul0 \strike0 \i0 \fs18 \sa0 \sb0 
+In re Precious D., 189 Cal.App.4th 1251 (2010)
+}
+}
+{\b0 \cf1 \f0 \ul0 \strike0 \i0 \fs18 
+}
+}\b0 \cf1 \f0 \ri0 \ul0 \strike0 \i0 \ql \fs18 \li0 \sa0 \sb0 \intbl \cell \intbl 
+{\qr \b0 \cf1 \f0 \ri0 \i0 \fs18 \li0 
+}\qr \b0 \cf1 \f0 \ri0 \i0 \fs18 \li0 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clbrdrb \clbrdrl \trql \clwWidth10080 \cellx10080 
+\intbl 
+{\b0 \cf1 \f0 \ri0 \i0 \ql \fs18 \li0 
+{\b0 \cf1 \f0 \ul0 \strike0 \i0 \fs18 \sa0 \sb0 
+117 Cal.Rptr.3d 527, 10 Cal. Daily Op. Serv. 14,162, 2010 Daily Journal D.A.R. 17,027
+}
+}\b0 \cf1 \f0 \ri0 \ul0 \strike0 \i0 \ql \fs18 \li0 \sa0 \sb0 \intbl \cell \row }}\par }{\footer {
+{\trowd \lastrow \trleft0 
+\clpadl60 \clpadfl3 \clbrdrt \brdrcf17 \brdrw20 \brdrs \clbrdrb \clbrdrl \trql \clvertalb \clwWidth9300 \cellx9300 
+\clpadl60 \clpadfl3 \clbrdrt \brdrcf17 \brdrw20 \brdrs \clbrdrb \clbrdrr \trql \clwWidth700 \cellx10000 
+\intbl 
+{\b0 \cf17 \f0 \ri0 \i0 \ql \fs20 \li0 
+{\b0 \cf17 \f0 \ul0 \strike0 \i0 \fs20 
+}
+{\*\shppict {\pict \pngblip \picw78 \pich10 \picwgoal1170 \pichgoal150 89504e470d0a1a0a0000000d494844520000004e0000000a08030000002dbd985500000300504c5445f8a969f6913ff68931fff9f5f69241f5852af68d38fcddc4f58326fac294f8a868fac193fcdabefab985fcdfc7fef5eef58022f8a35efef6effde5d2fac092fffaf6f9ac6ffffcfafde8d7fef7f1f9b279f6862cf8aa6af79e56f79c53f58327fef1e7fde3cefeeee2f9b076f79a4efef8f4f58123f58224f9ae72feefe4f58021f9ae71fac295fffaf7fcdabffef7f2f9af73f9b177f8ac6ef9b47cf8a15bf6872ef79648fef5edf9b278fcd9bdf9b782f9b57efbc89ffde3cffffefdf6872df8aa6bfcd6b8fac59af9b781fabc8bfffbf8fac091fac396fbceaaf8a461f68e39f6882ffabe8dfabf8ff9b884f79c52fdeadbfeede0f68c36f89f58fcdcc3fde0c9fef0e5fef3eaf68f3cfbcaa2f8a867f9b37afaba87f68b35fde7d6fabf90fffcfbfaba86fde7d5f6903efffdfcfef4ecf68f3bfde1cafcdfc6fbd1affbcea9fcd6b7f68a33f79444fbcba5f58429fcdec6f9af74f8a25df58428f7a461fef4edfdede0fde6d4fde7d4f9b680fbc69cfbc8a0f9b37bfac9a1f69240f79d54fcd4b4f9b883f68e3afef8f3fdebddfde2cbf7984cf8a35ff6882efef3ebf9bd8cfcd4b5feecdef8a562fde6d3fef9f4fcdbc1f9bc8afcd8bcf8ab6dfef8f2fcd7b9fffbf7feefe3f79546f8aa69f79f57fde1cbfcd3b3fcd2b1f8a25cfcd3b2fde2ccfac599fac397f9b379fcd8bbfbd2b0fef2e9fcd5b6fac79ef8a664f8a460f68a32fac090fffbf9fef2e8f8ab6cfde4d0f7994df6903df79749fffefcf79e55f8a766f8a059f68830f7974afde2cdfbcca6fabd8cf57f20ffffff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c5baaa8e000000bf74524e53ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00456e8439000002804944415478da63dcc70001fef2931866b0be0cd2085114e5ff7ef72a0357d0a3a31cc2129ebb9f492a3e4b6eb8cb20913bb5c808a2f849bf610c438bf99a9917cf2a18092c7bf1a30a6a0a13946658f6af92e15352e52386af5d677ee5ff61618c5ca7c6b58921d6ecc47383e56a52b3181955bf2e3e01513b49bae7260383be8b048376a2e34786a3853761a6b0c018892b57313c48fa38834195c1cf94c16a3a03c3edad7c5f163030a8672bcc3afcf4251343639ef3ae2cb05afe384e9390352a0c320cbdf71f19b43d6690c7302e84e11383d28bff67bcba9a6e2831acd9c6e0d990fe70b74ae7d2a90c0cbbc36fbaef6660b80f55ba68e9d2d5a9ae0cdd2f341878be8b9c64f8cb701d660a733c9451af78704effa1c6b3536708cf2c9ffde7c78fcb9b16497b8acf3e3721061812bfde8433302c8d5a190152ca93f7d26df6796bff83310dbfe504de7f7ff9ec621c7ad8ade964d5f0f8162da4257e9da18c39434955602283a37fdaefde9cb30c686005c3a4c9a6d792186c6b665d8e54f97ae7c5badd189e65307c22395565fbc43fcc010cad5b3ba781c5363184af0bfa8530481844b84e65b87efde6bcb50c67d9dc36d4f6bf7aa6e4015700771dc3fd57751f183c97ecfe7f04c8b17e9f9fdfceb0e334c3ca37c16940feb644b09ad7e1aee90cdaaa9f1ca31ef6bd6478e2b43ba29f615fc7cf550c1861c720c2699619c930d362d55a060ff68e592f7d4eacd82df9eb3bd7bd387986ff73182d18183686ba2ff9f76ec59f909c2e83a8499dbbaaa404ecf8199cb8051e79627ad6fa4799360383602cd0bdcbdeb2fc6158debec577daf1a9076ba51818e679bf05aaf85cfdeb0f8383c1ec0973801cee342386c537cdf218fecf4b70801b0200f61ff095f54de6170000000049454e44ae426082}}
+{\b0 \cf17 \f0 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ \u169\'3f 2022 Thomson Reuters. No claim to original U.S. Government Works.
+}
+}\b0 \cf17 \f0 \ri0 \ul0 \strike0 \i0 \ql \fs20 \li0 \sa0 \sb0 \intbl \cell \intbl 
+{\qr \b0 \cf17 \f0 \ri0 \i0 \fs20 \li0 
+{\b0 \i0 \ul0 \fs20 \f0 \chpgn }
+}\qr \b0 \cf17 \f0 \ri0 \ul0 \strike0 \i0 \fs20 \li0 \intbl \cell \row }}\par }
+{\b0 \cf1 \f2 \ri0 \par}\sect\sbknone\pgncont\cols2{\ids0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_document_1}{\*\bkmkend co_document_1}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart I465a5b3aeb7211dfaa23bccc834e9520_Target}{\*\bkmkend I465a5b3aeb7211dfaa23bccc834e9520_Target}
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs16 \li0 
+{\*\bkmkstart co_readingModeKC_1}{\*\bkmkend co_readingModeKC_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs16 \li0 
+{\*\bkmkstart co_readingModeCitatorFlag_1}{\*\bkmkend co_readingModeCitatorFlag_1}
+{\b0 \cf1 \f2 \i0 \fs16 
+{\field {\*\fldinst HYPERLINK "https://a.next.demo.westlaw.com/Link/RelatedInformation/Flag?documentGuid=Ic83870806d7611e7b7978f65e9bf93b3&transitionType=Document&originationContext=docHeaderFlag&Rank=0&ppcid=9f90fd54b0234bc48fd17be83729c419&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\*\shppict {\pict \pngblip \picw16 \pich16 \picwgoal255 \pichgoal255 89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff6100000009704859730000113900001139011bd9934600000a4f6943435050686f746f73686f70204943432070726f66696c65000078da9d53675453e9163df7def4424b8880944b6f5215082052428b801491262a2109104a8821a1d91551c1114545041bc8a088038e8e808c15512c0c8a0ad807e421a28e83a3888acafbe17ba36bd6bcf7e6cdfeb5d73ee7acf39db3cf07c0080c9648335135800ca9421e11e083c7c4c6e1e42e40810a2470001008b3642173fd230100f87e3c3c2b22c007be000178d30b0800c04d9bc0301c87ff0fea42995c01808401c07491384b08801400407a8e42a600404601809d98265300a0040060cb6362e300502d0060277fe6d300809df8997b01005b94211501a09100201365884400683b00accf568a450058300014664bc43900d82d00304957664800b0b700c0ce100bb200080c00305188852900047b0060c8232378008499001446f2573cf12bae10e72a00007899b23cb9243945815b082d710757572e1e28ce49172b14366102619a402ec27999193281340fe0f3cc0000a0911511e083f3fd78ce0eaecece368eb60e5f2deabf06ff226262e3fee5cfab70400000e1747ed1fe2c2fb31a803b06806dfea225ee04685e0ba075f78b66b20f40b500a0e9da57f370f87e3c3c45a190b9d9d9e5e4e4d84ac4425b61ca577dfe67c25fc057fd6cf97e3cfcf7f5e0bee22481325d814704f8e0c2ccf44ca51ccf92098462dce68f47fcb70bfffc1dd322c44962b9582a14e35112718e449a8cf332a52289429229c525d2ff64e2df2cfb033edf3500b06a3e017b912da85d6303f64b27105874c0e2f70000f2bb6fc1d4280803806883e1cf77ffef3ffd47a02500806649927100005e44242e54cab33fc708000044a0812ab0411bf4c1182cc0061cc105dcc10bfc6036844224c4c24210420a64801c726029ac82422886cdb01d2a602fd4401d34c051688693700e2ec255b80e3d700ffa61089ec128bc81090441c808136121da8801628a58238e08179985f821c14804128b2420c9881451224b91354831528a542055481df23d720239875c46ba913bc8003282fc86bc47319481b2513dd40cb543b9a8371a8446a20bd06474319a8f16a09bd072b41a3d8c36a1e7d0ab680fda8f3e43c730c0e8180733c46c302ec6c342b1382c099363cbb122ac0cabc61ab056ac03bb89f563cfb17704128145c0093604774220611e4148584c584ed848a8201c243411da093709038451c2272293a84bb426ba11f9c4186232318758482c23d6128f132f107b8843c437241289433227b9900249b1a454d212d246d26e5223e92ca99b34481a2393c9da646bb20739942c202bc885e49de4c3e433e41be421f25b0a9d624071a4f853e22852ca6a4a19e510e534e5066598324155a39a52dda8a15411358f5a42ada1b652af5187a81334759a39cd8316494ba5ada295d31a681768f769afe874ba11dd951e4e97d057d2cbe947e897e803f4770c0d861583c7886728199b18071867197718af984ca619d38b19c754303731eb98e7990f996f55582ab62a7c1591ca0a954a9526951b2a2f54a9aaa6aadeaa0b55f355cb548fa95e537dae46553353e3a909d496ab55aa9d50eb531b5367a93ba887aa67a86f543fa47e59fd890659c34cc34f43a451a0b15fe3bcc6200b6319b3782c216b0dab86758135c426b1cdd97c762abb98fd1dbb8b3daaa9a13943334a3357b352f394663f07e39871f89c744e09e728a797f37e8ade14ef29e2291ba6344cb931655c6baa96979658ab48ab51ab47ebbd36aeeda79da6bd45bb59fb810e41c74a275c2747678fce059de753d953dda70aa7164d3d3af5ae2eaa6ba51ba1bb4477bf6ea7ee989ebe5e809e4c6fa7de79bde7fa1c7d2ffd54fd6dfaa7f5470c5806b30c2406db0cce183cc535716f3c1d2fc7dbf151435dc34043a561956197e18491b9d13ca3d5468d460f8c69c65ce324e36dc66dc6a326062621264b4dea4dee9a524db9a629a63b4c3b4cc7cdcccda2cdd699359b3d31d732e79be79bd79bdfb7605a785a2cb6a8b6b86549b2e45aa659eeb6bc6e855a3959a558555a5db346ad9dad25d6bbadbba711a7b94e934eab9ed667c3b0f1b6c9b6a9b719b0e5d806dbaeb66db67d6167621767b7c5aec3ee93bd937dba7d8dfd3d070d87d90eab1d5a1d7e73b472143a563ade9ace9cee3f7dc5f496e92f6758cf10cfd833e3b613cb29c4699d539bd347671767b97383f3888b894b82cb2e973e2e9b1bc6ddc8bde44a74f5715de17ad2f59d9bb39bc2eda8dbafee36ee69ee87dc9fcc349f299e593373d0c3c843e051e5d13f0b9f95306bdfac7e4f434f8167b5e7232f632f9157add7b0b7a577aaf761ef173ef63e729fe33ee33c37de32de595fcc37c0b7c8b7cb4fc36f9e5f85df437f23ff64ff7affd100a78025016703898141815b02fbf87a7c21bf8e3f3adb65f6b2d9ed418ca0b94115418f82ad82e5c1ad2168c8ec90ad21f7e798ce91ce690e85507ee8d6d00761e6618bc37e0c2785878557863f8e7088581ad131973577d1dc4373df44fa449644de9b67314f39af2d4a352a3eaa2e6a3cda37ba34ba3fc62e6659ccd5589d58496c4b1c392e2aae366e6cbedffcedf387e29de20be37b17982fc85d7079a1cec2f485a716a92e122c3a96404c884e3894f041102aa8168c25f21377258e0a79c21dc267222fd136d188d8435c2a1e4ef2482a4d7a92ec91bc357924c533a52ce5b98427a990bc4c0d4cdd9b3a9e169a76206d323d3abd31839291907142aa214d93b667ea67e66676cbac6585b2fec56e8bb72f1e9507c96bb390ac05592d0ab642a6e8545a28d72a07b267655766bfcd89ca3996ab9e2bcdedccb3cadb90379cef9fffed12c212e192b6a5864b572d1d58e6bdac6a39b23c7179db0ae315052b865606ac3cb88ab62a6dd54fabed5797ae7ebd267a4d6b815ec1ca82c1b5016beb0b550ae5857debdcd7ed5d4f582f59dfb561fa869d1b3e15898aae14db1797157fd828dc78e51b876fcabf99dc94b4a9abc4b964cf66d266e9e6de2d9e5b0e96aa97e6970e6e0dd9dab40ddf56b4edf5f645db2f97cd28dbbb83b643b9a3bf3cb8bc65a7c9cecd3b3f54a454f454fa5436eed2ddb561d7f86ed1ee1b7bbcf634ecd5db5bbcf7fd3ec9bedb5501554dd566d565fb49fbb3f73fae89aae9f896fb6d5dad4e6d71edc703d203fd07230eb6d7b9d4d51dd23d54528fd62beb470ec71fbefe9def772d0d360d558d9cc6e223704479e4e9f709dff71e0d3ada768c7bace107d31f761d671d2f6a429af29a469b539afb5b625bba4fcc3ed1d6eade7afc47db1f0f9c343c59794af354c969dae982d39367f2cf8c9d959d7d7e2ef9dc60dba2b67be763cedf6a0f6fefba1074e1d245ff8be73bbc3bce5cf2b874f2b2dbe51357b8579aaf3a5f6dea74ea3cfe93d34fc7bb9cbb9aaeb95c6bb9ee7abdb57b66f7e91b9e37ceddf4bd79f116ffd6d59e393dddbdf37a6ff7c5f7f5df16dd7e7227fdcecbbbd97727eeadbc4fbc5ff440ed41d943dd87d53f5bfedcd8efdc7f6ac077a0f3d1dc47f7068583cffe91f58f0f43058f998fcb860d86eb9e383e3939e23f72fde9fca743cf64cf269e17fea2fecbae17162f7ef8d5ebd7ced198d1a197f29793bf6d7ca5fdeac0eb19afdbc6c2c61ebec97833315ef456fbedc177dc771defa3df0f4fe47c207f28ff68f9b1f553d0a7fb93199393ff040398f3fc63332ddb000000206348524d00007a25000080830000f9ff000080e9000075300000ea6000003a980000176f925fc546000002814944415478da6c92b18f545518c57fdfbdf7bd376f677796352212361acd2276289b88a12136b6361ab5524b5be37f6063e33fa098d058190b134a121204d68260624c203146c1e0c20e338c3bec9bf766ee773f8b79b343e1494ef9fdee393957ae5fbb75651af25ff4874b9f9dbcf00dc7bb8e06f833c2a3041b0e363d3ce360908c5b51d94d898ff7fe0220f487d54be5833bebf2edc577c9b2f3905e040bc01ef073eb874005f4806781df801940e8ecfc74a3baf7c7077e527d9fd6d748243ce005ccf8c80083c7402db01a84718057170077b0fde6fd70665ba22592414270800744400dd4d8008e07612d83948918ad9c8a7fe0565789dea10666f3430f08905a1be0800cb19ca59cce62df952ba42247cd4880b3ff0778200864f2142045edcb4a0b480945e60964fea232af916c910032960487a581eb94a44e414c466adbf936b2d9d31584003e9325c1a9dac8f24e436f8da88984206041c061c446898da275c2452388ec6710178020753562a8539d4deb69555d48ddde256020c936b2b5ceb9e2f5236f155a9f908efe2bce6ee477ebafe5fe647208e8defeb572c736e4e4a79f7c55fe78f90b77f3264e1a649a90c25f7dfec3ad2f7b7ee4b3f5272a3b8fe1f7032c1eae48d87fed8d2a1c3d323875f6d48a7fef1d762f7ec7f0519f5894c868c06cf539ea7ca6d26de01525ff7c8bcdcdad2500b5a4753d8ce32727f62763fe3eb74d5176293b052b7941251e2d4a9aa2404e7b7ce608aa4b409e3b301e8ef7c7c7fed9bd87134730c1a98226a428107588822481e97c9143c00b2ff7180d677b4d13df1691f79d730e38689793d60b79a00fecd02e11f23c4896abb764655174ce98d9d47bafceb90688223211911930698f16df0280ff060063972169cd7749650000000049454e44ae426082}}}}
+{\b0 \cf1 \f2 \i0 \fs16 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs16 \sa0 \sb0 
+KeyCite Red Flag - Severe Negative Treatment
+\par 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs16 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs16 \li0 
+{\*\bkmkstart co_readingModeNegativeTreatment_1}{\*\bkmkend co_readingModeNegativeTreatment_1}
+{\b0 \cf1 \f2 \i0 \fs16 {\fi-360 \li {\*\pn \pnlvlblt \ilvl0 \ls1 \pnindent0 \pnf1 {\f2 \pntxtb \u160\'3f}}{\listtext \b0 \cf1 \f2 \ri0 \i0 \qj \fs16 \li0 \u160\'3f\tab }\ls1 {\pntext }
+{\pard }\b0 \cf1 \f2 \ri0 \i0 \qj \fs16 \li0 
+{\b0 \cf1 \f2 \i0 \fs16 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs16 \sa0 \sb0 
+Disapproved of by 
+}
+}
+{\field {\*\fldinst HYPERLINK "https://wwwtest.int.westlaw.com/Document/Ic83870806d7611e7b7978f65e9bf93b3/View/FullText.html?navigationPath=RelatedInfo%2Fv4%2Fkeycite%2Fnav%2F%3Fguid%3DIc83870806d7611e7b7978f65e9bf93b3%26ss%3D2023628745%26ds%3D2042197206%26origDocGuid%3DI465a5b3aeb7211dfaa23bccc834e9520&listSource=RelatedInfo&list=NegativeCitingReferences&rank=0&ppcid=9f90fd54b0234bc48fd17be83729c419&originationContext=docHeader&transitionType=NegativeTreatment&contextData=%28sc.History*oc.Search%29&VR=3.0&RS=cblt1.0" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs16 \sa0 \sb0 
+In re R.T.
+}
+{\b0 \cf28 \f2 \i0 \fs16 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs16 \sa0 \sb0 
+, 
+}
+}}}
+{\b0 \cf1 \f2 \i0 \fs16 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs16 \sa0 \sb0 
+Cal., 
+}
+}
+{\b0 \cf1 \f2 \i0 \fs16 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs16 \sa0 \sb0 
+July 20, 2017
+\par {\pntext }
+}
+}
+}
+}
+}
+}
+}
+{\b0 \qc \cf1 \f5 \ri0 \i0 \fs20 \li0 
+{\b0 \cf1 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+189 Cal.App.4th 1251
+\par 
+}
+}
+{\b0 \qc \cf1 \f5 \ri0 \i0 \fs20 \li0 
+{\b0 \qc \cf1 \f5 \ri0 \i0 \fs20 \li0 
+{\b0 \cf1 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Court of Appeal, Second District, Division 1, California.
+\par 
+}
+}
+}
+{\b0 \qc \cf19 \f5 \ri100 \i0 \fs20 \li100 
+{\b0 \qc \cf19 \f5 \ri100 \i0 \fs20 \li100 
+{\b0 \qc \cf19 \f5 \ri100 \i0 \fs20 \li100 
+{\b0 \cf19 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+In re 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Search/Results.html?query=advanced%3a+OAID(5038654089)&saveJuris=False&contentType=BUSINESS-INVESTIGATOR&startIndex=1&contextData=(sc.Default)&categoryPageUrl=Home%2fCompanyInvestigator&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem" }{\fldrslt 
+{\b0 \cf28 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+PRECIOUS D.
+}}}
+{\b0 \cf19 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb200 
+, a Person Coming Under the Juvenile Court Law.
+\par 
+}
+}
+}
+{\b0 \qc \cf19 \f5 \ri100 \i0 \fs20 \li100 
+{\b0 \qc \cf19 \f5 \ri100 \i0 \fs20 \li100 
+{\b0 \cf19 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Los Angeles County Department of Children and Family Services, Plaintiff and Respondent,
+\par 
+}
+}
+{\b0 \qc \cf19 \f5 \ri100 \i0 \fs20 \li100 
+{\b0 \cf19 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+v.
+\par 
+}
+}
+{\b0 \qc \cf19 \f5 \ri100 \i0 \fs20 \li100 
+{\b0 \cf19 \f5 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+Patricia D., Defendant and Appellant.
+\par 
+}
+}
+}
+}
+{\b0 \qc \cf1 \f2 \ri0 \i0 \fs20 \li0 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \qc \cf1 \f5 \ri0 \i0 \fs20 \li200 
+{\b0 \cf1 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+No. B221929.
+\par 
+}
+}
+}
+{\b0 \cf1 \f5 \i0 \fs20 
+{\b0 \qc \cf1 \f5 \ri0 \i0 \fs20 \li200 
+{\b0 \cf1 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+|
+\par 
+}
+}
+{\b0 \qc \cf1 \f5 \ri0 \i0 \fs20 \li200 
+{\b0 \cf1 \f5 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+Nov. 8, 2010.
+\par 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b1 \cf18 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_synopsis_1}{\*\bkmkend co_synopsis_1}
+{\b1 \cf18 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb400 
+Synopsis
+\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Background:
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ County department of children and family services (DCFS) filed dependency petition. The Superior Court, Los Angeles County, No. CK78263, 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=h&pubNum=176284&cite=0146424101&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=RQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Marguerite Downing
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+, J., sustained petition. Mother appealed.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Holdings:
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ The Court of Appeal, 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=h&pubNum=176284&cite=0139450801&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=RQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Mallano
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb400 
+, P.J., held that:
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\field {\*\fldinst HYPERLINK "#co_anchor_F22023628745_1" }{\fldrslt 
+{\super \b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[1]
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ evidence did not support finding that mother and child were not communicating, and
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\field {\*\fldinst HYPERLINK "#co_anchor_F32023628745_1" }{\fldrslt 
+{\super \b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[2]
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ on issue of first impression, dependency jurisdiction based on \u8220\'3finability to adequately supervise or protect\u8221\'3f requires parental unfitness or neglect.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+\u160\'3f
+\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Reversed with directions.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_headnotes_1}{\*\bkmkend co_headnotes_1}
+\par 
+{\b0 \cf18 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_headnoteHeader_1}{\*\bkmkend co_headnoteHeader_1}
+\par 
+{\b0 \cf19 \f2 \ri200 \i0 \qj \fs20 \li100 
+{\b0 \cf19 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb200 
+West Headnotes (11)
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_expandedHeadnotes_1}{\*\bkmkend co_expandedHeadnotes_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_2023628745001_1}{\*\bkmkend co_anchor_2023628745001_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F12023628745_1}{\*\bkmkend co_anchor_F12023628745_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[1]_1}{\*\bkmkend co_anchor_headNote_[1]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B12023628745_1" }{\fldrslt 
+{\b1 \cf28 \f2 \i0 \fs20 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[1]
+}
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/211/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Infants
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/211k1963/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Physical or emotional abuse; \u8201\'3fcruelty
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Under statute providing a basis for juvenile court jurisdiction if the child has suffered, or there is a substantial risk the child will suffer, serious physical harm or illness caused by the parent\rquote s failure or inability to adequately supervise or protect the child, a jurisdictional finding requires: (1) neglectful conduct by the parent in one of the specified forms; (2) causation; and (3) serious physical harm or illness to the minor, or a substantial risk of such harm or illness. 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS300&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)#co_pp_a83b000018c76" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+West\rquote s Ann.Cal.Welf. & Inst.Code \u167\'3f 300(b)
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_20236287450012014072207595}{\*\bkmkend co_headnoteId_20236287450012014072207595}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/RelatedInformation/DocHeadnoteLink?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&headnoteId=202362874500120140722075952&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=CitingReferences&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+91 Cases that cite this headnote
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\sb200 
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb0 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_2023628745002_1}{\*\bkmkend co_anchor_2023628745002_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F22023628745_1}{\*\bkmkend co_anchor_F22023628745_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[2]_1}{\*\bkmkend co_anchor_headNote_[2]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B22023628745_1" }{\fldrslt 
+{\b1 \cf28 \f2 \i0 \fs20 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[2]
+}
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/211/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Infants
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/211k1948/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Failure to supervise, control, or protect
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/211/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Infants
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/211k2169(7)/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Endangerment and supervision
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Juvenile court\rquote s finding that mother and child were not communicating, in sustaining dependency petition based on mother\rquote s \u8220\'3finability to adequately supervise or protect the child,\u8221\'3f was not supported by substantial evidence, where the record showed that mother and child were in daily telephone contact, and the county child welfare agency\rquote s jurisdiction/disposition report noted as a family strength that there was \u8220\'3fopen communication between the mother and the child, despite the current circumstances.\u8221\'3f 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS300&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)#co_pp_a83b000018c76" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+West\rquote s Ann.Cal.Welf. & Inst.Code \u167\'3f 300(b)
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_20236287450022014072207595}{\*\bkmkend co_headnoteId_20236287450022014072207595}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/RelatedInformation/DocHeadnoteLink?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&headnoteId=202362874500220140722075952&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=CitingReferences&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+71 Cases that cite this headnote
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\sb200 
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb0 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_2023628745003_1}{\*\bkmkend co_anchor_2023628745003_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F32023628745_1}{\*\bkmkend co_anchor_F32023628745_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[3]_1}{\*\bkmkend co_anchor_headNote_[3]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B32023628745_1" }{\fldrslt 
+{\b1 \cf28 \f2 \i0 \fs20 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[3]
+}
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/92/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Constitutional Law
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/92k4400/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Protection of Children; \u8201\'3fChild Abuse, Neglect, and Dependency
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/211/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Infants
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/211k1942/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Definition of deprivation or neglect in general
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+In light of the dependency statutory scheme and federal due process principles, parental unfitness or neglectful conduct must be shown in order to assert dependency court jurisdiction over a child based on the parent\rquote s \u8220\'3finability to adequately supervise or protect the child.\u8221\'3f 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000546&cite=USCOAMENDXIV&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=LQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+U.S.C.A. Const.Amend. 14
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+; 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS300&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)#co_pp_a83b000018c76" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+West\rquote s Ann.Cal.Welf. & Inst.Code \u167\'3f 300(b)
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \i1 \fs20 
+{\b0 \cf1 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+See 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=0284144540&pubNum=0122405&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=TS&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Cal. Jur. 3d, Delinquent and Dependent Children, \u167\'3f\u167\'3f 57
+}\b0 \cf28 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 }}
+\sb200 
+{\b0 \cf1 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+, 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=0284144544&pubNum=0122405&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=TS&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+59
+}\b0 \cf28 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 }}
+\sb200 
+{\b0 \cf1 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+; 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=0305878828&pubNum=0155648&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=TS&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+10 Witkin, Summary of Cal. Law (10th ed. 2005) Parent and Child, \u167\'3f 540
+}\b0 \cf28 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 }}
+\sb200 
+{\b0 \cf1 \f2 \ul0 \strike0 \i1 \fs20 \sa200 \sb200 
+.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_20236287450032014072207595}{\*\bkmkend co_headnoteId_20236287450032014072207595}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/RelatedInformation/DocHeadnoteLink?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&headnoteId=202362874500320140722075952&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=CitingReferences&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+56 Cases that cite this headnote
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\sb200 
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb200 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_2023628745004_1}{\*\bkmkend co_anchor_2023628745004_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F42023628745_1}{\*\bkmkend co_anchor_F42023628745_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[4]_1}{\*\bkmkend co_anchor_headNote_[4]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B42023628745_1" }{\fldrslt 
+{\b1 \cf28 \f2 \i0 \fs20 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[4]
+}
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/211/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Infants
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/211XIV(D)/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Dependency, Permanency, and Termination Factors; \u8201\'3fChildren in Need of Aid
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+Given the complexity of the statutory scheme governing dependency, a single provision cannot properly be understood except in the context of the entire dependency process of which it is part. 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS300&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=LQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+West\rquote s Ann.Cal.Welf. & Inst.Code \u167\'3f 300 et seq.
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_20236287450042014072207595}{\*\bkmkend co_headnoteId_20236287450042014072207595}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/RelatedInformation/DocHeadnoteLink?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&headnoteId=202362874500420140722075952&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=CitingReferences&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+1 Cases that cite this headnote
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\sb200 
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb0 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_2023628745005_1}{\*\bkmkend co_anchor_2023628745005_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F52023628745_1}{\*\bkmkend co_anchor_F52023628745_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[5]_1}{\*\bkmkend co_anchor_headNote_[5]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B52023628745_1" }{\fldrslt 
+{\b1 \cf28 \f2 \i0 \fs20 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[5]
+}
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/92/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Constitutional Law
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/92k4400/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Protection of Children; \u8201\'3fChild Abuse, Neglect, and Dependency
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Due process guarantees apply to dependency proceedings. 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000546&cite=USCOAMENDXIV&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=LQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+U.S.C.A. Const.Amend. 14
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_20236287450052014072207595}{\*\bkmkend co_headnoteId_20236287450052014072207595}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb0 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_2023628745006_1}{\*\bkmkend co_anchor_2023628745006_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F62023628745_1}{\*\bkmkend co_anchor_F62023628745_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[6]_1}{\*\bkmkend co_anchor_headNote_[6]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B62023628745_1" }{\fldrslt 
+{\b1 \cf28 \f2 \i0 \fs20 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[6]
+}
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/92/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Constitutional Law
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/92k3875/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Factors considered; \u8201\'3fflexibility and balancing
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+In deciding requirements of due process, the court evaluates three elements: the private interests at stake, the government\rquote s interest, and the risk the procedures used will lead to an erroneous decision. 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000546&cite=USCOAMENDXIV&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=LQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+U.S.C.A. Const.Amend. 14
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_20236287450062014072207595}{\*\bkmkend co_headnoteId_20236287450062014072207595}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb0 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_2023628745007_1}{\*\bkmkend co_anchor_2023628745007_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F72023628745_1}{\*\bkmkend co_anchor_F72023628745_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[7]_1}{\*\bkmkend co_anchor_headNote_[7]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B72023628745_1" }{\fldrslt 
+{\b1 \cf28 \f2 \i0 \fs20 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[7]
+}
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/92/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Constitutional Law
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/92k4400/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Protection of Children; \u8201\'3fChild Abuse, Neglect, and Dependency
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+In the context of due process rights in dependency proceedings, a parent\rquote s interest in the companionship, care, custody and management of his or her children is a fundamental civil right. 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000546&cite=USCOAMENDXIV&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=LQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+U.S.C.A. Const.Amend. 14
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_20236287450072014072207595}{\*\bkmkend co_headnoteId_20236287450072014072207595}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/RelatedInformation/DocHeadnoteLink?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&headnoteId=202362874500720140722075952&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=CitingReferences&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+2 Cases that cite this headnote
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\sb200 
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb0 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_2023628745008_1}{\*\bkmkend co_anchor_2023628745008_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F82023628745_1}{\*\bkmkend co_anchor_F82023628745_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[8]_1}{\*\bkmkend co_anchor_headNote_[8]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B82023628745_1" }{\fldrslt 
+{\b1 \cf28 \f2 \i0 \fs20 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[8]
+}
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/92/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Constitutional Law
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/92k4400/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Protection of Children; \u8201\'3fChild Abuse, Neglect, and Dependency
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+In the context of due process rights in dependency proceedings, children have a compelling independent interest in belonging to their natural family. 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000546&cite=USCOAMENDXIV&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=LQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+U.S.C.A. Const.Amend. 14
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_20236287450082014072207595}{\*\bkmkend co_headnoteId_20236287450082014072207595}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb0 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_2023628745009_1}{\*\bkmkend co_anchor_2023628745009_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F92023628745_1}{\*\bkmkend co_anchor_F92023628745_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[9]_1}{\*\bkmkend co_anchor_headNote_[9]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B92023628745_1" }{\fldrslt 
+{\b1 \cf28 \f2 \i0 \fs20 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[9]
+}
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/92/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Constitutional Law
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/92k4400/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Protection of Children; \u8201\'3fChild Abuse, Neglect, and Dependency
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Each child has a compelling due process interest to live free from abuse and neglect in a stable, permanent placement with an emotionally committed caregiver. 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000546&cite=USCOAMENDXIV&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=LQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+U.S.C.A. Const.Amend. 14
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_20236287450092014072207595}{\*\bkmkend co_headnoteId_20236287450092014072207595}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb0 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_2023628745010_1}{\*\bkmkend co_anchor_2023628745010_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F102023628745_1}{\*\bkmkend co_anchor_F102023628745_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[10]_1}{\*\bkmkend co_anchor_headNote_[10]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B102023628745_1" }{\fldrslt 
+{\b1 \cf28 \f2 \i0 \fs20 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[10]
+}
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/211/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Infants
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/211k1886/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Needs, interest, and welfare of child
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+The welfare of a child is a compelling state interest that a state has not only a right, but a duty, to protect.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_20236287450102014072207595}{\*\bkmkend co_headnoteId_20236287450102014072207595}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb0 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_2023628745011_1}{\*\bkmkend co_anchor_2023628745011_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F112023628745_1}{\*\bkmkend co_anchor_F112023628745_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[11]_1}{\*\bkmkend co_anchor_headNote_[11]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B112023628745_1" }{\fldrslt 
+{\b1 \cf28 \f2 \i0 \fs20 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[11]
+}
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/92/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Constitutional Law
+}\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/92k4403.5/View.html?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Removal or termination of parental rights
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+The California dependency system comports with federal due process requirements because the number and quality of the judicial findings that are necessary preconditions to termination of parental rights convey very powerfully to the fact finder the subjective certainty about parental unfitness and detriment required before the court may even consider ending the relationship between natural parent and child. 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000546&cite=USCOAMENDXIV&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=LQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+U.S.C.A. Const.Amend. 14
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+; 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS300&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=LQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+West\rquote s Ann.Cal.Welf. & Inst.Code \u167\'3f 300 et seq.
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_20236287450112014072207595}{\*\bkmkend co_headnoteId_20236287450112014072207595}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/RelatedInformation/DocHeadnoteLink?docGuid=I465a5b3aeb7211dfaa23bccc834e9520&headnoteId=202362874501120140722075952&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=CitingReferences&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+4 Cases that cite this headnote
+}\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\sb200 
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb0 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}
+{\b0 \cf28 \f2 \i0 \fs20 
+{\*\bkmkstart co_headnotesEnd_1}{\*\bkmkend co_headnotesEnd_1}
+\par 
+}
+{\b1 \cf18 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_attorneysAndLawFirms_1}{\*\bkmkend co_attorneysAndLawFirms_1}
+{\b1 \cf18 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb200 
+Attorneys and Law Firms
+\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_7047_528_1}{\*\bkmkend co_pp_sp_7047_528_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+**528
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ John Cahill, under appointment by the Court of Appeal, for Defendant and Appellant.
+\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=h&pubNum=176284&cite=0326084701&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=RQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Andrea Sheridan Ordin
+}}}
+\sb200 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+, County Counsel, 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=h&pubNum=176284&cite=0110197201&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=RQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+James M. Owens
+}}}
+\sb200 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb200 
+, Assistant County Counsel, and O. Raquel Ramirez, Deputy County Counsel, for Plaintiff and Respondent.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b1 \cf18 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_opinion_1}{\*\bkmkend co_opinion_1}
+{\b1 \cf18 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb200 
+Opinion
+\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_Ib050aae711ac11e498db8b09b4f04}{\*\bkmkend co_anchor_Ib050aae711ac11e498db8b09b4f04}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=h&pubNum=176284&cite=0139450801&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=RQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+MALLANO
+}}}
+\sa200 
+\sb200 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb200 
+, P.J.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_Ib050aae911ac11e498db8b09b4f04}{\*\bkmkend co_anchor_Ib050aae911ac11e498db8b09b4f04}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_4041_1253_1}{\*\bkmkend co_pp_sp_4041_1253_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+*1253
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ The juvenile court asserted dependency jurisdiction over an incorrigible teenager, 17\u8211\'3fyear\u8211\'3fold Precious D., under 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS300&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)#co_pp_a83b000018c76" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Welfare and Institutions Code section 300, subdivision (b)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+, and removed her from the custody of her mother, Patricia D. (Mother).
+}
+{\b0 \cf1 \f2 \i0 \fs16 
+{\*\bkmkstart co_fnRef_B00112023628745_ID0ESDAG_1}{\*\bkmkend co_fnRef_B00112023628745_ID0ESDAG_1}
+{\field {\*\fldinst HYPERLINK "#co_footnote_B00112023628745_1" }{\fldrslt 
+{\super \b0 \cf28 \f2 \ul0 \strike0 \i0 \fs16 \sa0 \sb0 
+1
+}}}
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_7047_529_1}{\*\bkmkend co_pp_sp_7047_529_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+**529
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ In this case of first impression, we address the issue of whether the provision of 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS300&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)#co_pp_a83b000018c76" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+section 300(b)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ providing for jurisdiction based on the parent\rquote s \u8220\'3finability ... to adequately supervise or protect the child\u8221\'3f requires that the parent be unfit or neglectful in causing serious physical harm to the child or a 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_4041_1254_1}{\*\bkmkend co_pp_sp_4041_1254_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+*1254
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ risk of such harm. We hold that, in light of the dependency statutory scheme and federal due process principles, parental unfitness or neglectful conduct must be shown in order to assert dependency court jurisdiction under that part of 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS300&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)#co_pp_a83b000018c76" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+section 300(b)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ providing for jurisdiction based on the parent\rquote s \u8220\'3finability ... to adequately supervise or protect the child.\u8221\'3f Because there was insufficient evidence of both unfitness and neglectful conduct in this case, we reverse the jurisdiction and disposition orders.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_Ib050aaea11ac11e498db8b09b4f04}{\*\bkmkend co_anchor_Ib050aaea11ac11e498db8b09b4f04}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_Ib050aaea11ac11e498db8b09b4f04}{\*\bkmkend co_anchor_Ib050aaea11ac11e498db8b09b4f04}
+\par 
+{\b0 \qc \cf1 \f2 \ri0 \i0 \fs20 \li0 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb600 
+BACKGROUND
+\par 
+}
+}
+}
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Precious D., born in August 1992, lived with Mother and Precious\rquote s two half sisters, ages 14 and 8. Mother\rquote s male companion, Onajite E. (Stepfather), was the father of Precious\rquote s half sisters and visited their home often, but did not live there. Precious\rquote s father, Steven B., lived in Arizona, last visited with Precious in 2002, and did not appear in these proceedings. When Precious was 16 years old, she started associating with the \u8220\'3fwrong crowd,\u8221\'3f talked to \u8220\'3folder guys\u8221\'3f on the phone, met up with people she met on the phone, misbehaved, missed classes, and started running away from home. Mother suspected that Precious was engaging in prostitution, but Precious denied it.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+In March 2009, the Los Angeles County Department of Children and Family Services (DCFS) received a referral from the Los Angeles Police Department that Precious was a runaway and that she was picked up by the police in Long Beach. Precious asserted that her Stepfather beat her; she refused to return home to Mother. A police detective told DCFS that there was no evidence of abuse, and DCFS concluded that the allegations of physical abuse were unfounded.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Although Precious consistently maintained that Stepfather physically abused her by hitting her with an extension cord, Precious was unable to provide specific dates, times, instances, or motives for such physical punishment. Mother denied ever physically abusing Precious and told DCFS that she was willing and able to protect Precious from any abuse and wanted Precious to return home, but Mother needed support to help her address Precious\rquote s mental health needs. Stepfather was hurt and shocked by Precious\rquote s allegations of abuse; he denied ever hitting Precious or her half sisters. He told DCFS that they had been trying everything to help Precious, and when she ran away, they would look day and night to find her. Precious\rquote s half sisters also denied any abuse in the home. Precious \u8220\'3fremains adamant that she is not afraid of [Mother],\u8221\'3f but it was unclear to DCFS why Precious ran away from home and did not want to return to Mother.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_4041_1255_1}{\*\bkmkend co_pp_sp_4041_1255_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+*1255
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ On March 12, 2009, Mother signed a Voluntary Family Reunification Contract and Precious was placed in a foster home. The next day, Precious ran away from the foster home. Precious\rquote s foster mother reported that Precious was sneaking boys into the home and that she had taken Precious to the emergency room because she had contracted a 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?entityType=disease&entityId=Ic8edbc8c475411db9765f9243f53508a&originationContext=document&transitionType=DocumentItem&contextData=(sc.Default)&vr=3.0&rs=cblt1.0" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+sexually transmitted 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_7047_530_1}{\*\bkmkend co_pp_sp_7047_530_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+**530
+}
+}
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ disease
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+, chlamydia. According to Precious, she received medication for a 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?entityType=disease&entityId=Ic63aaaed475411db9765f9243f53508a&originationContext=document&transitionType=DocumentItem&contextData=(sc.Default)&vr=3.0&rs=cblt1.0" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+bladder infection
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+In April 2009, Precious was placed in a second foster home, where she was disrespectful, left without permission, refused to follow the house rules, skipped classes, and sent threatening and inappropriate messages to her family. Mother and Precious spoke by telephone daily, but Precious refused to see Mother or her half sisters. In April 2009, Precious told a DCFS social worker that she had a boyfriend who was 20 years old. Precious also persisted in her claim that she had been the victim of a gang rape, even though Mother had taken her to the hospital and a rape examination revealed no trauma.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+After a month in the second foster, Precious\rquote s foster mother reported that Precious was engaging in behaviors such as missing classes in school, running away, stealing, and leaving home to \u8220\'3fhang out with boys.\u8221\'3f The foster mother told DCFS that Precious \u8220\'3fcraves attention and dresses very provocative[ly].\u8221\'3f Although the foster mother had requested that Precious be placed in another home, the foster mother agreed to continue with Precious\rquote s placement to allow her to receive mental health services.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+In June 2009, the foster family agency reported that Precious was enrolled in mental health counseling but was not on any medication and had not begun family therapy. Mother continued to telephone Precious daily, but because of transportation problems had not visited with her; the foster family agency then agreed to transport Mother for visits with Precious. Precious\rquote s foster mother reported that the mental health counseling did not seem to be making an impact on Precious\rquote s behavior, as Precious refused to do any chores, missed classes every day, and \u8220\'3fall [she] wants to do is run away and fight.\u8221\'3f Mother telephoned Precious often, but Precious refused to see Mother. During a July 6, 2009 meeting with a social worker, Precious was very emotional, refused to return home, and blamed Mother for her bad grades and behavior. Precious reiterated her claim that Stepfather beat her; Precious also said that Stepfather beat Mother and \u8220\'3fcontrols the house.\u8221\'3f Precious claimed that no one was on her side or believed her.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+During a July 14, 2009 psychiatric assessment, Precious stated that she wanted to hurt herself, so she was admitted to a psychiatric hospital on a 72\u8211\'3fhour hold. Precious was diagnosed with 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?entityType=disease&entityId=Ib7c7c836475411db9765f9243f53508a&originationContext=document&transitionType=DocumentItem&contextData=(sc.Default)&vr=3.0&rs=cblt1.0" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+major depression
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+, but was 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_4041_1256_1}{\*\bkmkend co_pp_sp_4041_1256_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+*1256
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ released from the hospital on July 17, 2009, without medication being prescribed. On July 20, 2009, a team decision-making meeting was held to determine whether Precious needed a higher level of care or whether she could be returned home with intensive services. As a result of the meeting, a safety plan was created that included family therapy and placement of Precious in a group home where it would be ensured that she received appropriate mental health services.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+After Precious was placed in a group home on July 20, 2009, she called the social worker several times, threatening to run away if she was not placed with the maternal grandfather. DCFS did not allow Precious visitation with the maternal grandparents because the issue of their criminal backgrounds first needed to be resolved. In August 2009, Precious was suspended from school because of her disruptive behavior; she asserted that the school staff harassed her for no apparent reason. Precious remained placed in the group home at the time of the jurisdiction and disposition hearing in November 2009.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+According to the DCFS service log for July 20, 2009, DCFS decided to bring the 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_7047_531_1}{\*\bkmkend co_pp_sp_7047_531_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+**531
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ family to the attention of the juvenile court because Precious refused to return home and Mother said that she could not care for Precious\rquote s special needs. DCFS later wrote in a report that \u8220\'3f[d]ue to the child\rquote s incorrigible behaviors, it was determined that a petition must be filed on behalf of the child for court ordered services.\u8221\'3f
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+On July 31, 2009, DCFS filed a dependency petition as to Precious, but not as to her half sisters, who remained in Mother\rquote s custody. The petition contained allegations against Mother under 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS300&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)#co_pp_a83b000018c76" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+section 300(b)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ (failure or inability to protect). Allegations against Stepfather under 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS300&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)#co_pp_8b3b0000958a4" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+section 300, subdivisions (a)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ (serious physical harm) and (b) were later dismissed.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+In the September 2009 jurisdiction/disposition report, DCFS reported that Precious was cooperative during group therapy sessions, was participating in individual therapy, anger management, and drug and alcohol counseling. She also was prescribed psychotropic medications of 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?entityType=bdrug&entityId=I37eaf688475111db9765f9243f53508a&originationContext=document&transitionType=DocumentItem&contextData=(sc.Default)&vr=3.0&rs=cblt1.0" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Abilify
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ and Oxcarbadepine. With respect to visitation, the DCFS report stated, \u8220\'3fNo visitation orders have been made to date as to the family. DCFS recommends monitored visitation for the mother and child in a therapeutic setting. The mother and child have not had any face to face visits to date as the minor has refused to visit with the mother, however both mother and child report talking on the telephone almost daily.\u8221\'3f
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_4041_1257_1}{\*\bkmkend co_pp_sp_4041_1257_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+*1257
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ In preparation of its report, DCFS interviewed Mother, who told DCFS that Precious had run away from home numerous times; each time, Mother had filed a police report, except for the second time when Mother thought that Precious would come right back. On one occasion, Mother searched Precious\rquote s room and found out where she was staying; Mother, Stepfather, and the maternal grandfather went looking for Precious, asking people about her and showing them her picture. On two occasions, Mother sent Precious to live with her maternal aunts, but that did not work out because Precious ran away from the aunts\rquote  homes. Mother said that she had \u8220\'3ftried everything with Precious.\u8221\'3f According to Mother, Precious admitted to making up a story about being raped and held hostage. After Precious was placed in foster care, she called Mother several times to ask if she could come home and to apologize for lying. Mother told DCFS that \u8220\'3f \u8216\'3fI just want Precious to get some help before she comes home. I have always wanted her and I still want her to come home, but she needs help.\u8217\'3f \u8221\'3f
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+In its report, DCFS alleged that there were four problems requiring intervention: (1) an ongoing conflict between Precious and Mother such that Mother \u8220\'3fis unable to care for the minor due to the minor\rquote s extreme behavioral problems\u8221\'3f; (2) the unwillingness of Precious to return home; (3) the physical abuse of Precious by \u8220\'3fone or more adults in the home\u8221\'3f; and (4) the failure of the family to benefit from prior voluntary family maintenance services. Notwithstanding the foregoing alleged problems, DCFS\rquote s report admitted that, other than assertions by Precious, there was no other evidence of physical abuse; that juvenile court jurisdiction was sought because of Precious\rquote s incorrigible behavior and her need for court-ordered services; that Mother felt that she was in need of services to help her control Precious\rquote s behavior; that Mother was concerned about her financial ability to provide care for Precious while she was in placement; that the reason why the family therapy called for by the safety plan was never initiated was because Precious refused to see Mother; that Mother expressed a willingness to participate in services to assist reunification; that Precious was not afraid of Mother; that Precious felt safe in Mother\rquote s 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_7047_532_1}{\*\bkmkend co_pp_sp_7047_532_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+**532
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ care; and that \u8220\'3f[t]here remains open communication between the mother and the child, despite the current circumstances.\u8221\'3f
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+At the jurisdiction and disposition hearing on November 24, 2009, the juvenile court admitted into evidence DCFS\rquote s detention and jurisdiction/disposition reports and heard argument of counsel. Mother requested that the court dismiss the petition on the ground that Precious\rquote s incorrigible behavior was an insufficient reason to assert dependency court jurisdiction. The court denied Mother\rquote s request and sustained a count under 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS300&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)#co_pp_a83b000018c76" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+section 300(b)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ that was 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_4041_1258_1}{\*\bkmkend co_pp_sp_4041_1258_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+*1258
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ amended to state that Precious \u8220\'3fis unwilling to return to the mother\rquote s home and has repeatedly gone AWOL. Additionally, [Mother has] been unable to provide ongoing supervision of this child. Said inability of the child\rquote s mother endangers the child\rquote s physical and emotional health and safety and places the child at risk of harm.\u8221\'3f
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+The juvenile court explained its denial of Mother\rquote s request to dismiss the petition and its assertion of jurisdiction under 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS300&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)#co_pp_a83b000018c76" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+section 300(b)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ as follows: \u8220\'3fI think the documents presented by the department are clear that there is a substantial risk that this child is going to suffer physical harm based upon what has been her behavior of running away, being AWOL, being incorrigible, and her mother has the inability to supervise or protect her daughter because the parent, the mother, and the daughter are not communicating. [\u182\'3f] And the court feels that the department has met [its] burden of showing that this is a child at risk of being abused or neglected, some of which is through her mother\rquote s inability to control her and some of which is Precious\rquote s behavior of not wanting to comply. [\u182\'3f] But the result is still the same in that Precious is somebody that comes within the jurisdiction of this court. And so the court is going to sustain [count b\u8211\'3f2 of the petition] as amended.\u8221\'3f
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+As to disposition, the juvenile court removed Precious from Mother\rquote s custody. With respect to family reunification services, Mother\rquote s attorney requested that the court order only family therapy when appropriate, and not parenting or individual counseling for Mother. DCFS agreed that a parenting class would not benefit Mother. The court then agreed to follow Mother\rquote s request, \u8220\'3fsince we\rquote re all very clear that the issue\rquote s Precious, not [Mother].\u8221\'3f The court then ordered therapy for Mother and Precious when Precious\rquote s therapist deemed it appropriate. For Precious, the court ordered individual counseling, a tutoring referral, and an ILP (independent living skills program) referral. The court ordered that Mother\rquote s visits were unmonitored, and the visits were not to include Stepfather. The court also ordered Precious, who attended the hearing, to visit with Mother. The court told Precious, \u8220\'3fI need you to be clear that I expect you to work with this court in fixing what is wrong. I don\rquote t believe it is all your mother\rquote s fault. I believe you are responsible for some of the damage that\rquote s been done.\u8221\'3f
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Mother appeals from the jurisdiction and disposition orders, raising challenges to the sufficiency of the evidence.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_Ib050aaeb11ac11e498db8b09b4f04}{\*\bkmkend co_anchor_Ib050aaeb11ac11e498db8b09b4f04}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_Ib050aaeb11ac11e498db8b09b4f04}{\*\bkmkend co_anchor_Ib050aaeb11ac11e498db8b09b4f04}
+\par 
+{\b0 \qc \cf1 \f2 \ri0 \i0 \fs20 \li0 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb600 
+DISCUSSION
+\par 
+}
+}
+}
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u8220\'3f \u8216\'3fWhen the sufficiency of the evidence to support a finding or order is challenged on appeal, the reviewing court must determine if there is any substantial evidence, that is, evidence which is reasonable, credible, and of 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_4041_1259_1}{\*\bkmkend co_pp_sp_4041_1259_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+*1259
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ solid value to support the conclusion of the trier of fact. [Citation.] In making this determination, all conflicts [in the evidence and in reasonable inferences from the evidence] are to be resolved in favor of the prevailing party, and 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_7047_533_1}{\*\bkmkend co_pp_sp_7047_533_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+**533
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ issues of fact and credibility are questions for the trier of fact. [Citation.]\u8217\'3f \u8221\'3f (
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=2006976012&pubNum=7047&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \i1 \fs20 
+{\b0 \cf28 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+In re Savannah M.
+}
+}
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ (2005) 131 Cal.App.4th 1387, 1393, 32 Cal.Rptr.3d 526.)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ While substantial evidence may consist of inferences, such inferences must rest on the evidence; inferences that are the result of speculation or conjecture cannot support a finding. 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=2006976012&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+(
+}
+{\b0 \cf28 \f2 \i1 \fs20 
+{\b0 \cf28 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Ibid.
+}
+}
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+)
+}}}
+\par 
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\field {\*\fldinst HYPERLINK "#co_anchor_F12023628745_1" }{\fldrslt 
+{\super \b1 \cf19 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[1]
+}}}
+{\b0 \cf28 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B12023628745_1}{\*\bkmkend co_anchor_B12023628745_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ \u8220\'3fA jurisdictional finding under 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS300&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)#co_pp_a83b000018c76" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+section 300, subdivision (b)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ requires: \u8216\'3f \u8220\'3f(1) neglectful conduct by the parent in one of the specified forms; (2) causation; and (3) \u8216\'3fserious physical harm or illness\rquote  to the child, or a \u8216\'3fsubstantial risk\u8217\'3f of such harm or illness.\u8221\'3f [Citation.]\rquote  [Citations.]\u8221\'3f (
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=2019393050&pubNum=7047&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \i1 \fs20 
+{\b0 \cf28 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+In re James R.
+}
+}
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ (2009) 176 Cal.App.4th 129, 135, 97 Cal.Rptr.3d 310.)
+}}}
+\par 
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\field {\*\fldinst HYPERLINK "#co_anchor_F22023628745_1" }{\fldrslt 
+{\super \b1 \cf19 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[2]
+}}}
+{\b0 \cf28 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B22023628745_1}{\*\bkmkend co_anchor_B22023628745_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ The juvenile court in this case made only one finding that can be construed as critical of Mother\rquote s parenting skills or conduct, and that is the finding that Mother and Precious were not communicating. But this finding is not supported by substantial evidence because the record shows that Mother and Precious were in daily telephone contact. DCFS\rquote s jurisdiction/disposition report also noted as a 
+}
+{\b0 \cf1 \f2 \i1 \fs20 
+{\b0 \cf1 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+family strength
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ that there was \u8220\'3fopen communication between the mother and the child, despite the current circumstances.\u8221\'3f
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Nor is there substantial evidence in the record to fault Mother for the failure to initiate family therapy and the failure of the voluntary family reunification plan. It was undisputed that Mother was willing to participate in therapy, but it was Precious who was refusing to see Mother. DCFS did not initiate family therapy because of Precious\rquote s conduct, not Mother\rquote s. DCFS admitted that it sought dependency court jurisdiction because of Precious\rquote s incorrigible behavior and her need for court-ordered services, not because of any neglectful conduct by Mother. It is also apparent that there was no neglectful conduct by Mother because Mother was not ordered to participate in any services except family counseling with Precious, when Precious\rquote s therapist deemed it appropriate. Mother was always ready and willing to participate in family counseling. We thus conclude that there is insufficient evidence of unfitness or neglectful conduct by Mother.
+}
+{\b0 \cf1 \f2 \i0 \fs16 
+{\*\bkmkstart co_fnRef_B00222023628745_ID0E3ABG_1}{\*\bkmkend co_fnRef_B00222023628745_ID0E3ABG_1}
+{\field {\*\fldinst HYPERLINK "#co_footnote_B00222023628745_1" }{\fldrslt 
+{\super \b0 \cf28 \f2 \ul0 \strike0 \i0 \fs16 \sa0 \sb0 
+2
+}}}
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+DCFS contends that jurisdiction is proper under 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS300&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)#co_pp_a83b000018c76" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+section 300(b)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ if there is an 
+}
+{\b0 \cf1 \f2 \i1 \fs20 
+{\b0 \cf1 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+inability
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ on Mother\rquote s part to supervise or protect Precious, notwithstanding the lack of any neglectful conduct by Mother. DCFS argues that the 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_4041_1260_1}{\*\bkmkend co_pp_sp_4041_1260_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+*1260
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ inclusion of the words \u8220\'3fwillful or negligent failure\u8221\'3f in other clauses of 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS300&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)#co_pp_a83b000018c76" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+section 300(b)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+, but not in the clause at issue here (see fn. 1, 
+}
+{\b0 \cf1 \f2 \i1 \fs20 
+{\b0 \cf1 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+ante
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ ), indicates a legislative intent that neither parental unfitness nor neglectful conduct is required to assert jurisdiction.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\field {\*\fldinst HYPERLINK "#co_anchor_F32023628745_1" }{\fldrslt 
+{\super \b1 \cf19 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[3]
+}}}
+{\b0 \cf28 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B32023628745_1}{\*\bkmkend co_anchor_B32023628745_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ As DCFS points out in its brief, this is a case of first impression as to whether parental unfitness or neglectful conduct is required for the assertion of jurisdiction based on a parent\rquote s \u8220\'3finability ... to adequately supervise or protect the child.\u8221\'3f As we explain below, we reject DCFS\rquote s interpretation of 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS300&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)#co_pp_a83b000018c76" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+section 300(b)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ because it would not comport with due process principles and the dependency process viewed as a whole.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\field {\*\fldinst HYPERLINK "#co_anchor_F42023628745_1" }{\fldrslt 
+{\super \b1 \cf19 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[4]
+}}}
+{\b0 \cf28 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B42023628745_1}{\*\bkmkend co_anchor_B42023628745_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ \u8220\'3fGiven the complexity of the statutory scheme governing dependency, a single provision \u8216\'3fcannot properly be understood 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_7047_534_1}{\*\bkmkend co_pp_sp_7047_534_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+**534
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ except in the context of the entire dependency process of which it is a part.\u8217\'3f [Citation.]\u8221\'3f (
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=2018493758&pubNum=4645&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \i1 \fs20 
+{\b0 \cf28 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+In re Nolan W.
+}
+}
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ (2009) 45 Cal.4th 1217, 1235, 91 Cal.Rptr.3d 140, 203 P.3d 454.)
+}}}
+\par 
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+The nature of the dependency statutory scheme from the parent\rquote s perspective was explained as follows in 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1997160089&pubNum=3484&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \i1 \fs20 
+{\b0 \cf28 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+In re Meranda P.
+}
+}
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ (1997) 56 Cal.App.4th 1143, 65 Cal.Rptr.2d 913:
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ \u8220\'3fThe dependency scheme is a \u8216\'3fremarkable system of checks and balances\rquote  [citation] designed to \u8216\'3fpreserve the parent-child relationship and to reduce the risk of erroneous fact-finding in ... many different ways....\rquote  [Citation.] Until permanency planning, the parent\rquote s interest in having a child returned to the parent is the paramount concern of the law. [Citations.] The parent is thus entitled to 12 months, and possibly 6 more months, of reunification services aimed at assisting the parent in overcoming the problems that led to the child\rquote s removal. [Citations.] There is also in force at the dispositional hearing and at all subsequent prepermanency planning hearings a statutory presumption that the child will be returned to parental custody. [Citations.] [\u182\'3f] In addition, there are \u8216\'3fprecise and demanding substantive and procedural requirements\rquote  which the petitioning agency must fulfill before it can propose termination. At the dispositional hearing, the agency must show by the enhanced standard of clear and convincing evidence that removal of the child is necessary. [Citation.] ... Before reunification can be terminated, the agency must establish by a preponderance of evidence that it would be detrimental to return the child to the parent. [Citations.]\u8221\'3f 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1997160089&pubNum=3484&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+(
+}
+{\b0 \cf28 \f2 \i1 \fs20 
+{\b0 \cf28 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Meranda P.,
+}
+}
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ at p. 1154, 65 Cal.Rptr.2d 913.)
+}}}
+\par 
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\field {\*\fldinst HYPERLINK "#co_anchor_F52023628745_1" }{\fldrslt 
+{\super \b1 \cf19 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[5]
+}}}
+{\b0 \cf28 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B52023628745_1}{\*\bkmkend co_anchor_B52023628745_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 
+}
+{\field {\*\fldinst HYPERLINK "#co_anchor_F62023628745_1" }{\fldrslt 
+{\super \b1 \cf19 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[6]
+}}}
+{\b0 \cf28 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B62023628745_1}{\*\bkmkend co_anchor_B62023628745_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 
+}
+{\field {\*\fldinst HYPERLINK "#co_anchor_F72023628745_1" }{\fldrslt 
+{\super \b1 \cf19 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[7]
+}}}
+{\b0 \cf28 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B72023628745_1}{\*\bkmkend co_anchor_B72023628745_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 
+}
+{\field {\*\fldinst HYPERLINK "#co_anchor_F82023628745_1" }{\fldrslt 
+{\super \b1 \cf19 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[8]
+}}}
+{\b0 \cf28 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B82023628745_1}{\*\bkmkend co_anchor_B82023628745_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 
+}
+{\field {\*\fldinst HYPERLINK "#co_anchor_F92023628745_1" }{\fldrslt 
+{\super \b1 \cf19 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[9]
+}}}
+{\b0 \cf28 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B92023628745_1}{\*\bkmkend co_anchor_B92023628745_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 
+}
+{\field {\*\fldinst HYPERLINK "#co_anchor_F102023628745_1" }{\fldrslt 
+{\super \b1 \cf19 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[10]
+}}}
+{\b0 \cf28 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B102023628745_1}{\*\bkmkend co_anchor_B102023628745_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ Due process guarantees apply to dependency proceedings. (
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=2020747477&pubNum=7047&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \i1 \fs20 
+{\b0 \cf28 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+In re A.S.
+}
+}
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ (2009) 180 Cal.App.4th 351, 359, 102 Cal.Rptr.3d 642.)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ \u8220\'3fIn deciding requirements of due process, the court evaluates three elements: the private 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_4041_1261_1}{\*\bkmkend co_pp_sp_4041_1261_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+*1261
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ interests at stake, the government\rquote s interest, and the risk the procedures used will lead to an erroneous decision. [Citations.] [\u182\'3f] The private interest at stake in a dependency proceeding is enormous. A parent\rquote s interest in the companionship, care, custody and management of his or her children is a fundamental civil right. [Citation.] Children, too, have a compelling independent interest in belonging to their natural family. [Citation.] In addition, each child has a compelling interest to live free from abuse and neglect in a stable, permanent placement with an emotionally committed caregiver. [Citation.] The governmental interest in a child\rquote s welfare is significant. \u8216\'3f[T]he welfare of a child is a compelling state interest that a state has not only a right, but a duty, to protect.\u8217\'3f [Citations.]\u8221\'3f (
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=2007196889&pubNum=7047&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \i1 \fs20 
+{\b0 \cf28 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+In re Dakota H.
+}
+}
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ (2005) 132 Cal.App.4th 212, 222\u8211\'3f223, 33 Cal.Rptr.3d 337.)
+}}}
+\par 
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\field {\*\fldinst HYPERLINK "#co_anchor_F112023628745_1" }{\fldrslt 
+{\super \b1 \cf19 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[11]
+}}}
+{\b0 \cf28 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B112023628745_1}{\*\bkmkend co_anchor_B112023628745_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ \u8220\'3fThe California dependency system comports with federal due process requirements because \u8216\'3f[t]he number and quality of the judicial findings that are necessary preconditions to termination convey very powerfully to the fact finder the subjective certainty about parental unfitness and detriment required before the court may even consider ending the relationship between natural parent and child.\u8217\'3f [Citation.]\u8221\'3f (
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=2020747477&pubNum=7047&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \i1 \fs20 
+{\b0 \cf28 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+In re A.S., supra,
+}
+}
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 180 Cal.App.4th at p. 359, 102 Cal.Rptr.3d 642.)
+}}}
+\par 
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Under DCFS\rquote s construction of 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS300&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)#co_pp_a83b000018c76" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+section 300(b)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+, dependency jurisdiction may be asserted over an incorrigible child whose parent is neither unfit nor neglectful. If so, such a jurisdictional finding would then be the basis for the child\rquote s removal and for an order requiring reunification services that are either unnecessary or doomed to failure due to incorrigible conduct on the child\rquote s part, and then for the ultimate termination of parental rights. Thus, parental rights would be terminated and the 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_7047_535_1}{\*\bkmkend co_pp_sp_7047_535_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+**535
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ family unit destroyed without any finding of unfitness or neglectful conduct. Such a result would not comport with federal due process principles.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+For all of the foregoing reasons, we conclude that substantial evidence does not support the assertion of dependency court jurisdiction over Precious. \u8220\'3fIn light of our determination that the jurisdictional order must be reversed, the dispositional order placing the children outside mother\rquote s home and all subsequent orders as to mother must be reversed as well.\u8221\'3f (
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=2019363614&pubNum=7047&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \i1 \fs20 
+{\b0 \cf28 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+In re R.M.
+}
+}
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ (2009) 175 Cal.App.4th at 986, 991, 96 Cal.Rptr.3d 655.)
+}}}
+\par 
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Our juvenile court system is not without recourse and resources to deal with an incorrigible minor, notwithstanding the lack of dependency jurisdiction in the circumstances of this case. (See, e.g., \u167\'3f 601 et seq. [providing procedure to adjudge a habitually disobedient or truant minor a ward of the court]; \u167\'3f 241.1 [providing procedure for minor who \u8220\'3fappears to come within the description of both 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS300&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=LQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Section 300
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ and 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS601&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=LQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Section 601
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ or 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS602&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=LQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+602
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u8221\'3f].)
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_Ib050aaec11ac11e498db8b09b4f04}{\*\bkmkend co_anchor_Ib050aaec11ac11e498db8b09b4f04}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_Ib050aaec11ac11e498db8b09b4f04}{\*\bkmkend co_anchor_Ib050aaec11ac11e498db8b09b4f04}
+\par 
+{\b0 \qc \cf1 \f2 \ri0 \i0 \fs20 \li0 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_4041_1262_1}{\*\bkmkend co_pp_sp_4041_1262_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+*1262
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb600 
+DISPOSITION
+\par 
+}
+}
+}
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+The orders of the juvenile court as to Patricia D. are reversed. The court is ordered to dismiss the petition as to Patricia D. and to return Precious D. to the custody of Patricia D. forthwith unless new circumstances would justify a new finding of jurisdiction.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+We concur: 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=h&pubNum=176284&cite=0254319401&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=RQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ROTHSCHILD
+}}}
+\sb200 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ and 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=h&pubNum=176284&cite=0127371601&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=RQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)" }{\fldrslt 
+{\b0 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+JOHNSON
+}}}
+\sb200 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb600 
+, JJ.
+\par 
+}
+}
+}
+}
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b1 \cf18 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_allCitations_1}{\*\bkmkend co_allCitations_1}
+{\b1 \cf18 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb200 
+All Citations
+\par 
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+189 Cal.App.4th 1251, 117 Cal.Rptr.3d 527, 10 Cal. Daily Op. Serv. 14,162, 2010 Daily Journal D.A.R. 17,027
+\par 
+}
+}
+}
+{\b0 \cf1 \f6 \ri0 \i0 \ql \fs24 \li0 \par}\sect\sbknone\pgncont\cols1{\ids0 {
+{\trowd \ltrrow \trleft0 
+\clpadb400 \clpadfb3 \clbrdrt \clbrdrl \trql \clwWidth10080 \cellx10080 
+\intbl 
+{\ri0 \li0 
+{\b1 \qc \cf1 \f6 \ri0 \i0 \fs22 \li0 
+{\b1 \cf1 \f6 \i0 \fs22 
+{\b1 \cf1 \f6 \ul0 \strike0 \i0 \fs22 \sa0 \sb0 
+Footnotes
+\par 
+}
+}
+}
+}\b1 \qc \cf1 \f6 \ri0 \ul0 \strike0 \i0 \li0 \fs22 \sa0 \sb0 \intbl \cell \row }
+{\trowd \ltrrow \trleft0 
+\clbrdrl \trql \clvertalt \clwWidth600 \cellx600 
+\clbrdrr \trql \clwWidth9480 \cellx10080 
+\intbl 
+{\ri0 \li0 
+{\b0 \cf1 \f6 \ri0 \i0 \ql \fs20 \li0 
+{\b0 \cf1 \f6 \i0 \fs20 
+{\*\bkmkstart co_footnote_B00112023628745_1}{\*\bkmkend co_footnote_B00112023628745_1}
+{\field {\*\fldinst HYPERLINK "#co_fnRef_B00112023628745_ID0ESDAG_1" }{\fldrslt 
+{\super \b0 \cf28 \f6 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+1
+}\super \b0 \cf28 \f6 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}\b0 \cf1 \f6 \ri0 \i0 \ql \li0 \fs20 \intbl \cell \intbl 
+{\ri0 \li0 
+{\b0 \cf1 \f6 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f6 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f6 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f6 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Unspecified statutory references are to the 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS300&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)#co_pp_a83b000018c76" }{\fldrslt 
+{\b0 \cf28 \f6 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Welfare and Institutions Code. Section 300, subdivision (b)
+}\b0 \cf28 \f6 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f6 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ (300(b)) provides that a child comes within the jurisdiction of the juvenile court if: \u8220\'3fThe child has suffered, or there is a substantial risk that the child will suffer, serious physical harm or illness, 
+}
+{\b0 \cf1 \f6 \i1 \fs20 
+{\b0 \cf1 \f6 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+as a result of the failure or inability of his or her parent or guardian to adequately supervise or protect the child,
+}
+}
+{\b0 \cf1 \f6 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ or the willful or negligent failure of the child\rquote s parent or guardian to adequately supervise or protect the child from the conduct of the custodian with whom the child has been left, or by the willful or negligent failure of the parent or guardian to provide the child with adequate food, clothing, shelter, or medical treatment, or by the inability of the parent or guardian to provide regular care for the child due to the parent\rquote s or guardian\rquote s mental illness, developmental disability, or substance abuse.\u8221\'3f (Italics added.) The italicized phrase is at issue on this appeal.
+\par 
+}
+}
+}
+}
+}\b0 \cf1 \f6 \ri0 \ul0 \strike0 \i0 \qj \li0 \fs20 \sa0 \sb0 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clbrdrb \clbrdrl \trql \clvertalt \clwWidth600 \cellx600 
+\clbrdrb \clbrdrr \trql \clwWidth9480 \cellx10080 
+\intbl 
+{\ri0 \li0 
+{\b0 \cf1 \f6 \ri0 \i0 \ql \fs20 \li0 
+{\b0 \cf1 \f6 \i0 \fs20 
+{\*\bkmkstart co_footnote_B00222023628745_1}{\*\bkmkend co_footnote_B00222023628745_1}
+{\field {\*\fldinst HYPERLINK "#co_fnRef_B00222023628745_ID0E3ABG_1" }{\fldrslt 
+{\super \b0 \cf28 \f6 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+2
+}\super \b0 \cf28 \f6 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}\b0 \cf1 \f6 \ri0 \i0 \ql \li0 \fs20 \intbl \cell \intbl 
+{\ri0 \li0 
+{\b0 \cf1 \f6 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f6 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f6 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f6 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+There is no claim in this case that Mother is unfit so we have no occasion to address other bases for dependency jurisdiction, including that part of 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS300&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)#co_pp_a83b000018c76" }{\fldrslt 
+{\b0 \cf28 \f6 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+section 300(b)
+}\b0 \cf28 \f6 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f6 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ providing for jurisdiction based on the \u8220\'3finability of the parent or guardian to provide regular care for the child due to the parent\rquote s or guardian\rquote s mental illness, developmental disability, or substance abuse.\u8221\'3f (
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000228&cite=CAWIS300&originatingDoc=I465a5b3aeb7211dfaa23bccc834e9520&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.Search)#co_pp_a83b000018c76" }{\fldrslt 
+{\b0 \cf28 \f6 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u167\'3f 300(b)
+}\b0 \cf28 \f6 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f6 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+.)
+\par 
+}
+}
+}
+}
+}\b0 \cf1 \f6 \ri0 \ul0 \strike0 \i0 \qj \li0 \fs20 \sa0 \sb0 \intbl \cell \row }}\par 
+}
+{\b0 \cf1 \f2 \ri0 \par}\sect\sbknone\pgncont\cols2{\ids0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f6 \ri0 \i0 \ql \fs24 \li0 \par}\sect\sbknone\pgncont\cols1{\ids0 {
+{\trowd \lastrow \trleft0 
+\clpadt24 \clpadft3 \clpadl100 \clpadfl3 \clpadr24 \clpadfr3 \clbrdrt \brdrcf24 \brdrw10 \brdrs \clbrdrb \clbrdrl \trql \clvertalt \clwWidth4320 \cellx4320 
+\clpadt24 \clpadft3 \clpadl100 \clpadfl3 \clpadr24 \clpadfr3 \clbrdrt \brdrcf24 \brdrw10 \brdrs \clbrdrb \clbrdrr \trql \clvertalt \clwWidth5760 \cellx10080 
+\intbl 
+{\ri24 \li24 
+{\b1 \cf24 \f6 \ri24 \i0 \ql \fs16 \li24 
+{\b1 \cf24 \f6 \ul0 \strike0 \i0 \fs16 \sa0 \sb0 
+End of Document
+\par 
+}
+}
+}\b1 \cf24 \f6 \ri24 \ul0 \strike0 \i0 \ql \li24 \fs16 \sa0 \sb0 \intbl \cell \intbl 
+{\ri24 \li24 
+{\qr \b0 \cf24 \f6 \ri24 \i0 \fs16 \li24 
+{\b0 \cf24 \f6 \ul0 \strike0 \i0 \fs16 \sa0 \sb0 
+\u169\'3f 2022 Thomson Reuters. No claim to original U.S. Government Works.
+\par 
+}
+}
+}\qr \b0 \cf24 \f6 \ri24 \ul0 \strike0 \i0 \li24 \fs16 \sa0 \sb0 \intbl \cell \row }}\par 
+}
+{\b0 \cf1 \f2 \ri0 \par}\sect\sbknone\pgncont\cols2{\ids0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}\sect }

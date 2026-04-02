@@ -1,0 +1,7 @@
+﻿{
+	"ConcurringOpinion": { "LocatorString": "//div[./h3[text()='Concurrence']]/parent::div//div[@class='CipDipContent ConcurrenceContent']"},
+	"ConcurringInPartOpinion": { "LocatorString": "//div[./h3[text()='Concurrence in Part']]/parent::div//div[@class='CipDipContent ConcurrenceContent']"},
+	"ContentBlock": {"LocatorString":  "//div[@class = 'co_contentBlock co_prelimBlock co_headtext']"},
+	"DissentingOpinion":{ "LocatorString": "//div[./h3[text()='Dissent']]/parent::div//div[@class='CipDipContent DissentingContent']"},
+	"DissentingInPartOpinion":{ "LocatorString": "//div[./h3[text()='Dissent in Part']]/parent::div//div[@class='CipDipContent DissentingContent']"}
+}

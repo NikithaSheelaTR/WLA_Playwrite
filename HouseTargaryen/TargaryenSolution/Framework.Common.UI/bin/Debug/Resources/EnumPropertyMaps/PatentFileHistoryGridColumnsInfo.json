@@ -1,0 +1,18 @@
+﻿{
+  // Maps PatentFileHistoryColumns to WebElementInfo
+  "Order": {
+    "LocatorString": "//*[contains(@class,'co_detailsTable_depth')]"
+  },
+
+  "SelectAll": {
+    "LocatorString": "//*[@class='co_detailsTable_select']"
+  },
+
+  "Title": {
+    "LocatorString": "//*[contains(@class,'co_detailsTable_content')]"
+  },
+
+  "Type": {
+    "LocatorString": "//*[contains(@class,'co_detailsTable_ipConentType')]"
+  }
+}

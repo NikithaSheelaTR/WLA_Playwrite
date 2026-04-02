@@ -1,0 +1,330 @@
+{
+  // Maps Dialogs to WebElementInfo
+  "AnalyticsEmail": {
+    "LocatorString": "//div[@class='co_overlayBox_container co_overlayBox_delivery' and .//*[contains(text(),'Email')]]"
+  },
+  "AnalyticsMonthDatepicker": {
+    "LocatorString": "//div[@id='ui-datepicker-div']"
+  },
+  "AnalyticsPrint": {
+    "LocatorString": "//div[@class='co_overlayBox_container co_overlayBox_delivery' and .//*[contains(text(),'Print')]]"
+  },
+  "AssignPageOwnerDialog": {
+    "LocatorString": "//div[@class = 'co_overlayBox_container']"
+  },
+  "PrecisionTypeaheadDialog": {
+    "LocatorString": "//div[@class='Typeahead-wrapper']"
+  },
+  "Attorney": {
+    "LocatorString": "//*[@id='co_facet_attorney_popup']"
+  },
+  "CaseSensitivity": {
+    "LocatorString": "//div[@id='co_search_advancedSearch_caseSensitive_lightbox']"
+  },
+  "CitingProximityMoreInfoDialog": {
+    "LocatorString": "//div[contains(@class,'co_overlayBox_container CoCiteProximity-header-lightbox')]"
+  },
+  "ChartsPopUpDialog": {
+    "LocatorString": ".//*[name() = 'g' and @class = 'highcharts-tooltip']"
+  },
+  "Community": {
+    "LocatorString": "//div[@id='co_community']"
+  },
+  "CompareText": {
+    "LocatorString": "//div[@class = 'co_overlayBox_container compareTextContainer']"
+  },
+  "CompareVersions": {
+    "LocatorString": "//div[@id='co_statuteCompareLightbox']"
+  },
+  "ConcurrenceAndDissentIndicatorsDialog": {
+    "LocatorString": "//div[@class = 'co_overlayBox_container ShadingRemoval-modal']"
+  },
+  "ConfirmationMessage": {
+    "LocatorString": "//div[contains(@class, '_popupMessageContainer')]"
+  },
+  "Contacts": {
+    "LocatorString": "//div[@id='co_facet_notificationCenterContact_popup']"
+  },
+  "CopyLink": {
+    "LocatorString": "//div[@id='co_linkBuilderLightbox']"
+  },
+  "CopyCitation": {
+    "LocatorString": "//div[@id='co_copyCitationModal']"
+  },
+  "CreateExperiment": {
+    "LocatorString": "//div[@id='coid_gradingTool_createExperiment_lightbox']"
+  },
+  "CustomPagesLeavingNonBillableZone": {
+    "LocatorString": "//div[@class='co_overlayBox_container cp_zone_lightbox']"
+  },
+  "Delivery": {
+    "LocatorString": "//div[@id='co_deliveryLightbox']"
+  },
+  "DocketsRequestsWarning": {
+    "LocatorString": "//div[@id = 'co_LimitExceededCenterLightbox']"
+  },
+  "DocumentAnalyzerFileUploadDialog": {
+    "LocatorString": "//*[@id='coid_ba_fileUploadLightbox']"
+  },
+  "DocumentAnalyzerHeadingFacetDialog": {
+    "LocatorString": "//div[@id = 'coid_docHeadingFacetModal']"
+  },
+  "DocumentAnalyzerKeyCiteDialog": {
+    "LocatorString": "//*[@class='co_kcFlagPopup']"
+  },
+  "DocumentAnalyzerSecurityDescriptionDialog": {
+    "LocatorString": "//*[@id='coid_ba_privacyStatementLightbox']"
+  },
+  "DocumentAnalyzerUploadingErrorDialog": {
+    "LocatorString": "//*[@id='coid_da_errorLightbox']"
+  },
+  "DocumentLevelTocHelpDisplayed": {
+    "LocatorString": "//div[@id = 'co_toc_infobox_container']//div[@class= 'co_infoBox_container']"
+  },
+  "DocumentLimitReached": {
+    "LocatorString": "//div[@id = 'co_blockedBox']//div[@class= 'co_genericBoxContent-title']/p[contains(text(),'Document Limit Reached')]"
+  },
+  "EditBillingInformationSubmittedChanges": {
+    "LocatorString": "//div[@id='wa_changesSubmitted_Lightbox']"
+  },
+  "EdgeDisplayOptions": {
+    "LocatorString": "//div[@id= 'co_documentReadingModePreferences']"
+  },
+  "ExtendSessionDialog": {
+    "LocatorString": "//*[@id='co_websiteExtendSessionDialog'] | //div[@id='co_suspendBilling']"
+  },
+  "Feedback": {
+    "LocatorString": "//textarea[@id='co_pageSurveyComment']"
+  },
+  "FolderAnalysisSliderDialog": {
+    "LocatorString": "//div[contains(@class,'co_contentSliderContainer FolderAnalysisSliderWrapper')]"
+  },
+  "FolderAnalysisToastDialog": {
+    "LocatorString": "//div[@class='NotificationToast']"
+  },
+  "Graphs": {
+    "LocatorString": "//div[@id='coid_Lightbox']"
+  },
+  "HeadingsNavigationDialog": {
+    "LocatorString": "//div[@id='coid_docAnalyzerHeadingModal']"
+  },
+  "HeadnoteTopics": {
+    "LocatorString": "//div[@class='co_overlayBox_container' and (contains(@id,'expand_Group_') or contains(@id,'Headnote'))]"
+  },
+  "HeatmapHoverBox": {
+    "LocatorString": "//div[contains(@class, 'co_heatmapHoverBox')]"
+  },
+  "HighlightMenu": {
+    "LocatorString": "//div[@id='co_selectedTextMenu' and contains(@class,'co_dropdownBoxExpanded')]"
+  },
+  "IncludeSubfolders": {
+    "LocatorString": "//div[@id='co_generateReportDialog']"
+  },
+  "InlineNote": {
+    "LocatorString": "//div[@id='co_inlineNotes']//div[@class='co_noteContainer']"
+  },
+  "IntroductorySignalsMoreInfoDialog": {
+    "LocatorString": "//div[contains(@class ,'co_overlayBox_container CoCiteIntroductorySignals-header-lightbox')]"
+  },
+  "InvalidCitation": {
+    "LocatorString": "//div[@id = 'coid_invalidCitationsLightbox']"
+  },
+  "InvalidPageRanges": {
+    "LocatorString": "//div[@id='co_deliveryInvalidStarPages']"
+  },
+  "JoinSessionDialog": {
+    "LocatorString": "//div[@id='co_websiteJoinSessionDialog']"
+  },
+  "Judge": {
+    "LocatorString": "//*[@id='co_facet_judge_popup']"
+  },
+  "JudgeProfileDocument": {
+    "LocatorString": "//div[@id='popBox']"
+  },
+  "KeyCiteFlags": {
+    "LocatorString": "//li[@id='co_docToolbarKeyCiteToggle']//div[@class='dropdownContainer']"
+  },
+  "LawFirm": {
+    "LocatorString": "//*[@id='co_facet_lawfirm_popup']"
+  },
+  "LongerQueriesDialog": {
+    "LocatorString": "//div[@class='co_overlayBox_container']"
+  },
+  "ManageHighlight": {
+    "LocatorString": "//div[@id='co_highlightMenu']/div[@class='co_dropBox co_dropBoxExpanded']"
+  },
+  "MultipleSearchWithin": {
+    "LocatorString": "//*[@id='coid_SearchWithinLightbox']"
+  },
+  "DragAndDropMoveOrCopyDialog": {
+    "LocatorString": "//*[@id='co_dragDropBox_countText']"
+  },
+  "NavigateHeadingsDialog": {
+    "LocatorString": "//*[@id='coid_outline_lightbox']"
+  },
+  "NewFolderDialog": {
+    "LocatorString": "//div[contains(@class, 'co_new_folderAction')]"
+  },
+  "NonBillable": {
+    "LocatorString": "//div[contains(@class,'co_overlayBox_container') and .//h3[normalize-space(text())='Leaving Non-billable Zone']]"
+  },
+  "NonUniqueCitation": {
+    "LocatorString": "//div[@class='co_overlayBox_container cp_notification_lightbox']"
+  },
+  "NotesOfDecisionsSearchWithin": {
+    "LocatorString": "//div[@id='co_dropdownContainerInnerContent']"
+  },
+  "NotesOfDecisionsTopics": {
+    "LocatorString": "//div[@id='co_facet_nod_popup' or @id='co_facet_NODTopics_popup']"
+  },
+  "OutOfPlan": {
+    "LocatorString": "//div[@id='co_warnLightbox']|//div[contains(@class,'co_overlayBox_outofPlan')]|//div[contains(@class,'co_overlayBox_container')]"
+  },
+  "OverrulingRisk": {
+    "LocatorString": "//div[@id ='co_kcOverrulingFlagPopup']"
+  },
+  "Preferences": {
+    "LocatorString": "//div[@id ='co_websiteUserSettingsLightbox']"
+  },
+  "PatentsDrawing": {
+    "LocatorString": "//div[@id='coid_patentDrawings_lightbox']"
+  },
+  "PreviewOfAlertResultsDialog": {
+    "LocatorString": "//div[@id='co_search_alertPreview_lightbox']"
+  },
+  "PreviouslyAnnotated": {
+    "LocatorString": "//div[@id = 'co_foldering_previousInteractions']"
+  },
+  "PreviouslyViewed": {
+    "LocatorString": "//div[@id = 'co_foldering_previousInteractions']"
+  },
+  "PreviouslyFoldered": {
+    "LocatorString": "//div[@id = 'co_foldering_previousInteractions']"
+  },
+  "PrintFromTocInfoBox": {
+    "LocatorString": "//div[@id ='coid_infiniteScrollDeliveryInfobox']//div[@id = 'infoBoxWrapper']"
+  },
+  "ProceduralPostureOnBoarding": {
+    "LocatorString": "//div[@id='proceduralPosture_InfoBox_container']"
+  },
+  "ProcessDialog": {
+    "LocatorString": "//div[@class='co_overlayBox_container']"
+  },
+  "ProfileSettingDialog": {
+    "LocatorString": "//*[@class='co_globalNavDropdownBox co_dropdownBoxExpanded']"
+  },
+  "PublicationName": {
+    "LocatorString": "//div[@id='co_facet_publication_popup']"
+  },
+  "QuickAccessFullDialog": {
+    "LocatorString": "//div[@id='co_quickAccess_full_lightbox']"
+  },
+  "QuickCheckWelcomeVideo": {
+    "LocatorString": "//*[@id='coid_welcome_video_lightbox']"
+  },
+  "SubmitToQuickCheckStartAnalyze": {
+    "LocatorString": "//div[@id='coid_outline_lightbox']"
+  },
+  "ResearchReport": {
+    "LocatorString": "//div[@id = 'co_reportNotAvailableForAllItems']"
+  },
+  "ResearchReportUnavailable": {
+    "LocatorString": "//h3[contains(text(),'Research Report Unavailable')]"
+  },
+  "Reset": {
+    "LocatorString": "//*[@id='coid_turnOffRXWarningLightBox']"
+  },
+  "ResetWarningDialog": {
+    "LocatorString": "//*[@id='coid_focusHighlight_warning']"
+  },
+  "SaveToFolderDialog": {
+    "LocatorString": "//div[@class='co_lightboxOverlay']/div[contains(@class,'co_saveTo_folderAction')]"
+  },
+  "Scope": {
+    "LocatorString": "//div[@id='co_scope_lightbox']"
+  },
+  "SearchWithinDocument": {
+    "LocatorString": "//div[@class='co_dropdownBoxContent' and .//div[@id='co_docSearchWithin_input']]"
+  },
+  "SearchWithinDocumentError": {
+    "LocatorString": "//*[@id = 'co_searchWithinErrorMessageBox']"
+  },
+  "SearchWithinFlyoutDialog": {
+    "LocatorString": "//div[@id = 'co_mswContainer'] | //div[contains(@class,'FlyoutContainer')]"
+  },
+  "SearchWithinFromHistoryDialog": {
+    "LocatorString": "//div[contains(@class, 'co_history_multipleSearchWithin')]"
+  },
+  "SearchWithinResults": {
+    "LocatorString": "//div[@id='co_relatedinfo_searchwithin_lightbox']"
+  },
+  "SelectLocations": {
+    "LocatorString": "//div[@class='co_overlayBox_container wa_alertLightbox']"
+  },
+  "SelectSmartTerms": {
+    "LocatorString": "//div[@id='co_search_alertSmartTerms_lightbox']"
+  },
+  "SessionPause": {
+    "LocatorString": "//div[@id='co_suspendBilling']"
+  },
+  "SessionTimeOut": {
+    "LocatorString": "//*[@id='co_websiteSessionExpiredDialog']"
+  },
+  "ShareFolderManagerModal": {
+    "LocatorString": "//div[contains(@class,'ShareFolderManagerModal')]"
+  },
+  "SuggestedTitles": {
+    "LocatorString": "//*[@id='co_suggestedTitles_Lightbox']"
+  },
+  "TableOfContents": {
+    "LocatorString": "//div[@id='co_docTocOverlay']"
+  },
+  "TableOfContentsSearchWarningDialog": {
+    "LocatorString": "//div[@id='coid_tocSearchWarningLightbox']"
+  },
+  "Thesaurus": {
+    "LocatorString": "//div[@id='coid_thesaurus_lightbox']"
+  },
+  "TrdAttorney": {
+    "LocatorString": "//*[@id='co_facet_trd_attorney_popup']"
+  },
+  "TrdJudge": {
+    "LocatorString": "//*[@id='co_facet_trd_judge_popup']"
+  },
+  "TrdKeyNumber": {
+    "LocatorString": "//*[@id='co_facet_trd_keynumber_popup']"
+  },
+  "TrdLawFirm": {
+    "LocatorString": "//*[@id='co_facet_trd_lawfirm_popup']"
+  },
+  "TrdParty": {
+    "LocatorString": "//*[@id='co_facet_trd_party_popup']"
+  },
+  "TrdTopic": {
+    "LocatorString": "//*[@id='co_facet_topic1_popup']"
+  },
+  "TurnOff": {
+    "LocatorString": "//*[@id='coid_turnOffRXWarningLightBox']"
+  },
+  "TypeAhead": {
+    "LocatorString": "//ul[@id='co_searchSuggestion']"
+  },
+  "UnverifiedCitationsDialog": {
+    "LocatorString": "//*[@class='co_overlayBox_content']"
+  },
+  "UploadToFolder": {
+    "LocatorString": "//div[@class = 'co_overlayBox_container UploadModal']"
+  },
+  "ViewPdfParts": {
+    "LocatorString": "//div[@id='co_documentMultiPartPdfDialogId']"
+  },
+  "Warning": {
+    "LocatorString": "//div[@id='co_LimitExceededCenterLightbox']"
+  },
+  "Welcome": {
+    "LocatorString": "//div[@id='co_welcomeCenterLightbox']"
+  },
+  "WelcomeToQuickCheck": {
+    "LocatorString": "//div[@id='coid_welcome_video_lightbox']"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "ListView": {
+    "Text": "List View",
+    "LocatorString": "//ul[@class='a11yDropdown-menu']/li/span[text()='List View']"
+  },
+  "TableView": {
+    "Text": "Table View",
+    "LocatorString": "//ul[@class='a11yDropdown-menu']/li/span[text()='Table View']"
+  },
+  "TileView": {
+    "Text": "Tile View",
+    "LocatorString": "//ul[@class='a11yDropdown-menu']/li/span[text()='Tile View']"
+  }
+}

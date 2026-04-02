@@ -1,0 +1,42 @@
+{
+  // Maps FavoritePublications to WebElementInfo
+  "Carousel": {
+    "Id": "co_libraryFavoritesWidget_pagination"
+  },
+  "CollapseWidgetButton": {
+    "LocatorString": "//a[@class='co_sliderWidget_toggle co_expanded']"
+  },
+  "CoverImage": {
+    "LocatorMask": "//img[@alt='{0}'][@src]"
+  },
+  "ExpandWidgetButton": {
+    "LocatorString": "//a[@class='co_sliderWidget_toggle co_collapsed']"
+  },
+  "FavoriteWidgetTitle": {
+    "LocatorString": "//div[@id='co_libraryFavotieWidget']/*[@class='co_sliderWidget_title']",
+    "Text": "Favorite Publications"
+  },
+  "NextButton": {
+    "LocatorString": "//button[@id='co_libraryFavoriteWidget_next']"
+  },
+  "NoPuBsHeader": {
+    "LocatorString": "//b[@class='co_libraryFavoriteWidget_noItemHeader co_sliderWidget_messageHeader']",
+    "Text": "You have no Secondary Source favorite publications."
+  },
+  "NoPuBsText": {
+    "LocatorString": "//span[@class='co_libraryFavoriteWidget_noItemMessage co_sliderWidget_message']",
+    "Text": "Add Secondary Source publications to your favorites to see them here."
+  },
+  "PreviousButton": {
+    "LocatorString": "//button[@id='co_libraryFavoriteWidget_prev']"
+  },
+  "PublicationInWidget": {
+    "LocatorString": "//li[contains(@id, 'co_libraryFavoriteWidget_item_')]"
+  },
+  "PublicationName": {
+    "LocatorMask" : "//*[@class='co_sliderWidget_text'][@title='{0}']"
+  },
+  "ScopeIconPubWidget": {
+    "LocatorMask": "//div[@id='co_libraryFavotieWidget']//button[contains(@class,'co_sliderWidget_info')][following-sibling::a[text() = '{0}']]"
+  }
+}

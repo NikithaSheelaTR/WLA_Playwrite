@@ -1,0 +1,13 @@
+﻿{
+	//Map for FundsFilerSearchItem
+	"Cik": {
+		"LocatorString":
+			".//a[contains(@class,'co_pickListTitle ng-binding')]/..//span[@class='ng-binding']"
+	},
+	"FormerName": {
+		"LocatorString": ".//a[contains(@class,'co_pickListTitle ng-binding')]/..//span[@ng-if='fund.showFormerName']"
+	},
+	"Title": {
+		"LocatorString": ".//a[contains(@class,'co_pickListTitle ng-binding')]"
+	}
+}

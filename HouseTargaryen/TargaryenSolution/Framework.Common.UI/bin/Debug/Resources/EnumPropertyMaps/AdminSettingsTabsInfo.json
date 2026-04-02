@@ -1,0 +1,13 @@
+﻿// Maps AdminSettingsTab to IWebElementInfo
+{
+  "PageSetup": {
+    "Text": "Page Setup",
+    "LocatorString": "//*[@id='tab_pageSetup']",
+    "Id": "tab_pageSetup"
+  },
+  "Assign": {
+    "Text": "Assign",
+    "LocatorString": "//*[@id='tab_sharing']",
+    "Id": "tab_sharing"
+  }
+}

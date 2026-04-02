@@ -1,0 +1,18 @@
+﻿{
+  "CompareVersions": {
+    "LocatorString": "//*[@id ='co_compareVersions_infoBox']",
+    "ClassName": null
+  },  
+  "CopyCitation": {
+   "LocatorString": "//*[@id = 'co_copyDropdown_infoBox']",
+    "ClassName": "co_infoBox_message"
+  },
+  "FocusHighlightNotAvailable":{
+   "LocatorString": "//div[@id='co_searchResultFocusHighlight']//div[contains(@class,'co_infoBox')]",
+    "ClassName": "co_infoBox_message"
+  },
+  "KeyCite": {
+    "LocatorString": "//div[@id='keyCiteButtonContainer']//div[@class='co_infoBox_container']",
+    "ClassName": "co_infoBox_message"
+  }
+}

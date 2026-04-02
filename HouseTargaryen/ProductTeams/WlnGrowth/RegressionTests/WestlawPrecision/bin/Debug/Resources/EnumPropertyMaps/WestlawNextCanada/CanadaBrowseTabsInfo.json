@@ -1,0 +1,43 @@
+{
+  // Maps CanadaBrowseTab to WebElementInfo
+  "AiAssistedResearch": {
+    "Id": "tab1",
+    "LocatorString": "//*[@id='coid_browseTabs']//h1[text()='AI-Assisted Research' or contains(text(),'Recherche assistée par')]",
+    "Text": "AI-Assisted Research"
+  },
+  "AllContent": {
+    "Id": "tab2",
+    "LocatorString": "//*[@id='coid_browseTabs']//*[text()='All Content' or text()='Tout le contenu']",
+    "Text": "All Content"
+  },
+  "FindKeyCiteByName": {
+    "Id": "tab3",
+    "LocatorString": "//*[@id='coid_browseTabs']//*[text()='Find and KeyCite by Name' or text()='Trouver par nom – indicateur KeyCite']",
+    "Text": "Find and KeyCite by Name"
+  },
+  "International": {
+    "Id": "tab5",
+    "LocatorString": "//ul[@id='coid_browseTabs']//*[text()='International']",
+    "Text": "International"
+  },
+  "McGillGuide": {
+    "Id": "tab4",
+    "LocatorString": "//*[@id='coid_browseTabs']//*[text()='McGill Guide' or text()='Guide McGill']",
+    "Text": "McGill Guide"
+  },
+  "Products": {
+    "Id": "co_browseWidgetTab5",
+    "LocatorString": "//*[@id='coid_browseTabs']//a[text()='Products' or text()='Produits']",
+    "Text": "Products"
+  },
+  "ProductsFeatures": {
+    "Id": "tab6",
+    "LocatorString": "//*[@id='coid_browseTabs']//h1[text()='Products and Features' or text()='Produits et fonctionnalités']",
+    "Text": "Products and Features"
+  },
+  "ProductInformation": {
+    "Id": "co_browseWidgetTab6",
+    "LocatorString": "//*[@id='coid_browseTabs']//a[text()='Product Information' or text()='Renseignements — produits']",
+    "Text": "Product Information"
+  }
+}

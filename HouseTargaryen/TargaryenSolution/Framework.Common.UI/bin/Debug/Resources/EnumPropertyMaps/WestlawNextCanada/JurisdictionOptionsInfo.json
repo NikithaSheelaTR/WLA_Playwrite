@@ -1,0 +1,66 @@
+{
+  // Maps Jurisdiction Options to WebElementInfo
+  "Alberta": {
+    "Text": "Alberta"
+  },
+
+  "AllCanada": {
+    "Text": "All Canada"
+  },
+
+  "BritishColumbia": {
+    "Text": "British Columbia"
+  },
+
+  "Federal": {
+    "Text": "Federal"
+  },
+
+  "Manitoba": {
+    "Text": "Manitoba"
+  },
+
+  "NewBrunswick": {
+    "Text": "New Brunswick"
+  },
+
+  "NewfoundlandAndLabrador": {
+    "Text": "Newfoundland and Labrador"
+  },
+
+  "NorthwestTerritories": {
+    "Text": "Northwest Territories"
+  },
+
+  "NovaScotia": {
+    "Text": "Nova Scotia"
+  },
+
+  "Nunavut": {
+    "Text": "Nunavut"
+  },
+
+  "Ontario": {
+    "Text": "Ontario"
+  },
+
+  "PrinceEdwardIsland": {
+    "Text": "Prince Edward Island"
+  },
+
+  "Saskatchewan": {
+    "Text": "Saskatchewan"
+  },
+
+  "SupremeCourtOfCanada": {
+    "Text": "Supreme Court of Canada"
+  },
+
+  "Quebec": {
+    "Text": "Quebec"
+  },
+
+  "Yukon": {
+    "Text": "Yukon"
+  }
+}

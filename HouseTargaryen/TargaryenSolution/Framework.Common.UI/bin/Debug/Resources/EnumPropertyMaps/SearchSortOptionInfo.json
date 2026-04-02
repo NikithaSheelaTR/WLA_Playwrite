@@ -1,0 +1,74 @@
+{
+  // Maps SearchSortOption to WebElementInfo
+  "Alphabetically": {
+    "Text": "Alphabetical (A-Z)"
+  },
+  "CaseTitle": {
+    "Id": "CASE_TITLE",
+    "Text": "Case Title"
+  },
+  "ChangeDefault": {
+    "Id": "CHANGE_DEFAULT",
+    "Text": "<Change Default>"
+  },
+  "ChooseASortType": {
+    "Text": "Choose a sort type..."
+  },
+  "Court": {
+    "Id": "COURT",
+    "Text": "Court"
+  },
+  "CourtLevel": {
+    "Id": "COURT_LEVEL",
+    "Text": "Court Level"
+  },
+  "Date": {
+    "Id": "DATE_DESCENDING",
+    "Text": "Date"
+  },
+  "DateDefault": {
+    "Text": "Date (Default)"
+  },
+  "FilingDate": {
+    "Text": "Filing Date"
+  },
+  "Knos": {
+    "Id": "KNOS",
+    "Text": "Key Nature of Suit"
+  },
+  "MostCited": {
+    "Id": "MOST_CITED",
+    "Text": "Most Cited"
+  },
+  "MostUsed": {
+    "Id": "MOST_USED",
+    "Text": "Most Used"
+  },
+  "ProceduralOrder": {
+    "Text": "Procedural Order"
+  },
+  "Relevance": {
+    "Id": "RELEVANCE",
+    "Text": "Relevance"
+  },
+  "TableOfContents": {
+    "Id": "TABLE_OF_CONTENTS",
+    "Text": "Table of Contents"
+  },
+  "TermFrequency": {
+    "Id": "TERM_FREQUENCY",
+    "Text": "Term Frequency"
+  },
+  "Title": {
+    "Id": "TITLE",
+    "Text": "Title"
+  },
+  "TopicThenDate": {
+    "Id": "DATE_DESCENDING",
+    "Text": "Topic then Date"
+  },
+  "TopicThenMostCited": {
+    "Id": "MOST_CITED",
+    "Text": "Topic then Most Cited"
+  }
+}

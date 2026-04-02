@@ -1,0 +1,84 @@
+("efficient enforcer") and ("summary judgment")
+(antitrust /3 standing) /15 (purpose or rationale)
+(securities /3 act) & (statute /2 limitations repose) & class
++"inference" AND "personal jurisdiction" AND "motion to dismiss"
+adequate performance by the plaintiff and "breach of contract"
+administrative subpoena & +"personal jurisdiction"
+"12(b)(1)" /p injury and "article III standing"
+"12(b)(6)" /s court /s consider /s documents /s integral
+"12(b)(6)" and "class action" and "consumer protection" and particularity
+"antitrust" & "agreement" & "plausibly allege" & "section 1"
+"class action fairness act" /p "diversity"
+"fraudulent concealment" /s "california law" /s claims
+"organizational standing" and "distinct" /p "injury"
+"personal jurisdiction" & "general jurisdiction" & "at home"
+"personal jurisdiction" /10 "statutory basis"
+"personal jurisdiction" /30 affidavit
+"relation back" /p repose
+("efficient enforcer") and (ATLEAST2("summary judgment")) and ("antitrust standing")
+(breach /2 contract) and ("under California law")
+(specific /10 jurisdiction) /30 (contract)
+forum /5 non /5 conveniens /10 forum /5 selection /5 clause
+(price /3 manipulation manipulate market) & (conspiracy or collusion) & "Sherman Act"
+antitrust and +"plus factors"
+antitrust Sherman Act Article 1 and unjust enrichment
+antitrust standing /p pleading
+antitrust standing /s "antitrust injury"
+antitrust standing AND +"efficient enforcer"
+antitrust standing or "antitrust injury"
+breach of contract "california law"
+breach of contract accrues where economic loss is suffered
+breach of implied merchantability safety
+burden of proof defending against 12(b)(2) motion to dismiss
+CAFA /p "exceptions"
+CAFA and "home state exception"
+CAFA and "interests of justice" and "exception"
+CAFA and "remand" and "violation rate" and "65%"
+CAFA and "sua sponte"
+cafa and notice and "proportionate share"
+choice of law defense sherman act antitrust claims
+choice of law UCL FDUTPA loss of money
+class action /p cafa /p notice
+class action fairness act "named plaintiff"
+class action fairness act AND "removal"
+class action fairness act remand jurisdiction
+class action fairness exception common sense
+class action fairness exception reasonable inferences
+confusing personal jurisdiction to challenge conduct with standing to recover
+consumer protection breach of implied warranty
+aggregated statistics are not enough to plead an antitrust conspiracy claim
+credit reporting breach of contract Article III standing
+discovery rule statute of limitations contract
+Does the economic loss rule apply to fraud?
+Even where a plaintiff adequately alleges an antitrust injury, it may still lack standing if it is not an efficient enforcer of the antitrust laws
+exceptional case corporation general personal jurisdiction place incorporation principal place business llc limited liability
+fail to allege material omission consumer
+false advertising and "consumer" and +"gbl"
+false advertising GBL new york 349 350 claims are both dismissed
+general jurisdiction /s "new york" /s "long-arm"
+general personal jurisdiction /s "at home"
+government remove class action federal court
+judicial notice /p federal /p pleading
+manufacturer /s privity /p "express warranty"
+motion to remand california wage and hour litigation CAFA
+personal /2 jurisdiction & general
+personal /s jurisdiction /s pleadings
+personal jurisdiction & "foreign defendant" & "employment discrimination"
+personal jurisdiction /200 foreign /75 bank
+personal jurisdiction /p (pleading OR complaint OR allegations) /p affidavit
+personal jurisdiction /p statute
+personal jurisdiction AND "foreign bank"
+personal jurisdiction AND "service"
+personal jurisdiction motion to dismiss +"consider evidence"
+purchased from a third-party and standing for consumer protection claim
+quasi-contract claim for restitution no direct relationship with defendant
+removal /p "CAFA" /p "class action" /p "declaration"
+specific /5 jurisdiction /25 relationship
+standing /20 "each claim"
+standing /p "each claim"
+standing /s "pleading stage" /s facts
+standing and "class" and "dismiss" and "unjust enrichment"
+statistical allegations AND antitrust pleading
+statutory /s basis authority /p "personal jurisdiction"
+unjust enrichment /s "new york" /s "to state a claim"
+unjust enrichment AND "349" AND "duplicative"

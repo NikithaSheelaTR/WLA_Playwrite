@@ -1,0 +1,48 @@
+{
+    // Maps DocumentAnalyzerTourCards to WebElementInfo
+    "DocAnalyzerBlueCard1": {
+        "Text": "Click the Warnings for cited authority tab."
+    },
+    "DocAnalyzerBlueCard2": {
+        "Text": "Click the Table of authorities tab."
+    },
+    "DocAnalyzerBlueCard3": {
+        "Text": "Click the Recommendations tab."
+    },
+    "DocAnalyzerBlueCard4": {
+        "Text": "Click the Quotation analysis tab."
+    },
+    "DocAnalyzerCard1": {
+        "Text": "On the Recommendations tab you'll find cases and other materials relevant to the issues in the analyzed document but that were not cited in it."
+    },
+    "DocAnalyzerCard2": {
+        "Text": "A. Quick Check provides focused recommendations for each section of the analyzed document. The report is organized according to the headings within the document and can be filtered to focus only on the issues you are most interested in.\r\nB. Easily see how a case might be useful with relevant language and outcomes. Quick Check analyzes the language of the analyzed document to tailor the report and pinpoint the most relevant parts of the recommended cases for quick review."
+    },
+    "DocAnalyzerCard3": {
+        "Text": "A. Case details provides information about the procedural background of the recommended case.\r\nB. Quick Check also alerts you when one of the recommended cases is related to some of the cases already cited in the analyzed document.\r\nC. Case tags highlight when a case has been frequently cited, is from the high court in its jurisdiction, or was decided in the last 2 years."
+    },
+    "DocAnalyzerCard4": {
+        "Text": "The Warnings for cited authority tab allow you to verify that the authority cited within the analyzed document is still good law."
+    },
+    "DocAnalyzerCard5": {
+        "Text": "A. For cases that have any negative KeyCite treatment, including Westlaw Edge's exclusive KeyCite Overruling Risk warnings, Quick Check identifies the relevant language from within the treating case to let you know why the KeyCite flag exists.\r\nB. Citation tags highlight when a case was decided 10 or more years ago, or when a case is not commonly cited to in judicial opinions."
+    },
+    "PrecisionDocAnalyzerCard5": {
+        "Text": "A. For cases that have any negative KeyCite treatment, including Westlaw Precision's KeyCite Overruling Risk warnings, Quick Check identifies the relevant language from within the treating case to let you know why the KeyCite flag exists.\r\nB. Citation tags highlight when a case was decided 10 or more years ago, or when a case is not commonly cited to in judicial opinions."
+    },
+    "DocAnalyzerCard6": {
+        "Text": "The Quotation analysis tab allows you to compare quotations from the analyzed document to the language in the cited documents on Westlaw."
+    },
+    "DocAnalyzerCard7": {
+        "Text": "Differences are flagged when a quotation from the analyzed document does not match the cited language on Westlaw."
+    },
+    "DocAnalyzerCard8": {
+        "Text": "Sort the document's quotations to show differences first or by the order of appearance in the document."
+    },
+    "DocAnalyzerCard8New": {
+        "Text": "Sort the document’s quotations by potential severity or by the order of appearance in the document."
+    },
+    "DocAnalyzerCard9": {
+        "Text": "The Table of authorities tab contains the full list of all the cases cited in the analyzed document, regardless of whether we found a KeyCite issue or not. Use this to quickly review and deliver all the cited cases in a document.\r\nDepth of discussion provides a visual preview of how much a citation was discussed in the analyzed document. Citations with deeper discussion may merit more thorough review."
+    }
+}

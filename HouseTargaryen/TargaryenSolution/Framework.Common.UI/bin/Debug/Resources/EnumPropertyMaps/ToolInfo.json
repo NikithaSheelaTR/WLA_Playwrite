@@ -1,0 +1,72 @@
+﻿{
+  // Maps ToolsEnum to WebElementInfo
+  "WestKeyNumberSystem": {
+    "Text": "West Key Number System"
+  },
+  "GeneralCounselResources": {
+    "Text": "General Counsel Resources"
+  },
+  "SubscriberPricingGuide": {
+    "Text": "Subscriber Pricing Guide"
+  },
+  "MyContent": {
+    "Text": "My Content"
+  },
+  "WestlawClassic": {
+    "Text": "Westlaw Classic"
+  },
+  "FiftyStateSurveyBuilder": {
+    "Text": "50 State Survey Builder (on Westlaw Classic)"
+  },
+  "AlertCenter": {
+    "Text": "Alert Center (on Westlaw Classic)"
+  },
+  "BusinessInformation": {
+    "Text": "Business Information"
+  },
+  "CapitolWatch": {
+    "Text": "Capitol Watch"
+  },
+  "CaseEvaluator": {
+    "Text": "Case Evaluator"
+  },
+  "CompareText" : {
+    "Text": "Compare Text"
+  },
+  "ContentFinder": {
+    "Text": "Content Finder"
+  },
+  "CourtWire": {
+    "Text": "Court Wire (on Westlaw Classic)"
+  },
+  "FindAndPrint": {
+    "Text": "Find & Print"
+  },
+  "GradingTool": {
+    "Text": "Grading Tool"
+  },
+  "MatterBenchmarkReports": {
+    "Text": "Matter Benchmark Reports"
+  },
+  "MedicalLitigator": {
+    "Text": "Medical Litigator"
+  },
+  "PortalManager": {
+    "Text": "Portal Manager"
+  },
+  "PeopleMap": {
+    "Text": "PeopleMap"
+  },
+  "Profiler": {
+    "Text": "Profiler"
+  },
+  "RegAndLegCenter": {
+    "Text": "Reg & Leg Center"
+  },
+  "WestLegalEdcenter": {
+    "Text": "West LegalEdcenter"
+  },
+  "QuickCheck": {
+    "Text": "Quick Check"
+  }
+}

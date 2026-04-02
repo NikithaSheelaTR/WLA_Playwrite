@@ -1,0 +1,2168 @@
+﻿{
+    // Maps FeatureAccessControl to WebElementInfo
+    "AdcVersionRedliningToggle": {
+        "Id": "co_website_resourceInfoTypes_AdcVersionRedliningToggle",
+        "Text": "AdcVersionRedliningToggle"
+    },
+    "AdHocReporting": {
+        "Id": "co_website_resourceInfoTypes_AdHocReporting",
+        "Text": "AdHocReporting"
+    },
+    "Administrator": {
+        "Id": "co_website_resourceInfoTypes_Administrator",
+        "Text": "Administrator"
+    },
+    "AdvisorTrials": {
+        "Id": "co_website_resourceInfoTypes_AdvisorTrials",
+        "Text": "AdvisorTrials"
+    },
+    "AiDoNotTrain": {
+        "Id": "co_website_resourceInfoTypes_AIDoNotTrain",
+        "Text": "AIDoNotTrain"
+    },
+    "AiKnowYourJudge": {
+        "Id": "co_website_resourceInfoTypes_AIKnowYourJudge",
+        "Text": "AIKnowYourJudge"
+    },
+    "AIQuickCheckBSParaphrase": {
+        "Id": "co_website_resourceInfoTypes_AIQuickCheckBSParaphrase",
+        "Text": "AIQuickCheckBSParaphrase"
+    },
+    "AIQuickCheckCounterArguments": {
+        "Id": "co_website_resourceInfoTypes_AIQuickCheckCounterArguments",
+        "Text": "AIQuickCheckCounterArguments"
+    },
+    "AiResearch": {
+        "Id": "co_website_resourceInfoTypes_AIResearch",
+        "Text": "AIResearch"
+    },
+    "AiResearchClaims": {
+        "Id": "co_website_resourceInfoTypes_AIResearchClaims",
+        "Text": "AIResearchClaims"
+    },
+    "AiResearchQuickCheck": {
+        "Id": "co_website_resourceInfoTypes_AIResearchQuickCheck",
+        "Text": "AIResearchQuickCheck"
+    },
+    "AiResearchTax": {
+        "Id": "co_website_resourceInfoTypes_AIResearchTax",
+        "Text": "AIResearchTax"
+    },
+    "AiResearchJurisdictionalSurveys": {
+        "Id": "co_website_resourceInfoTypes_AIResearchFiftyStates",
+        "Text": "AiResearchJurisdictionalSurveys"
+    },
+    "AiResearchTreatise": {
+        "Id": "co_website_resourceInfoTypes_AIResearchTreatise",
+        "Text": "AIResearchTreatise"
+    },
+    "AIResearchTreatiseOConnors": {
+        "Id": "co_website_resourceInfoTypes_AIResearchTreatiseOConnors",
+        "Text": "AIResearchTreatiseOConnors"
+    },
+    "AiResearchTrialist": {
+        "Id": "co_website_resourceInfoTypes_AIResearchTrialist",
+        "Text": "AIResearchTrialist"
+    },
+    "AIWestlawGuidedResearch": {
+        "Id": "co_website_resourceInfoTypes_AIWestlawGuidedResearch",
+        "Text": "AIWestlawGuidedResearch"
+    },
+    "AIWestlawLabsInterface": {
+        "Id": "co_website_resourceInfoTypes_AIWestlawLabsInterface",
+        "Text": "AIWestlawLabsInterface"
+    },
+    "AlertsAccess": {
+        "Id": "co_website_resourceInfoTypes_AlertsAccess",
+        "Text": "AlertsAccess"
+    },
+    "AlertsEnhanced": {
+        "Id": "co_website_resourceInfoTypes_AlertsEnhanced",
+        "Text": "AlertsEnhanced"
+    },
+    "AlertSummaryReport": {
+        "Id": "co_website_resourceInfoTypes_AlertSummaryReport",
+        "Text": "AlertSummaryReport"
+    },
+    "AllowOfflineAccess": {
+        "Id": "co_website_resourceInfoTypes_AllowOfflineAccess",
+        "Text": "AllowOfflineAccess"
+    },
+    "AllowPamForOutOfPlanDocuments": {
+        "Id": "co_website_resourceInfoTypes_AllowPamForOutOfPlanDocuments",
+        "Text": "AllowPamForOutOfPlanDocuments"
+    },
+    "AMCWestlawToday": {
+        "Id": "co_website_resourceInfoTypes_AMCWestlawToday",
+        "Text": "AMCWestlawToday"
+    },
+    "AnalystRating": {
+        "Id": "co_website_resourceInfoTypes_AnalystRating",
+        "Text": "AnalystRating"
+    },
+    "AnalyticsAccess": {
+        "Id": "co_website_resourceInfoTypes_AnalyticsAccess",
+        "Text": "AnalyticsAccess"
+    },
+    "Andrews": {
+        "Id": "co_website_resourceInfoTypes_Andrews",
+        "Text": "Andrews"
+    },
+    "Annotations": {
+        "Id": "co_website_resourceInfoTypes_Annotations",
+        "Text": "Annotations"
+    },
+    "AnonymousSession": {
+        "Id": "co_website_resourceInfoTypes_AnonymousSession",
+        "Text": "AnonymousSession"
+    },
+    "AnonymousSessionBlock": {
+        "Id": "co_website_resourceInfoTypes_AnonymousSessionBlock",
+        "Text": "AnonymousSessionBlock"
+    },
+    "AnswersFeedback": {
+        "Id": "co_website_resourceInfoTypes_AnswersFeedback",
+        "Text": "AnswersFeedback"
+    },
+    "ApffCentreAccess": {
+        "Id": "co_website_resourceInfoTypes_ApffCentreAccess",
+        "Text": "ApffCentreAccess"
+    },
+    "AthensDisplay": {
+        "Id": "co_website_resourceInfoTypes_AthensDisplay",
+        "Text": "AthensDisplay"
+    },
+    "AthensTrialOffers": {
+        "Id": "co_website_resourceInfoTypes_AthensTrialOffers",
+        "Text": "AthensTrialOffers"
+    },
+    "AttorneyPortal": {
+        "Id": "co_website_resourceInfoTypes_AttorneyPortal",
+        "Text": "AttorneyPortal"
+    },
+    "AUWorkplaceComplaints": {
+        "Id": "co_website_resourceInfoTypes_AUWorkplaceComplaints",
+        "Text": "AUWorkplaceComplaints"
+    },
+    "BlcCanadaSubscriber": {
+        "Id": "co_website_resourceInfoTypes_BlcCanadaSubscriber",
+        "Text": "BlcCanadaSubscriber"
+    },
+    "BlcCanadaZone": {
+        "Id": "co_website_resourceInfoTypes_BlcCanadaZone",
+        "Text": "BlcCanadaZone"
+    },
+    "BlcPowerSearch": {
+        "Id": "co_website_resourceInfoTypes_BlcPowerSearch",
+        "Text": "BlcPowerSearch"
+    },
+    "BlcSubscriber": {
+        "Id": "co_website_resourceInfoTypes_BlcSubscriber",
+        "Text": "BlcSubscriber"
+    },
+    "BlcZone": {
+        "Id": "co_website_resourceInfoTypes_BlcZone",
+        "Text": "BlcZone"
+    },
+    "BlindLog": {
+        "Id": "co_website_resourceInfoTypes_BlindLog",
+        "Text": "BlindLog"
+    },
+    "Block100KAncillary": {
+        "Id": "co_website_resourceInfoTypes_Block100KAncillary",
+        "Text": "Block100KAncillary"
+    },
+    "BlockAUWLN": {
+        "Id": "co_website_resourceInfoTypes_BlockAUWLN",
+        "Text": "BlockAUWLN"
+    },
+    "BlockBlc": {
+        "Id": "co_website_resourceInfoTypes_BlockBlc",
+        "Text": "BlockBlc"
+    },
+    "BlockBlcCanada": {
+        "Id": "co_website_resourceInfoTypes_BlockBlcCanada",
+        "Text": "BlockBlcCanada"
+    },
+    "BlockCANWLN": {
+        "Id": "co_website_resourceInfoTypes_BlockCANWLN",
+        "Text": "BlockCANWLN"
+    },
+    "BlockFolderShareFromOrgs": {
+        "Id": "co_website_resourceInfoTypes_BlockFolderShareFromOrgs",
+        "Text": "BlockFolderShareFromOrgs"
+    },
+    "BlockGettingStartedVideoLink": {
+        "Id": "co_website_resourceInfoTypes_BlockGettingStartedVideoLink",
+        "Text": "BlockGettingStartedVideoLink"
+    },
+    "BlockHKWLN": {
+        "Id": "co_website_resourceInfoTypes_BlockHKWLN",
+        "Text": "BlockHKWLN"
+    },
+    "BlockLicenseAgreement": {
+        "Id": "co_website_resourceInfoTypes_BlockLicenseAgreement",
+        "Text": "BlockLicenseAgreement"
+    },
+    "BlockMyStartPageLink": {
+        "Id": "co_website_resourceInfoTypes_BlockMyStartPageLink",
+        "Text": "BlockMyStartPageLink"
+    },
+    "BlockNativeSignin": {
+        "Id": "co_website_resourceInfoTypes_BlockNativeSignin",
+        "Text": "BlockNativeSignin"
+    },
+    "BlockNotesSharing": {
+        "Id": "co_website_resourceInfoTypes_BlockNotesSharing",
+        "Text": "BlockNotesSharing"
+    },
+    "BlockPersistentInfo": {
+        "Id": "co_website_resourceInfoTypes_BlockPersistentInfo",
+        "Text": "BlockPersistentInfo"
+    },
+    "BlockTaxnetProPlus": {
+        "Id": "co_website_resourceInfoTypes_BlockTaxnetProPlus",
+        "Text": "BlockTaxnetProPlus"
+    },
+    "BlockUKWLN": {
+        "Id": "co_website_resourceInfoTypes_BlockUKWLN",
+        "Text": "BlockUKWLN"
+    },
+    "BlockWestlawClassicLinks": {
+        "Id": "co_website_resourceInfoTypes_BlockWestlawClassicLinks",
+        "Text": "BlockWestlawClassicLinks"
+    },
+    "BlockWLNForms": {
+        "Id": "co_website_resourceInfoTypes_BlockWLNForms",
+        "Text": "BlockWLNForms"
+    },
+    "BlockWLNFormsLink": {
+        "Id": "co_website_resourceInfoTypes_BlockWLNFormsLink",
+        "Text": "BlockWLNFormsLink"
+    },
+    "BlockWLNLinksEmbeddedLinks": {
+        "Id": "co_website_resourceInfoTypes_BlockWLNLinksEmbeddedLinks",
+        "Text": "BlockWLNLinksEmbeddedLinks"
+    },
+    "BlockWLNPatron": {
+        "Id": "co_website_resourceInfoTypes_BlockWLNPatron",
+        "Text": "BlockWLNPatron"
+    },
+    "BusinessDescription": {
+        "Id": "co_website_resourceInfoTypes_BusinessDescription",
+        "Text": "BusinessDescription"
+    },
+    "BusinessInvestigatorAlert": {
+        "Id": "co_website_resourceInfoTypes_BusinessInvestigatorAlert",
+        "Text": "BusinessInvestigatorAlert"
+    },
+    "BusinessInvestigatorTransition": {
+        "Id": "co_website_resourceInfoTypes_BusinessInvestigatorTransition",
+        "Text": "BusinessInvestigatorTransition"
+    },
+    "BlcDealTrackAlert": {
+        "Id": "co_website_resourceInfoTypes_BlcDealTrackAlert",
+        "Text": "BlcDealTrackAlert"
+    },
+    "BlcDealTrackAlertBiweekly": {
+        "Id": "co_website_resourceInfoTypes_BlcDealTrackAlertBiweekly",
+        "Text": "BlcDealTrackAlertBiweekly"
+    },
+    "BlcDealTrackAlertContinuous": {
+        "Id": "co_website_resourceInfoTypes_BlcDealTrackAlertContinuous",
+        "Text": "BlcDealTrackAlertContinuous"
+    },
+    "BlcDealTrackAlertDaily": {
+        "Id": "co_website_resourceInfoTypes_BlcDealTrackAlertDaily",
+        "Text": "BlcDealTrackAlertDaily"
+    },
+    "BlcDealTrackAlertMonthly": {
+        "Id": "co_website_resourceInfoTypes_BlcDealTrackAlertMonthly",
+        "Text": "BlcDealTrackAlertMonthly"
+    },
+    "BlcDealTrackAlertMultiday": {
+        "Id": "co_website_resourceInfoTypes_BlcDealTrackAlertMultiday",
+        "Text": "BlcDealTrackAlertMultiday"
+    },
+    "BlcDealTrackAlertWeekly": {
+        "Id": "co_website_resourceInfoTypes_BlcDealTrackAlertWeekly",
+        "Text": "BlcDealTrackAlertWeekly"
+    },
+    "BusinessLawCenterAlert": {
+        "Id": "co_website_resourceInfoTypes_BusinessLawCenterAlert",
+        "Text": "BusinessLawCenterAlert"
+    },
+    "BusinessLawCenterAlertBiweekly": {
+        "Id": "co_website_resourceInfoTypes_BusinessLawCenterAlertBiweekly",
+        "Text": "BusinessLawCenterAlertBiweekly"
+    },
+    "BusinessLawCenterAlertContinuous": {
+        "Id": "co_website_resourceInfoTypes_BusinessLawCenterAlertContinuous",
+        "Text": "BusinessLawCenterAlertContinuous"
+    },
+    "BusinessLawCenterAlertDailyMultiWeekdays": {
+        "Id": "co_website_resourceInfoTypes_BusinessLawCenterAlertDailyMultiWeekdays",
+        "Text": "BusinessLawCenterAlertDailyMultiWeekdays"
+    },
+    "BusinessLawCenterAlertDailySingleWeekday": {
+        "Id": "co_website_resourceInfoTypes_BusinessLawCenterAlertDailySingleWeekday",
+        "Text": "BusinessLawCenterAlertDailySingleWeekday"
+    },
+    "BusinessLawCenterAlertMonthly": {
+        "Id": "co_website_resourceInfoTypes_BusinessLawCenterAlertMonthly",
+        "Text": "BusinessLawCenterAlertMonthly"
+    },
+    "BusinessLawCenterAlertWeekly": {
+        "Id": "co_website_resourceInfoTypes_BusinessLawCenterAlertWeekly",
+        "Text": "BusinessLawCenterAlertWeekly"
+    },
+    "BypassInlineKeyCiteFlagsWarning": {
+        "Id": "co_website_resourceInfoTypes_BypassInlineKeyCiteFlagsWarning",
+        "Text": "BypassInlineKeyCiteFlagsWarning"
+    },
+    "BuildAWillToContractExpress": {
+        "Id": "co_website_resourceInfoTypes_BuildAWillToContractExpress",
+        "Text": "BuildAWillToContractExpress"
+    },
+    "CampusAgreement": {
+        "Id": "co_website_resourceInfoTypes_CampusAgreement",
+        "Text": "CampusAgreement"
+    },
+    "CampusBusinessSubscription": {
+        "Id": "co_website_resourceInfoTypes_CampusBusinessSubscription",
+        "Text": "CampusBusinessSubscription"
+    },
+    "CampusLegalSubscription": {
+        "Id": "co_website_resourceInfoTypes_CampusLegalSubscription",
+        "Text": "CampusLegalSubscription"
+    },
+    "CampusNewsSubscription": {
+        "Id": "co_website_resourceInfoTypes_CampusNewsSubscription",
+        "Text": "CampusNewsSubscription"
+    },
+    "CapitolWatch": {
+        "Id": "co_website_resourceInfoTypes_CapitolWatch",
+        "Text": "CapitolWatch"
+    },
+    "CapitolWatchTrackBiweekly": {
+        "Id": "co_website_resourceInfoTypes_CapitolWatchTrackBiweekly",
+        "Text": "CapitolWatchTrackBiweekly"
+    },
+    "CapitolWatchTrackDailyMultiple": {
+        "Id": "co_website_resourceInfoTypes_CapitolWatchTrackDailyMultiple",
+        "Text": "CapitolWatchTrackDailyMultiple"
+    },
+    "CapitolWatchTrackDailySingle": {
+        "Id": "co_website_resourceInfoTypes_CapitolWatchTrackDailySingle",
+        "Text": "CapitolWatchTrackDailySingle"
+    },
+    "CapitolWatchTrackMonthly": {
+        "Id": "co_website_resourceInfoTypes_CapitolWatchTrackMonthly",
+        "Text": "CapitolWatchTrackMonthly"
+    },
+    "CapitolWatchTrackWeekdayMultiple": {
+        "Id": "co_website_resourceInfoTypes_CapitolWatchTrackWeekdayMultiple",
+        "Text": "CapitolWatchTrackWeekdayMultiple"
+    },
+    "CapitolWatchTrackWeekdaySingle": {
+        "Id": "co_website_resourceInfoTypes_CapitolWatchTrackWeekdaySingle",
+        "Text": "CapitolWatchTrackWeekdaySingle"
+    },
+    "CapitolWatchTrackWeekly": {
+        "Id": "co_website_resourceInfoTypes_CapitolWatchTrackWeekly",
+        "Text": "CapitolWatchTrackWeekly"
+    },
+    "CaseEvalMobile": {
+        "Id": "co_website_resourceInfoTypes_CaseEvalMobile",
+        "Text": "CaseEvalMobile"
+    },
+    "CaseNotebookExport": {
+        "Id": "co_website_resourceInfoTypes_CaseNotebookExport",
+        "Text": "CaseNotebookExport"
+    },
+    "CaseOutcomes": {
+        "Id": "co_website_resourceInfoTypes_CaseOutcomes",
+        "Text": "CaseOutcomes"
+    },
+    "CfrCompareBlacklining": {
+        "Id": "co_website_resourceInfoTypes_CfrCompareBlacklining",
+        "Text": "CfrCompareBlacklining"
+    },
+    "CitationCan": {
+        "Id": "co_website_resourceInfoTypes_CitationCan",
+        "Text": "CitationCan"
+    },
+    "CitationUS": {
+        "Id": "co_website_resourceInfoTypes_CitationUS",
+        "Text": "CitationUS"
+    },
+    "CiteRecognition": {
+        "Id": "co_website_resourceInfoTypes_CiteRecognition",
+        "Text": "CiteRecognition"
+    },
+    "ClientPortal": {
+        "Id": "co_website_resourceInfoTypes_ClientPortal",
+        "Text": "ClientPortal"
+    },
+    "ClientsideRedirectAccess": {
+        "Id": "co_website_resourceInfoTypes_ClientsideRedirectAccess",
+        "Text": "ClientsideRedirectAccess"
+    },
+    "CoCites": {
+        "Id": "co_website_resourceInfoTypes_CoCites",
+        "Text": "CoCites"
+    },
+    "CoCounselAiAssistant": {
+        "Id": "co_website_resourceInfoTypes_CoCounselAIAssistant",
+        "Text": "CoCounselAIAssistant"
+    },
+    "CoCounselHeader": {
+        "Id": "co_website_resourceInfoTypes_CoCounselHeader",
+        "Text": "CoCounselHeader"
+    },
+    "CompanyDirectory": {
+        "Id": "co_website_resourceInfoTypes_CompanyDirectory",
+        "Text": "CompanyDirectory"
+    },
+    "CompanyTearSheet": {
+        "Id": "co_website_resourceInfoTypes_CompanyTearSheet",
+        "Text": "CompanyTearSheet"
+    },
+    "CompareBlacklining": {
+        "Id": "co_website_resourceInfoTypes_CompareBlacklining",
+        "Text": "CompareBlacklining"
+    },
+    "ConcurrentAccess": {
+        "Id": "co_website_resourceInfoTypes_ConcurrentAccess",
+        "Text": "ConcurrentAccess"
+    },
+    "Contacts": {
+        "Id": "co_website_resourceInfoTypes_Contacts",
+        "Text": "Contacts"
+    },
+    "ContentDeliveryRestriction": {
+        "Id": "co_website_resourceInfoTypes_ContentDeliveryRestriction",
+        "Text": "ContentDeliveryRestriction"
+    },
+    "COProfile": {
+        "Id": "co_website_resourceInfoTypes_COProfile",
+        "Text": "COProfile"
+    },
+    "CopyUserData": {
+        "Id": "co_website_resourceInfoTypes_CopyUserData",
+        "Text": "CopyUserData"
+    },
+    "CorpAll": {
+        "Id": "co_website_resourceInfoTypes_CorpAll",
+        "Text": "CorpAll"
+    },
+    "CorpDE": {
+        "Id": "co_website_resourceInfoTypes_CorpDE",
+        "Text": "CorpDE"
+    },
+    "CorpFamilyTree": {
+        "Id": "co_website_resourceInfoTypes_CorpFamilyTree",
+        "Text": "CorpFamilyTree"
+    },
+    "Corporate": {
+        "Id": "co_website_resourceInfoTypes_Corporate",
+        "Text": "Corporate"
+    },
+    "Correctional": {
+        "Id": "co_website_resourceInfoTypes_Correctional",
+        "Text": "Correctional"
+    },
+    "CourtWire": {
+        "Id": "co_website_resourceInfoTypes_CourtWire",
+        "Text": "CourtWire"
+    },
+    "CourtWireContinuous": {
+        "Id": "co_website_resourceInfoTypes_CourtWireContinuous",
+        "Text": "CourtWireContinuous"
+    },
+    "CourtWireDailySingleWeekday": {
+        "Id": "co_website_resourceInfoTypes_CourtWireDailySingleWeekday",
+        "Text": "CourtWireDailySingleWeekday"
+    },
+    "CourtWirePremium": {
+        "Id": "co_website_resourceInfoTypes_CourtWirePremium",
+        "Text": "CourtWirePremium"
+    },
+    "CreditCardUser": {
+        "Id": "co_website_resourceInfoTypes_CreditCardUser",
+        "Text": "CreditCardUser"
+    },
+    "CustomPageAdmin": {
+        "Id": "co_website_resourceInfoTypes_CustomPageAdmin",
+        "Text": "CustomPageAdmin"
+    },
+    "CustomPages": {
+        "Id": "co_website_resourceInfoTypes_CustomPages",
+        "Text": "CustomPages"
+    },
+    "CustomPagesReadOnly": {
+        "Id": "co_website_resourceInfoTypes_CustomPagesReadOnly",
+        "Text": "CustomPagesReadOnly"
+    },
+    "DAClientIdOff": {
+        "Id": "co_website_resourceInfoTypes_DAClientIdOff",
+        "Text": "DAClientIdOff"
+    },
+    "DAClientIdOn": {
+        "Id": "co_website_resourceInfoTypes_DAClientIdOn",
+        "Text": "DAClientIdOn"
+    },
+    "DAClientIdOnDefault": {
+        "Id": "co_website_resourceInfoTypes_DAClientIdOnDefault",
+        "Text": "DAClientIdOnDefault"
+    },
+    "DADesktopOnly": {
+        "Id": "co_website_resourceInfoTypes_DADesktopOnly",
+        "Text": "DADesktopOnly"
+    },
+    "DataroomAlerts": {
+        "Id": "co_website_resourceInfoTypes_DataroomAlerts",
+        "Text": "DataroomAlerts"
+    },
+    "Deals": {
+        "Id": "co_website_resourceInfoTypes_Deals",
+        "Text": "Deals"
+    },
+    "DealsAncillary": {
+        "Id": "co_website_resourceInfoTypes_DealsAncillary",
+        "Text": "DealsAncillary"
+    },
+    "DealsPlus": {
+        "Id": "co_website_resourceInfoTypes_DealsPlus",
+        "Text": "DealsPlus"
+    },
+    "Delivery100DocumentLimit": {
+        "Id": "co_website_resourceInfoTypes_Delivery100DocumentLimit",
+        "Text": "Delivery100DocumentLimit"
+    },
+    "Delivery200DocumentLimit": {
+        "Id": "co_website_resourceInfoTypes_Delivery200DocumentLimit",
+        "Text": "Delivery200DocumentLimit"
+    },
+    "Delivery500DocumentLimit": {
+        "Id": "co_website_resourceInfoTypes_Delivery500DocumentLimit",
+        "Text": "Delivery500DocumentLimit"
+    },
+    "DeliveryCheckLineLimit": {
+        "Id": "co_website_resourceInfoTypes_DeliveryCheckLineLimit",
+        "Text": "DeliveryCheckLineLimit"
+    },
+    "DeliveryDailyLimit": {
+        "Id": "co_website_resourceInfoTypes_DeliveryDailyLimit",
+        "Text": "DeliveryDailyLimit"
+    },
+    "DeliveryManager": {
+        "Id": "co_website_resourceInfoTypes_DeliveryManager",
+        "Text": "DeliveryManager"
+    },
+    "DeliverySessionLimit": {
+        "Id": "co_website_resourceInfoTypes_DeliverySessionLimit",
+        "Text": "DeliverySessionLimit"
+    },
+    "DepartmentOfJusticeTrainingAndSupport": {
+        "Id": "co_website_resourceInfoTypes_DepartmentOfJusticeTrainingAndSupport",
+        "Text": "DepartmentOfJusticeTrainingAndSupport"
+    },
+    "DesktopPracticalLawAntitrust": {
+        "Id": "co_website_resourceInfoTypes_DesktopPracticalLawAntitrust",
+        "Text": "DesktopPracticalLawAntitrust"
+    },
+    "DesktopPracticalLawArbitration": {
+        "Id": "co_website_resourceInfoTypes_DesktopPracticalLawArbitration",
+        "Text": "DesktopPracticalLawArbitration"
+    },
+    "DesktopPracticalLawBankruptcy": {
+        "Id": "co_website_resourceInfoTypes_DesktopPracticalLawBankruptcy",
+        "Text": "DesktopPracticalLawBankruptcy"
+    },
+    "DesktopPracticalLawCapitalMarkets": {
+        "Id": "co_website_resourceInfoTypes_DesktopPracticalLawCapitalMarkets",
+        "Text": "DesktopPracticalLawCapitalMarkets"
+    },
+    "DesktopPracticalLawCommercial": {
+        "Id": "co_website_resourceInfoTypes_DesktopPracticalLawCommercial",
+        "Text": "DesktopPracticalLawCommercial"
+    },
+    "DesktopPracticalLawCorporate": {
+        "Id": "co_website_resourceInfoTypes_DesktopPracticalLawCorporate",
+        "Text": "DesktopPracticalLawCorporate"
+    },
+    "DesktopPracticalLawEmployeeBenefits": {
+        "Id": "co_website_resourceInfoTypes_DesktopPracticalLawEmployeeBenefits",
+        "Text": "DesktopPracticalLawEmployeeBenefits"
+    },
+    "DesktopPracticalLawEmployment": {
+        "Id": "co_website_resourceInfoTypes_DesktopPracticalLawEmployment",
+        "Text": "DesktopPracticalLawEmployment"
+    },
+    "DesktopPracticalLawFinance": {
+        "Id": "co_website_resourceInfoTypes_DesktopPracticalLawFinance",
+        "Text": "DesktopPracticalLawFinance"
+    },
+    "DesktopPracticalLawHideWestlawNextLinks": {
+        "Id": "co_website_resourceInfoTypes_DesktopPracticalLawHideWestlawNextLinks",
+        "Text": "DesktopPracticalLawHideWestlawNextLinks"
+    },
+    "DesktopPracticalLawIntellectualPropertyTechnology": {
+        "Id": "co_website_resourceInfoTypes_DesktopPracticalLawIntellectualPropertyTechnology",
+        "Text": "DesktopPracticalLawIntellectualPropertyTechnology"
+    },
+    "DesktopPracticalLawLitigation": {
+        "Id": "co_website_resourceInfoTypes_DesktopPracticalLawLitigation",
+        "Text": "DesktopPracticalLawLitigation"
+    },
+    "DesktopPracticalLawRealEstate": {
+        "Id": "co_website_resourceInfoTypes_DesktopPracticalLawRealEstate",
+        "Text": "DesktopPracticalLawRealEstate"
+    },
+    "DesktopPracticalLawTax": {
+        "Id": "co_website_resourceInfoTypes_DesktopPracticalLawTax",
+        "Text": "DesktopPracticalLawTax"
+    },
+    "DesktopPracticalLawUK": {
+        "Id": "co_website_resourceInfoTypes_DesktopPracticalLawUK",
+        "Text": "DesktopPracticalLawUK"
+    },
+    "DisableWestlawCites": {
+        "Id": "co_website_resourceInfoTypes_DisableWestlawCites",
+        "Text": "DisableWestlawCites"
+    },
+    "DisplayInternalHeadnoteInfo": {
+        "Id": "co_website_resourceInfoTypes_DisplayInternalHeadnoteInfo",
+        "Text": "DisplayInternalHeadnoteInfo"
+    },
+    "DisplayMashupChargeWarning": {
+        "Id": "co_website_resourceInfoTypes_DisplayMashupChargeWarning",
+        "Text": "DisplayMashupChargeWarning"
+    },
+    "DisplayNrsImageLink": {
+        "Id": "co_website_resourceInfoTypes_DisplayNrsImageLink",
+        "Text": "DisplayNrsImageLink"
+    },
+    "DocAnalysis": {
+        "Id": "co_website_resourceInfoTypes_DocAnalysis",
+        "Text": "DocAnalysis"
+    },
+    "DocAnalysisCheckWork": {
+        "Id": "co_website_resourceInfoTypes_DocAnalysisCheckWork",
+        "Text": "DocAnalysisCheckWork"
+    },
+    "DocAnalysisJudicial": {
+        "Id": "co_website_resourceInfoTypes_DocAnalysisJudicial",
+        "Text": "DocAnalysisJudicial"
+    },
+    "DocAnalysisGovernment": {
+        "Id": "co_website_resourceInfoTypes_DocAnalysisGovernment",
+        "Text": "DocAnalysisGovernment"
+    },
+    "DocAnalysisOcr": {
+        "Id": "co_website_resourceInfoTypes_DocAnalysisOcr",
+        "Text": "DocAnalysisOcr"
+    },
+    "DocAnalysisQuotations": {
+        "Id": "co_website_resourceInfoTypes_DocAnalysisQuotations",
+        "Text": "DocAnalysisQuotations"
+    },
+    "DocumentSidebar": {
+        "Id": "co_website_resourceInfoTypes_DocumentSidebar",
+        "Text": "DocumentSidebar"
+    },
+    "DocketSearchablePdfs": {
+        "Id": "co_website_resourceInfoTypes_DocketSearchablePdfs",
+        "Text": "DocketSearchablePdfs"
+    },
+    "DisplayTestPrefTab": {
+        "Id": "co_website_resourceInfoTypes_DisplayTestPrefTab",
+        "Text": "DisplayTestPrefTab"
+    },
+    "DocketAlert": {
+        "Id": "co_website_resourceInfoTypes_DocketAlert",
+        "Text": "DocketAlert"
+    },
+    "DocketAlertBiweekly": {
+        "Id": "co_website_resourceInfoTypes_DocketAlertBiweekly",
+        "Text": "DocketAlertBiweekly"
+    },
+    "DocketAlertDailyWeekdays": {
+        "Id": "co_website_resourceInfoTypes_DocketAlertDailyWeekdays",
+        "Text": "DocketAlertDailyWeekdays"
+    },
+    "DocketAlertMonthly": {
+        "Id": "co_website_resourceInfoTypes_DocketAlertMonthly",
+        "Text": "DocketAlertMonthly"
+    },
+    "DocketAlertWeekly": {
+        "Id": "co_website_resourceInfoTypes_DocketAlertWeekly",
+        "Text": "DocketAlertWeekly"
+    },
+    "DocketBatchAlert": {
+        "Id": "co_website_resourceInfoTypes_DocketBatchAlert",
+        "Text": "DocketBatchAlert"
+    },
+    "DocketOrders": {
+        "Id": "co_website_resourceInfoTypes_DocketOrders",
+        "Text": "DocketOrders"
+    },
+    "DocketsAll": {
+        "Id": "co_website_resourceInfoTypes_DocketsAll",
+        "Text": "DocketsAll"
+    },
+    "DocketTrackAlert": {
+        "Id": "co_website_resourceInfoTypes_DocketTrackAlert",
+        "Text": "DocketTrackAlert"
+    },
+    "DocketTrackBiweekly": {
+        "Id": "co_website_resourceInfoTypes_DocketTrackBiweekly",
+        "Text": "DocketTrackBiweekly"
+    },
+    "DocketTrackDailyWeekday": {
+        "Id": "co_website_resourceInfoTypes_DocketTrackDailyWeekday",
+        "Text": "DocketTrackDailyWeekday"
+    },
+    "DocketTrackMonthly": {
+        "Id": "co_website_resourceInfoTypes_DocketTrackMonthly",
+        "Text": "DocketTrackMonthly"
+    },
+    "DocketTrackWeekly": {
+        "Id": "co_website_resourceInfoTypes_DocketTrackWeekly",
+        "Text": "DocketTrackWeekly"
+    },
+    "DockStateAll": {
+        "Id": "co_website_resourceInfoTypes_DockStateAll",
+        "Text": "DockStateAll"
+    },
+    "DocumentAuthoring": {
+        "Id": "co_website_resourceInfoTypes_DocumentAuthoring",
+        "Text": "DocumentAuthoring"
+    },
+    "DocAnalysisMarketing": {
+        "Id": "co_website_resourceInfoTypes_DocAnalysisMarketing",
+        "Text": "DocAnalysisMarketing"
+    },
+    "DocViewDailyLimits": {
+        "Id": "co_website_resourceInfoTypes_DocViewDailyLimits",
+        "Text": "DocViewDailyLimits"
+    },
+    "DocViewDailyLimitPracticalLaw": {
+        "Id": "co_website_resourceInfoTypes_DocViewDailyLimitPracticalLaw",
+        "Text": "DocViewDailyLimitPracticalLaw"
+    },
+    "DownloadDelivery": {
+        "Id": "co_website_resourceInfoTypes_DownloadDelivery",
+        "Text": "DownloadDelivery"
+    },
+    "DraftingAssistant": {
+        "Id": "co_website_resourceInfoTypes_DraftingAssistant",
+        "Text": "DraftingAssistant"
+    },
+    "DraftingAssistantUKI": {
+        "Id": "co_website_resourceInfoTypes_DraftingAssistantUKI",
+        "Text": "DraftingAssistantUKI"
+    },
+    "DropboxDelivery": {
+        "Id": "co_website_resourceInfoTypes_DropboxDelivery",
+        "Text": "DropboxDelivery"
+    },
+    "DTAuthorityCompiler": {
+        "Id": "co_website_resourceInfoTypes_DTAuthorityCompiler",
+        "Text": "DTAuthorityCompiler"
+    },
+    "DTBuildToa": {
+        "Id": "co_website_resourceInfoTypes_DTBuildToa",
+        "Text": "DTBuildToa"
+    },
+    "DTDealProof": {
+        "Id": "co_website_resourceInfoTypes_DTDealProof",
+        "Text": "DTDealProof"
+    },
+    "DTFormatCites": {
+        "Id": "co_website_resourceInfoTypes_DTFormatCites",
+        "Text": "DTFormatCites"
+    },
+    "DTInsertFlagLinks": {
+        "Id": "co_website_resourceInfoTypes_DTInsertFlagLinks",
+        "Text": "DTInsertFlagLinks"
+    },
+    "DTLocalCiteFinding": {
+        "Id": "co_website_resourceInfoTypes_DTLocalCiteFinding",
+        "Text": "DTLocalCiteFinding"
+    },
+    "DTLocateAuth": {
+        "Id": "co_website_resourceInfoTypes_DTLocateAuth",
+        "Text": "DTLocateAuth"
+    },
+    "DTLocatePrecedent": {
+        "Id": "co_website_resourceInfoTypes_DTLocatePrecedent",
+        "Text": "DTLocatePrecedent"
+    },
+    "DTPlc": {
+        "Id": "co_website_resourceInfoTypes_DTPlc",
+        "Text": "DTPlc"
+    },
+    "DTSampleTemplates": {
+        "Id": "co_website_resourceInfoTypes_DTSampleTemplates",
+        "Text": "DTSampleTemplates"
+    },
+    "DTSearchKMLit": {
+        "Id": "co_website_resourceInfoTypes_DTSearchKMLit",
+        "Text": "DTSearchKMLit"
+    },
+    "DTSearchKMTrans": {
+        "Id": "co_website_resourceInfoTypes_DTSearchKMTrans",
+        "Text": "DTSearchKMTrans"
+    },
+    "DTSearchWln": {
+        "Id": "co_website_resourceInfoTypes_DTSearchWln",
+        "Text": "DTSearchWln"
+    },
+    "DTUpdater": {
+        "Id": "co_website_resourceInfoTypes_DTUpdater",
+        "Text": "DTUpdater"
+    },
+    "DTValidateDocFormat": {
+        "Id": "co_website_resourceInfoTypes_DTValidateDocFormat",
+        "Text": "DTValidateDocFormat"
+    },
+    "DTWestCheck": {
+        "Id": "co_website_resourceInfoTypes_DTWestCheck",
+        "Text": "DTWestCheck"
+    },
+    "DualSearchCategoryPages": {
+        "Id": "co_website_resourceInfoTypes_DualSearchCategoryPages",
+        "Text": "DualSearchCategoryPages"
+    },
+    "EAAll": {
+        "Id": "co_website_resourceInfoTypes_EAAll",
+        "Text": "EAAll"
+    },
+    "EasyEdit": {
+        "Id": "co_website_resourceInfoTypes_EasyEdit",
+        "Text": "EasyEdit"
+    },
+    "EasyEditResultList": {
+        "Id": "co_website_resourceInfoTypes_EasyEditResultList",
+        "Text": "EasyEditResultList"
+    },
+    "EDSectionAllow": {
+        "Id": "co_website_resourceInfoTypes_EDSectionAllow",
+        "Text": "EDSectionAllow"
+    },
+    "EdgeABTestOne": {
+        "Id": "co_website_resourceInfoTypes_EdgeABTestOne",
+        "Text": "EdgeABTestOne"
+    },
+    "EdgeABTestTwo": {
+        "Id": "co_website_resourceInfoTypes_EdgeABTestTwo",
+        "Text": "EdgeABTestTwo"
+    },
+    "EdgeABTestThree": {
+        "Id": "co_website_resourceInfoTypes_EdgeABTestThree",
+        "Text": "EdgeABTestThree"
+    },
+    "EdgeABTestFour": {
+        "Id": "co_website_resourceInfoTypes_EdgeABTestFour",
+        "Text": "EdgeABTestFour"
+    },
+    "EdgeABTestFive": {
+        "Id": "co_website_resourceInfoTypes_EdgeABTestFive",
+        "Text": "EdgeABTestFive"
+    },
+    "EdgeABTestSix": {
+        "Id": "co_website_resourceInfoTypes_EdgeABTestSix",
+        "Text": "EdgeABTestSix"
+    },
+    "EdgeInlineKC": {
+        "Id": "co_website_resourceInfoTypes_EdgeInlineKC",
+        "Text": "EdgeInlineKC"
+    },
+    "ELibrariesCustomPageZone": {
+        "Id": "co_website_resourceInfoTypes_ELibrariesCustomPageZone",
+        "Text": "ELibrariesCustomPageZone"
+    },
+    "EmailDelivery": {
+        "Id": "co_website_resourceInfoTypes_EmailDelivery",
+        "Text": "EmailDelivery"
+    },
+    "EmailWithReferenceDelivery": {
+        "Id": "co_website_resourceInfoTypes_EmailWithReferenceDelivery",
+        "Text": "EmailWithReferenceDelivery"
+    },
+    "EncryptLog": {
+        "Id": "co_website_resourceInfoTypes_EncryptLog",
+        "Text": "EncryptLog"
+    },
+    "EnvironmentalHealthSafetyPracticePage": {
+        "Id": "co_website_resourceInfoTypes_EnvironmentalHealthSafetyPracticePage",
+        "Text": "EnvironmentalHealthSafetyPracticePage"
+    },
+    "EnvironmentMetadata": {
+        "Id": "co_website_resourceInfoTypes_EnvironmentMetadata",
+        "Text": "EnvironmentMetadata"
+    },
+    "ErnestAndYoungWlnPage": {
+        "Id": "co_website_resourceInfoTypes_ErnestAndYoungWlnPage",
+        "Text": "ErnestAndYoungWlnPage"
+    },
+    "Facet10KLimitIncrease": {
+        "Id": "co_website_resourceInfoTypes_Facet10KLimitIncrease",
+        "Text": "Facet10KLimitIncrease"
+    },
+    "Favorites": {
+        "Id": "co_website_resourceInfoTypes_Favorites",
+        "Text": "Favorites"
+    },
+    "FavoriteSearches": {
+        "Id": "co_website_resourceInfoTypes_FavoriteSearches",
+        "Text": "FavoriteSearches"
+    },
+    "FeaturesSuperAdmin": {
+        "Id": "co_website_resourceInfoTypes_FeaturesSuperAdmin",
+        "Text": "FeaturesSuperAdmin"
+    },
+    "FedTM": {
+        "Id": "co_website_resourceInfoTypes_FedTM",
+        "Text": "FedTM"
+    },
+    "FedRampWestlawUS": {
+        "Id": "co_website_resourceInfoTypes_FedRampWestlawUS",
+        "Text": "FedRampWestlawUS"
+    },
+    "FinancialTearSheet": {
+        "Id": "co_website_resourceInfoTypes_FinancialTearSheet",
+        "Text": "FinancialTearSheet"
+    },
+    "Firm": {
+        "Id": "co_website_resourceInfoTypes_Firm",
+        "Text": "Firm"
+    },
+    "FirmStyle": {
+        "Id": "co_website_resourceInfoTypes_FirmStyle",
+        "Text": "FirmStyle"
+    },
+    "FocusHighlight": {
+        "Id": "co_website_resourceInfoTypes_FocusHighlight",
+        "Text": "FocusHighlight"
+    },
+    "FolderAnalysisAdditionalContent": {
+        "Id": "co_website_resourceInfoTypes_FolderAnalysisAdditionalContent",
+        "Text": "FolderAnalysisAdditionalContent"
+    },
+    "FolderDescription": {
+        "Id": "co_website_resourceInfoTypes_FolderDescription",
+        "Text": "FolderDescription"
+    },
+    "FolderPageUpdate": {
+        "Id": "co_website_resourceInfoTypes_FolderPageUpdate",
+        "Text": "FolderPageUpdate"
+    },
+    "FolderRecommendChange": {
+        "Id": "co_website_resourceInfoTypes_FolderRecommendChange",
+        "Text": "FolderRecommendChange"
+    },
+    "Folders": {
+        "Id": "co_website_resourceInfoTypes_Folders",
+        "Text": "Folders"
+    },
+    "FolderSharing": {
+        "Id": "co_website_resourceInfoTypes_FolderSharing",
+        "Text": "FolderSharing"
+    },
+    "FolderUploadUserDoc": {
+        "Id": "co_website_resourceInfoTypes_FolderUploadUserDoc",
+        "Text": "FolderUploadUserDoc"
+    },
+    "FormBuilderTrialBlockShare": {
+        "Id": "co_website_resourceInfoTypes_FormBuilderTrialBlockShare",
+        "Text": "FormBuilderTrialBlockShare"
+    },
+    "FormsAutoShareOff": {
+        "Id": "co_website_resourceInfoTypes_FormsAutoShareOff",
+        "Text": "FormsAutoShareOff"
+    },
+    "Fundamentals": {
+        "Id": "co_website_resourceInfoTypes_Fundamentals",
+        "Text": "Fundamentals"
+    },
+    "GradingTool": {
+        "Id": "co_website_resourceInfoTypes_GradingTool",
+        "Text": "GradingTool"
+    },
+    "GradingToolAdmin": {
+        "Id": "co_website_resourceInfoTypes_GradingToolAdmin",
+        "Text": "GradingToolAdmin"
+    },
+    "GraphicalHistory": {
+        "Id": "co_website_resourceInfoTypes_GraphicalHistory",
+        "Text": "GraphicalHistory"
+    },
+    "Highlighting": {
+        "Id": "co_website_resourceInfoTypes_Highlighting",
+        "Text": "Highlighting"
+    },
+    "HighlightSharing": {
+        "Id": "co_website_resourceInfoTypes_HighlightSharing",
+        "Text": "HighlightSharing"
+    },
+    "History": {
+        "Id": "co_website_resourceInfoTypes_History",
+        "Text": "History"
+    },
+    "HistoryRetention1": {
+        "Id": "co_website_resourceInfoTypes_HistoryRetention1",
+        "Text": "HistoryRetention1"
+    },
+    "HistoryRetention180": {
+        "Id": "co_website_resourceInfoTypes_HistoryRetention180",
+        "Text": "HistoryRetention180"
+    },
+    "HistoryUI": {
+        "Id": "co_website_resourceInfoTypes_HistoryUI",
+        "Text": "HistoryUI"
+    },
+    "HomePageTour": {
+        "Id": "co_website_resourceInfoTypes_HomePageTour",
+        "Text": "HomePageTour"
+    },
+    "HooverCP": {
+        "Id": "co_website_resourceInfoTypes_HooverCP",
+        "Text": "HooverCP"
+    },
+    "IgnoreAuthorizationBlocks": {
+        "Id": "co_website_resourceInfoTypes_IgnoreAuthorizationBlocks",
+        "Text": "IgnoreAuthorizationBlocks"
+    },
+    "IgnoreDeliveryLimit": {
+        "Id": "co_website_resourceInfoTypes_IgnoreDeliveryLimit",
+        "Text": "IgnoreDeliveryLimit"
+    },
+    "IncorporatedCouncilOfLawReporting": {
+        "Id": "co_website_resourceInfoTypes_IncorporatedCouncilOfLawReporting",
+        "Text": "IncorporatedCouncilOfLawReporting"
+    },
+    "IndigoDisplay": {
+        "Id": "co_website_resourceInfoTypes_IndigoDisplay",
+        "Text": "IndigoDisplay"
+    },
+    "IndigoHotDocs": {
+        "Id": "co_website_resourceInfoTypes_IndigoHotDocs",
+        "Text": "IndigoHotDocs"
+    },
+    "IndigoPremium": {
+        "Id": "co_website_resourceInfoTypes_IndigoPremium",
+        "Text": "IndigoPremium"
+    },
+    "IndigoPremiumF1": {
+        "Id": "co_website_resourceInfoTypes_IndigoPremiumF1",
+        "Text": "IndigoPremiumF1"
+    },
+    "IndigoResearchReport": {
+        "Id": "co_website_resourceInfoTypes_IndigoResearchReport",
+        "Text": "IndigoResearchReport"
+    },
+    "IndigoSearch": {
+        "Id": "co_website_resourceInfoTypes_IndigoSearch",
+        "Text": "IndigoSearch"
+    },
+    "InlineKCFlagsCustomSelect": {
+        "Id": "co_website_resourceInfoTypes_InlineKCFlagsCustomSelect",
+        "Text": "InlineKCFlagsCustomSelect"
+    },
+    "InlineKeyCiteFlagsForCasesAndBrief": {
+        "Id": "co_website_resourceInfoTypes_InlineKeyCiteFlagsForCasesAndBrief",
+        "Text": "InlineKeyCiteFlagsForCasesAndBrief"
+    },
+    "InsiderSentiment": {
+        "Id": "co_website_resourceInfoTypes_InsiderSentiment",
+        "Text": "InsiderSentiment"
+    },
+    "InsuranceCompliancePracticePage": {
+        "Id": "co_website_resourceInfoTypes_InsuranceCompliancePracticePage",
+        "Text": "InsuranceCompliancePracticePage"
+    },
+    "Internal": {
+        "Id": "co_website_resourceInfoTypes_Internal",
+        "Text": "Internal"
+    },
+    "InternalAdminLimits": {
+        "Id": "co_website_resourceInfoTypes_InternalAdminLimits",
+        "Text": "InternalAdminLimits"
+    },
+    "InvestShell": {
+        "Id": "co_website_resourceInfoTypes_InvestShell",
+        "Text": "InvestShell"
+    },
+    "IP": {
+        "Id": "co_website_resourceInfoTypes_IP",
+        "Text": "IP"
+    },
+    "IrsWLNPage": {
+        "Id": "co_website_resourceInfoTypes_IrsWLNPage",
+        "Text": "IrsWLNPage"
+    },
+    "IssueLevelKeyCite": {
+        "Id": "co_website_resourceInfoTypes_IssueLevelKeyCite",
+        "Text": "IssueLevelKeyCite"
+    },
+    "FactorAnalysisQuestionAnswer": {
+        "Id": "co_website_resourceInfoTypes_FactorAnalysisQuestionAnswer",
+        "Text": "FactorAnalysisQuestionAnswer"
+    },
+    "JointVentures": {
+        "Id": "co_website_resourceInfoTypes_JointVentures",
+        "Text": "JointVentures"
+    },
+    "JuryVerdictsAll": {
+        "Id": "co_website_resourceInfoTypes_JuryVerdictsAll",
+        "Text": "JuryVerdictsAll"
+    },
+    "KcAlerts": {
+        "Id": "co_website_resourceInfoTypes_KcAlerts",
+        "Text": "KcAlerts"
+    },
+    "KeyciteAlertBiweekly": {
+        "Id": "co_website_resourceInfoTypes_KeyciteAlertBiweekly",
+        "Text": "KeyciteAlertBiweekly"
+    },
+    "KeyciteAlertContinuous": {
+        "Id": "co_website_resourceInfoTypes_KeyciteAlertContinuous",
+        "Text": "KeyciteAlertContinuous"
+    },
+    "KeyciteAlertDailyWeekday": {
+        "Id": "co_website_resourceInfoTypes_KeyciteAlertDailyWeekday",
+        "Text": "KeyciteAlertDailyWeekday"
+    },
+    "KeyciteAlertMonthly": {
+        "Id": "co_website_resourceInfoTypes_KeyciteAlertMonthly",
+        "Text": "KeyciteAlertMonthly"
+    },
+    "KeyCiteAlerts": {
+        "Id": "co_website_resourceInfoTypes_KeyCiteAlerts",
+        "Text": "KeyCiteAlerts"
+    },
+    "KeyciteAlertWeekly": {
+        "Id": "co_website_resourceInfoTypes_KeyciteAlertWeekly",
+        "Text": "KeyciteAlertWeekly"
+    },
+    "KeyCiteImpliedOverrulings": {
+        "Id": "co_website_resourceInfoTypes_KeyCiteImpliedOverrulings",
+        "Text": "KeyCiteImpliedOverrulings"
+    },
+    "KindleDelivery": {
+        "Id": "co_website_resourceInfoTypes_KindleDelivery",
+        "Text": "KindleDelivery"
+    },
+    "KM": {
+        "Id": "co_website_resourceInfoTypes_KM",
+        "Text": "KM"
+    },
+    "KMIpad": {
+        "Id": "co_website_resourceInfoTypes_KMIpad",
+        "Text": "KMIpad"
+    },
+    "KpmgWlnPage": {
+        "Id": "co_website_resourceInfoTypes_KpmgWlnPage",
+        "Text": "KpmgWlnPage"
+    },
+    "LatestQuote": {
+        "Id": "co_website_resourceInfoTypes_LatestQuote",
+        "Text": "LatestQuote"
+    },
+    "LargeLawUserPopUp": {
+        "Id": "co_website_resourceInfoTypes_LargeLawUserPopUp",
+        "Text": "LargeLawUserPopUp"
+    },
+    "LawSchoolToolsLink": {
+        "Id": "co_website_resourceInfoTypes_LawSchoolToolsLink",
+        "Text": "LawSchoolToolsLink"
+    },
+    "LeavingNonBillableZoneCheckbox": {
+        "Id": "co_website_resourceInfoTypes_LeavingNonBillableZoneCheckbox",
+        "Text": "LeavingNonBillableZoneCheckbox"
+    },
+    "LegacyAlertsAccess": {
+        "Id": "co_website_resourceInfoTypes_LegacyAlertsAccess",
+        "Text": "LegacyAlertsAccess"
+    },
+
+    "LegalAnalyticsCompany": {
+        "Id": "co_website_resourceInfoTypes_LegalAnalyticsCompany",
+        "Text": "LegalAnalyticsCompany"
+    },
+    "LegalLitAnalytics": {
+        "Id": "co_website_resourceInfoTypes_LegalLitAnalytics",
+        "Text": "LegalLitAnalytics"
+    },
+    "LegalSolutionsWebsiteFormBuilderImport": {
+        "Id": "co_website_resourceInfoTypes_LegalSolutionsWebsiteFormBuilderImport",
+        "Text": "LegalSolutionsWebsiteFormBuilderImport"
+    },
+    "LegalTopicSuggestion": {
+        "Id": "co_website_resourceInfoTypes_LegalTopicSuggestion",
+        "Text": "LegalTopicSuggestion"
+    },
+    "LinkBuilder": {
+        "Id": "co_website_resourceInfoTypes_LinkBuilder",
+        "Text": "LinkBuilder"
+    },
+    "LinkTranslation": {
+        "Id": "co_website_resourceInfoTypes_LinkTranslation",
+        "Text": "LinkTranslation"
+    },
+    "LinkTranslationTax": {
+        "Id": "co_website_resourceInfoTypes_LinkTranslationTax",
+        "Text": "LinkTranslationTax"
+    },
+    "Litigation": {
+        "Id": "co_website_resourceInfoTypes_Litigation",
+        "Text": "Litigation"
+    },
+    "LitigationAnalyticsTour": {
+        "Id": "co_website_resourceInfoTypes_LitigationAnalyticsTour",
+        "Text": "LitigationAnalyticsTour"
+    },
+    "LitigationAncillary": {
+        "Id": "co_website_resourceInfoTypes_LitigationAncillary",
+        "Text": "LitigationAncillary"
+    },
+    "LitigationPlus": {
+        "Id": "co_website_resourceInfoTypes_LitigationPlus",
+        "Text": "LitigationPlus"
+    },
+    "LiveChatCommercial": {
+        "Id": "co_website_resourceInfoTypes_LiveChatCommercial",
+        "Text": "LiveChatCommercial"
+    },
+    "LiveChatGlobalLegalSolution": {
+        "Id": "co_website_resourceInfoTypes_LiveChatGlobalLegalSolution",
+        "Text": "LiveChatGlobalLegalSolution"
+    },
+    "LiveChatIndigo": {
+        "Id": "co_website_resourceInfoTypes_LiveChatIndigo",
+        "Text": "LiveChatIndigo"
+    },
+    "LiveChatIndigoPremium": {
+        "Id": "co_website_resourceInfoTypes_LiveChatIndigoPremium",
+        "Text": "LiveChatIndigoPremium"
+    },
+    "LiveChatIrs": {
+        "Id": "co_website_resourceInfoTypes_LiveChatIrs",
+        "Text": "LiveChatIrs"
+    },
+    "LiveChatKmpg": {
+        "Id": "co_website_resourceInfoTypes_LiveChatKmpg",
+        "Text": "LiveChatKmpg"
+    },
+    "LiveChatLawSchool": {
+        "Id": "co_website_resourceInfoTypes_LiveChatLawSchool",
+        "Text": "LiveChatLawSchool"
+    },
+    "LiveChatPilot": {
+        "Id": "co_website_resourceInfoTypes_LiveChatPilot",
+        "Text": "LiveChatPilot"
+    },
+    "LiveChatSummerAssociate": {
+        "Id": "co_website_resourceInfoTypes_LiveChatSummerAssociate",
+        "Text": "LiveChatSummerAssociate"
+    },
+    "LiveChatWestlawAdvantage": {
+        "Id": "co_website_resourceInfoTypes_LiveChatWestlawAdvantage",
+        "Text": "LiveChatWestlawAdvantage"
+    },
+    "LiveChatPracticePoint": {
+        "Id": "co_website_resourceInfoTypes_LiveChatPracticePoint",
+        "Text": "LiveChatPracticePoint"
+    },
+    "LSAll": {
+        "Id": "co_website_resourceInfoTypes_LSAll",
+        "Text": "LSAll"
+    },
+    "Mashup": {
+        "Id": "co_website_resourceInfoTypes_Mashup",
+        "Text": "Mashup"
+    },
+    "MassEmailer": {
+        "Id": "co_website_resourceInfoTypes_MassEmailer",
+        "Text": "MassEmailer"
+    },
+    "MatterDescription": {
+        "Id": "co_website_resourceInfoTypes_MatterDescription",
+        "Text": "MatterDescription"
+    },
+    "MatterUploadUserDoc": {
+        "Id": "co_website_resourceInfoTypes_MatterUploadUserDoc",
+        "Text": "MatterUploadUserDoc"
+    },
+    "MergersAcquisitions": {
+        "Id": "co_website_resourceInfoTypes_MergersAcquisitions",
+        "Text": "MergersAcquisitions"
+    },
+    "MirReports": {
+        "Id": "co_website_resourceInfoTypes_MirReports",
+        "Text": "MirReports"
+    },
+    "Mobile": {
+        "Id": "co_website_resourceInfoTypes_Mobile",
+        "Text": "Mobile"
+    },
+    "ModernDocumentDisplay": {
+        "Id": "co_website_resourceInfoTypes_ModernDocumentDisplay",
+        "Text": "ModernDocumentDisplay"
+    },
+    "Monitors": {
+        "Id": "co_website_resourceInfoTypes_Monitors",
+        "Text": "Monitors"
+    },
+    "MyBusinessIntelligenceAccess": {
+        "Id": "co_website_resourceInfoTypes_MyBusinessIntelligenceAccess",
+        "Text": "MyBusinessIntelligenceAccess"
+    },
+    "MyBusinessIntelligenceEditorialAccess": {
+        "Id": "co_website_resourceInfoTypes_MyBusinessIntelligenceEditorialAccess",
+        "Text": "MyBusinessIntelligenceEditorialAccess"
+    },
+    "MyPlan": {
+        "Id": "co_website_resourceInfoTypes_MyPlan",
+        "Text": "MyPlan"
+    },
+    "MyPlanStaticDoc": {
+        "Id": "co_website_resourceInfoTypes_MyPlanStaticDoc",
+        "Text": "MyPlanStaticDoc"
+    },
+    "MySubAcademic": {
+        "Id": "co_website_resourceInfoTypes_MySubAcademic",
+        "Text": "MySubAcademic"
+    },
+    "MySubBestCase": {
+        "Id": "co_website_resourceInfoTypes_MySubBestCase",
+        "Text": "MySubBestCase"
+    },
+    "MySubBlcCanada": {
+        "Id": "co_website_resourceInfoTypes_MySubBlcCanada",
+        "Text": "MySubBlcCanada"
+    },
+    "MySubEmploySource": {
+        "Id": "co_website_resourceInfoTypes_MySubEmploySource",
+        "Text": "MySubEmploySource"
+    },
+    "MySubGratis": {
+        "Id": "co_website_resourceInfoTypes_MySubGratis",
+        "Text": "MySubGratis"
+    },
+    "MySubLaborSource": {
+        "Id": "co_website_resourceInfoTypes_MySubLaborSource",
+        "Text": "MySubLaborSource"
+    },
+    "MySubLitigator": {
+        "Id": "co_website_resourceInfoTypes_MySubLitigator",
+        "Text": "MySubLitigator"
+    },
+    "MySubMcGill": {
+        "Id": "co_website_resourceInfoTypes_MySubMcGill",
+        "Text": "MySubMcGill"
+    },
+    "MySubSolicitorCore": {
+        "Id": "co_website_resourceInfoTypes_MySubSolicitorCore",
+        "Text": "MySubSolicitorCore"
+    },
+    "MyTrPicker": {
+        "Id": "co_website_resourceInfoTypes_MyTRPicker",
+        "Text": "MyTRPicker"
+    },
+    "MyTrProfile": {
+        "Id": "co_website_resourceInfoTypes_MyTRProfile",
+        "Text": "MyTRProfile"
+    },
+    "MultipleSearchWithin": {
+        "Id": "co_website_resourceInfoTypes_MultipleSearchWithin",
+        "Text": "MultipleSearchWithin"
+    },
+    "NewsAlertAuthor": {
+        "Id": "co_website_resourceInfoTypes_NewsAlertAuthor",
+        "Text": "NewsAlertAuthor"
+    },
+    "NewsAlertEditor": {
+        "Id": "co_website_resourceInfoTypes_NewsAlertEditor",
+        "Text": "NewsAlertEditor"
+    },
+    "NewsGeneral": {
+        "Id": "co_website_resourceInfoTypes_NewsGeneral",
+        "Text": "NewsGeneral"
+    },
+    "Newsletter": {
+        "Id": "co_website_resourceInfoTypes_Newsletter",
+        "Text": "Newsletter"
+    },
+    "NewsletterBiweekly": {
+        "Id": "co_website_resourceInfoTypes_NewsletterBiweekly",
+        "Text": "NewsletterBiweekly"
+    },
+    "NewsletterDailyWeekday": {
+        "Id": "co_website_resourceInfoTypes_NewsletterDailyWeekday",
+        "Text": "NewsletterDailyWeekday"
+    },
+    "NewsletterMonthly": {
+        "Id": "co_website_resourceInfoTypes_NewsletterMonthly",
+        "Text": "NewsletterMonthly"
+    },
+    "NewsletterWeekly": {
+        "Id": "co_website_resourceInfoTypes_NewsletterWeekly",
+        "Text": "NewsletterWeekly"
+    },
+    "NewYorkTimes": {
+        "Id": "co_website_resourceInfoTypes_NewYorkTimes",
+        "Text": "NewYorkTimes"
+    },
+    "Notes": {
+        "Id": "co_website_resourceInfoTypes_Notes",
+        "Text": "Notes"
+    },
+    "NotesOfDecisionsCanada": {
+        "Id": "co_website_resourceInfoTypes_NotesOfDecisionsCanada",
+        "Text": "NotesOfDecisionsCanada"
+    },
+    "NotesSharing": {
+        "Id": "co_website_resourceInfoTypes_NotesSharing",
+        "Text": "NotesSharing"
+    },
+    "NotificationCenter": {
+        "Id": "co_website_resourceInfoTypes_NotificationCenter",
+        "Text": "NotificationCenter"
+    },
+    "NZAccidentCompensation": {
+        "Id": "co_website_resourceInfoTypes_NZAccidentCompensation",
+        "Text": "NZAccidentCompensation"
+    },
+    "NZOccupationalSafetyAndHealth": {
+        "Id": "co_website_resourceInfoTypes_NZOccupationalSafetyAndHealth",
+        "Text": "NZOccupationalSafetyAndHealth"
+    },
+    "NZPersonalGrievance": {
+        "Id": "co_website_resourceInfoTypes_NZPersonalGrievance",
+        "Text": "NZPersonalGrievance"
+    },
+    "NZResourceManagement": {
+        "Id": "co_website_resourceInfoTypes_NZResourceManagement",
+        "Text": "NZResourceManagement"
+    },
+    "NZSentencing": {
+        "Id": "co_website_resourceInfoTypes_NZSentencing",
+        "Text": "NZSentencing"
+    },
+    "OConnorsAnnotation": {
+        "Id": "co_website_resourceInfoTypes_OConnorsAnnotation",
+        "Text": "OConnorsAnnotation"
+    },
+    "OLAuthorityCompiler": {
+        "Id": "co_website_resourceInfoTypes_OLAuthorityCompiler",
+        "Text": "OLAuthorityCompiler"
+    },
+    "OLBuildToa": {
+        "Id": "co_website_resourceInfoTypes_OLBuildToa",
+        "Text": "OLBuildToa"
+    },
+    "OLDealProof": {
+        "Id": "co_website_resourceInfoTypes_OLDealProof",
+        "Text": "OLDealProof"
+    },
+    "OLFormatCites": {
+        "Id": "co_website_resourceInfoTypes_OLFormatCites",
+        "Text": "OLFormatCites"
+    },
+    "OLInsertFlagLinks": {
+        "Id": "co_website_resourceInfoTypes_OLInsertFlagLinks",
+        "Text": "OLInsertFlagLinks"
+    },
+    "OLLocatePrecedent": {
+        "Id": "co_website_resourceInfoTypes_OLLocatePrecedent",
+        "Text": "OLLocatePrecedent"
+    },
+    "OLWestCheck": {
+        "Id": "co_website_resourceInfoTypes_OLWestCheck",
+        "Text": "OLWestCheck"
+    },
+    "OrionMatterTree": {
+        "Id": "co_website_resourceInfoTypes_OrionMatterTree",
+        "Text": "OrionMatterTree"
+    },
+    "Outline": {
+        "Id": "co_website_resourceInfoTypes_Outline",
+        "Text": "Outline"
+    },
+    "OutOfPlanPreviewDesignA": {
+        "Id": "co_website_resourceInfoTypes_OutOfPlanPreviewDesignA",
+        "Text": "OutOfPlanPreviewDesignA"
+    },
+    "OutOfPlanPreviewDesignB": {
+        "Id": "co_website_resourceInfoTypes_OutOfPlanPreviewDesignB",
+        "Text": "OutOfPlanPreviewDesignB"
+    },
+    "OWAInsertFlagLinks": {
+        "Id": "co_website_resourceInfoTypes_OWAInsertFlagLinks",
+        "Text": "OWAInsertFlagLinks"
+    },
+    "OWAWestCheck": {
+        "Id": "co_website_resourceInfoTypes_OWAWestCheck",
+        "Text": "OWAWestCheck"
+    },
+    "ParalegalAgreement": {
+        "Id": "co_website_resourceInfoTypes_ParalegalAgreement",
+        "Text": "ParalegalAgreement"
+    },
+    "PassThruPdfs": {
+        "Id": "co_website_resourceInfoTypes_PassThruPdfs",
+        "Text": "PassThruPdfs"
+    },
+    "PatronGetStarted": {
+        "Id": "co_website_resourceInfoTypes_PatronGetStarted",
+        "Text": "PatronGetStarted"
+    },
+    "PatronHelp": {
+        "Id": "co_website_resourceInfoTypes_PatronHelp",
+        "Text": "PatronHelp"
+    },
+    "PauseLinkAvailable": {
+        "Id": "co_website_resourceInfoTypes_PauseLinkAvailable",
+        "Text": "PauseLinkAvailable"
+    },
+    "PayGo": {
+        "Id": "co_website_resourceInfoTypes_PayGo",
+        "Text": "PayGo"
+    },
+    "PersistedDocumentAccess": {
+        "Id": "co_website_resourceInfoTypes_PersistedDocumentAccess",
+        "Text": "PersistedDocumentAccess"
+    },
+    "PLAskPlus": {
+        "Id": "co_website_resourceInfoTypes_PLAskPlus",
+        "Text": "PLAskPlus"
+    },
+    "PobAlert": {
+        "Id": "co_website_resourceInfoTypes_POBAlert",
+        "Text": "POBAlert"
+    },
+    "PobAlertBiweekly": {
+        "Id": "co_website_resourceInfoTypes_POBAlertBiweekly",
+        "Text": "POBAlertBiweekly"
+    },
+    "PobAlertDlyWkdy": {
+        "Id": "co_website_resourceInfoTypes_POBAlertDlyWkdy",
+        "Text": "POBAlertDlyWkdy"
+    },
+    "PobAlertMonthly": {
+        "Id": "co_website_resourceInfoTypes_POBAlertMonthly",
+        "Text": "POBAlertMonthly"
+    },
+    "PobAlertWeekly": {
+        "Id": "co_website_resourceInfoTypes_POBAlertWeekly",
+        "Text": "POBAlertWeekly"
+    },
+    "PobWatch": {
+        "Id": "co_website_resourceInfoTypes_POBWatch",
+        "Text": "POBWatch"
+    },
+    "PobWatchBiweekly": {
+        "Id": "co_website_resourceInfoTypes_POBWatchBiweekly",
+        "Text": "POBWatchBiweekly"
+    },
+    "PobWatchDlyWkdy": {
+        "Id": "co_website_resourceInfoTypes_POBWatchDlyWkdy",
+        "Text": "POBWatchDlyWkdy"
+    },
+    "PobWatchMonthly": {
+        "Id": "co_website_resourceInfoTypes_POBWatchMonthly",
+        "Text": "POBWatchMonthly"
+    },
+    "PobWatchWeekly": {
+        "Id": "co_website_resourceInfoTypes_POBWatchWeekly",
+        "Text": "POBWatchWeekly"
+    },
+    "PracticalLaw": {
+        "Id": "co_website_resourceInfoTypes_PracticalLaw",
+        "Text": "PracticalLaw"
+    },
+    "PracticalLawUK": {
+        "Id": "co_website_resourceInfoTypes_PracticalLawUK",
+        "Text": "PracticalLawUK"
+    },
+    "PracticeAreaModules": {
+        "Id": "co_website_resourceInfoTypes_PracticeAreaModules",
+        "Text": "PracticeAreaModules"
+    },
+    "PracticeAreaModulesPreview": {
+        "Id": "co_website_resourceInfoTypes_PracticeAreaModulesPreview",
+        "Text": "PracticeAreaModulesPreview"
+    },
+    "PracticePoint": {
+        "Id": "co_website_resourceInfoTypes_PracticePoint",
+        "Text": "PracticePoint"
+    },
+    "PracticePointCorpCouncil": {
+        "Id": "co_website_resourceInfoTypes_PracticePointCorpCouncil",
+        "Text": "PracticePointCorpCouncil"
+    },
+    "PracticePointGovernment": {
+        "Id": "co_website_resourceInfoTypes_PracticePointGovernment",
+        "Text": "PracticePointGovernment"
+    },
+    "PracticePointLargeLaw": {
+        "Id": "co_website_resourceInfoTypes_PracticePointLargeLaw",
+        "Text": "PracticePointLargeLaw"
+    },
+    "PracticePointNonTrackableZone": {
+        "Id": "co_website_resourceInfoTypes_PracticePointNonTrackableZone",
+        "Text": "PracticePointNonTrackableZone"
+    },
+    "PracticePointSmallLaw": {
+        "Id": "co_website_resourceInfoTypes_PracticePointSmallLaw",
+        "Text": "PracticePointSmallLaw"
+    },
+    "PractitionerInsight": {
+        "Id": "co_website_resourceInfoTypes_PractitionerInsight",
+        "Text": "PractitionerInsight"
+    },
+    "PreReleaseContent": {
+        "Id": "co_website_resourceInfoTypes_PreReleaseContent",
+        "Text": "PreReleaseContent"
+    },
+    "PriceGuideCommercial": {
+        "Id": "co_website_resourceInfoTypes_PriceGuideCommercial",
+        "Text": "PriceGuideCommercial"
+    },
+    "PriceGuideCorporate": {
+        "Id": "co_website_resourceInfoTypes_PriceGuideCorporate",
+        "Text": "PriceGuideCorporate"
+    },
+    "PriceGuideFederalGovernment": {
+        "Id": "co_website_resourceInfoTypes_PriceGuideFederalGovernment",
+        "Text": "PriceGuideFederalGovernment"
+    },
+    "PriceGuideLargeAndMediumLawFirms": {
+        "Id": "co_website_resourceInfoTypes_PriceGuideLargeAndMediumLawFirms",
+        "Text": "PriceGuideLargeAndMediumLawFirms"
+    },
+    "PriceGuideSmallLawFirm": {
+        "Id": "co_website_resourceInfoTypes_PriceGuideSmallLawFirm",
+        "Text": "PriceGuideSmallLawFirm"
+    },
+    "PriceGuideStateAndLocalGovPlan2": {
+        "Id": "co_website_resourceInfoTypes_PriceGuideStateAndLocalGovPlan2",
+        "Text": "PriceGuideStateAndLocalGovPlan2"
+    },
+    "PriceGuideStateAndLocalGovWLNPro": {
+        "Id": "co_website_resourceInfoTypes_PriceGuideStateAndLocalGovWLNPro",
+        "Text": "PriceGuideStateAndLocalGovWLNPro"
+    },
+    "PriceHistory": {
+        "Id": "co_website_resourceInfoTypes_PriceHistory",
+        "Text": "PriceHistory"
+    },
+    "PricesMomentum": {
+        "Id": "co_website_resourceInfoTypes_PricesMomentum",
+        "Text": "PricesMomentum"
+    },
+    "PricesReturns": {
+        "Id": "co_website_resourceInfoTypes_PricesReturns",
+        "Text": "PricesReturns"
+    },
+    "PrintBlankForms": {
+        "Id": "co_website_resourceInfoTypes_PrintBlankForms",
+        "Text": "PrintBlankForms"
+    },
+    "PrintDelivery": {
+        "Id": "co_website_resourceInfoTypes_PrintDelivery",
+        "Text": "PrintDelivery"
+    },
+    "PriorUserInteractions": {
+        "Id": "co_website_resourceInfoTypes_PriorUserInteractions",
+        "Text": "PriorUserInteractions"
+    },
+    "ProceduralPostureFilter": {
+        "Id": "co_website_resourceInfoTypes_ProceduralPostureFilter",
+        "Text": "ProceduralPostureFilter"
+    },
+    "ProDocWebsiteFormBuilderImport": {
+        "Id": "co_website_resourceInfoTypes_ProDocWebsiteFormBuilderImport",
+        "Text": "ProDocWebsiteFormBuilderImport"
+    },
+    "ProductWLNLinks": {
+        "Id": "co_website_resourceInfoTypes_ProductWLNLinks",
+        "Text": "ProductWLNLinks"
+    },
+    "PublicationAlert": {
+        "Id": "co_website_resourceInfoTypes_PublicationAlert",
+        "Text": "PublicationAlert"
+    },
+    "PublicRecordsAllowRoamTrust": {
+        "Id": "co_website_resourceInfoTypes_PublicRecordsAllowRoamTrust",
+        "Text": "PublicRecordsAllowRoamTrust"
+    },
+    "PublicRecordsBlockHomeTrust": {
+        "Id": "co_website_resourceInfoTypes_PublicRecordsBlockHomeTrust",
+        "Text": "PublicRecordsBlockHomeTrust"
+    },
+    "PublicRecordsBlockIPUndefined": {
+        "Id": "co_website_resourceInfoTypes_PublicRecordsBlockIPUndefined",
+        "Text": "PublicRecordsBlockIPUndefined"
+    },
+    "PublicRecordsBlockIPUndefinedTrust": {
+        "Id": "co_website_resourceInfoTypes_PublicRecordsBlockIPUndefinedTrust",
+        "Text": "PublicRecordsBlockIPUndefinedTrust"
+    },
+    "PublicRecordsBlockRoaming": {
+        "Id": "co_website_resourceInfoTypes_PublicRecordsBlockRoaming",
+        "Text": "PublicRecordsBlockRoaming"
+    },
+    "PublicRecordsBypassCountry": {
+        "Id": "co_website_resourceInfoTypes_PublicRecordsBypassCountry",
+        "Text": "PublicRecordsBypassCountry"
+    },
+    "PublicRecordsDisableAncillaryMask": {
+        "Id": "co_website_resourceInfoTypes_PublicRecordsDisableAncillaryMask",
+        "Text": "PublicRecordsDisableAncillaryMask"
+    },
+    "PublicRecordsEnhancedSecurity": {
+        "Id": "co_website_resourceInfoTypes_PublicRecordsEnhancedSecurity",
+        "Text": "PublicRecordsEnhancedSecurity"
+    },
+    "PwcWlnPage": {
+        "Id": "co_website_resourceInfoTypes_PwcWlnPage",
+        "Text": "PwcWlnPage"
+    },
+    "QuestionAnswering": {
+        "Id": "co_website_resourceInfoTypes_QuestionAnswering",
+        "Text": "QuestionAnswering"
+    },
+    "QuickDraftResultList": {
+        "Id": "co_website_resourceInfoTypes_QuickDraftResultList",
+        "Text": "QuickDraftResultList"
+    },
+    "RecentFilters": {
+        "Id": "co_website_resourceInfoTypes_RecentFilters",
+        "Text": "RecentFilters"
+    },
+    "Recommendations": {
+        "Id": "co_website_resourceInfoTypes_Recommendations",
+        "Text": "Recommendations"
+    },
+    "Redlining": {
+        "Id": "co_website_resourceInfoTypes_Redlining",
+        "Text": "Redlining"
+    },
+    "Reports": {
+        "Id": "co_website_resourceInfoTypes_Reports",
+        "Text": "Reports"
+    },
+    "ResearchAccelerator": {
+        "Id": "co_website_resourceInfoTypes_ResearchAccelerator",
+        "Text": "ResearchAccelerator"
+    },
+    "RulebookMode": {
+        "Id": "co_website_resourceInfoTypes_RulebookMode",
+        "Text": "RulebookMode"
+    },
+    "RulebookModeSticky": {
+        "Id": "co_website_resourceInfoTypes_RulebookModeSticky",
+        "Text": "RulebookModeSticky"
+    },
+    "Search4K": {
+        "Id": "co_website_resourceInfoTypes_Search4K",
+        "Text": "Search4K"
+    },
+    "SearchResultsMissingTerms": {
+        "Id": "co_website_resourceInfoTypes_SearchResultsMissingTerms",
+        "Text": "SearchResultsMissingTerms"
+    },
+    "SearchResultsSnippetNavigation": {
+        "Id": "co_website_resourceInfoTypes_SearchResultsSnippetNavigation",
+        "Text": "SearchResultsSnippetNavigation"
+    },
+    "SecFilings": {
+        "Id": "co_website_resourceInfoTypes_SecFilings",
+        "Text": "SecFilings"
+    },
+    "SessionCleanup": {
+        "Id": "co_website_resourceInfoTypes_SessionCleanup",
+        "Text": "SessionCleanup"
+    },
+    "SessionValueMeter": {
+        "Id": "co_website_resourceInfoTypes_SessionValueMeter",
+        "Text": "SessionValueMeter"
+    },
+    "SharingAcrossOrgsInvitingAllowed": {
+        "Id": "co_website_resourceInfoTypes_SharingAcrossOrgsInvitingAllowed",
+        "Text": "SharingAcrossOrgsInvitingAllowed"
+    },
+    "SharingAcrossSameEmailDomain": {
+        "Id": "co_website_resourceInfoTypes_SharingAcrossSameEmailDomain",
+        "Text": "SharingAcrossSameEmailDomain"
+    },
+    "SHInsiders": {
+        "Id": "co_website_resourceInfoTypes_SHInsiders",
+        "Text": "SHInsiders"
+    },
+    "SHLegal": {
+        "Id": "co_website_resourceInfoTypes_SHLegal",
+        "Text": "SHLegal"
+    },
+    "ShowChargeLinkOnWarningScreen": {
+        "Id": "co_website_resourceInfoTypes_ShowChargeLinkOnWarningScreen",
+        "Text": "ShowChargeLinkOnWarningScreen"
+    },
+    "ShowChargeOnWarningGroup1": {
+        "Id": "co_website_resourceInfoTypes_ShowChargeOnWarningGroup1",
+        "Text": "ShowChargeOnWarningGroup1"
+    },
+    "ShowChargeOnWarningGroup2": {
+        "Id": "co_website_resourceInfoTypes_ShowChargeOnWarningGroup2",
+        "Text": "ShowChargeOnWarningGroup2"
+    },
+    "ShowChargeOnWarningGroup3": {
+        "Id": "co_website_resourceInfoTypes_ShowChargeOnWarningGroup3",
+        "Text": "ShowChargeOnWarningGroup3"
+    },
+    "ShowChargeOnWarningGroup4": {
+        "Id": "co_website_resourceInfoTypes_ShowChargeOnWarningGroup4",
+        "Text": "ShowChargeOnWarningGroup4"
+    },
+    "ShowChargeOnWarningScreen": {
+        "Id": "co_website_resourceInfoTypes_ShowChargeOnWarningScreen",
+        "Text": "ShowChargeOnWarningScreen"
+    },
+    "SignOffSurvey": {
+        "Id": "co_website_resourceInfoTypes_SignOffSurvey",
+        "Text": "SignOffSurvey"
+    },
+    "SmallLawWorkbenchMatterTree": {
+        "Id": "co_website_resourceInfoTypes_SmallLawWorkbenchMatterTree",
+        "Text": "SmallLawWorkbenchMatterTree"
+    },
+    "SmartBreadcrumbDisplay": {
+        "Id": "co_website_resourceInfoTypes_SmartBreadcrumbDisplay",
+        "Text": "SmartBreadcrumbDisplay"
+    },
+    "SnippetCompare": {
+        "Id": "co_website_resourceInfoTypes_SnippetCompare",
+        "Text": "SnippetCompare"
+    },
+    "SocialPlatform": {
+        "Id": "co_website_resourceInfoTypes_SocialPlatform",
+        "Text": "SocialPlatform"
+    },
+    "StandalonePrinter": {
+        "Id": "co_website_resourceInfoTypes_StandalonePrinter",
+        "Text": "StandalonePrinter"
+    },
+    "StandalonePrinterDisplayPooled": {
+        "Id": "co_website_resourceInfoTypes_StandalonePrinterDisplayPooled",
+        "Text": "StandalonePrinterDisplayPooled"
+    },
+    "StandalonePrinterOrgSelect": {
+        "Id": "co_website_resourceInfoTypes_StandalonePrinterOrgSelect",
+        "Text": "StandalonePrinterOrgSelect"
+    },
+    "StatutesCompareRedlining": {
+        "Id": "co_website_resourceInfoTypes_StatutesCompareRedlining",
+        "Text": "StatutesCompareRedlining"
+    },
+    "SubmitToQuickCheck": {
+        "Id": "co_website_resourceInfoTypes_SubmitToQuickCheck",
+        "Text": "SubmitToQuickCheck"
+    },
+    "TaxHyperionAccess": {
+        "Id": "co_website_resourceInfoTypes_TaxHyperionAccess",
+        "Text": "TaxHyperionAccess"
+    },
+    "TaxKpmgUser": {
+        "Id": "co_website_resourceInfoTypes_TaxKpmgUser",
+        "Text": "TaxKpmgUser"
+    },
+    "TaxMigrate": {
+        "Id": "co_website_resourceInfoTypes_TaxMigrate",
+        "Text": "TaxMigrate"
+    },
+    "TaxPwcUser": {
+        "Id": "co_website_resourceInfoTypes_TaxPwcUser",
+        "Text": "TaxPwcUser"
+    },
+    "TextsAndPeriodicals": {
+        "Id": "co_website_resourceInfoTypes_TextsAndPeriodicals",
+        "Text": "TextsAndPeriodicals"
+    },
+    "Thesaurus": {
+        "Id": "co_website_resourceInfoTypes_Thesaurus",
+        "Text": "Thesaurus"
+    },
+    "ThomsonFinancial": {
+        "Id": "co_website_resourceInfoTypes_ThomsonFinancial",
+        "Text": "ThomsonFinancial"
+    },
+    "TocForCases": {
+        "Id": "co_website_resourceInfoTypes_TocForCases",
+        "Text": "TocForCases"
+    },
+    "TopBeneficiaries": {
+        "Id": "co_website_resourceInfoTypes_TopBeneficiaries",
+        "Text": "TopBeneficiaries"
+    },
+    "TopInstitutions": {
+        "Id": "co_website_resourceInfoTypes_TopInstitutions",
+        "Text": "TopInstitutions"
+    },
+    "TopMutualFund": {
+        "Id": "co_website_resourceInfoTypes_TopMutualFund",
+        "Text": "TopMutualFund"
+    },
+    "TopOverall": {
+        "Id": "co_website_resourceInfoTypes_TopOverall",
+        "Text": "TopOverall"
+    },
+    "TrademarkImageSearch": {
+        "Id": "co_website_resourceInfoTypes_TrademarkImageSearch",
+        "Text": "TrademarkImageSearch"
+    },
+    "TrademarkImageSearchAlert": {
+        "Id": "co_website_resourceInfoTypes_TrademarkImageSearchAlert",
+        "Text": "TrademarkImageSearchAlert"
+    },
+    "TrademarkImageSearchAlertBiweekly": {
+        "Id": "co_website_resourceInfoTypes_TrademarkImageSearchAlertBiweekly",
+        "Text": "TrademarkImageSearchAlertBiweekly"
+    },
+    "TrademarkImageSearchAlertDailyWeekdaysSingle": {
+        "Id": "co_website_resourceInfoTypes_TrademarkImageSearchAlertDailyWeekdaysSingle",
+        "Text": "TrademarkImageSearchAlertDailyWeekdaysSingle"
+    },
+    "TrademarkImageSearchAlertMonthly": {
+        "Id": "co_website_resourceInfoTypes_TrademarkImageSearchAlertMonthly",
+        "Text": "TrademarkImageSearchAlertMonthly"
+    },
+    "TrademarkImageSearchAlertWeekly": {
+        "Id": "co_website_resourceInfoTypes_TrademarkImageSearchAlertWeekly",
+        "Text": "TrademarkImageSearchAlertWeekly"
+    },
+    "TrademarksAlerts": {
+        "Id": "co_website_resourceInfoTypes_TrademarksAlerts",
+        "Text": "TrademarksAlerts"
+    },
+    "TRDiscoverSearch": {
+        "Id": "co_website_resourceInfoTypes_TRDiscoverSearch",
+        "Text": "TRDiscoverSearch"
+    },
+    "Trial": {
+        "Id": "co_website_resourceInfoTypes_Trial",
+        "Text": "Trial"
+    },
+    "TSDRHistoryTrackAlert": {
+        "Id": "co_website_resourceInfoTypes_TSDRHistoryTrackAlert",
+        "Text": "TSDRHistoryTrackAlert"
+    },
+    "TSDRHistoryTrackBiweekly": {
+        "Id": "co_website_resourceInfoTypes_TSDRHistoryTrackBiweekly",
+        "Text": "TSDRHistoryTrackBiweekly"
+    },
+    "TSDRHistoryTrackDailysingle": {
+        "Id": "co_website_resourceInfoTypes_TSDRHistoryTrackDailysingle",
+        "Text": "TSDRHistoryTrackDailysingle"
+    },
+    "TSDRHistoryTrackMonthly": {
+        "Id": "co_website_resourceInfoTypes_TSDRHistoryTrackMonthly",
+        "Text": "TSDRHistoryTrackMonthly"
+    },
+    "TSDRHistoryTrackWeekdayssingle": {
+        "Id": "co_website_resourceInfoTypes_TSDRHistoryTrackWeekdayssingle",
+        "Text": "TSDRHistoryTrackWeekdayssingle"
+    },
+    "TSDRHistoryTrackWeekly": {
+        "Id": "co_website_resourceInfoTypes_TSDRHistoryTrackWeekly",
+        "Text": "TSDRHistoryTrackWeekly"
+    },
+    "TwenToolsLink": {
+        "Id": "co_website_resourceInfoTypes_TwenToolsLink",
+        "Text": "TwenToolsLink"
+    },
+    "TypeAhead": {
+        "Id": "co_website_resourceInfoTypes_TypeAhead",
+        "Text": "TypeAhead"
+    },
+    "UnreleasedCatPages": {
+        "Id": "co_website_resourceInfoTypes_UnreleasedCatPages",
+        "Text": "UnreleasedCatPages"
+    },
+    "UserAcademic": {
+        "Id": "co_website_resourceInfoTypes_UserAcademic",
+        "Text": "UserAcademic"
+    },
+    "UserCorporate": {
+        "Id": "co_website_resourceInfoTypes_UserCorporate",
+        "Text": "UserCorporate"
+    },
+    "UserDeveloper": {
+        "Id": "co_website_resourceInfoTypes_UserDeveloper",
+        "Text": "UserDeveloper"
+    },
+    "UserFormUpload": {
+        "Id": "co_website_resourceInfoTypes_UserFormUpload",
+        "Text": "UserFormUpload"
+    },
+    "UserGovernment": {
+        "Id": "co_website_resourceInfoTypes_UserGovernment",
+        "Text": "UserGovernment"
+    },
+    "UserInternal": {
+        "Id": "co_website_resourceInfoTypes_UserInternal",
+        "Text": "UserInternal"
+    },
+    "UserLargeLaw": {
+        "Id": "co_website_resourceInfoTypes_UserLargeLaw",
+        "Text": "UserLargeLaw"
+    },
+    "UserMediumLaw": {
+        "Id": "co_website_resourceInfoTypes_UserMediumLaw",
+        "Text": "UserMediumLaw"
+    },
+    "UserProfile": {
+        "Id": "co_website_resourceInfoTypes_UserProfile",
+        "Text": "UserProfile"
+    },
+    "UserSmallLaw": {
+        "Id": "co_website_resourceInfoTypes_UserSmallLaw",
+        "Text": "UserSmallLaw"
+    },
+    "USPat": {
+        "Id": "co_website_resourceInfoTypes_USPat",
+        "Text": "USPat"
+    },
+    "USPatApp": {
+        "Id": "co_website_resourceInfoTypes_USPatApp",
+        "Text": "USPatApp"
+    },
+    "USPatAssign": {
+        "Id": "co_website_resourceInfoTypes_USPatAssign",
+        "Text": "USPatAssign"
+    },
+    "Waywo": {
+        "Id": "co_website_resourceInfoTypes_Waywo",
+        "Text": "Waywo"
+    },
+    "WcoAccess": {
+        "Id": "co_website_resourceInfoTypes_WcoAccess",
+        "Text": "WcoAccess"
+    },
+    "WebHostedClientId": {
+        "Id": "co_website_resourceInfoTypes_WebHostedClientId",
+        "Text": "WebHostedClientId"
+    },
+    "WebHostedClientIdIPad": {
+        "Id": "co_website_resourceInfoTypes_WebHostedClientIdIPad",
+        "Text": "WebHostedClientIdIPad"
+    },
+    "WelcomeToWLNBox": {
+        "Id": "co_website_resourceInfoTypes_WelcomeToWLNBox",
+        "Text": "WelcomeToWLNBox"
+    },
+    "WestClip": {
+        "Id": "co_website_resourceInfoTypes_WestClip",
+        "Text": "WestClip"
+    },
+    "WestClipBiweekly": {
+        "Id": "co_website_resourceInfoTypes_WestClipBiweekly",
+        "Text": "WestClipBiweekly"
+    },
+    "WestClipContinuous": {
+        "Id": "co_website_resourceInfoTypes_WestClipContinuous",
+        "Text": "WestClipContinuous"
+    },
+    "WestClipDailyMultipleWeekdays": {
+        "Id": "co_website_resourceInfoTypes_WestClipDailyMultipleWeekdays",
+        "Text": "WestClipDailyMultipleWeekdays"
+    },
+    "WestClipDailySingleWeekday": {
+        "Id": "co_website_resourceInfoTypes_WestClipDailySingleWeekday",
+        "Text": "WestClipDailySingleWeekday"
+    },
+    "WestClipMonthly": {
+        "Id": "co_website_resourceInfoTypes_WestClipMonthly",
+        "Text": "WestClipMonthly"
+    },
+    "WestClipWeekly": {
+        "Id": "co_website_resourceInfoTypes_WestClipWeekly",
+        "Text": "WestClipWeekly"
+    },
+    "WJAll": {
+        "Id": "co_website_resourceInfoTypes_WJAll",
+        "Text": "WJAll"
+    },
+    "WlaCostRecoveryCaps": {
+        "Id": "co_website_resourceInfoTypes_WlaCostRecoveryCaps",
+        "Text": "WlaCostRecoveryCaps"
+    },
+    "WLNByPass100KAncillary": {
+        "Id": "co_website_resourceInfoTypes_WLNByPass100KAncillary",
+        "Text": "WLNByPass100KAncillary"
+    },
+    "WLNCAIAssistantResearch": {
+        "Id": "co_website_resourceInfoTypes_WLNCAIAssistantResearch",
+        "Text": "WLNCAIAssistantResearch"
+    },
+    "WLNLinksFEDLHPDFs": {
+        "Id": "co_website_resourceInfoTypes_WLNLinksFEDLHPDFs",
+        "Text": "WLNLinksFEDLHPDFs"
+    },
+    "WLNLinksUK": {
+        "Id": "co_website_resourceInfoTypes_WLNLinksUK",
+        "Text": "WLNLinksUK"
+    },
+    "WLNPracticalLawTracking": {
+        "Id": "co_website_resourceInfoTypes_WLNPracticalLawTracking",
+        "Text": "WLNPracticalLawTracking"
+    },
+    "WMGraphical": {
+        "Id": "co_website_resourceInfoTypes_WMGraphical",
+        "Text": "WMGraphical"
+    },
+    "XDomainWLUK": {
+        "Id": "co_website_resourceInfoTypes_XDomainWLUK",
+        "Text": "XDomainWLUK"
+    },
+    "PAIRHistoryTrackAlert": {
+        "Id": "co_website_resourceInfoTypes_PAIRHistoryTrackAlert",
+        "Text": "PAIRHistoryTrackAlert"
+    },
+    "PAIRHistoryTrackBiweekly": {
+        "Id": "co_website_resourceInfoTypes_PAIRHistoryTrackBiweekly",
+        "Text": "PAIRHistoryTrackBiweekly"
+    },
+    "PAIRHistoryTrackDailySingle": {
+        "Id": "co_website_resourceInfoTypes_PAIRHistoryTrackDailySingle",
+        "Text": "PAIRHistoryTrackDailySingle"
+    },
+    "PAIRHistoryTrackMonthly": {
+        "Id": "co_website_resourceInfoTypes_PAIRHistoryTrackMonthly",
+        "Text": "PAIRHistoryTrackMonthly"
+    },
+    "PAIRHistoryTrackWeekdaysSingle": {
+        "Id": "co_website_resourceInfoTypes_PAIRHistoryTrackWeekdaysSingle",
+        "Text": "PAIRHistoryTrackWeekdaysSingle"
+    },
+    "PAIRHistoryTrackWeekly": {
+        "Id": "co_website_resourceInfoTypes_PAIRHistoryTrackWeekly",
+        "Text": "PAIRHistoryTrackWeekly"
+    },
+    "PLCoCounselAIAssistant": {
+        "Id": "co_website_resourceInfoTypes_PLCoCounselAIAssistant",
+        "Text": "PLCoCounselAIAssistant"
+    },
+    "AIResearchFiftyStates": {
+        "Id": "co_website_resourceInfoTypes_AIResearchFiftyStates",
+        "Text": "AIResearchFiftyStates"
+    },
+    "AIResearchEthics": {
+        "Id": "co_website_resourceInfoTypes_AIResearchEthics",
+        "Text": "AIResearchEthics"
+    }
+}

@@ -1,0 +1,50 @@
+﻿{ // Maps SelectDefaultTabOptions to WebElementInfo
+  "PrecisionResearch": {
+    "Text": "Precision Research",
+    "Id": "firmGroupPreferences-PrecisionResearch"
+  },
+  "ContentTypes": {
+    "Text": "Content types",
+    "Id": "firmGroupPreferences-Contenttypes"
+  },
+  "FederalMaterials": {
+    "Text": "Federal materials",
+    "Id": "firmGroupPreferences-Federalmaterials"
+  },
+  "StateMaterials": {
+    "Text": "State materials",
+    "Id": "firmGroupPreferences-Statematerials"
+  },
+  "PracticeAreas": {
+    "Text": "Practice areas",
+    "Id": "firmGroupPreferences-Practiceareas"
+  },
+  "Tools": {
+    "Text": "Tools",
+    "Id": "firmGroupPreferences-Tools"
+  },
+  "MyContent": {
+    "Text": "My content",
+    "Id": "firmGroupPreferences-Mycontent"
+  },
+  "CustomPages": {
+    "Text": "Custom pages",
+    "Id": "myContentPreferences_firmGroupPreferences-Custompages"
+  },
+  "ELibraries": {
+    "Text": "eLibraries",
+    "Id": "myContentPreferences_firmGroupPreferences-eLibraries"
+  },
+  "Favorites": {
+    "Text": "Favorites",
+    "Id": "myContentPreferences_firmGroupPreferences-Favorites"
+  },
+  "Folders": {
+    "Text": "Folders",
+    "Id": "myContentPreferences_firmGroupPreferences-Folders"
+  },
+  "History": {
+    "Text": "History",
+    "Id": "myContentPreferences_firmGroupPreferences-History"
+  }
+}

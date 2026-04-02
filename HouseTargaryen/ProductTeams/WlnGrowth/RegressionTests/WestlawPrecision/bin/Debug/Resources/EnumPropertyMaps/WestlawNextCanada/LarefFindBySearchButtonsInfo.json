@@ -1,0 +1,17 @@
+{
+  "FindCaseByCitation": {
+    "Id": "findLaRefCaseByCitationButton"
+  },
+  "FindCaseByName": {
+    "Id": "findLaRefCaseByNameButton"
+  },
+  "FindCommentaryByCitation": {
+    "Id": "findLaRefCommentaryByCitationButton"
+  },
+  "FindLegislationByCitation": {
+    "Id": "findLaRefLegislationByCitationButton"
+  },
+  "FindLegislationByName": {
+    "Id": "findLaRefLegislationByNameButton"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "SelectAll": {
+    "Text": "Select All",
+    "Id": "select-all-fields"
+  },
+  "CompanyName": {
+    "Text": "Company Name",
+    "Id": "displayName"
+  },
+  "StreetAddress": {
+    "Text": "Street Address",
+    "Id": "street"
+  },
+  "City": {
+    "Text": "City",
+    "Id": "city"
+  },
+  "State": {
+    "Text": "State",
+    "Id": "state"
+  },
+  "Country": {
+    "Text": "Country",
+    "Id": "country"
+  },
+  "ZipCode": {
+    "Text": "Zip Code",
+    "Id": "zip"
+  },
+  "WebsiteUrl": {
+    "Text": "Website URL",
+    "Id": "url"
+  },
+  "TelephoneNumber": {
+    "Text": "Telephone Number",
+    "Id": "companyPhoneNumber"
+  },
+  "NAICSCode": {
+    "Text": "NAICS Code",
+    "Id": "primaryNaicsIndustryFlattenHierarchy"
+  },
+  "SICCode": {
+    "Text": "SIC Code",
+    "Id": "primarySicIndustryFlattenHierarchy"
+  },
+  "LitigationEventCount": {
+    "Text": "Litigation Event Count",
+    "Id": "analyticsDocCount"
+  },
+  "NumberOfEmployees": {
+    "Text": "Number of Employees",
+    "Id": "organizationSize"
+  },
+  "Revenue": {
+    "Text": "Revenue",
+    "Id": "revenue"
+  },
+  "AuthorityID": {
+    "Text": "Authority ID",
+    "Id": "troaId"
+  },
+  "TickerSymbol": {
+    "Text": "Ticker Symbol",
+    "Id": "primaryTicker"
+  }
+}

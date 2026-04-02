@@ -1,0 +1,299 @@
+﻿{
+  // Maps RoutingSettingDropdown to WebElementInfo
+  // additional EnvVarDefinition for binding info about correspondent environmental variable
+  "IsDataRoomRegionEnabled": {
+    "EnvVarDefinition": "ISDATAROOMREGIONENABLED",
+    "Text": "Is DataRoom Region Enabled",
+    "Id": "DataRoomRegionEnabled"
+  },
+  "IsPamSubscriptionSlicingEnabled": {
+    "EnvVarDefinition": "IS_PAM_SUBSCRIPTION_SLICING_ENABLED",
+    "Text": "Is PAM Subscription Slicing Enabled",
+    "Id": "IsPracticeAreaModuleSlicingEnabled"
+  },
+  "CobaltServicesSiteTarget": {
+    "EnvVarDefinition": "",
+    "Text": "CobaltServicesSiteTarget",
+    "Id": "CobaltServicesDirectTarget_Select"
+  },
+  "BlockCiam": {
+    "EnvVarDefinition": "",
+    "Text": "BlockCiam",
+    "Id": "BlockCiam"
+  },
+  "BrowserProfiling": {
+    "EnvVarDefinition": "",
+    "Text": "BrowserProfiling",
+    "Id": "BrowserProfiling"
+  },
+  "BypassExternalLLMs": {
+    "EnvVarDefinition": "BYPASS_EXTERNAL_LLMS",
+    "Text": "Bypass External LLMs",
+    "Id": "IsBypassExternalLLMs"
+  },
+  "BypassTierLimitCheck": {
+    "EnvVarDefinition": "",
+    "Text": "BypassTierLimitCheck",
+    "Id": "BypassTierLimitCheck"
+  },
+  "CitingRefClient": {
+    "EnvVarDefinition": "",
+    "Text": "CitingRefClient",
+    "Id": "CitingRefClient"
+  },
+  "DeliveryLineCountLimit": {
+    "EnvVarDefinition": "",
+    "Text": "DeliveryLineCountLimit",
+    "Id": "DeliveryLineCountLimit"
+  },
+  "EnableCiam": {
+    "EnvVarDefinition": "",
+    "Text": "EnableCiam",
+    "Id": "EnableCiam"
+  },
+  "EnableGovCiam": {
+    "EnvVarDefinition": "",
+    "Text": "EnableGovCiam",
+    "Id": "EnableGovCiam"
+  },
+  "FeatureExposure": {
+    "EnvVarDefinition": "DD_FEATURE_EXPOSURE",
+    "Text": "FeatureExposure",
+    "Id": "FeatureExposure"
+  },
+  "IPadAppRenderingMode": {
+    "EnvVarDefinition": "",
+    "Text": "iPadAppRenderingMode",
+    "Id": "iPadAppRenderingMode"
+  },
+  "IPhoneAppRenderingMode": {
+    "EnvVarDefinition": "DD_IPHONE_MODE",
+    "Text": "iPhoneAppRenderingMode",
+    "Id": "iPhoneAppRenderingMode"
+  },
+  "LoggingQuantity": {
+    "EnvVarDefinition": "",
+    "Text": "LoggingQuantity",
+    "Id": "LoggingQuantity"
+  },
+  "NovusStage": {
+    "EnvVarDefinition": "",
+    "Text": "NovusStage",
+    "Id": "NovusStage"
+  },
+  "OnePassSignOn": {
+    "EnvVarDefinition": "",
+    "Text": "OnePassSignOn",
+    "Id": "OnePassSignOn"
+  },
+  "PerformanceVisibility": {
+    "EnvVarDefinition": "",
+    "Text": "PerformanceVisibility",
+    "Id": "PerformanceVisibility"
+  },
+  "RelatedInfoTabFailure": {
+    "EnvVarDefinition": "",
+    "Text": "RelatedInfoTabFailure",
+    "Id": "RelatedInfoTabFailure"
+  },
+  "UsageLimitOverride": {
+    "EnvVarDefinition": "DD_USAGE_LIMIT_OVERRIDE",
+    "Text": "UsageLimitOverride",
+    "Id": "UsageLimitOverride"
+  },
+  "UseDcsloc": {
+    "EnvVarDefinition": "",
+    "Text": "UseDcsloc",
+    "Id": "UseDcsloc"
+  },
+  "UseReloadDoc": {
+    "EnvVarDefinition": "",
+    "Text": "UseReloadDoc",
+    "Id": "UseReloadDoc"
+  },
+  "SearchDebugInfo": {
+    "EnvVarDefinition": "SEARCH_DEBUG_INFO",
+    "Text": "SearchDebugInfo",
+    "Id": "SearchDebugInfo"
+  },
+  "GatewayLiveExternal": {
+    "EnvVarDefinition": "",
+    "Text": "Gateway Live External",
+    "Id": "gatewayLiveExternal"
+  },
+  "TRMRProductNameOverride": {
+    "EnvVarDefinition": "",
+    "Text": "TRMR Product Name Override",
+    "Id": "TRMRProductNameOverride"
+  },
+  "DataRoomReadSource": {
+    "EnvVarDefinition": "DD_DATA_ROOM_READ_SOURCE",
+    "Text": "Data Room Read Source",
+    "Id": "dataRoomReadSource"
+  },
+  "DataRoomWriteDestination": {
+    "EnvVarDefinition": "DD_DATA_ROOM_WRITE_DESTINATION",
+    "Text": "Data Room Write Destination",
+    "Id": "dataRoomWriteDestination"
+  },
+  "WlnDataRoomFoldersReadWriteDestination": {
+    "EnvVarDefinition": "DD_WLN_DR_FOLDERS_RW_DEST",
+    "Text": "WLN Data Room Folders Read & Write Destination",
+    "Id": "dataRoomFoldersWriteDestination"
+  },
+  "FolderCachingDisabled": {
+    "EnvVarDefinition": "",
+    "Text": "FolderCachingDisabled",
+    "Id": "FolderCachingDisabled"
+  },
+  "DisplayMashup": {
+    "EnvVarDefinition": "",
+    "Text": "DisplayMashup",
+    "Id": "DisplayMashup"
+  },
+  "EmulatePatronAccessUser": {
+    "EnvVarDefinition": "DD_EMULATE_PATRON_ACCESS",
+    "Text": "Emulate Patron Access user",
+    "Id": "EmulatePatronAccessUser"
+  },
+  "OverrideOnlineCharges": {
+    "EnvVarDefinition": "DD_OVERRIDE_OLC",
+    "Text": "Override Online Charges",
+    "Id": "SessionStartEventOLCOverride"
+  },
+  "ProcessDocumentHistoryAsynchronously": {
+    "EnvVarDefinition": "",
+    "Text": "Process Document History Asynchronously",
+    "Id": "processDocumentHistoryAsynchronously"
+  },
+  "ProcessSearchHistoryAsynchronously": {
+    "EnvVarDefinition": "",
+    "Text": "Process Search History Asynchronously",
+    "Id": "processSearchHistoryAsynchronously"
+  },
+  "ProcessKMDocumentHistoryAsynchronously": {
+    "EnvVarDefinition": "",
+    "Text": "Process KM Document History Asynchronously",
+    "Id": "processKMDocumentHistoryAsynchronously"
+  },
+  "ProcessRIHistoryAsynchronously": {
+    "EnvVarDefinition": "",
+    "Text": "Process RI History Asynchronously",
+    "Id": "processRIHistoryAsynchronously"
+  },
+  "ProcessMatterBenchmarkingHistoryAsynchronously": {
+    "EnvVarDefinition": "",
+    "Text": "Process Matter Benchmarking History Asynchronously",
+    "Id": "processMatterBenchmarkingHistoryAsynchronously"
+  },
+  "ProcessBankruptcyHistoryAsynchronously": {
+    "EnvVarDefinition": "",
+    "Text": "Process Bankruptcy History Asynchronously",
+    "Id": "processBankruptcyHistoryAsynchronously"
+  },
+  "UseContentReleaseControls": {
+    "EnvVarDefinition": "",
+    "Text": "Use Content Release Controls",
+    "Id": "UseContentReleaseControl"
+  },
+  "NewCssInlinerForDocGather": {
+    "EnvVarDefinition": "",
+    "Text": "New CSS Inliner for DocGather",
+    "Id": "NewCssInLiner"
+  },
+  "WestClipAlertsAccess": {
+    "EnvVarDefinition": "",
+    "Text": "WestClip Alerts Access",
+    "Id": "WestClipAlertsAccess"
+  },
+  "IsAlertsAddressBookTurnedOn": {
+    "EnvVarDefinition": "",
+    "Text": "Is Alerts Address Book Turned On",
+    "Id": "IsAlertsAddressBookTurnedOn"
+  },
+  "IsAlertsBatchFunctionalityTurnedOn": {
+    "EnvVarDefinition": "",
+    "Text": "Is Alerts Batch Functionality Turned On",
+    "Id": "IsAlertsBatchFunctionalityTurnedOn"
+  },
+  "IsAlertsCalendaringTurnedOn": {
+    "EnvVarDefinition": "",
+    "Text": "Is Alerts Calendaring Turned On",
+    "Id": "IsAlertsCalendaringTurnedOn"
+  },
+  "IsAlertsFunctionalityOn": {
+    "EnvVarDefinition": "",
+    "Text": "Is Alerts Functionality On",
+    "Id": "IsAlertsFunctionalityTurnedOn"
+  },
+  "SkipAnonymousAuthentication": {
+    "EnvVarDefinition": "SKIP_ANONYMOUS_AUTH",
+    "Text": "Skip Anonymous Authentication",
+    "Id": "SkipAnonymousAuthenticationKey"
+  },
+  "ShowNapaContent": {
+    "EnvVarDefinition": "",
+    "Text": "Show Napa Content",
+    "Id": "ShowNapaContent"
+  },
+  "MatterManagementEnabled": {
+    "EnvVarDefinition": "",
+    "Text": "Matter Management Enabled",
+    "Id": "MatterManagementEnabled"
+  },
+  "PreventCategoryPageJurisdictionReset": {
+    "EnvVarDefinition": "",
+    "Text": "Prevent Category Page Jurisdiction Reset",
+    "Id": "PreventCategoryPageJurisdictionReset"
+  },
+  "AllowDefaultCategoryPageLongTail": {
+    "EnvVarDefinition": "",
+    "Text": "Allow Default Category Page Long Tail",
+    "Id": "AllowDefaultCategoryPageLongTail"
+  },
+  "AllowNewFacet": {
+    "EnvVarDefinition": "",
+    "Text": "Allow New Facet",
+    "Id": "AllowNewFacet"
+  },
+  "UseSSOAuth": {
+    "EnvVarDefinition": "",
+    "Text": "Use SSO Auth",
+    "Id": "UseSSOAuth"
+  },
+  "DisplayDynamicMessages": {
+    "EnvVarDefinition": "DD_DISPLAY_DINAMIC_MESSAGES",
+    "Text": "Display Dynamic Messages",
+    "Id": "DisplayDynamicMessages"
+  },
+  "SAPClientIdValidationTypePreferenceOverride": {
+    "EnvVarDefinition": "",
+    "Text": "SAP ClientId Validation Type Preference Override",
+    "Id": "ClientIdValidationPreferenceOverride"
+  },
+  "GlobalizationKeyModePreference": {
+    "EnvVarDefinition": "",
+    "Text": "Globalization Key Mode Preference",
+    "Id": "GlobalizationKeyMode"
+  },
+  "FeatureOverlay": {
+    "EnvVarDefinition": "DD_FEATURE_OVERLAY",
+    "Text": "Feature Overlay",
+    "Id": "IsFeatureOverlayEnabled"
+  },
+  "RDTypeaheadRoutingEnabled": {
+    "EnvVarDefinition": "DD_RD_TYPEAHEAD_ROUTING",
+    "Text": "R&D Typeahead Routing Enabled",
+    "Id": "IsRandDTypeaheadRoutingEnabled"
+  },
+  "RDSearchRoutingEnabled": {
+    "EnvVarDefinition": "DD_RD_SEARCH_ROUTING",
+    "Text": "R&D Search Routing Enabled",
+    "Id": "IsRandDSearchRoutingEnabled"
+  },
+  "UserPageHeaderV2Enabled": {
+    "EnvVarDefinition": "",
+    "Text": "Use Page Header V2",
+    "Id": "UsePageHeaderV2"
+  }
+}

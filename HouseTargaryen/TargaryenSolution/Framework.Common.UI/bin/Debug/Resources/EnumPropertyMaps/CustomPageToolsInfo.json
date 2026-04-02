@@ -1,0 +1,58 @@
+﻿{
+  // Maps CustomPageTools to WebElementInfo. WARNING!!! the 'Text' property is a text near proper checkbox in 'add tools' dialog, but the 'LocatorString'
+  // property is a locator of proper widget that appears on custom page after closing 'add tools' dialog
+  "Alerts": {
+    "Text": "Alerts",
+    "LocatorString": "id('cp_myAlertsToolSection') | //label[@for='co_CustomPages_Alerts']"
+  },
+
+  "CFR": {
+    "Text": "Code of Federal Regulations",
+    "LocatorString": "//label[@for = 'co_CustomPages_Cfr']"
+  },
+
+  "Favorites": {
+    "Text": "Favorites",
+    "LocatorString": "id('cp_favoritesToolSection')"
+  },
+
+  "Favourites": {
+    "Text": "Favourites",
+    "LocatorString": "//label[@for='co_CustomPages_Favorites']"
+  },
+
+  "FindCitation": {
+    "Text": "Find A Citation",
+    "LocatorString": "//label[@for='cp_FindCitation_input'] | //label[@for= 'co_CustomPages_FindCitation']"
+  },
+
+  "FindDocket": {
+    "Text": "Find Docket By Case Number",
+    "LocatorString": "id('co_findDocketsToolForm')"
+  },
+
+  "Folders": {
+    "Text": "Folders",
+    "LocatorString": "id('cp_foldersToolSection') | //label[@for='co_CustomPages_Folders']"
+  },
+
+  "HotDocuments": {
+    "Text": "Trending Legal Documents",
+    "LocatorString": "//div[@id='cp_hotDocumentsToolSection']"
+  },
+
+  "KeyCiteCitation": {
+    "Text": "Search KeyCite for a Citation",
+    "LocatorString": "//label[@for='cp_KeyCiteCitation_input'] | //label[@for='co_CustomPages_KeyCiteCitation']"
+  },
+
+  "MySubscription": {
+    "Text": "My Subscription",
+    "LocatorString": "//label[@for='co_CustomPages_MySubscription']"
+  },
+
+  "USCA": {
+    "Text": "United States Code Annotated",
+    "LocatorString": "id('cp_uscaToolSection')"
+  }
+}

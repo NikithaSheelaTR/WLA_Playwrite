@@ -1,0 +1,31 @@
+{
+  // Maps HistorySections to WebElementInfo
+  "GraphicalStatute": {
+    "Id": "coid_relatedInfo_dashboard_element_StatuteHistory_riLegislativeTimeline",
+    "Text": "Graphical Statute"
+  },
+  "Validity": {
+    "Id": "coid_relatedInfo_dashboard_element_StatuteHistory_kcValidity",
+    "Text": "Validity"
+  },
+  "Versions": {
+    "Id": "coid_relatedInfo_dashboard_element_StatuteHistory_riVersions",
+    "Text": "Versions"
+  },
+  "EditorsAndRevisorsNotes": {
+    "Id": "coid_relatedInfo_dashboard_element_StatuteHistory_riEditorialMaterials",
+    "Text": "Editor's and Revisor's Notes"
+  },
+  "BillDrafts": {
+    "Id": "coid_relatedInfo_dashboard_element_StatuteHistory_kcBillDrafts",
+    "Text": "Bill Drafts"
+  },
+  "LegislativeHistoryMaterials": {
+    "Id": "coid_relatedInfo_dashboard_element_StatuteHistory_kcLegislativeMaterials",
+    "Text": "Legislative History Materials"
+  },
+  "RegulatoryHistory": {
+    "Id": "coid_relatedInfo_dashboard_element_StatuteHistory_kcRegulatoryHistory",
+    "Text": "Regulatory History"
+  }
+}

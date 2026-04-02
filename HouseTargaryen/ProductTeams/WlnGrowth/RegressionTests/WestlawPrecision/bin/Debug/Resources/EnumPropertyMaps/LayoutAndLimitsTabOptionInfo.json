@@ -1,0 +1,37 @@
+{
+  // Maps LayoutAndLimitsTabOption to WebElementInfo
+  "Links": {
+    "Id": "co_delivery_linkColor",
+    "Text": "Links"
+  },
+
+  "FontSize": {
+    "Id": "co_delivery_fontSize",
+    "Text": "FontSize"
+  },
+
+  "Underline": {
+    "Id": "co_delivery_linkUnderline",
+    "Text": "Underline"
+  },
+
+  "Include": {
+    "Id": "coid_includeTheseElementsLabel",
+    "Text": "Include"
+  },
+
+  "CoverPageComment": {
+    "Id": "coid_DdcLayoutCoverPageComment",
+    "Text": "Cover Page Comment"
+  },
+
+  "Footnotes": {
+    "Id": "coid_includeFootnotesDropDown",
+    "Text": "Footnotes"
+  },
+
+  "PageRanges": {
+    "Id": "StarpageSection",
+    "Text": "Page Ranges"
+  }
+}

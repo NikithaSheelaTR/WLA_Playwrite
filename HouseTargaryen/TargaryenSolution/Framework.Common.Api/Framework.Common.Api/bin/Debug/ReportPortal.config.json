@@ -1,0 +1,50 @@
+{
+  "$schema": "https://raw.githubusercontent.com/reportportal/agent-net-vstest/master/ReportPortal.VSTest.TestLogger/ReportPortal.config.schema",
+  "enabled": true,
+  "server": {
+    "url": "https://reportportal-cr.1129.aws-int.thomsonreuters.com/api/v1",
+    "project": "wlr_westlaw_regression",
+    "apiKey": "reportportalmay5_m_60GwsxQses0_7ZO_hBlkzZRlvyOmG3-3WSrsu3AKwLWEW-EHd4PepZskZQGyqP"
+  },
+  "launch": {
+    "name": "VS Test Local Run",
+    "description": "Test run for CobaltRegressionTests solution",
+    "debugMode": false,
+    "rerun": false,
+    "attributes": [ "Local", "Technology:.Net", "platform:x64" ]
+  },
+  "rootNamespaces": [
+    "WlnIndigoRegression.Tests.Modules.Website.Delivery",
+    "WlnIndigoRegression.Tests.Modules.Website.Alerts",
+    "WlnIndigoRegression.Tests.Modules.Website.Core",
+    "WebUiRegressionTests.Tests.Products.Westlaw.Modules.Delivery",
+    "WebUiRegressionTests.Tests.Products.Westlaw.Modules.Alerts",
+    "WebUiRegressionTests.Tests.Products.Westlaw.Modules.Website.DocketTests",
+    "WebUiRegressionTests.Tests.Products.Westlaw.Modules.Website.OtherTests",
+    "WebUiRegressionTests.Tests.Products.Westlaw.Modules.Website.SignOnTests",
+    "WebUiRegressionTests.Tests.Products.Westlaw.Features.MedLit",
+    "WlnIndigoRegression.Tests.Features.MedicalLitigator",
+    "WlnIndigoRegression.Tests.Features.BLC.FilerSearch",
+    "WebUiRegressionTests.Tests.Products.Westlaw.Features.BusinessLawCenter.FilerSearch",
+    "WlnIndigoRegression.Tests.Modules.Search.Miscellaneous",
+    "WebUiRegressionTests.Tests.Products.Westlaw.Modules.Search.Tests.MiscellaneousTests",
+    "WebUiRegressionTests.Tests.Products.Westlaw.Modules.Search.Tests.GoldReportQueryTests",
+    "WebUiRegressionTests.Tests.Products.Westlaw.Modules.Document",
+    "WlnIndigoRegression.Tests.Modules.Document",
+    "WebUiRegressionTests.Tests.Products.Westlaw.Features.TaxMigrated.DocumentTests",
+    "WebUiRegressionTests.Tests.Products.Westlaw.Features.TaxMigrated.IrsTaxTests",
+    "WebUiRegressionTests.Tests.Products.Westlaw.Features.TaxMigrated.LiveChatTests",
+    "WebUiRegressionTests.Tests.Products.Westlaw.Features.TaxMigrated.SearchTests",
+    "WebUiRegressionTests.Tests.Products.Westlaw.Features.TaxMigrated.SmartBreadCrumbsTests",
+    "WebUiRegressionTests.Tests.Products.Westlaw.Features.TaxMigrated.WebsiteTests",
+    "WebUiRegressionTests.Tests.Products.Westlaw.Features.TaxMigrated.WlnTaxRedirectionTests",
+    "WlnIndigoRegression.Tests.Features.WLNTax",
+    "WebUiRegressionTests.Tests.Products.WestlawNextWebLinks",
+    "WlnIndigoRegression.Tests.EdgeFeatures.TRD.LegalAnalytics",
+    "WlnIndigoRegression.Tests.EdgeFeatures.TRD.TrDiscover",
+    "ApiRegressionTests.Tests.Products.Westlaw.EndpointTests",
+    "ApiRegressionTests.Tests.Products.Westlaw.AlertsMobileTests",
+    "WebUiRegressionTests.Tests.Products.Westlaw.Features.AlertsMobile",
+    "WebUiRegressionTests.Tests.Products.Analytics"
+  ]
+}

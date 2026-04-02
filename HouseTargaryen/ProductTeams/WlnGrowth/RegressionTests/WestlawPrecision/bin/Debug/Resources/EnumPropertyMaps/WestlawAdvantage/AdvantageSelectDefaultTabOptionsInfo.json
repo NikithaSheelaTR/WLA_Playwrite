@@ -1,0 +1,51 @@
+﻿{
+  // Maps SelectDefaultTabOptions to WebElementInfo
+  "DeepAIResearch": {
+    "Text": "Deep AI Research",
+    "Id": "userGroupPreferences-AIDeepResearch"
+  },
+  "PrecisionResearch": {
+    "Text": "Precision Research",
+    "Id": "userGroupPreferences-PrecisionResearch"
+  },
+  "ContentTypes": {
+    "Text": "Content types",
+    "Id": "userGroupPreferences-Contenttypes"
+  },
+  "FederalMaterials": {
+    "Text": "Federal materials",
+    "Id": "userGroupPreferences-Federalmaterials"
+  },
+  "StateMaterials": {
+    "Text": "State materials",
+    "Id": "userGroupPreferences-Statematerials"
+  },
+  "PracticeAreas": {
+    "Text": "Practice areas",
+    "Id": "userGroupPreferences-Practiceareas"
+  },
+  "Tools": {
+    "Text": "Tools",
+    "Id": "userGroupPreferences-Tools"
+  },
+  "MyContent": {
+    "Text": "My content",
+    "Id": "userGroupPreferences-Mycontent"
+  },
+  "CustomPages": {
+    "Text": "Custom pages",
+    "Id": "myContentPreferences_userGroupPreferences-Custompages"
+  },
+  "Favorites": {
+    "Text": "Favorites",
+    "Id": "myContentPreferences_userGroupPreferences-Favorites"
+  },
+  "Folders": {
+    "Text": "Folders",
+    "Id": "myContentPreferences_userGroupPreferences-Folders"
+  },
+  "History": {
+    "Text": "History",
+    "Id": "myContentPreferences_userGroupPreferences-History"
+  }
+}

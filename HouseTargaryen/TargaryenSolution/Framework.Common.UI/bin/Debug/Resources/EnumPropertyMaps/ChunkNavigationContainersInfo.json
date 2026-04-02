@@ -1,0 +1,12 @@
+{
+    // Maps ChunkNavigationContainers to WebElementInfo
+    "BottomChunkContainer": {
+        "LocatorString": "//div[@class = 'co_chunkPagination' and contains(@id, 'ottom')]"
+    },
+    "TopChunkContainer": {
+        "LocatorString": "//div[@class = 'co_chunkPagination' and contains(@id, 'op')]"
+    },
+    "StatutesCompareChunkContainer": {
+        "LocatorString": "//div[@class = 'co_chunkPagination']"
+    }
+}

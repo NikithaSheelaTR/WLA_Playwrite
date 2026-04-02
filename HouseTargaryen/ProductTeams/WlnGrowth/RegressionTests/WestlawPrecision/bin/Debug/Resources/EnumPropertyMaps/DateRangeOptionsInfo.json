@@ -1,0 +1,106 @@
+﻿{
+    // Maps DateRangeOptions enumeration to DateRangeOptionsModel
+    "All": {
+        "LocatorString": ".//li[@class='co_atState'] | //input[contains(@id, 'radio_all')]",
+        "Text": "All",
+        "OptionCountLocator": ".//label[@class='co_count_all'] | //label[contains(@class, 'co_count_all')]",
+        "FirstFieldLocatorString": "",
+        "SecondFieldLocatorString": ""
+    },
+    "All90Days": {
+        "LocatorString": ".//*[@id='co_dateFacet_all']",
+        "Text": "All (90 days)",
+        "OptionCountLocator": "",
+        "FirstFieldLocatorString": "",
+        "SecondFieldLocatorString": ""
+    },
+    "Last7Days": {
+        "LocatorString": ".//*[@id='co_dateWidgetSelectRangeLink_DA_last7days']",
+        "Text": "Last 7 days",
+        "OptionCountLocator": "",
+        "FirstFieldLocatorString": "",
+        "SecondFieldLocatorString": ""
+    },
+    "Last30Days": {
+        "LocatorString": ".//*[@id='co_dateWidgetSelectRangeLink_DA_last30days'] | .//*[@id='co_dateWidgetSelectRangeLink_1_30']",
+        "Text": "Last 30 days",
+        "OptionCountLocator": "",
+        "FirstFieldLocatorString": "",
+        "SecondFieldLocatorString": ""
+    },
+    "Last60Days": {
+        "LocatorString": ".//*[@id='co_dateWidgetSelectRangeLink_DA_last60days']",
+        "Text": "Last 60 days",
+        "OptionCountLocator": "",
+        "FirstFieldLocatorString": "",
+        "SecondFieldLocatorString": ""
+    },
+    "Last90Days": {
+        "LocatorString": ".//*[@id='co_dateWidgetSelectRangeLink_DA_last90days']",
+        "Text": "Last 90 days",
+        "OptionCountLocator": "",
+        "FirstFieldLocatorString": "",
+        "SecondFieldLocatorString": ""
+    },
+    "Last6Months": {
+        "LocatorString": ".//*[contains(@id, 'co_dateWidgetSelectRangeListItem') and (contains(@id, 'last6mo') or contains(@id, 'last6Month'))] | //input[contains(@id, 'radio_last6mo')]",
+        "Text": "Last 6 months",
+        "OptionCountLocator": ".//*[contains(@id,'co_dateWidget') and contains(@id,'_last6mo') or @id='co_dateWidgetCount_RelatedInfo_last6Months'] | .//label[contains(@class, 'co_count_last6mo')]",
+        "FirstFieldLocatorString": "",
+        "SecondFieldLocatorString": ""
+    },
+    "Last12Months": {
+        "LocatorString": ".//*[contains(@id, 'co_dateWidgetSelectRangeListItem') and (contains(@id, 'last12mo') or contains(@id, 'last12Month'))] | //input[contains(@id, 'radio_last12mo')]",
+        "Text": "Last 12 months",
+        "OptionCountLocator": ".//*[contains(@id,'co_dateWidget') and contains(@id,'_last12mo') or @id='co_dateWidgetCount_RelatedInfo_last12Months'] | .//label[contains(@class, 'co_count_last12mo')]",
+        "FirstFieldLocatorString": "",
+        "SecondFieldLocatorString": ""
+    },
+    "Last3Years": {
+        "LocatorString": "//*[contains(@id, 'co_dateWidgetSelectRangeListItem') and (contains(@id, 'last3yr') or contains(@id, 'last3Year'))] | //input[contains(@id, 'radio_last3yr')]",
+        "Text": "Last 3 years",
+        "OptionCountLocator": ".//*[contains(@id,'co_dateWidget') and contains(@id,'_last3yr') or @id='co_dateWidgetCount_RelatedInfo_last3Years'] | .//label[contains(@class, 'co_count_last3yr')]",
+        "FirstFieldLocatorString": "",
+        "SecondFieldLocatorString": ""
+    },
+    "AllDatesBefore": {
+        "LocatorString": ".//li[contains(@id, 'co_dateWidgetCustomRangeExpando_') and contains(@id, '_before')] | //input[contains(@id, 'radio_customRange_before')]",
+        "Text": "All Dates Before",
+        "OptionCountLocator": "",
+        "FirstErrorLocatorString": ".//*[@id='co_dateWidgetCustomRangeError_enhancedDate_before' or @id='co_dateWidgetCustomRangeError_RelatedInfo_before'] | .//div[contains(@class, 'co_dateWidget_input_error_before')] | //span[contains(@id, 'groupNameError_message_text_before')]",
+        "FirstFieldLocatorString": ".//*[contains(@id,'co_dateWidgetCustomRangeText_') and contains(@id,'_before')] | //input[contains(@id, 'co_dateWidget_input_before')]",
+        "SecondFieldLocatorString": "",
+        "SubmitButtonLocatorString": ".//li[contains(@id, 'co_dateWidgetCustomRangeExpando_') and contains(@id, '_before')]//input[contains(@id,'DoneButton')] | //button[contains(@class, 'a11yDateWidget-submit')]"
+    },
+    "AllDatesAfter": {
+        "LocatorString": "//li[contains(@id, 'co_dateWidgetCustomRangeExpando_') and contains(@id, '_after')] | //label[contains(text(), 'All Dates After')]",
+        "Text": "All Dates After",
+        "OptionCountLocator": "",
+        "FirstErrorLocatorString": ".//*[@id='co_dateWidgetCustomRangeError_enhancedDate_after' or @id='co_dateWidgetCustomRangeError_RelatedInfo_after'] | .//div[contains(@class, 'co_dateWidget_input_error_after')] | //span[contains(@id, 'groupNameError_message_text_after')]",
+        "FirstFieldLocatorString": "//*[contains(@id,'co_dateWidgetCustomRangeText_') and contains(@id,'_after')] | //input[contains(@id, 'co_dateWidget_input_after')]",
+        "SecondFieldLocatorString": "",
+        "SubmitButtonLocatorString": ".//li[contains(@id, 'co_dateWidgetCustomRangeExpando_') and contains(@id, '_after')]//input[contains(@id,'DoneButton')] | //input[contains(@id, 'co_dateWidget_input_on')]"
+    },
+    "SpecificDate": {
+        "LocatorString": ".//li[contains(@id, 'co_dateWidgetCustomRangeExpando_') and contains(@id, '_on')] | //label[contains(text(), 'Specific Date')]",
+        "Text": "Specific Date",
+        "OptionCountLocator": "",
+        "FirstErrorLocatorString": ".//*[@id='co_dateWidgetCustomRangeError_enhancedDate_on' or @id='co_dateWidgetCustomRangeError_RelatedInfo_on'] | .//div[contains(@class, 'co_dateWidget_input_error_on')] | //span[contains(@id, 'groupNameError_message_text_on')]",
+        "FirstFieldLocatorString": ".//*[contains(@id,'co_dateWidgetCustomRangeText_') and contains(@id,'_on')] | //input[contains(@id, 'co_dateWidget_input_on')]",
+        "SecondFieldLocatorString": "",
+        "SubmitButtonLocatorString": "//li[contains(@id, 'co_dateWidgetCustomRangeExpando_') and contains(@id, '_on')]//input[contains(@id,'DoneButton')] | //input[contains(@id, 'co_dateWidget_input_on')]"
+    },
+    "DateRange": {
+        "LocatorString": ".//li[contains(@id, 'co_dateWidgetCustomRangeExpando_') and contains(@id, '_fromUntil')] | //label[contains(text(), 'Date Range')]",
+        "OptionCountLocator": "",
+        "FirstErrorLocatorString": ".//*[@id='co_dateWidgetCustomRangeError_enhancedDate_fromUntil' or @id='co_dateWidgetCustomRangeError_RelatedInfo_fromUntil'] | .//div[contains(@class, 'co_dateWidget_input_error_fromUntil')] | //span[contains(@id, 'groupNameError_message_text_fromUntil')]",
+        "FirstFieldLocatorString": ".//*[contains(@id,'co_dateWidgetCustomRangeText_') and contains(@id,'_fromUntil')] | .//*[@class='co_input_fromUntil']",
+        "SecondFieldLocatorString": ".//*[contains(@id,'co_dateWidgetCustomRangeUntilText_') and contains(@id,'_fromUntil')] | .//*[@class='co_input_fromUntil_until']",
+        "SecondErrorLocatorString": ".//*[@id='co_dateWidgetCustomRangeUntilError_enhancedDate_fromUntil' or @id='co_dateWidgetCustomRangeUntilError_RelatedInfo_fromUntil'] | .//div[contains(@class, 'co_dateWidget_input_error_fromUntil_until')] | //span[contains(@id, 'groupNameError_message_text_fromUntil_until')]",
+        "SubmitButtonLocatorString": ".//li[contains(@id, 'co_dateWidgetCustomRangeExpando_') and contains(@id, '_fromUntil')]//input[contains(@id,'DoneButton')] | //button[contains(@class, 'a11yDateWidget-submit')]"
+    },
+    "Today": {
+        "LocatorString": "//input[@id='selectOptions_today'] | //*[text()='Today']",
+        "Text": "Today"
+    }
+}

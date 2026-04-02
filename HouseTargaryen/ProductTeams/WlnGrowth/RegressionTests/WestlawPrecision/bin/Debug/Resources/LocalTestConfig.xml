@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <appSettings>
+    <!-- PRIMARY EXECUTION PARAMETERS -->
+    <!-- REQ. Browser alias. Valid values are:
+    IE9, IE10, IE11, FFA, FFB, FF, EDGE, CHC, CH, SF, API, CUI, RMCH-->
+    <add key="TEST_BROWSER" value="CH" />
+    <!-- REQ. Valid values are:
+    Ci, CiClient, Demo, DemoClient, DemoB, DemoPc1, Qed, QedA, QedB, HotProdQa, HotProd, Prod, ProdA, ProdB. -->
+    <add key="TEST_ENVIRONMENT" value="Demo" />
+	  <add key="IS_FED_RAMP" value="No" />
+	  <!-- OPT. The culture of tests (affects G11n aspect of a process context). Valid values must be in the form: xx-YY -->
+    <add key="TEST_CULTURE" value="en-US" />
+    <add key="INIT_WORKBENCH_DATA" value="false" />
+    <!-- REQ. Valid values are:
+    ConsoleAndFile, Console, ReportPortal -->
+    <add key="LOGGER_NAME" value="Console" />
+    <!-- Remote driver URI. Valid uri pattern is "http://{ip}:{port}/wd/hub/".
+    Default value "http://127.0.0.1:4444/wd/hub/" is taken from TestEnvironmentRepository.xml -->
+    <add key="REMOTE_DRIVER_URI" value="" />
+    <!-- Path to the Selenium Drivers Folder -->
+    <add key="SELENIUM_DRIVERS_DIR" value="C:\SeleniumDrivers" />
+
+    <!-- ROUTING SETTINGS PAGE -->
+    <!-- OPT. A comma/semicolon separated list of FACs to grant. -->
+    <add key="FACS_ON" value="" />
+    <!-- OPT. A comma/semicolon separated list of FACs to deny. -->
+    <add key="FACS_OFF" value="" />
+    <!-- OPT. A comma/semicolon separated list of IACs to turn on. -->
+    <add key="IACS_ON" value="" />
+    <!-- OPT. A comma/semicolon separated list of IACs to turn off. -->
+    <add key="IACS_OFF" value="" />
+    <!-- OPT. A comma/semicolon separated list of Supported Features to forcibly turn on. -->
+    <add key="SUPPORTED_FEATURES_ON" value="" />
+    <!-- OPT. A comma/semicolon separated list of Supported Features to forcibly turn off. -->
+    <add key="SUPPORTED_FEATURES_OFF" value="" />
+    <!-- OPT. A category page collection set name. Valid values are:
+    w_cb_catpagesqa_cs, w_cb_catpagestst_cs, w_cb_catpages_cs, w_cb_app_cs, w_cb_drafting_catpages_cs, w_cb_ptn_catpagestst_cs,
+    w_cb_ptn_catpages_cs, w_wblks_catpagestst_cs, w_wblks_catpages_cs. -->
+    <add key="DEFAULT_CPCS" value="" />
+    <!-- OPT. A PMD version. -->
+    <add key="PMD_DATA_VERSION" value="" />
+    <!-- OPT. A path to a DataRoom. -->
+    <add key="DATAROOM" value="" />
+    <!-- OPT. A path to a DataRoom Bulk. -->
+    <add key="DATAROOMBULK" value="" />
+    <!-- OPT. A value forcing DataRoom region awareness. -->
+    <add key="ISDATAROOMREGIONENABLED" value="" />
+    <!-- A pool of passwords to use when checking out a password from a password DB.-->
+    <add key="PASSWORD_POOL" value="IndigoPremium" />
+    <add key="DD_FEATURE_OVERLAY" value="" />
+    <add key="DD_OVERRIDE_OLC" value="None" />
+    <!-- OPT. A value forcing Enable CIAM awareness. -->
+    <add key="ENABLE_CIAM" value="false" />
+    <!-- OPT. A value forcing Enable CIAM awareness. -->
+    <add key="BLOCK_CIAM" value="true" />
+    <!-- QRT REPORTING PARAMETERS -->
+    <!-- REQ. Business case name in QRT. -->
+    <add key="BUSINESS_CASE_NAME" value="Module Regression Testing" />
+    <!-- REQ. A comma/semicolon separated list of Cobalt product IDs or tags. Valid values are:
+    CobaltSessionInfo, Concourse, FirmCentral, GovtSites, TaxNetPro3, WestlawNext, WlAnalytics, WlFormBuilder,
+    WlnCampus, WlnCanada, WlnCorrectional, WlnLinks, WlnMobile, WlnPatron, WlnTax, DraftingAssistant, CaseNotebook, LegalServices-->
+    <add key="TEST_PRODUCTS" value="WestlawNext" />
+    <!-- OPT. A comma/semicolon separated list of Cobalt module IDs or tags. Valid values are:
+    Adc, Alerts, AlertsEngine, CobaltServices, DataOrchestration, Document, EntityId, Foldering, FormsAssembly,
+    Gateway, Image, LinkResolver, RelatedInformation, Report, Search, StaticContent, Uds, WebContent, Website, Security-->
+    <add key="TEST_MODULES" value="Website" />
+    <!-- REQ. A name of the suite to be reflected in QRT reports. -->
+    <add key="TEST_SUITE" value="LocalTestRun" />
+    <!-- OPT.  A comma/semicolon separated list of additional QRT tags to label a test run. -->
+    <add key="QRT_TAGS" value="" />
+    <add key="TEST_EXECUTION_DIR" value="" />
+    <!-- REQ. A comma/semicolon separated list of QRT report addressees. -->
+    <add key="QRT_RESULTS_EMAIL" value="wlnmr.results@thomsonreuters.com" />
+    <add key="RAS_CONVERSATION_HOST" value="" />
+  </appSettings>
+</configuration>

@@ -1,0 +1,28 @@
+﻿{
+	"term": "",
+	"contentTypes": [
+		"cases",
+		"dockets",
+		"statutes",
+		"regulations",
+		"admindecisions",
+		"analyticals",
+		"pendingstatutes",
+		"othercourtdocuments",
+		"categorypages",
+		"legalprofessionals",
+		"organizations",
+		"westlawanswers_it_depends_question",
+		"westlawanswers_static_questions_typeahead",
+		"legal_analytics",
+		"athens_legal_issue",
+		"athens_fact_pattern",
+		"athens_cause_of_action",
+		"tools"
+	],
+	"jurisdictions": [
+		"ALLCASES"
+	],
+	"boostSubType": "",
+	"trdRefineEnabled": false
+}

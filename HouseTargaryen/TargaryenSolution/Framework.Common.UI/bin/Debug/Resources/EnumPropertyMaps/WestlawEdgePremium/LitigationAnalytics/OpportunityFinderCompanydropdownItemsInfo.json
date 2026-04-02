@@ -1,0 +1,11 @@
+﻿{
+  "PublicOnly": {
+    "Text" : "Public only"
+  },
+  "PrivateOnly": {
+    "Text": "Private only"
+  },
+  "AllCompanies": {
+    "Text": "All companies"
+  }
+}

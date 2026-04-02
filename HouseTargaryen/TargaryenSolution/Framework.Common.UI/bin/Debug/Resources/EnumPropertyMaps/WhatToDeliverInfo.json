@@ -1,0 +1,107 @@
+{
+    // Maps WhatToDeliver to WebElementInfo
+    "AiAssistedResearch": {
+        "Id": "research",
+        "Text": "Research"
+    },
+    "CompareView": {
+        "Id": "co_deliveryWhatToDeliverCompareView",
+        "Text": "Compare view"
+    },
+    "CompleteView": {
+        "Id": "co_deliveryWhatToDeliverCompleteView",
+        "Text": "Complete Report"
+    },
+    "CurrentView": {
+        "Id": "co_deliveryWhatToDeliverCurrentView",
+        "Text": "Current View"
+    },
+    "DocAnalyzerFullReport": {
+        "Id": "co_deliveryWhatToDeliverDocumentAnalyzerReport",
+        "Text": "Full report",
+        "LocatorString": "//li[@id='co_delivery_da_fullReport']"
+    },
+    "DocAnalyzerWestlawDocument": {
+        "Id": "co_deliveryWhatToDeliverDocumentOnly",
+        "Text": "Westlaw Document",
+        "LocatorString": "//li[@id='co_delivery_document']"
+    },
+    "DocAnalyzerWestlawDocuments": {
+        "Id": "co_deliveryWhatToDeliverDocumentOnly",
+        "Text": "Westlaw Documents",
+        "LocatorString": "//li[@id='co_delivery_documents']"
+    },
+    "DocumentAndAllAnnotations": {
+        "Id": "co_deliveryWhatToDeliverDocumentAndAllAnnotations",
+        "Text": "Document and All Annotations"
+    },
+    "DocumentAndMyAnnotations": {
+        "Id": "co_deliveryWhatToDeliverDocumentAndPersonalAnnotations",
+        "Text": "Document and My Annotations"
+    },
+    "DocumentAndSidebarsOnly": {
+        "Id": "co_deliveryWhatToDeliverDocumentAndAnnotationsWithSidebarsOnly",
+        "Text": "Document and Sidebars Only"
+    },
+  "Documents": {
+    "Id": "co_deliveryWhatToDeliverDocumentOnly",
+    "Text": "Resource documents",
+    "LocatorString": "//li[@id='co_delivery_documents']"
+  },
+    "FullDocket": {
+        "Id": "co_deliveryWhatToDeliverDocumentOnly",
+        "Text": "Full Docket"
+    },
+    "FullDockets": {
+        "Id": "co_deliveryWhatToDeliverDocumentOnly",
+        "Text": "Full Dockets"
+    },
+    "HeadingsAndNotesOfDecisions": {
+        "Id": "co_deliveryWhatToDeliverList",
+        "Text": "Headings and Notes of Decisions",
+        "LocatorString": "//label[@for='co_deliveryWhatToDeliverList']"
+    },
+    "HeadingsOnly": {
+        "Id": "co_deliveryWhatToDeliverNotesOfDecisionsBlueLines",
+        "Text": "Headings only",
+        "LocatorString": "//label[@for='co_deliveryWhatToDeliverNotesOfDecisionsBlueLines']"
+    },
+    "IncludeUnverifiedCitations": {
+        "Id": "coid_da_include_unverified_citations",
+        "Text": "Include unverified citations",
+        "LocatorString": "//input[@id='coid_da_include_unverified_citations']"
+    },
+    "IncludeCitationIssues": {
+        "Id": "coid_da_include_potential_citation_errors",
+        "Text": "Include citation issues",
+        "LocatorString": "//input[@id='coid_da_include_potential_citation_errors']"
+    },
+    "ListOfHeadnotes": {
+        "Id": "co_deliveryWhatToDeliverList",
+        "Text": "List of Headnotes"
+    },
+    "ListOfItems": {
+        "Id": "co_deliveryWhatToDeliverList",
+        "Text": "List of items"
+    },
+    "LongFormReport": {
+        "Id": "co_deliveryWhatToDeliverLongForm",
+        "Text": "Long Form Report"
+    },
+    "OutlineOfCurrentView": {
+        "Id": "co_deliveryWhatToDeliverTocOutline",
+        "Text": "Outline of Current View"
+    },
+    "ResearchSummary": {
+        "Id": "co_deliveryWhatToDeliverList",
+        "Text": "Research Summary"
+    },
+    "SideBySideDifferences": {
+        "Id": "co_deliveryWhatToDeliverSideBySideCompareDifferent",
+        "Text": "Side by side differences"
+    },
+    "SideBySideSimilarities": {
+        "Id": "co_deliveryWhatToDeliverSideBySideCompareSimilar",
+        "Text": "Side by side similarities"
+    }
+}

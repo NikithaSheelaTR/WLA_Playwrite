@@ -1,0 +1,15 @@
+﻿{
+  // Maps BusinessLawCenterLinks to BaseTextInfo
+  "BondOfferingSummaries": {
+    "Text": "Bond Offering Summaries"
+  },
+  "EdgarAllFormsAndExhibits": {
+    "Text": "EDGAR All Forms & Exhibits"
+  },
+  "LoanSummaries": {
+    "Text": "Loan Summaries"
+  },
+  "OfferingSummariesEdgar": {
+    "Text": "Offering Summaries (EDGAR)"
+  }
+}

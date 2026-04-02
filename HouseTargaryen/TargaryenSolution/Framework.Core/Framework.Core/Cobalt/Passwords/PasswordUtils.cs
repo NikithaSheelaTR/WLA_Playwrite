@@ -17,9 +17,7 @@
     public static class PasswordUtils
     {
         private const string DevDatabase = @"Server=eg-dbasqldv-a04.tlr.thomson.com;User ID=cobaltqed;Password=c@baltQEd!;database=password_pool";
-        private static readonly string ProdDatabase = @"Server=cr-pp.1129.aws-int.thomsonreuters.com;User ID=cobaltqeduser;Password="
-            + (Environment.GetEnvironmentVariable("PROD_DB_VALUE") ?? "c@baltQEd!")
-            + ";database=password_pool";
+        private static string ProdDatabase => $@"Server=cr-pp.1129.aws-int.thomsonreuters.com;User ID=cobaltqeduser;Password={Environment.GetEnvironmentVariable("PROD_DB_VALUE")};database=password_pool";
 
         /// <summary>
         /// Enumerates all valid environments for the Password Database.

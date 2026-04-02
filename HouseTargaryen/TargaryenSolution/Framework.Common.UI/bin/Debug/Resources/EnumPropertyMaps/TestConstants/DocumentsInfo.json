@@ -1,0 +1,157 @@
+﻿{
+  // Maps Documents to DocumentModelInfo
+  "BriggsVState": {
+    "Guid": "I12f121354fad11da974abd26ac2a6030",
+    "Title": "Briggs v. State"
+  },
+  "BuckleyVValeo": {
+    "Guid": "I72eb9a5f9c9a11d991d0cc6b54f12d4d",
+    "Title": "Buckley v. Valeo"
+  },
+  "ButterGradingLabeling": {
+    "Guid": "NEB60EB906E7811DB9AD8EF95047E70B1",
+    "Paragraphs": [ "M.S.A. § 32.475" ],
+    "Title": "32.475. Butter, grading and labeling"
+  },
+  "CityEnglewoodVStellaTurner": {
+    "Guid": "I1468388ee6c211dbaf8dafd7ee2b8b26",
+    "Title": "CITY OF ENGLEWOOD, Ohio, Plaintiff, v. Stella TURNER, Defendant; Stella Turner, Plaintiff, v. City of Englewood, Ohio, Defendant."
+  },
+  "ColoradoVBledsoe": {
+    "Guid": "I47510336f5a911d983e7e9deff98dc6f",
+    "Title": "Colorado Common Cause v. Bledsoe"
+  },
+  "DistrictNoFourteen": {
+    "Guid": "N04565DC0E7FC11E28334F7879D884957",
+    "Title": "§ 92.15d. District No. 14--Counties of Tulsa and Pawnee--Electoral divisions"
+  },
+  "EchestnutCon": {
+    "Guid": "I275C0C835E6C11E4A795AC035416DA91",
+    "Title": "111 E CHESTNUT CON v. GOULETAS NATEL MAT"
+  },
+  "GoogleLlcProfile": {
+    "Citation": "Google LLC",
+    "Guid": "I3e81c3e1d57011e08b05fdf15589d8e8",
+    "Title": "Hoover's Company Profile"
+  },
+  "HickeyVWelch": {
+    "Guid": "Ic6e840eeee7e11d98ac8f235252e36df",
+    "Title": "Hickey v. Welch"
+  },
+  "HydropowerRegulatory": {
+    "Guid": "I79141FA003B611E3BE04C82EF54AA7F9",
+    "Title": "HYDROPOWER REGULATORY EFFICIENCY ACT OF 2013"
+  },
+  "InterimReport": {
+    "Citation": "BP PLC",
+    "Guid": "i7CF126E4DCA94B60A2BB0E0385934F55",
+    "Title": "Interim Report"
+  },
+  "SystemAndMethodForPushing": {
+    "Citation": "US PAT 6389457",
+    "Guid": "I2a4a07ddad0511deb08de1b7506ad85b",
+    "Title": "SYSTEM AND METHOD FOR PUSHING INFORMATION FROM A HOST SYSTEM TO A MOBILE DATA COMMUNICATION DEVICE"
+  },
+  "TelephonicInterfaceStatisticalAnalysisSystem": {
+    "Citation": "US PAT 6678360",
+    "Guid": "I63771115abc811de8bf6cd8525c41437",
+    "Title": "TELEPHONIC-INTERFACE STATISTICAL ANALYSIS SYSTEM"
+  },
+  "KavanaughVStump": {
+    "Citation": "592 So.2d 1231",
+    "Guid": "I5a22eea00e3311d9821e9512eb7d7b26",
+    "Title": "Kavanaugh v. Stump"
+  },
+  "KmAppealsTribunal": {
+    "Guid": "8ae3c64b-d5cd-4eb2-85af-d27e95bb43d9",
+    "Title": "Appeals Tribunal Affirms ALJ Ruling Requiring New York"
+  },
+  "KmAssetPurchase": {
+    "Guid": "f0f1598a-7777-4221-8b9d-110b70d8ab37",
+    "Title": "Text - Asset Purchase of Sales Agreement"
+  },
+  "KmThomsonFinancials": {
+    "Guid": "c96d197a-0fe8-426a-a289-ebfa949e4ffd",
+    "Title": "THOMSON FINANCIAL’S FIRST BRIDGE NOTE DECEMBER 1, 2008_jims"
+  },
+  "KmQuokka": {
+    "Guid": "b6009326-cb2e-467a-91df-7f2863a3e8d7",
+    "Title": "Text - Quokka Sports Lease"
+  },
+  "LawsonDutchHeritageFarms": {
+    "Guid": "I14a902834cbe11dc8200d0063168b01f",
+    "Title": "Lawson v. Dutch Heritage Farms, Inc."
+  },
+  "MeritBrief": {
+    "Guid": "I8d5685c0babe11d887e4b40cc29d71b2",
+    "Paragraphs": [
+      "Merit Brief of Amicus Curiae Ohio Attorney General Betty D. Montgomery Supporting Appellant",
+      "For all of the above reasons, the judgment of the court of appeals should be reversed.",
+      "These liberties are the core of our system of government, and this general statement is the philosophical basis for the more specific rights enumerated in Ohio's Bill of Rights."
+    ],
+    "Title": "Merit Brief of Amicus Curiae Ohio Attorney General Betty D. Montgomery Supporting Appellant"
+  },
+  "NetworkCommerceVMicrosoft": {
+    "Guid": "Iff3c104420a511da8cc9b4c14e983401",
+    "Title": "Network Commerce, Inc. v. Microsoft Corp."
+  },
+  "OneEnactedLegislation": {
+    "Guid": "NC13C1D90032011E9AA188B4EA12FD34D",
+    "Title": "400.704. Definitions; terms commencing “c” to “f”"
+  },
+  "PeopleVCherry": {
+    "Guid": "I33f87192fe0211d9b386b232635db992",
+    "Title": "People v. Cherry"
+  },
+  "PeopleVHelleman": {
+    "Guid": "Ib595ed15fe0a11d9bf60c1d57ebc853e",
+    "Title": "People v. Helleman"
+  },
+  "RecordsCircuitCourtClerks": {
+    "Guid": "NCA40BB50DAFA11DA9F00E4F82CEBF25B",
+    "Title": "105/16. Records; circuit court clerks"
+  },
+  "RoeVWade": {
+    "Guid": "I32a9810a9c2611d993e6d35cc61aab4a",
+    "Title": "Roe v. Wade"
+  },
+  "RostkerVGoldberg": {
+    "Guid": "Id4c4761b9c1d11d991d0cc6b54f12d4d",
+    "Title": "Rostker v. Goldberg"
+  },
+  "SenshuElectricCoLtd": {
+    "Guid": "I3641197dde3f11e598dc8b09b4f043e0",
+    "Paragraphs": [ "Open Market Purchase" ],
+    "Title": "Senshu Electric Co Ltd | Senshu Electric Co Ltd"
+  },
+  "SethcostVDrbul": {
+    "Citation": "669 So.2d 1076",
+    "Guid": "I51c429830e6b11d9bde8ee3d49ead4ec",
+    "Title": "Sethscot Collection, Inc. v. Drbul"
+  },
+  "SpeightVPorter": {
+    "Guid": "I50416c990ed811d9bde8ee3d49ead4ec",
+    "Title": "Speight v. Porter"
+  },
+  "StateOfCaliforniaSantaClaraCounty": {
+    "Guid": "I617DAA00EF7F11E79206F5352E0ADFE9",
+    "Title": "STATE OF CALIFORNIA SANTA CLARA COUNTY"
+  },
+  "SupremeCourtOfTheUnitedStates": {
+    "Guid": "I1C14F0008CEF11EDAAB2FD186D5F7185",
+    "Title": "SUPREME COURT OF THE UNITED STATES Guidelines for the Submission of Documents to the Supreme Court's Electronic Filing System"
+  },
+  "TempletonVCreative": {
+    "Citation": "552 So.2d 288",
+    "Guid": "If7753ab50dbf11d9821e9512eb7d7b26",
+    "Title": "Templeton v. Creative Loafing Tampa, Inc."
+  },
+  "TwoEnactedLegislations": {
+    "Guid": "N04DFF1D2C28E11E8A54D9BE20604F6F2",
+    "Title": "§ 301. Definitions"
+  },
+  "WilsonVMoreau": {
+    "Guid": "I2177d8d8266f11dcaf8dafd7ee2b8b26",
+    "Title": "Wilson v. Moreau"
+  }
+}

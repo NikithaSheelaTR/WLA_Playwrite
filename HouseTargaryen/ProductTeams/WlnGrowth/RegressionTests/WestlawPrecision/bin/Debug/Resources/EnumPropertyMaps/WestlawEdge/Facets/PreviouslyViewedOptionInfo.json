@@ -1,0 +1,39 @@
+﻿{
+  // Maps PreviouslyViewedOption to WebElementInfo
+  "AllResults": {
+    "LocatorString": ".//*[text()='All results']",
+    "Text": "All results"
+  },
+  "AllResultsInFrench": {
+    "LocatorString": ".//*[text()='Tous les résultats']",
+    "Text": "Tous les résultats"
+  },
+  "Last24Hours": {
+    "LocatorString": ".//*[text()='Last 24 hours']",
+    "Text": "Last 24 hours"
+  },
+  "Last24HoursFrench": {
+    "LocatorString": ".//*[text()='Dernières 24 heures']",
+    "Text": "Dernières 24 heures"
+  },
+  "Last7Days": {
+    "LocatorString": ".//*[text()='Last 7 days']",
+    "Text": "Last 7 days"
+  },
+  "Last14Days": {
+    "LocatorString": ".//*[text()='Last 14 days']",
+    "Text": "Last 14 days"
+  },
+  "Last30Days": {
+    "LocatorString": ".//*[text()='Last 30 days']",
+    "Text": "Last 30 days"
+  },
+  "NotViewed": {
+    "LocatorString": ".//*[text()='Not viewed']",
+    "Text": "Not viewed"
+  },
+  "NotViewedFrench": {
+    "LocatorString": ".//*[text()='Non consulté']",
+    "Text": "Non consulté"
+  }
+}

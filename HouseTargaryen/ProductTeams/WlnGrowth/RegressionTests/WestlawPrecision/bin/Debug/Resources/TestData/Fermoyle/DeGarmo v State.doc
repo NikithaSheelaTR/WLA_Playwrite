@@ -1,0 +1,2811 @@
+{\rtf1 \ansi 
+{\colortbl;
+\red0\green0\blue0;
+\red255\green255\blue255;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red0\green0\blue255;
+\red0\green255\blue255;
+\red255\green0\blue255;
+\red255\green255\blue0;
+\red0\green0\blue128;
+\red0\green128\blue128;
+\red0\green128\blue0;
+\red128\green0\blue128;
+\red128\green0\blue0;
+\red128\green128\blue0;
+\red128\green128\blue128;
+\red192\green192\blue192;
+\red170\green170\blue170;
+\red85\green85\blue85;
+\red80\green80\blue80;
+\red37\green37\blue37;
+\red255\green255\blue102;
+\red56\green124\blue43;
+\red119\green119\blue119;
+\red204\green204\blue204;
+\red14\green86\blue140;
+\red61\green61\blue61;
+\red151\green151\blue151;
+\red33\green33\blue33;
+\red187\green187\blue187;
+\red21\green137\blue21;
+\red247\green247\blue247;
+\red106\green144\blue39;
+\red227\green227\blue227;
+\red240\green240\blue240;
+\red105\green105\blue105;
+\red107\green107\blue106;
+\red232\green233\blue232;
+\red255\green255\blue174;
+\red251\green252\blue255;
+\red186\green186\blue186;
+\red20\green93\blue164;
+\red185\green185\blue185;
+\red107\green107\blue107;
+\red242\green242\blue242;
+\red86\green86\blue86;
+\red218\green218\blue218;
+\red16\green58\blue89;
+\red216\green220\blue235;
+\red182\green190\blue214;
+\red236\green236\blue236;
+\red140\green179\blue216;
+\red233\green233\blue233;
+\red153\green153\blue153;
+\red71\green120\blue194;
+\red203\green203\blue203;
+\red245\green245\blue245;
+\red102\green102\blue102;
+\red238\green238\blue238;
+\red246\green246\blue246;
+\red255\green248\blue96;
+\red191\green219\blue245;
+\red61\green61\blue60;
+\red89\green89\blue89;
+\red100\green100\blue100;
+\red227\green232\blue250;
+\red70\green70\blue68;
+\red254\green254\blue0;
+\red214\green9\blue9;
+\red229\green243\blue255;
+\red179\green218\blue255;
+\red29\green115\blue102;
+\red190\green237\blue228;
+\red15\green153\blue125;
+\red89\green71\blue53;
+\red250\green240\blue202;
+\red230\green175\blue57;
+\red13\green119\blue214;
+\red10\green91\blue166;
+\red0\green114\blue54;
+\red255\green255\blue204;
+\red255\green204\blue0;
+\red240\green248\blue255;
+\red127\green127\blue127;
+\red221\green221\blue221;
+\red33\green74\blue204;
+\red191\green191\blue191;
+\red243\green243\blue243;
+\red235\green240\blue245;
+\red172\green172\blue172;
+\red9\green56\blue84;
+\red220\green220\blue220;
+\red181\green79\blue104;
+\red250\green250\blue250;
+\red26\green102\blue26;
+\red220\green250\blue223;
+\red118\green204\blue123;
+\red225\green237\blue250;
+\red102\green0\blue102;
+\red70\green70\blue70;
+\red250\green222\blue100;
+\red255\green204\blue153;
+\red23\green94\blue146;
+\red51\green51\blue51;
+\red214\green214\blue214;
+\red249\green249\blue249;
+}
+{\fonttbl {
+\f0 Arial;}{
+\f1 Symbol;}{
+\f2 Times New Roman;}{
+\f3 Source Sans Pro;}{
+\f4 georgia;}{
+\f5 sans-serif;}{
+\f6 monospace;}{
+\f7 Courier New;}{
+\f8 serif;}{
+\f9 Arial Unicode MS;}{
+\f10 Helvetica;}
+}
+{\*\generator Apache XML Graphics RTF Library;}
+\fet0 \ftnbj \paperw12240 \paperh15840 \margt1080 \margb1080 \margl1080 \margr1080 \headery720 \footery720 \itap0 \cols2 
+\sectd {\header {
+{\trowd \ltrrow \trleft0 
+\clpadb60 \clpadfb3 \clpadl400 \clpadfl3 \clbrdrt \clbrdrb \brdrcf17 \brdrw20 \brdrs \clbrdrl \trql \clvertalb \clwWidth9380 \cellx9380 
+\clpadb60 \clpadfb3 \clpadl400 \clpadfl3 \clbrdrt \clbrdrb \brdrcf17 \brdrw20 \brdrs \clbrdrr \trql \clwWidth700 \cellx10080 
+\intbl 
+{\b0 \cf1 \f0 \ri0 \i0 \ql \fs18 \li0 
+{\b0 \cf1 \f0 \ul0 \strike0 \i0 \fs18 
+}
+{\b1 \cf18 \f0 \i0 \fs18 
+{\b1 \cf18 \f0 \ul0 \strike0 \i0 \fs18 \sa0 \sb0 
+DeGarmo v. State, 691 S.W.2d 657 (1985)
+}
+}
+{\b0 \cf1 \f0 \ul0 \strike0 \i0 \fs18 
+}
+}\b0 \cf1 \f0 \ri0 \ul0 \strike0 \i0 \ql \fs18 \li0 \sa0 \sb0 \intbl \cell \intbl 
+{\qr \b0 \cf1 \f0 \ri0 \i0 \fs18 \li0 
+}\qr \b0 \cf1 \f0 \ri0 \i0 \fs18 \li0 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clbrdrb \clbrdrl \trql \clwWidth10080 \cellx10080 
+\intbl 
+{\b0 \cf1 \f0 \ri0 \i0 \ql \fs18 \li0 
+}\b0 \cf1 \f0 \ri0 \i0 \ql \fs18 \li0 \intbl \cell \row }}\par }{\footer {
+{\trowd \lastrow \trleft0 
+\clpadl60 \clpadfl3 \clbrdrt \brdrcf17 \brdrw20 \brdrs \clbrdrb \clbrdrl \trql \clvertalb \clwWidth9300 \cellx9300 
+\clpadl60 \clpadfl3 \clbrdrt \brdrcf17 \brdrw20 \brdrs \clbrdrb \clbrdrr \trql \clwWidth700 \cellx10000 
+\intbl 
+{\b0 \cf17 \f0 \ri0 \i0 \ql \fs20 \li0 
+{\b0 \cf17 \f0 \ul0 \strike0 \i0 \fs20 
+}
+{\*\shppict {\pict \pngblip \picw78 \pich10 \picwgoal1170 \pichgoal150 89504e470d0a1a0a0000000d494844520000004e0000000a08030000002dbd985500000300504c5445f8a969f6913ff68931fff9f5f69241f5852af68d38fcddc4f58326fac294f8a868fac193fcdabefab985fcdfc7fef5eef58022f8a35efef6effde5d2fac092fffaf6f9ac6ffffcfafde8d7fef7f1f9b279f6862cf8aa6af79e56f79c53f58327fef1e7fde3cefeeee2f9b076f79a4efef8f4f58123f58224f9ae72feefe4f58021f9ae71fac295fffaf7fcdabffef7f2f9af73f9b177f8ac6ef9b47cf8a15bf6872ef79648fef5edf9b278fcd9bdf9b782f9b57efbc89ffde3cffffefdf6872df8aa6bfcd6b8fac59af9b781fabc8bfffbf8fac091fac396fbceaaf8a461f68e39f6882ffabe8dfabf8ff9b884f79c52fdeadbfeede0f68c36f89f58fcdcc3fde0c9fef0e5fef3eaf68f3cfbcaa2f8a867f9b37afaba87f68b35fde7d6fabf90fffcfbfaba86fde7d5f6903efffdfcfef4ecf68f3bfde1cafcdfc6fbd1affbcea9fcd6b7f68a33f79444fbcba5f58429fcdec6f9af74f8a25df58428f7a461fef4edfdede0fde6d4fde7d4f9b680fbc69cfbc8a0f9b37bfac9a1f69240f79d54fcd4b4f9b883f68e3afef8f3fdebddfde2cbf7984cf8a35ff6882efef3ebf9bd8cfcd4b5feecdef8a562fde6d3fef9f4fcdbc1f9bc8afcd8bcf8ab6dfef8f2fcd7b9fffbf7feefe3f79546f8aa69f79f57fde1cbfcd3b3fcd2b1f8a25cfcd3b2fde2ccfac599fac397f9b379fcd8bbfbd2b0fef2e9fcd5b6fac79ef8a664f8a460f68a32fac090fffbf9fef2e8f8ab6cfde4d0f7994df6903df79749fffefcf79e55f8a766f8a059f68830f7974afde2cdfbcca6fabd8cf57f20ffffff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c5baaa8e000000bf74524e53ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00456e8439000002804944415478da63dcc70001fef2931866b0be0cd2085114e5ff7ef72a0357d0a3a31cc2129ebb9f492a3e4b6eb8cb20913bb5c808a2f849bf610c438bf99a9917cf2a18092c7bf1a30a6a0a13946658f6af92e15352e52386af5d677ee5ff61618c5ca7c6b58921d6ecc47383e56a52b3181955bf2e3e01513b49bae7260383be8b048376a2e34786a3853761a6b0c018892b57313c48fa38834195c1cf94c16a3a03c3edad7c5f163030a8672bcc3afcf4251343639ef3ae2cb05afe384e9390352a0c320cbdf71f19b43d6690c7302e84e11383d28bff67bcba9a6e2831acd9c6e0d990fe70b74ae7d2a90c0cbbc36fbaef6660b80f55ba68e9d2d5a9ae0cdd2f341878be8b9c64f8cb701d660a733c9451af78704effa1c6b3536708cf2c9ffde7c78fcb9b16497b8acf3e3721061812bfde8433302c8d5a190152ca93f7d26df6796bff83310dbfe504de7f7ff9ec621c7ad8ade964d5f0f8162da4257e9da18c39434955602283a37fdaefde9cb30c686005c3a4c9a6d792186c6b665d8e54f97ae7c5badd189e65307c22395565fbc43fcc010cad5b3ba781c5363184af0bfa8530481844b84e65b87efde6bcb50c67d9dc36d4f6bf7aa6e4015700771dc3fd57751f183c97ecfe7f04c8b17e9f9fdfceb0e334c3ca37c16940feb644b09ad7e1aee90cdaaa9f1ca31ef6bd6478e2b43ba29f615fc7cf550c1861c720c2699619c930d362d55a060ff68e592f7d4eacd82df9eb3bd7bd387986ff73182d18183686ba2ff9f76ec59f909c2e83a8499dbbaaa404ecf8199cb8051e79627ad6fa4799360383602cd0bdcbdeb2fc6158debec577daf1a9076ba51818e679bf05aaf85cfdeb0f8383c1ec0973801cee342386c537cdf218fecf4b70801b0200f61ff095f54de6170000000049454e44ae426082}}
+{\b0 \cf17 \f0 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ \u169\'3f 2022 Thomson Reuters. No claim to original U.S. Government Works.
+}
+}\b0 \cf17 \f0 \ri0 \ul0 \strike0 \i0 \ql \fs20 \li0 \sa0 \sb0 \intbl \cell \intbl 
+{\qr \b0 \cf17 \f0 \ri0 \i0 \fs20 \li0 
+{\b0 \i0 \ul0 \fs20 \f0 \chpgn }
+}\qr \b0 \cf17 \f0 \ri0 \ul0 \strike0 \i0 \fs20 \li0 \intbl \cell \row }}\par }
+{\b0 \cf1 \f2 \ri0 \par}\sect\sbknone\pgncont\cols2{\ids0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_document_1}{\*\bkmkend co_document_1}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart Ic2428eb5e7bc11d9b386b232635db992_Target}{\*\bkmkend Ic2428eb5e7bc11d9b386b232635db992_Target}
+\par 
+}
+{\b0 \qc \cf1 \f4 \ri0 \i0 \fs20 \li0 
+{\b0 \cf1 \f4 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+691 S.W.2d 657
+\par 
+}
+}
+{\b0 \qc \cf1 \f4 \ri0 \i0 \fs20 \li0 
+{\b0 \qc \cf1 \f4 \ri0 \i0 \fs20 \li0 
+{\b0 \qc \cf1 \f4 \ri0 \i0 \fs20 \li0 
+{\b0 \cf1 \f4 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Court of Criminal Appeals of Texas,
+\par 
+}
+}
+{\b0 \qc \cf1 \f4 \ri0 \i0 \fs20 \li0 
+{\b0 \cf1 \f4 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+En Banc.
+\par 
+}
+}
+}
+}
+{\b0 \qc \cf20 \f4 \ri100 \i0 \fs20 \li100 
+{\b0 \qc \cf20 \f4 \ri100 \i0 \fs20 \li100 
+{\b0 \qc \cf20 \f4 \ri100 \i0 \fs20 \li100 
+{\b0 \cf20 \f4 \ul0 \strike0 \i0 \fs20 \sa0 \sb200 
+Roger Leroy DeGARMO aka Quinton Earl Combest, Appellant,
+\par 
+}
+}
+{\b0 \qc \cf20 \f4 \ri100 \i0 \fs20 \li100 
+{\b0 \cf20 \f4 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+v.
+\par 
+}
+}
+{\b0 \qc \cf20 \f4 \ri100 \i0 \fs20 \li100 
+{\b0 \cf20 \f4 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+The STATE of Texas, Appellee.
+\par 
+}
+}
+}
+}
+{\b0 \qc \cf1 \f2 \ri0 \i0 \fs20 \li0 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \qc \cf1 \f4 \ri0 \i0 \fs20 \li200 
+{\b0 \cf1 \f4 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+No. 69027.
+\par 
+}
+}
+}
+{\b0 \cf1 \f4 \i0 \fs20 
+{\b0 \qc \cf1 \f4 \ri0 \i0 \fs20 \li200 
+{\b0 \cf1 \f4 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+|
+\par 
+}
+}
+{\b0 \qc \cf1 \f4 \ri0 \i0 \fs20 \li200 
+{\b0 \cf1 \f4 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+March 13, 1985.
+\par 
+}
+}
+{\b0 \qc \cf1 \f4 \ri0 \i0 \fs20 \li200 
+{\b0 \cf1 \f4 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+|
+\par 
+}
+}
+{\b0 \qc \cf1 \f4 \ri0 \i0 \fs20 \li200 
+{\b0 \cf1 \f4 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+Rehearing Denied April 24, 1985.
+\par 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b1 \cf28 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_synopsis_1}{\*\bkmkend co_synopsis_1}
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb400 
+Synopsis
+\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Defendant was convicted in the 240th Judicial District Court, Fort Bend County, C.A. Dickerson, J., of capital murder, and sentenced to death, and he appealed. The Court of Criminal Appeals, Teague, J., held that: (1) where defendant admitted his guilt at punishment phase of his capital murder prosecution, he waived any challenge to sufficiency of the evidence; (2) even without considering testimony of defendant\rquote s accomplice, evidence was sufficient to sustain verdict of conviction, and would permit a rational trier of fact to find guilt beyond a reasonable doubt; (3) defendant was not denied his right of confrontation by alleged failure to inform jury of any plea bargain agreements that existed between the prosecution and a codefendant, who testified for the State at trial; (4) fact that codefendant was sentenced to ten years\rquote  deferred probation for her participation in the abduction and murder of the victim did not mean that defendant\rquote s sentence of death was in violation of the 8th Amendment; and (5) if trial court erred by inserting phrase \u8220\'3for another\u8221\'3f in first special issue, such error was harmless beyond a reasonable doubt.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Affirmed.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Onion, P.J., and Clinton, J., concurred in the result.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_headnotes_1}{\*\bkmkend co_headnotes_1}
+\par 
+{\b0 \cf28 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_headnoteHeader_1}{\*\bkmkend co_headnoteHeader_1}
+\par 
+{\b0 \cf20 \f2 \ri200 \i0 \qj \fs20 \li100 
+{\b0 \cf20 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb200 
+West Headnotes (12)
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_expandedHeadnotes_1}{\*\bkmkend co_expandedHeadnotes_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_1985113219001_1}{\*\bkmkend co_anchor_1985113219001_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F11985113219_1}{\*\bkmkend co_anchor_F11985113219_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[1]_1}{\*\bkmkend co_anchor_headNote_[1]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B11985113219_1" }{\fldrslt 
+{\b1 \cf25 \f2 \i0 \fs20 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[1]
+}
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/203/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Homicide
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/203k1138/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+First Degree, Capital, or Aggravated Murder
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+Evidence in prosecution for capital murder was sufficient to sustain jury\rquote s verdict finding defendant guilty, where at punishment stage of trial defendant testified, against his attorney\rquote s advice, and admitted killing the victim.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_19851132190012011062803585}{\*\bkmkend co_headnoteId_19851132190012011062803585}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/RelatedInformation/DocHeadnoteLink?docGuid=Ic2428eb5e7bc11d9b386b232635db992&headnoteId=198511321900120110628035856&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=CitingReferences&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+89 Cases that cite this headnote
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\sb200 
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb0 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_1985113219002_1}{\*\bkmkend co_anchor_1985113219002_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F21985113219_1}{\*\bkmkend co_anchor_F21985113219_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[2]_1}{\*\bkmkend co_anchor_headNote_[2]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B21985113219_1" }{\fldrslt 
+{\b1 \cf25 \f2 \i0 \fs20 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[2]
+}
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/110/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Criminal Law
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/110XVII(M)21/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Effect of Admission of Statement, Confession, or Admission
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+A defendant who does not testify at guilt stage of a trial for capital murder, but does testify at punishment stage, and admits his guilt to crime for which he has been found guilty, has, for legal purposes, enters equivalent of a plea of guilty, and not only waives a challenge to sufficiency of the evidence, but also waives any error that might have occurred during the guilt stage of the trial.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_19851132190022011062803585}{\*\bkmkend co_headnoteId_19851132190022011062803585}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/RelatedInformation/DocHeadnoteLink?docGuid=Ic2428eb5e7bc11d9b386b232635db992&headnoteId=198511321900220110628035856&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=CitingReferences&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+167 Cases that cite this headnote
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\sb200 
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb0 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_1985113219003_1}{\*\bkmkend co_anchor_1985113219003_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F31985113219_1}{\*\bkmkend co_anchor_F31985113219_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[3]_1}{\*\bkmkend co_anchor_headNote_[3]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B31985113219_1" }{\fldrslt 
+{\b1 \cf25 \f2 \i0 \fs20 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[3]
+}
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/110/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Criminal Law
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/110XVII(M)21/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Effect of Admission of Statement, Confession, or Admission
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Defendant who admitted his guilt to capital murder of victim during punishment stage of his trial waived any challenge to sufficiency of the evidence. 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000182&cite=TXPES19.03&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)#co_pp_d86d0000be040" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+V.T.C.A., Penal Code \u167\'3f 19.03(a)(2)
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_19851132190032011062803585}{\*\bkmkend co_headnoteId_19851132190032011062803585}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/RelatedInformation/DocHeadnoteLink?docGuid=Ic2428eb5e7bc11d9b386b232635db992&headnoteId=198511321900320110628035856&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=CitingReferences&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+64 Cases that cite this headnote
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\sb200 
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb0 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_1985113219004_1}{\*\bkmkend co_anchor_1985113219004_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F41985113219_1}{\*\bkmkend co_anchor_F41985113219_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[4]_1}{\*\bkmkend co_anchor_headNote_[4]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B41985113219_1" }{\fldrslt 
+{\b1 \cf25 \f2 \i0 \fs20 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[4]
+}
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/110/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Criminal Law
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/110k1144.13(6)/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Evidence considered; \u8201\'3fconflicting evidence
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+In reviewing sufficiency of the evidence in a criminal case, the Court of Criminal Appeals will look to all of the evidence in the case that was adduced at both stages of the trial, and not just that offered or presented by the state.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_19851132190042011062803585}{\*\bkmkend co_headnoteId_19851132190042011062803585}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/RelatedInformation/DocHeadnoteLink?docGuid=Ic2428eb5e7bc11d9b386b232635db992&headnoteId=198511321900420110628035856&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=CitingReferences&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+6 Cases that cite this headnote
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\sb200 
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb0 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_1985113219005_1}{\*\bkmkend co_anchor_1985113219005_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F51985113219_1}{\*\bkmkend co_anchor_F51985113219_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[5]_1}{\*\bkmkend co_anchor_headNote_[5]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B51985113219_1" }{\fldrslt 
+{\b1 \cf25 \f2 \i0 \fs20 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[5]
+}
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/110/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Criminal Law
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/110k1144.13(6)/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Evidence considered; \u8201\'3fconflicting evidence
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+Evidence presented at punishment stage of a trial may be considered in determining whether the evidence is sufficient to sustain a guilty verdict for the primary offense.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_19851132190052011062803585}{\*\bkmkend co_headnoteId_19851132190052011062803585}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/RelatedInformation/DocHeadnoteLink?docGuid=Ic2428eb5e7bc11d9b386b232635db992&headnoteId=198511321900520110628035856&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=CitingReferences&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+11 Cases that cite this headnote
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\sb200 
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb0 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_1985113219006_1}{\*\bkmkend co_anchor_1985113219006_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F61985113219_1}{\*\bkmkend co_anchor_F61985113219_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[6]_1}{\*\bkmkend co_anchor_headNote_[6]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B61985113219_1" }{\fldrslt 
+{\b1 \cf25 \f2 \i0 \fs20 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[6]
+}
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/203/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Homicide
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/203k1140/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Sufficiency of circumstantial evidence in general
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Circumstantially, even without considering testimony of codefendant who testified for the State, evidence in prosecution for capital murder was more than sufficient to sustain guilty verdict, and would permit a rational trier of fact to find guilt beyond a reasonable doubt. 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000182&cite=TXPES19.03&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)#co_pp_d86d0000be040" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+V.T.C.A., Penal Code \u167\'3f 19.03(a)(2)
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_19851132190062011062803585}{\*\bkmkend co_headnoteId_19851132190062011062803585}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/RelatedInformation/DocHeadnoteLink?docGuid=Ic2428eb5e7bc11d9b386b232635db992&headnoteId=198511321900620110628035856&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=CitingReferences&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+7 Cases that cite this headnote
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\sb200 
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb0 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_1985113219007_1}{\*\bkmkend co_anchor_1985113219007_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F71985113219_1}{\*\bkmkend co_anchor_F71985113219_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[7]_1}{\*\bkmkend co_anchor_headNote_[7]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B71985113219_1" }{\fldrslt 
+{\b1 \cf25 \f2 \i0 \fs20 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[7]
+}
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/350H/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Sentencing and Punishment
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/350Hk57/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Opinions and recommendations of officials and others
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+Punishment recommended by local prosecuting attorney for defendant\rquote s accomplice, who testified for the State in defendant\rquote s capital murder prosecution, was solely within prosecuting attorney\rquote s discretion and its approval rested solely within discretion of the trial judge.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_19851132190072011062803585}{\*\bkmkend co_headnoteId_19851132190072011062803585}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/RelatedInformation/DocHeadnoteLink?docGuid=Ic2428eb5e7bc11d9b386b232635db992&headnoteId=198511321900720110628035856&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=CitingReferences&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+1 Cases that cite this headnote
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\sb200 
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb0 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_1985113219008_1}{\*\bkmkend co_anchor_1985113219008_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F81985113219_1}{\*\bkmkend co_anchor_F81985113219_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[8]_1}{\*\bkmkend co_anchor_headNote_[8]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B81985113219_1" }{\fldrslt 
+{\b1 \cf25 \f2 \i0 \fs20 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[8]
+}
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/110/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Criminal Law
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/110k662.65/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Conduct of trial
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Capital murder defendant was not denied his right of confrontation by alleged failure to inform jury of any plea bargain agreement existing between the prosecution and defendant\rquote s accomplice, who was a witness for the State, prior to her testifying against defendant, where record reflected jury was informed that accomplice would be charged only with lesser offense of murder or offense of kidnapping, and no other agreement existed at time of defendant\rquote s trial. 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000546&cite=USCOAMENDV&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=LQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+U.S.C.A. Const.Amends. 5
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+, 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000546&cite=USCOAMENDXIV&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=LQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+14
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+; 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000182&cite=TXPES19.03&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)#co_pp_d86d0000be040" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+V.T.C.A., Penal Code \u167\'3f 19.03(a)(2)
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_19851132190082011062803585}{\*\bkmkend co_headnoteId_19851132190082011062803585}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/RelatedInformation/DocHeadnoteLink?docGuid=Ic2428eb5e7bc11d9b386b232635db992&headnoteId=198511321900820110628035856&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=CitingReferences&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+2 Cases that cite this headnote
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\sb200 
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb0 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_1985113219009_1}{\*\bkmkend co_anchor_1985113219009_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F91985113219_1}{\*\bkmkend co_anchor_F91985113219_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[9]_1}{\*\bkmkend co_anchor_headNote_[9]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B91985113219_1" }{\fldrslt 
+{\b1 \cf25 \f2 \i0 \fs20 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[9]
+}
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/350H/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Sentencing and Punishment
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/350Hk1668/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Murder
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Death penalty imposed on defendant convicted of capital murder was not cruel and unusual punishment. 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000546&cite=USCOAMENDVIII&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=LQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+U.S.C.A. Const.Amend. 8
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+; 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000182&cite=TXPES19.03&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)#co_pp_d86d0000be040" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+V.T.C.A., Penal Code \u167\'3f 19.03(a)(2)
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_19851132190092011062803585}{\*\bkmkend co_headnoteId_19851132190092011062803585}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/RelatedInformation/DocHeadnoteLink?docGuid=Ic2428eb5e7bc11d9b386b232635db992&headnoteId=198511321900920110628035856&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=CitingReferences&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+1 Cases that cite this headnote
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\sb200 
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb0 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_1985113219010_1}{\*\bkmkend co_anchor_1985113219010_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F101985113219_1}{\*\bkmkend co_anchor_F101985113219_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[10]_1}{\*\bkmkend co_anchor_headNote_[10]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B101985113219_1" }{\fldrslt 
+{\b1 \cf25 \f2 \i0 \fs20 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[10]
+}
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/350H/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Sentencing and Punishment
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/350Hk1655/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Sentence or disposition of co-participant or codefendant
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/350H/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Sentencing and Punishment
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/350Hk1657/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Proportionality in general
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/350H/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Sentencing and Punishment
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/350Hk1788(6)/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Proportionality
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+There is no constitutional requirement that a codefendant who testifies for the prosecution in capital murder case must receive same punishment as defendant receives, even if that is the death sentence, nor is there any constitutional requirement that a comparative proportionality review of defendant\rquote s death sentence must be made by an appellate court. 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000546&cite=USCOAMENDVIII&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=LQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+U.S.C.A. Const.Amend. 8
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_19851132190102011062803585}{\*\bkmkend co_headnoteId_19851132190102011062803585}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/RelatedInformation/DocHeadnoteLink?docGuid=Ic2428eb5e7bc11d9b386b232635db992&headnoteId=198511321901020110628035856&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=CitingReferences&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+4 Cases that cite this headnote
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\sb200 
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb0 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_1985113219011_1}{\*\bkmkend co_anchor_1985113219011_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F111985113219_1}{\*\bkmkend co_anchor_F111985113219_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[11]_1}{\*\bkmkend co_anchor_headNote_[11]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B111985113219_1" }{\fldrslt 
+{\b1 \cf25 \f2 \i0 \fs20 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[11]
+}
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/350H/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Sentencing and Punishment
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/350Hk1495/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Homicide, mayhem, and assault with intent to kill
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Fact that accomplice of capital murder defendant, who testified for the State, received ten years\rquote  deferred probation for her participation in the abduction and murder of the victim while defendant received death sentence did not violate the Eighth Amendment to the Federal Constitution. 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000546&cite=USCOAMENDVIII&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=LQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+U.S.C.A. Const.Amend. 8
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+; 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000182&cite=TXPES19.03&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)#co_pp_d86d0000be040" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+V.T.C.A., Penal Code \u167\'3f 19.03(a)(2)
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_19851132190112011062803585}{\*\bkmkend co_headnoteId_19851132190112011062803585}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/RelatedInformation/DocHeadnoteLink?docGuid=Ic2428eb5e7bc11d9b386b232635db992&headnoteId=198511321901120110628035856&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=CitingReferences&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+2 Cases that cite this headnote
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\sb200 
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb0 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_1985113219012_1}{\*\bkmkend co_anchor_1985113219012_1}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 {
+{\trowd \ltrrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrt \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_F121985113219_1}{\*\bkmkend co_anchor_F121985113219_1}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_headNote_[12]_1}{\*\bkmkend co_anchor_headNote_[12]_1}
+{\field {\*\fldinst HYPERLINK "#co_anchor_B121985113219_1" }{\fldrslt 
+{\b1 \cf25 \f2 \i0 \fs20 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[12]
+}
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b1 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b1 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/110/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Criminal Law
+}\b1 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \i0 \fs20 
+\par 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \i0 \fs20 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Browse/Home/KeyNumber/110k1175/View.html?docGuid=Ic2428eb5e7bc11d9b386b232635db992&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Verdict or findings
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \ri30 \i0 \ql \li30 \fs20 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrl \trql \clwWidth600 \cellx600 
+\clpadt30 \clpadft3 \clpadr30 \clpadfr3 \clbrdrb \clbrdrr \trql \clwWidth4040 \cellx4640 
+\intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}\b0 \cf1 \f2 \ri30 \ul0 \strike0 \i0 \ql \li30 \fs20 \intbl \cell \intbl 
+{\ri30 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \ql \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+If trial court erred by inserting phrase \u8220\'3for another\u8221\'3f in first special issue to jury in capital murder prosecution, in which jury was asked whether it found from evidence beyond a reasonable doubt that conduct of defendant that caused death of the deceased was committed deliberately and with reasonable expectation that death of the deceased or another would result, such error was harmless beyond a reasonable doubt, where undisputed evidence supported only jury\rquote s affirmative finding that defendant\rquote s conduct that caused death of the victim was committed deliberately and with reasonable expectation that the death of the victim, and no other person, would result. 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000182&cite=TXPES19.03&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)#co_pp_d86d0000be040" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+V.T.C.A., Penal Code \u167\'3f 19.03(a)(2)
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+; 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000172&cite=TXCMART37.071&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=LQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Vernon\rquote s Ann.Texas C.C.P. art. 37.071
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb0 
+(b)(1).
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri30 \i0 \qj \fs20 \li30 
+{\*\bkmkstart co_headnoteId_19851132190122011062803585}{\*\bkmkend co_headnoteId_19851132190122011062803585}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/RelatedInformation/DocHeadnoteLink?docGuid=Ic2428eb5e7bc11d9b386b232635db992&headnoteId=198511321901220110628035856&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=CitingReferences&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+6 Cases that cite this headnote
+}\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\sb200 
+\par 
+}
+}
+}
+}\b0 \cf1 \f2 \strike0 \i0 \fs20 \sa200 \sb0 \ri30 \ul0 \qj \ql \li30 \intbl \cell \row }}\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+}
+}
+{\b0 \cf25 \f2 \i0 \fs20 
+{\*\bkmkstart co_headnotesEnd_1}{\*\bkmkend co_headnotesEnd_1}
+\par 
+}
+{\b1 \cf28 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_attorneysAndLawFirms_1}{\*\bkmkend co_attorneysAndLawFirms_1}
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb200 
+Attorneys and Law Firms
+\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_713_659_1}{\*\bkmkend co_pp_sp_713_659_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+*659
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ Kenneth D. Hartfiel, Rosenberg (court appointed), for appellant; David K. Chapman, San Antonio, of counsel.
+\par 
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb200 
+Timothy Sloan, Sp. Prosecutor, Bay City, William A. Meitzen, Dist. Atty., Richmond, Robert Huttash, State\rquote s Atty., Austin, for the State.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb200 
+Before the court en banc.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b1 \cf28 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_opinion_1}{\*\bkmkend co_opinion_1}
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_I84798d1fba6b11e08b05fdf15589d}{\*\bkmkend co_anchor_I84798d1fba6b11e08b05fdf15589d}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_I84798d21ba6b11e08b05fdf15589d}{\*\bkmkend co_anchor_I84798d21ba6b11e08b05fdf15589d}
+\par 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_anchor_I84798d21ba6b11e08b05fdf15589d}{\*\bkmkend co_anchor_I84798d21ba6b11e08b05fdf15589d}
+\par 
+{\b0 \qc \cf1 \f2 \ri0 \i0 \fs20 \li0 
+{\b0 \cf1 \f2 \i0 \fs20 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb800 
+OPINION
+\par 
+}
+}
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb200 
+TEAGUE, Judge.
+}
+{\b0 \cf1 \f2 \i0 \fs16 
+{\*\bkmkstart co_fnRef_B0011985113219_ID0EO5AE_1}{\*\bkmkend co_fnRef_B0011985113219_ID0EO5AE_1}
+{\field {\*\fldinst HYPERLINK "#co_footnote_B0011985113219_1" }{\fldrslt 
+{\super \b0 \cf25 \f2 \ul0 \strike0 \i0 \fs16 \sa0 \sb0 
+*
+}}}
+\sa200 
+\sb200 
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Roger De Garmo, aka Quinton Earl Combest, appellant, murdered Kimberley Anne Strickler, a young lady who was only twenty (20) years of age at the time of her untimely death. After finding appellant guilty of capital murder, the jury returned affirmative findings to special issues that were submitted to it by the trial judge pursuant to 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000172&cite=TXCMART37.071&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=LQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Art. 37.071(b), V.A.C.C.P
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+. Based upon the jury\rquote s answers, the trial judge assessed appellant\rquote s punishment at death.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Appellant was accompanied and assisted by an accomplice\u8212\'3fHelen Leydalia Mejia\u8212\'3fwhen he kidnapped and later murdered Strickler. Mejia testified for the State. As a result of a plea bargain agreement with the prosecution, but after appellant\rquote s trial, Mejia received ten (10) years\rquote  deferred probation for her participation in the abduction and murder of Strickler.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+We affirm appellant\rquote s conviction and sentence of death.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+We overrule appellant\rquote s challenge to the sufficiency of the evidence to sustain the jury\rquote s verdict finding him guilty of capital murder.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+The record on appeal reflects that appellant and Mejia kidnapped Strickler in Harris County after she befriended them by giving them a ride in her automobile. Appellant later forced Strickler to get inside the trunk of her motor vehicle, after which he closed and locked the trunk lid. Later, after driving to a location in Fort Bend County, appellant opened the trunk lid of Strickler\rquote s vehicle. Acting with a state of mind which showed a heart regardless of social duty and fatally bent on mischief, appellant then deliberately and intentionally fired one bullet from a pistol into Strickler\rquote s head, which wound caused Strickler to die almost instantaneously. Because appellant intentionally murdered Strickler in the course of committing the offense of kidnapping, 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_713_660_1}{\*\bkmkend co_pp_sp_713_660_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+*660
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ he is guilty of capital murder. See 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000182&cite=TXPES19.03&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=SP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)#co_pp_d86d0000be040" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+V.T.C.A., Penal Code, Section 19.03(a)(2)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+The record on appeal also reflects that shortly before appellant murdered Strickler, but after he and Mejia had kidnapped Strickler and stolen her automobile, and with Strickler inside of the locked trunk, but still alive, he and Mejia abducted John Moers, which abduction occurred after Moers had also befriended appellant and Mejia by helping them extricate Strickler\rquote s vehicle from its then stuck position. Mejia held Moers captive by pointing a pistol at him. With Mejia driving Strickler\rquote s vehicle, and Strickler still alive but inside of the locked trunk, and appellant driving Moer\rquote s pick-up, with Moers held hostage inside of the cab of his vehicle, appellant and Mejia changed their location. After arriving at the new location, which was out in the country, appellant opened the trunk lid and shot Strickler in the head which caused her death. Thereafter, Mejia drove Strickler\rquote s vehicle to another location, at which Strickler\rquote s vehicle, with Strickler\rquote s body in the trunk, was abandoned. With appellant now driving Moers\rquote  vehicle, Mejia sitting in the middle of the cab, and Moers sitting next to the passenger door, the parties proceeded to another location. During this drive, appellant told Moers, \u8220\'3fI will kill you too if you try anything, just don\rquote t try anything.\u8221\'3f Soon thereafter, Moers successfully escaped from appellant and Mejia by opening the passenger door and jumping from his vehicle.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+As a result of what appears to have been extremely fine investigative work by several members of the Fort Bend County Sheriff\rquote s Department, who had been assigned the case after it had apparently been written off by other members of the Sheriff\rquote s Department as an unsolved murder, appellant and Mejia were eventually arrested.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\field {\*\fldinst HYPERLINK "#co_anchor_F11985113219_1" }{\fldrslt 
+{\super \b1 \cf20 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[1]
+}}}
+{\b0 \cf25 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B11985113219_1}{\*\bkmkend co_anchor_B11985113219_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ Appellant\rquote s contention that the evidence is insufficient to sustain the jury\rquote s verdict finding him guilty of the capital murder of Strickler is totally without merit because at the punishment stage of the trial he testified and admitted killing Strickler. In so testifying, appellant intentionally, knowingly, and voluntarily rejected his attorneys\rquote  advice not to testify at the punishment stage of the trial, even though he had followed their advice at the guilt stage of the trial. Appellant told the members of the jury that they had made the right decision by finding him guilty of committing the capital murder of Strickler. He stated: \u8220\'3fI was the one that was there and I was the one that did the crime. So, now you can at least sleep well knowing that you picked the right person and not thinking you might not have ...\u8221\'3f
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+When he testified, appellant also threatened the jurors with death if they answered the special issues submitted to them in such a way that he, appellant, would only receive life imprisonment. He told the jurors that if that happened, i.e., that if he only received a life sentence, he would eventually, either acting individually or in conspiracy with others, cause each juror to die, or, if the juror was no longer alive, he would cause members of the juror\rquote s family to die. Appellant made no bones about what he intended to do if the jury\rquote s verdict did not result in him receiving the death penalty: \u8220\'3fI\rquote m not threatening, I\rquote m promising that if and when some catastrophe happens and I was put back on the street, if you are not available, somebody of your possession would be and I would just say my statement is you should give me the death penalty because that\rquote s the only way you\rquote re ever going to stop me because you have put me in this position ... I\rquote m going to die any way, so why not take with me some of the people that\rquote s going to make me die. That\rquote s the way I feel ... so you better ... put the \u8216\'3fYes\rquote  on both of them questions from my point of view.\u8221\'3f
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+And the record reflects that the jurors did as appellant requested\u8212\'3fthey answered both special issues in the affirmative, which caused the death penalty to become the only penalty that the trial judge could assess.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\field {\*\fldinst HYPERLINK "#co_anchor_F21985113219_1" }{\fldrslt 
+{\super \b1 \cf20 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[2]
+}}}
+{\b0 \cf25 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B21985113219_1}{\*\bkmkend co_anchor_B21985113219_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 
+}
+{\field {\*\fldinst HYPERLINK "#co_anchor_F31985113219_1" }{\fldrslt 
+{\super \b1 \cf20 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[3]
+}}}
+{\b0 \cf25 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B31985113219_1}{\*\bkmkend co_anchor_B31985113219_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ In asserting that the evidence is insufficient to sustain the jury verdict finding him guilty of capital murder, appellant acknowledges that the present law in Texas 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_713_661_1}{\*\bkmkend co_pp_sp_713_661_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+*661
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ is that if a defendant does not testify at the guilt stage of the trial, but does testify at the punishment stage of the trial, and admits his guilt to the crime for which he has been found guilty, he has, for legal purposes, entered the equivalent of a plea of guilty. The law as it presently exists is clear that such a defendant not only waives a challenge to the sufficiency of the evidence, but he also waives any error that might have occurred during the guilt stage of the trial. In this instance, appellant unequivocally admitted his guilt to the capital murder of Strickler. We decline appellant\rquote s invitation to overrule the above principles of law regarding waiver of a challenge to the sufficiency of the evidence, and hold that because appellant admitted his guilt to the capital murder of Strickler, he waived any challenge to the sufficiency of the evidence. 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1981125361&pubNum=713&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Brown v. State,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 617 S.W.2d 234 (Tex.Cr.App.1981)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+; 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1970138610&pubNum=713&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Richardson v. State,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 458 S.W.2d 665 (Tex.Cr.App.1970)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+. Also see the cases collected in 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1982128579&pubNum=713&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&fi=co_pp_sp_713_724&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)#co_pp_sp_713_724" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Smyth v. State,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 634 S.W.2d 721, 724 (Tex.Cr.App.1982)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ (Teague, J., dissenting opinion); and see also 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1978134626&pubNum=713&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&fi=co_pp_sp_713_348&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)#co_pp_sp_713_348" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Bodde v. State,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 568 S.W.2d 344, 348 (Tex.Cr.App.1978)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+, in which this Court rejected the argument that a defendant was deprived of due process of law because he could not testify at the punishment hearing and admit his guilt without waiving any error that might have occurred during the guilt stage of the trial. This Court held: \u8220\'3fWe cannot say that this common-sense rule of procedure denied appellant due process of law.\u8221\'3f (348).
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\field {\*\fldinst HYPERLINK "#co_anchor_F41985113219_1" }{\fldrslt 
+{\super \b1 \cf20 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[4]
+}}}
+{\b0 \cf25 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B41985113219_1}{\*\bkmkend co_anchor_B41985113219_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 
+}
+{\field {\*\fldinst HYPERLINK "#co_anchor_F51985113219_1" }{\fldrslt 
+{\super \b1 \cf20 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[5]
+}}}
+{\b0 \cf25 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B51985113219_1}{\*\bkmkend co_anchor_B51985113219_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ Furthermore, it has long been the law of this State that in reviewing the sufficiency of the evidence, this Court will look to all of the evidence in the case that was adduced at both stages of the trial, and not just that offered or presented by the State. See 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1969135874&pubNum=713&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&fi=co_pp_sp_713_293&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)#co_pp_sp_713_293" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Davis v. State,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 440 S.W.2d 291, 293 (Tex.Cr.App.1969)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+; 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1967132516&pubNum=713&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Bellah v. State,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 415 S.W.2d 418 (Tex.Cr.App.1967)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+. Thus, evidence presented at the punishment stage of the trial may be considered in determining whether the evidence is sufficient to sustain a guilty verdict for the primary offense. Compare 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1969137174&pubNum=713&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&fi=co_pp_sp_713_758&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)#co_pp_sp_713_758" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Branch v. State,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 445 S.W.2d 756, 758 (Tex.Cr.App.1969)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+, (Evidence admitted during the guilt stage of the trial may be considered by the jury in assessing the punishment.)
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+It is also now axiomatic that this Court, as all appellate courts must do when a challenge to the sufficiency of the evidence is made, will review the facts of the case in the light most favorable to the verdict, in order to make the determination whether any rational trier of fact could find guilt beyond a reasonable doubt. See 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1979135171&pubNum=708&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Jackson v. Virginia,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 443 U.S. 307, 99 S.Ct. 2781, 61 L.Ed.2d 560 (1979)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+; 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1942118883&pubNum=708&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Glasser v. United States,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 315 U.S. 60, 80, 62 S.Ct. 457, 86 L.Ed. 680 (1942)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+; 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1982109513&pubNum=350&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&fi=co_pp_sp_350_588&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)#co_pp_sp_350_588" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+United States v. Berry,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 670 F.2d 583, 588 (5th Cir.1982)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+; 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1984161164&pubNum=713&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&fi=co_pp_sp_713_548&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)#co_pp_sp_713_548" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Sutherlin v. State,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 682 S.W.2d 546, 548\u8211\'3f549 (Tex.Cr.App.1984)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\field {\*\fldinst HYPERLINK "#co_anchor_F61985113219_1" }{\fldrslt 
+{\super \b1 \cf20 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[6]
+}}}
+{\b0 \cf25 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B61985113219_1}{\*\bkmkend co_anchor_B61985113219_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ Notwithstanding that we find and hold that appellant\rquote s admissions that were made at the punishment stage of the trial constitute waiver of his challenge to the sufficiency of the evidence, we have carefully reviewed the evidence, and have done so without even considering Mejia\rquote s testimony, and find that circumstantially
+}
+{\b0 \cf1 \f2 \i0 \fs16 
+{\*\bkmkstart co_fnRef_B00211985113219_ID0ESMAG_1}{\*\bkmkend co_fnRef_B00211985113219_ID0ESMAG_1}
+{\field {\*\fldinst HYPERLINK "#co_footnote_B00211985113219_1" }{\fldrslt 
+{\super \b0 \cf25 \f2 \ul0 \strike0 \i0 \fs16 \sa0 \sb0 
+1
+}}}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ the evidence is more than sufficient to sustain the verdict of the jury, and would permit a rational trier of fact to find guilt beyond a reasonable doubt. Appellant\rquote s ground of error that the evidence is insufficient to sustain the capital murder verdict of the jury is overruled.
+}
+{\b0 \cf1 \f2 \i0 \fs16 
+{\*\bkmkstart co_fnRef_B00321985113219_ID0E3MAG_1}{\*\bkmkend co_fnRef_B00321985113219_ID0E3MAG_1}
+{\field {\*\fldinst HYPERLINK "#co_footnote_B00321985113219_1" }{\fldrslt 
+{\super \b0 \cf25 \f2 \ul0 \strike0 \i0 \fs16 \sa0 \sb0 
+2
+}}}
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_713_662_1}{\*\bkmkend co_pp_sp_713_662_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+*662
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ Appellant asserts in his second ground of error that \u8220\'3fone on trial for his life should not be subject to a conviction and a death penalty when his co-defendant, and the principal witness against him, (subsequently) receives a sentence of remarkable leniency, and the jury is not informed of that fact.\u8221\'3f
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+We find that appellant\rquote s contention centers upon the fact that almost eighteen months after appellant\rquote s trial, the office of the local district attorney entered into a plea bargain agreement with Mejia that was consummated when the trial judge approved the agreement. The plea bargain agreement that was placed into effect provided that in exchange for a plea of guilty to the lesser offense of murder, Mejia was placed on adult probation and the proceedings against her were deferred for a period of ten (10) years.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Considering the active role that Mejia played throughout the ordeal that Strickler was put through prior to appellant needlessly shooting her in the head, and her participation in the robbery and abduction of Moers, and notwithstanding Mejia\rquote s claim that she acted at all times under some form of duress, we are inclined to agree with appellant that the punishment Mejia received is relatively light.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\field {\*\fldinst HYPERLINK "#co_anchor_F71985113219_1" }{\fldrslt 
+{\super \b1 \cf20 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[7]
+}}}
+{\b0 \cf25 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B71985113219_1}{\*\bkmkend co_anchor_B71985113219_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ However, and notwithstanding our agreement with appellant, we also find that as a matter of law such recommended punishment that was made by the local prosecuting attorney was solely within his discretion and its approval rested solely within the discretion of the trial judge. Thus, in this instance, if we find that the jury was in all things informed of any plea bargain agreement that existed between Mejia and the prosecution, prior to her testifying against appellant, then neither the plea bargain agreement nor its approval by the trial judge concern us.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\field {\*\fldinst HYPERLINK "#co_anchor_F81985113219_1" }{\fldrslt 
+{\super \b1 \cf20 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[8]
+}}}
+{\b0 \cf25 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B81985113219_1}{\*\bkmkend co_anchor_B81985113219_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ However, if we find that the jury was not informed of such an agreement or understanding, then we will be compelled to order appellant\rquote s conviction and sentence of death reversed because failure of the prosecution to inform the jury of such an agreement or understanding would render appellant\rquote s conviction void because the jury had the legal right to know about any agreement or understanding that might have existed between Mejia and the prosecution in order that it might consider what weight to give Mejia\rquote s testimony. 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1972127068&pubNum=708&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Giglio v. United States,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 405 U.S. 150, 92 S.Ct. 763, 31 L.Ed.2d 104 (1972)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+. On the other hand, if we find that the prosecution disclosed to the jury whatever agreement or understanding that might have existed between it and Mejia, the fact that it might be said by some persons that Mejia got \u8220\'3fa fantastic deal\u8221\'3f from the prosecution does not amount to a violation of either due process or due course of law.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+After carefully reading the record on appeal, we are compelled to conclude that there is nothing in the record that might reflect or indicate that other than Mejia would be charged only with the lesser offense of murder, or the offense of kidnapping, about which the jury was informed, no other agreement between Mejia and the prosecution was in effect at the time of appellant\rquote s trial. Thus, appellant has not established that he has been denied his right of confrontation. See and compare, however, 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1983107397&pubNum=713&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Harris v. State,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 645 S.W.2d 447 (Tex.Cr.App.1983)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+; 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1973130011&pubNum=713&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Burkhalter v. State,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 493 S.W.2d 214 (Tex.Cr.App.1973)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Although we believe that it was probably obvious to the jury that in addition to not being charged with the offense of capital murder, Mejia had the hope or expectation that at some time in the future the State would recommend some specific form of leniency as to punishment, nevertheless, we do not find anything in the record on appeal that would reflect or indicate that the jury was misled into believing that, in addition to what they were informed, there might have been some other \u8220\'3fdeal,\u8221\'3f \u8220\'3farrangement,\u8221\'3f or \u8220\'3ftacit understanding\u8221\'3f that might have existed between Mejia and the local prosecuting attorney when Mejia testified against appellant.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_713_663_1}{\*\bkmkend co_pp_sp_713_663_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+*663
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ Appellant also appears to argue under this ground of error that because Mejia, his co-defendant, was assessed a punishment that was what he claims disproportionate to his sentence of death that this, without more, is violative of the Eighth Amendment to the Federal Constitution. We disagree.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\field {\*\fldinst HYPERLINK "#co_anchor_F91985113219_1" }{\fldrslt 
+{\super \b1 \cf20 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[9]
+}}}
+{\b0 \cf25 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B91985113219_1}{\*\bkmkend co_anchor_B91985113219_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 
+}
+{\field {\*\fldinst HYPERLINK "#co_anchor_F101985113219_1" }{\fldrslt 
+{\super \b1 \cf20 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[10]
+}}}
+{\b0 \cf25 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B101985113219_1}{\*\bkmkend co_anchor_B101985113219_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 
+}
+{\field {\*\fldinst HYPERLINK "#co_anchor_F111985113219_1" }{\fldrslt 
+{\super \b1 \cf20 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[11]
+}}}
+{\b0 \cf25 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B111985113219_1}{\*\bkmkend co_anchor_B111985113219_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ The death penalty that appellant has been assessed is not cruel and unusual punishment. 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1976142448&pubNum=708&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Jurek v. Texas,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 428 U.S. 262, 96 S.Ct. 2950, 49 L.Ed.2d 929 (1976)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+. There is no constitutional requirement that a co-defendant who testifies for the prosecution must receive the same punishment as the defendant has received, nor is there any constitutional requirement that a comparative proportionality review of appellant\rquote s death sentence must be made by an appellate court. 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1984104101&pubNum=708&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Pulley v. Harris,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 465 U.S. 37, 104 S.Ct. 871, 79 L.Ed.2d 29 (1984)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Appellant\rquote s second ground of error is overruled.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Appellant asserts in his third and last ground of error that the trial court erred when it, over objection, refused to delete the following underscored portion from the first special issue that the jury was asked to answer: \u8220\'3fDo you find from the evidence beyond a reasonable doubt that the conduct of the Defendant, Roger Leroy DeGarmo, that caused the death of the deceased was committed deliberately and with the reasonable expectation that the death of the deceased 
+}
+{\b0 \cf1 \f2 \i1 \fs20 
+{\b0 \cf1 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+or another
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ would result?\u8221\'3f We first observe that the instruction as given is verbatim to the provisions of 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000172&cite=TXCMART37.071&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=LQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Art. 37.071(b)(1), V.A.C.C.P
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+.
+}
+{\b0 \cf1 \f2 \i0 \fs16 
+{\*\bkmkstart co_fnRef_B00431985113219_ID0EDWAG_1}{\*\bkmkend co_fnRef_B00431985113219_ID0EDWAG_1}
+{\field {\*\fldinst HYPERLINK "#co_footnote_B00431985113219_1" }{\fldrslt 
+{\super \b0 \cf25 \f2 \ul0 \strike0 \i0 \fs16 \sa0 \sb0 
+3
+}}}
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Prior to the punishment hearing, the jury had found that appellant had intentionally and knowingly caused the death of Strickler, and further found that Strickler\rquote s death occurred in the course of committing the offense of kidnapping of Strickler, all of which was alleged in the indictment against appellant. Cf. 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1980105030&pubNum=713&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+King v. State,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 594 S.W.2d 425 (Tex.Cr.App.1980)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+As we understand appellant\rquote s objection that he made in the trial court, his ground of error on appeal, and his argument thereunder, he is not complaining that he did not have sufficient notice in order to prepare against the accusation; we find, instead, that he is complaining that he did not have sufficient notice that at the punishment stage of the trial the State would establish that his conduct that caused Strickler\rquote s death could have occurred not only with the reasonable expectation of Strickler\rquote s death but that \u8220\'3fof another\u8221\'3f unnamed person as well. Appellant thus complains that the phrase \u8220\'3for another\u8221\'3f in the special issue permitted the jury to speculate that his causing Strickler\rquote s death was committed with the reasonable expectation that the death of a person other than Strickler would result. He asserts on appeal that because the evidence reflects that only Strickler could have been the reasonable object of his assault, inserting the phrase \u8220\'3for another\u8221\'3f causes the charge to become fundamentally erroneous. For authority, he cites 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1979106924&pubNum=713&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Cumbie v. State,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 578 S.W.2d 732 (Tex.Cr.App.1979)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+, which was recently overruled by this Court in its decision of 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1984107353&pubNum=713&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Almanza v. State,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 686 S.W.2d 157 (Tex.Cr.App.1984)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+, delivered March 6, 1985, to the extent that 
+}
+{\b0 \cf1 \f2 \i1 \fs20 
+{\b0 \cf1 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Cumbie
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ holds that any fundamental error requires \u8220\'3fautomatic\u8221\'3f reversal.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+We overrule appellant\rquote s third ground of error.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+However, had the jury not been required to first find beyond a reasonable doubt that appellant had deliberately caused the death of Strickler, which it did find beyond a reasonable doubt, and, secondly, had there been other evidence that would have supported or tended to support a finding that appellant caused Strickler\rquote s death with the reasonable expectation that the death of a person other than Strickler would result, 
+}
+{\b1 \cf1 \f2 \i0 \fs20 
+{\*\bkmkstart co_pp_sp_713_664_1}{\*\bkmkend co_pp_sp_713_664_1}
+{\b1 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+*664
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ we believe that appellant\rquote s ground of error might have been meritorious.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+The undisputed evidence, however, only supports the jury\rquote s affirmative finding that appellant\rquote s conduct that caused the death of Strickler was committed deliberately and with the reasonable expectation that the death of Strickler, 
+}
+{\b0 \cf1 \f2 \i1 \fs20 
+{\b0 \cf1 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+and no other person,
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ would result. 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1983131952&pubNum=713&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&fi=co_pp_sp_713_781&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)#co_pp_sp_713_781" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Russell v. State,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 665 S.W.2d 771, 781 (Tex.Cr.App.1983)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+; 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1976138799&pubNum=713&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&fi=co_pp_sp_713_122&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)#co_pp_sp_713_122" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Granviel v. State,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 552 S.W.2d 107, 122\u8211\'3f123 (Tex.Cr.App.1976)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+. Also see 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1980138001&pubNum=713&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&fi=co_pp_sp_713_584&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)#co_pp_sp_713_584" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Fearance v. State,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 620 S.W.2d 577, 584 (Tex.Cr.App.1981)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+; 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1980122109&pubNum=713&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Milton v. State,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 599 S.W.2d 824 (Tex.Cr.App.1980)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\field {\*\fldinst HYPERLINK "#co_anchor_F121985113219_1" }{\fldrslt 
+{\super \b1 \cf20 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+[12]
+}}}
+{\b0 \cf25 \f2 \i0 \fs20 
+{\*\bkmkstart co_anchor_B121985113219_1}{\*\bkmkend co_anchor_B121985113219_1}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ Furthermore, we also find that had there been a reasonable hypothesis that there was a reasonable expectation that the death of a person other than Strickler would result, when appellant fired the fatal shot that caused Strickler\rquote s death, it would have been incumbent upon appellant to have requested the trial court to order the prosecution to reveal who the \u8220\'3fother person\u8221\'3f was in order to establish that he did not have notice of such fact. In summary, it was incumbent upon appellant to establish that he was surprised by such fact. See and compare what Judge Roberts stated in the concurring opinion he filed in 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1979129638&pubNum=713&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&fi=co_pp_sp_713_180&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)#co_pp_sp_713_180" }{\fldrslt 
+{\b0 \cf25 \f2 \i1 \fs20 
+{\b0 \cf25 \f2 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Garcia v. State,
+}
+}
+{\b0 \cf25 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 581 S.W.2d 168, 180 (Tex.Cr.App.1979)
+}}}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+, regarding notice and the admissibility of unadjudicated extraneous offenses at the punishment stage of a capital murder case. In this instance, appellant made no such demand or request. Therefore, we hold that if the trial court erred by inserting the phrase, \u8220\'3for another,\u8221\'3f in the first special issue, such error was, under the circumstances and facts of this case, harmless beyond a reasonable doubt.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Appellant\rquote s third ground of error is overruled.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+The judgment of conviction and sentence of death are affirmed.
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u160\'3f
+\par 
+}
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb600 
+ONION, P.J., and CLINTON, J., concur in the result.
+\par 
+}
+}
+}
+}
+}
+}
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\b1 \cf28 \f2 \ri0 \i0 \qj \fs20 \li0 
+{\*\bkmkstart co_allCitations_1}{\*\bkmkend co_allCitations_1}
+{\b1 \cf28 \f2 \ul0 \strike0 \i0 \fs20 \sa200 \sb200 
+All Citations
+\par 
+}
+}
+{\b0 \cf1 \f2 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+691 S.W.2d 657
+\par 
+}
+}
+}
+{\b0 \cf1 \f5 \ri0 \i0 \ql \fs24 \li0 \par}\sect\sbknone\pgncont\cols1{\ids0 {
+{\trowd \ltrrow \trleft0 
+\clpadb400 \clpadfb3 \clbrdrt \clbrdrl \trql \clwWidth10080 \cellx10080 
+\intbl 
+{\ri0 \li0 
+{\b1 \qc \cf1 \f5 \ri0 \i0 \fs22 \li0 
+{\b1 \cf1 \f5 \i0 \fs22 
+{\b1 \cf1 \f5 \ul0 \strike0 \i0 \fs22 \sa0 \sb0 
+Footnotes
+\par 
+}
+}
+}
+}\b1 \qc \cf1 \f5 \ri0 \ul0 \strike0 \i0 \li0 \fs22 \sa0 \sb0 \intbl \cell \row }
+{\trowd \ltrrow \trleft0 
+\clbrdrl \trql \clvertalt \clwWidth600 \cellx600 
+\clbrdrr \trql \clwWidth9480 \cellx10080 
+\intbl 
+{\ri0 \li0 
+{\b0 \cf1 \f5 \ri0 \i0 \ql \fs20 \li0 
+{\b0 \cf1 \f5 \i0 \fs20 
+{\*\bkmkstart co_footnote_B0011985113219_1}{\*\bkmkend co_footnote_B0011985113219_1}
+{\field {\*\fldinst HYPERLINK "#co_fnRef_B0011985113219_ID0EO5AE_1" }{\fldrslt 
+{\super \b0 \cf25 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+*
+}\super \b0 \cf25 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}\b0 \cf1 \f5 \ri0 \i0 \ql \li0 \fs20 \intbl \cell \intbl 
+{\ri0 \li0 
+{\b0 \cf1 \f5 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f5 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f5 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+We point out that one of the key investigative witnesses for the prosecution was Deputy Sheriff Billy Frank Teague of the Fort Bend County Sheriff\rquote s Department. However, Billy Frank Teague is no relation, by either consanguinity or affinity, to the author of this opinion.
+\par 
+}
+}
+}
+}
+}\b0 \cf1 \f5 \ri0 \ul0 \strike0 \i0 \qj \li0 \fs20 \sa0 \sb0 \intbl \cell \row }
+{\trowd \ltrrow \trleft0 
+\clbrdrl \trql \clvertalt \clwWidth600 \cellx600 
+\clbrdrr \trql \clwWidth9480 \cellx10080 
+\intbl 
+{\ri0 \li0 
+{\b0 \cf1 \f5 \ri0 \i0 \ql \fs20 \li0 
+{\b0 \cf1 \f5 \i0 \fs20 
+{\*\bkmkstart co_footnote_B00211985113219_1}{\*\bkmkend co_footnote_B00211985113219_1}
+{\field {\*\fldinst HYPERLINK "#co_fnRef_B00211985113219_ID0ESMAG_1" }{\fldrslt 
+{\super \b0 \cf25 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+1
+}\super \b0 \cf25 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}\b0 \cf1 \f5 \ri0 \i0 \ql \li0 \fs20 \intbl \cell \intbl 
+{\ri0 \li0 
+{\b0 \cf1 \f5 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f5 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f5 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+The jury was instructed that this was \u8220\'3fa case depending for conviction on circumstantial evidence,\u8221\'3f and was also instructed on the law of circumstantial evidence. In 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1981148112&pubNum=713&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&fi=co_pp_sp_713_197&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)#co_pp_sp_713_197" }{\fldrslt 
+{\b0 \cf25 \f5 \i1 \fs20 
+{\b0 \cf25 \f5 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Hankins v. State,
+}
+}
+{\b0 \cf25 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 646 S.W.2d 191, 197 (Tex.Cr.App.1981)
+}\b0 \cf25 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ (On State\rquote s Motion for Rehearing), this Court held that even when a case is dependent upon circumstantial evidence for conviction, an instruction on the law of circumstantial evidence no longer must be given by the trial court.
+\par 
+}
+}
+}
+}
+}\b0 \cf1 \f5 \ri0 \ul0 \strike0 \i0 \qj \li0 \fs20 \sa0 \sb0 \intbl \cell \row }
+{\trowd \ltrrow \trleft0 
+\clbrdrl \trql \clvertalt \clwWidth600 \cellx600 
+\clbrdrr \trql \clwWidth9480 \cellx10080 
+\intbl 
+{\ri0 \li0 
+{\b0 \cf1 \f5 \ri0 \i0 \ql \fs20 \li0 
+{\b0 \cf1 \f5 \i0 \fs20 
+{\*\bkmkstart co_footnote_B00321985113219_1}{\*\bkmkend co_footnote_B00321985113219_1}
+{\field {\*\fldinst HYPERLINK "#co_fnRef_B00321985113219_ID0E3MAG_1" }{\fldrslt 
+{\super \b0 \cf25 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+2
+}\super \b0 \cf25 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}\b0 \cf1 \f5 \ri0 \i0 \ql \li0 \fs20 \intbl \cell \intbl 
+{\ri0 \li0 
+{\b0 \cf1 \f5 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f5 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f5 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+In 
+}
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=Y&serNum=1985110268&pubNum=713&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=RP&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f5 \i1 \fs20 
+{\b0 \cf25 \f5 \ul0 \strike0 \i1 \fs20 \sa0 \sb0 
+Adams v. State,
+}
+}
+{\b0 \cf25 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+ 685 S.W.2d 661 (Tex.Cr.App.1985)
+}\b0 \cf25 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+, delivered February 27, 1985, this Court rejected the assertion that appellant makes in this cause, that when the prosecution uses an accomplice witness to establish its case against the accused, the sufficiency of the evidence must be reviewed by examining the evidence independent of the accomplice witness\rquote  testimony in order to make the determination whether the evidence is sufficient beyond a reasonable doubt to convict the defendant of the crime which he is accused of committing.
+\par 
+}
+}
+}
+}
+}\b0 \cf1 \f5 \ri0 \ul0 \strike0 \i0 \qj \li0 \fs20 \sa0 \sb0 \intbl \cell \row }
+{\trowd \lastrow \trleft0 
+\clbrdrb \clbrdrl \trql \clvertalt \clwWidth600 \cellx600 
+\clbrdrb \clbrdrr \trql \clwWidth9480 \cellx10080 
+\intbl 
+{\ri0 \li0 
+{\b0 \cf1 \f5 \ri0 \i0 \ql \fs20 \li0 
+{\b0 \cf1 \f5 \i0 \fs20 
+{\*\bkmkstart co_footnote_B00431985113219_1}{\*\bkmkend co_footnote_B00431985113219_1}
+{\field {\*\fldinst HYPERLINK "#co_fnRef_B00431985113219_ID0EDWAG_1" }{\fldrslt 
+{\super \b0 \cf25 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+3
+}\super \b0 \cf25 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+\par 
+}
+}
+}\b0 \cf1 \f5 \ri0 \i0 \ql \li0 \fs20 \intbl \cell \intbl 
+{\ri0 \li0 
+{\b0 \cf1 \f5 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f5 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f5 \ri0 \i0 \qj \fs20 \li0 
+{\field {\*\fldinst HYPERLINK "http://wwwtest.int.westlaw.com/Link/Document/FullText?findType=L&pubNum=1000172&cite=TXCMART37.071&originatingDoc=Ic2428eb5e7bc11d9b386b232635db992&refType=LQ&originationContext=document&vr=3.0&rs=cblt1.0&transitionType=DocumentItem&contextData=(sc.History*oc.DocAnalysisJudicial)" }{\fldrslt 
+{\b0 \cf25 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+Art. 37.071(b)(1), V.A.C.C.P
+}\b0 \cf25 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 }}
+{\b0 \cf1 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+., provides:
+\par 
+}
+}
+{\b0 \cf1 \f5 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f5 \ri0 \i0 \qj \fs20 \li400 
+{\b0 \cf1 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+\u8220\'3f(b) On conclusion of the presentation of the evidence, the court shall submit the following issues to the jury:
+\par 
+}
+}
+}
+{\b0 \cf1 \f5 \ri0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f5 \ri0 \i0 \qj \fs20 \li400 
+{\b0 \cf1 \f5 \ul0 \strike0 \i0 \fs20 \sa0 \sb0 
+(1) whether the conduct of the defendant that caused the death of the deceased was committed deliberately and with the reasonable expectation that the death of the deceased or another would result ...\u8221\'3f
+\par 
+}
+}
+}
+}
+}
+}\b0 \cf1 \f5 \ri0 \ul0 \strike0 \i0 \qj \li400 \fs20 \sa0 \sb0 \intbl \cell \row }}\par 
+}
+{\b0 \cf1 \f2 \ri0 \par}\sect\sbknone\pgncont\cols2{\ids0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}
+{\b0 \cf1 \f5 \ri0 \i0 \ql \fs24 \li0 \par}\sect\sbknone\pgncont\cols1{\ids0 {
+{\trowd \lastrow \trleft0 
+\clpadt24 \clpadft3 \clpadl100 \clpadfl3 \clpadr24 \clpadfr3 \clbrdrt \brdrcf23 \brdrw10 \brdrs \clbrdrb \clbrdrl \trql \clvertalt \clwWidth4320 \cellx4320 
+\clpadt24 \clpadft3 \clpadl100 \clpadfl3 \clpadr24 \clpadfr3 \clbrdrt \brdrcf23 \brdrw10 \brdrs \clbrdrb \clbrdrr \trql \clvertalt \clwWidth5760 \cellx10080 
+\intbl 
+{\ri24 \li24 
+{\b1 \cf23 \f5 \ri24 \i0 \ql \fs16 \li24 
+{\b1 \cf23 \f5 \ul0 \strike0 \i0 \fs16 \sa0 \sb0 
+End of Document
+\par 
+}
+}
+}\b1 \cf23 \f5 \ri24 \ul0 \strike0 \i0 \ql \li24 \fs16 \sa0 \sb0 \intbl \cell \intbl 
+{\ri24 \li24 
+{\qr \b0 \cf23 \f5 \ri24 \i0 \fs16 \li24 
+{\b0 \cf23 \f5 \ul0 \strike0 \i0 \fs16 \sa0 \sb0 
+\u169\'3f 2022 Thomson Reuters. No claim to original U.S. Government Works.
+\par 
+}
+}
+}\qr \b0 \cf23 \f5 \ri24 \ul0 \strike0 \i0 \li24 \fs16 \sa0 \sb0 \intbl \cell \row }}\par 
+}
+{\b0 \cf1 \f2 \ri0 \par}\sect\sbknone\pgncont\cols2{\ids0 \i0 \qj \fs20 \li0 
+{\b0 \cf1 \f2 \ri0 \i0 \qj \fs20 \li0 
+}
+}\sect }

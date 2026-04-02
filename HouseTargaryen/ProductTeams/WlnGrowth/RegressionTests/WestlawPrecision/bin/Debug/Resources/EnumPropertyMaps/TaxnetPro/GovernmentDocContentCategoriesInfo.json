@@ -1,0 +1,203 @@
+﻿{
+  "AdvancedRulingsTariffClassification": {
+    "LocatorString": "//input[@value='TNP_ATC TNP_ATR']",
+    "Text": "Advanced Rulings for Tariff Classification"
+  },
+  "AdvanceTaxRulings": {
+    "LocatorString": "//input[@value='TNP_ATR']",
+    "Text": "Advance Tax Rulings"
+  },
+  "AgricultureAgriFoodNewsReleases": {
+    "LocatorString": "//input[@value='TNP_ANR']",
+    "Text": "Agriculture & Agri-Food News Releases"
+  },
+  "Australia": {
+    "LocatorString": "//input[@value='TNP_GAU']",
+    "Text": "Australia"
+  },
+  "Budgets": {
+    "LocatorString": "//input[@value='TNP_FBU TNP_BUD']",
+    "Text": "Budgets"
+  },
+  "CanadianInternationalTradeTribunal": {
+    "LocatorString": "//input[@value='TNP_CTT']",
+    "Text": "Canadian International Trade Tribunal"
+  },
+  "CraNewsReleases": {
+    "LocatorString": "//input[@value='TNP_NRE']",
+    "Text": "CRA News Releases"
+  },
+  "CraViews": {
+    "LocatorString": "//input[@value='TNP_CRA']",
+    "Text": "CRA Views"
+  },
+  "CustomsExciseForms": {
+    "LocatorString": "//input[@value='TNP_FRM']",
+    "Text": "Customs & Excise Forms"
+  },
+  "CustomsExciseNewsReleases": {
+    "LocatorString": "//input[@value='TNP_CRE TNP_EGN']",
+    "Text": "Customs & Excise News Releases"
+  },
+  "CustomsNotices": {
+    "LocatorString": "//input[@value='TNP_NOT']",
+    "Text": "Customs Notices"
+  },
+  "DMemoranda": {
+    "LocatorString": "//input[@value='TNP_DMO']",
+    "Text": "D Memoranda"
+  },
+  "EuropeanCommission": {
+    "LocatorString": "//input[@value='TNP_GEU']",
+    "Text": "European Commission"
+  },
+  "ExciseGstHstNews": {
+    "LocatorString": "//input[@value='TNP_EGN']",
+    "Text": "Excise & GST/HST News"
+  },
+  "ExciseTaxMemoranda": {
+    "LocatorString": "//input[@value='TNP_ETM']",
+    "Text": "Excise Tax Memoranda"
+  },
+  "FederalBudgets": {
+    "LocatorString": "//input[@value='TNP_FBU']",
+    "Text": "Federal Budgets"
+  },
+  "FinanceComfortLetters": {
+    "LocatorString": "//input[@value='TNP_COM']",
+    "Text": "Finance Comfort Letters"
+  },
+  "FinanceNewsReleases": {
+    "LocatorString": "//input[@value='TNP_FNR']",
+    "Text": "Finance News Releases"
+  },
+  "ForeignAffairsNewsReleases": {
+    "LocatorString": "//input[@value='TNP_FAN']",
+    "Text": "Foreign Affairs News Releases"
+  },
+  "Forms": {
+    "LocatorString": "//input[@value='TNP_FRM TNP_FGS TNP_FFI TNP_FFP (TNP_TDR & (TNP_FRM TNP_FFI TNP_FGS))']",
+    "Text": "Forms"
+  },
+  "GovernmentDirectories": {
+    "LocatorString": "//input[@value='TNP_GDR']",
+    "Text": "Government Directories"
+  },
+  "GstHstForms": {
+    "LocatorString": "//input[@value='TNP_FGS']",
+    "Text": "GST/HST Forms"
+  },
+  "GstHstNotices": {
+    "LocatorString": "//input[@value='TNP_GHN']",
+    "Text": "GST/HST Notices"
+  },
+  "GstMemoranda": {
+    "LocatorString": "//input[@value='TNP_GME']",
+    "Text": "GST Memoranda"
+  },
+  "GstPolicyStatements": {
+    "LocatorString": "//input[@value='TNP_GPO']",
+    "Text": "GST Policy Statements"
+  },
+  "GstTechInfoBulletins": {
+    "LocatorString": "//input[@value='TNP_GTE']",
+    "Text": "GST Tech Info Bulletins"
+  },
+  "GstHstInfoSheets": {
+    "LocatorString": "//input[@value='TNP_GHI']",
+    "Text": "GST/HST Info Sheets"
+  },
+  "GuidesPamphlets": {
+    "LocatorString": "//input[@value='TNP_GUI']",
+    "Text": "Guides & Pamphlets"
+  },
+  "HeadquartersLetters": {
+    "LocatorString": "//input[@value='TNP_GHQ']",
+    "Text": "Headquarters Letters"
+  },
+  "IncomeTaxForms": {
+    "LocatorString": "//input[@value='TNP_FFI']",
+    "Text": "Income Tax Forms"
+  },
+  "IncomeTaxFolios": {
+    "LocatorString": "//input[@value='TNP_ITF']",
+    "Text": "Income Tax Folios"
+  },
+  "InformationCirculars": {
+    "LocatorString": "//input[@value='TNP_ICI TNP_FFP']",
+    "Text": "Information Circulars"
+  },
+  "International": {
+    "LocatorString": "//input[@value='TNP_GAU TNP_GUK TNP_GOC TNP_GEU TNP_GUS']",
+    "Text": "International"
+  },
+  "InterpretationBulletins": {
+    "LocatorString": "//input[@value='TNP_IBU']",
+    "Text": "Interpretation Bulletins"
+  },
+  "ItTechnicalNews": {
+    "LocatorString": "//input[@value='TNP_ITT']",
+    "Text": "IT Technical News"
+  },
+  "ManualsReports": {
+    "LocatorString": "//input[@value='TNP_MNR']",
+    "Text": "Manuals & Reports"
+  },
+  "Newsletters": {
+    "LocatorString": "//input[@value='TNP_NLG']",
+    "Text": "Newsletters"
+  },
+  "NewsReleases": {
+    "LocatorString": "//input[@value='TNP_ANR TNP_NRE TNP_EGN TNP_FNR TNP_FAN TNP_ITT TNP_PNR']",
+    "Text": "News Releases"
+  },
+  "OtherCountries": {
+    "LocatorString": "//input[@value='TNP_GOC']",
+    "Text": "Other Countries"
+  },
+  "ProvincialTerritorialBudgets": {
+    "LocatorString": "//input[@value='TNP_BUD']",
+    "Text": "Provincial/Territorial Budgets"
+  },
+  "ProvincialTerritorialBulletins": {
+    "LocatorString": "//input[@value='TNP_PBU']",
+    "Text": "Provincial/Territorial Bulletins"
+  },
+  "ProvincialTerritorialNewsReleases": {
+    "LocatorString": "//input[@value='TNP_PNR']",
+    "Text": "Provincial/Territorial News Releases"
+  },
+  "ProvincialTerritorialTaxForms": {
+    "LocatorString": "//input[@value='TNP_FFP']",
+    "Text": "Provincial/Territorial Tax Forms"
+  },
+  "RelatedGovernmentDocuments": {
+    "LocatorString": "//input[@value='TNP_GUI TNP_IBU TNP_ISD TNP_NLG TNP_GRM']",
+    "Text": "Related Government Documents"
+  },
+  "RulingsLetters": {
+    "LocatorString": "//input[@value='TNP_ATR TNP_ATC TNP_ATR TNP_CTT TNP_CRA TNP_COM TNP_GHQ']",
+    "Text": "Rulings and Letters"
+  },
+  "TaxDisputesForms": {
+    "LocatorString": "//input[@value='(TNP_TDR & (TNP_FRM TNP_FFI TNP_FGS))']",
+    "Text": "Tax Disputes Forms"
+  },
+  "TechnicalNotes": {
+    "LocatorString": "//input[@value='TNP_TEN']",
+    "Text": "Technical Notes"
+  },
+  "TechnicalPublications": {
+    "LocatorString": "//input[@id='co_search_advancedSearch_GOVT_4_All']",
+    "Text": "Technical Publications"
+  },
+
+  "UnitedKingdom": {
+    "LocatorString": "//input[@value='TNP_GUK']",
+    "Text": "United Kingdom"
+  },
+  "UnitedStates": {
+    "LocatorString": "//input[@value='TNP_GUS']",
+    "Text": "United States"
+  }
+}

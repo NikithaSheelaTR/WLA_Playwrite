@@ -1,0 +1,66 @@
+﻿{
+  // Maps FederalMaterials enum to WebElementInfo
+  "CodeOfFederalRegulations": {
+    "Text": "Code of Federal Regulations (CFR)"
+  },
+  "DcCircuit": {
+    "Text": "D.C. Circuit"
+  },
+  "EigthCircuit": {
+    "Text": "8th Circuit"
+  },
+  "EleventhCircuit": {
+    "Text": "11th Circuit"
+  },
+  "FederalAdministrativeDecisionsAndGuidance": {
+    "Text": "Federal Administrative Decisions & Guidance"
+  },
+  "FederalCases": {
+    "Text": "Federal Cases"
+  },
+  "FederalCircuit": {
+    "Text": "Federal Circuit"
+  },
+  "FederalProposedAndEnactedLegislation": {
+    "Text": "Federal Proposed & Enacted Legislation"
+  },
+  "FederalRegisterAll": {
+    "Text": "Federal Register - All"
+  },
+  "FifthCircuit": {
+    "Text": "5th Circuit"
+  },
+  "FirstCircuit": {
+    "Text": "1st Circuit"
+  },
+  "FourthCircuit": {
+    "Text": "4th Circuit"
+  },
+  "NinthCircuit": {
+    "Text": "9th Circuit"
+  },
+  "SecondCircuit": {
+    "Text": "2nd Circuit"
+  },
+  "SeventhCircuit": {
+    "Text": "7th Circuit"
+  },
+  "SixthCircuit": {
+    "Text": "6th Circuit"
+  },
+  "TenthCircuit": {
+    "Text": "10th Circuit"
+  },
+  "ThirdCircuit": {
+    "Text": "3rd Circuit"
+  },
+  "UnitedStatesCodeAnnotated": {
+    "Text": "United States Code Annotated (USCA)"
+  },
+  "UnitedStatesSupremeCourt": {
+    "Text": "United States Supreme Court"
+  },
+  "UsSupremeCourt": {
+    "Text": "U.S. Supreme Court"
+  }
+}

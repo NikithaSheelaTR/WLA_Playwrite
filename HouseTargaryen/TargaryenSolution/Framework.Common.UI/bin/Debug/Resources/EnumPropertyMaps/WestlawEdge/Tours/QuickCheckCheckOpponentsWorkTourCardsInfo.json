@@ -1,0 +1,51 @@
+﻿{
+    // Maps DocumentAnalyzerOpponentsWorkTourCards to WebElementInfo
+    "DocAnalyzerBlueCard1": {
+        "Text": "Click the Table of authorities tab."
+    },
+    "DocAnalyzerBlueCard2": {
+        "Text": "Click the Recommendations tab."
+    },
+    "DocAnalyzerBlueCard3": {
+        "Text": "Click the Warnings for cited authority tab."
+    },
+    "DocAnalyzerBlueCard4": {
+        "Text": "Click the Quotation analysis tab."
+    },
+    "DocAnalyzerCard1": {
+        "Text": "The Warnings for cited authority tab allows you to review the authority cited within the analyzed document to see if any are no longer good law."
+    },
+    "DocAnalyzerCard2": {
+        "Text": "A. For cases that have any negative KeyCite treatment, including Westlaw Edge's exclusive KeyCite Overruling Risk warnings, Quick Check identifies the relevant language from within the treating case to let you know why the KeyCite flag exists.\r\nB. Citation tags highlight when a case was decided 10 or more years ago, or when a case is not commonly cited to in judicial opinions.\r\nC. See cases that have distinguished themselves from the case cited in the opponent’s analyzed document. Use this link to find cases that potentially undermine an opponent’s cited authority."
+    },
+    "PrecisionDocAnalyzerCard2": {
+        "Text": "A. For cases that have any negative KeyCite treatment, including Westlaw Precision's KeyCite Overruling Risk warnings, Quick Check identifies the relevant language from within the treating case to let you know why the KeyCite flag exists.\r\nB. Citation tags highlight when a case was decided 10 or more years ago, or when a case is not commonly cited to in judicial opinions.\r\nC. See cases that have distinguished themselves from the case cited in the opponent’s analyzed document. Use this link to find cases that potentially undermine an opponent’s cited authority."
+    },
+    "DocAnalyzerCard3": {
+        "Text": "The Quotation analysis tab allows you to compare quotations from the analyzed document to the language in the cited documents on Westlaw."
+    },
+    "DocAnalyzerCard4": {
+        "Text": "Differences are flagged when a quotation from the analyzed document does not match the cited language on Westlaw."
+    },
+    "DocAnalyzerCard5": {
+        "Text": "Sort the document's quotations to show differences first or by the order of appearance in the document."
+    },
+    "DocAnalyzerCard5New": {
+        "Text": "Sort the document’s quotations by potential severity or by the order of appearance in the document."
+    },
+    "DocAnalyzerCard6": {
+        "Text": "The Table of authorities tab contains the full list of all the cases cited in the analyzed document, regardless of whether we found a KeyCite issue or not. Use this to quickly review and deliver all the cited cases in a document.\r\nDepth of discussion provides a visual preview of how much a citation was discussed in the analyzed document. Citations with deeper discussion may merit more thorough review"
+    },
+    "DocAnalyzerCard7": {
+        "Text": "On the Recommendations tab you’ll find cases and other materials relevant to the issues in the analyzed document but that were not cited in it. Quick Check prioritizes finding cases that may undermine an opponent’s position, based on the content of the analyzed document."
+    },
+    "DocAnalyzerCard8": {
+        "Text": "The top of the report contains details about the analyzed document. Quick Check identifies these details to help you better understand how the case recommendations below might oppose the opponent’s position. If you need to correct something, you can edit the information to ensure the report’s accuracy."
+    },
+    "DocAnalyzerCard9": {
+        "Text": "A. Quick Check provides focused recommendations for each section of the analyzed document. The report is organized according to the headings within the document and can be filtered to focus only on the issues you are most interested in.\r\nB. Easily see how a case might be useful with relevant language and outcomes. Quick Check analyzes the language of the analyzed document to tailor the report and pinpoint the most relevant parts of the omitted cases for quick review."
+    },
+    "DocAnalyzerCard10": {
+        "Text": "A. Case details provides information about the procedural background of the recommended case. Compare these to the details from the analyzed document to see how the recommendation might be helpful.\r\nB. Quick Check also alerts you when one of the recommend cases is related to a specific piece of relevant text or citations from the opponent’s document.\r\nC. Recommendation tags in the report indicate when a recommended case contains contrary authority that might help oppose the positions in the analyzed document and when the recommendation originated from the same motion type. Other tags highlight when a case has been frequently cited, is from the high court in its jurisdiction, or was decided in the last 2 years."
+    }
+}

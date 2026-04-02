@@ -1,0 +1,18 @@
+﻿{
+  // Maps DocumentTab to WebElementInfo
+  "Document": {
+    "Id": "DocumentTab"
+  },
+  "Publications": {
+    "Id": "riPubsFullTextCategoryTab"
+  },
+  "References": {
+    "Id": "riProfessionalReferencesTab"
+  },
+  "Reports": {
+    "Id": "ReportsTab"
+  },
+  "TestimonialHistory": {
+    "Id": "riTestHistryFullTextCategoryTab"
+  }
+}

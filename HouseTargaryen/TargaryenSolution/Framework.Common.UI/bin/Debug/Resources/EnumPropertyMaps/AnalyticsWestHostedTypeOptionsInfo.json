@@ -1,0 +1,10 @@
+﻿{
+  // Maps AnalyticsWestHostedTypeOptions enumeration to WebElementInfo
+  "DualEntry": {
+    "Text": "Dual entry (Client Id and Matter Id)"
+  },
+
+  "SingleEntry": {
+    "Text": "Single entry (Client Id only)"
+  }
+}

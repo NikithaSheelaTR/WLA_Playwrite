@@ -1,0 +1,24 @@
+{
+  // Maps HomeTourCards to WebElementInfo
+  "HomeCard1": {
+    "Text": "Start typing a question in the search bar, and type ahead will provide a range of questions based on the legal terms you enter. Click on the type ahead question that best matches what you were asking and it will take you to the law summary with supporting case law."
+  },
+  "HomeCard2": {
+    "Text": "The Search Suggestions feature provides type ahead suggestions as you enter terms into the search bar. Find cases specific to your legal issue by clicking on the suggestion which best matches what you are researching and it will take you to relevant case law results."
+  },
+  "HomeCard3": {
+    "Text": "Litigation Analytics provides data analysis and visualizations for federal district court judges. As you type the name of a judge into the search bar, Litigation Analytics will suggest questions regarding that judge's history of ruling on common motions.\r\n\r\nIn addition, typing the name of a legal professional, company, or popular statute will provide an overview of that entity in the type ahead with a link to its Snapshots profile."
+  },
+  "HomeCard4": {
+    "Text": "The type ahead drop-down options are organized by content type to make searching quicker and more intuitive. As you enter search terms, the type ahead options will automatically shift to the most relevant suggestion and content type."
+  },
+  "HomeCard5": {
+    "Text": "Westlaw Edge will provide a notification when a colleague shares content such as folders, notes, highlights, or snippets with you. You will also see notifications within Westlaw Edge when alerts you created find documents. Notifications will also be shown when Westlaw Edge has document recommendations for you based on your research."
+  },
+  "HomeCard6": {
+    "Text": "You can manage which notifications you receive in the Preferences section of your Profile in the Westlaw Edge header."
+  },
+  "HomeCard7": {
+    "Text": "Quick Check allows you to securely upload your brief or motion to quickly find new authority and related law.\r\n\r\nWith Litigation Analytics, you can find insights about judges, courts, and case types to build a winning case strategy.\r\nFor more training materials, visit Westlaw Training and Support"
+  }
+}
