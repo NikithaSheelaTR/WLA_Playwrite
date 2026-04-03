@@ -1,38 +1,27 @@
 namespace WestlawAdvantage.Playwright.AJS.Pages.Components;
 
 using Microsoft.Playwright;
+using static Microsoft.Playwright.Assertions;
 
 /// <summary>
 /// Native Playwright component for the Jurisdictions selector on the AJS page.
 ///
-/// SHIM VERSION EQUIVALENT:
-///   surveysPage.Jurisdictions.SelectJurisdiction(JurisCA)
-///   surveysPage.Jurisdictions.IsJurisdictionSelectionDisabled(JurisIncludeRelatedFed)
-///   surveysPage.Jurisdictions.IsJurisdictionSelected(JurisIncludeRelatedFed)
-///   surveysPage.Jurisdictions.SelectedCountLabel.Text
+/// SHIM VERSION EQUIVALENT: AiJurisdictionalSurveysJurisdictionsComponent
 ///
-/// HOW THE SHIM HANDLES THIS vs NATIVE PLAYWRIGHT:
+/// API MAPPING:
+///   Shim SelectJurisdiction(codes)         → SelectJurisdiction(codes)  — clear all, then check each
+///   Shim SelectJurisdiction(false, codes)  → AddJurisdiction(codes)     — check each, no clear
+///   Shim SelectJurisdiction(false, code)   → DeselectJurisdiction(code) — uncheck (when code is checked)
 ///
-///   SHIM: IWebElement.Enabled → shim calls Locator.IsEnabledAsync()
-///         But IsEnabled checks the element itself, not whether it's "grayed out"
-///         due to a disabled state set by a parent or CSS — this can be inaccurate.
+///   Shim WaitForJurisdictionDisabled(code) → WaitForJurisdictionDisabled(code)
+///   Shim WaitForJurisdictionEnabled(code)  → WaitForJurisdictionEnabled(code)
+///   Shim WaitForJurisdictionSelected(code) → WaitForJurisdictionSelected(code)
+///   Shim WaitForSelectedCountToContain(t)  → WaitForSelectedCountToContain(t)
 ///
-///   NATIVE: IsDisabledAsync() — Playwright checks the actual disabled attribute
-///           AND computed accessibility state. More reliable.
-///
-///   SHIM: IWebElement.Selected → shim calls EvaluateAsync("el => !!(el.selected || el.checked)")
-///         This works but goes through 2 translation layers.
-///
-///   NATIVE: IsCheckedAsync() — direct Playwright API, cleaner.
-///
-/// TODO: The jurisdiction checkboxes use data values like "CA-CS", "ALLFEDS", "Select All".
-///       Inspect the DOM to find the exact attribute that holds these values.
-///       Common patterns in TR apps:
-///         - input[data-value='CA-CS']
-///         - input[aria-label='CA-CS']  
-///         - label:has-text('CA-CS') input
-///         - [data-automation='juris-CA-CS']
-///       Update JurisCheckbox() locator once you know the actual pattern.
+/// LOCATOR SOURCE:
+///   saf-checkbox[current-value='{code}'] input#control
+///   Confirmed: shim uses JS shadowRoot.querySelector('input[id=control]') on saf-checkbox[current-value='{code}']
+///   Playwright CSS pierces open shadow roots with descendant combinator — equivalent, no JS needed.
 /// </summary>
 public class JurisdictionsComponentPw
 {
@@ -43,44 +32,61 @@ public class JurisdictionsComponentPw
     // ── Locators ─────────────────────────────────────────────────────────────
 
     /// <summary>
-    /// Outer saf-checkbox element — used for disabled state checks.
-    /// The shim used: By.CssSelector("saf-checkbox[current-value='{code}']")
-    /// IsDisabledAsync() is checked on the outer element because the disabled
-    /// attribute is applied to the custom element wrapper, not the inner input.
-    /// </summary>
-    private ILocator JurisCheckboxElement(string jurisCode) =>
-        _page.Locator($"saf-checkbox[current-value='{jurisCode}']");
-
-    /// <summary>
-    /// Inner input inside the saf-checkbox shadow DOM — used for check/uncheck/isChecked.
-    /// Playwright auto-pierces open shadow roots with CSS descendant combinators.
-    /// The shim reached this via JS: shadowRoot.querySelector('input[id=control]').click()
+    /// Inner input[id=control] inside the saf-checkbox shadow DOM.
+    /// Shim: shadowRoot.querySelector('input[id=control]') on saf-checkbox[current-value='{code}']
+    /// Confirmed locator — Playwright CSS shadow piercing equivalent.
     /// </summary>
     private ILocator JurisCheckboxInput(string jurisCode) =>
-        _page.Locator($"saf-checkbox[current-value='{jurisCode}'] input");
+        _page.Locator($"saf-checkbox[current-value='{jurisCode}'] input#control");
 
     /// <summary>
     /// The "X selected" count label.
-    /// Shim: By.XPath(".//span[contains(@class,'jurisdictionCardSelectedCount')]")
+    /// Shim XPath: .//span[contains(@class,'jurisdictionCardSelectedCount')]
     /// </summary>
     public ILocator SelectedCountLabel =>
         _page.Locator("span[class*='jurisdictionCardSelectedCount']");
 
+    /// <summary>
+    /// "Clear selections" button — resets all jurisdiction checkboxes.
+    /// Shim XPath: .//saf-button[contains(text(),'Clear selections')]
+    /// </summary>
+    private ILocator ClearSelectionsButton =>
+        _page.Locator("saf-button:has-text('Clear selections')");
+
     // ── Actions ───────────────────────────────────────────────────────────────
 
     /// <summary>
-    /// Select one or more jurisdictions by checking their checkboxes.
-    ///
-    /// SHIM VERSION:
-    ///   surveysPage.Jurisdictions.SelectJurisdiction(JurisCA, JurisMN, JurisIncludeRelatedFed)
-    ///   ← calls IWebElement.Click() for each, which goes through the shim
-    ///   ← each click has 2s per-attempt Playwright wait
-    ///
-    /// NATIVE PLAYWRIGHT:
-    ///   CheckAsync() — Playwright auto-waits for the checkbox to be actionable,
-    ///   verifies it's actually checked after, retries if needed. Reliable.
+    /// Clear all selected jurisdictions by clicking "Clear selections".
+    /// Shim: called internally at start of SelectJurisdiction(params) when clearAllSelected=true.
+    /// Safe to call when nothing is selected.
+    /// </summary>
+    public async Task ClearAllJurisdictions()
+    {
+        if (await ClearSelectionsButton.IsVisibleAsync())
+            await ClearSelectionsButton.ClickAsync();
+    }
+
+    /// <summary>
+    /// Clear all, then check each jurisdiction.
+    /// Shim equivalent: SelectJurisdiction(params string[] codes) — clearAllSelected=true (default).
+    /// Use this when you want exactly these jurisdictions selected, clearing any prior state.
     /// </summary>
     public async Task SelectJurisdiction(params string[] jurisCodes)
+    {
+        await ClearAllJurisdictions();
+        foreach (var code in jurisCodes)
+        {
+            var input = JurisCheckboxInput(code);
+            await input.CheckAsync();
+        }
+    }
+
+    /// <summary>
+    /// Check each jurisdiction WITHOUT clearing first.
+    /// Shim equivalent: SelectJurisdiction(false, params string[] codes) — when used to ADD to selection.
+    /// Use this to add jurisdictions to an existing selection.
+    /// </summary>
+    public async Task AddJurisdiction(params string[] jurisCodes)
     {
         foreach (var code in jurisCodes)
         {
@@ -91,14 +97,8 @@ public class JurisdictionsComponentPw
     }
 
     /// <summary>
-    /// Deselect one or more jurisdictions.
-    ///
-    /// SHIM VERSION:
-    ///   surveysPage.Jurisdictions.SelectJurisdiction(false, JurisCA)
-    ///   ← the "false" parameter means "deselect" in the original API
-    ///
-    /// NATIVE PLAYWRIGHT:
-    ///   UncheckAsync() — explicit, no boolean flag ambiguity.
+    /// Uncheck each jurisdiction.
+    /// Shim equivalent: SelectJurisdiction(false, params string[] codes) — when used to REMOVE from selection.
     /// </summary>
     public async Task DeselectJurisdiction(params string[] jurisCodes)
     {
@@ -110,37 +110,64 @@ public class JurisdictionsComponentPw
         }
     }
 
-    /// <summary>
-    /// Returns true if the jurisdiction checkbox is disabled (not interactable).
-    ///
-    /// SHIM VERSION:
-    ///   surveysPage.Jurisdictions.IsJurisdictionSelectionDisabled(JurisIncludeRelatedFed)
-    ///   ← IWebElement.Enabled → shim → Locator.IsEnabledAsync()
-    ///
-    /// NATIVE PLAYWRIGHT:
-    ///   IsDisabledAsync() — checks disabled attribute + ARIA disabled state.
-    ///   More accurate than negating IsEnabledAsync() in some edge cases.
-    /// </summary>
-    public async Task<bool> IsJurisdictionSelectionDisabled(string jurisCode) =>
-        await JurisCheckboxElement(jurisCode).IsDisabledAsync();
+    // ── Queries ───────────────────────────────────────────────────────────────
 
     /// <summary>
-    /// Returns true if the jurisdiction checkbox is checked/selected.
-    ///
-    /// SHIM VERSION:
-    ///   surveysPage.Jurisdictions.IsJurisdictionSelected(JurisIncludeRelatedFed)
-    ///   ← IWebElement.Selected → shim → EvaluateAsync("el => !!(el.selected || el.checked)")
-    ///
-    /// NATIVE PLAYWRIGHT:
-    ///   IsCheckedAsync() — direct API, no JavaScript evaluation needed.
+    /// Returns true if the jurisdiction checkbox is disabled (aria-disabled or disabled attr).
+    /// Shim: JS getAttribute('aria-disabled') on shadow DOM input.
+    /// </summary>
+    public async Task<bool> IsJurisdictionSelectionDisabled(string jurisCode) =>
+        await JurisCheckboxInput(jurisCode).IsDisabledAsync();
+
+    /// <summary>
+    /// Returns true if the jurisdiction checkbox is checked.
+    /// Shim: JS getAttribute('aria-checked') on shadow DOM input.
     /// </summary>
     public async Task<bool> IsJurisdictionSelected(string jurisCode) =>
         await JurisCheckboxInput(jurisCode).IsCheckedAsync();
 
     /// <summary>
     /// Get the current selected count text (e.g., "2 selected").
-    /// Replaces: surveysPage.Jurisdictions.SelectedCountLabel.Text
+    /// Shim: SelectedCountLabel.Text
     /// </summary>
     public async Task<string> GetSelectedCountText() =>
         await SelectedCountLabel.TextContentAsync() ?? string.Empty;
+
+    // ── Explicit waits (mirrors shim's SafeMethodExecutor.WaitUntil polling) ──
+
+    /// <summary>
+    /// Wait for a jurisdiction checkbox to become disabled.
+    /// Shim: WaitForJurisdictionDisabled(code, timeoutFromSec=10)
+    ///   → SafeMethodExecutor.WaitUntil(() => IsJurisdictionSelectionDisabled(code))
+    /// </summary>
+    public async Task WaitForJurisdictionDisabled(string jurisCode, int timeoutMs = 10000) =>
+        await Expect(JurisCheckboxInput(jurisCode)).ToBeDisabledAsync(
+            new LocatorAssertionsToBeDisabledOptions { Timeout = timeoutMs });
+
+    /// <summary>
+    /// Wait for a jurisdiction checkbox to become enabled (not disabled).
+    /// Shim: WaitForJurisdictionEnabled(code, timeoutFromSec=10)
+    ///   → SafeMethodExecutor.WaitUntil(() => !IsJurisdictionSelectionDisabled(code))
+    /// </summary>
+    public async Task WaitForJurisdictionEnabled(string jurisCode, int timeoutMs = 10000) =>
+        await Expect(JurisCheckboxInput(jurisCode)).ToBeEnabledAsync(
+            new LocatorAssertionsToBeEnabledOptions { Timeout = timeoutMs });
+
+    /// <summary>
+    /// Wait for a jurisdiction checkbox to become checked/selected.
+    /// Shim: WaitForJurisdictionSelected(code, timeoutFromSec=10)
+    ///   → SafeMethodExecutor.WaitUntil(() => IsJurisdictionSelected(code))
+    /// </summary>
+    public async Task WaitForJurisdictionSelected(string jurisCode, int timeoutMs = 10000) =>
+        await Expect(JurisCheckboxInput(jurisCode)).ToBeCheckedAsync(
+            new LocatorAssertionsToBeCheckedOptions { Timeout = timeoutMs });
+
+    /// <summary>
+    /// Wait for the selected count label to contain the expected text.
+    /// Shim: WaitForSelectedCountToContain(text, timeoutFromSec=10)
+    ///   → SafeMethodExecutor.WaitUntil(() => SelectedCountLabel.Text.Contains(text))
+    /// </summary>
+    public async Task WaitForSelectedCountToContain(string expectedText, int timeoutMs = 10000) =>
+        await Expect(SelectedCountLabel).ToContainTextAsync(
+            expectedText, new LocatorAssertionsToContainTextOptions { Timeout = timeoutMs });
 }

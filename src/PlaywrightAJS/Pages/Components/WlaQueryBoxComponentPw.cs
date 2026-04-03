@@ -85,12 +85,20 @@ public class WlaQueryBoxComponentPw
     /// </summary>
     public async Task EnterQuestion(string question)
     {
-        await QueryInput.WaitForAsync(new LocatorWaitForOptions
+        var safTextArea = _page.Locator("saf-text-area#fiftyStateQuestionInput");
+        await safTextArea.WaitForAsync(new LocatorWaitForOptions
         {
             State = WaitForSelectorState.Visible,
             Timeout = 10000
         });
-        await QueryInput.FillAsync(question);
+
+        // PressSequentiallyAsync focuses the element then types character-by-character
+        // (keydown → keypress → input → keyup per character).
+        // This correctly triggers the saf-text-area web component's internal value binding
+        // so the Create Survey button becomes enabled.
+        // FillAsync and Keyboard.TypeAsync after ClickAsync do not reliably update the
+        // component's internal state.
+        await safTextArea.PressSequentiallyAsync(question);
     }
 
     /// <summary>

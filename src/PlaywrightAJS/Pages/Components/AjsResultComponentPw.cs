@@ -110,14 +110,22 @@ public class AjsSurveyResultMetaPw
     public AjsSurveyResultMetaPw(IPage page) => _page = page;
 
     // Shim: By.XPath("//time[contains(@class,'resultsTimeStamp')]")
+    // CSS selector used (not XPath) — XPath doesn't pierce shadow DOM, CSS does.
     public ILocator TimeStampLabel =>
-        _page.Locator("xpath=//time[contains(@class,'resultsTimeStamp')]");
+        _page.Locator("time[class*='resultsTimeStamp'], [class*='resultsTimeStamp']");
 
     public ILocator QuestionLabel =>
         _page.Locator("[data-automation='survey-question'], [class*='questionLabel'], h2[class*='question']");
 
-    public async Task<string> GetTimestamp() =>
-        await TimeStampLabel.TextContentAsync() ?? string.Empty;
+    public async Task<string> GetTimestamp()
+    {
+        await TimeStampLabel.WaitForAsync(new LocatorWaitForOptions
+        {
+            State = WaitForSelectorState.Visible,
+            Timeout = 30000
+        });
+        return await TimeStampLabel.TextContentAsync() ?? string.Empty;
+    }
 
     public async Task<string> GetQuestion() =>
         await QuestionLabel.TextContentAsync() ?? string.Empty;
