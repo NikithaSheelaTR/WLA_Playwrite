@@ -3,6 +3,7 @@ namespace WestlawAdvantage.Playwright.AJS.Tests;
 using Microsoft.Playwright;
 using NUnit.Framework;
 using WestlawAdvantage.Playwright.AJS.Infrastructure;
+using WestlawAdvantage.Playwright.AJS.Pages;
 
 /// <summary>
 /// Native Playwright version of WlaAjsIncludeRelatedFedTests.
@@ -70,60 +71,58 @@ public class WlaAjsIncludeRelatedFedTestsPw : PlaywrightAjsBaseTest
     {
         var surveysPage = await NavigateToLandingPage();
 
-        // 1. ALLFEDS disabled + 0 selected when nothing selected
+        // 1. Verify ALLFEDS disabled + 0 selected on fresh page
+        // Shim: WaitForJurisdictionDisabled → IsTrue(IsDisabled && count.Contains("0 selected"))
+        await surveysPage.Jurisdictions.WaitForJurisdictionDisabled(JurisIncludeRelatedFed);
         Assert.That(
-            await surveysPage.Jurisdictions.IsJurisdictionSelectionDisabled(JurisIncludeRelatedFed),
+            await surveysPage.Jurisdictions.IsJurisdictionSelectionDisabled(JurisIncludeRelatedFed)
+            && (await surveysPage.Jurisdictions.GetSelectedCountText()).Contains("0 selected"),
             Is.True,
             "Include related federal is not disabled when no juris selected.");
 
-        Assert.That(
-            await surveysPage.Jurisdictions.GetSelectedCountText(),
-            Does.Contain("0 selected"),
-            "Include related federal is not disabled when no juris selected (count).");
-
         // 2. Select All → ALLFEDS becomes checked
+        // Shim: SelectJurisdiction(SelectAll) [clears + selects] → WaitForJurisdictionSelected
         await surveysPage.Jurisdictions.SelectJurisdiction(JurisSelectAll);
-
+        await surveysPage.Jurisdictions.WaitForJurisdictionSelected(JurisIncludeRelatedFed);
         Assert.That(
             await surveysPage.Jurisdictions.IsJurisdictionSelected(JurisIncludeRelatedFed),
             Is.True,
             "Include related federal is not selected clicking Select All.");
 
-        // 3. CA selected → ALLFEDS enabled
+        // 3. Select CA only (clears all first) → ALLFEDS enabled but unchecked
+        // Shim: SelectJurisdiction(JurisCA) [clears + selects CA] → WaitForJurisdictionEnabled
         await surveysPage.Jurisdictions.SelectJurisdiction(JurisCA);
-
+        await surveysPage.Jurisdictions.WaitForJurisdictionEnabled(JurisIncludeRelatedFed);
         Assert.That(
             await surveysPage.Jurisdictions.IsJurisdictionSelectionDisabled(JurisIncludeRelatedFed),
             Is.False,
             "Include related federal is not enabled when a juris is selected.");
 
-        // 4. Select ALLFEDS explicitly → count shows 2 (CA + ALLFEDS)
-        // ORIGINAL: SelectJurisdiction(false, JurisIncludeRelatedFed) = deselect/reselect pattern
-        // NATIVE: deselect then select for clarity
-        await surveysPage.Jurisdictions.DeselectJurisdiction(JurisIncludeRelatedFed);
-        await surveysPage.Jurisdictions.SelectJurisdiction(JurisIncludeRelatedFed);
-
+        // 4. Add ALLFEDS to existing selection → count 2 (CA + ALLFEDS)
+        // Shim: SelectJurisdiction(false, ALLFEDS) [no clear, just check] → WaitForSelectedCountToContain
+        await surveysPage.Jurisdictions.AddJurisdiction(JurisIncludeRelatedFed);
+        await surveysPage.Jurisdictions.WaitForSelectedCountToContain("2 selected");
         Assert.That(
-            await surveysPage.Jurisdictions.GetSelectedCountText(),
-            Does.Contain("2 selected"),
+            (await surveysPage.Jurisdictions.GetSelectedCountText()).Contains("2 selected"),
+            Is.True,
             "Selected count does not increase by 1 when Include related federal is selected.");
 
-        // 5. Deselect CA → ALLFEDS disabled again + 0 selected
+        // 5. Deselect CA → ALLFEDS auto-disabled + 0 selected
+        // Shim: SelectJurisdiction(false, JurisCA) [toggle/uncheck CA] → WaitForJurisdictionDisabled + WaitForSelectedCountToContain
         await surveysPage.Jurisdictions.DeselectJurisdiction(JurisCA);
-
+        await surveysPage.Jurisdictions.WaitForJurisdictionDisabled(JurisIncludeRelatedFed);
+        await surveysPage.Jurisdictions.WaitForSelectedCountToContain("0 selected");
         Assert.That(
-            await surveysPage.Jurisdictions.IsJurisdictionSelectionDisabled(JurisIncludeRelatedFed),
+            await surveysPage.Jurisdictions.IsJurisdictionSelectionDisabled(JurisIncludeRelatedFed)
+            && (await surveysPage.Jurisdictions.GetSelectedCountText()).Contains("0 selected"),
             Is.True,
             "Include related federal is not disabled when the only selected juris is unselected.");
 
-        Assert.That(
-            await surveysPage.Jurisdictions.GetSelectedCountText(),
-            Does.Contain("0 selected"));
-
         // 6. Select CA + MN + ALLFEDS, deselect MN → ALLFEDS stays selected
+        // Shim: SelectJurisdiction(CA, MN, ALLFEDS) → SelectJurisdiction(false, MN) → WaitForJurisdictionSelected
         await surveysPage.Jurisdictions.SelectJurisdiction(JurisCA, JurisMN, JurisIncludeRelatedFed);
         await surveysPage.Jurisdictions.DeselectJurisdiction(JurisMN);
-
+        await surveysPage.Jurisdictions.WaitForJurisdictionSelected(JurisIncludeRelatedFed);
         Assert.That(
             await surveysPage.Jurisdictions.IsJurisdictionSelected(JurisIncludeRelatedFed),
             Is.True,
@@ -138,15 +137,9 @@ public class WlaAjsIncludeRelatedFedTestsPw : PlaywrightAjsBaseTest
     /// <summary>
     /// Verify survey saved to folder retains federal/state result headings when reopened.
     ///
-    /// KEY WAIT IMPROVEMENTS:
-    ///   SHIM: Thread.Sleep(1000) before CreateSurvey click (timing hack)
-    ///         SafeMethodExecutor.WaitUntil(() => !surveysPage.ProgressLabel.Displayed)
-    ///         SafeMethodExecutor.WaitUntil(() => !surveysPage.ProgressLabel.Displayed, 3000)
-    ///   NATIVE: await WaitForSurveyComplete() — watches DOM mutation directly,
-    ///           fires exactly when spinner disappears, no polling.
-    ///
-    /// TODO: Implement PrepareTestFolder() in PlaywrightAjsBaseTest before running this test.
-    /// TODO: Implement folder navigation (save dialog, folder page, grid click).
+    /// KEY WAIT IMPROVEMENTS vs SHIM:
+    ///   Thread.Sleep(1000) → removed (Playwright auto-waits for button actionability)
+    ///   SafeMethodExecutor.WaitUntil(!ProgressLabel.Displayed) → await WaitForSurveyComplete()
     /// </summary>
     [Test]
     public async Task AjsIncludeRelatedFedFolderingTest()
@@ -154,56 +147,123 @@ public class WlaAjsIncludeRelatedFedTestsPw : PlaywrightAjsBaseTest
         const string SurveyQuestion = "What's the minimum wage?";
         const string AjsTestFolder  = "WlaAjsTestFolder";
 
-        await PrepareTestFolder(AjsTestFolder);
-
         var surveysPage = await NavigateToLandingPage();
         await surveysPage.WlaQueryBox.EnterQuestion(SurveyQuestion);
         await surveysPage.WlaQueryBox.SelectIncludeCases();
         await surveysPage.Jurisdictions.SelectJurisdiction(JurisCA, JurisIncludeRelatedFed);
-
-        // ORIGINAL: Thread.Sleep(1000) — removed. Playwright will auto-wait for button actionability.
         surveysPage = await surveysPage.ClickCreateSurveyAndWait();
 
-        // Verify all four result section headings appear
+        // Verify all four result section headings appear before saving
         Assert.That(
             await surveysPage.WlaSurveyResult.StateStatutesRegulationsHeading(JurisCAName).IsVisibleAsync(),
             Is.True,
             "State Statutes and Regulations heading not displayed.");
-
         Assert.That(
             await surveysPage.WlaSurveyResult.FederalStatutesRegulationsHeading.IsVisibleAsync(),
             Is.True,
             "Federal Statutes and Regulations heading not displayed.");
-
         Assert.That(
             await surveysPage.WlaSurveyResult.CasesStateHeading.IsVisibleAsync(),
             Is.True,
             "Cases State heading not displayed.");
-
         Assert.That(
             await surveysPage.WlaSurveyResult.CasesFederalHeading.IsVisibleAsync(),
             Is.True,
             "Cases Federal heading not displayed.");
 
-        // Save to folder
-        // TODO: Implement full folder save interaction once locators are verified.
-        // ORIGINAL:
-        //   var saveToFolderDialog = surveysPage.Toolbar.SaveToFolderButton.Click<SaveToFolderDialog>();
-        //   saveToFolderDialog.FolderTreeComponent.SelectFolderByName(AjsTestFolder);
-        //   saveToFolderDialog.ClickSaveButton<AiJurisdictionalSurveysPage>();
+        // Open Save to Folder dialog — create the test folder inline if it doesn't exist yet.
+        // No separate PrepareTestFolder step: folder is created on first run, reused on subsequent runs.
+        //
+        // SHIM locators (confirmed):
+        //   Dialog root:   //div[@id='coid_lightboxOverlay' and not(contains(@class,'co_hideState'))]//div[contains(@class,'co_folderAction')]
+        //   Folder item:   .//div[contains(@class,'co_tree_element') and contains(@class,'co_tree_position')]//*[text()='{name}']
+        //   New Folder lnk: //a[@class='co_saveToNewFolder']
+        //   Name input:    input#cobalt_ro_folder_action_textbox
+        //   OK button:     button[contains(@class,'co_dropdownBox_ok')]
+        //   Save button:   input[contains(@class,'co_saveToDoSave')]  ← input, not button
         var dialog = await surveysPage.Toolbar.ClickSaveToFolder();
-        // TODO: Select folder in tree, click Save — add full dialog interaction here
 
-        // Navigate to folder, reopen survey, verify headings again
-        // TODO: Implement folder navigation page object.
-        // ORIGINAL:
-        //   var recentFolderDialog = surveysPage.Header.ClickHeaderTab<EdgeRecentFoldersDialog>(EdgeHeaderTabs.Folders);
-        //   var folderPage = recentFolderDialog.ClickFolderByName(AjsTestFolder).ClickViewThisFolderButton();
-        //   surveysPage = folderPage.FolderGrid.ClickGridItemByName<AiJurisdictionalSurveysPage>(SurveyQuestion);
-        //   SafeMethodExecutor.WaitUntil(() => !surveysPage.ProgressLabel.Displayed, 3000);
+        // Find folder by exact text — works regardless of the tree's HTML structure
+        // (tried role='treeitem' and class-based XPath; neither matched the actual DOM)
+        var folderItem = Page.GetByText(AjsTestFolder, new PageGetByTextOptions { Exact = true }).First;
 
-        // Placeholder assertion — replace with real folder navigation
-        Assert.Inconclusive("Folder navigation not yet implemented. Implement PrepareTestFolder and folder dialog interactions.");
+        if (!await folderItem.IsVisibleAsync())
+        {
+            // First run — create the folder via the dialog's New Folder link
+            // Shim: //a[@class='co_saveToNewFolder']
+            var newFolderLink = Page.Locator("xpath=//a[@class='co_saveToNewFolder']");
+            await newFolderLink.WaitForAsync(new LocatorWaitForOptions { State = WaitForSelectorState.Visible, Timeout = 10000 });
+            await newFolderLink.ClickAsync();
+
+            var nameInput = Page.Locator("#cobalt_ro_folder_action_textbox");
+            await nameInput.WaitForAsync(new LocatorWaitForOptions { State = WaitForSelectorState.Visible, Timeout = 5000 });
+            await nameInput.FillAsync(AjsTestFolder);
+            await Page.Locator("button[class*='co_dropdownBox_ok']").First.ClickAsync();
+
+            // Wait for folder to appear after creation
+            await folderItem.WaitForAsync(new LocatorWaitForOptions { State = WaitForSelectorState.Visible, Timeout = 10000 });
+        }
+
+        await folderItem.ClickAsync();
+        // Save button is an <input> element, not a <button> — confirmed from shim
+        await Page.Locator("xpath=//input[contains(@class,'co_saveToDoSave')]").ClickAsync();
+        await dialog.WaitForAsync(new LocatorWaitForOptions
+        {
+            State = WaitForSelectorState.Hidden,
+            Timeout = 10000
+        });
+
+        // Navigate to folder via header Folders tab
+        // SHIM: surveysPage.Header.ClickHeaderTab<EdgeRecentFoldersDialog>(EdgeHeaderTabs.Folders)
+        var foldersPanel = await ClickHeaderFoldersTab();
+        var folderLink = foldersPanel.Locator(
+            $"a:has-text('{AjsTestFolder}'), button:has-text('{AjsTestFolder}')").First;
+        await folderLink.ClickAsync();
+
+        // Click "View this folder" button
+        var viewFolderBtn = Page.Locator(
+            "button:has-text('View this folder'), a:has-text('View this folder')").First;
+        await viewFolderBtn.WaitForAsync(new LocatorWaitForOptions
+        {
+            State = WaitForSelectorState.Visible,
+            Timeout = 10000
+        });
+        await viewFolderBtn.ClickAsync();
+        await Page.WaitForLoadStateAsync(LoadState.DOMContentLoaded);
+
+        // Click the survey entry in the folder grid
+        // SHIM: folderPage.FolderGrid.ClickGridItemByName<AiJurisdictionalSurveysPage>(SurveyQuestion)
+        var surveyItem = Page.Locator(
+            $"[role='grid'] a:has-text('{SurveyQuestion}'), " +
+            $"[class*='folderGrid'] a:has-text('{SurveyQuestion}')").First;
+        await surveyItem.WaitForAsync(new LocatorWaitForOptions
+        {
+            State = WaitForSelectorState.Visible,
+            Timeout = 15000
+        });
+        await surveyItem.ClickAsync();
+
+        // Wait for survey to load from folder
+        surveysPage = new AiJurisdictionalSurveysPagePw(Page);
+        await surveysPage.WaitForSurveyComplete(timeoutMs: 30000);
+
+        // Re-verify all four headings after reopening from folder
+        Assert.That(
+            await surveysPage.WlaSurveyResult.StateStatutesRegulationsHeading(JurisCAName).IsVisibleAsync(),
+            Is.True,
+            "State Statutes heading not displayed after reopening from folder.");
+        Assert.That(
+            await surveysPage.WlaSurveyResult.FederalStatutesRegulationsHeading.IsVisibleAsync(),
+            Is.True,
+            "Federal Statutes heading not displayed after reopening from folder.");
+        Assert.That(
+            await surveysPage.WlaSurveyResult.CasesStateHeading.IsVisibleAsync(),
+            Is.True,
+            "Cases State heading not displayed after reopening from folder.");
+        Assert.That(
+            await surveysPage.WlaSurveyResult.CasesFederalHeading.IsVisibleAsync(),
+            Is.True,
+            "Cases Federal heading not displayed after reopening from folder.");
     }
 
     // ─────────────────────────────────────────────────────────────────────────
@@ -214,17 +274,10 @@ public class WlaAjsIncludeRelatedFedTestsPw : PlaywrightAjsBaseTest
     /// <summary>
     /// Verify jurisdiction filters and labels are preserved when opening a copied link.
     ///
-    /// KEY WAIT IMPROVEMENTS:
-    ///   SHIM: SafeMethodExecutor.WaitUntil(() => surveysPage.CopiedLinkSuccessLabel.Displayed, timeoutFromSec: 10)
-    ///         → polls via FindElement with 2s cap
-    ///   NATIVE: await WaitForCopiedLinkSuccess() → WaitForAsync(Visible) on the locator directly
-    ///
-    ///   SHIM: Clipboard.GetText() (Windows Forms) — does not work in headless/Linux CI
-    ///   NATIVE: Page.EvaluateAsync("() => navigator.clipboard.readText()") — works in Playwright
-    ///           because Playwright grants clipboard permissions in context options.
-    ///
-    /// TODO: Implement sign-out and sign-back-in helpers before running this test.
-    /// TODO: Verify clipboard read works with the granted permissions in ContextOptions.
+    /// KEY WAIT IMPROVEMENTS vs SHIM:
+    ///   WaitUntil(CopiedLinkSuccessLabel.Displayed) → await WaitForCopiedLinkSuccess()
+    ///   Clipboard.GetText() (Windows Forms, CI-broken) → navigator.clipboard.readText()
+    ///   BrowserPool.CreateTab/ActivateTab → Context.NewPageAsync()
     /// </summary>
     [Test]
     public async Task AjsIncludeRelatedFedCopyLinkTest()
@@ -239,47 +292,66 @@ public class WlaAjsIncludeRelatedFedTestsPw : PlaywrightAjsBaseTest
 
         // Capture original state
         var jurisFilterNamesOriginal = await surveysPage.ContentType.GetJurisdictionContentTypes();
-        var jurisLabelsOriginal = await surveysPage.WlaSurveyResult.GetAllJurisdictionLabels();
+        var jurisLabelsOriginal      = await surveysPage.WlaSurveyResult.GetAllJurisdictionLabels();
 
         Assert.That(
             jurisFilterNamesOriginal.SequenceEqual(jurisLabelsOriginal),
             Is.True,
-            "Jurisdiction filters names not match with jurisdiction labels on result.");
+            "Jurisdiction filter names do not match jurisdiction labels on result.");
 
         var originalTitle   = await Page.TitleAsync();
         var originalHeading = await surveysPage.PageHeaderLabel.TextContentAsync() ?? string.Empty;
 
         // Copy the link
+        // NATIVE: navigator.clipboard.readText() — works because Playwright grants clipboard
+        //         permissions; Clipboard.GetText() (Windows Forms) breaks in headless/Linux CI.
         await surveysPage.Toolbar.ClickCopyLink();
         await surveysPage.WaitForCopiedLinkSuccess();
 
-        // ORIGINAL: Clipboard.GetText() — Windows Forms, doesn't work in CI/headless
-        // NATIVE: navigator.clipboard.readText() — works because Playwright grants clipboard permissions
         var copiedLink = await Page.EvaluateAsync<string>("() => navigator.clipboard.readText()");
         Assert.That(copiedLink, Is.Not.Null.And.Not.Empty, "Copied link should not be empty.");
 
-        // TODO: Sign out and sign back in
-        // ORIGINAL:
-        //   this.DefaultSignOnManager.SignOff();
-        //   var homePage = this.SignOnBack().ClickContinueButton<AdvantageHomePage>();
-        // NATIVE: Implement SignOut() and re-navigate in PlaywrightAjsBaseTest
+        // Sign out and sign back in
+        // SHIM: DefaultSignOnManager.SignOff() + SignOnBack().ClickContinueButton()
+        await SignOut();
+        await SignBackIn();
 
-        // Open copied link in a new tab
-        // ORIGINAL: BrowserPool.CurrentBrowser.CreateTab(WlaTab) + ActivateTab
-        // NATIVE: Context.NewPageAsync() — clean, no window handle juggling
+        // Open the copied link in a new tab — new tab inherits the authenticated context
+        // SHIM: BrowserPool.CurrentBrowser.CreateTab(WlaTab) + ActivateTab
         var newPage = await Context.NewPageAsync();
         await newPage.GotoAsync(copiedLink);
         await newPage.WaitForLoadStateAsync(LoadState.DOMContentLoaded);
 
-        // Verify title and heading match original
+        // Verify browser title matches original
         Assert.That(
             await newPage.TitleAsync(),
             Is.EqualTo(originalTitle),
             "Browser tab title is not correct after opening copied link.");
 
-        // TODO: Create page object on newPage and verify jurisdiction filters match
-        // Placeholder:
-        Assert.Inconclusive("Sign-out/sign-back-in and new-tab page object not yet implemented.");
+        // Wait for the survey to render on the new tab
+        var newTabPage = new AiJurisdictionalSurveysPagePw(newPage);
+        await newTabPage.WaitForSurveyComplete(timeoutMs: 30000);
+
+        // Verify page heading matches
+        var newTabHeading = await newTabPage.PageHeaderLabel.TextContentAsync() ?? string.Empty;
+        Assert.That(
+            newTabHeading.Trim(),
+            Is.EqualTo(originalHeading.Trim()),
+            "Page heading is not correct after opening copied link.");
+
+        // Verify jurisdiction filter names match original
+        var jurisFiltersNewTab = await newTabPage.ContentType.GetJurisdictionContentTypes();
+        Assert.That(
+            jurisFiltersNewTab.SequenceEqual(jurisFilterNamesOriginal),
+            Is.True,
+            "Jurisdiction filter names not preserved when opening copied link.");
+
+        // Verify jurisdiction result labels match original
+        var jurisLabelsNewTab = await newTabPage.WlaSurveyResult.GetAllJurisdictionLabels();
+        Assert.That(
+            jurisLabelsNewTab.SequenceEqual(jurisLabelsOriginal),
+            Is.True,
+            "Jurisdiction labels not preserved when opening copied link.");
     }
 
     // ─────────────────────────────────────────────────────────────────────────
@@ -290,13 +362,9 @@ public class WlaAjsIncludeRelatedFedTestsPw : PlaywrightAjsBaseTest
     /// <summary>
     /// Verify survey appears in history and retains timestamp + jurisdiction data when reopened.
     ///
-    /// KEY WAIT IMPROVEMENTS:
-    ///   SHIM: SafeMethodExecutor.WaitUntil with 30s polling loop + BrowserPool.Refresh
-    ///         to check if survey appears in history.
-    ///   NATIVE: await Page.WaitForFunctionAsync() or poll with Playwright's WaitUntilAsync pattern.
-    ///           No BrowserPool needed — use Page.ReloadAsync().
-    ///
-    /// TODO: Implement header tab navigation and history page object.
+    /// KEY WAIT IMPROVEMENTS vs SHIM:
+    ///   WaitUntil(BrowserPool.Refresh + historyTable check, 30s) →
+    ///     WaitForFunctionAsync(body contains question, 30s) — no page refresh loop needed.
     /// </summary>
     [Test]
     public async Task AjsIncludeRelatedFedHistoryTest()
@@ -314,53 +382,71 @@ public class WlaAjsIncludeRelatedFedTestsPw : PlaywrightAjsBaseTest
         var jurisFiltersOriginal = await surveysPage.ContentType.GetJurisdictionContentTypes();
         var jurisLabelsOriginal  = await surveysPage.WlaSurveyResult.GetAllJurisdictionLabels();
 
-        // TODO: Navigate to history page and wait for entry to appear.
-        // ORIGINAL (shim):
-        //   var recentHistoryDialog = surveysPage.Header.ClickHeaderTab<EdgeRecentHistoryDialog>(EdgeHeaderTabs.History);
-        //   var historyPage = recentHistoryDialog.ViewAllLink.Click<EdgeCommonHistoryPage>();
-        //   SafeMethodExecutor.WaitUntil(
-        //       () => {
-        //           historyPage = BrowserPool.CurrentBrowser.Refresh<EdgeCommonHistoryPage>();
-        //           return historyPage.HistoryTable.GetGridItems().First().IsTextLinkDisplayed(SurveyQuestion);
-        //       }, timeoutFromSec: 30);
-        //
-        // NATIVE: Navigate to history URL, poll for the entry with WaitForFunctionAsync or retry loop.
-        //   Example:
-        //   await Page.GotoAsync($"{BaseUrl}/history");
-        //   await Page.WaitForFunctionAsync(
-        //       "question => document.body.innerText.includes(question)",
-        //       SurveyQuestion,
-        //       new PageWaitForFunctionOptions { Timeout = 30000, PollingInterval = 2000 }
-        //   );
+        // Navigate to History via header tab, then click "View all"
+        // SHIM: Header.ClickHeaderTab<EdgeRecentHistoryDialog>(EdgeHeaderTabs.History)
+        //       → recentHistoryDialog.ViewAllLink.Click<EdgeCommonHistoryPage>()
+        var historyPanel = await ClickHeaderHistoryTab();
+        var viewAllLink  = historyPanel.Locator("a:has-text('View all'), a:has-text('View All')").First;
+        await viewAllLink.ClickAsync();
+        await Page.WaitForLoadStateAsync(LoadState.DOMContentLoaded);
 
-        // Placeholder
-        Assert.Inconclusive("History page navigation not yet implemented.");
+        // Poll until the survey entry appears (up to 30 s — history indexing may lag)
+        // SHIM: WaitUntil(() => BrowserPool.Refresh + historyTable.First().IsTextLinkDisplayed(...))
+        await Page.WaitForFunctionAsync(
+            "question => document.body.innerText.includes(question)",
+            SurveyQuestion,
+            new PageWaitForFunctionOptions { Timeout = 30000, PollingInterval = 2000 });
+
+        // Click the survey entry in the history table
+        var historyEntry = Page.Locator(
+            $"[role='grid'] a:has-text('{SurveyQuestion}'), " +
+            $"[class*='historyGrid'] a:has-text('{SurveyQuestion}'), " +
+            $"table a:has-text('{SurveyQuestion}')").First;
+        await historyEntry.ClickAsync();
+
+        // Wait for the reopened survey to fully load
+        surveysPage = new AiJurisdictionalSurveysPagePw(Page);
+        await surveysPage.WaitForSurveyComplete(timeoutMs: 30000);
+
+        // Verify timestamp is preserved
+        var timestampReopened = await surveysPage.SurveyResult.GetTimestamp();
+        Assert.That(
+            timestampReopened,
+            Is.EqualTo(timestampOriginal),
+            "Survey timestamp not preserved when reopening from history.");
+
+        // Verify jurisdiction filter names match
+        var jurisFiltersReopened = await surveysPage.ContentType.GetJurisdictionContentTypes();
+        Assert.That(
+            jurisFiltersReopened.SequenceEqual(jurisFiltersOriginal),
+            Is.True,
+            "Jurisdiction filter names not preserved when reopening from history.");
+
+        // Verify jurisdiction result labels match
+        var jurisLabelsReopened = await surveysPage.WlaSurveyResult.GetAllJurisdictionLabels();
+        Assert.That(
+            jurisLabelsReopened.SequenceEqual(jurisLabelsOriginal),
+            Is.True,
+            "Jurisdiction labels not preserved when reopening from history.");
     }
 
     // ─────────────────────────────────────────────────────────────────────────
-    // TEST 4: Delivery (Download PDF)
+    // TEST 5: Delivery (Download PDF)
     // Requires: survey, open download dialog, download PDF, verify content
     // ─────────────────────────────────────────────────────────────────────────
 
     /// <summary>
     /// Verify downloaded PDF contains correct cover page info including federal jurisdiction.
     ///
-    /// KEY WAIT IMPROVEMENTS:
-    ///   SHIM: FileUtil.WaitForFileDownload(FolderToSave, fileName) — polls filesystem
-    ///   NATIVE: Page.RunAndWaitForDownloadAsync() — Playwright signals when download completes.
-    ///           No filesystem polling. Works in headless and CI.
-    ///
-    ///   SHIM: download.default_directory ChromeOptions pref → Playwright download handler
-    ///   NATIVE: context.RunAndWaitForDownloadAsync() gives you the download object directly.
-    ///           Call download.SaveAsAsync(path) to save to a specific location.
-    ///
-    /// TODO: Implement full download dialog interactions (format selection, click download).
+    /// KEY WAIT IMPROVEMENTS vs SHIM:
+    ///   FileUtil.WaitForFileDownload(folder, fileName) (filesystem poll) →
+    ///     Page.RunAndWaitForDownloadAsync() — Playwright signals completion directly.
+    ///   ChromeOptions download.default_directory pref → download.SaveAsAsync(path)
     /// </summary>
     [Test]
     public async Task AjsIncludeRelatedFedDeliveryTest()
     {
-        const string SurveyQuestion     = "What is lemon law?";
-        const string DeliveryDateFormat = "MM-dd-yyyy";
+        const string SurveyQuestion = "What is lemon law?";
 
         var surveysPage = await NavigateToLandingPage();
         await surveysPage.WlaQueryBox.EnterQuestion(SurveyQuestion);
@@ -368,64 +454,94 @@ public class WlaAjsIncludeRelatedFedTestsPw : PlaywrightAjsBaseTest
         await surveysPage.Jurisdictions.SelectJurisdiction(JurisCA, JurisIncludeRelatedFed);
         surveysPage = await surveysPage.ClickCreateSurveyAndWait();
 
-        // Wait for timestamp to appear (confirms result is fully rendered)
+        // Wait for timestamp to appear (result is fully rendered)
         await surveysPage.SurveyResult.TimeStampLabel.WaitForAsync(new LocatorWaitForOptions
         {
             State = WaitForSelectorState.Visible,
             Timeout = 10000
         });
 
-        // Open download dialog
-        // TODO: Implement full dialog — format selection (PDF), layout options (cover page)
-        // ORIGINAL:
-        //   var downloadDialog = surveysPage.Toolbar.DeliveryDropdown.SelectOption<DownloadDialog>(DeliveryMethod.Download);
-        //   downloadDialog.LayoutAndLimitsTab.SetIncludeSectionOption(LayoutAndLimitsInclude.CoverPage);
-        //   downloadDialog.TheBasicsTab.FormatDropdown.SelectOption<DownloadDialog>(DeliveryFormat.Pdf);
-        //   downloadDialog.ClickDownloadButton<ReadyForDeliveryDialog>().ClickDownloadButton<AiJurisdictionalSurveysPage>();
-        //
-        // NATIVE — use RunAndWaitForDownloadAsync to capture the download object:
-        //   var download = await Page.RunAndWaitForDownloadAsync(async () =>
-        //   {
-        //       await surveysPage.Toolbar.SelectDeliveryDownload();
-        //       // ... set PDF format, cover page option ...
-        //       await Page.Locator("button:has-text('Download')").Last.ClickAsync();
-        //   });
-        //   var tempPath = await download.PathAsync();
-        //   var savedPath = Path.Combine(Path.GetTempPath(), download.SuggestedFilename);
-        //   await download.SaveAsAsync(savedPath);
+        // Open delivery dropdown → Download dialog, configure PDF + cover page, capture download
+        // SHIM: DeliveryDropdown.SelectOption<DownloadDialog>(DeliveryMethod.Download)
+        //       → LayoutAndLimitsTab.SetIncludeSectionOption(CoverPage)
+        //       → TheBasicsTab.FormatDropdown.SelectOption(Pdf)
+        //       → ClickDownloadButton<ReadyForDeliveryDialog>().ClickDownloadButton()
+        var download = await Page.RunAndWaitForDownloadAsync(async () =>
+        {
+            var dialog = await surveysPage.Toolbar.SelectDeliveryDownload();
 
-        // Placeholder — implement download dialog then uncomment verification below
-        Assert.Inconclusive(
-            "Download dialog interactions not yet implemented. " +
-            "Implement toolbar delivery dropdown → PDF format → download button → " +
-            "Page.RunAndWaitForDownloadAsync() → verify PDF text content.");
+            // Set format to PDF
+            var formatSelect = dialog.Locator(
+                "select[aria-label*='Format' i], " +
+                "[data-automation='format-select'], " +
+                "select[id*='format' i], " +
+                "select[name*='format' i]").First;
+            if (await formatSelect.CountAsync() > 0)
+                await formatSelect.SelectOptionAsync(new SelectOptionValue { Label = "PDF" });
 
-        // Once implemented, verify PDF content:
-        // var expectedFileName = $"Westlaw Advantage - AI Jurisdictional Survey - {DateTime.Now.ToString(DeliveryDateFormat)}.pdf";
-        // var text = PdfTextExtractor.ExtractTextFromPdf(savedPath);
-        // Assert.That(text, Does.Contain("Westlaw AI Jurisdictional Surveys results"));
-        // Assert.That(text, Does.Contain($"Question:  {SurveyQuestion}"));
-        // Assert.That(text, Does.Contain("Content:  Statutes, regulations, and cases"));
-        // Assert.That(text, Does.Contain("Jurisdiction:  Federal, California"));
-        // Assert.That(text, Does.Contain($"Delivered:  {DateTime.Now:MMMM d, yyyy}"));
-        // var textNoWhitespace = text.Replace(" ", "").Replace("\r\n", "");
-        // Assert.That(textNoWhitespace, Does.Contain("FederalStatutesandregulations".Replace(" ", "")));
-        // Assert.That(textNoWhitespace, Does.Contain("CaliforniaStatestatutesandregulations".Replace(" ", "")));
-        // Assert.That(textNoWhitespace, Does.Contain("CasesState".Replace(" ", "")));
+            // Enable cover page option
+            var coverPageCheckbox = dialog.Locator(
+                "[data-automation='cover-page'] input, " +
+                "input[aria-label*='cover page' i], " +
+                "input[id*='coverPage' i]").First;
+            if (await coverPageCheckbox.CountAsync() > 0 && !await coverPageCheckbox.IsCheckedAsync())
+                await coverPageCheckbox.CheckAsync();
+
+            // Click the final Download button
+            // SHIM: ClickDownloadButton<ReadyForDeliveryDialog>().ClickDownloadButton()
+            await dialog.Locator("button:has-text('Download')").Last.ClickAsync();
+
+            // Handle two-step "Ready for Delivery" dialog if shown
+            var readyDialog = Page.Locator(
+                "[role='dialog']:has-text('Ready for Delivery'), " +
+                "[data-automation='ready-for-delivery-dialog']");
+            if (await readyDialog.IsVisibleAsync())
+                await readyDialog.Locator("button:has-text('Download')").ClickAsync();
+        });
+
+        var savedPath = Path.Combine(Path.GetTempPath(), download.SuggestedFilename);
+        await download.SaveAsAsync(savedPath);
+
+        Assert.That(download.SuggestedFilename, Does.EndWith(".pdf"),
+            "Downloaded file is not a PDF.");
+
+        // Extract and verify PDF text content
+        // SHIM: PdfTextExtractor.ExtractTextFromPdf(savedPath) from Framework.Common.UI
+        // NATIVE: UglyToad.PdfPig reads the PDF without any native dependencies
+        var pdfText = ExtractPdfText(savedPath);
+
+        Assert.That(pdfText, Does.Contain("Westlaw AI Jurisdictional Surveys results"),
+            "PDF does not contain expected header text.");
+        Assert.That(pdfText, Does.Contain($"Question:  {SurveyQuestion}"),
+            "PDF does not contain the survey question.");
+        Assert.That(pdfText, Does.Contain("Content:  Statutes, regulations, and cases"),
+            "PDF does not contain expected content type.");
+        Assert.That(pdfText, Does.Contain("Jurisdiction:  Federal, California"),
+            "PDF does not contain expected jurisdiction.");
+        Assert.That(pdfText, Does.Contain($"Delivered:  {DateTime.Now:MMMM d, yyyy}"),
+            "PDF does not contain expected delivery date.");
+
+        var textNoWhitespace = pdfText.Replace(" ", "").Replace("\r\n", "").Replace("\n", "");
+        Assert.That(textNoWhitespace, Does.Contain("FederalStatutesandregulations"),
+            "PDF missing Federal Statutes and Regulations heading.");
+        Assert.That(textNoWhitespace, Does.Contain("CaliforniaStatestatutesandregulations"),
+            "PDF missing California State Statutes and Regulations heading.");
+        Assert.That(textNoWhitespace, Does.Contain("CasesState"),
+            "PDF missing Cases State heading.");
     }
 
-    // ── Helper ────────────────────────────────────────────────────────────────
+    // ── PDF helper ────────────────────────────────────────────────────────────
 
     /// <summary>
-    /// Extension: wait for copy-link success label to appear.
-    /// Called in AjsIncludeRelatedFedCopyLinkTest.
+    /// Extracts all text from a PDF file using PdfPig (pure .NET, no native deps).
+    /// Replaces: PdfTextExtractor.ExtractTextFromPdf(path) from Framework.Common.UI
     /// </summary>
-    private async Task WaitForCopiedLinkSuccess(Pages.AiJurisdictionalSurveysPagePw surveysPage)
+    private static string ExtractPdfText(string pdfPath)
     {
-        await surveysPage.CopiedLinkSuccessLabel.WaitForAsync(new LocatorWaitForOptions
-        {
-            State = WaitForSelectorState.Visible,
-            Timeout = 10000
-        });
+        using var pdf = UglyToad.PdfPig.PdfDocument.Open(pdfPath);
+        var sb = new System.Text.StringBuilder();
+        foreach (var page in pdf.GetPages())
+            sb.Append(string.Join(" ", page.GetWords().Select(w => w.Text))).Append(' ');
+        return sb.ToString();
     }
 }
