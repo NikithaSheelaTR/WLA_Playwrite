@@ -41,13 +41,47 @@
         }
 
         /// <summary>
-        /// Get the current browser instance for the specific thread
+        /// Get the current browser instance for the specific thread.
+        /// If no browser is registered for the current thread (e.g. MSTest switches threads
+        /// between [TestInitialize] and [TestMethod]), auto-adopts an active browser from
+        /// another thread and registers it for the current thread.
         /// </summary>
         public static Browser CurrentBrowser
         {
             get
             {
-                string browserName = ThreadActiveBrowser[Thread.CurrentThread.ManagedThreadId];
+                int currentThreadId = Thread.CurrentThread.ManagedThreadId;
+
+                if (!ThreadActiveBrowser.TryGetValue(currentThreadId, out string browserName))
+                {
+                    // MSTest can run [TestInitialize] and [TestMethod] on different threads.
+                    // Search for a non-disposed browser registered on another thread and adopt it.
+                    lock (Locker)
+                    {
+                        // Re-check inside the lock in case another thread just registered.
+                        if (!ThreadActiveBrowser.TryGetValue(currentThreadId, out browserName))
+                        {
+                            foreach (var kvp in ThreadActiveBrowser)
+                            {
+                                string candidateKey = $"{kvp.Value}_{kvp.Key}";
+                                if (BrowsersDictionary.TryGetValue(candidateKey, out Browser candidate) && !candidate.IsDisposed)
+                                {
+                                    browserName = kvp.Value;
+                                    ThreadActiveBrowser[currentThreadId] = browserName;
+                                    BrowsersDictionary.TryAdd($"{browserName}_{currentThreadId}", candidate);
+                                    break;
+                                }
+                            }
+                        }
+                    }
+
+                    if (browserName == null)
+                    {
+                        throw new KeyNotFoundException(
+                            $"No browser registered for thread {currentThreadId} and no active browser found on any other thread.");
+                    }
+                }
+
                 return BrowsersDictionary[BrowserPool.GetBrowserNameWithThreadId(browserName)];
             }
         }
