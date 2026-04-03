@@ -10,8 +10,8 @@
     }
   },
   "launch": {
-    "name": "WLA_PlayWriteAjsTests",
-    "description": "Test run for WlnGrowth WestlawPrecision",
+    "name": "WL_Advantage_Playwright",
+    "description": "Test run for WL Advantage Playwright",
     "debugMode": false,
     "tags": [ "Local", ".NET", "Playwright" ]
   },
