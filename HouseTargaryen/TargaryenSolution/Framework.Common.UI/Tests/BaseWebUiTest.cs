@@ -634,17 +634,44 @@
         /// </summary>
         private void InitializeTestClient()
         {
-            // Initialize the Selenium WebDriver
-            BrowserPool.RegisterAndMakeCurrentBrowser(
-                new Browser(
-                    this.TestExecutionContext.TestClient,
-                    this.GetBrowserOptions(),
-                    this.Settings.GetValue(EnvironmentConstants.DriverLocation)));
-            SafeMethodExecutor.Execute(BrowserPool.CurrentBrowser.Maximize).LogDetails();
+            Console.WriteLine($"[InitializeTestClient] Starting browser initialization on thread {Thread.CurrentThread.ManagedThreadId}");
 
-            // Add an implicit wait to the driver that will cause the driver to wait
-            // when findElement function is called
-            DriverExtensions.SetTimeout(0);
+            try
+            {
+                // Initialize the Selenium WebDriver
+                var browserOptions = this.GetBrowserOptions();
+                Console.WriteLine($"[InitializeTestClient] Browser options obtained: {browserOptions?.GetType().Name ?? "null"}");
+
+                var driverLocation = this.Settings.GetValue(EnvironmentConstants.DriverLocation);
+                Console.WriteLine($"[InitializeTestClient] Driver location: {driverLocation ?? "(default)"}");
+
+                var browser = new Browser(
+                    this.TestExecutionContext.TestClient,
+                    browserOptions,
+                    driverLocation);
+
+                Console.WriteLine($"[InitializeTestClient] Browser instance created. IsDisposed={browser.IsDisposed}");
+
+                BrowserPool.RegisterAndMakeCurrentBrowser(browser);
+                Console.WriteLine($"[InitializeTestClient] Browser registered in pool successfully");
+
+                SafeMethodExecutor.Execute(BrowserPool.CurrentBrowser.Maximize).LogDetails();
+
+                // Add an implicit wait to the driver that will cause the driver to wait
+                // when findElement function is called
+                DriverExtensions.SetTimeout(0);
+                Console.WriteLine($"[InitializeTestClient] Browser initialization completed successfully on thread {Thread.CurrentThread.ManagedThreadId}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"[InitializeTestClient] FATAL ERROR during browser initialization: {ex.GetType().Name}: {ex.Message}");
+                Console.WriteLine($"[InitializeTestClient] Stack trace: {ex.StackTrace}");
+                if (ex.InnerException != null)
+                {
+                    Console.WriteLine($"[InitializeTestClient] Inner exception: {ex.InnerException.GetType().Name}: {ex.InnerException.Message}");
+                }
+                throw; // Re-throw to let the test framework handle it
+            }
         }
 
         /// <summary>
