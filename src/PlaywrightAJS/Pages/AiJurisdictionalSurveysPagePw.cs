@@ -37,7 +37,7 @@ public class AiJurisdictionalSurveysPagePw
     /// Original XPath equivalent: element with "progress" in automation attr or class
     /// </summary>
     public ILocator ProgressLabel =>
-        _page.Locator("[data-automation='progress-indicator'], .progress-indicator, [class*='progressLabel']");
+        _page.Locator("xpath=//saf-status[@message='Creating your survey. It will appear in History when completed.']");
 
     /// <summary>
     /// The page description text shown on the landing page (before any survey is run).
@@ -45,28 +45,28 @@ public class AiJurisdictionalSurveysPagePw
     /// Replaces: SafeMethodExecutor.ExecuteUntil(() => PageDescription.Displayed)
     /// </summary>
     public ILocator PageDescription =>
-        _page.Locator("[data-automation='page-description'], .page-description, [class*='pageDescription']");
+        _page.Locator("h3#fiftyStateSearchCriteria");
 
     /// <summary>
     /// The "Create Survey" button at the top of the form.
     /// Replaces: surveysPage.CreateSurveyButtonTop.Click&lt;AiJurisdictionalSurveysPage&gt;()
     /// </summary>
     public ILocator CreateSurveyButtonTop =>
-        _page.Locator("[data-automation='create-survey-button-top'], button:has-text('Create')").First;
+        _page.Locator("saf-button#Create-Survey-Button-1");
 
     /// <summary>
     /// The main page heading label.
     /// Replaces: surveysPage.PageHeaderLabel.Text
     /// </summary>
     public ILocator PageHeaderLabel =>
-        _page.Locator("h1, [data-automation='page-header'], [class*='pageHeader']").First;
+        _page.Locator("h1#fiftyStateHeading, h2#fiftyStateHeading").First;
 
     /// <summary>
     /// Success label shown after copying a link.
     /// Replaces: surveysPage.CopiedLinkSuccessLabel.Displayed
     /// </summary>
     public ILocator CopiedLinkSuccessLabel =>
-        _page.Locator("[data-automation='copy-link-success'], [class*='copyLink'][class*='success']");
+        _page.Locator("div.saf-alert__content");
 
     // ── Components ────────────────────────────────────────────────────────────
     public JurisdictionsComponentPw Jurisdictions { get; }
@@ -98,11 +98,49 @@ public class AiJurisdictionalSurveysPagePw
     /// </summary>
     public async Task WaitForPageReady()
     {
-        await PageDescription.WaitForAsync(new LocatorWaitForOptions
+        await _page.WaitForLoadStateAsync(LoadState.DOMContentLoaded);
+
+        // Fail fast if the account doesn't have AJS access — shows a 404/error page
+        var notFoundMsg = _page.Locator("text=Sorry, we can't find the page you're looking for");
+        if (await notFoundMsg.IsVisibleAsync())
         {
-            State = WaitForSelectorState.Visible,
-            Timeout = 15000
-        });
+            var shot = Path.Combine(Path.GetTempPath(), $"wla_ajs_noaccess_{DateTime.Now:yyyyMMdd_HHmmss}.png");
+            await File.WriteAllBytesAsync(shot, await _page.ScreenshotAsync());
+            throw new InvalidOperationException(
+                $"AJS page returned a 404/not-found error. " +
+                $"The checked-out credential does not have AIJurisdictionalSurveys feature access. " +
+                $"URL: {_page.Url}  screenshot={shot}");
+        }
+
+        // Dismiss Pendo onboarding overlay before waiting for page content.
+        // The overlay can delay rendering of the page description element.
+        await ClosePendoMessage();
+
+        // Wait for the AJS landing page description heading.
+        // Confirmed shim XPath: //h3[@id='fiftyStateSearchCriteria']
+        // Fallback: the jurisdictions selected-count label (also confirmed by shim).
+        try
+        {
+            await PageDescription.WaitForAsync(new LocatorWaitForOptions
+            {
+                State = WaitForSelectorState.Visible,
+                Timeout = 30000
+            });
+        }
+        catch (TimeoutException)
+        {
+            // Capture screenshot to diagnose what is actually on screen
+            var shot = Path.Combine(Path.GetTempPath(), $"wla_ajs_pageready_{DateTime.Now:yyyyMMdd_HHmmss}.png");
+            await File.WriteAllBytesAsync(shot, await _page.ScreenshotAsync());
+
+            // Try fallback: jurisdictions selected-count label
+            var fallback = _page.Locator("span[class*='jurisdictionCardSelectedCount']");
+            var fallbackVisible = await fallback.IsVisibleAsync();
+            if (!fallbackVisible)
+                throw new InvalidOperationException(
+                    $"AJS landing page did not become ready (h3#fiftyStateSearchCriteria not found, " +
+                    $"jurisdictions label also absent). URL: {_page.Url}  screenshot={shot}");
+        }
     }
 
     /// <summary>
@@ -117,31 +155,42 @@ public class AiJurisdictionalSurveysPagePw
     ///   await WaitForAsync(Hidden) — Playwright watches the DOM mutation directly.
     ///   No polling. No timeout tuning. Fires exactly when the element disappears.
     /// </summary>
-    public async Task WaitForSurveyComplete(int timeoutMs = 180000)
+    public async Task WaitForSurveyComplete(int timeoutMs = 300000)
     {
-        // First wait for the progress indicator to APPEAR (it may not be there yet)
-        // then wait for it to DISAPPEAR. This avoids the race where we check for
-        // Hidden before the spinner has even shown up.
+        // Try to detect the spinner and wait for it to disappear.
+        // If the spinner locator doesn't match (wrong message text, shadow DOM, etc.)
+        // we fall through to the definitive result-heading wait below.
         try
         {
             await ProgressLabel.WaitForAsync(new LocatorWaitForOptions
             {
                 State = WaitForSelectorState.Visible,
-                Timeout = 5000 // short — if it never appears, survey was instant
+                Timeout = 5000 // short — if it never appears, skip spinner strategy
+            });
+            // Spinner appeared — wait for it to go away
+            await ProgressLabel.WaitForAsync(new LocatorWaitForOptions
+            {
+                State = WaitForSelectorState.Hidden,
+                Timeout = timeoutMs
             });
         }
         catch (TimeoutException)
         {
-            // Progress indicator never appeared — survey completed instantly, continue
-            return;
+            // Spinner never appeared or locator didn't match — fall through
         }
 
-        // Now wait for it to go away
-        await ProgressLabel.WaitForAsync(new LocatorWaitForOptions
-        {
-            State = WaitForSelectorState.Hidden,
-            Timeout = timeoutMs
-        });
+        // Definitive signal: wait for the first result section heading to be visible.
+        // This works whether the spinner matched or not, and whether the survey
+        // was "instant" or took 3 minutes.
+        // Shim XPath: //h4[contains(@class,'resultsSummaryHeading')]
+        await _page
+            .Locator("h4[class*='resultsSummaryHeading']")
+            .First
+            .WaitForAsync(new LocatorWaitForOptions
+            {
+                State = WaitForSelectorState.Visible,
+                Timeout = timeoutMs
+            });
     }
 
     /// <summary>
@@ -172,10 +221,19 @@ public class AiJurisdictionalSurveysPagePw
 
     public async Task ClosePendoMessage()
     {
-        var closeBtn = _page.Locator("._pendo-close-guide, [data-automation='pendo-close'], [aria-label='Close']");
-        if (await closeBtn.CountAsync() > 0)
+        // Use Pendo-specific selectors only — [aria-label='Close'] is too broad and matches
+        // other saf-button elements (toolbars, headers) that are not Pendo guides.
+        var closeBtn = _page.Locator("._pendo-close-guide, [data-automation='pendo-close']");
+        if (await closeBtn.IsVisibleAsync())
         {
-            await closeBtn.First.ClickAsync(new LocatorClickOptions { Timeout = 3000 });
+            try
+            {
+                await closeBtn.First.ClickAsync(new LocatorClickOptions { Timeout = 3000 });
+            }
+            catch (TimeoutException)
+            {
+                // Pendo guide dismissed itself or was not clickable — safe to continue
+            }
         }
     }
 }

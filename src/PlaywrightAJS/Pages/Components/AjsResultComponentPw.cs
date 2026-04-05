@@ -45,72 +45,54 @@ public class AjsResultComponentPw
     ///
     /// Playwright CSS equivalent using :has-text():
     /// </summary>
+    // Shim XPath: //h4[contains(@class,'resultsSummaryHeading') and normalize-space(.)='Federal']
+    //             /following-sibling::h5[contains(@class,'resultsSummarySubHeading')
+    //               and normalize-space(.)='Statutes and regulations']
     public ILocator FederalStatutesRegulationsHeading =>
-        _page.Locator(
-            "h5.resultsSummarySubHeading:has-text('Statutes and regulations')" +
-            ":near(h4.resultsSummaryHeading:has-text('Federal'))"
-        );
+        _page.Locator("xpath=//h4[contains(@class,'resultsSummaryHeading') and normalize-space(.)='Federal']/following-sibling::h5[contains(@class,'resultsSummarySubHeading') and normalize-space(.)='Statutes and regulations']");
 
     /// <summary>
     /// "State statutes and regulations" heading for a given state display name.
     /// Replaces: surveysPage.WlaSurveyResult.StateStatutesRegulationsHeading(JurisCAName).Displayed
     ///
     /// The state name (e.g., "California") appears in the h4 heading.
+    /// Shim XPath mask: .//h4[contains(@class,'resultsSummaryHeading') and normalize-space(.)='{0}']
+    ///   /following-sibling::h5[contains(@class,'resultsSummarySubHeading')
+    ///     and normalize-space(.)='State statutes and regulations']
     /// </summary>
     public ILocator StateStatutesRegulationsHeading(string stateDisplayName) =>
-        _page.Locator(
-            $"h5.resultsSummarySubHeading:has-text('Statutes and regulations')" +
-            $":near(h4.resultsSummaryHeading:has-text('{stateDisplayName}'))"
-        );
+        _page.Locator($"xpath=//h4[contains(@class,'resultsSummaryHeading') and normalize-space(.)='{stateDisplayName}']/following-sibling::h5[contains(@class,'resultsSummarySubHeading') and normalize-space(.)='State statutes and regulations']");
 
     /// <summary>
     /// "State" sub-heading under the "Cases" section.
     /// Replaces: surveysPage.WlaSurveyResult.CasesStateHeading.Displayed
     ///
-    /// SHIM XPath:
-    ///   //h5[contains(@class,'casesSectionHeading') and normalize-space(.)='Cases']
+    /// Shim XPath: //h5[contains(@class,'casesSectionHeading') and normalize-space(.)='Cases']
     ///   /ancestor::*[contains(@class,'casesSection')][1]
     ///   //h6[contains(@class,'resultsSummaryCases') and normalize-space(.)='State']
     /// </summary>
     public ILocator CasesStateHeading =>
-        _page.Locator(
-            "[class*='casesSection'] h6.resultsSummaryCases:has-text('State'), " +
-            "xpath=//h5[contains(@class,'casesSectionHeading') and normalize-space(.)='Cases']" +
-            "/ancestor::*[contains(@class,'casesSection')][1]" +
-            "//h6[contains(@class,'resultsSummaryCases') and normalize-space(.)='State']"
-        ).First;
+        _page.Locator("xpath=//h5[contains(@class,'casesSectionHeading') and normalize-space(.)='Cases']/ancestor::*[contains(@class,'casesSection')][1]//h6[contains(@class,'resultsSummaryCases') and normalize-space(.)='State']");
 
     /// <summary>
     /// "Federal" sub-heading under the "Cases" section.
     /// Replaces: surveysPage.WlaSurveyResult.CasesFederalHeading.Displayed
     ///
-    /// SHIM XPath (same structure, different text):
+    /// Shim XPath (same structure, different text):
     ///   .../h6[normalize-space(.)='Federal']
     /// </summary>
     public ILocator CasesFederalHeading =>
-        _page.Locator(
-            "[class*='casesSection'] h6.resultsSummaryCases:has-text('Federal'), " +
-            "xpath=//h5[contains(@class,'casesSectionHeading') and normalize-space(.)='Cases']" +
-            "/ancestor::*[contains(@class,'casesSection')][1]" +
-            "//h6[contains(@class,'resultsSummaryCases') and normalize-space(.)='Federal']"
-        ).First;
+        _page.Locator("xpath=//h5[contains(@class,'casesSectionHeading') and normalize-space(.)='Cases']/ancestor::*[contains(@class,'casesSection')][1]//h6[contains(@class,'resultsSummaryCases') and normalize-space(.)='Federal']");
 
     /// <summary>
     /// Returns all jurisdiction label texts from the result.
-    /// Replaces: surveysPage.WlaSurveyResult.GetAllJurisdictionLabels()
-    ///   .Where(text => !string.IsNullOrWhiteSpace(text)).ToList()
-    ///
-    /// SHIM: called GetAllJurisdictionLabels() → each label is an IWebElement.Text
-    ///       → shim evaluates innerText per element
-    ///
-    /// NATIVE: AllTextContentsAsync() fetches all in one call — faster.
-    ///
-    /// TODO: Find the exact locator for jurisdiction labels in the result area.
+    /// Shim: By.XPath("//h4[contains(@class,'resultsSummaryHeading')]") → IWebElement.Text per element
+    /// Native: AllTextContentsAsync() — one call for all.
     /// </summary>
     public async Task<List<string>> GetAllJurisdictionLabels()
     {
         var allTexts = await _page
-            .Locator("[data-automation='jurisdiction-label'], [class*='jurisdictionLabel'], [class*='jurisLabel']")
+            .Locator("xpath=//h4[contains(@class,'resultsSummaryHeading')]")
             .AllTextContentsAsync();
         return allTexts.Where(t => !string.IsNullOrWhiteSpace(t)).ToList();
     }
@@ -127,14 +109,23 @@ public class AjsSurveyResultMetaPw
 
     public AjsSurveyResultMetaPw(IPage page) => _page = page;
 
+    // Shim: By.XPath("//time[contains(@class,'resultsTimeStamp')]")
+    // CSS selector used (not XPath) — XPath doesn't pierce shadow DOM, CSS does.
     public ILocator TimeStampLabel =>
-        _page.Locator("[data-automation='timestamp'], [class*='timeStamp'], [class*='timestamp']");
+        _page.Locator("time[class*='resultsTimeStamp'], [class*='resultsTimeStamp']");
 
     public ILocator QuestionLabel =>
         _page.Locator("[data-automation='survey-question'], [class*='questionLabel'], h2[class*='question']");
 
-    public async Task<string> GetTimestamp() =>
-        await TimeStampLabel.TextContentAsync() ?? string.Empty;
+    public async Task<string> GetTimestamp()
+    {
+        await TimeStampLabel.WaitForAsync(new LocatorWaitForOptions
+        {
+            State = WaitForSelectorState.Visible,
+            Timeout = 30000
+        });
+        return await TimeStampLabel.TextContentAsync() ?? string.Empty;
+    }
 
     public async Task<string> GetQuestion() =>
         await QuestionLabel.TextContentAsync() ?? string.Empty;
