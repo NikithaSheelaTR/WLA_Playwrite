@@ -174,9 +174,13 @@ namespace Selenium.Playwright.Shim.Impl
             _playwright = SyncHelper.RunSync(() => Microsoft.Playwright.Playwright.CreateAsync());
             Trace("Playwright created. Launching browser...");
 
+            // Check environment variable for headless mode (needed for EC2/CI servers without display)
+            var runHeadless = !string.IsNullOrEmpty(Environment.GetEnvironmentVariable("PLAYWRIGHT_HEADLESS"))
+                && Environment.GetEnvironmentVariable("PLAYWRIGHT_HEADLESS").Equals("true", StringComparison.OrdinalIgnoreCase);
+
             var launchOptions = new BrowserTypeLaunchOptions
             {
-                Headless = false,
+                Headless = runHeadless,
                 Channel = "chrome"  // Use system-installed Chrome (has corporate proxy/certs)
             };
 
